@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fcmb SmeHub">
+    <meta name="author" content="Nathaniel Odukpahie">
+    <title>FCMB SMEHub</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+	
+	<!-- SPECIFIC CSS -->
+    <link href="layerslider/css/layerslider.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	<!-- material design icons -->
+    <link href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- material design icons -->
+  <link href="js/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+</head>
+
+<body id="login_bg" class="merchant">
+	
+	<nav id="menu" class="fake_menu"></nav>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- End Preload -->
+	
+	<div id="login">
+		<aside style="padding-bottom: 18px;">
+			<figure>
+				<a href="index.html"><img src="img/logo.png" width="70" height="70" data-retina="true" alt=""></a>
+			</figure>
+			  <form>
+
+				<h6 class="mt-3">Your Company </h6>
+				<div class="form-group">
+					<input type="text" name="cname" class="form-control" placeholder="Your Company Name">
+				</div>
+
+				<div class="form-group select mt-3">
+					<h6 class="mt-3">Select your type of industry</h6>
+					<div class="styled-select">
+						<select class="required" name="education_apply" id="education_apply">
+							<option value="" selected="">Choose</option>
+							<option value="Less than high school">Legal</option>
+							<option value="High school diploma or equivalent">Education and Training</option>
+							<option value="Some college no degree">Construction</option>
+							<option value="Bachelor degree">Agriculture</option>
+							<option value="Doctoral or professional degree">Technology</option>
+						</select>
+					</div>
+				</div>
+
+				<h6 class="mt-3">Nature of Service</h6>
+				<div class="form-group">
+					<input type="text" name="cname" class="form-control" placeholder="Nature of Service">
+				</div>
+
+				<div class="form-group select mt-3">
+					<h6 class="mt-3">How Long have you been in Business?</h6>
+					<div class="styled-select">
+						<select class="required" name="education_apply" id="education_apply">
+							<option value="" selected="">Choose</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+
+				<h6 class="mt-3">Do you have an FCMB account?</h6>
+				<label class="container round">Yes
+				  <input type="radio" name="gender" value="yes">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container round">No
+				  <input type="radio" name="gender" value="no">
+				  <span class="checkmark"></span>
+				</label>
+
+				<div class="form-group mt-3" style="display: none;" id="accno">
+					<input type="text" name="cname" class="form-control" placeholder="Enter Account Number">
+				</div>
+
+				<div class="upload-btn-wrapper">
+					<h6 class="mt-3">Upload Business Profile (doc or pdf)</h6>
+				  	<button class="btn_1 rounded">Upload a file</button>
+				  	<input type="file" name="myfile" />
+				</div>
+
+				<label class="container round my-4" style="font-size: 14px;">Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a>
+					<input type="radio" name="terms">
+					<span class="checkmark"></span>
+				</label>
+
+				<a href="#0" class="btn_1 rounded full-width mt-3">Submit</a>
+			</form>
+		</aside>
+	</div>
+	<!-- /login -->
+		
+	<!-- COMMON SCRIPTS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/common_scripts.js"></script>
+    <script src="js/main.js"></script>
+	<script src="assets/validate.js"></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+    <script src="layerslider/js/greensock.js"></script>
+    <script src="layerslider/js/layerslider.transitions.js"></script>
+    <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript">
+        'use strict';
+        $('#layerslider').layerSlider({
+            autoStart: true,
+            navButtons: true,
+            navStartStop: false,
+            showCircleTimer: false,
+            responsive: true,
+            responsiveUnder: 1280,
+            layersContainer: 1200,
+            skinsPath: 'layerslider/skins/'
+                // Please make sure that you didn't forget to add a comma to the line endings
+                // except the last line!
+        });
+
+        $(function() {
+		    $('input[name="gender"]').on('click', function() {
+		        if ($(this).val() == 'yes') {
+		            $('#accno').show();
+		        }
+		        else {
+		            $('#accno').hide();
+		        }
+		    });
+		});
+    </script>
+    <script src="js/datatables/jquery.dataTables.js"></script>
+    <script src="js/datatables/dataTables.bootstrap4.js"></script>
+    <script src="js/admin-datatables.js"></script>
+</body>
+</html>

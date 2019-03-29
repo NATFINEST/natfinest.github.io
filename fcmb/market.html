@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fcmb SmeHub">
+    <meta name="author" content="Nathaniel Odukpahie">
+    <title>FCMB SMEHub</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+	
+	<!-- SPECIFIC CSS -->
+	<link href="css/skins/square/grey.css" rel="stylesheet">
+	<link href="css/wizard.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body id="admission_bg">
+		
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- End Preload -->
+	
+	<div id="form_container" class="clearfix">
+		<figure>
+			<a href="index.html"><img src="img/logo.png" width="70" height="70" data-retina="true" alt=""></a>
+		</figure>
+		<div id="wizard_container">
+			<div id="top-wizard">
+				<div id="progressbar"></div>
+			</div>
+			<!-- /top-wizard -->
+			<form name="example-1" id="wrapped" method="POST">
+				<input id="website" name="website" type="text" value="">
+				<!-- Leave for security protection, read docs for details -->
+				<div id="middle-wizard">
+					<div class="step">
+						<div id="intro">
+							<figure><img src="img/wizard_intro_icon.svg" alt=""></figure>
+							<h1>FCMB SME Market</h1>
+							<p>Expand your business and sign up for fre Sme Market today.</p>
+						</div>
+					</div>
+
+					<div class="step">
+						<h3 class="main_question"><strong>1/2</strong>Sign Up</h3>
+						<div class="form-group">
+							<input type="text" name="storename" class="form-control required" placeholder="Store Name">
+						</div>
+						<div class="input-group mb-3">
+						  <input type="text" name="subdomain" class="form-control required" placeholder="Store Subdomain" aria-label="Store Subdomain" aria-describedby="basic-addon2">
+						  <span class="input-group-addon mt-2" id="basic-addon2">.smemarkethub.com</span>
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control required" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="text" name="admin" class="form-control required" placeholder="Admin Username">
+						</div>
+						<div class="form-group">
+							<input type="password" name="ver_pwd" class="form-control required" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<input type="password" name="pwd" class="form-control required" placeholder="Verify Password">
+						</div>
+					</div>
+					<!-- /step-->
+
+					<div class="submit step">
+						<h3 class="main_question"><strong>2/2</strong>Please indicate what type of account you have with FCMB</h3>
+						<div class="form-group radio_input">
+							<label><input type="radio" value="Male" checked name="gender" class="icheck">Individual</label>
+							<label><input type="radio" value="Female" name="gender" class="icheck">Corporate</label>
+						</div>
+						<div class="form-group">
+							<input type="text" name="accno" class="form-control required" placeholder="10 Digit NUBAN Account Number">
+						</div>
+						<div class="form-group terms">
+							<input name="terms" type="checkbox" class="icheck required" value="yes">
+							<label>Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a> ?</label>
+						</div>
+					</div>
+					<!-- /step-->
+				</div>
+				<!-- /middle-wizard -->
+				<div id="bottom-wizard">
+					<button type="button" name="backward" class="backward">Backward </button>
+					<button type="button" name="forward" class="forward">Forward</button>
+					<button type="submit" name="process" class="submit">Create My Store</button>
+				</div>
+				<!-- /bottom-wizard -->
+			</form>
+		</div>
+		<!-- /Wizard container -->
+	</div>
+	<!-- /Form_container -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/common_scripts.js"></script>
+    <script src="js/main_admission.js"></script>
+	<script src="assets/validate.js"></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/jquery-ui-1.8.22.min.js"></script>
+	<script src="js/jquery.wizard.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/admission_func.js"></script>
+  
+</body>
+
+</html>
