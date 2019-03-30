@@ -276,3 +276,7 @@ ul.list_3.albums li:before{
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+.fw-100{
+  font-weight: 400;
+  font-size: 15px;
+}
