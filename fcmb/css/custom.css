@@ -280,3 +280,6 @@ ul.list_3.albums li:before{
   font-weight: 400;
   font-size: 15px;
 }
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar>* {
+  visibility: hidden;
+}

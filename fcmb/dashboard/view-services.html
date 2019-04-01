@@ -46,11 +46,11 @@
             <nav class="navbar-custom">
                 <!-- Search input -->
                 <ul class="navbar-right d-flex list-inline float-right mb-0">
-                    <li class="list-inline-item dropdown notification-list d-none d-md-block">
+                    <li class="list-inline-item dropdown notification-list">
                         <a class="nav-link waves-effect toggle-search"
                             href="http://on.fcmb.com/YourAccountIn4Minutes-Website" target="_blank">Open an Account</a>
                     </li>
-                    <li class="list-inline-item dropdown notification-list d-none d-md-block">
+                    <li class="list-inline-item dropdown notification-list">
                         <a href="#" class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Internet Banking
                                            </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown" style="width: auto; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-152px, 60px, 0px);" x-placement="bottom-end">
@@ -110,7 +110,7 @@
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu" id="side-menu">
-                        <li class="active"><a href="index.html" class="waves-effect active"><i class="dripicons-home"></i><span>
+                        <li class="active"><a href="index.html" class="waves-effect"><i class="dripicons-home"></i><span>
                                     Dashboard</span></a></li>
                         <li><a href="enrolled.html" class="waves-effect"><i class="dripicons-to-do"></i><span>
                                     Enrolled Courses</span></a></li>
@@ -171,108 +171,82 @@
                             <div class="page-title-box">
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
-                                        <h4 class="page-title mb-0">Dashboard</h4>
+                                        <h4 class="page-title mb-0">All Service</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <div class="card product-sales">
-                                <div class="card-body widget-card">
-                                    <p class="text-muted">Available Courses</p>
-                                    <h4>122</h4>
-                                    <img class="img-fluid widget-icon" src="assets/images/course.svg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="card product-sales">
-                                <div class="card-body widget-card">
-                                    <p class="text-muted">Events Registered</p>
-                                    <h4>23</h4>
-                                    <img class="img-fluid widget-icon" src="assets/images/event.svg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="card product-sales">
-                                <div class="card-body widget-card">
-                                    <p class="text-muted">Webinar</p>
-                                    <h4>2</h4>
-                                    <img class="img-fluid widget-icon" src="assets/images/webinar.svg" />
-                                </div>
-                            </div>
+
+                    <div class="card mb-3 col-md-12 p-0">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-stripped table-hover" id="dataTable" width="100%" cellspacing="0">
+                                    <thead class="bg-warning">
+                                        <tr>
+                                            <th style="width: 55%">Name of Product</th>
+                                            <th style="width: 15%">Product Type</th>
+                                            <th style="width: 15%">Rating</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name of Product</th>
+                                            <th>Product Type</th>
+                                            <th>Rating</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td class="d-inline-flex">
+                                                <img src="assets/images/davtonlearn.jpg" width="150px" height="100px" class="px-3">
+                                                <div class="details">
+                                                    <h4><a href="../company1.html" target="_blank">Davtonlearn</a> </h4>
+                                                    <h6 class="fw-200">Davtonlearn.com is a leading provider of professional certification courses.</h6>
+                                                </div>
+                                            </td>
+                                            <td>Website Design</td>
+                                            <td class="text-center">
+                                                <h5 class="rating2">9.9</h5>
+                                                <p class="font-weight-bold mt-2">(Very Good)</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="d-inline-flex">
+                                                <img src="assets/images/whogohost.png" width="150px" height="100px" class="px-3">
+                                                <div class="details">
+                                                    <h4><a href="../company1.html" target="_blank">Whogohost</a></h4>
+                                                    <h6 class="fw-200">Nigeria's leading Web Hosting and Domain Registration company</h6>
+                                                </div>
+                                            </td>
+                                            <td>Website Design</td>
+                                            <td class="text-center">
+                                                <h5 class="rating2">9.1</h5>
+                                                <p class="font-weight-bold mt-2">(Excellent)</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="d-inline-flex">
+                                                <img src="assets/images/bestweb.jpg" width="150px" height="100px" class="px-3">
+                                                <div class="details">
+                                                    <h4><a href="../company1.html" target="_blank">BestWeb</a></h4>
+                                                    <h6 class="fw-200">Nigeria's leading Web Hosting and Domain Registration company</h6>
+                                                </div>
+                                            </td>
+                                            <td>Website Design</td>
+                                            <td class="text-center">
+                                                <h5 class="rating2">8.1</h5>
+                                                <p class="font-weight-bold mt-2">(Very Good)</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                             </div>
                         </div>
                     </div>
-                    <div class="page-title-box">
-                        <div class="row align-items-center">
-                            <div class="col-md-8">
-                                <h4 class="page-title mb-0">Featured</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card">
-                                    <div class="card-image-info">
-                                            <img class="card-img-top img-fluid" src="assets/images/small/img-6.jpg"
-                                            alt="Card image cap">
-                                            <label class="course-type type-info">Course</label>
-                                    </div>
-                                <div class="card-body">
-                                    <a class="text-black" href="course-single.html">
-                                            <h4 class="card-title font-20 mt-0">Spirit of the Entrepreneur - Cast.i.ng</h4>
-                                    </a>
-                                    
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This card has even longer content than the first
-                                        to show that equal height action.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-image-info">
-                                        <img class="card-img-top img-fluid" src="assets/images/small/img-3.jpg"
-                                        alt="Card image cap">
-                                        <label class="course-type type-info">Course</label>
-                                </div>
-                                
-                                <div class="card-body">
-                                    <a class="text-black" href="course-single.html">
-                                            <h4 class="card-title font-20 mt-0">Getting started with Design - Horpey</h4>
-                                    </a>
-                                    
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This card has even longer content than the first
-                                        to show that equal height action.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                    <div class="card-image-info">
-                                            <img class="card-img-top img-fluid" src="assets/images/small/img-7.jpg"
-                                            alt="Card image cap">
-                                            <label class="course-type type-info">Webinar</label>
-                                    </div>
-                                <div class="card-body">
-                                        <a class="text-black" href="course-single.html">
-                                                <h4 class="card-title font-20 mt-0">Effective Selling Skills </h4>
-                                            </a>
-                                    
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This card has even longer content than the first
-                                        to show that equal height action.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end row -->
                 </div><!-- container-fluid -->
             </div><!-- content -->
             <footer class="footer">© 2019 FCMB SMEHub</footer>
@@ -318,6 +292,19 @@
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="assets/pages/dashboard.js"></script><!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('input[name="gender"]').on('click', function() {
+                if ($(this).val() == 'yes') {
+                    $('#accno').show();
+                }
+                else {
+                    $('#accno').hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

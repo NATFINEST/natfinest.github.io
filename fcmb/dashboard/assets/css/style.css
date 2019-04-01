@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:400,600,700);
+/*@import url(https://fonts.googleapis.com/css?family=Nunito:400,600,700);
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-size: 14px;
     font-family: Nunito, sans-serif
-}
+}*/
 
 html {
     overflow-x: hidden;
@@ -97,7 +97,7 @@ code {
 }
 
 .footer i.text-danger {
-    color: #e2595f !important
+    color: #a6368c !important
 }
 
 #wrapper {
@@ -534,7 +534,7 @@ code {
 }
 
 .bg-primary {
-    background-color: #e2595f !important
+    background-color: #a6368c !important
 }
 
 .bg-success {
@@ -574,7 +574,7 @@ code {
 }
 
 .text-primary {
-    color: #e2595f !important
+    color: #a6368c !important
 }
 
 .text-warning {
@@ -612,7 +612,7 @@ code {
 }
 
 .badge-primary {
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 .badge-success {
@@ -647,15 +647,15 @@ code {
 
 .nav-pills .nav-item.show .nav-link,
 .nav-pills .nav-link.active {
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 .nav-pills>.active>a>.badge {
-    color: #e2595f
+    color: #a6368c
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background: #e2595f
+    background: #a6368c
 }
 
 .p-0 {
@@ -954,7 +954,7 @@ code {
 }
 
 .topbar .topbar-left {
-    /* background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#e2595f)); */
+    /* background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#a6368c)); */
     background: #a6368c;
     float: left;
     text-align: center;
@@ -1023,8 +1023,8 @@ code {
 .side-menu {
     width: 240px;
     z-index: 999;
-    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#e2595f));
-    background: linear-gradient(to right, #c9576a, #e2595f);
+    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#a6368c));
+    background: linear-gradient(to right, #c9576a, #a6368c);
     bottom: 0;
     margin-top: 0;
     padding-bottom: 30px;
@@ -1172,7 +1172,7 @@ code {
     padding-bottom: 5px;
     padding-top: 5px;
     z-index: 9999;
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 .enlarged #wrapper .left.side-menu {
@@ -1572,7 +1572,7 @@ code {
 }
 
 .icon-demo-content .col-sm-6:hover i {
-    color: #e2595f
+    color: #a6368c
 }
 
 .alert {
@@ -1598,7 +1598,7 @@ code {
 }
 
 .alert-primary {
-    color: #e2595f;
+    color: #a6368c;
     background-color: #f9dbdd
 }
 
@@ -1878,7 +1878,7 @@ code {
 }
 
 .btn-link:hover {
-    color: #e2595f
+    color: #a6368c
 }
 
 .btn-pink {
@@ -1940,8 +1940,8 @@ code {
 }
 
 .btn-outline-primary {
-    color: #e2595f;
-    border-color: #e2595f
+    color: #a6368c;
+    border-color: #a6368c
 }
 
 .btn-outline-success {
@@ -1993,8 +1993,8 @@ code {
 }
 
 .card-primary {
-    background-color: #e2595f;
-    border-color: #e2595f
+    background-color: #a6368c;
+    border-color: #a6368c
 }
 
 .card-success {
@@ -2049,7 +2049,7 @@ code {
 
 .nav-pills .nav-link.active,
 .nav-tabs .nav-link.active {
-    color: #e2595f
+    color: #a6368c
 }
 
 .nav-bg-custom .nav-link.active {
@@ -2075,7 +2075,7 @@ code {
 
 .nav-tabs-custom>li>a::after {
     content: "";
-    background: #e2595f;
+    background: #a6368c;
     height: 2px;
     position: absolute;
     width: 100%;
@@ -2094,11 +2094,11 @@ code {
 }
 
 .nav-tabs-custom>li>a.active {
-    color: #e2595f !important
+    color: #a6368c !important
 }
 
 .progress-bar {
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 .progress {
@@ -2106,12 +2106,12 @@ code {
 }
 
 .page-link {
-    color: #e2595f
+    color: #a6368c
 }
 
 .page-item.active .page-link {
-    background-color: #e2595f;
-    border-color: #e2595f
+    background-color: #a6368c;
+    border-color: #a6368c
 }
 
 .page-link:focus,
@@ -2158,8 +2158,8 @@ code {
 }
 
 .swal2-icon.swal2-question {
-    color: #e2595f;
-    border-color: #e2595f
+    color: #a6368c;
+    border-color: #a6368c
 }
 
 .swal2-icon.swal2-success {
@@ -2191,7 +2191,7 @@ code {
 .swal2-modal .swal2-input:focus,
 .swal2-modal .swal2-textarea:focus {
     outline: 0;
-    border: 2px solid #e2595f
+    border: 2px solid #a6368c
 }
 
 .email-leftbar {
@@ -2344,8 +2344,8 @@ code {
 
 .message-list li.active,
 .message-list li.active:hover {
-    -webkit-box-shadow: inset 3px 0 0 #e2595f;
-    box-shadow: inset 3px 0 0 #e2595f
+    -webkit-box-shadow: inset 3px 0 0 #a6368c;
+    box-shadow: inset 3px 0 0 #a6368c
 }
 
 .message-list li.unread {
@@ -2488,7 +2488,7 @@ code {
     margin: 5px 0;
     padding: 5px 5px;
     text-align: center;
-    background-color: #e2595f;
+    background-color: #a6368c;
     color: #fff !important
 }
 
@@ -2516,18 +2516,18 @@ label {
 }
 
 .form-control:focus {
-    border-color: #e2595f;
+    border-color: #a6368c;
     -webkit-box-shadow: none;
     box-shadow: none
 }
 
 .custom-control-input:checked~.custom-control-indicator {
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 .custom-control-input:focus~.custom-control-indicator {
-    -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #e2595f;
-    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #e2595f
+    -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #a6368c;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #a6368c
 }
 
 .has-success .form-control {
@@ -2570,7 +2570,7 @@ label {
 .datepicker table tr td.today.disabled,
 .datepicker table tr td.today.disabled:hover,
 .datepicker table tr td.today:hover {
-    background-color: #e2595f !important;
+    background-color: #a6368c !important;
     background-image: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -2660,7 +2660,7 @@ label {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 .select2-results__option {
@@ -2756,7 +2756,7 @@ input[switch]+label:after {
 }
 
 input[switch]:checked+label {
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 input[switch]:checked+label:before {
@@ -2790,7 +2790,7 @@ input[switch=default]:checked+label {
 }
 
 input[switch=primary]:checked+label {
-    background-color: #e2595f
+    background-color: #a6368c
 }
 
 input[switch=success]:checked+label {
@@ -2883,7 +2883,7 @@ pre[class*=language-] {
 }
 
 .parsley-error {
-    border-color: #e2595f
+    border-color: #a6368c
 }
 
 .parsley-errors-list {
@@ -2899,7 +2899,7 @@ pre[class*=language-] {
 .parsley-errors-list>li {
     font-size: 12px;
     list-style: none;
-    color: #e2595f;
+    color: #a6368c;
     margin-top: 5px
 }
 
@@ -2911,7 +2911,7 @@ pre[class*=language-] {
 .mce-menu-item.mce-selected,
 .mce-menu-item:focus,
 .mce-menu-item:hover {
-    background-color: #e2595f !important
+    background-color: #a6368c !important
 }
 
 .mce-menu {
@@ -3126,7 +3126,7 @@ pre[class*=language-] {
 .ct-chart .ct-series.ct-series-a .ct-line,
 .ct-chart .ct-series.ct-series-a .ct-point,
 .ct-chart .ct-series.ct-series-a .ct-slice-donut {
-    stroke: #e2595f
+    stroke: #a6368c
 }
 
 .ct-chart .ct-series.ct-series-b .ct-bar,
@@ -3173,7 +3173,7 @@ pre[class*=language-] {
 
 .ct-series-a .ct-area,
 .ct-series-a .ct-slice-pie {
-    fill: #e2595f
+    fill: #a6368c
 }
 
 .ct-series-b .ct-area,
@@ -3266,8 +3266,8 @@ pre[class*=language-] {
 }
 
 .mini-stats .mini-stats-content {
-    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#e2595f));
-    background: linear-gradient(to right, #c9576a, #e2595f)
+    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#a6368c));
+    background: linear-gradient(to right, #c9576a, #a6368c)
 }
 
 .mini-stats .mini-stats-desc {
@@ -3319,7 +3319,7 @@ pre[class*=language-] {
 }
 
 .latest-messages-tabs .nav-link.active h3 {
-    color: #e2595f
+    color: #a6368c
 }
 
 .latest-message-list .message-list-item {
@@ -3394,12 +3394,12 @@ th {
 }
 
 table.focus-on tbody tr.focused th {
-    background-color: #e2595f;
+    background-color: #a6368c;
     color: #fff
 }
 
 table.focus-on tbody tr.focused td {
-    background-color: #e2595f;
+    background-color: #a6368c;
     color: #fff
 }
 
@@ -3414,8 +3414,8 @@ table.focus-on tbody tr.focused td {
 }
 
 .table-rep-plugin .btn-default.btn-primary {
-    background-color: #e2595f;
-    border-color: #e2595f
+    background-color: #a6368c;
+    border-color: #a6368c
 }
 
 .table-rep-plugin .table-responsive {
@@ -3500,8 +3500,8 @@ table.focus-on tbody tr.focused td {
 }
 
 .table-rep-plugin .checkbox-row input[type=checkbox]:checked+label::before {
-    background-color: #e2595f;
-    border-color: #e2595f
+    background-color: #a6368c;
+    border-color: #a6368c
 }
 
 .table-rep-plugin .checkbox-row input[type=checkbox]:checked+label::after {
@@ -3521,7 +3521,7 @@ table.focus-on tbody tr.focused td {
     color: #fff;
     font-size: 16px;
     line-height: 40px;
-    background: #e2595f;
+    background: #a6368c;
     border-radius: 4px;
     padding: 10px 20px
 }
@@ -3538,14 +3538,14 @@ table.focus-on tbody tr.focused td {
     bottom: -15px;
     border-left: 16px solid transparent;
     border-right: 16px solid transparent;
-    border-top: 16px solid #e2595f
+    border-top: 16px solid #a6368c
 }
 
 .gmaps-overlay_arrow.below {
     top: -15px;
     border-left: 16px solid transparent;
     border-right: 16px solid transparent;
-    border-bottom: 16px solid #e2595f
+    border-bottom: 16px solid #a6368c
 }
 
 .vector-map-height {
@@ -3563,7 +3563,7 @@ table.focus-on tbody tr.focused td {
 }
 
 .custom-dd .dd-list .dd-item .dd-handle:hover {
-    color: #e2595f
+    color: #a6368c
 }
 
 .custom-dd .dd-list .dd-item button {
@@ -3587,7 +3587,7 @@ table.focus-on tbody tr.focused td {
 }
 
 .custom-dd-empty .dd-list .dd3-handle:hover {
-    color: #e2595f
+    color: #a6368c
 }
 
 .custom-dd-empty .dd-list .dd3-content {
@@ -3598,7 +3598,7 @@ table.focus-on tbody tr.focused td {
 }
 
 .custom-dd-empty .dd-list .dd3-content:hover {
-    color: #e2595f
+    color: #a6368c
 }
 
 .custom-dd-empty .dd-list button {
@@ -3799,7 +3799,7 @@ table.focus-on tbody tr.focused td {
     line-height: 30px;
     font-size: 20px;
     color: #fff;
-    background-color: #e2595f;
+    background-color: #a6368c;
     border: 5px solid #fff
 }
 
@@ -3829,8 +3829,8 @@ table.focus-on tbody tr.focused td {
     margin-left: 60px;
     padding: 1em;
     position: relative;
-    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#e2595f));
-    background: linear-gradient(to right, #c9576a, #e2595f)
+    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#a6368c));
+    background: linear-gradient(to right, #c9576a, #a6368c)
 }
 
 .cd-timeline-content:after {
@@ -3863,7 +3863,7 @@ table.focus-on tbody tr.focused td {
     height: 0;
     width: 0;
     border: 12px solid transparent;
-    border-right: 12px solid #e2595f
+    border-right: 12px solid #a6368c
 }
 
 @media only screen and (min-width:1170px) {
@@ -3877,7 +3877,7 @@ table.focus-on tbody tr.focused td {
         top: 24px;
         left: 100%;
         border-color: transparent;
-        border-left-color: #e2595f
+        border-left-color: #a6368c
     }
 
     .cd-timeline-content .cd-date {
@@ -3900,7 +3900,7 @@ table.focus-on tbody tr.focused td {
         left: auto;
         right: 100%;
         border-color: transparent;
-        border-right-color: #e2595f
+        border-right-color: #a6368c
     }
 
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
@@ -3971,8 +3971,8 @@ table.focus-on tbody tr.focused td {
 }
 
 .directory-card .directory-content {
-    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#e2595f));
-    background: linear-gradient(to right, #c9576a, #e2595f)
+    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#a6368c));
+    background: linear-gradient(to right, #c9576a, #a6368c)
 }
 
 .directory-card .directory-content .info-icon {
@@ -3999,8 +3999,8 @@ table.focus-on tbody tr.focused td {
 }
 
 .accountbg {
-    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#e2595f));
-    background: linear-gradient(to right, #c9576a, #e2595f);
+    background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#a6368c));
+    background: linear-gradient(to right, #c9576a, #a6368c);
     position: absolute;
     height: 100%;
     width: 100%;
