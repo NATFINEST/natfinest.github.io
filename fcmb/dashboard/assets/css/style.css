@@ -1021,7 +1021,7 @@ code {
 }
 
 .side-menu {
-    width: 240px;
+    width: 250px;
     z-index: 999;
     background: -webkit-gradient(linear, left top, right top, from(#c9576a), to(#a6368c));
     background: linear-gradient(to right, #c9576a, #a6368c);
@@ -1189,7 +1189,7 @@ code {
 .enlarged #wrapper .left.side-menu #sidebar-menu>ul>li>a:focus,
 .enlarged #wrapper .left.side-menu #sidebar-menu>ul>li>a:hover {
     color: #fff !important;
-    background-color: #e04e55
+    background-color: #fcba45
 }
 
 .enlarged #wrapper .left.side-menu #sidebar-menu>ul>li>a i {
@@ -1206,7 +1206,7 @@ code {
 .enlarged #wrapper .left.side-menu #sidebar-menu ul>li:hover>a {
     position: relative;
     width: 260px;
-    background-color: #e04e55
+    background-color: #fcba45
 }
 
 .enlarged #wrapper .left.side-menu #sidebar-menu ul>li:hover>ul {
