@@ -283,3 +283,24 @@ ul.list_3.albums li:before{
 .mm-menu .mm-navbar a, .mm-menu .mm-navbar>* {
   visibility: hidden;
 }
+.cat li a{
+  color: #666;
+}
+.cat li a.active{
+  color: #000;
+}
+.cat li a:hover{
+  color: #9d2f92;
+}
+a#filters_col_bt:before{
+  display: none;
+}
+a#filters_col_bt{
+  font-weight: 500
+}
+.truncate {
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
