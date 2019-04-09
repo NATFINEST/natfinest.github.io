@@ -63,7 +63,7 @@
 					</div>
 
 					<div class="step">
-						<h3 class="main_question"><strong>1/2</strong>Sign Up</h3>
+						<h3 class="main_question"><strong>1/4</strong>Sign Up</h3>
 						<div class="form-group">
 							<input type="text" name="storename" class="form-control required" placeholder="Store Name">
 						</div>
@@ -86,19 +86,315 @@
 					</div>
 					<!-- /step-->
 
-					<div class="submit step">
-						<h3 class="main_question"><strong>2/2</strong>Please indicate what type of account you have with FCMB</h3>
-						<div class="form-group radio_input">
-							<label><input type="radio" value="Male" checked name="gender" class="icheck">Individual</label>
-							<label><input type="radio" value="Female" name="gender" class="icheck">Corporate</label>
+					<div class="step">
+						<h3 class="main_question"><strong>2/4</strong>Please indicate what type of account you have with FCMB</h3>
+						<label class="container round">Individual
+						  	<input type="radio" name="acc-type" value="1">
+						  	<span class="checkmark"></span>
+						</label>
+						<label class="container round">Corporate
+						  	<input type="radio" name="acc-type" value="2">
+						  	<span class="checkmark"></span>
+						</label>
+						<label class="container round">I don't have an account
+						  	<input type="radio" name="acc-type" value="3">
+						  	<span class="checkmark"></span>
+						</label>
+
+						<div class="form-group" id="ind" style="display: none;">
+							<input type="text" name="individual-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
+						</div>
+						<div class="form-group" id="corp" style="display: none;">
+							<input type="text" name="corporate-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
+						</div>
+						<div id="no-acc" style="display: none;">
+							<div class="form-group select">
+								<div class="styled-select">
+									<select name="name-acc-type" id="name-acc-type" class="">
+							              <option value="" selected="selected">- Select Account Type -</option>
+							              <option value="1">Individual</option>
+							              <option value="2">Corporate</option>
+			            			</select>
+								</div>
+							</div>
+							<div class="form-group select">
+								<div class="styled-select">
+									<select name="name-acc-location" id="name-acc-location" class="">
+							              <option value="" selected="selected">- Select Branch Location -</option>
+							              <option value="Abuja FCT">Abuja FCT</option>
+							              <option value="Abia">Abia</option>
+							              <option value="Adamawa">Adamawa</option>
+							              <option value="Akwa Ibom">Akwa Ibom</option>
+							              <option value="Anambra">Anambra</option>
+							              <option value="Bauchi">Bauchi</option>
+							              <option value="Bayelsa">Bayelsa</option>
+							              <option value="Benue">Benue</option>
+							              <option value="Borno">Borno</option>
+							              <option value="Cross River">Cross River</option>
+							              <option value="Delta">Delta</option>
+							              <option value="Ebonyi">Ebonyi</option>
+							              <option value="Edo">Edo</option>
+							              <option value="Ekiti">Ekiti</option>
+							              <option value="Enugu">Enugu</option>
+							              <option value="Gombe">Gombe</option>
+							              <option value="Imo">Imo</option>
+							              <option value="Jigawa">Jigawa</option>
+							              <option value="Kaduna">Kaduna</option>
+							              <option value="Kano">Kano</option>
+							              <option value="Katsina">Katsina</option>
+							              <option value="Kebbi">Kebbi</option>
+							              <option value="Kogi">Kogi</option>
+							              <option value="Kwara">Kwara</option>
+							              <option value="Lagos">Lagos</option>
+							              <option value="Nassarawa">Nassarawa</option>
+							              <option value="Niger">Niger</option>
+							              <option value="Ogun">Ogun</option>
+							              <option value="Ondo">Ondo</option>
+							              <option value="Osun">Osun</option>
+							              <option value="Oyo">Oyo</option>
+							              <option value="Plateau">Plateau</option>
+							              <option value="Rivers">Rivers</option>
+							              <option value="Sokoto">Sokoto</option>
+							              <option value="Taraba">Taraba</option>
+							              <option value="Yobe">Yobe</option>
+							              <option value="Zamfara">Zamfara</option>
+			            			</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /step-->
+
+					<div class="step">
+						<h3 class="main_question"><strong>3/4</strong>Contact Information</h3>
+						<div class="form-group">
+							<input type="text" name="fullname" class="form-control required" placeholder="Your Fullname">
 						</div>
 						<div class="form-group">
-							<input type="text" name="accno" class="form-control required" placeholder="10 Digit NUBAN Account Number">
+							<input type="email" name="email" class="form-control required" placeholder="Contact Email">
 						</div>
-						<div class="form-group terms">
+						<div class="form-group">
+							<input type="digits" name="phone" class="form-control required" placeholder="Contact Phone Number">
+						</div>
+						<div class="form-group">
+							<input type="text" name="bus-add" class="form-control required" placeholder="Business Address">
+						</div>
+						<div class="form-group">
+							<input type="text" name="city" class="form-control required" placeholder="City">
+						</div>
+						<div class="form-group select">
+							<div class="styled-select">
+								<select name="state" id="state" class="required">
+						              <option value="" selected="selected">- Select State -</option>
+						              <option value="Abuja FCT">Abuja FCT</option>
+						              <option value="Abia">Abia</option>
+						              <option value="Adamawa">Adamawa</option>
+						              <option value="Akwa Ibom">Akwa Ibom</option>
+						              <option value="Anambra">Anambra</option>
+						              <option value="Bauchi">Bauchi</option>
+						              <option value="Bayelsa">Bayelsa</option>
+						              <option value="Benue">Benue</option>
+						              <option value="Borno">Borno</option>
+						              <option value="Cross River">Cross River</option>
+						              <option value="Delta">Delta</option>
+						              <option value="Ebonyi">Ebonyi</option>
+						              <option value="Edo">Edo</option>
+						              <option value="Ekiti">Ekiti</option>
+						              <option value="Enugu">Enugu</option>
+						              <option value="Gombe">Gombe</option>
+						              <option value="Imo">Imo</option>
+						              <option value="Jigawa">Jigawa</option>
+						              <option value="Kaduna">Kaduna</option>
+						              <option value="Kano">Kano</option>
+						              <option value="Katsina">Katsina</option>
+						              <option value="Kebbi">Kebbi</option>
+						              <option value="Kogi">Kogi</option>
+						              <option value="Kwara">Kwara</option>
+						              <option value="Lagos">Lagos</option>
+						              <option value="Nassarawa">Nassarawa</option>
+						              <option value="Niger">Niger</option>
+						              <option value="Ogun">Ogun</option>
+						              <option value="Ondo">Ondo</option>
+						              <option value="Osun">Osun</option>
+						              <option value="Oyo">Oyo</option>
+						              <option value="Plateau">Plateau</option>
+						              <option value="Rivers">Rivers</option>
+						              <option value="Sokoto">Sokoto</option>
+						              <option value="Taraba">Taraba</option>
+						              <option value="Yobe">Yobe</option>
+						              <option value="Zamfara">Zamfara</option>
+		            			</select>
+							</div>
+						</div>
+						<div class="form-group select">
+							<div class="styled-select">
+								<select name="Country" id="Country" class="required">
+						              <option value="" selected="selected">- Select Country -</option>
+						              <option value="nigeria">Nigeria</option>
+		            			</select>
+							</div>
+						</div>
+					</div>
+					<!-- /step-->
+
+					<div class="submit step">
+						<h3 class="main_question"><strong>4/4</strong>Store Information</h3>
+						<div class="form-group select">
+							<div class="styled-select">
+								<select class="required" id="store-category" name="store-category">
+								    <option value="0">---- Select Store Category ----</option>
+								    <option value="64">Broadcasting and Programming</option>
+								    <option value="99">Travel Agency</option>
+								    <option value="97">Resort centers</option>
+								    <option value="8">Downstream</option>
+								    <option value="10">Midstream</option>
+								    <option value="11">Natural Gas</option>
+								    <option value="13">Upstream</option>
+								    <option value="109">Photography</option>
+								    <option value="91">Hospitals/Clinics</option>
+								    <option value="102">Club and societies</option>
+								    <option value="12">Oil and Gas services</option>
+								    <option value="2">Fishery</option>
+								    <option value="103">Charity and NGOs</option>
+								    <option value="1">Cash Crops</option>
+								    <option value="93">Veterinary Services</option>
+								    <option value="95">Airlines</option>
+								    <option value="56">Amusement and Recreation</option>
+								    <option value="96">Hotels</option>
+								    <option value="78">Transport</option>
+								    <option value="108">News &amp; Journalism</option>
+								    <option value="54">Employment services</option>
+								    <option value="104">Clearing and Forwarding</option>
+								    <option value="60">Entertainment</option>
+								    <option value="62">Sports and outdoors</option>
+								    <option value="92">Social work activities</option>
+								    <option value="9">Mining</option>
+								    <option value="7">Poultry</option>
+								    <option value="66">Printing and Publishing</option>
+								    <option value="61">Movies, Music and Games</option>
+								    <option value="59">Creative Arts</option>
+								    <option value="110">Logistics</option>
+								    <option value="58">Books and Audible</option>
+								    <option value="6">Plantation</option>
+								    <option value="76">Courier Services</option>
+								    <option value="77">Distribution</option>
+								    <option value="113">Event Planner / Organiser</option>
+								    <option value="53">Business support</option>
+								    <option value="94">Others</option>
+								    <option value="42">Clothing, Fashion, Shoes and Accessories</option>
+								    <option value="57">Arts, Crafts and Culture</option>
+								    <option value="98">Restaurants</option>
+								    <option value="3">Food crops</option>
+								    <option value="79">Warehousing</option>
+								    <option value="106">Luxury Clothing, Fashion, Shoes and Accessories</option>
+								    <option value="4">Livestock</option>
+								    <option value="67">Software</option>
+								    <option value="68">Telecommunications</option>
+								    <option value="65">Internet and IT services</option>
+								    <option value="101">Religious Bodies</option>
+								    <option value="70">Agency, Lease and Sales</option>
+								    <option value="72">Contruction and Civil engineering</option>
+								    <option value="118">Coding</option>
+								    <option value="71">Building and Construction</option>
+								    <option value="74">Residential/Commercial property</option>
+								    <option value="73">Home/Commercial developers</option>
+								    <option value="84">Tertiary</option>
+								    <option value="107">Specialized Educational Services</option>
+								    <option value="82">Pre-primary and primary</option>
+								    <option value="81">General educational services</option>
+								    <option value="85">Trade/Vocation schools</option>
+								    <option value="83">Secondary</option>
+								    <option value="27">Chemical and Alllied products</option>
+								    <option value="30">Machinery and Equipments</option>
+								    <option value="37">Rubber and allied products</option>
+								    <option value="24">Aluminium and Allied products</option>
+								    <option value="33">Paper and wood products</option>
+								    <option value="35">Pharmaceuticals</option>
+								    <option value="32">Paints</option>
+								    <option value="31">Metal products</option>
+								    <option value="26">Building materials</option>
+								    <option value="38">Textile</option>
+								    <option value="36">Printing and publishing materials</option>
+								    <option value="29">Leather and leather products</option>
+								    <option value="34">Personal Care</option>
+								    <option value="14">Others</option>
+								    <option value="75">Others</option>
+								    <option value="90">Others</option>
+								    <option value="23">Others</option>
+								    <option value="86">Others</option>
+								    <option value="80">Others</option>
+								    <option value="52">Others</option>
+								    <option value="55">Others</option>
+								    <option value="39">Others</option>
+								    <option value="100">Others</option>
+								    <option value="69">Others</option>
+								    <option value="5">Others</option>
+								    <option value="63">Others</option>
+								    <option value="105">Others</option>
+								    <option value="18">Audit and Tax</option>
+								    <option value="15">Accounting</option>
+								    <option value="21">Legal</option>
+								    <option value="22">Personal Services</option>
+								    <option value="17">Architecture</option>
+								    <option value="20">Finance</option>
+								    <option value="16">Advertising and Marketing</option>
+								    <option value="19">Engineering</option>
+								    <option value="41">Chemicals and Allied products</option>
+								    <option value="40">Automotive and Industrial</option>
+								    <option value="111">Florist</option>
+								    <option value="114">Islamic Lifestyle</option>
+								    <option value="117">Automotive and Industrial</option>
+								    <option value="48">Import/Export</option>
+								    <option value="28">Baking &amp; Confectionaries</option>
+								    <option value="49">Personal Care Items</option>
+								    <option value="25">Beverage/Soft drinks</option>
+								    <option value="50">Pharmaceuticals</option>
+								    <option value="51">Toys Kids and Baby</option>
+								    <option value="45">Furniture and Interior Design</option>
+								    <option value="44">Food and Grocery</option>
+								    <option value="112">Gifts</option>
+								    <option value="46">Health and Beauty</option>
+								    <option value="47">Household Items</option>
+								    <option value="43">Electronics and Computers</option>
+								    <option value="89">Water collection, treament and supply</option>
+								    <option value="88">Waste management services</option>
+								    <option value="87">Power generation and Transmission</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group select">
+							<div class="styled-select">
+								<select name="currency" id="currency" class="required">
+						              <option value="" selected="selected">- Select Currency -</option>
+						              <option value="nigeria naira">Nigerian Naira</option>
+		            			</select>
+							</div>
+						</div>
+						<div class="form-group select">
+							<div class="styled-select">
+								<select name="timeszone" id="timeszone" class="required">
+						              <option value="" selected="selected">- Select Timezone -</option>
+						              <option value="1">(GMT+0100) Africa/Lagos</option>
+		            			</select>
+							</div>
+						</div>
+
+						<h6 class="fw-100">Select Payment Options</h6>
+						<div class="form-group radio_input">
+							<label><input type="checkbox" value="1" name="payment[]" class="icheck"> Pay On Delivery </label>
+						</div>
+						<div class="form-group radio_input">
+							<label><input type="checkbox" value="2" name="payment[]" class="icheck">Online Payment</label>
+						</div>
+
+						<h6 class="fw-100">Select Delivery Options </h6>
+						<div class="form-group radio_input">
+							<label><input type="checkbox" value="1" name="delivery[]" class="icheck">Merchant Delivery </label>
+						</div>
+
+						<div class="form-group terms pt-4">
 							<input name="terms" type="checkbox" class="icheck required" value="yes">
-							<label>Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a> ?</label>
-						</div>
+							<label> By submitting this form, you hereby are in agreement with our <a href="terms.html" target="_blank">terms and conditions and disclaimer</a></label>
 					</div>
 					<!-- /step-->
 				</div>
@@ -149,6 +445,28 @@
 	<script src="js/jquery.wizard.js"></script>
 	<script src="js/jquery.validate.js"></script>
 	<script src="js/admission_func.js"></script>
+
+	<script>
+		$(function() {
+		    $('input[name="acc-type"]').on('click', function() {
+		        if ($(this).val() == '1') {
+		            $('#ind').show();
+		            $('#no-acc').hide();
+		            $('#corp').hide();
+		        }
+		        else if ($(this).val() == '2') {
+		            $('#corp').show();
+		            $('#ind').hide();
+		            $('#no-acc').hide();
+		        }
+		        else if ($(this).val() == '3') {
+		            $('#no-acc').show();
+		            $('#corp').hide();
+		            $('#ind').hide();
+		        }
+		    });
+		});
+	</script>
   
 </body>
 
