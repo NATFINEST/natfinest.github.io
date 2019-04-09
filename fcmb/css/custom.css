@@ -360,12 +360,52 @@ a#filters_col_bt{
 label {
     display: block;
 }
-
 input,
 label {
     margin: .4rem 0;
 }
-
 .note {
     font-size: .8em;
+}
+.input-container {
+  margin: 1.5em auto;
+  max-width: 300px;
+  background-color: #EDEDED;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.file-info,.file-info2 {
+  font-size: 0.9em;
+}
+
+.browse-btn,.browse-btn2 {
+  background: #333;
+  color: #fff;
+  min-height: 35px;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.browse-btn:hover {
+  background: #4ec0b4;
+}
+
+@media (max-width: 300px) {
+  button {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  
+  .file-info {
+    display: block;
+    margin: 10px 5px;
+  }
 }

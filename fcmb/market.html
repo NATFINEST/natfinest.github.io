@@ -57,8 +57,8 @@
 					<div class="step">
 						<div id="intro">
 							<figure><img src="img/wizard_intro_icon.svg" alt=""></figure>
-							<h1>FCMB SME Market</h1>
-							<p>Expand your business and sign up for fre Sme Market today.</p>
+							<h1>FCMB SME SERVICE HUB</h1>
+							<p>Expand your business and sign up for free Sme Service Hub today.</p>
 						</div>
 					</div>
 
@@ -69,7 +69,7 @@
 						</div>
 						<div class="input-group mb-3">
 						  <input type="text" name="subdomain" class="form-control required" placeholder="Store Subdomain" aria-label="Store Subdomain" aria-describedby="basic-addon2">
-						  <span class="input-group-addon mt-2" id="basic-addon2">.smemarkethub.com</span>
+						  <span class="input-group-addon mt-2" id="basic-addon2">.smeservicehub.com</span>
 						</div>
 						<div class="form-group">
 							<input type="email" name="email" class="form-control required" placeholder="Your Email">
@@ -102,65 +102,13 @@
 						</label>
 
 						<div class="form-group" id="ind" style="display: none;">
-							<input type="text" name="individual-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
+							<input type="digits" name="individual-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
 						</div>
 						<div class="form-group" id="corp" style="display: none;">
-							<input type="text" name="corporate-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
+							<input type="digits" name="corporate-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
 						</div>
 						<div id="no-acc" style="display: none;">
-							<div class="form-group select">
-								<div class="styled-select">
-									<select name="name-acc-type" id="name-acc-type" class="">
-							              <option value="" selected="selected">- Select Account Type -</option>
-							              <option value="1">Individual</option>
-							              <option value="2">Corporate</option>
-			            			</select>
-								</div>
-							</div>
-							<div class="form-group select">
-								<div class="styled-select">
-									<select name="name-acc-location" id="name-acc-location" class="">
-							              <option value="" selected="selected">- Select Branch Location -</option>
-							              <option value="Abuja FCT">Abuja FCT</option>
-							              <option value="Abia">Abia</option>
-							              <option value="Adamawa">Adamawa</option>
-							              <option value="Akwa Ibom">Akwa Ibom</option>
-							              <option value="Anambra">Anambra</option>
-							              <option value="Bauchi">Bauchi</option>
-							              <option value="Bayelsa">Bayelsa</option>
-							              <option value="Benue">Benue</option>
-							              <option value="Borno">Borno</option>
-							              <option value="Cross River">Cross River</option>
-							              <option value="Delta">Delta</option>
-							              <option value="Ebonyi">Ebonyi</option>
-							              <option value="Edo">Edo</option>
-							              <option value="Ekiti">Ekiti</option>
-							              <option value="Enugu">Enugu</option>
-							              <option value="Gombe">Gombe</option>
-							              <option value="Imo">Imo</option>
-							              <option value="Jigawa">Jigawa</option>
-							              <option value="Kaduna">Kaduna</option>
-							              <option value="Kano">Kano</option>
-							              <option value="Katsina">Katsina</option>
-							              <option value="Kebbi">Kebbi</option>
-							              <option value="Kogi">Kogi</option>
-							              <option value="Kwara">Kwara</option>
-							              <option value="Lagos">Lagos</option>
-							              <option value="Nassarawa">Nassarawa</option>
-							              <option value="Niger">Niger</option>
-							              <option value="Ogun">Ogun</option>
-							              <option value="Ondo">Ondo</option>
-							              <option value="Osun">Osun</option>
-							              <option value="Oyo">Oyo</option>
-							              <option value="Plateau">Plateau</option>
-							              <option value="Rivers">Rivers</option>
-							              <option value="Sokoto">Sokoto</option>
-							              <option value="Taraba">Taraba</option>
-							              <option value="Yobe">Yobe</option>
-							              <option value="Zamfara">Zamfara</option>
-			            			</select>
-								</div>
-							</div>
+							<p>You would need to <a href="http://on.fcmb.com/YourAccountIn4Minutes-Website" target="_blank">open a an account</a> </p>
 						</div>
 					</div>
 					<!-- /step-->
@@ -238,11 +186,11 @@
 					<!-- /step-->
 
 					<div class="submit step">
-						<h3 class="main_question"><strong>4/4</strong>Store Information</h3>
+						<h3 class="main_question"><strong>4/4</strong>Company Information</h3>
 						<div class="form-group select">
 							<div class="styled-select">
-								<select class="required" id="store-category" name="store-category">
-								    <option value="0">---- Select Store Category ----</option>
+								<select class="required" id="company-category" name="company-category">
+								    <option value="0">- Select Company Category -</option>
 								    <option value="64">Broadcasting and Programming</option>
 								    <option value="99">Travel Agency</option>
 								    <option value="97">Resort centers</option>
@@ -370,39 +318,48 @@
 		            			</select>
 							</div>
 						</div>
-						<div class="form-group select">
-							<div class="styled-select">
-								<select name="timeszone" id="timeszone" class="required">
-						              <option value="" selected="selected">- Select Timezone -</option>
-						              <option value="1">(GMT+0100) Africa/Lagos</option>
-		            			</select>
-							</div>
-						</div>
 
 						<h6 class="fw-100">Select Payment Options</h6>
 						<div class="form-group radio_input">
-							<label><input type="checkbox" value="1" name="payment[]" class="icheck"> Pay On Delivery </label>
+							<label><input type="checkbox" value="1" name="payment[]" class="icheck"> Pay After Service Delivery </label>
 						</div>
 						<div class="form-group radio_input">
-							<label><input type="checkbox" value="2" name="payment[]" class="icheck">Online Payment</label>
+							<label><input type="checkbox" value="2" name="payment[]" class="icheck">Pay Now - Online Payment</label>
 						</div>
-
-						<h6 class="fw-100">Select Delivery Options </h6>
 						<div class="form-group radio_input">
-							<label><input type="checkbox" value="1" name="delivery[]" class="icheck">Merchant Delivery </label>
+							<label><input type="checkbox" value="3" name="payment[]" class="icheck">Pay in Two Installment (Before & After Payment)</label>
 						</div>
 
-						<div class="form-group terms pt-4">
-							<input name="terms" type="checkbox" class="icheck required" value="yes">
-							<label> By submitting this form, you hereby are in agreement with our <a href="terms.html" target="_blank">terms and conditions and disclaimer</a></label>
+						<h6 class="fw-100">Upload Business Profile(PDF only)</h6>
+						<div class="input-container">
+						  <input type="file" id="real-input">
+						    <button class="browse-btn">
+						      Browse Files
+						    </button>
+						  <span class="file-info">Upload a PDF documnet</span>
+						</div>
+
+						<h6 class="fw-100">Upload Cover Image (300px X 300px)</h6>
+						<div class="input-container">
+						  <input type="file" id="real-input2">
+						    <button class="browse-btn2">
+						      Browse Files
+						    </button>
+						  <span class="file-info2">Upload a JPEG file</span>
+						</div>
+
+						<div class="form-group terms pt-4 row">
+							<input name="terms" type="checkbox" class="icheck required col-2" value="yes">
+							<label class="col-10"> By submitting this form, you hereby are in agreement with our <a href="terms.html" target="_blank">terms and conditions and disclaimer</a></label>
 					</div>
 					<!-- /step-->
+
 				</div>
 				<!-- /middle-wizard -->
 				<div id="bottom-wizard">
 					<button type="button" name="backward" class="backward">Backward </button>
 					<button type="button" name="forward" class="forward">Forward</button>
-					<button type="submit" name="process" class="submit">Create My Store</button>
+					<button type="submit" name="process" class="submit">Create My Company</button>
 				</div>
 				<!-- /bottom-wizard -->
 			</form>
@@ -465,6 +422,43 @@
 		            $('#ind').hide();
 		        }
 		    });
+		});
+	</script>
+
+	<script>
+		const uploadButton = document.querySelector('.browse-btn');
+		const uploadButton2 = document.querySelector('.browse-btn2');
+		const fileInfo = document.querySelector('.file-info');
+		const fileInfo2 = document.querySelector('.file-info2');
+		const realInput = document.getElementById('real-input');
+		const realInput2 = document.getElementById('real-input2');
+
+		uploadButton.addEventListener('click', (e) => {
+		    e.preventDefault();
+		  	realInput.click();
+		});
+
+		uploadButton2.addEventListener('click', (e) => {
+		    e.preventDefault();
+		  	realInput2.click();
+		});
+
+		realInput.addEventListener('change', () => {
+		  const name = realInput.value.split(/\\|\//).pop();
+		  const truncated = name.length > 20 
+		    ? name.substr(name.length - 20) 
+		    : name;
+		  
+		  fileInfo.innerHTML = truncated;
+		});
+
+		realInput2.addEventListener('change', () => {
+		  const name = realInput2.value.split(/\\|\//).pop();
+		  const truncated = name.length > 20 
+		    ? name.substr(name.length - 20) 
+		    : name;
+		  
+		  fileInfo2.innerHTML = truncated;
 		});
 	</script>
   
