@@ -330,18 +330,20 @@
 
 						<h6 class="fw-100">Upload Business Profile(PDF only)</h6>
 						<div class="input-container required">
-						  <input type="file" id="real-input">
+						  <input type="file" id="real-input" class="required">
 						    <button class="browse-btn">
 						      Browse Files
 						    </button>
+  							<span class="file-info">Upload a file</span>
 						</div>
 
 						<h6 class="fw-100">Upload Cover Image (300px X 300px)</h6>
 						<div class="input-container required">
-						  <input type="file" id="real-input2">
+						  <input type="file" id="real-input2" class="required">
 						    <button class="browse-btn2">
 						      Browse Files
-						    </button>
+						    </button>  
+						    <span class="file-info2">Upload a file</span>
 						</div>
 
 						<div class="form-group terms pt-4 row">
@@ -426,22 +428,25 @@
 	</script>
 
 	<script type="text/javascript">
-		$("#company-category").on({
-		  "change": function() {
-		    $(this).blur();
-		  },
-		  'focus': function() {
-		    console.log("displayed");
-		  },
-		  "blur": function() {
-		    $('#forward').hide();
-		    $('#backward').hide();
-		  },
-		  "keyup": function(e) {
-		    if (e.keyCode == 27)
-		      console.log("displayed");
-		  }
-		});
+
+		$( "#wizard_container" ).wizard({
+            submit: ".submit",
+            beforeForward: function( event, state ) {
+                
+                if ( state.stepIndex === 1 ) {
+		            $('#forward').show();
+                }
+                else if ( state.stepIndex === 2  ) {
+		            $('#forward').show();
+		            $('#backward').show();     
+		        }
+		        else if ( state.stepIndex === 4  ) {
+		            $('#forward').hide();
+		            $('#backward').hide();
+                } 
+                return $( this ).wizard( "form" ).valid();
+            }
+        });
 
 	</script>
 
