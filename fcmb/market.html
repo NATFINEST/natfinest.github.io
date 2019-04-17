@@ -63,14 +63,38 @@
 						</div>
 					</div>
 
-					<div class="step dacc">
+					<div class="step">
+						<h3 class="main_question"><strong>1/4</strong>Sign Up</h3>
+						<div class="form-group">
+							<input type="text" name="storename" class="form-control required" placeholder="Store Name">
+						</div>
+						<div class="input-group mb-3">
+						  <input type="text" name="subdomain" class="form-control required" placeholder="Store Subdomain" aria-label="Store Subdomain" aria-describedby="basic-addon2">
+						  <span class="input-group-addon mt-2" id="basic-addon2">.smeservicehub.com</span>
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control required" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="text" name="admin" class="form-control required" placeholder="Admin Username">
+						</div>
+						<div class="form-group">
+							<input type="password" id="pwd" name="pwd" class="form-control required" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<input type="password" id="ver_pwd" name="ver_pwd" data-rule-equalto='#pwd' class="form-control required" placeholder="Verify Password">
+						</div>
+					</div>
+					<!-- /step-->
+
+					<div class="step">
 						<h3 class="main_question"><strong>2/4</strong>Please indicate what type of account you have with FCMB</h3>
 						<label class="container round">Individual
 						  	<input type="radio" name="acc-type" value="1" class="required">
 						  	<span class="checkmark"></span>
 						</label>
 						<label class="container round">Corporate
-						  	<input type="radio" name="acc-type" id="444" value="2">
+						  	<input type="radio" name="acc-type" value="2">
 						  	<span class="checkmark"></span>
 						</label>
 						<label class="container round">I don't have an account
@@ -79,13 +103,82 @@
 						</label>
 
 						<div class="form-group" id="ind" style="display: none;">
-							<input type="digits" maxlength="10" minlength="10" name="individual-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
-						</div>
-						<div class="form-group" id="corp" style="display: none;">
-							<input type="digits" maxlength="10" minlength="10" name="corporate-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
+							<input type="digits" maxlength="10" minlength="10" name="accno" class="form-control required" placeholder="10 Digit NUBAN Account Number">
 						</div>
 						<div id="no-acc" style="display: none;">
 							<p><a href="http://on.fcmb.com/YourAccountIn4Minutes-Website" target="_blank" style="font-size: 16px;font-weight: bold;">Click here to open an account in order to complete registration</a> </p>
+						</div>
+					</div>
+					<!-- /step-->
+
+					<div class="step">
+						<h3 class="main_question"><strong>3/4</strong>Contact Information</h3>
+						<div class="form-group">
+							<input type="text" name="fullname" class="form-control required" placeholder="Your Fullname">
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control required" placeholder="Contact Email">
+						</div>
+						<div class="form-group">
+							<input type="digits" name="phone" maxlength="11" minlength="11" class="form-control required" placeholder="Contact Phone Number">
+						</div>
+						<div class="form-group">
+							<input type="text" name="bus-add" class="form-control required" placeholder="Business Address">
+						</div>
+						<div class="form-group">
+							<input type="text" name="city" class="form-control required" placeholder="City">
+						</div>
+						<div class="form-group select">
+							<div class="styled-select">
+								<select name="state" id="state" class="required">
+						              <option value="" selected="selected">- Select State -</option>
+						              <option value="Abuja FCT">Abuja FCT</option>
+						              <option value="Abia">Abia</option>
+						              <option value="Adamawa">Adamawa</option>
+						              <option value="Akwa Ibom">Akwa Ibom</option>
+						              <option value="Anambra">Anambra</option>
+						              <option value="Bauchi">Bauchi</option>
+						              <option value="Bayelsa">Bayelsa</option>
+						              <option value="Benue">Benue</option>
+						              <option value="Borno">Borno</option>
+						              <option value="Cross River">Cross River</option>
+						              <option value="Delta">Delta</option>
+						              <option value="Ebonyi">Ebonyi</option>
+						              <option value="Edo">Edo</option>
+						              <option value="Ekiti">Ekiti</option>
+						              <option value="Enugu">Enugu</option>
+						              <option value="Gombe">Gombe</option>
+						              <option value="Imo">Imo</option>
+						              <option value="Jigawa">Jigawa</option>
+						              <option value="Kaduna">Kaduna</option>
+						              <option value="Kano">Kano</option>
+						              <option value="Katsina">Katsina</option>
+						              <option value="Kebbi">Kebbi</option>
+						              <option value="Kogi">Kogi</option>
+						              <option value="Kwara">Kwara</option>
+						              <option value="Lagos">Lagos</option>
+						              <option value="Nassarawa">Nassarawa</option>
+						              <option value="Niger">Niger</option>
+						              <option value="Ogun">Ogun</option>
+						              <option value="Ondo">Ondo</option>
+						              <option value="Osun">Osun</option>
+						              <option value="Oyo">Oyo</option>
+						              <option value="Plateau">Plateau</option>
+						              <option value="Rivers">Rivers</option>
+						              <option value="Sokoto">Sokoto</option>
+						              <option value="Taraba">Taraba</option>
+						              <option value="Yobe">Yobe</option>
+						              <option value="Zamfara">Zamfara</option>
+		            			</select>
+							</div>
+						</div>
+						<div class="form-group select">
+							<div class="styled-select">
+								<select name="Country" id="Country" class="required">
+						              <option value="" selected="selected">- Select Country -</option>
+						              <option value="nigeria">Nigeria</option>
+		            			</select>
+							</div>
 						</div>
 					</div>
 					<!-- /step-->
@@ -257,102 +350,6 @@
 					</div>
 					<!-- /step-->
 
-					<div class="step">
-						<h3 class="main_question"><strong>1/4</strong>Sign Up</h3>
-						<div class="form-group">
-							<input type="text" name="storename" class="form-control required" placeholder="Store Name">
-						</div>
-						<div class="input-group mb-3">
-						  <input type="text" name="subdomain" class="form-control required" placeholder="Store Subdomain" aria-label="Store Subdomain" aria-describedby="basic-addon2">
-						  <span class="input-group-addon mt-2" id="basic-addon2">.smeservicehub.com</span>
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" class="form-control required" placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<input type="text" name="admin" class="form-control required" placeholder="Admin Username">
-						</div>
-						<div class="form-group">
-							<input type="password" id="pwd" name="pwd" class="form-control required" placeholder="Password">
-						</div>
-						<div class="form-group">
-							<input type="password" id="ver_pwd" name="ver_pwd" data-rule-equalto='#pwd' class="form-control required" placeholder="Verify Password">
-						</div>
-					</div>
-					<!-- /step-->
-
-					<div class="step">
-						<h3 class="main_question"><strong>3/4</strong>Contact Information</h3>
-						<div class="form-group">
-							<input type="text" name="fullname" class="form-control required" placeholder="Your Fullname">
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" class="form-control required" placeholder="Contact Email">
-						</div>
-						<div class="form-group">
-							<input type="digits" name="phone" maxlength="11" minlength="11" class="form-control required" placeholder="Contact Phone Number">
-						</div>
-						<div class="form-group">
-							<input type="text" name="bus-add" class="form-control required" placeholder="Business Address">
-						</div>
-						<div class="form-group">
-							<input type="text" name="city" class="form-control required" placeholder="City">
-						</div>
-						<div class="form-group select">
-							<div class="styled-select">
-								<select name="state" id="state" class="required">
-						              <option value="" selected="selected">- Select State -</option>
-						              <option value="Abuja FCT">Abuja FCT</option>
-						              <option value="Abia">Abia</option>
-						              <option value="Adamawa">Adamawa</option>
-						              <option value="Akwa Ibom">Akwa Ibom</option>
-						              <option value="Anambra">Anambra</option>
-						              <option value="Bauchi">Bauchi</option>
-						              <option value="Bayelsa">Bayelsa</option>
-						              <option value="Benue">Benue</option>
-						              <option value="Borno">Borno</option>
-						              <option value="Cross River">Cross River</option>
-						              <option value="Delta">Delta</option>
-						              <option value="Ebonyi">Ebonyi</option>
-						              <option value="Edo">Edo</option>
-						              <option value="Ekiti">Ekiti</option>
-						              <option value="Enugu">Enugu</option>
-						              <option value="Gombe">Gombe</option>
-						              <option value="Imo">Imo</option>
-						              <option value="Jigawa">Jigawa</option>
-						              <option value="Kaduna">Kaduna</option>
-						              <option value="Kano">Kano</option>
-						              <option value="Katsina">Katsina</option>
-						              <option value="Kebbi">Kebbi</option>
-						              <option value="Kogi">Kogi</option>
-						              <option value="Kwara">Kwara</option>
-						              <option value="Lagos">Lagos</option>
-						              <option value="Nassarawa">Nassarawa</option>
-						              <option value="Niger">Niger</option>
-						              <option value="Ogun">Ogun</option>
-						              <option value="Ondo">Ondo</option>
-						              <option value="Osun">Osun</option>
-						              <option value="Oyo">Oyo</option>
-						              <option value="Plateau">Plateau</option>
-						              <option value="Rivers">Rivers</option>
-						              <option value="Sokoto">Sokoto</option>
-						              <option value="Taraba">Taraba</option>
-						              <option value="Yobe">Yobe</option>
-						              <option value="Zamfara">Zamfara</option>
-		            			</select>
-							</div>
-						</div>
-						<div class="form-group select">
-							<div class="styled-select">
-								<select name="Country" id="Country" class="required">
-						              <option value="" selected="selected">- Select Country -</option>
-						              <option value="nigeria">Nigeria</option>
-		            			</select>
-							</div>
-						</div>
-					</div>
-					<!-- /step-->
-
 				</div>
 				<!-- /middle-wizard -->
 				<div id="bottom-wizard">
@@ -409,44 +406,23 @@
 		        if ($(this).val() == '1') {
 		            $('#ind').show();
 		            $('#no-acc').hide();
-		            $('#corp').hide();
 		            $('#forward').show();
-		            $('#backward').show();
 		        }
 		        else if ($(this).val() == '2') {
-		            $('#corp').show();
-		            $('#ind').hide();
+		            $('#ind').show();
 		            $('#no-acc').hide();
-		            $('#forward').show();
-		            $('#backward').show();		            
+		            $('#forward').show();		            
 		        }
 		        else if ($(this).val() == '3') {
 		            $('#no-acc').show();
-		            $('#corp').hide();
 		            $('#ind').hide();
 		            $('#forward').hide();
-		            $('#backward').hide();
 		        }
 		    });
-		});form_container
+		});
 	</script>
 
 	<script type="text/javascript">
-		$("#company-category").on({
-		  "change": function() {
-		    $(this).blur();
-		  },
-		  'focus': function() {
-		    console.log("displayed");
-		  },
-		  "blur": function() {
-		    $('#forward').hide();
-		  },
-		  "keyup": function(e) {
-		    if (e.keyCode == 27)
-		      console.log("displayed");
-		  }
-		});
 
 		$(window).on("scroll", function() {
 			var scrollHeight = $(document).height();
@@ -454,7 +430,7 @@
 			if ((scrollHeight - scrollPosition) / scrollHeight > 0) {
 		        $('#backward').hide();
 		    	$('#forward').hide();
-		    	
+
 			}
 		});
 
