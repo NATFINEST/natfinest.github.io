@@ -20,7 +20,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/css/bootstrap-select.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">    
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/vendors.css" rel="stylesheet">
 	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
@@ -62,6 +63,200 @@
 						</div>
 					</div>
 
+					<div class="step dacc">
+						<h3 class="main_question"><strong>2/4</strong>Please indicate what type of account you have with FCMB</h3>
+						<label class="container round">Individual
+						  	<input type="radio" name="acc-type" value="1" class="required">
+						  	<span class="checkmark"></span>
+						</label>
+						<label class="container round">Corporate
+						  	<input type="radio" name="acc-type" id="444" value="2">
+						  	<span class="checkmark"></span>
+						</label>
+						<label class="container round">I don't have an account
+						  	<input type="radio" name="acc-type" value="3">
+						  	<span class="checkmark"></span>
+						</label>
+
+						<div class="form-group" id="ind" style="display: none;">
+							<input type="digits" maxlength="10" minlength="10" name="individual-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
+						</div>
+						<div class="form-group" id="corp" style="display: none;">
+							<input type="digits" maxlength="10" minlength="10" name="corporate-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
+						</div>
+						<div id="no-acc" style="display: none;">
+							<p><a href="http://on.fcmb.com/YourAccountIn4Minutes-Website" target="_blank" style="font-size: 16px;font-weight: bold;">Click here to open an account in order to complete registration</a> </p>
+						</div>
+					</div>
+					<!-- /step-->
+
+					<div class="submit step final">
+						<h3 class="main_question"><strong>4/4</strong>Company Information</h3>
+
+						<h6 class="fw-100 mb-0">Select Company Category</h6>
+						<div class="form-group select required">
+							<select class="required selectpicker" id="company-category" name="company-category" multiple>
+							    <option value="64">Broadcasting and Programming</option>
+							    <option value="99">Travel Agency</option>
+							    <option value="97">Resort centers</option>
+							    <option value="8">Downstream</option>
+							    <option value="10">Midstream</option>
+							    <option value="11">Natural Gas</option>
+							    <option value="13">Upstream</option>
+							    <option value="109">Photography</option>
+							    <option value="91">Hospitals/Clinics</option>
+							    <option value="102">Club and societies</option>
+							    <option value="12">Oil and Gas services</option>
+							    <option value="2">Fishery</option>
+							    <option value="103">Charity and NGOs</option>
+							    <option value="1">Cash Crops</option>
+							    <option value="93">Veterinary Services</option>
+							    <option value="95">Airlines</option>
+							    <option value="56">Amusement and Recreation</option>
+							    <option value="96">Hotels</option>
+							    <option value="78">Transport</option>
+							    <option value="108">News &amp; Journalism</option>
+							    <option value="54">Employment services</option>
+							    <option value="104">Clearing and Forwarding</option>
+							    <option value="60">Entertainment</option>
+							    <option value="62">Sports and outdoors</option>
+							    <option value="92">Social work activities</option>
+							    <option value="9">Mining</option>
+							    <option value="7">Poultry</option>
+							    <option value="66">Printing and Publishing</option>
+							    <option value="61">Movies, Music and Games</option>
+							    <option value="59">Creative Arts</option>
+							    <option value="110">Logistics</option>
+							    <option value="58">Books and Audible</option>
+							    <option value="6">Plantation</option>
+							    <option value="76">Courier Services</option>
+							    <option value="77">Distribution</option>
+							    <option value="113">Event Planner / Organiser</option>
+							    <option value="53">Business support</option>
+							    <option value="94">Others</option>
+							    <option value="42">Clothing, Fashion, Shoes and Accessories</option>
+							    <option value="57">Arts, Crafts and Culture</option>
+							    <option value="98">Restaurants</option>
+							    <option value="3">Food crops</option>
+							    <option value="79">Warehousing</option>
+							    <option value="106">Luxury Clothing, Fashion, Shoes and Accessories</option>
+							    <option value="4">Livestock</option>
+							    <option value="67">Software</option>
+							    <option value="68">Telecommunications</option>
+							    <option value="65">Internet and IT services</option>
+							    <option value="101">Religious Bodies</option>
+							    <option value="70">Agency, Lease and Sales</option>
+							    <option value="72">Contruction and Civil engineering</option>
+							    <option value="118">Coding</option>
+							    <option value="71">Building and Construction</option>
+							    <option value="74">Residential/Commercial property</option>
+							    <option value="73">Home/Commercial developers</option>
+							    <option value="84">Tertiary</option>
+							    <option value="107">Specialized Educational Services</option>
+							    <option value="82">Pre-primary and primary</option>
+							    <option value="81">General educational services</option>
+							    <option value="85">Trade/Vocation schools</option>
+							    <option value="83">Secondary</option>
+							    <option value="27">Chemical and Alllied products</option>
+							    <option value="30">Machinery and Equipments</option>
+							    <option value="37">Rubber and allied products</option>
+							    <option value="24">Aluminium and Allied products</option>
+							    <option value="33">Paper and wood products</option>
+							    <option value="35">Pharmaceuticals</option>
+							    <option value="32">Paints</option>
+							    <option value="31">Metal products</option>
+							    <option value="26">Building materials</option>
+							    <option value="38">Textile</option>
+							    <option value="36">Printing and publishing materials</option>
+							    <option value="29">Leather and leather products</option>
+							    <option value="34">Personal Care</option>
+							    <option value="14">IT solutions</option>
+							    <option value="75">Law</option>
+							    <option value="90">Graphic design</option>
+							    <option value="23">Customer service</option>
+							    <option value="86">Content marketing</option>
+							    <option value="80">Administration</option>
+							    <option value="52">Outsourcing</option>
+							    <option value="55">Training and development</option>
+							    <option value="39">Tax and advisory</option>
+							    <option value="100">Business advisory</option>
+							    <option value="69">Telecommunication</option>
+							    <option value="5">Recruitment</option>
+							    <option value="63">Planning and consulting services</option>
+							    <option value="105">Project management</option>
+							    <option value="5">Web creation</option>
+							    <option value="63">Medical</option>
+							    <option value="105">crop farming</option>
+							    <option value="5">Livestock farming</option>
+							    <option value="63">Event planning</option>
+							    <option value="105">Hotel management</option>
+							    <option value="63">Sports & Fitness</option>
+							    <option value="105">Insurance</option>
+							    <option value="63">Rentals</option>
+							    <option value="18">Audit and Tax</option>
+							    <option value="15">Accounting</option>
+							    <option value="21">Legal</option>
+							    <option value="22">Personal Services</option>
+							    <option value="17">Architecture</option>
+							    <option value="20">Finance</option>
+							    <option value="16">Advertising and Marketing</option>
+							    <option value="19">Engineering</option>
+							    <option value="41">Chemicals and Allied products</option>
+							    <option value="40">Automotive and Industrial</option>
+							    <option value="111">Florist</option>
+							    <option value="114">Islamic Lifestyle</option>
+							    <option value="117">Automotive and Industrial</option>
+							    <option value="48">Import/Export</option>
+							    <option value="28">Baking &amp; Confectionaries</option>
+							    <option value="49">Personal Care Items</option>
+							    <option value="25">Beverage/Soft drinks</option>
+							    <option value="50">Pharmaceuticals</option>
+							    <option value="51">Toys Kids and Baby</option>
+							    <option value="45">Furniture and Interior Design</option>
+							    <option value="44">Food and Grocery</option>
+							    <option value="112">Gifts</option>
+							    <option value="46">Health and Beauty</option>
+							    <option value="47">Household Items</option>
+							    <option value="43">Electronics and Computers</option>
+							    <option value="89">Water collection, treament and supply</option>
+							    <option value="88">Waste management services</option>
+							    <option value="87">Power generation and Transmission</option>
+							    <option value="39">Information Technology</option>
+							    <option value="100">Education</option>
+							    <option value="69">Consulting</option>
+							    <option value="5">Transportation</option>
+							    <option value="63">Events</option>
+							    <option value="105">Media</option>
+							    <option value="39">Financial Services</option>
+							    <option value="100">Professional Services</option>
+							    <option value="69">Hospitality</option>
+							    <option value="5">Medicine</option>
+							    <option value="63">Wellness</option>
+							</select>
+						</div>
+
+						<h6 class="fw-100">Upload Business Profile(PDF only)</h6>
+						<div class="input-container required">
+						  <input type="file" id="real-input">
+						    <button class="browse-btn">
+						      Browse Files
+						    </button>
+						</div>
+
+						<h6 class="fw-100">Upload Cover Image (300px X 300px)</h6>
+						<div class="input-container required">
+						  <input type="file" id="real-input2">
+						    <button class="browse-btn2">
+						      Browse Files
+						    </button>
+						</div>
+
+						<div class="form-group terms pt-4 row">
+							<input name="terms" type="checkbox" class="icheck required col-2" value="yes">
+							<label class="col-10"> By submitting this form, you hereby are in agreement with our <a href="terms.html" target="_blank">terms and conditions and disclaimer</a></label>
+					</div>
+					<!-- /step-->
+
 					<div class="step">
 						<h3 class="main_question"><strong>1/4</strong>Sign Up</h3>
 						<div class="form-group">
@@ -78,37 +273,10 @@
 							<input type="text" name="admin" class="form-control required" placeholder="Admin Username">
 						</div>
 						<div class="form-group">
-							<input type="password" name="ver_pwd" class="form-control required" placeholder="Password">
+							<input type="password" id="pwd" name="pwd" class="form-control required" placeholder="Password">
 						</div>
 						<div class="form-group">
-							<input type="password" name="pwd" class="form-control required" placeholder="Verify Password">
-						</div>
-					</div>
-					<!-- /step-->
-
-					<div class="step">
-						<h3 class="main_question"><strong>2/4</strong>Please indicate what type of account you have with FCMB</h3>
-						<label class="container round">Individual
-						  	<input type="radio" name="acc-type" value="1">
-						  	<span class="checkmark"></span>
-						</label>
-						<label class="container round">Corporate
-						  	<input type="radio" name="acc-type" value="2">
-						  	<span class="checkmark"></span>
-						</label>
-						<label class="container round">I don't have an account
-						  	<input type="radio" name="acc-type" value="3">
-						  	<span class="checkmark"></span>
-						</label>
-
-						<div class="form-group" id="ind" style="display: none;">
-							<input type="digits" name="individual-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
-						</div>
-						<div class="form-group" id="corp" style="display: none;">
-							<input type="digits" name="corporate-accno" class="form-control " placeholder="10 Digit NUBAN Account Number">
-						</div>
-						<div id="no-acc" style="display: none;">
-							<p>You would need to <a href="http://on.fcmb.com/YourAccountIn4Minutes-Website" target="_blank">open a an account</a> </p>
+							<input type="password" id="ver_pwd" name="ver_pwd" data-rule-equalto='#pwd' class="form-control required" placeholder="Verify Password">
 						</div>
 					</div>
 					<!-- /step-->
@@ -122,7 +290,7 @@
 							<input type="email" name="email" class="form-control required" placeholder="Contact Email">
 						</div>
 						<div class="form-group">
-							<input type="digits" name="phone" class="form-control required" placeholder="Contact Phone Number">
+							<input type="digits" name="phone" maxlength="11" minlength="11" class="form-control required" placeholder="Contact Phone Number">
 						</div>
 						<div class="form-group">
 							<input type="text" name="bus-add" class="form-control required" placeholder="Business Address">
@@ -185,180 +353,11 @@
 					</div>
 					<!-- /step-->
 
-					<div class="submit step">
-						<h3 class="main_question"><strong>4/4</strong>Company Information</h3>
-						<div class="form-group select">
-							<div class="styled-select">
-								<select class="required" id="company-category" name="company-category">
-								    <option value="0">- Select Company Category -</option>
-								    <option value="64">Broadcasting and Programming</option>
-								    <option value="99">Travel Agency</option>
-								    <option value="97">Resort centers</option>
-								    <option value="8">Downstream</option>
-								    <option value="10">Midstream</option>
-								    <option value="11">Natural Gas</option>
-								    <option value="13">Upstream</option>
-								    <option value="109">Photography</option>
-								    <option value="91">Hospitals/Clinics</option>
-								    <option value="102">Club and societies</option>
-								    <option value="12">Oil and Gas services</option>
-								    <option value="2">Fishery</option>
-								    <option value="103">Charity and NGOs</option>
-								    <option value="1">Cash Crops</option>
-								    <option value="93">Veterinary Services</option>
-								    <option value="95">Airlines</option>
-								    <option value="56">Amusement and Recreation</option>
-								    <option value="96">Hotels</option>
-								    <option value="78">Transport</option>
-								    <option value="108">News &amp; Journalism</option>
-								    <option value="54">Employment services</option>
-								    <option value="104">Clearing and Forwarding</option>
-								    <option value="60">Entertainment</option>
-								    <option value="62">Sports and outdoors</option>
-								    <option value="92">Social work activities</option>
-								    <option value="9">Mining</option>
-								    <option value="7">Poultry</option>
-								    <option value="66">Printing and Publishing</option>
-								    <option value="61">Movies, Music and Games</option>
-								    <option value="59">Creative Arts</option>
-								    <option value="110">Logistics</option>
-								    <option value="58">Books and Audible</option>
-								    <option value="6">Plantation</option>
-								    <option value="76">Courier Services</option>
-								    <option value="77">Distribution</option>
-								    <option value="113">Event Planner / Organiser</option>
-								    <option value="53">Business support</option>
-								    <option value="94">Others</option>
-								    <option value="42">Clothing, Fashion, Shoes and Accessories</option>
-								    <option value="57">Arts, Crafts and Culture</option>
-								    <option value="98">Restaurants</option>
-								    <option value="3">Food crops</option>
-								    <option value="79">Warehousing</option>
-								    <option value="106">Luxury Clothing, Fashion, Shoes and Accessories</option>
-								    <option value="4">Livestock</option>
-								    <option value="67">Software</option>
-								    <option value="68">Telecommunications</option>
-								    <option value="65">Internet and IT services</option>
-								    <option value="101">Religious Bodies</option>
-								    <option value="70">Agency, Lease and Sales</option>
-								    <option value="72">Contruction and Civil engineering</option>
-								    <option value="118">Coding</option>
-								    <option value="71">Building and Construction</option>
-								    <option value="74">Residential/Commercial property</option>
-								    <option value="73">Home/Commercial developers</option>
-								    <option value="84">Tertiary</option>
-								    <option value="107">Specialized Educational Services</option>
-								    <option value="82">Pre-primary and primary</option>
-								    <option value="81">General educational services</option>
-								    <option value="85">Trade/Vocation schools</option>
-								    <option value="83">Secondary</option>
-								    <option value="27">Chemical and Alllied products</option>
-								    <option value="30">Machinery and Equipments</option>
-								    <option value="37">Rubber and allied products</option>
-								    <option value="24">Aluminium and Allied products</option>
-								    <option value="33">Paper and wood products</option>
-								    <option value="35">Pharmaceuticals</option>
-								    <option value="32">Paints</option>
-								    <option value="31">Metal products</option>
-								    <option value="26">Building materials</option>
-								    <option value="38">Textile</option>
-								    <option value="36">Printing and publishing materials</option>
-								    <option value="29">Leather and leather products</option>
-								    <option value="34">Personal Care</option>
-								    <option value="14">Others</option>
-								    <option value="75">Others</option>
-								    <option value="90">Others</option>
-								    <option value="23">Others</option>
-								    <option value="86">Others</option>
-								    <option value="80">Others</option>
-								    <option value="52">Others</option>
-								    <option value="55">Others</option>
-								    <option value="39">Others</option>
-								    <option value="100">Others</option>
-								    <option value="69">Others</option>
-								    <option value="5">Others</option>
-								    <option value="63">Others</option>
-								    <option value="105">Others</option>
-								    <option value="18">Audit and Tax</option>
-								    <option value="15">Accounting</option>
-								    <option value="21">Legal</option>
-								    <option value="22">Personal Services</option>
-								    <option value="17">Architecture</option>
-								    <option value="20">Finance</option>
-								    <option value="16">Advertising and Marketing</option>
-								    <option value="19">Engineering</option>
-								    <option value="41">Chemicals and Allied products</option>
-								    <option value="40">Automotive and Industrial</option>
-								    <option value="111">Florist</option>
-								    <option value="114">Islamic Lifestyle</option>
-								    <option value="117">Automotive and Industrial</option>
-								    <option value="48">Import/Export</option>
-								    <option value="28">Baking &amp; Confectionaries</option>
-								    <option value="49">Personal Care Items</option>
-								    <option value="25">Beverage/Soft drinks</option>
-								    <option value="50">Pharmaceuticals</option>
-								    <option value="51">Toys Kids and Baby</option>
-								    <option value="45">Furniture and Interior Design</option>
-								    <option value="44">Food and Grocery</option>
-								    <option value="112">Gifts</option>
-								    <option value="46">Health and Beauty</option>
-								    <option value="47">Household Items</option>
-								    <option value="43">Electronics and Computers</option>
-								    <option value="89">Water collection, treament and supply</option>
-								    <option value="88">Waste management services</option>
-								    <option value="87">Power generation and Transmission</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group select">
-							<div class="styled-select">
-								<select name="currency" id="currency" class="required">
-						              <option value="" selected="selected">- Select Currency -</option>
-						              <option value="nigeria naira">Nigerian Naira</option>
-		            			</select>
-							</div>
-						</div>
-
-						<h6 class="fw-100">Select Payment Options</h6>
-						<div class="form-group radio_input">
-							<label><input type="checkbox" value="1" name="payment[]" class="icheck"> Pay After Service Delivery </label>
-						</div>
-						<div class="form-group radio_input">
-							<label><input type="checkbox" value="2" name="payment[]" class="icheck">Pay Now - Online Payment</label>
-						</div>
-						<div class="form-group radio_input">
-							<label><input type="checkbox" value="3" name="payment[]" class="icheck">Pay in Two Installment (Before & After Payment)</label>
-						</div>
-
-						<h6 class="fw-100">Upload Business Profile(PDF only)</h6>
-						<div class="input-container">
-						  <input type="file" id="real-input">
-						    <button class="browse-btn">
-						      Browse Files
-						    </button>
-						  <span class="file-info">Upload a PDF documnet</span>
-						</div>
-
-						<h6 class="fw-100">Upload Cover Image (300px X 300px)</h6>
-						<div class="input-container">
-						  <input type="file" id="real-input2">
-						    <button class="browse-btn2">
-						      Browse Files
-						    </button>
-						  <span class="file-info2">Upload a JPEG file</span>
-						</div>
-
-						<div class="form-group terms pt-4 row">
-							<input name="terms" type="checkbox" class="icheck required col-2" value="yes">
-							<label class="col-10"> By submitting this form, you hereby are in agreement with our <a href="terms.html" target="_blank">terms and conditions and disclaimer</a></label>
-					</div>
-					<!-- /step-->
-
 				</div>
 				<!-- /middle-wizard -->
 				<div id="bottom-wizard">
-					<button type="button" name="backward" class="backward">Backward </button>
-					<button type="button" name="forward" class="forward">Forward</button>
+					<button type="button" name="backward" class="backward" id="backward">Backward </button>
+					<button type="button" name="forward" class="forward" id="forward">Forward</button>
 					<button type="submit" name="process" class="submit">Create My Company</button>
 				</div>
 				<!-- /bottom-wizard -->
@@ -402,6 +401,7 @@
 	<script src="js/jquery.wizard.js"></script>
 	<script src="js/jquery.validate.js"></script>
 	<script src="js/admission_func.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/js/bootstrap-select.min.js"></script>
 
 	<script>
 		$(function() {
@@ -410,19 +410,53 @@
 		            $('#ind').show();
 		            $('#no-acc').hide();
 		            $('#corp').hide();
+		            $('#forward').show();
+		            $('#backward').show();
 		        }
 		        else if ($(this).val() == '2') {
 		            $('#corp').show();
 		            $('#ind').hide();
 		            $('#no-acc').hide();
+		            $('#forward').show();
+		            $('#backward').show();		            
 		        }
 		        else if ($(this).val() == '3') {
 		            $('#no-acc').show();
 		            $('#corp').hide();
 		            $('#ind').hide();
+		            $('#forward').hide();
+		            $('#backward').hide();
 		        }
 		    });
+		});form_container
+	</script>
+
+	<script type="text/javascript">
+		$("#company-category").on({
+		  "change": function() {
+		    $(this).blur();
+		  },
+		  'focus': function() {
+		    console.log("displayed");
+		  },
+		  "blur": function() {
+		    $('#forward').hide();
+		  },
+		  "keyup": function(e) {
+		    if (e.keyCode == 27)
+		      console.log("displayed");
+		  }
 		});
+
+		$(window).on("scroll", function() {
+			var scrollHeight = $(document).height();
+			var scrollPosition = $(window).height() + $(window).scrollTop();
+			if ((scrollHeight - scrollPosition) / scrollHeight > 0) {
+		        $('#backward').hide();
+		    	$('#forward').hide();
+			}
+		});
+
 	</script>
 
 	<script>

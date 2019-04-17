@@ -416,3 +416,7 @@ input[type='file'] {
     -o-background-size: cover;
     background-size: cover
 }
+
+.form-group.select {
+  margin: 20px 0;
+}
