@@ -423,15 +423,20 @@
 	</script>
 
 	<script type="text/javascript">
-
-		$(window).on("scroll", function() {
-			var scrollHeight = $(document).height();
-			var scrollPosition = $(window).height() + $(window).scrollTop();
-			if ((scrollHeight - scrollPosition) / scrollHeight > 0) {
-		        $('#backward').hide();
-		    	$('#forward').hide();
-
-			}
+		$("#company-category").on({
+		  "change": function() {
+		    $(this).blur();
+		  },
+		  'focus': function() {
+		    console.log("displayed");
+		  },
+		  "blur": function() {
+		    $('#forward').hide();
+		  },
+		  "keyup": function(e) {
+		    if (e.keyCode == 27)
+		      console.log("displayed");
+		  }
 		});
 
 	</script>
