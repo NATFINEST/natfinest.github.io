@@ -407,16 +407,19 @@
 		            $('#ind').show();
 		            $('#no-acc').hide();
 		            $('#forward').show();
+		            $('#backward').show();
 		        }
 		        else if ($(this).val() == '2') {
 		            $('#ind').show();
 		            $('#no-acc').hide();
-		            $('#forward').show();		            
+		            $('#forward').show();
+		            $('#backward').show();	            
 		        }
 		        else if ($(this).val() == '3') {
 		            $('#no-acc').show();
 		            $('#ind').hide();
 		            $('#forward').hide();
+		            $('#backward').hide();
 		        }
 		    });
 		});
@@ -432,6 +435,7 @@
 		  },
 		  "blur": function() {
 		    $('#forward').hide();
+		    $('#backward').hide();
 		  },
 		  "keyup": function(e) {
 		    if (e.keyCode == 27)
