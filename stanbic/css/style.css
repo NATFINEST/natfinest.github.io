@@ -906,7 +906,7 @@ footer .footer-subscribe button {
 .theme-inner-banner {margin-bottom: 110px;}
 .theme-inner-banner .opacity {
   background: rgba(0,0,0,0.6);
-  padding: 240px 0 190px 0;
+  padding: 160px 0 90px 0;
   text-align: center;
 }
 .theme-inner-banner .opacity h3 {color: #fff;text-transform: uppercase;}
@@ -2520,4 +2520,19 @@ footer .footer-subscribe button {
   font-size: 18px;
   text-align: center;
   margin-bottom: 22px;
+}
+.btn-reg{
+  width: 150px;
+  line-height: 36px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.6);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0396fd;
+  text-align: center;
+}
+.btn-reg:hover{
+  background:#0396fd;
+  color:#fff;
 }
