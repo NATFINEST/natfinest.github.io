@@ -208,9 +208,10 @@
 
 @media (max-width:551px) {
 	.ls-v5 .ls-nav-prev, .ls-v5 .ls-nav-next {
-		display: none!important;
+		/*display: none!important;*/
+    	margin-top: 28px;
 	}
 	.ls-v5 .ls-bottom-slidebuttons a{
-		display: none!important;
+		/*display: none!important;*/
 	}
 }

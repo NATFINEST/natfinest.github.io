@@ -647,7 +647,22 @@ body * .ls-container img,
 		margin-left: 0!important;
 		width: 100%!important;
 		margin-top: 55px!important;
-		height: 89%;
+		height: 95%;
+	}
+}
+@media (max-width:551px) {
+	html * .ls-container img,
+	body * .ls-container img,
+	#ls-global * .ls-container img {
+	    margin-left: -59px!important;
+	    width: 133%!important;
+	    height: 184px!important;
+	}
+	.ls-slide, .ls-layer, .ls-inner{
+		height: 160%!important;
+	}
+	#full-slider-wrapper{
+		height: 240px;
 	}
 }
 /*html * .ls-thumbnail a img,
