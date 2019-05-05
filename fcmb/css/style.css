@@ -749,10 +749,16 @@ ul#top_menu li a.btn_1:hover {
         height: 45px;
         margin-top: 8px;
         float: left;
-        margin-left: 15%;
+        margin-left: 5%;
+    }
+    .btn_mobile{
+        float: right;
     }
     ul#top_menu li a.btn_1{
         margin-top: -20px;
+    }
+    .ls-v5 .ls-bottom-slidebuttons, .ls-v5 .ls-nav-start, .ls-v5 .ls-nav-stop, .ls-v5 .ls-nav-sides{
+        top: -40px!important;
     }
 }
 
