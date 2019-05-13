@@ -447,8 +447,8 @@ input[type='file'] {
 }
 
 @media (max-width:767px) {
-    .grid_item figure {
-        height: 200px!important
+    .grid_item figure, .grid_item figure img {
+        height: 300px!important
     }
 }
 
