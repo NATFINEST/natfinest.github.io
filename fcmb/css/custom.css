@@ -468,3 +468,11 @@ input[type='file'] {
     -o-transform: scale(1.1);
     transform: scale(1.1)
 }
+
+#newsletter input[type=submit]{
+  margin-top: 0px;
+}
+
+.grid.grid_1 ul li figcaption, .grid ul li figure img{
+  height: 150px!important;
+}
