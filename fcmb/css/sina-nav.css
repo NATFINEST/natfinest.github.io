@@ -180,7 +180,7 @@
   max-width: 160px;
   color: #ac3e95;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 20px;
 }
 .sina-nav .sina-menu > li.active > a,
@@ -302,7 +302,7 @@
 a.btn_1 {
     background-color: #bb16a3!important;
     color: #fff!important;
-    padding: 13px 30px
+    padding: 10px 30px
 }
 a.btn_1:hover {
     background-color: #ffb81c!important;
@@ -735,7 +735,7 @@ a.btn_1:hover {
   .sina-nav .sina-menu li a {
     max-width: inherit;
     padding: 12px;
-    font-weight: 400;
+    font-weight: 600;
     display: block;
     cursor: pointer;
     font-size: 14px;
@@ -753,13 +753,11 @@ a.btn_1:hover {
   .sina-nav .sina-menu li .dropdown-menu li a:focus,
   .sina-nav .sina-menu li .mega-menu .mega-menu-col ul li a:hover,
   .sina-nav .sina-menu li .mega-menu .mega-menu-col ul li a:focus {
-    color: #222;
-    background-color: #f6f6f6;
+    color: #fff;
+    background-color: #fbb800;
   }
   .sina-nav .sina-menu > li:first-child > a {
-    border-top: 0;
-    background: #fbb800;
-  }
+    border-top: 0;  }
   .sina-nav .sina-menu > li.sina-nav-cta-btn {
     margin-left: 0;
   }
@@ -925,4 +923,48 @@ a.btn_1:hover {
   .sina-nav.wp-topbar .widget-bar {
     top: 46px;
   }
+}
+
+html * .ls-container img,
+body * .ls-container img,
+#ls-global * .ls-container img {
+  background: none !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+  height: auto!important;
+  margin-left: 0!important;
+  width: 100%!important;
+  margin-top: 0px!important;
+}
+
+@media (max-width:991px) {
+  html * .ls-container img,
+  body * .ls-container img,
+  #ls-global * .ls-container img {
+    background: none !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+    height: auto!important;
+    margin-left: 0!important;
+    width: 100%!important;
+    margin-top: 0px!important;
+    height: 95%;
+  }
+}
+@media (max-width:1024px) {
+    .margin_30_95 {
+        padding-top: 15px;
+        padding-bottom: 35px
+    }
+    .hidden_tablet {
+        display: none!important
+    }
 }
