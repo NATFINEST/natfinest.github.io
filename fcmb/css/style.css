@@ -4909,7 +4909,7 @@ ul.list_teachers li a:hover i {
 
 .grid ul li figcaption a:focus,
 .grid ul li figcaption a:hover {
-    color: #9d2f92
+    color: #fbb700
 }
 
 .grid ul li figcaption i {
@@ -5850,7 +5850,7 @@ ul.bullets li:before {
     padding-bottom: 20px
 }
 
-@media (max-width:991px) {
+@media (max-width:1024px) {
     .margin_30_95 {
         padding-top: 15px;
         padding-bottom: 35px
