@@ -629,7 +629,7 @@ body * .ls-container img,
 	height: auto!important;
 	margin-left: 0!important;
 	width: 100%!important;
-	margin-top: 0px!important;
+	margin-top: 87px!important;
 }
 
 @media (max-width:991px) {
@@ -646,7 +646,7 @@ body * .ls-container img,
 		height: auto!important;
 		margin-left: 0!important;
 		width: 100%!important;
-		margin-top: 0px!important;
+		margin-top: 55px!important;
 		height: 95%;
 	}
 }
