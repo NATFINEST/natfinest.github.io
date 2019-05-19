@@ -212,13 +212,13 @@
 				});
 
 				$('.dropdown-menu', menu).addClass(anim+'animated');
-				$('.dropdown', menu).on('mouseenter', function(){
+				$('.dropdown', menu).on('touchstart mouseenter', function(){
 					var dropdown = this;
 
 					$('.dropdown-menu', dropdown).eq(0).removeClass(getOut).stop().fadeIn().addClass(getIn);
 					$(dropdown).addClass('on');
 				});
-				$('.dropdown', menu).on('mouseleave', function(){
+				$('.dropdown', menu).on('touchstart mouseleave', function(){
 					var dropdown = this;
 
 					$('.dropdown-menu', dropdown).eq(0).removeClass(getIn).stop().fadeOut().addClass(getOut);
