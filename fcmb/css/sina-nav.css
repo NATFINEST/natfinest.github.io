@@ -969,3 +969,6 @@ body * .ls-container img,
         display: none!important
     }
 }
+#hero_in{
+  margin-top: 0;
+}
