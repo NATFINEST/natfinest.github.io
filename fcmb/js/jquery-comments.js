@@ -1279,7 +1279,7 @@
                 });
             } else {
                 var profilePicture = $('<i/>', {
-                    'class': 'fa fa-user'
+                    'class': 'icon-user'
                 });
             }
             profilePicture.addClass('profile-picture');
