@@ -30,6 +30,7 @@
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/loan.css" rel="stylesheet">
 	<!-- material design icons -->
     <link href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
     <!-- material design icons -->
@@ -112,11 +113,94 @@
 		</section>
 		<!--/hero_in-->
 
-		<div class="container">
+		<div class="container-fluid">
 				<div class="row justify-content-center text-center">
 					<div class="col-xl-7 col-lg-9">
-						<img src="img/404-error.jpg" class="w-100">
-						<h6>We're sorry, but the page you were looking for is not available yet.</h6>
+						
+						<div class="card my-4">
+						  	<div class="card-header text-white text-left" style="background: linear-gradient(to right, rgb(92, 38, 132) 0%,rgb(187, 22, 163) 100%); font-weight: 500">
+						    	Simple Loan Calculator
+						  	</div>
+						  	<div class="card-body px-4 mx-0" style="border: 1px solid #ccc">
+						  		<div class="row my-3">
+									<div class="col-lg-7 col-6 text-left font-weight-bold mt-3">
+										<span class="loan-number">1</span>
+							    		Loan Amount
+							    	</div>
+							    	<div class="col-lg-5 col-6">
+							    		<div class="input-group">
+										  <div class="input-group-prepend">
+										    <span class="input-group-text">&#x20A6;</span>
+										  </div>
+										  <input type="text" class="form-control">
+										</div>
+							    	</div>
+							    </div>
+
+						  		<div class="row my-3">
+							    	<div class="col-lg-7 col-6 text-left font-weight-bold mt-3">
+										<span class="loan-number">2</span>
+							    		Interest Rate
+							    	</div>
+							    	<div class="col-lg-5 col-6">
+							    		<div class="input-group">
+										  <input type="text" class="form-control">
+										  <div class="input-group-append">
+										    <span class="input-group-text">%</span>
+										  </div>
+										</div>
+							    	</div>
+							    </div>
+
+
+						  		<div class="row my-3">
+							    	<div class="col-lg-7 col-6 text-left font-weight-bold mt-3">
+										<span class="loan-number">3</span>
+							    		Number of Years
+							    	</div>
+							    	<div class="col-lg-5 col-6">
+							    		<div class="input-group">
+										  <input type="text" class="form-control">
+										</div>
+							    	</div>
+							    </div>
+
+							  	<div class="text-center w-100">
+									<a href="#0" class="btn_1 rounded add_top_30">Calculate</a>					  		
+							  	</div>
+						  	</div>
+						</div>
+
+						<div class="card my-4">
+						  	<div class="card-header text-left text-white" style="background: linear-gradient(to right, rgb(92, 38, 132) 0%,rgb(187, 22, 163) 100%); font-weight: 500">
+						    	Your Monthly Payments
+						  	</div>
+						  	<div class="card-body px-4 mx-0" style="border: 1px solid #ccc">
+						  		<div class="row">
+						  			<h6>Base Calculations</h6>
+						  		</div>
+						  		<div class="row my-3">
+									<div class="col-12 col-sm-3 text-left mt-3">
+							    		<p class="float-left text-muted mb-3 float-sm-none fw-500">Loan Amount</p>
+							    		<h5 class="float-right float-sm-none">&#x20A6; 220</h5>
+							    	</div>
+							    	<div class="col-12 col-sm-3 text-left mt-3">
+							    		<p class="float-left text-muted mb-3 float-sm-none fw-500">Interest Rates</p>
+							    		<h5 class="float-right float-sm-none">220 %</h5>
+							    	</div>
+							    	<div class="col-12 col-sm-3 text-left mt-3">
+							    		<p class="float-left text-muted mb-3 float-sm-none fw-500">Number of Years</p>
+							    		<h5 class="float-right float-sm-none">220</h5>
+							    	</div>
+							    	<div class="col-12 col-sm-3 text-left mt-3">
+							    		<p class="float-left text-muted mb-3 float-sm-none fw-500">Monthly Payments</p>
+							    		<h5 class="float-right float-sm-none">&#x20A6; 220</h5>
+							    	</div>
+							    </div>
+
+						  	</div>
+						</div>
+
 					</div>
 				</div>
 				<!-- /row -->
