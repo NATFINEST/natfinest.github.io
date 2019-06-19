@@ -969,6 +969,6 @@ body * .ls-container img,
         display: none!important
     }
 }
-#hero_in{
+#hero_in,.slider{
   margin-top: 0!important;
 }
