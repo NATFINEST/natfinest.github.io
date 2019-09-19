@@ -872,7 +872,7 @@ a.btn_1:hover {
   .sina-nav .sina-brand > img {
     height: 75%;
     padding: 6px 0;
-    width: 50px;
+    width: auto;
   }
   .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-col a {
     color: #fff;

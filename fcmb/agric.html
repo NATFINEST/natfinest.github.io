@@ -33,74 +33,111 @@
 	<!-- material design icons -->
     <link href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
     <!-- material design icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/sina-nav.css">
+</head>
 
 </head>
 
 <body>
 	
 	<div id="page">
-		
-	<header class="header py-2 menu_2 woman">
 		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Preload -->
-		<div id="logo">
-			<a href="index.html"><img src="img/logo.png" width="70" height="70" data-retina="true" alt=""></a>
+		<div class="nav-container">
+			<nav class="sina-nav mobile-sidebar navbar-fixed navbar-reverse" data-top="60">
+				<div class="container-fluid">
+
+
+					<div class="extension-nav">
+						<a class="sina-brand mt-1" href="#">
+							<img src="img/logo.png" width="170" height="70" data-retina="true" alt="">
+						</a>
+					</div><!-- .extension-nav -->
+
+					<div class="sina-nav-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<ul class=" mt-lg-4" style="">
+							<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Login</a></li>
+						</ul>
+					</div><!-- .sina-nav-header -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="sina-menu sina-menu-center mr-4" style="margin-top: 2rem" data-in="fadeInLeft" data-out="fadeInOut">
+							<li class="dropdown menu-item-has-mega-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Hubs</a>
+								<div class="mega-menu dropdown-menu w-75" style="left: 20%;top:80%">
+									<ul class="mega-menu-row" role="menu">
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/hr-services">HR Services</a></li>
+												<li><a href="http://fcmb.smezone.live/service/sme-legal">Legal</a></li>
+												<li><a href="http://fcmb.smezone.live/service/accounting-services">Accounting Services</a></li>
+												<li><a href="http://fcmb.smezone.live/service/it-solutions">IT Solutions</a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/logistics">Logistics</a></li>
+												<li><a href="http://fcmb.smezone.live/service/outsourcing">Outsourcing</a></li>
+												<li><a href="http://fcmb.smezone.live/service/training-and-development">Training and Development</a></li>
+												<li><a href="http://fcmb.smezone.live/service/tax-and-advisory">Tax and Advisory</a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/planning-and-consulting-services">Consulting Services</a></li>
+												<li><a href="http://fcmb.smezone.live/service/web-creation">Web Creation</a></li>
+												<li><a href="http://fcmb.smezone.live/service/medical">HMOS</a></li>
+												<li><a href="http://fcmb.smezone.live/service/event-planning">Event Planning</a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/sports-and-fitness">Sports and Fitness</a></li>
+												<li><a href="http://fcmb.smezone.live/service/rentals">Rentals</a></li>
+											</ul>
+										</li>
+									</ul><!-- end row -->
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Expertise</a>
+								<ul class="dropdown-menu">
+				                    <li><a href="woman.html">SheVentures</a></li>
+				                    <li><a href="advisory-services.html">Advisory Services</a></li>
+				                    <li><a href="merchant-services.html">Merchant Services</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community</a>
+								<ul class="dropdown-menu">
+				                    <li><a href="music.html">Creative & Entertainment</a></li>
+				                    <li><a href="">Agric Business</a></li>
+				                    <li><a href="">Sustainable Energy</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+								<ul class="dropdown-menu">
+				                    <li><a href="courses.html">Courses</a></li>
+				                    <li><a href="events.html">Conferences</a></li>
+				                    <li><a href="events.html">Events</a></li>
+				                    <li><a href="">Loan Calculator</a></li>
+				                    <li><a href="dblog.html">Blog</a></li>
+								</ul>
+							</li>
+							<li class="d-block d-sm-block d-md-block d-lg-none"><a href="login.html">Login</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- .container -->
+			</nav>
 		</div>
-		<ul id="top_menu">
-			<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Login</a></li>
-		</ul>
-		<!-- /top_menu -->
-		<a href="#menu" class="btn_mobile">
-			<div class="hamburger woman hamburger--spin" id="hamburger">
-				<div class="hamburger-box">
-					<div class="hamburger-inner"></div>
-				</div>
-			</div>
-		</a>
-		<nav id="menu" class="main-menu woman">
-			<ul>
-				<!-- <li><span><a href="index.html">Home</a></span></li>
-				<li><span><a href="">Mentorship</a></span>
-	                <ul>
-	                    <li><a href="#" class="search-overlay-menu-btn">Become a mentor</a></li>
-	                    <li><a href="login.html">Request a mentor</a></li>
-	                </ul>
-				</li> -->
-				<li><span><a href="services.html">Service Hubs</a></span>
-	                <ul>
-	                    <li><a href="">HR Services</a></li>
-	                    <li><a href="">SME Legal</a></li>
-	                    <li><a href="">Accounting Services</a></li>
-	                    <li><a href="">Website Design</a></li>
-	                    <li><a href="">Digital Marketing</a></li>
-	                </ul>
-				</li>
-				<li><span><a href="">Expertise</a></span>
-					<ul>
-	                    <li><a href="woman.html">She Ventures</a></li>
-	                    <li><a href="advisory-services.html">Advisory Services</a></li>
-	                    <li><a href="merchant-services.html">Merchant Services</a></li>
-	                </ul>
-				</li>
-				<li><span><a href="">Community</a></span>
-	                <ul>
-	                    <li><a href="music.html">Creative & Entertainment</a></li>
-	                    <li><a href="agric.html">Agric Business</a></li>
-	                    <li><a href="energy.html">Sustainable Energy</a></li>
-	                </ul>
-				</li>
-				<li><span><a href="courses.html">Resources</a></span>
-	                <ul>
-	                    <li><a href="courses.html">Courses</a></li>
-	                    <li><a href="events.html">Conferences</a></li>
-	                    <li><a href="events.html">Events</a></li>
-	                    <li><a href="loan.html">Loan Calculator</a></li>
-	                    <li><a href="dblog.html">Blog</a></li>
-	                </ul>
-				</li>
-				<li class="d-md-none"><span><a href="login.html">Login</a></span></li>
-			</ul>
-	</header>
-	<!-- /header -->
+	
+		<nav id="menu"></nav>
 	
 	<main>
 		<section id="hero_in" class="general">
@@ -116,20 +153,20 @@
 			<div class="row my-2">
 				<div class="col-lg-12">
 					<div class="row">
-						<p class="my-3 col-md-9"><b>With various agriculture and its value chain businesses, structured trade and commodity that has been supported by FCMB Agric business, this has made us a bank of choice for Agric value chains customers by promoting and financing their business and offer sound advisory services when needed.</b></p>
+						<p class="my-3 col-md-9">With various agriculture and its value chain businesses, structured trade and commodity that has been supported by FCMB Agric business, this has made us a bank of choice for Agric value chains customers by promoting and financing their business and offer sound advisory services when needed.</p>
 
 						<p class="col-md-3"><a href="#0" class="btn_1 rounded mt-3 w-100">JOIN FORUM</a></p>
 					</div>
 
-					<p class="mt-4 mb-0"><b>We support various players in Agric value chain such as</b></p>
+					<p class="mt-4 mb-0">We support various players in Agric value chain such as</p>
 
 					<ul class="bullets">
-						<li><strong>Input providers:</strong> Fertilizer, Agro Chemicals, Animal Feed manufacturers and suppliers, seed providers, farm equipment manufacturers, suppliers or service providers.</li>
-						<li><strong>Farmers:</strong> Small holder to large scale farmers producing annual crops, plantations and Livestock such as poultry, cattle, goats, rams, pigs and fisheries.</li>
-						<li><strong>Agro Dealers:</strong> buyers and aggregators of farm produce, traders of farm produce and livestock.</li>
-						<li><strong>Agro Processors:</strong> Processors of farm grains e.g. tender millers, Oil Palm processors, soya bean processors, Cassava, rice, Sesame seeds processing, livestock processing and packaging.</li>
-						<li><strong>Industrial manufactures:</strong> e.g. Cassava syrup, Starch, ethanol.</li>
-						<li><strong>Trade and Exports:</strong> e.g. Local commodity traders, Exporters.</li>
+						<li>Input providers: Fertilizer, Agro Chemicals, Animal Feed manufacturers and suppliers, seed providers, farm equipment manufacturers, suppliers or service providers.</li>
+						<li>Farmers: Small holder to large scale farmers producing annual crops, plantations and Livestock such as poultry, cattle, goats, rams, pigs and fisheries.</li>
+						<li>Agro Dealers: buyers and aggregators of farm produce, traders of farm produce and livestock.</li>
+						<li>Agro Processors: Processors of farm grains e.g. tender millers, Oil Palm processors, soya bean processors, Cassava, rice, Sesame seeds processing, livestock processing and packaging.</li>
+						<li>Industrial manufactures: e.g. Cassava syrup, Starch, ethanol.</li>
+						<li>Trade and Exports: e.g. Local commodity traders, Exporters.</li>
 					</ul>
 
 					<p>We have a robust engagement with the below government financial institutions in making various government intervention funds at single digit rate available to support the above-mentioned Agric value chains.</p>
@@ -143,11 +180,11 @@
 						<li>NIRSAL - Nigeria Incentive-based Risk Sharing System for Agric Lending</li>
 					</ul>
 
-					<p>We also have <strong>Agro-Commodity Trade Finance</strong> which is targeted at the Agro-commodity merchants who supply grains and cash crops such as rice, maize, sorghum, soybean, wheat, ginger, cocoa, sesame, cashew, etc. to urban wholesalers, exporters and major processing/manufacturing companies in Nigeria.</p>
+					<p>We also have Agro-Commodity Trade Finance which is targeted at the Agro-commodity merchants who supply grains and cash crops such as rice, maize, sorghum, soybean, wheat, ginger, cocoa, sesame, cashew, etc. to urban wholesalers, exporters and major processing/manufacturing companies in Nigeria.</p>
 
-					<p class="mt-4 mb-0"><b>We held and supported several events in 2018 and 2019 as stated below</b></p>
+					<p class="mt-4 mb-0">We held and supported several events in 2018 and 2019 as stated below</p>
 
-					<p><b>2018 Agritech Startup Investor</b> - Wennovation Hub in partnership with FCMB announced the 2018 AgriTech Incubation Program and called ideas in Agri-finance/insurance, procurement and supply chain management, and other Agri-ICT areas. After an intense two-week review process, we selected 10 startups out of 198 total applications from across all 6 Geo-political zones for the incubation program.
+					<p>2018 Agritech Startup Investor - Wennovation Hub in partnership with FCMB announced the 2018 AgriTech Incubation Program and called ideas in Agri-finance/insurance, procurement and supply chain management, and other Agri-ICT areas. After an intense two-week review process, we selected 10 startups out of 198 total applications from across all 6 Geo-political zones for the incubation program.
 					The Wennovation Hub incubation program is set to help early stage entrepreneurs validate their ideas/markets, build sustainable business models and attract follow-on investments through a combination of peer-learning, mentorship and seed capital.
 					</p>
 
@@ -157,7 +194,7 @@
 						</div>
 					</div>
 
-					<p><b>Tractor Programme</b> - The tractor programme is in collaboration with Tractor Owners & Hiring Facilities Association of Nigeria (TOHFAN), Traxi Nigeria Limited, Tractor Owners and Operators Association of Nigeria (TOOAN), Tractor Vendors (John Deer, Tak Tractors, Niji Tractors etc.) and Propcom Mar-Karfi. So far, over 500 tractors have been financed under a Lease Finance Scheme and distributed to selected and trained members of TOHFAN and TOOAN.</p>
+					<p>Tractor Programme - The tractor programme is in collaboration with Tractor Owners & Hiring Facilities Association of Nigeria (TOHFAN), Traxi Nigeria Limited, Tractor Owners and Operators Association of Nigeria (TOOAN), Tractor Vendors (John Deer, Tak Tractors, Niji Tractors etc.) and Propcom Mar-Karfi. So far, over 500 tractors have been financed under a Lease Finance Scheme and distributed to selected and trained members of TOHFAN and TOOAN.</p>
 
 					<div class="row mb-3">
 						<div class="col-md-6">
@@ -169,10 +206,10 @@
 						</div>
 					</div>
 
-					<p>We also run <b>Agency banking Scheme Model</b> which provide financial services to farmers especially in remote communities or areas far from the locations where branches of banks are situated. This improves financial inclusion and makes it easy to administer subsidy schemes or any other initiatives that require the use of bank accounts. We adopt FCMB Easy Account (This is an account that uses a customer’s phone number apart from the first zero as his or her account number) for the scheme.
+					<p>We also run Agency banking Scheme Model which provide financial services to farmers especially in remote communities or areas far from the locations where branches of banks are situated. This improves financial inclusion and makes it easy to administer subsidy schemes or any other initiatives that require the use of bank accounts. We adopt FCMB Easy Account (This is an account that uses a customer’s phone number apart from the first zero as his or her account number) for the scheme.
 					</p>
 
-					<p class="mt-4 mb-0"><b>Features and benefits of FCMB Easy Account</b></p>
+					<p class="mt-4 mb-0">Features and benefits of FCMB Easy Account</p>
 
 					<ul class="bullets">
 						<li>Can be operated from any location in Nigeria.</li>
@@ -205,7 +242,7 @@
 		<div class="container margin_120_95">
 			<div class="row">
 				<div class="col-lg-5 col-md-12 p-r-5">
-					<p><img src="img/logo.png" width="70" height="70" data-retina="true" alt=""></p>
+					<p><img src="img/logo.png" width="170" height="70" data-retina="true" alt=""></p>
 					<p>First City Monument Bank (FCMB) Limited has introduced free banking transactions for a period of three months for new customers operating in the segment.</p>
 					<div class="follow_us">
 						<ul>
@@ -275,6 +312,7 @@
     <script src="layerslider/js/greensock.js"></script>
     <script src="layerslider/js/layerslider.transitions.js"></script>
     <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	<script src="js/sina-nav.js"></script>
     <script type="text/javascript">
         'use strict';
         $('#layerslider').layerSlider({

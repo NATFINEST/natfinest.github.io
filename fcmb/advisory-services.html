@@ -33,74 +33,110 @@
 	<!-- material design icons -->
     <link href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
     <!-- material design icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/sina-nav.css">
 
 </head>
 
 <body>
 	
 	<div id="page">
-		
-	<header class="header py-2 menu_2 woman">
 		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Preload -->
-		<div id="logo">
-			<a href="index.html"><img src="img/logo.png" width="70" height="70" data-retina="true" alt=""></a>
+		<div class="nav-container">
+			<nav class="sina-nav mobile-sidebar navbar-fixed navbar-reverse" data-top="60">
+				<div class="container-fluid">
+
+
+					<div class="extension-nav">
+						<a class="sina-brand mt-1" href="#">
+							<img src="img/logo.png" width="170" height="70" data-retina="true" alt="">
+						</a>
+					</div><!-- .extension-nav -->
+
+					<div class="sina-nav-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<ul class=" mt-lg-4" style="">
+							<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Login</a></li>
+						</ul>
+					</div><!-- .sina-nav-header -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="sina-menu sina-menu-center mr-4" style="margin-top: 2rem" data-in="fadeInLeft" data-out="fadeInOut">
+							<li class="dropdown menu-item-has-mega-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Service Hubs</a>
+								<div class="mega-menu dropdown-menu w-75" style="left: 20%;top:80%">
+									<ul class="mega-menu-row" role="menu">
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/hr-services">HR Services</a></li>
+												<li><a href="http://fcmb.smezone.live/service/sme-legal">Legal</a></li>
+												<li><a href="http://fcmb.smezone.live/service/accounting-services">Accounting Services</a></li>
+												<li><a href="http://fcmb.smezone.live/service/it-solutions">IT Solutions</a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/logistics">Logistics</a></li>
+												<li><a href="http://fcmb.smezone.live/service/outsourcing">Outsourcing</a></li>
+												<li><a href="http://fcmb.smezone.live/service/training-and-development">Training and Development</a></li>
+												<li><a href="http://fcmb.smezone.live/service/tax-and-advisory">Tax and Advisory</a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/planning-and-consulting-services">Consulting Services</a></li>
+												<li><a href="http://fcmb.smezone.live/service/web-creation">Web Creation</a></li>
+												<li><a href="http://fcmb.smezone.live/service/medical">HMOS</a></li>
+												<li><a href="http://fcmb.smezone.live/service/event-planning">Event Planning</a></li>
+											</ul>
+										</li>
+										<li class="mega-menu-col col-md-3">
+											<ul class="sub-menu">
+												<li><a href="http://fcmb.smezone.live/service/sports-and-fitness">Sports and Fitness</a></li>
+												<li><a href="http://fcmb.smezone.live/service/rentals">Rentals</a></li>
+											</ul>
+										</li>
+									</ul><!-- end row -->
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Expertise</a>
+								<ul class="dropdown-menu">
+				                    <li><a href="woman.html">SheVentures</a></li>
+				                    <li><a href="advisory-services.html">Advisory Services</a></li>
+				                    <li><a href="merchant-services.html">Merchant Services</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community</a>
+								<ul class="dropdown-menu">
+				                    <li><a href="music.html">Creative & Entertainment</a></li>
+				                    <li><a href="">Agric Business</a></li>
+				                    <li><a href="">Sustainable Energy</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+								<ul class="dropdown-menu">
+				                    <li><a href="courses.html">Courses</a></li>
+				                    <li><a href="events.html">Conferences</a></li>
+				                    <li><a href="events.html">Events</a></li>
+				                    <li><a href="">Loan Calculator</a></li>
+				                    <li><a href="dblog.html">Blog</a></li>
+								</ul>
+							</li>
+							<li class="d-block d-sm-block d-md-block d-lg-none"><a href="login.html">Login</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- .container -->
+			</nav>
 		</div>
-		<ul id="top_menu">
-			<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Login</a></li>
-		</ul>
-		<!-- /top_menu -->
-		<a href="#menu" class="btn_mobile">
-			<div class="hamburger woman hamburger--spin" id="hamburger">
-				<div class="hamburger-box">
-					<div class="hamburger-inner"></div>
-				</div>
-			</div>
-		</a>
-		<nav id="menu" class="main-menu woman">
-			<ul>
-				<!-- <li><span><a href="index.html">Home</a></span></li>
-				<li><span><a href="">Mentorship</a></span>
-	                <ul>
-	                    <li><a href="#" class="search-overlay-menu-btn">Become a mentor</a></li>
-	                    <li><a href="login.html">Request a mentor</a></li>
-	                </ul>
-				</li> -->
-				<li><span><a href="services.html">Service Hubs</a></span>
-	                <ul>
-	                    <li><a href="">HR Services</a></li>
-	                    <li><a href="">SME Legal</a></li>
-	                    <li><a href="">Accounting Services</a></li>
-	                    <li><a href="">Website Design</a></li>
-	                    <li><a href="">Digital Marketing</a></li>
-	                </ul>
-				</li>
-				<li><span><a href="">Expertise</a></span>
-					<ul>
-	                    <li><a href="woman.html">She Ventures</a></li>
-	                    <li><a href="advisory-services.html">Advisory Services</a></li>
-	                    <li><a href="merchant-services.html">Merchant Services</a></li>
-	                </ul>
-				</li>
-				<li><span><a href="">Community</a></span>
-	                <ul>
-	                    <li><a href="music.htnl">Creative & Entertainment</a></li>
-	                    <li><a href="">Agric Business</a></li>
-	                    <li><a href="">Sustainable Energy</a></li>
-	                </ul>
-				</li>
-				<li><span><a href="courses.html">Resources</a></span>
-	                <ul>
-	                    <li><a href="">Courses</a></li>
-	                    <li><a href="">Conferences</a></li>
-	                    <li><a href="">Events</a></li>
-	                    <li><a href="">Loan Calculator</a></li>
-	                    <li><a href="dblog.html">Blog</a></li>
-	                </ul>
-				</li>
-				<li class="d-md-none"><span><a href="login.html">Login</a></span></li>
-			</ul>
-	</header>
-	<!-- /header -->
+	
+		<nav id="menu"></nav>
 	
 	<main>
 		<section id="hero_in" class="d-none d-md-block" style="background: url(img/header/adv.jpg) center center no-repeat;background-size: cover;height: 270px">
@@ -118,7 +154,7 @@
 		<div class="container mt-3">
 			<div class="row">
 				<div class="col-lg-12 mt-4">
-					<p style="font-size: 16px;"><b>In a homogenous market with many players offering loan and deposit products, the unique value offering for us at FCMB is to connect with our customers’ businesses directly and address areas of pain points, we therefore recognise the impact of value added services on businesses to achieve their short to long term objectives and we currently offer the following services to our customers:</b></p>
+					<p style="font-size: 16px;">In a homogenous market with many players offering loan and deposit products, the unique value offering for us at FCMB is to connect with our customers’ businesses directly and address areas of pain points, we therefore recognise the impact of value added services on businesses to achieve their short to long term objectives and we currently offer the following services to our customers:</p>
 				</div>
 			</div>
 			<div class="row">
@@ -128,7 +164,7 @@
 							<img src="img/alt-fund.jpg" class="img-fluid" alt="">
 							<div class="info">
 						    	<h3>Capacity Building</h3>
-						    	<h6 class="text-white fw-100">Knowledge is a critical tool for business success and on a periodic basis, we organize trainings, technical sessions, conferences along target sectors including Agribusiness, Renewable Energy, Digital Technology and Creative Industry. This is to empower our customers with the right tools to face and overcome different challenges faced in running businesses in Nigeria. Some of these include the BEST, SEFi Workshop, BlockChain Technology Forum and few others </h6>
+						    	<h6 class="text-white fw-100">Knowledge is a critical tool for business success and on a periodic basis, we organize trainings, technical sessions, conferences along target sectors including Agribusiness, Renewable Energy, Digital Technology and Creative Industry. </h6>
 						    	<a href="capacity-building.html" style="float: right;color: #fff;font-weight: bold;">Read More >></a>
 							</div>
 						</figure>
@@ -141,7 +177,7 @@
 							<img src="img/bds.jpg" class="img-fluid" alt="">
 							<div class="info">
 						    	<h3>Business Development Services</h3>
-						    	<h6 class="text-white fw-100">Today, most small and medium-sized enterprises are largely informal and un-structured or semi-structured at best. Through our Advisory unit, FCMB offers customers access to expert consultants across various fields including strategy/ business plan development, accountants/ tax consultants, legal advisers, human resource management experts, digital/ operational marketing consultants and others alike</h6>
+						    	<h6 class="text-white fw-100">Through our Advisory unit, FCMB offers customers access to expert consultants across various fields including strategy/ business plan development, accountants/ tax consultants and others alike.</h6>
 							</div>
 						</figure>
 					</div>
@@ -153,7 +189,7 @@
 							<img src="img/mentorship.jpg" class="img-fluid" alt="">
 							<div class="info">
 						    	<h3>Mentorship, Business Incubation and Networking</h3>
-						    	<h6 class="text-white fw-100">Start-ups are a major driver of jobs and some scale up to become strong SMEs. At FCMB, we have partnered with different innovation hubs across the country with the aim of identifying the most promising start-ups with strong propositions of solving some of the most daunting challenges in our society today and present platforms for mentorship, business incubation and networking for start-ups</h6>
+						    	<h6 class="text-white fw-100">At FCMB, we have partnered with different innovation hubs with the aim of identifying the most promising start-ups with strong propositions of solving  daunting.</h6>
 							</div>
 						</figure>
 					</div>
@@ -165,7 +201,7 @@
 							<img src="img/credit.jpg" class="img-fluid" alt="">
 							<div class="info">
 						    	<h3>Credit Facilitation</h3>
-						    	<h6 class="text-white fw-100">Unlike in the past where collateral was a major deal-breaker for banks, FCMB has taken the lead in facilitating credits for customers with viable proposals even with limited provision of collateral</h6>
+						    	<h6 class="text-white fw-100">FCMB has taken the lead in facilitating credits for customers with viable proposals even with limited provision of collateral</h6>
 							</div>
 						</figure>
 					</div>
@@ -177,7 +213,7 @@
 							<img src="img/capacity.jpg" class="img-fluid" alt="">
 							<div class="info">
 						    	<h3>Access to alternative funding</h3>
-						    	<h6 class="text-white fw-100">The business of banking goes beyond offering customers deposit products or loan facilities. Specific categories of customers who require access to equity or grants or quasi-equity types of funding could be availed such by banking with us.</h6>
+						    	<h6 class="text-white fw-100">Specific categories of customers who require access to equity or grants or quasi-equity types of funding could be availed such by banking with us.</h6>
 						    	<a href="alternative-funding.html" style="float: right;color: #fff;font-weight: bold;">Read More >></a>
 							</div>
 						</figure>
@@ -193,7 +229,7 @@
 		<div class="container margin_120_95">
 			<div class="row">
 				<div class="col-lg-5 col-md-12 p-r-5">
-					<p><img src="img/logo.png" width="70" height="70" data-retina="true" alt=""></p>
+					<p><img src="img/logo.png" width="170" height="70" data-retina="true" alt=""></p>
 					<p>First City Monument Bank (FCMB) Limited has introduced free banking transactions for a period of three months for new customers operating in the segment.</p>
 					<div class="follow_us">
 						<ul>
@@ -260,6 +296,7 @@
 	<script src="assets/validate.js"></script>
 	
 	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/sina-nav.js"></script>
 	<script src="js/modernizr_tables.js"></script>
 	<script src="js/tables_func.js"></script>
   
