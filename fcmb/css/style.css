@@ -63,7 +63,7 @@ html * {
         padding: 0 8px 15px;
         font-size: 13px;
         font-size: .855rem;
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: 2px;
         text-transform: uppercase
     }
@@ -303,7 +303,7 @@ p {
 }
 
 strong {
-    font-weight: 600
+    font-weight: 500
 }
 
 hr {
@@ -445,7 +445,7 @@ a.btn_1 {
     text-decoration: none;
     padding: 15px 30px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1;
     transition: all .3s ease-in-out;
     -webkit-border-radius: 5px;
@@ -644,7 +644,7 @@ ul#top_menu {
 ul#top_menu li {
     display: inline-block;
     margin: 2px 20px 0 0;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1
 }
 
@@ -889,7 +889,7 @@ ul#top_menu li a.btn_1:hover {
 }
 
 #hero_in .wrapper p strong {
-    font-weight: 600
+    font-weight: 500
 }
 
 @keyframes pop-in {
@@ -1081,7 +1081,7 @@ footer.fake-footer {
     color: #fff;
     font-size: 13px;
     font-size: .8125rem;
-    font-weight: 600;
+    font-weight: 500;
     top: 0;
     border: 0;
     padding: 0 12px;
@@ -1255,7 +1255,7 @@ iframe {
 }
 
 #hero_video div p strong {
-    font-weight: 600
+    font-weight: 500
 }
 
 video {
@@ -1374,12 +1374,12 @@ video {
 }
 
 .hero_single .wrapper p strong {
-    font-weight: 600
+    font-weight: 500
 }
 
 .hero_single.short,
 .hero_single.version_2 {
-    height: 600px
+    height: 500px
 }
 
 @media (max-width:767px) {
@@ -1434,7 +1434,7 @@ video {
 }
 
 .hero_single.version_2 .wrapper p strong {
-    font-weight: 600
+    font-weight: 500
 }
 
 @media (max-width:767px) {
@@ -1447,7 +1447,7 @@ video {
 
 #custom-search-input {
     padding: 0;
-    width: 600px;
+    width: 500px;
     margin: 20px auto 0;
     position: relative
 }
@@ -1491,7 +1491,7 @@ video {
     transition: all .3s ease-in-out;
     right: -1px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     font-size: .875rem;
     top: 0;
@@ -1954,7 +1954,7 @@ a.box_news ul {
 
 a.box_news ul li {
     display: inline-block;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     color: #999;
     font-size: 12px;
@@ -2461,7 +2461,7 @@ html[xmlns] .flexslider .slides {
 
 .slider {
     position: relative;
-    height:600px;
+    height:500px;
 }
 
 #slider.flexslider {
@@ -2474,7 +2474,7 @@ html[xmlns] .flexslider .slides {
 }
 
 #slider.flexslider ul.slides li {
-    height: 600px;
+    height: 500px;
     background-color: #000
 }
 
@@ -2984,7 +2984,7 @@ a.box_feat h3 {
     padding: 10px 15px;
     line-height: 1;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 21px;
     font-size: 1.3125rem
 }
@@ -3002,7 +3002,7 @@ a.box_feat h3 {
 .box_grid small {
     text-transform: uppercase;
     color: #999;
-    font-weight: 600
+    font-weight: 500
 }
 
 .box_grid ul {
@@ -3198,7 +3198,7 @@ a.boxed_list {
 
 .box_list .wrapper .price {
     line-height: 1;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     font-size: 1.5rem;
     color: #662d91
@@ -3213,7 +3213,7 @@ a.boxed_list {
 .box_list small {
     text-transform: uppercase;
     color: #999;
-    font-weight: 600
+    font-weight: 500
 }
 
 .box_list ul {
@@ -3333,7 +3333,7 @@ a.boxed_list {
     background-color: #fff;
     color: #662d91;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     font-size: .75rem;
     text-align: center;
@@ -3414,7 +3414,7 @@ a.social_bt {
     text-decoration: none;
     color: #662d91;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     font-size: .75rem
 }
@@ -3537,7 +3537,7 @@ a#filters_col_bt {
     position: relative;
     font-size: 16px;
     font-size: 1rem;
-    font-weight: 600
+    font-weight: 500
 }
 
 a#filters_col_bt:before {
@@ -3640,7 +3640,7 @@ a.boxed_list:hover i {
 
 .secondary_nav ul li {
     margin-right: 20px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     font-size: 1rem
 }
@@ -3807,7 +3807,7 @@ ul#cat_nav li {
     padding: 5px 25px 15px;
     font-size: 32px;
     font-size: 2rem;
-    font-weight: 600
+    font-weight: 500
 }
 
 .box_detail .price .original_price {
@@ -3858,7 +3858,7 @@ ul#cat_nav li {
     text-align: center;
     width: 100%;
     color: #fff;
-    font-weight: 600
+    font-weight: 500
 }
 
 .box_detail figure a i {
@@ -4237,7 +4237,7 @@ textarea:-webkit-autofill {
     position: absolute;
     right: -1px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     top: 0;
     border: 0;
     padding: 0 25px;
@@ -4319,7 +4319,7 @@ textarea:-webkit-autofill {
 .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
     font-size: 14px;
     font-size: .875rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase
 }
 
@@ -4381,7 +4381,7 @@ textarea:-webkit-autofill {
 .table.options_cart th {
     background-color: #fff;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     border: 0;
     padding-top: 0
 }
@@ -4430,7 +4430,7 @@ textarea:-webkit-autofill {
     .table.cart-list td:nth-of-type(2):before,
     .table.cart-list td:nth-of-type(3):before,
     .table.cart-list td:nth-of-type(4):before {
-        font-weight: 600;
+        font-weight: 500;
         color: #111
     }
     .table.cart-list td:nth-of-type(1):before {
@@ -4482,7 +4482,7 @@ textarea:-webkit-autofill {
 #total_cart {
     font-size: 24px;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 10px;
     text-transform: uppercase
 }
@@ -5364,7 +5364,7 @@ ul.list_3 li:before {
     font-size: 10px;
     font-size: .625rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     color: #333;
     line-height: 1;
     padding: 5px 8px 4px;
