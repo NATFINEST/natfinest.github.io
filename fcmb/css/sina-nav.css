@@ -476,9 +476,9 @@ a.btn_1:hover {
     top: 20px;
     right: 5px;
   }
-  /*.sina-nav .sina-menu > .dropdown > .dropdown-toggle:after {
+  .sina-nav .sina-menu > .dropdown > .dropdown-toggle:after {
     display: none;
-  }*/
+  }
   .sina-nav .sina-menu .dropdown .dropdown-menu {
     box-shadow: 0 0 0;
     border-radius: 0;

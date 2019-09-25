@@ -27,7 +27,24 @@
     font-style:normal;
   font-weight:300;
 } 
-
+.features ul li {
+  width: 25%!important;
+}
+.features{
+  background-color: #ffffff!important;
+  /*border-bottom: 1px solid #999!important;  */
+}
+.features span{
+  color: #000
+}
+#reccomended .owl-item.active.center,#reccomended .owl-item {
+    opacity: 1;
+     -webkit-transform: translateZ(0) scale(.85, .85); 
+     transform: scale(.85); 
+}
+.box_grid .wrapper{
+  min-height: 200px;
+}
 body{
   font-family:"Gotham","Open Sans",Helvetica,Arial,sans-serif,Arial;  
   font-size:15px;

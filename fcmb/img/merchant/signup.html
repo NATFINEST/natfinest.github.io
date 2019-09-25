@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div style="text-align: center;padding-top: 20px"><a href="../index.html"><img src="../img/logo.png" width="170" height="70"></a></div>
+            <h2 style="margin-bottom: 10px; font-weight: 500"> Business Zone Merchant Registration</h2>
+            <form method="POST" id="signup-form" class="signup-form" action="../index.html">
+                <h3>
+                    <span class="title_text">Basic Information</span>
+                </h3>
+                <fieldset>
+                    <div class="fieldset-content">
+                        <div class="form-group">
+                            <label for="comp_name" class="form-label">Company Name</label>
+                            <input type="text" name="comp_name" id="comp_name" placeholder="Company Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="cont_first_name" class="form-label">Contact First Name</label>
+                            <input type="text" name="cont_first_name" id="cont_first_name" placeholder="Contact First Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="cont_last_name" class="form-label">Contact Last Name</label>
+                            <input type="text" name="cont_last_name" id="cont_last_name" placeholder="Contact Last Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="cont_phone_num" class="form-label">Contact Phone Number</label>
+                            <input type="digits" name="cont_phone_num" id="cont_phone_num" placeholder="Contact Phone Number" />
+                        </div>
+                        <div class="form-group form-password">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="password" id="password" data-indicator="pwindicator" />
+                            <div id="pwindicator">
+                                <div class="bar-strength">
+                                    <div class="bar-process">
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
+                                <div class="label"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset-footer">
+                        <span>Step 1 of 4</span>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Account Information</span>
+                </h3>
+                <fieldset>
+
+                    <div class="fieldset-content">
+                        <h4 style="margin-left: 20px;font-weight: 500;margin-top: 0">Do you have a Corporate/Business Account with FCMB</h4>
+    
+                        <div class="form-radio" style="margin-left: 20px;">
+                            <div class="form-radio-item">
+                                <input type="radio" name="acc_no" value="yes" id="yes" checked="checked" />
+                                <label for="yes">Yes</label>
+    
+                                <input type="radio" name="acc_no" value="no" id="no" />
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="bus">
+                            <label for="bus_acct_no" class="form-label">Business Account Number</label>
+                            <input type="digits" name="bus_acct_no" id="bus_acct_no" placeholder="Business Account Number" />
+                        </div>
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <span>Step 2 of 4</span>
+                    </div>
+
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Contact Information</span>
+                </h3>
+                <fieldset>
+
+                    <div class="fieldset-content">
+
+                        <div class="form-group">
+                            <label for="bus_add" class="form-label">Business Address</label>
+                            <input type="text" name="bus_add" id="bus_add" placeholder="Business Address" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bus_city" class="form-label">City</label>
+                            <input type="text" name="bus_city" id="bus_city" placeholder="City" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bus_state" class="form-label">State</label>
+                            <input type="text" name="bus_state" id="bus_state" placeholder="State" />
+                        </div>
+    
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <span>Step 3 of 4</span>
+                    </div>
+
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Company Information</span>
+                </h3>
+                <fieldset>
+                    <div class="fieldset-content">
+                        <div class="form-select">
+                            <label for="bus_cat" class="form-label">Business Category</label>
+                            <select name="bus_cat" id="bus_cat">
+                                <option value="">Select Business Category</option>
+                                <option value="HR Services">HR Services</option>
+                                <option value="Legal">Legal</option>
+                                <option value="Accounting Services">Accounting Services</option>
+                                <option value="IT & Web Solutions">IT & Web Solutions</option>
+                                <option value="Consulting Services">Consulting Services</option>
+                                <option value="Logistics">Logistics</option>
+                                <option value="Outsourcing">Outsourcing</option>
+                                <option value="Training & Development">Training & Development</option>
+                                <option value="Tax and Advisory">Tax and Advisory</option>
+                                <option value="Business Registration">Business Registration</option>
+                                <option value="HMOS">HMOS</option>
+                                <option value="Event Planning">Event Planning</option>
+                                <option value="Sports and Fitness">Sports and Fitness</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rc_num" class="form-label">RC Number</label>
+                            <input type="text" name="rc_num" id="rc_num" placeholder="RC Number" />
+                        </div>
+
+                        <div class="form-textarea">
+                            <label for="bus_prof" class="form-label">Business Profile</label>
+                            <textarea name="bus_prof" id="bus_prof" placeholder="Describe the nature of your business/service"  maxlength="500"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comp_logo" class="form-label">Upload Company Logo(300px by 300px)</label>
+                            <div class="form-file">
+                                <input type="file" name="comp_logo" id="comp_logo" class="custom-file-input" />
+                                <span id='val'></span>
+                                <span id='button'>Select File</span>
+                            </div>
+                        </div>
+
+                        <div class="fieldset-footer">
+                            <span>Step 4 of 4</span>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/jquery.pwstrength/jquery.pwstrength.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(function() {
+            $('input[name="acc_no"]').on('click', function() {
+                if ($(this).val() == 'yes') {
+                    $('#bus').show();
+                }
+                else if ($(this).val() == 'no') {
+                    $('#bus').hide();             
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
