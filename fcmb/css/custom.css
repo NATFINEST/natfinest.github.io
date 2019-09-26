@@ -45,7 +45,9 @@ a.btn_1{
   -moz-appearance: none;
   appearance: none;
   padding: 10px 30px 10px 30px!important;
-} 
+}
+.mac.chrome .btn_1 { padding: 20px 30px 10px 30px!important; }
+
 .features ul li {
   width: 25%!important;
 }
