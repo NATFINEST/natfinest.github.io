@@ -5,19 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Fcmb SmeHub">
+    <meta name="description" content="Fcmb Business Zone">
     <meta name="author" content="Nathaniel Odukpahie">
-    <title>FCMB SMEHub</title>
-
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
-
-    <!-- GOOGLE WEB FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <title>FCMB Business Zone</title>
+    
+	<script src="js/browser.js" type="text/javascript"></script>
 
     <!-- BASE CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,64 +25,68 @@
 	<!-- material design icons -->
     <link href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
     <!-- material design icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/sina-nav.css">
 
 </head>
 
 <body>
 	
 	<div id="page">
-		
-	<header class="header menu_2 pb-3 woman">
 		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Preload -->
-		<div id="logo" class="mt-2">
-			<a href="woman.html"><img src="img/she-logo.png" width="196" height="45" data-retina="true" alt=""></a>
-		</div>
-		<ul id="top_menu">
-			<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Login</a></li>
-		</ul>
-		<!-- /top_menu -->
-		<a href="#menu" class="btn_mobile">
-			<div class="hamburger woman hamburger--spin" id="hamburger">
-				<div class="hamburger-box">
-					<div class="hamburger-inner"></div>
-				</div>
-			</div>
-		</a>
-		<nav id="menu" class="main-menu woman">
-			<ul>
-				<li><span><a href="index.html">Home</a></span></li>
-				<li><span><a href="grants.html">Grants and Loans </a></span></li>
-				<li><span><a href="capacity.html">Capacity Building </a></span></li>
-				<li><span><a href="mentor.html">Mentorship </a></span></li>
-				<li><span><a href="events.html">Events</a></span></li>
-				<li><span><a href="dblog.html">Articles </a></span></li>
-				<li class="d-md-none"><span><a href="login.html">Login</a></span></li>
-			</ul>
-		</nav>
+		<div class="nav-container">
+			<nav class="sina-nav mobile-sidebar navbar-fixed navbar-reverse" data-top="60">
+				<div class="container-fluid">
 
-		<!-- Become a Mentor -->
-		<div class="search-overlay-menu">
-			<span class="search-overlay-close"><span class="closebt"><i class="ti-close"></i></span></span>
-			<h2 class="text-white mt-5">Become a Mentor</h2>
-			<form role="search" id="searchform" method="">
-				<input value="" name="bname" type="search" placeholder="Business Name" />
-				<input value="" name="email" type="search" placeholder="Email" />
-				<input value="" name="phone" type="search" placeholder="Phone" />
-				<input value="" name="url" type="search" placeholder="Linkedin Url" />
-				<button type="" class="w-100">Submit</button>
-			</form>
-		</div><!-- End Become a Mentor -->
-	</header>
-	<!-- /header -->
+
+					<div class="extension-nav">
+						<a class="sina-brand mb-1" href="woman.html" style="height: 73%;">
+							<img src="img/she-logo.png" width="196" height="45" data-retina="true" alt="SheVentures" class="mt-3">
+						</a>
+					</div><!-- .extension-nav -->
+
+					<div class="sina-nav-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<ul class=" mt-lg-4" style="">
+							<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Login</a></li>
+						</ul>
+					</div><!-- .sina-nav-header -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="sina-menu sina-menu-center mr-4" style="margin-top: 2rem" data-in="fadeInLeft" data-out="fadeInOut">
+
+							<li><a href="index.html">Home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Grants and Loans</a>
+								<ul class="dropdown-menu">
+				                    <li><a href="article-zero.html">Zero Interest Loan</a></li>
+				                    <li><a href="article-gender.html">Gender Loans</a></li>
+								</ul>
+							</li>
+							<li><a href="capacity.html">Capacity Building </a></li>
+							<li><a href="mentor.html">Mentorship </a></li>
+							<li><a href="she-events.html">Events</a></li>
+							<li class="d-md-none"><span><a href="login.html">Login</a></span></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- .container -->
+			</nav>
+		</div>
+	
+		<nav id="menu"></nav>
 	
 	<main>
-		<section id="hero_in" class="general">
-			<div class="wrapper">
-				<div class="container">
-					<h1 class="fadeInUp"><span></span>SheVentures Events</h1>
+			<section id="hero_in" style="background: url(img/header.jpg) center center no-repeat;background-size: cover;height: 270px">
+				<div class="wrapper">
+					<div class="container">
+						<h1 class="fadeInUp"><span></span>SheVentures Events</h1>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 		<!--/hero_in-->
 
 		<div class="container margin_60_35">
@@ -111,11 +107,7 @@
 								<div class="post_info">
 									<small>7 Mar. 2019</small>
 									<h3><a href="she-event-prop.html">FCMB Formally Unveils Women In Business Proposition</a></h3>
-									<ul>
-										<li class="d-flex">
-											<i class="icon-location"></i> Lagos
-										</li>
-									</ul>
+									<p class="truncate-overflow">In commemoration of International Women’s Day, on Thursda7, March 7, 2019, FCMB hosted a “Women with Vision” Gala to celebrate women from all walks of life. The event held at the Federal Palace Hotel, Victoria Island and was anchored by two A-list female celebrities, Helen Paul and Osas Ajibade.</p>
 								</div>
 							</div>
 						</div>
@@ -135,11 +127,7 @@
 								<div class="post_info">
 									<small>29 Aug. 2018</small>
 									<h3><a href="she-event-niwex.html">NIWEX EXHIBITION</a></h3>
-									<ul>
-										<li class="d-flex">
-											<i class="icon-location"></i> NACCIMA House. 8A, Oba Akinjobi Road, GRA Ikeja, Lagos
-										</li>
-									</ul>
+									<p class="truncate-overflow">NIWEX is an international exhibition organized annually by Nigeria Association of Chamber of commerce, Industry, Mines and Agriculture Business Women Group (NAWORG) in conjunction with Atlantic Exhibition Nigeria Limited and partnership with Ecowas Federation of Business Women Entrepreneur (FEBWE), Uplift Development Foundation and Women’s Radio Wfm 91.7. </p>
 								</div>
 							</div>
 						</div>
@@ -158,11 +146,7 @@
 								<div class="post_info">
 									<small>11 - 12 Oct. 2018</small>
 									<h3><a href="she-event-neca.html">NECA’S Network Of Entrepreneurial Women (NNEW) 2018 Summit</a></h3>
-									<ul>
-										<li class="d-flex">
-											<i class="icon-location"></i> Oriental Hotel, Victoria Island, Lagos Nigeria   
-										</li>
-									</ul>
+									<p class="truncate-overflow">NNNEW is a platform established in 2005 under the aegis of Nigeria Employer’s Consultative Association to promote and nurture entrepreneurship amongst women. The Network holds yearly summits where issues surrounding women-owned businesses are x-rayed, discussed and enhanced for growth.</p>
 								</div>
 							</div>
 						</div>
@@ -203,65 +187,54 @@
 	<!--/main-->
 	
 	<footer>
-		<div class="container margin_120_95">
-			<div class="row">
-				<div class="col-lg-5 col-md-12 p-r-5">
-					<p><img src="img/logo.png" width="70" height="70" data-retina="true" alt=""></p>
-					<p>First City Monument Bank (FCMB) Limited has introduced free banking transactions for a period of three months for new customers operating in the segment.</p>
-					<div class="follow_us">
-						<ul>
-							<li>Follow us</li>
-							<li><a href=""><i class="ti-facebook"></i></a></li>
-							<li><a href=""><i class="ti-twitter-alt"></i></a></li>
-							<li><a href=""><i class="ti-google"></i></a></li>
-							<li><a href=""><i class="ti-pinterest"></i></a></li>
-							<li><a href=""><i class="ti-instagram"></i></a></li>
+			<div class="container margin_120_95">
+				<div class="row">
+					<div class="col-lg-5 col-md-12 p-r-5">
+						<p><img src="img/logo.png" width="170" height="70" data-retina="true" alt=""></p>
+						<p>The FCMB BUSINESS ZONE is a one-stop online platform that provides a wide range of services to small and medium enterprises. It provides services on access to market information, certified online Learning platform, advisory services, women in Business offers and creates visibility, recognition, and local awareness on business offerings through our service hub.</p>
+						<div class="follow_us">
+							<ul>
+								<li>Follow us</li>
+								<li><a href="https://www.facebook.com/FcmbMyBank/"><i class="ti-facebook"></i></a></li>
+								<li><a href="https://twitter.com/myfcmb/"><i class="ti-twitter-alt"></i></a></li>
+								<li><a href=" https://www.linkedin.com/company/first-city-monument-bank-ltd/"><i class="ti-linkedin"></i></a></li>
+								<li><a href="https://www.youtube.com/user/fcmbplc"><i class="ti-youtube"></i></a></li>
+								<li><a href="https://api.whatsapp.com/send?phone=09099999814"><i class="ti-comments-smiley"></i></a></li>
+								<li><a href="https://www.instagram.com/myfcmb/"><i class="ti-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 ml-lg-auto">
+						<h5>Useful links</h5>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="community.html">Community</a></li>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<h5>Contact Us</h5>
+						<ul class="contacts">
+							<li><a href="tel://61280932400"><i class="ti-mobile"></i> + 234 807 391 4547</a></li>
+							<li><a href="mailto:info@fcmb.com"><i class="ti-email"></i> info@fcmb.com</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 ml-lg-auto">
-					<h5>Useful links</h5>
-					<ul class="links">
-						<li><a href="">Home</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Community</a></li>
-						<li><a href="">Contacts</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h5>Contact with Us</h5>
-					<ul class="contacts">
-						<li><a href="tel://61280932400"><i class="ti-mobile"></i> + 234 807 391 4547</a></li>
-						<li><a href="mailto:info@udema.com"><i class="ti-email"></i> info@fcmb.com</a></li>
-					</ul>
-					<div id="newsletter">
-					<h6>Newsletter</h6>
-					<div id="message-newsletter"></div>
-					<form method="post" action="" name="newsletter_form" id="newsletter_form">
-						<div class="form-group">
-							<input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="Your email">
-							<input type="submit" value="Submit" id="submit-newsletter">
-						</div>
-					</form>
+				<!--/row-->
+				<hr>
+				<div class="row">
+					<div class="col-md-8">
+						<ul id="additional_links">
+							<li><a href="terms.html">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div id="copy">© <script>document.write(new Date().getFullYear())</script> FCMB Business Zone</div>
 					</div>
 				</div>
 			</div>
-			<!--/row-->
-			<hr>
-			<div class="row">
-				<div class="col-md-8">
-					<ul id="additional_links">
-						<li><a href="">Cookies</a></li>
-						<li><a href="">Terms</a></li>
-						<li><a href="">Privacy</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<div id="copy">© <script>document.write(new Date().getFullYear())</script> FCMB SMEHub</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
 	<!--/footer-->
 	</div>
 	<!-- page -->
@@ -271,6 +244,7 @@
     <script src="js/common_scripts.js"></script>
     <script src="js/main.js"></script>
 	<script src="assets/validate.js"></script>
+	<script src="js/sina-nav.js"></script>
 	
 	<!-- SPECIFIC SCRIPTS -->
     <script src="layerslider/js/greensock.js"></script>
