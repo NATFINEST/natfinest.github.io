@@ -1,3 +1,6 @@
+.steps ul .current a .number {
+    font-family: 'Montserrat'!important;
+}
 .number {
   width: 35px!important;
   height: 25px!important;
@@ -43,6 +46,7 @@ input, select, textarea{
 }
 .actions ul li a {
   background: #5a3092!important;
+  font-family: 'Montserrat'!important;
 }
 .actions ul li:first-child a {
   background: #f8f8f8!important;
