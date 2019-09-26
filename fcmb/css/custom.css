@@ -46,8 +46,11 @@ a.btn_1{
   appearance: none;
   padding: 10px 30px 10px 30px!important;
 }
-.mac.chrome .btn_1,.mac.safari3 .btn_1 { padding: 16px 30px 5px 30px!important; }
-.mac.chrome .box_grid ul li:last-child a, .mac.safari3 .box_grid ul li:last-child a { padding: 22px 16px 12px 19px!important; }
+
+/** Mac Scripts */
+.mac .btn_1 { padding: 16px 30px 5px 30px!important; }
+.mac .box_grid ul li:last-child a { padding: 22px 16px 12px 19px!important; }
+/** Mac Scripts */
 
 .features ul li {
   width: 25%!important;
