@@ -4,6 +4,7 @@
 .number {
   width: 35px!important;
   height: 25px!important;
+  font-family: 'Montserrat'!important;
 }
 .steps ul li {
   padding-right: 55px!important;
