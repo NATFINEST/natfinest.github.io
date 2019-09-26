@@ -26,12 +26,16 @@
          url('../fonts/Gotham-Light.svg#AvenirLT-Medium') format('svg');
     font-style:normal;
   font-weight:300;
+}
+a.btn_1{
+  line-height: inherit!important;
+  padding: 7px 30px 7px 30px!important;
 } 
 .features ul li {
   width: 25%!important;
 }
 .features{
-  background-color: #f2af00!important;
+  background-color: #fff!important;
   /*border-bottom: 1px solid #999!important;  */
 }
 .features span{
