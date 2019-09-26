@@ -27,9 +27,24 @@
     font-style:normal;
   font-weight:300;
 }
+.btn-nude{
+  border: 0;
+  font-weight: 500;
+  color: #5a3092;
+  background: transparent;
+}
+.btn-nude:hover{
+  color: #bb16a3;
+}
+.btn-nude:focus{
+  outline: none!important;
+  box-shadow: none!important;
+}
 a.btn_1{
-  line-height: inherit!important;
-  padding: 7px 30px 7px 30px!important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px 30px 10px 30px!important;
 } 
 .features ul li {
   width: 25%!important;
