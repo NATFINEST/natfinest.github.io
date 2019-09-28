@@ -79,8 +79,55 @@
             return form.valid();
         },
         onFinished: function(event, currentIndex) {
-            alert('Submited');
-            document.getElementById("signup-form").submit();
+            // alert('Submited');
+            // document.getElementById("signup-form").submit();
+            // Prevent default posting of form - put here to work in case of errors
+            event.preventDefault();
+
+            // Abort any pending request
+            // if (request) {
+            //     request.abort();
+            // }
+            // setup some local variables
+            var $form = $(this);
+
+            // Let's select and cache all the fields
+            var $inputs = $form.find("input, select, button, textarea");
+
+            // Serialize the data in the form
+            var serializedData = $form.serialize();
+
+            // Let's disable the inputs for the duration of the Ajax request.
+            // Note: we disable elements AFTER the form data has been serialized.
+            // Disabled form elements will not be serialized.
+            $inputs.prop("disabled", true);
+
+            $.ajax({
+                url: 'http://echo/html/',
+                data: serializedData,
+                method: 'post',
+                beforeSend: function(){
+                   swal({
+                    title: 'Processing',
+                    text: 'Your Request is processing',
+                    type: 'info',
+                    onBeforeOpen: () => {
+                        swal.showLoading()
+                    }
+                  })
+                },
+                success: function(data) {
+                    swal.close();
+                    window.location.href = "thankyou.php";
+                },
+                failure: function(data) {
+                    swal(
+                    "Internal Error",
+                    "Oops, your form was not saved.", 
+                    "error"
+                    )
+                }
+            });
         },
         // onInit : function (event, currentIndex) {
         //     event.append('demo');
