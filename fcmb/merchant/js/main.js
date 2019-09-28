@@ -103,7 +103,7 @@
             $inputs.prop("disabled", true);
 
             $.ajax({
-                url: 'http://echo/html/',
+                url: 'https://echo/html/',
                 data: serializedData,
                 method: 'post',
                 beforeSend: function(){
