@@ -91,7 +91,9 @@ a.btn_1{
   appearance: none;
   padding: 10px 30px 10px 30px!important;
 }
-
+ul#additional_links li a{
+  font-size: 14px;
+}
 /** Mac Scripts */
 /*.mac .btn_1 { padding: 16px 30px 5px 30px!important; }
 .mac .box_grid ul li:last-child a { padding: 22px 16px 12px 19px!important; }*/
