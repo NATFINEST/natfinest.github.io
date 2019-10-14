@@ -1,3 +1,20 @@
+#button{
+  background: #5a3092!important;
+  color: #fff!important;
+}
+#button:hover {
+    background-color: #5a3092!important;
+}
+.steps{
+  margin-left: 20px;
+}
+#val{
+  display: none!important;
+}
+input[type='file'] {
+  display: block!important;
+  opacity: 1!important
+}
 .steps ul li {
   padding-right: 55px!important;
   font-weight: 500!important;
@@ -46,6 +63,10 @@ input, select, textarea{
 .actions ul li a:hover {
   color: #000!important;
   background-color: #fcb61c!important;
+}
+.number{
+  width: 50px!important;
+  height:35px!important;
 }
 /* @extend display-flex; */
 display-flex, .form-group, .form-select, .form-radio, .form-textarea, .form-date, .form-radio-item, .form-flex, .form-date-item .select-icon, .form-date-item .select-icon i, #val, #button, .steps ul, .actions ul, .actions ul li a, .title, .number {
@@ -221,7 +242,7 @@ label.error {
   label.error i {
     font-size: 12px; }
 
-input.error {
+input.error, textarea.error, select.error {
   border: 1px solid #ff0000; }
 
 input, select, textarea {
@@ -239,7 +260,7 @@ input, select, textarea {
   display: block;
   width: 345px;
   margin-right: 20px;
-  font-weight: bold; }
+  font-weight: 500; }
   input:focus, select:focus, textarea:focus {
     background: none; }
   input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

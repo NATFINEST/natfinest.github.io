@@ -44,7 +44,10 @@
             rc_num: {
                 required: true,
             },
-            comp_logo: {
+            bus_prof: {
+                required: true,
+            },
+            comp_logos: {
                 required: true,
             }
         },
