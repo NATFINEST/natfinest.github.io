@@ -2,6 +2,9 @@
   background: #5a3092!important;
   color: #fff!important;
 }
+label#comp_logos-error.error{
+  right: 120px!important;
+}
 #button:hover {
     background-color: #5a3092!important;
 }
