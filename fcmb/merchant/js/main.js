@@ -49,11 +49,15 @@
             },
             comp_logos: {
                 required: true,
+                extension: "jpg|png|JPEG"
             }
         },
         messages : {
             email: {
                 email: 'Not a valid email address <i class="zmdi zmdi-info"></i>'
+            },
+            comp_logos: {
+                extension: 'Pls upload a jpeg or png image <i class="zmdi zmdi-info"></i>'
             }
         },
         onfocusout: function(element) {
