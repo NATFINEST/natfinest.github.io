@@ -29,6 +29,9 @@
             password: {
                 required: true
             },
+            password_again: {
+              equalTo: "#password"
+            },
             bus_add: {
                 required: true,
             },
@@ -58,6 +61,9 @@
             },
             comp_logos: {
                 extension: 'Pls upload a jpeg or png image <i class="zmdi zmdi-info"></i>'
+            },
+            password_again: {
+              equalTo: " Passwords do not match"
             }
         },
         onfocusout: function(element) {
@@ -115,27 +121,12 @@
                 data: serializedData,
                 method: 'post',
                 beforeSend: function(){
-                    // swal({
-                    //     title: 'Processing',
-                    //     onBeforeOpen: () => {
-                    //         swal.showLoading()
-                    //     }
-                    // })
                     swal({
-                        title: 'Success',
-                        timer: 3000,
-                        type: 'success',
-                        showConfirmButton: false,
+                        title: 'Processing',
                         onBeforeOpen: () => {
-                            timerInterval = setInterval(() => {
-                              swal.getContent().querySelector('strong')
-                                .textContent = swal.getTimerLeft()
-                            }, 100)
-                        },
-                        onClose: () => {
-                            window.location.href = "../login.html";
+                            swal.showLoading()
                         }
-                    });
+                    })
                 },
                 success: function(data) {
                     swal({
