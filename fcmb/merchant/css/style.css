@@ -1,3 +1,6 @@
+.swal2-popup .swal2-content{
+  display: none;
+}
 #button{
   background: #5a3092!important;
   color: #fff!important;

@@ -108,24 +108,51 @@
             // Note: we disable elements AFTER the form data has been serialized.
             // Disabled form elements will not be serialized.
             $inputs.prop("disabled", true);
+            let timerInterval
 
             $.ajax({
-                url: 'https://echo/html/',
+                url: '',
                 data: serializedData,
                 method: 'post',
                 beforeSend: function(){
-                   swal({
-                    title: 'Processing',
-                    text: 'Your Request is processing',
-                    type: 'info',
-                    onBeforeOpen: () => {
-                        swal.showLoading()
-                    }
-                  })
+                    // swal({
+                    //     title: 'Processing',
+                    //     onBeforeOpen: () => {
+                    //         swal.showLoading()
+                    //     }
+                    // })
+                    swal({
+                        title: 'Success',
+                        timer: 3000,
+                        type: 'success',
+                        showConfirmButton: false,
+                        onBeforeOpen: () => {
+                            timerInterval = setInterval(() => {
+                              swal.getContent().querySelector('strong')
+                                .textContent = swal.getTimerLeft()
+                            }, 100)
+                        },
+                        onClose: () => {
+                            window.location.href = "../login.html";
+                        }
+                    });
                 },
                 success: function(data) {
-                    swal.close();
-                    window.location.href = "thankyou.php";
+                    swal({
+                        title: 'Success',
+                        timer: 3000,
+                        type: 'success',
+                        showConfirmButton: false,
+                        onBeforeOpen: () => {
+                            timerInterval = setInterval(() => {
+                              swal.getContent().querySelector('strong')
+                                .textContent = swal.getTimerLeft()
+                            }, 100)
+                        },
+                        onClose: () => {
+                            window.location.href = "../login.html";
+                        }
+                    });
                 },
                 failure: function(data) {
                     swal(

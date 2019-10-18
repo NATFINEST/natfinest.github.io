@@ -33,7 +33,7 @@
   font-family:'Gotham';
      src: url('fonts/Gotham-Bold.eot');
        src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Gotham-Bold.woff') format('woff'),
+         /*url('fonts/Gotham-Bold.woff') format('woff'),*/
          url('fonts/Gotham-Bold.ttf') format('truetype'),
      url('fonts/Gotham-Bold.otf') format('truetype'),
          url('fonts/Gotham-Bold.svg#AvenirLT-Medium') format('svg');
