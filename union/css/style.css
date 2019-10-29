@@ -7593,23 +7593,23 @@ form .star-rating .customFormReset:checked + label {
 }
 
 .features-aside .col:nth-child(2) {
-  background-color: #0097d2;
+  background-color: #37393a;
 }
 
 .features-aside .col:nth-child(2):hover {
-  background-color: #0097d2;
+  background-color: #37393a;
 }
 
 .features-aside .col:nth-child(3) {
-  background-color: #008fc7;
+  background-color: #5b5f61;
 }
 
 .features-aside .col:nth-child(3):hover {
-  background-color: #008fc7;
+  background-color: #5b5f61;
 }
 
 .features-aside .col:hover {
-  background-color: #00adef;
+  background-color: #1f2325;
 }
 
 .features-aside .col:hover .icn-wrap {

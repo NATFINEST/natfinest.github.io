@@ -133,19 +133,19 @@
 		<div id="full-slider-wrapper">
 			<div id="layerslider" style="width:100%;height:500px;">
 				<!-- first slide -->
-				<div class="ls-slide" data-ls="slidedelay: 3000; transition2d:5;">
+				<div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
 					<img src="img/ban/FCMB8.jpg" class="ls-bg" alt="Slide background">
 				</div>
 				<!-- second slide -->
-				<div class="ls-slide" data-ls="slidedelay:3000; transition2d:5;">
+				<div class="ls-slide" data-ls="slidedelay:5000; transition2d:5;">
 					<img src="img/ban/FCMB7.jpg" class="ls-bg" alt="Slide background">
 				</div>
 				<!-- third slide -->
-				<div class="ls-slide" data-ls="slidedelay: 3000; transition2d:5;">
+				<div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
 					<img src="img/ban/FCMB6.jpg" class="ls-bg" alt="Slide background">
 				</div>
 				<!-- fourth slide -->
-				<div class="ls-slide" data-ls="slidedelay: 3000; transition2d:5;">
+				<div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
 					<img src="img/ban/FCMB5.jpg" class="ls-bg" alt="Slide background">
 				</div>
 			</div>
@@ -164,19 +164,19 @@
 					<li>
 						<a href="woman.html" style="color: #fff;text-decoration: none;">
 							<img src="img/sheventures.png" style="display: flex;margin: 0 auto">
-							<span> Access the women in business community.</span>
+							<span> Access the women in business community</span>
 						</a>
 					</li>
 					<li>
 						<a href="events.html" style="color: #fff;text-decoration: none;">
 							<img src="img/events.png" style="display: flex;margin: 0 auto">
-							<span> Training and webinars.</span>
+							<span> Training and webinars</span>
 						</a>
 					</li>
 					<li>
 						<a href="market.html" style="color: #fff;text-decoration: none;">
 							<img src="img/comm.png" style="display: flex;margin: 0 auto">
-							<span> Connect with other SMEs in your industry.</span>
+							<span> Connect with other SMEs in your industry</span>
 						</a>
 					</li>
 				</ul>
@@ -451,7 +451,7 @@
     <script type="text/javascript">
         'use strict';
         $('#layerslider').layerSlider({
-            autoStart: false,
+            autoStart: true,
             navButtons: true,
             navStartStop: false,
             showCircleTimer: false,
@@ -460,6 +460,7 @@
             reverse:true,
             layersContainer: 1200,
             navPrevNext:true,
+            durationIn:10000,
             skinsPath: 'layerslider/skins/'
                 // Please make sure that you didn't forget to add a comma to the line endings
                 // except the last line!
