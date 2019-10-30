@@ -55,3 +55,6 @@ p {
     border: 2px solid #000!important;
     border-radius: 5px;
 }
+.guide-column h3:before, .guide-column .h3:before{
+    display: none;
+}
