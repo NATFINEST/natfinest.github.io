@@ -40,6 +40,13 @@
     font-style: normal;
   font-weight:700;
 }
+a.box_feat:hover{
+      color: #ba15a3!important;
+}
+.box_feat p,.box_feat button{
+    font-weight: 600;
+    text-transform: capitalize;
+}
 a.social_bt{
   font-weight: 500;
 }
