@@ -227,6 +227,7 @@
 	position: relative;
 	text-align: center;
 	margin: 0 auto;
+	margin-top: -2%!important;
 }
 
 .ls-below-thumbnails {
@@ -663,6 +664,9 @@ body * .ls-container img,
 	}
 	#full-slider-wrapper{
 		height: 240px;
+	}
+	.ls-bottom-nav-wrapper, .ls-below-thumbnails{
+		visibility: hidden!important;
 	}
 }
 /*html * .ls-thumbnail a img,
