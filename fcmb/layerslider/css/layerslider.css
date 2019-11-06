@@ -934,3 +934,24 @@ body * .ls-container .ls-webkit-hack,
 .ls-forcehide {
 	display: none !important;
 }
+
+.s1{
+	top:77%!important;
+	left:7%!important;
+	white-space: nowrap!important;
+}
+.s2{
+	top:77%!important;
+	left:8%!important;
+	white-space: nowrap!important;
+}
+.s3{
+	top:77%!important;
+	left:6%!important;
+	white-space: nowrap!important;
+}
+.s4{
+	top:81%!important;
+	left:5%!important;
+	white-space: nowrap!important;
+}
