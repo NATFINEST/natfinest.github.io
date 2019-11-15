@@ -85,9 +85,10 @@
   font-weight: 500;
 }
 .forum-item .forum-sub-title {
-  color: #999;
+  color: #000;
   margin-left: 20px;
   font-weight: 500;
+  display: flex;
 }
 .forum-title {
   background: linear-gradient(to right, rgb(92, 38, 132) 0%,rgb(187, 22, 163) 100%);
@@ -111,7 +112,7 @@
   text-align: center;
 }
 a.forum-item-title {
-  color: #666;
+  color: #000;
   display: block;
   font-size: 18px;
   font-weight: 600;

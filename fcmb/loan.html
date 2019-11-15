@@ -160,7 +160,7 @@
 							    	</div>
 							    </div>
 
-						  		<div class="row my-3">
+						  		<!-- <div class="row my-3">
 							    	<div class="col-lg-7 col-6 text-left font-weight-bold mt-3">
 										<span class="loan-number" >2</span>
 							    		Interest Rate
@@ -173,12 +173,12 @@
 										  </div>
 										</div>
 							    	</div>
-							    </div>
+							    </div> -->
 
 
 						  		<div class="row my-3">
 							    	<div class="col-lg-7 col-6 text-left font-weight-bold mt-3">
-										<span class="loan-number" >3</span>
+										<span class="loan-number" >2</span>
 							    		Number of Years
 							    	</div>
 							    	<div class="col-lg-5 col-6">
@@ -189,7 +189,7 @@
 							    </div>
 
 							  	<div class="text-center w-100" id="content">
-									<a href="#0" class="btn_1 rounded add_top_30" id="btn-calculate">Calculate</a>					  		
+									<a href="#0" class="btn_1 rounded add_top_30" id="btn-calculate">Calculate</a>
 							  	</div>
 						  	</div>
 						</div>
@@ -220,7 +220,9 @@
 							    		<h5 class="float-right float-sm-none pt-1" id="monthly-value">-</h5>
 							    	</div>
 							    </div>
-
+							    <div class="text-center w-100" id="content">
+									<a href="https://www.fcmb.com/quick-loan-service/index.php" class="btn_1 rounded add_top_30" id="btn-calculate">Apply for Loan</a>
+							  	</div>
 						  	</div>
 						</div>
 
@@ -316,9 +318,8 @@
     	$(document).ready(function(){
 			$("#btn-calculate").click(function(){
 			    var amt = $("#amount-input").val();
-			    var rate = $("#rate-input").val(); 
 			    var years = $("#years-input").val();  
-			    if (amt == "" || rate == "" || years == "" || !$.isNumeric(amt) || !$.isNumeric(rate) || !$.isNumeric(years)){
+			    if (amt == "" || years == "" || !$.isNumeric(amt) || !$.isNumeric(years)){
 			    	alert("Please provide valid numerical values for loan amount, interest rate, and number of years");
 			    }
 			    else{
@@ -327,7 +328,7 @@
 					});
 
 				    var n = years * 12;
-				    var i = rate/100/12;
+				    var i = 30/100/12;
 				    var x = (1+i) ** n;  
 				    var d = (x - 1) / (i * x);
 
@@ -335,7 +336,7 @@
 
 				    // $('#amount-value').text(amt);
 				    $('#amount-value').html("&#x20A6;" + amt)
-				    $('#rate-value').text(rate + "%");
+				    $('#rate-value').text("30%");
 				    $('#years-value').text(years);
 				    $('#monthly-value').html("&#x20A6;" + Math.round(p));
 				}

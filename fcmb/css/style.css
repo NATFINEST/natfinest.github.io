@@ -286,7 +286,7 @@ body {
     font-size: .875rem;
     line-height: 1.6;
     font-family: Poppins, Helvetica, sans-serif;
-    color: #555
+    color: #000
 }
 
 h1,
@@ -313,7 +313,7 @@ hr {
 
 ol,
 ul {
-    list-style: none;
+    /*list-style: none;*/
     margin: 0 0 25px;
     padding: 0
 }
@@ -961,7 +961,8 @@ footer ul.contacts li a i {
 }
 
 footer ul li {
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    list-style:none;
 }
 
 footer ul li a {
@@ -1908,6 +1909,15 @@ a.box_news figure figcaption {
     height: 60px;
     padding: 15px;
     line-height: 1
+}
+
+a.box_news figure figcaption.past{
+    background-color: #ba15a3;
+    margin-left: -8px;
+}
+
+a.box_news figure figcaption.past strong{
+    margin-left: -6px;
 }
 
 a.box_news figure figcaption strong {
@@ -5029,7 +5039,7 @@ ul#cat_nav li a:hover {
 .accordion_2 .card-header h5 a {
     border: 0;
     display: block;
-    color: #999
+    color: #000
 }
 
 .accordion_2 .card-header h5 a i.indicator {
@@ -5573,7 +5583,6 @@ ul.bullets {
 
 ul.bullets li {
     position: relative;
-    padding-left: 20px
 }
 
 ul.bullets li:before {
@@ -5581,7 +5590,6 @@ ul.bullets li:before {
     font-weight: 400;
     font-size: 14px;
     font-size: .875rem;
-    content: "\5c";
     color: #ccc;
     position: absolute;
     top: 0
