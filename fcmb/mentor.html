@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/sina-nav.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 
 </head>
@@ -146,7 +147,7 @@
 
 					<div class="d-flex w-lg-50 mx-auto my-3">
 						<a href="#0" class="btn_1 rounded w-100 my-3 mx-lg-5">Request a Mentor</a>
-						<a href="#0" class="btn_1 rounded w-100 my-3 mx-lg-5">Become a Mentor</a>
+						<a href="#" class="btn_1 rounded w-100 my-3 mx-lg-5" id="btn-request">Become a Mentor</a>
 					</div>	
 
 					<div id="faq">
@@ -406,6 +407,33 @@
 	<script src="js/modernizr_tables.js"></script>
 	<script src="js/tables_func.js"></script>
 	<script src="js/sina-nav.js"></script>
+
+
+	<script>
+    	$(document).ready(function(){
+			$("#btn-request").click(function(){
+
+				const { value: formValues } = Swal.fire({
+				  title: 'Become a Mentor',
+				  confirmButtonColor: '#bb16a3',
+				  confirmButtonText: 'Submit',
+				  html:
+				    '<input id="swal-input1" class="swal2-input mb-1" placeholder="Fullname" type="text" style="font-size:16px; font-weight:500;">' +
+				    '<input id="swal-input2" class="swal2-input mb-1" placeholder="Email" type="email" style="font-size:16px; font-weight:500;">' +
+				    '<input id="swal-input3" class="swal2-input mb-1" placeholder="Phone" type="tel" style="font-size:16px; font-weight:500;">',
+				  focusConfirm: false,
+				  preConfirm: () => {
+				    return [
+				      document.getElementById('swal-input1').value,
+				      document.getElementById('swal-input2').value,
+				      document.getElementById('swal-input3').value
+				    ]
+				  }
+				})
+
+			})
+		})
+	</script>
   
 </body>
 
