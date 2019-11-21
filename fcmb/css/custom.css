@@ -45,7 +45,7 @@ a.box_feat:hover{
 }
 .box_feat p,.box_feat button{
     font-weight: 600;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 a.social_bt{
   font-weight: 500;
