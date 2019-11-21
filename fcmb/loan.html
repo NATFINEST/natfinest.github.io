@@ -208,7 +208,7 @@
 							    		<h5 class="float-right float-sm-none pt-1" id="amount-value">-</h5>
 							    	</div>
 							    	<div class="col-12 col-sm-3 text-left mt-3">
-							    		<p class="float-left text-muted mb-3 float-sm-none fw-500">Interest Rates</p>
+							    		<p class="float-left text-muted mb-3 float-sm-none fw-500">Interest Rate</p>
 							    		<h5 class="float-right float-sm-none pt-1"  id="rate-value">-</h5>
 							    	</div>
 							    	<div class="col-12 col-sm-3 text-left mt-3">
@@ -313,7 +313,19 @@
                 // except the last line!
         });
     </script>
-
+    <script>
+    	function addCommas(nStr) {
+		    nStr += '';
+		    var x = nStr.split('.');
+		    var x1 = x[0];
+		    var x2 = x.length > 1 ? '.' + x[1] : '';
+		    var rgx = /(\d+)(\d{3})/;
+		    while (rgx.test(x1)) {
+		        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+		    }
+		    return x1 + x2;
+		}
+    </script>
     <script>
     	$(document).ready(function(){
 			$("#btn-calculate").click(function(){
@@ -332,13 +344,15 @@
 				    var x = (1+i) ** n;  
 				    var d = (x - 1) / (i * x);
 
-				    p = amt / d;
+				    p = Math.round(amt / d);
 
 				    // $('#amount-value').text(amt);
-				    $('#amount-value').html("&#x20A6;" + amt)
+				    amt = addCommas(amt);
+				    p = addCommas(p);
+				    $('#amount-value').html("&#x20A6;" + amt);
 				    $('#rate-value').text("30%");
 				    $('#years-value').text(years);
-				    $('#monthly-value').html("&#x20A6;" + Math.round(p));
+				    $('#monthly-value').html("&#x20A6;" + p);
 				}
 			});
 		});
