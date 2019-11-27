@@ -1,0 +1,82 @@
+.panel-title{
+	margin: 0;
+}
+.panel-title a{
+	font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+.panel-title a:hover{
+    color: #0cc578;
+}
+.panel-heading{
+	border-bottom: 1px solid #ccc;
+}
+.profile-desc-item{
+	width: 40%;
+}
+.panel-body{
+	padding: 0 10px;
+}
+.page-logo{
+	background-image: url(../img/alpher-logo.png)!important;
+	background-size: 80%!important;
+	background-repeat: no-repeat!important;
+    width: 230px!important;
+    margin-top: 1%!important;
+    margin-left: 1%!important;
+}
+.profile-desc-item, .profile-desc-item a{
+	font-size: 13px;
+	color: #888;
+}
+.completed{
+	color: #26c281;
+}
+.pending{
+	color: #999;
+}
+.panel-heading-gray{
+	background: #ddd;
+}
+ul.docListWindow,ul.chat.nice-chat{
+	/*height: auto;*/
+}
+.blogThumb{
+	min-height: 440px;
+}
+.course-box h4{
+	min-height: 5.5em
+}
+@media (min-width: 992px){
+	.sidemenu-closed.sidemenu-closed-hidelogo .page-header.navbar .page-logo {
+		padding: 10px 10px 10px 2px !important;
+    	width: 60px!important;
+		background-position: left!important;
+	    background-size: 19rem 6rem!important;
+	    padding-left: 1em!important;
+}
+
+
+	}
+}
+#game.show{
+    background: #fff;
+}
+#progress-bar{
+    background: transparent!important;
+    display: block!important;
+}
+@media (min-width: 10px) and (max-width: 575px){
+	.d-comment{
+		margin-top: 0;
+	}
+}
+@media (min-width:576px) and (max-width: 775px){
+	.d-comment{
+		margin-top: -80%;
+	}
+}
+.d-comment{
+	margin-top: -70%;
+}

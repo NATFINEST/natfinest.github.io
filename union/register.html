@@ -9,22 +9,23 @@
 	<!-- set the HandheldFriendly -->
 	<meta name="HandheldFriendly" content="True">
 	<!-- set the description -->
-	<meta name="description" content="Union Bank SME">
+	<meta name="description" content="Alpher">
 	<!-- set the Keyword -->
 	<meta name="keywords" content="">
-	<meta name="author" content="Union Bank SME">
+	<meta name="author" content="Alpher">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/alpher-fav.png" type="image/x-icon"/>
 	<!-- set the page title -->
-	<title>Union Bank SME360</title>
+	<title>Alpher</title>
 	<!-- include google roboto font cdn link -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" id="redux-google-fonts-sf_uplift_options-css" href="https://fonts.googleapis.com/css?family=Serif%3A400%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&amp;ver=1572104180" type="text/css" media="all">
 	<!-- include the site bootstrap stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/plugins.css">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/colors.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- include the site responsive stylesheet -->
@@ -39,17 +40,18 @@
 		<header id="page-header">
 			<!-- header holder -->
 			<div class="header-holder">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-6 col-sm-3">
+						<div class="col-xs-6 col-sm-2">
 							<!-- logo -->
 							<div class="logo">
-								<a href="index.html">
-									<img src="images/union-bank.png" alt="studylms">
+								<a href="home.html">
+									<img class="hidden-xs" src="images/alpher-logo.png" alt="studylms">
+									<img class="hidden-sm hidden-md hidden-lg" src="images/alpher-logo.png" alt="studylms">
 								</a>
 							</div>
 						</div>
-						<div class="col-xs-6 col-sm-9 static-block">
+						<div class="col-xs-6 col-sm-10 static-block">
 							<!-- nav -->
 							<nav id="nav" class="navbar navbar-default">
 								<div class="navbar-header">
@@ -64,40 +66,35 @@
 								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 									<!-- main navigation -->
 									<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
-										<li><a href="index.html">home</a></li>
+										<li><a href="" class="btn btn-login">Join Webinar</a></li>
 										<li class="dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mentorship</a>
-											<ul class="dropdown-menu">
-												<li><a href="">Become a mentor</a></li>
-												<li><a href="">Request a mentor</a></li>
-											</ul>
 										</li>
 										<li class="dropdown">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
 											<ul class="dropdown-menu">
-												<li><a href="">Cash Management</a></li>
-												<li><a href="">Trade Fianance</a></li>
-												<li><a href="">treasury Solutions</a></li>
+												<li><a href="">Financial Management</a></li>
+												<li><a href="">Marketing</a></li>
+												<li><a href="">Human Resource</a></li>
+												<li><a href="">Business Plan And Models</a></li>
 											</ul>
 										</li>
 										<li class="dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community</a>
 											<ul class="dropdown-menu">
-							                    <li><a href="">Sustainable Energy</a></li>
-							                    <li><a href="">Agric Business</a></li>
-							                    <li><a href="">SME</a></li>
-							                    <li><a href="">Creative Industry</a></li>
-							                    <li><a href="">WIB</a></li>
+							                    <li><a href="">Individual</a></li>
+							                    <li><a href="">Business</a></li>
 											</ul>
 										</li>
 										<li class="dropdown">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
 											<ul class="dropdown-menu">
-												<li><a href="">SME Loans</a></li>
-												<li><a href="">Point of Sale(POS)</a></li>
-												<li><a href="">Savings Calculator</a></li>
+												<li><a href="">Grants and Loans</a></li>
+												<li><a href="">Latest Webinar</a></li>
+												<li><a href="">Events</a></li>
 											</ul>
 										</li>
+										<li><a href="login.html" class="btn btn-login">Login</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -132,7 +129,7 @@
 					<div class="col-xs-12 col-md-6 col-md-offset-3">
 						<!-- user log form -->
 						<form action="#" class="user-log-form">
-							<h2>Register Form</h2>
+							<h2>Register</h2>
 							<div class="form-group">
 								<input type="text" class="form-control element-block" placeholder="Firstname *">
 							</div>
@@ -140,7 +137,7 @@
 								<input type="text" class="form-control element-block" placeholder="Lastname *">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control element-block" placeholder="Phone *">
+    							<input id="phone" name="phone" type="tel" class="form-control element-block" >
 							</div>
 							<div class="form-group">
 								<input type="email" class="form-control element-block" placeholder="Email address *">
@@ -149,7 +146,7 @@
 								<input type="password" class="form-control element-block" placeholder="Password *">
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control element-block" placeholder="Confirm Password *">
+								<input type="number" class="form-control element-block" placeholder="Union Bank Account *">
 							</div>
 							<div class="btns-wrap">
 								<div class="wrap">
@@ -167,48 +164,11 @@
 			<!-- aside -->
 			<aside class="aside container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-3 col">
-						<div class="logo"><a href="index.html"><img src="images/union-bank-white.png" alt="studyLMS"></a></div>
-						<p>Union Bank (“UBN”) was established in 1917 and is one of Nigeria's long-standing and most respected financial banking institutions.</p>
-						<a href="courses.html" class="btn btn-default text-uppercase">Start Leaning Now</a>
+					<div class="col-xs-12 col-sm-6 col-md-4 col">
+						<div class="logo"><a href="index.html"><img src="images/alpher-logo.png" alt="alphere"></a></div>
+						<p>Alpher is a value-added initiative for women-owned Small and Medium Scale Enterprises (SMEs). The initiative provides enhanced support to existing and upcoming women-owned SMEs through access to finance, training and mentoring to boost their business in a sustainable manner.</p>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 col hidden-xs">
-						<h3>Popular Courses</h3>
-						<!-- widget cources list -->
-						<ul class="widget-cources-list list-unstyled">
-							<li>
-								<a href="course-single.html">
-									<div class="alignleft">
-										<img src="images/sme.jpg" alt="image description">
-									</div>
-									<div class="description-wrap">
-										<h4>How can SEO benefit my business?</h4>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="course-single.html">
-									<div class="alignleft">
-										<img src="images/lumia.jpg" alt="image description">
-									</div>
-									<div class="description-wrap">
-										<h4>Do More With Your Microsoft Lumia Phone</h4>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="course-single.html">
-									<div class="alignleft">
-										<img src="images/thumbnail.jpg" alt="image description">
-									</div>
-									<div class="description-wrap">
-										<h4>Discover the fundamentals of starting your own business</h4>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<nav class="col-xs-12 col-sm-6 col-md-3 col">
+					<nav class="col-xs-12 col-sm-6 col-md-4 col">
 						<h3>Quick Links</h3>
 						<!-- fooer navigation -->
 						<ul class="fooer-navigation list-unstyled">
@@ -218,16 +178,16 @@
 							<li><a href="">Contacts</a></li>
 						</ul>
 					</nav>
-					<div class="col-xs-12 col-sm-6 col-md-3 col">
+					<div class="col-xs-12 col-sm-6 col-md-4 col">
 						<h3>contact us</h3>
-						<p>If you want to contact us about any issue our support available to help you 8am-7pm Monday to saturday.</p>
+						<p>If you want to contact us about any issue our support available to help you 8am - 7pm Monday to Saturday.</p>
 						<!-- ft address -->
 						<address class="ft-address">
 							<dl>
 								<dt><span class="fas fa-phone-square"><span class="sr-only">phone</span></span></dt>
-								<dd>Call: <a href="tel: +2348073914547"> + 234 807 391 4547</a></dd>
+								<dd>Call: <a href="tel: +23412716816"> +234-1-2716816</a></dd>
 								<dt><span class="fas fa-envelope-square"><span class="sr-only">email</span></span></dt>
-								<dd>Email: <a href="mailto:info@Studylms.com">info@unionbank.com</a></dd>
+								<dd>Email: <a href="mailto:info@unionbank.com">info@unionbank.com</a></dd>
 							</dl>
 						</address>
 					</div>
@@ -239,14 +199,14 @@
 					<div class="row holder">
 						<div class="col-xs-12 col-sm-push-6 col-sm-6">
 							<ul class="socail-networks list-unstyled">
-								<li><a href="#"><span class="fab fa-facebook"></span></a></li>
-								<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-								<li><a href="#"><span class="fab fa-instagram"></span></a></li>
-								<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+								<li><a href="https://www.facebook.com/Unionbankng/"><span class="fab fa-facebook"></span></a></li>
+								<li><a href="https://www.twitter.com/UNIONBANK_NG"><span class="fab fa-twitter"></span></a></li>
+								<li><a href="https://instagram.com/unionbankng"><span class="fab fa-instagram"></span></a></li>
+								<li><a href="https://www.youtube.com/user/UnionBankNG"><span class="fab fa-youtube"></span></a></li>
 							</ul>
 						</div>
 						<div class="col-xs-12 col-sm-pull-6 col-sm-6">
-							<p><a href="#">Union Bank SME360</a> | &copy; 2019 All rights reserved</p>
+							<p><a href="#">Alpher</a> | &copy; 2019 All rights reserved</p>
 						</div>
 					</div>
 				</div>
@@ -267,6 +227,34 @@
 	<script src="js/jquery.main.js"></script>
 	<!-- include jQuery -->
 	<script type="text/javascript" src="js/init.js"></script>
+
+	<script src="js/intlTelInput.js"></script>
+	<script>
+	    var input = document.querySelector("#phone");
+	    window.intlTelInput(input, {
+	      // allowDropdown: false,
+	      // autoHideDialCode: false,
+	      // autoPlaceholder: "off",
+	      // dropdownContainer: document.body,
+	      // excludeCountries: ["us"],
+	      // formatOnDisplay: false,
+	      // geoIpLookup: function(callback) {
+	      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+	      //     var countryCode = (resp && resp.country) ? resp.country : "";
+	      //     callback(countryCode);
+	      //   });
+	      // },
+	      // hiddenInput: "full_number",
+	      // initialCountry: "auto",
+	      // localizedCountries: { 'de': 'Deutschland' },
+	      // nationalMode: false,
+	      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+	      // placeholderNumberType: "MOBILE",
+	      preferredCountries: ['ng'],
+	      // separateDialCode: true,
+	      utilsScript: "js/utils.js",
+	    });
+	</script>
 </body>
 
 </html>
