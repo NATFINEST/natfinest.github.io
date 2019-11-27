@@ -160,7 +160,7 @@
 							    	</div>
 							    </div>
 
-						  		<!-- <div class="row my-3">
+						  		<div class="row my-3">
 							    	<div class="col-lg-7 col-6 text-left font-weight-bold mt-3">
 										<span class="loan-number" >2</span>
 							    		Interest Rate
@@ -173,12 +173,12 @@
 										  </div>
 										</div>
 							    	</div>
-							    </div> -->
+							    </div>
 
 
 						  		<div class="row my-3">
 							    	<div class="col-lg-7 col-6 text-left font-weight-bold mt-3">
-										<span class="loan-number" >2</span>
+										<span class="loan-number" >3</span>
 							    		Number of Years
 							    	</div>
 							    	<div class="col-lg-5 col-6">
@@ -189,7 +189,7 @@
 							    </div>
 
 							  	<div class="text-center w-100" id="content">
-									<a href="#0" class="btn_1 rounded add_top_30" id="btn-calculate">Calculate</a>
+									<a href="#0" class="btn_1 rounded add_top_30" id="btn-calculate">Calculate</a>					  		
 							  	</div>
 						  	</div>
 						</div>
@@ -200,7 +200,8 @@
 						  	</div>
 						  	<div class="card-body px-4 mx-0" style="border: 1px solid #ccc">
 						  		<div class="row">
-						  			<h6>Base Calculations</h6>
+						  			<h6>Base Calculations </h6>
+						  			<h5 style="color: red; font-size: 13px;text-align: left;">* Please be adviced that the Loan calculator is just a guide and this does not apply to all loan types.</h5>
 						  		</div>
 						  		<div class="row my-3">
 									<div class="col-12 col-sm-3 text-left mt-3">
@@ -330,8 +331,9 @@
     	$(document).ready(function(){
 			$("#btn-calculate").click(function(){
 			    var amt = $("#amount-input").val();
+			    var rate = $("#rate-input").val(); 
 			    var years = $("#years-input").val();  
-			    if (amt == "" || years == "" || !$.isNumeric(amt) || !$.isNumeric(years)){
+			    if (amt == "" || rate == "" || years == "" || !$.isNumeric(amt) || !$.isNumeric(rate) || !$.isNumeric(years)){
 			    	alert("Please provide valid numerical values for loan amount, interest rate, and number of years");
 			    }
 			    else{
@@ -340,7 +342,7 @@
 					});
 
 				    var n = years * 12;
-				    var i = 30/100/12;
+				    var i = rate/100/12;
 				    var x = (1+i) ** n;  
 				    var d = (x - 1) / (i * x);
 
@@ -350,7 +352,7 @@
 				    amt = addCommas(amt);
 				    p = addCommas(p);
 				    $('#amount-value').html("&#x20A6;" + amt);
-				    $('#rate-value').text("30%");
+				    $('#rate-value').text(rate + "%");
 				    $('#years-value').text(years);
 				    $('#monthly-value').html("&#x20A6;" + p);
 				}
