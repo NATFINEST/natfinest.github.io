@@ -703,17 +703,6 @@ span.online-status {
 .addr-font-h4 {
     font-size: 18px
 }
-.close {
-    display: inline-block;
-    margin-top: 0;
-    margin-right: 0;
-    width: 9px;
-    height: 9px;
-    background-repeat: no-repeat!important;
-    text-indent: -10000px;
-    outline: 0;
-    background-image: url(../img/remove-icon-small.html)!important
-}
 .help-block {
     margin-top: 5px;
     margin-bottom: 5px

@@ -168,8 +168,18 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12 col-sm-6"> 
+                    <div class="row">                        
+                        <header class="show-head" style="width: 100%;padding: 10px">
+                            <h4 class="pull-left"> Featured Courses</h4>
+                            <select class="chosen-select-no-single pull-right" id="filter">
+                                <option value="all">All Courses</option>
+                                <option value="fin">Financial Management</option>
+                                <option value="bus">Business Plan and Model</option>
+                                <option value="hr">Human Resources</option>
+                                <option value="mak">Marketing</option>
+                            </select>
+                        </header>
+                        <div class="col-lg-3 col-md-6 col-12 col-sm-6 group all mak"> 
                             <div class="blogThumb">
                                 <div class="thumb-center"><img class="img-responsive" alt="user" src="assets/img/course/course1.jpg"></div>
                                 <div class="course-box">
@@ -178,7 +188,7 @@
                                 </div>
                             </div>  
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 col-sm-6 "> 
+                        <div class="col-lg-3 col-md-6 col-12 col-sm-6  group all hr"> 
                             <div class="blogThumb">
                                 <div class="thumb-center"><img class="img-responsive" alt="user" src="assets/img/course/course2.jpg"></div>
                                 <div class="course-box">
@@ -187,7 +197,7 @@
                                 </div>
                             </div>  
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 col-sm-6"> 
+                        <div class="col-lg-3 col-md-6 col-12 col-sm-6 group all bus"> 
                             <div class="blogThumb">
                                 <div class="thumb-center"><img class="img-responsive" alt="user" src="assets/img/course/course3.jpg"></div>
                                 <div class="course-box">
@@ -196,7 +206,7 @@
                                 </div>
                             </div>  
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12 col-sm-6"> 
+                        <div class="col-lg-3 col-md-6 col-12 col-sm-6 group all fin"> 
                             <div class="blogThumb">
                                 <div class="thumb-center"><img class="img-responsive" alt="user" src="assets/img/course/course4.jpg"></div>
                                 <div class="course-box">
@@ -236,6 +246,17 @@
     <!-- Material -->
     <script src="assets/plugins/material/material.min.js"></script>
     <!-- end js include path -->
+
+    
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#filter').change(function () {
+            $('.group').hide();
+            $('.'+$(this).val()).show();
+          })
+    });
+    </script>
   </body>
 
 </html>
