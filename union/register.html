@@ -131,22 +131,29 @@
 						<form action="#" class="user-log-form">
 							<h2>Register</h2>
 							<div class="form-group">
-								<input type="text" class="form-control element-block" placeholder="Firstname *">
+								<input type="text" class="form-control element-block" placeholder="Firstname *" required>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control element-block" placeholder="Lastname *">
+								<input type="text" class="form-control element-block" placeholder="Lastname *" required>
 							</div>
 							<div class="form-group">
-    							<input id="phone" name="phone" type="tel" class="form-control element-block" >
+    							<input id="phone" name="phone" type="tel" class="form-control element-block"  required>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control element-block" placeholder="Email address *">
+								<input type="email" class="form-control element-block" placeholder="Email address *" required>
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control element-block" placeholder="Password *">
+								<input type="password" class="form-control element-block" placeholder="Password *" required>
 							</div>
 							<div class="form-group">
-								<input type="number" class="form-control element-block" placeholder="Union Bank Account *">
+								<input type="number" class="form-control element-block" placeholder="Union Bank Account *" required>
+							</div>
+							<div class="form-group" style="display: inline-flex;width: 100%">
+								<input id="uploadFile" placeholder="Upload profile picture" disabled="disabled" style="height: 45px;margin-top: 9px;width: 100%;"  required/>
+								<div class="fileUpload btn btn-primary">
+								    <span>Upload</span>
+								    <input id="uploadBtn" type="file" class="upload" />
+								</div>
 							</div>
 							<div class="btns-wrap">
 								<div class="wrap">
@@ -254,6 +261,10 @@
 	      // separateDialCode: true,
 	      utilsScript: "js/utils.js",
 	    });
+
+	    document.getElementById("uploadBtn").onchange = function () {
+    	document.getElementById("uploadFile").value = this.value;
+};
 	</script>
 </body>
 

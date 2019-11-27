@@ -20,11 +20,11 @@
 }
 .page-logo{
 	background-image: url(../img/alpher-logo.png)!important;
-	background-size: 80%!important;
+	background-size: 75%!important;
 	background-repeat: no-repeat!important;
     width: 230px!important;
     margin-top: 1%!important;
-    margin-left: 1%!important;
+    margin-left: 2%!important;
 }
 .profile-desc-item, .profile-desc-item a{
 	font-size: 13px;
@@ -51,9 +51,9 @@ ul.docListWindow,ul.chat.nice-chat{
 @media (min-width: 992px){
 	.sidemenu-closed.sidemenu-closed-hidelogo .page-header.navbar .page-logo {
 		padding: 10px 10px 10px 2px !important;
-    	width: 60px!important;
+    	width: 47px!important;
 		background-position: left!important;
-	    background-size: 19rem 6rem!important;
+	    background-size: 15rem 6rem!important;
 	    padding-left: 1em!important;
 }
 
@@ -79,4 +79,23 @@ ul.docListWindow,ul.chat.nice-chat{
 }
 .d-comment{
 	margin-top: -70%;
+}
+.guide-column h3:before, .guide-column .h3:before{
+    display: none;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }

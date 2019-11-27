@@ -43,25 +43,15 @@
         <div class="page-header navbar navbar-fixed-top">
             <div class="page-header-inner ">
                 <!-- logo start -->
-                <div>
-                    <a href="index.html" class="page-logo">
-                        <!-- <img src="assets/img/logo.png">  -->
+                    <a href="../index.html">
+                        <div class="page-logo">
+                                <!-- <img src="assets/img/logo.png">  -->
+                        </div>
                     </a>
-                </div>
                 <!-- logo end -->
                 <ul class="nav navbar-nav navbar-left in">
                     <li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
                 </ul>
-                 <form class="search-form-opened" action="#" method="GET">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search..." name="query">
-                        <span class="input-group-btn">
-                          <a href="javascript:;" class="btn submit">
-                             <i class="icon-magnifier"></i>
-                           </a>
-                        </span>
-                    </div>
-                </form>
                 <!-- start mobile menu -->
                 <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
                     <span></span>
@@ -70,86 +60,10 @@
                 <!-- start header menu -->
                 <div class="top-menu">
                     <ul class="nav navbar-nav pull-right">
-                        <!-- start message dropdown -->
-                        <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="badge headerBadgeColor2"> 2 </span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="external">
-                                    <h3><span class="bold">Messages</span></h3>
-                                    <span class="notification-label cyan-bgcolor">New 2</span>
-                                </li>
-                                <li>
-                                    <ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="assets/img/dammy.jpg" class="img-circle" alt=""> </span>
-                                                <span class="subject">
-                                                    <span class="from"> Sarah Smith </span>
-                                                    <span class="time">Just Now </span>
-                                                </span>
-                                                <span class="message"> Jatin I found you on LinkedIn... </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="assets/img/tobi.jpg" class="img-circle" alt=""> </span>
-                                                <span class="subject">
-                                                    <span class="from"> John Deo </span>
-                                                    <span class="time">16 mins </span>
-                                                </span>
-                                                <span class="message"> Fwd: Important Notice Regarding Your Domain Name... </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="assets/img/nat.jpg" class="img-circle" alt=""> </span>
-                                                <span class="subject">
-                                                    <span class="from"> Rajesh </span>
-                                                    <span class="time">2 hrs </span>
-                                                </span>
-                                                <span class="message"> pls take a print of attachments. </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="assets/img/tobi.jpg" class="img-circle" alt=""> </span>
-                                                <span class="subject">
-                                                    <span class="from"> Lina Smith </span>
-                                                    <span class="time">40 mins </span>
-                                                </span>
-                                                <span class="message"> Apply for Ortho Surgeon </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="assets/img/nat.jpg" class="img-circle" alt=""> </span>
-                                                <span class="subject">
-                                                    <span class="from"> Jacob Ryan </span>
-                                                    <span class="time">46 mins </span>
-                                                </span>
-                                                <span class="message"> Request for leave application. </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="dropdown-menu-footer">
-                                        <a href="#"> All Messages </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- end message dropdown -->
                         <!-- start manage user dropdown -->
                         <li class="dropdown dropdown-user">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle " src="assets/img/dammy.jpg" />
+                                <img alt="" class="img-circle" src="assets/img/dammy.jpg" />
                                 <span class="username username-hide-on-mobile"> Dammy </span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
@@ -197,9 +111,37 @@
                                     <span class="title">Dashboard</span> 
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a href="courses.html" class="nav-link nav-toggle"> <i class="material-icons">library_books</i>
                                     <span class="title">All Courses</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mentorship.html" class="nav-link nav-toggle"> <i class="material-icons">person_pin</i>
+                                    <span class="title">Mentorship</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link nav-toggle"> <i class="material-icons">pages</i>
+                                    <span class="title">Discounted Services</span> 
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item   ">
+                                        <a href="bttols.html" class="nav-link ">
+                                            <span class="title">Business Tools</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="lifestyle.html" class="nav-link ">
+                                            <span class="title">Lifestyle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="network.html" class="nav-link nav-toggle"> <i class="material-icons">group</i>
+                                    <span class="title">Network</span> 
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -208,7 +150,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="message.html" class="nav-link nav-toggle"> <i class="material-icons">mail</i>
+                                <a href="messages.html" class="nav-link nav-toggle"> <i class="material-icons">mail</i>
                                     <span class="title">Mesaages</span> 
                                 </a>
                             </li>
@@ -477,7 +419,7 @@
         <!-- end page container -->
         <!-- start footer -->
         <div class="page-footer">
-            <div class="page-footer-inner"> 2018 &copy; Davtonlearn</div>
+            <div class="page-footer-inner"> 2019 &copy; Alpher LMS</div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
             </div>
