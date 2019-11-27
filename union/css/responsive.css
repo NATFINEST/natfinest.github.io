@@ -220,7 +220,6 @@
 
 @media (min-width: 768px) {
   #page-header.page-header-stick {
-    position: absolute;
     left: 0;
     top: 0; }
   .logo {
