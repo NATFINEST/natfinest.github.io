@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Alpher LMS" />
+    <meta name="author" content="Alpher LMS" />
+    <title>Alpher LMS</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <!-- icons -->
+    <link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="assets/plugins/material/material.min.css">
+    <link rel="stylesheet" href="assets/css/material_style.css">
+    <!-- Theme Styles -->
+    <link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+    <link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/quiz.css" />
+
+    <!-- Comments Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery-comments.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/alpher-fav.png" /> 
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+
+</head>
+ <!-- END HEAD -->
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-white">
+    <div class="page-wrapper">
+        <!-- start header -->
+        <div class="page-header navbar navbar-fixed-top">
+            <div class="page-header-inner ">
+                <!-- logo start -->
+                    <a href="../index.html">
+                        <div class="page-logo">
+                                <!-- <img src="assets/img/logo.png">  -->
+                        </div>
+                    </a>
+                <!-- logo end -->
+                <ul class="nav navbar-nav navbar-left in">
+                    <li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
+                </ul>
+                <!-- start mobile menu -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span></span>
+                </a>
+               <!-- end mobile menu -->
+                <!-- start header menu -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- start manage user dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Open an Account <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/current/" target="_blank">Current Account</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/savings/" target="_blank">Savings Account</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/domiciliary/" target="_blank">Domiciliary Account</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/target-savings/" target="_blank">Target Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Internet Banking <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">Union Online</a>
+                                </li>
+                                <li>
+                                    <a href="https://unionone.unionbankng.com/unionone/login.jsf" target="_blank">Union One</a>
+                                </li>
+                                <li>
+                                    <a href="https://union360.unionbankng.com/uonline/login" target="_blank">Union 360</a>
+                                </li>
+                                <li>
+                                    <a href="https://uniononline.unionbankng.com/OnlineBanking/nsec/onlinereg.doo" target="_blank">Register</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <img alt="" class="img-circle" src="assets/img/dammy.jpg" />
+                                <span class="username username-hide-on-mobile"> Dammy </span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="icon-user"></i> Profile </a>
+                                </li>
+                                <li>
+                                    <a href="../index.html"><i class="icon-logout"></i> Log Out </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end manage user dropdown -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- start page container -->
+        <div class="page-container">
+            <!-- start sidebar menu -->
+            <div class="sidebar-container">
+                <div class="sidemenu-container navbar-collapse collapse fixed-menu">
+                    <div id="remove-scroll" class="left-sidemenu">
+                        <ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                            <li class="sidebar-toggler-wrapper hide">
+                                <div class="sidebar-toggler">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="sidebar-user-panel">
+                                <div class="user-panel">
+                                    <div class="pull-left image">
+                                        <img src="assets/img/dammy.jpg" class="img-circle user-img-circle" alt="User Image" />
+                                    </div>
+                                    <div class="pull-left info">
+                                        <p> Olutu Dammy</p>
+                                        <a href=""><i class="fa fa-circle user-online"></i><span class="txtOnline"> Online</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="index.html" class="nav-link nav-toggle"> <i class="material-icons">dashboard</i>
+                                    <span class="title">Dashboard</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="courses.html" class="nav-link nav-toggle"> <i class="material-icons">library_books</i>
+                                    <span class="title">All Courses</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mentorship.html" class="nav-link nav-toggle"> <i class="material-icons">person_pin</i>
+                                    <span class="title">Mentorship</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link nav-toggle"> <i class="material-icons">pages</i>
+                                    <span class="title">Discounted Services</span> 
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item   ">
+                                        <a href="bttols.html" class="nav-link ">
+                                            <span class="title">Business Tools</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="lifestyle.html" class="nav-link ">
+                                            <span class="title">Lifestyle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="network.html" class="nav-link nav-toggle"> <i class="material-icons">group</i>
+                                    <span class="title">Network</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link nav-toggle"> <i class="material-icons">person</i>
+                                    <span class="title">Profile</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="messages.html" class="nav-link nav-toggle"> <i class="material-icons">mail</i>
+                                    <span class="title">Mesaages</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end sidebar menu --> 
+            <!-- start page content -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+                    <div class="page-bar">
+                        <div class="page-title-breadcrumb">
+                            <div class=" pull-left">
+                                <div class="page-title">Take Quiz</div>
+                            </div>
+                            <ol class="breadcrumb page-breadcrumb pull-right">
+                                <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                </li>
+                                <li><a class="parent-item" href="pmp.html">PMP</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                </li>
+                                <li class="active">Take Quiz</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="fx-grid fx-cf">
+                        <div class="fx-col">
+                            <!-- ADD BLOCK(S) HERE -->
+                            <!-- START: SHARE BLOCK -->
+                            <div class="fx-block fx-purple fx-share fx-align-left fx-cf bg-white card" style="padding:20px ">
+                                <div class="fx-copy" style="padding-left:20px; padding-bottom:0">
+                                  <h2 class="text-dark">Project Management Quiz</h2>
+                                  
+                                    <p><h4 class="text-dark"><i class="fa fa-clock-o text-primary"></i> Duration: 2 Minutes</h4></p>
+                                    <p><h4 class="text-dark"><i class="fa fa-question-circle text-success"></i> Questions: 4</h4></p>
+                                  <p><a href="#game" id="start-button" class="btn btn-circle btn-primary">Take Quiz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FULL WIDTH LAYOUT -->
+                        <div class="fx-grid fx-cf">
+                            <div class="fx-col">
+                                <!-- ADD BLOCK(S) HERE -->
+                                <div class="fx-block game-container">
+                                    <div id="game">
+                                        <div class="game-grid">
+                                            <div class="mx-auto p-4">
+                                                <i class="material-icons">timer</i>
+                                                <span id="timer" class="timer">
+                                                    <span class="d-none" id="dur">12000</span>
+                                                </span>
+                                            </div>
+                                            <div class="game-left-col">
+                                                <div class="gauge-container">
+                                                    <canvas id="gauge" class="gauge" width="240" height="240"></canvas>
+                                                    <div class="score-number">0</div>
+                                                </div>
+                                            </div>
+                                            <div class="game-right-col">
+                                                <div class="questions">
+                                                    <div class="question">
+                                                        <p><span class="number">1 </span><span class="questionText">Online Bills of Lading help you:</span></p>
+                                                        <div class="answers">
+                                                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. Increase efficiency</span></label>
+                                                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. Decrease errors</span></label>
+                                                          <label><input type="checkbox" class="answer" data-correct="true"><span class="text">C. Both of the above</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question">
+                                                        <p><span class="number">2 </span><span class="questionText">With online Bills of Lading you can:</span></p>
+                                                        <div class="answers">
+                                                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. Schedule pickups</span></label>
+                                                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. Check transit times</span></label>
+                                                          <label><input type="checkbox" class="answer" data-correct="true"><span class="text">C. Both of the above</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question">
+                                                        <p><span class="number">3 </span><span class="questionText">You can use your address book for both parcel and freight shipments. 
+                                                        </span></p>
+                                                        <div class="answers">
+                                                         <label><input type="checkbox" class="answer" data-correct="true"><span class="text">A. True</span></label>
+                                                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B.  False</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question">
+                                                        <p><span class="number">4 </span><span class="questionText">You can use My Shipment Profiles to:</span></p>
+                                                        <div class="answers">
+                                                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. Post your shipments to social media</span></label>
+                                                          <label><input type="checkbox" class="answer" data-correct="true"><span class="text">B. Automatically create a Bill of Lading</span></label>
+                                                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C.  Determine your freight class </span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="game-end-times-up">
+                                                  <p id="time-out-text" class="game-end-text"></p>
+                                                  <a href="quiz.html" class="btn btn-circle btn-danger">Retake Quiz</a>
+                                                </div>
+                                                <div id="game-end">
+                                                  <p id="game-end-text" class="game-end-text"></p>
+                                                  <a href="pmp.html" class="btn btn-circle btn-primary">Back to Course</a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div id="progress-bar" class="progress-bar">
+                                            <div class="indicator current"></div>
+                                            <div class="indicator"></div>
+                                            <div class="indicator"></div>
+                                            <div class="indicator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
+                <!-- end page content -->
+            </div>
+            <!-- end page container -->
+        </div>
+        <!-- end page container -->
+        <!-- start footer -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2018 &copy; Davtonlearn</div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+    <!-- start js include path -->
+    <script src="assets/plugins/jquery/jquery.min.js" ></script>
+    <script src="assets/plugins/popper/popper.js" ></script>
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js" ></script>
+    <!-- Common js-->
+    <script src="assets/js/app.js" ></script>
+    
+    <script src="assets/js/layout.js" ></script>
+    <script src="assets/js/theme-color.js" ></script>
+    <!-- Material -->
+    <script src="assets/plugins/material/material.min.js"></script>
+    <!-- end js include path -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-comments.js"></script>
+    <script type="text/javascript">
+        $('#comments-container').comments({
+            profilePictureURL: 'assets/img/dammy.jpg',
+            getComments: function(success, error) {
+                var commentsArray = [{
+                    id: 1,
+                    created: '2015-10-01',
+                    content: 'Lorem ipsum dolort sit amet',
+                    fullname: 'Simon Powell',
+                    upvote_count: 2,
+                    user_has_upvoted: false
+                }];
+                success(commentsArray);
+            },
+            postCommentOnEnter: true
+        });
+    </script>
+
+  <script type="text/javascript" src="assets/js/quiz.js"></script>
+  </body>
+
+</html>

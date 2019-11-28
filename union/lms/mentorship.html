@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Alpher LMS" />
+    <meta name="author" content="Alpher LMS" />
+    <title>Alpher LMS</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <!-- icons -->
+    <link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="assets/plugins/material/material.min.css">
+    <link rel="stylesheet" href="assets/css/material_style.css">
+    <!-- Theme Styles -->
+    <link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+    <link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/alpher-fav.png" /> 
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+ <!-- END HEAD -->
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-white">
+    <div class="page-wrapper">
+        <!-- start header -->
+        <div class="page-header navbar navbar-fixed-top">
+            <div class="page-header-inner ">
+                <!-- logo start -->
+                    <a href="../index.html">
+                        <div class="page-logo">
+                                <!-- <img src="assets/img/logo.png">  -->
+                        </div>
+                    </a>
+                <!-- logo end -->
+                <ul class="nav navbar-nav navbar-left in">
+                    <li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
+                </ul>
+                <!-- start mobile menu -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span></span>
+                </a>
+               <!-- end mobile menu -->
+                <!-- start header menu -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- start manage user dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Open an Account <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/current/" target="_blank">Current Account</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/savings/" target="_blank">Savings Account</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/domiciliary/" target="_blank">Domiciliary Account</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unionbankng.com/personal/accounts/target-savings/" target="_blank">Target Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Internet Banking <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">Union Online</a>
+                                </li>
+                                <li>
+                                    <a href="https://unionone.unionbankng.com/unionone/login.jsf" target="_blank">Union One</a>
+                                </li>
+                                <li>
+                                    <a href="https://union360.unionbankng.com/uonline/login" target="_blank">Union 360</a>
+                                </li>
+                                <li>
+                                    <a href="https://uniononline.unionbankng.com/OnlineBanking/nsec/onlinereg.doo" target="_blank">Register</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <img alt="" class="img-circle" src="assets/img/dammy.jpg" />
+                                <span class="username username-hide-on-mobile"> Dammy </span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="icon-user"></i> Profile </a>
+                                </li>
+                                <li>
+                                    <a href="../index.html"><i class="icon-logout"></i> Log Out </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end manage user dropdown -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- start page container -->
+        <div class="page-container">
+ 			<!-- start sidebar menu -->
+ 			<div class="sidebar-container">
+                <div class="sidemenu-container navbar-collapse collapse fixed-menu">
+                    <div id="remove-scroll" class="left-sidemenu">
+                        <ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                            <li class="sidebar-toggler-wrapper hide">
+                                <div class="sidebar-toggler">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="sidebar-user-panel">
+                                <div class="user-panel">
+                                    <div class="pull-left image">
+                                        <img src="assets/img/dammy.jpg" class="img-circle user-img-circle" alt="User Image" />
+                                    </div>
+                                    <div class="pull-left info">
+                                        <p> Olutu Dammy</p>
+                                        <a href=""><i class="fa fa-circle user-online"></i><span class="txtOnline"> Online</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link nav-toggle"> <i class="material-icons">dashboard</i>
+                                    <span class="title">Dashboard</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="courses.html" class="nav-link nav-toggle"> <i class="material-icons">library_books</i>
+                                    <span class="title">All Courses</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="mentorship.html" class="nav-link nav-toggle"> <i class="material-icons">person_pin</i>
+                                    <span class="title">Mentorship</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link nav-toggle"> <i class="material-icons">pages</i>
+                                    <span class="title">Discounted Services</span> 
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item   ">
+                                        <a href="bttols.html" class="nav-link ">
+                                            <span class="title">Business Tools</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="lifestyle.html" class="nav-link ">
+                                            <span class="title">Lifestyle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="network.html" class="nav-link nav-toggle"> <i class="material-icons">group</i>
+                                    <span class="title">Network</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link nav-toggle"> <i class="material-icons">person</i>
+                                    <span class="title">Profile</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="messages.html" class="nav-link nav-toggle"> <i class="material-icons">mail</i>
+                                    <span class="title">Mesaages</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end sidebar menu --> 
+			<!-- start page content -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+                    <div class="page-bar">
+                        <div class="page-title-breadcrumb">
+                            <div class=" pull-left">
+                                <div class="page-title">Mentors</div>
+                            </div>
+                            <ol class="breadcrumb page-breadcrumb pull-right">
+                                <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                </li>
+                                <li class="active">Mentors</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tabbable-line">
+                                <div class="tab-content">
+                                    <div class="tab-pane active show" id="tab2">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="card card-box">
+                                                    <div class="card-body no-padding ">
+                                                        <div class="doctor-profile">
+                                                            <img src="assets/img/chioma.jpg" class="doctor-pic" alt=""> 
+                                                            <div class="profile-usertitle">
+                                                                <div class="doctor-name">CHIOMA IFEANYI-EZE</div>
+                                                            </div>
+                                                            <div class="profile-userbuttons">
+                                                                <button type="button" class="btn btn-circle deepPink-bgcolor btn-sm" data-toggle="modal" data-target="#modal1">
+                                                                    About Mentor
+                                                                </button>
+                                                                <a href="" class="btn btn-circle btn-primary btn-sm">
+                                                                    Request Mentor
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">CHIOMA IFEANYI-EZE</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body text-left" style="font-size: 14px;line-height:1.5;">
+                                                                Chioma is a brilliant accountant and entrepreneur who passionately loves small businesses.
+                                                                <br><br>She had an exciting 11-year working career, as an accountant, starting from PricewaterhouseCoopers, and going on head the finance/accounting functions in several organizations, including Jumia Nigeria.
+                                                                <br><br>In 2016, Chioma went on to launch Accounting hub, a tech-accounting firm, focused on serving accounting services to small business, using the most reachable delivery methods.
+                                                                <br><br>She built an online accounting shop which allowed businesses access to accounting services, by simply choosing the service they wanted and paying for it, like products.
+                                                                <br><br>Till date, accounting hub has served over 500 businesses and trained well over 3000 business owners.
+                                                                <br><br>Chioma says she is on a mission to reinvent the way that small business owners access help with their accounting and tax needs in Nigeria; using the power of story-telling and technology.
+                                                                <br><br>While learning to run Accounting hub, Chioma developed huge love for entrepreneurship and shares this with other people in business, as well as people looking to launch businesses, via her Facebook page, using the hashtag #chiomasbusinessschool.
+                                                                <br><br>She challenges old ways and believes there can always be a better way of doing things. She implements accounting systems for businesses in a record-period of 24 hours, she grew a massive stocktaking community of over 2000 people and automated the accounting system for over 250 businesses within 2 years.
+                                                                <br><br>Chioma is well-known as Nigeria's small business accountant and the tech-accountant.
+                                                                <br><br>She is a Chartered Accountant of 13 years, a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN), has a BSc in Accounting, an MSc in Accounting & Finance and and MBA. 
+                                                                <br><br>She is a recipient of several awards, both academic and entrepreneurial, as well as an amazing speaker and writer.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card card-box">
+                                                    <div class="card-body no-padding ">
+                                                        <div class="doctor-profile">
+                                                            <img src="assets/img/just.jpg" class="doctor-pic" alt="">  
+                                                            <div class="profile-usertitle">
+                                                                <div class="doctor-name">JUST IBE</div>
+                                                            </div>
+                                                            <div class="profile-userbuttons">
+                                                                <button type="button" class="btn btn-circle deepPink-bgcolor btn-sm" data-toggle="modal" data-target="#modal2">
+                                                                    About Mentor
+                                                                </button>
+                                                                <a href="" class="btn btn-circle btn-primary btn-sm">
+                                                                    Request Mentor
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                 <!-- Modal -->
+                                                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">JUST IBE</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body text-left" style="font-size: 14px;line-height:1.5;">
+                                                                Just Omomo Ibe is a “Sales Guru”. She is a self-motivated sales and marketing consultant with excellent communication skills. As the first point of contact, she engages with clients providing them expert advice. She approaches every customer with the sole purpose of serving their every need whilst making it a fun and enjoyable 5* experience.
+
+                                                                <br><br>Just Ibe is a Certified Management consultant and a London Graduate school specialist in Time Management. An Experienced banker with a known pedigree for turning around business situations. Working towards personal and team targets, she plays a key role in the success of my bank; developing and continually updating her product knowledge and expertise and sharing her passion about her fantastic products. She has bagged a number of awards for her contribution to entrepreneurship in Nigeria.
+
+                                                                <br><br>Just Ibe has authored 4 books aimed at showing entrepreneurs how to leverage digital media to maximize Sales. 
+
+                                                                <br><br>Her key competencies are creating sales and marketing strategies that produce a 360 degree turnaround in revenue and profit in addition to equipping employees of businesses with critical thinking skills to identify opportunities to grow.
+
+                                                                <br><br>Just Ibe has trained, empowered and coached over 1000 entrepreneurs across Africa, United Kingdom and USA all with a proven track record of visible business growth.
+
+                                                                <br><br>“Just Ibe runs three major businesses and recently launched a Tech company that is revolutionizing content creation and distribution in Africa and beyond. Her utmost desire is to help entrepreneurs in Africa and beyond leverage digital marketing to achieve exponential business results.”
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card card-box">
+                                                    <div class="card-body no-padding ">
+                                                        <div class="doctor-profile">
+                                                            <img src="assets/img/edache.jpg" class="doctor-pic" alt="">  
+                                                            <div class="profile-usertitle">
+                                                                <div class="doctor-name">EDACHE OBE</div>
+                                                            </div>
+                                                            <div class="profile-userbuttons">
+                                                                <button type="button" class="btn btn-circle deepPink-bgcolor btn-sm" data-toggle="modal" data-target="#modal3">
+                                                                    About Mentor
+                                                                </button>
+                                                                <a href="" class="btn btn-circle btn-primary btn-sm">
+                                                                    Request Mentor
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">EDACHE OBE</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body text-left" style="font-size: 14px;line-height:1.5;">
+                                                                Edache Obe is a Digital Media Strategist who provides innovative digital media solutions for SME’s, SBM’s and large enterprises through digital media.
+
+                                                                <br><br>He is a graduate of Economics from the University of Jos Nigeria, he worked in the banking industry for 8 years which exposed him to different industries and levels of business stages, he learnt a lot of vital lessons operating a business, and those lessons he still carries till date.
+
+                                                                <br><br>After his exit from the banking industry in the year 2016, he kicked off his Digital and branding company that same year, Dacheo Media and Branding to provide digital media solutions. 
+                                                                Edache Obe has won the Unsung heroes award by Omaliving show and has also been reorganised by Business day Nigeria as one of the individuals that help promote SME’s and entrepreneurship.
+
+                                                                <br><br>He is currently working on a digital tool to help businesses maximize their investments through digital media processes.
+
+                                                                <br><br>He is a lover of food, traveling and education. He is also the founder of Lagos foodie association and Dacheo Media Academy.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card card-box">
+                                                    <div class="card-body no-padding ">
+                                                        <div class="doctor-profile">
+                                                            <img src="assets/img/glory.jpg" class="doctor-pic" alt=""> 
+                                                            <div class="profile-usertitle">
+                                                                <div class="doctor-name">GLORY EDOZIEN</div>
+                                                            </div> 
+                                                            <div class="profile-userbuttons">
+                                                                <button type="button" class="btn btn-circle deepPink-bgcolor btn-sm" data-toggle="modal" data-target="#modal4">
+                                                                    About Mentor
+                                                                </button>
+                                                                <a href="" class="btn btn-circle btn-primary btn-sm">
+                                                                    Request Mentor
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">GLORY EDOZIEN</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body text-left" style="font-size: 14px;line-height:1.5;">
+                                                                Glory Edozien (PhD) is the Founder, Lead Coach and Consultant of Inspired by Glory Academy.
+                                                                <br><br>Through the Academy, Dr. Edozien has trained over 500 women and continues to provide regular personal and group coaching and training sessions in; Networking for professional success; public speaking for professionals, Strategies for career ownership and advancement to mention just a few. 
+                                                                <br><br> Glory is an alumni of the World Economic Forum Global Shapers and has been listed as one of Nigeria’s 100 most inspiring women. She has been featured in many notable magazines and platforms including Guardian woman, Guardian Life, Ebony Life TV, Genevieve Magazine and Arise. 
+                                                                <br><br>Glory holds a PhD in Real Estate and Planning from the University of Reading, UK and is a Certified Expert in climate change and renewable energy finance and regularly consults on the preparation of climate change policy documents at the national level.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page container -->
+        <!-- start footer -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2019 &copy; Alpher LMS</div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+    <!-- start js include path -->
+    <script src="assets/plugins/jquery/jquery.min.js" ></script>
+    <script src="assets/plugins/popper/popper.js" ></script>
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js" ></script>
+    <!-- Common js-->
+    <script src="assets/js/app.js" ></script>
+    
+    <script src="assets/js/layout.js" ></script>
+    <script src="assets/js/theme-color.js" ></script>
+    <!-- Material -->
+    <script src="assets/plugins/material/material.min.js"></script>
+    <!-- end js include path -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#filter').change(function () {
+            $('.group').hide();
+            $('.'+$(this).val()).show();
+          })
+    });
+    </script>
+  </body>
+
+</html>
