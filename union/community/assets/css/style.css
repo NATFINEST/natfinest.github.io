@@ -1,3 +1,9 @@
 .card.is-post .content-wrap .post-image .masonry-grid .fab-wrapper.is-comment,.card.is-post .content-wrap .post-image .fab-wrapper.is-comment {
     right: 65px;
 }
+.pageloader::before {
+    background-color: #009fe3;
+}
+.pageloader::after {
+background-color: rgb(125, 175, 254);
+border: 3px solid rgb(26, 114, 255);
