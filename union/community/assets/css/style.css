@@ -7,3 +7,17 @@
 .pageloader::after {
 background-color: rgb(125, 175, 254);
 border: 3px solid rgb(26, 114, 255);
+}
+.chat-wrapper{
+    position: fixed;
+    top: 13%;
+    height: 88%;
+    z-index: 2!important;
+}
+.chat-wrapper .chat-inner .chat-action .chat-action-inner .control .compose-dropdown{
+	right: 2%;
+	left: inherit;
+}
+.chat-wrapper .chat-inner .chat-action .chat-action-inner .control .textarea{
+	padding-left: 5px;
+}
