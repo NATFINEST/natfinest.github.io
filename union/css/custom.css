@@ -93,7 +93,12 @@ p {
 .reg-sel > .chosen-container{
     width: 100%!important;
 }
-
+.popular-post .post-heading{
+    min-height: 70px;
+}
+.popular-posts-block .btns-wrap .btn{
+        font-size: 12px;
+}
 
 
 
