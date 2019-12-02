@@ -84,3 +84,16 @@ p {
     opacity: 0;
     filter: alpha(opacity=0);
 }
+.bg-login{
+    background: url(../images/bg-login.jpg);
+    margin: 0;
+    background-size: cover;
+    width: 100%;
+}
+.reg-sel > .chosen-container{
+    width: 100%!important;
+}
+
+
+
+
