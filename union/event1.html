@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="css/plugins.css">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/colors.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- include the site responsive stylesheet -->
@@ -150,8 +151,70 @@
 						<!-- ticketsInfoAside -->
 
 						<footer class="popular-posts-foot text-center">
-							<a href="login.html" class="btn btn-primary btn-lg" style="font-size: 16px">Register</a>
+							<button class="btn btn-primary btn-lg" style="font-size: 16px"  data-toggle="modal" data-target="#myModal">Register</button>
 						</footer>
+
+						<!-- Modal -->
+						<div id="myModal" class="modal fade" role="dialog">
+						    <div class="modal-dialog">
+
+						        <!-- Modal content-->
+						        <div class="modal-content">
+						            <div class="modal-header">
+						                <button type="button" class="close" data-dismiss="modal" style="font-size: 20px;">&times;</button>
+						                <h4 class="modal-title">Event Registration</h4>
+						            </div>
+						            <div class="modal-body">
+						                <form action="#" class="user-log-form" style="border: 0;padding: 0">
+						                    <div class="row">
+						                        <div class="form-group col-md-6">
+						                            <input type="text" class="form-control element-block" placeholder="Firstname *" required>
+						                        </div>
+						                        <div class="form-group col-md-6">
+						                            <input type="text" class="form-control element-block" placeholder="Lastname *" required>
+						                        </div>
+						                    </div>
+
+						                    <div class="row">
+						                        <div class="form-group col-md-6">
+						                            <input type="email" class="form-control element-block" placeholder="Email address *" required>
+						                        </div>
+						                        <div class="form-group col-md-6">
+						                            <input id="phone" name="phone" type="tel" class="form-control element-block" required>
+						                        </div>
+						                    </div>
+						                    <div class="form-group">
+						                        <input type="password" class="form-control element-block" placeholder="Password *" required>
+						                    </div>
+
+						                    <div class="row">
+						                        <div class="form-group col-md-6">
+						                            <input type="number" class="form-control element-block" placeholder="Union Bank Account No *" required>
+						                        </div>
+						                        <div class="form-group col-md-6 reg-sel">
+						                            <select class="chosen-select-no-single">
+						                                <option value="0">--- Account Type ---</option>
+						                                <option value="ind">Individual</option>
+						                                <option value="bus">Business</option>
+						                            </select>
+						                        </div>
+						                    </div>
+
+						                    <div class="form-group" style="display: inline-flex;width: 100%">
+						                        <input id="uploadFile" placeholder="Upload profile picture" disabled="disabled" style="height: 45px;margin-top: 9px;width: 100%;" required/>
+						                        <div class="fileUpload btn btn-primary">
+						                            <span>Upload</span>
+						                            <input id="uploadBtn" type="file" class="upload" />
+						                        </div>
+						                    </div>
+						                    <div class="btns-wrap">
+						                        <button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase" style="margin: 0 auto;">Register</button>
+						                    </div>
+						                </form>
+						            </div>
+						        </div>
+						    </div>
+						</div>
 					</article>
 					<!-- sidebar -->
 				</div>
@@ -225,6 +288,14 @@
 	<script src="js/jquery.main.js"></script>
 	<!-- include jQuery -->
 	<script type="text/javascript" src="js/init.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script>
+	    var input = document.querySelector("#phone");
+	    window.intlTelInput(input, {
+	      preferredCountries: ['ng'],
+	      utilsScript: "js/utils.js",
+	    });
+	</script>
 </body>
 
 </html>
