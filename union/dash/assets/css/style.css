@@ -50,8 +50,8 @@ h4{
     font-display: block
 }
 .main-index{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 .w-0{
     width: 0!important;
@@ -107,6 +107,19 @@ h4{
         visibility: hidden!important;
       }
 }
-
-
-
+.fw-400{
+    font-weight: 400;
+}
+.btn-mt{
+    padding: 0 10px;
+    font-size: 14px;
+}
+.uk-modal-body{
+    width: 800px;
+}
+.uk-card-default{
+    margin-bottom: 20px!important;
+}
+.uk-nav > li > a{
+    font-size: 14px;
+}
