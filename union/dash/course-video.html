@@ -15,12 +15,13 @@
         <link rel="stylesheet" href="assets/css/style.css"> 
         <!-- font awesome -->         
         <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery-comments.css">
         <!--  javascript -->
         <script src="assets/js/simplebar.js"></script>         
         <script src="assets/js/uikit.js"></script>         
     </head>     
-    <body style="overflow: hidden;">       
-        <div class="tm-course-lesson"> 
+    <body>       
+        <div> 
             <!-- mobile-sidebar  -->
             <i class="fas fa-video icon-large tm-side-right-mobile-icon uk-hidden@m" uk-toggle="target: #filters"></i>
             <!-- Your app page -->             
@@ -30,7 +31,7 @@
                     <div class="spinner"></div>                     
                 </div>                 
                 <!-- Sidebar-->                 
-                <div class="uk-width-1-4@m uk-offcanvas tm-filters uk-background-default tm-side-course uk-animation-slide-left-medium" id="filters" uk-offcanvas="overlay: true; container: false; flip: true">
+                <div class="uk-width-1-4@m uk-offcanvas tm-filters uk-background-default tm-side-course uk-animation-slide-left-medium" id="filters" uk-offcanvas="overlay: true; container: false; flip: true" style="position: sticky;overflow: auto;overflow-x: hidden;">
                     <div class="uk-offcanvas-bar uk-padding-remove uk-preserve-color">
                         <!-- Sidebar menu-->                         
                         <ul class="uk-child-width-expand uk-tab tm-side-course-nav uk-margin-remove uk-position-z-index" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-small" style="box-shadow: 0px 0px 7px 1px gainsboro;" uk-switcher>
@@ -46,7 +47,7 @@
                             <!-- Course Video tab  -->                             
                             <li> 
                                 <div class="demo1" data-simplebar> 
-                                    <ul class="course-list video-list" uk-switcher="connect: #component-nav; animation: uk-animation-slide-right-small, uk-animation-slide-left-medium">
+                                    <ul class="course-list video-list" uk-switcher="connect: #component-nav; animation: uk-animation-slide-right-small, uk-animation-slide-left-medium" style="position: fixed;">
                                         <!--  Lesson one -->
                                         <li>
                                             <a href="#">
@@ -132,7 +133,7 @@
                     <div id="spinneroverlay"> 
                         <div class="spinner right"></div>                         
                     </div>                     
-                    <ul id="component-nav" class="uk-switcher uk-position-relative uk-padding">
+                    <ul id="component-nav" class="uk-switcher uk-position-relative">
                         <!--  Lesson one -->
                         <li>
                             <div class="navigation-controls">
@@ -182,53 +183,276 @@
                             </div>
                         </li>
                     </ul>
+                    <!-- navigation-->
+                    <ul class="uk-tab uk-flex-center uk-margin-remove-top uk-margin-remove-bottom uk-background-default" cls-active="uk-background-muted" uk-tab>
+                        <li aria-expanded="true" class="uk-active">
+                            <a href="#"> Course contents  </a>
+                        </li> 
+                        <li>
+                            <a href="#"> Overview </a>
+                        </li> 
+                        <li>
+                            <a href="#"> Q&A </a>
+                        </li>            
+                    </ul>
+                    <ul class="uk-switcher uk-container-small uk-margin-auto"> 
+                        <!-- Course-Videos tab  -->
+                        <li class="uk-active">
+                            <ul uk-accordion class="uk-accordion"> 
+                                <li class="uk-open tm-course-lesson-section uk-background-default"> 
+                                    <a class="uk-accordion-title uk-padding-small" href="#"><h6> section  one</h6> <h4 class="uk-margin-remove"> Introduction to basic HTML</h4> </a> 
+                                    <div class="uk-accordion-content uk-margin-remove-top"> 
+                                        <div class="tm-course-section-list">
+                                            <ul> 
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <!-- Play icon  -->                                                 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <!-- Course title  -->                                                 
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Consectetur ipsum dolor sit  </div>
+                                                        <!-- preview link -->
+                                                    </a>
+                                                    <a class="uk-link-reset uk-margin-large-right uk-position-center-right uk-padding-small uk-text-small uk-visible@s" href="#preview-video-1" uk-toggle> <i class="fas fa-play icon-small uk-text-grey"></i> Preveiw  </a>
+                                                    <!-- time -->
+                                                    <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  2 min</span>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Dolor sit amet  consectetur  </div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  6 min</span>
+                                                    </a>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> sed do eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i> 8 min</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <!-- Play icon  -->                                                 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <!-- Course title  -->                                                 
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Consectetur ipsum dolor sit  </div>
+                                                        <!-- preview link -->
+                                                    </a>
+                                                    <a class="uk-link-reset uk-margin-large-right uk-position-center-right uk-padding-small uk-text-small uk-visible@s" href="#preview-video-2" uk-toggle> <i class="fas fa-play icon-small uk-text-grey"></i> Preveiw  </a>
+                                                    <!-- time -->
+                                                    <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  2 min</span>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> Eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  12 min</span>
+                                                    </a>
+                                                </li>                                         
+                                            </ul>
+                                        </div>                                 
+                                    </div>                             
+                                </li>                         
+                                <li class="tm-course-lesson-section uk-background-default"> 
+                                    <a class="uk-accordion-title uk-padding-small" href="#"><h6> section  Two </h6> <h4 class="uk-margin-remove"> HTML5  features</h4> </a> 
+                                    <div class="uk-accordion-content uk-margin-remove-top" hidden> 
+                                        <div class="tm-course-section-list">
+                                            <ul> 
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <!-- Play icon  -->                                                 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <!-- Course title  -->                                                 
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Consectetur ipsum dolor sit  </div>
+                                                        <!-- preview link -->
+                                                    </a>
+                                                    <a class="uk-link-reset uk-margin-large-right uk-position-center-right uk-padding-small uk-text-small uk-visible@s" href="#preview-video-1" uk-toggle> <i class="fas fa-play icon-small uk-text-grey"></i> Preveiw  </a>
+                                                    <!-- time -->
+                                                    <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  2 min</span>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Dolor sit amet  consectetur  </div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  6 min</span>
+                                                    </a>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> sed do eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i> 8 min</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> Eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  12 min</span>
+                                                    </a>
+                                                </li>                                         
+                                            </ul>
+                                        </div>                                 
+                                    </div>                             
+                                </li>                         
+                                <li class="tm-course-lesson-section uk-background-default"> 
+                                    <a class="uk-accordion-title uk-padding-small" href="#"><h6> section  Three</h6> <h4 class="uk-margin-remove"> HTML5 Advance features</h4> </a> 
+                                    <div class="uk-accordion-content uk-margin-remove-top"> 
+                                        <div class="tm-course-section-list">
+                                            <ul> 
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <!-- Play icon  -->                                                 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <!-- Course title  -->                                                 
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Consectetur ipsum dolor sit  </div>
+                                                        <!-- preview link -->
+                                                    </a>
+                                                    <a class="uk-link-reset uk-margin-large-right uk-position-center-right uk-padding-small uk-text-small uk-visible@s" href="#preview-video-1" uk-toggle> <i class="fas fa-play icon-small uk-text-grey"></i> Preveiw  </a>
+                                                    <!-- time -->
+                                                    <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  2 min</span>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Dolor sit amet  consectetur  </div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  6 min</span>
+                                                    </a>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> sed do eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i> 8 min</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> Eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  12 min</span>
+                                                    </a>
+                                                </li>                                         
+                                            </ul>
+                                        </div>                                 
+                                    </div>                             
+                                </li>                         
+                                <li class="tm-course-lesson-section uk-background-default"> 
+                                    <a class="uk-accordion-title uk-padding-small" href="#"><h6> section  Four </h6> <h4 class="uk-margin-remove"> Build a Project in HTML 5</h4> </a> 
+                                    <div class="uk-accordion-content uk-margin-remove-top" hidden> 
+                                        <div class="tm-course-section-list">
+                                            <ul> 
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <!-- Play icon  -->                                                 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <!-- Course title  -->                                                 
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Consectetur ipsum dolor sit  </div>
+                                                        <!-- preview link -->
+                                                    </a>
+                                                    <a class="uk-link-reset uk-margin-large-right uk-position-center-right uk-padding-small uk-text-small uk-visible@s" href="#preview-video-1" uk-toggle> <i class="fas fa-play icon-small uk-text-grey"></i> Preveiw  </a>
+                                                    <!-- time -->
+                                                    <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  2 min</span>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right">Dolor sit amet  consectetur  </div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  6 min</span>
+                                                    </a>
+                                                </li>                                         
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> sed do eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i> 8 min</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="course-video.html" class="uk-link-reset"> 
+                                                        <span class="uk-icon-button icon-play"> <i class="fas fa-play icon-small"></i> </span>
+                                                        <div class="uk-panel uk-panel-box uk-text-truncate uk-margin-medium-right"> Eiusmod tempor incididunt</div>
+                                                        <span class="uk-position-center-right time uk-margin-right"> <i class="fas fa-clock icon-small"></i>  12 min</span>
+                                                    </a>
+                                                </li>                                         
+                                            </ul>
+                                        </div>                                 
+                                    </div>                             
+                                </li>                         
+                            </ul>
+                            <!-- Model  Preview videos-->
+                            <div id="preview-video-1" uk-modal> 
+                                <div class="uk-modal-dialog uk-margin-auto-vertical"> 
+                                    <button class="uk-modal-close-outside" type="button" uk-close></button>                             
+                                    <div class="video-responsive">
+                                        <iframe src="../../../external.html?link=https://www.youtube.com/embed/nOCXXHGMezU" class="uk-padding-remove" uk-video="automute: true" frameborder="0" allowfullscreen uk-responsive></iframe>
+                                    </div>                             
+                                </div>
+                            </div>
+                            <!-- Model  Preview videos-->
+                            <div id="preview-video-2" uk-modal> 
+                                <div class="uk-modal-dialog uk-margin-auto-vertical"> 
+                                    <button class="uk-modal-close-outside" type="button" uk-close></button>                             
+                                    <div class="video-responsive">
+                                        <iframe src="../../../external.html?link=https://www.youtube.com/embed/nOCXXHGMezU" class="uk-padding-remove" uk-video="automute: true" frameborder="0" allowfullscreen uk-responsive></iframe>
+                                    </div>                             
+                                </div>
+                            </div>
+                        </li>
+                        <!-- tab 1 About the course -->
+                        <li style="font-size: 14px;margin: 10px">
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim   laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                            <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequa mod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <p>Magna  consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat </p>
+                            <p>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>
+                            <b> Interdum et malesuada fames ipsum </b>
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim   laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad n ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                            <h4> Elementum tellus id mauris faucibus</h4>
+                            <ul class="uk-list uk-list-bullet">
+                                <li>At vero eos et accusam et justo .</li>
+                                <li>Consetetur sadipscing elitr, eirmod tempor invidunt .</li>
+                                <li>Lorem ipsum dolor sit amet .</li>                         
+                            </ul>
+                            <h4>Uismod tincidunt ut laoreet dolore </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim   laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                        </li>
+                        <!-- Q&A tab  -->
+                        <li uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 200" style="font-size: 14px;">
+                            <div class="uk-padding-small uk-background-light uk-position-relative">
+                                <div id="comments-container"></div>
+                            </div>                    
+                        </div> 
+                    </ul>
                 </div>
             </div>
         </div>         
         <!-- app end -->         
         <!--  Night mood -->         
         <script>
-        (function (window, document, undefined) {
-          'use strict';
-          if (!('localStorage' in window)) return;
-          var nightMode = localStorage.getItem('gmtNightMode');
-          if (nightMode) {
-              document.documentElement.className += ' night-mode';
-          }
-        })(window, document);
-
-
-        (function (window, document, undefined) {
-
-          'use strict';
-
-          // Feature test
-          if (!('localStorage' in window)) return;
-
-          // Get our newly insert toggle
-          var nightMode = document.querySelector('#night-mode');
-          if (!nightMode) return;
-
-          // When clicked, toggle night mode on or off
-          nightMode.addEventListener('click', function (event) {
-              event.preventDefault();
-              document.documentElement.classList.toggle('night-mode');
-              if ( document.documentElement.classList.contains('night-mode') ) {
-                  localStorage.setItem('gmtNightMode', true);
-                  return;
-              }
-              localStorage.removeItem('gmtNightMode');
-          }, false);
-
-        })(window, document);
-
         // Preloader
-        var spinneroverlay = document.getElementById("spinneroverlay");
-        window.addEventListener('load', function(){
-            spinneroverlay.style.display = 'none';
-        });
-        
-
-        </script>         
+            var spinneroverlay = document.getElementById("spinneroverlay");
+            window.addEventListener('load', function(){
+                spinneroverlay.style.display = 'none';
+            });
+        </script>  
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-comments.js"></script>
+        <script type="text/javascript">
+            $('#comments-container').comments({
+                profilePictureURL: 'assets/img/dammy.jpg',
+                getComments: function(success, error) {
+                    var commentsArray = [{
+                        id: 1,
+                        created: '2015-10-01',
+                        content: 'Lorem ipsum dolort sit amet',
+                        fullname: 'Simon Powell',
+                        upvote_count: 2,
+                        user_has_upvoted: false
+                    }];
+                    success(commentsArray);
+                },
+                postCommentOnEnter: true
+            });
+        </script>    
     </body>     
 </html>
