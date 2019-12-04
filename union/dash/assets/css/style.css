@@ -123,3 +123,17 @@ h4{
 .uk-nav > li > a{
     font-size: 14px;
 }
+[class~=video-responsive] iframe {
+    padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+
