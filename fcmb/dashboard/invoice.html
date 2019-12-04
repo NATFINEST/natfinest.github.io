@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="plugins/morris/morris.css"><!-- Basic Css files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-formhelpers.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
@@ -178,7 +179,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row" style="min-height: 300px">
                         <div class="col-lg-12">
                             <div class="box_cart">
                             <table class="table table-striped cart-list">
@@ -205,7 +206,8 @@
                                         </td>
                                         <td>
                                             <div class="form-group row">
-                                                <div class="col-sm-10"><input class="form-control" type="text" value="42" id="example-number-input"></div>
+                                                <div class="col-sm-4 bfh-selectbox bfh-currencies" data-currency="NGN" data-flags="true"></div>
+                                                <div class="col-sm-4"><input class="form-control" type="text" value="" id="example-number-input" data-type="number"></div>
                                             </div>
                                         </td>
 
@@ -266,7 +268,7 @@
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="assets/pages/dashboard.js"></script><!-- App js -->
     <script src="assets/js/app.js"></script>
-
+    <script src="assets/js/bootstrap-formhelpers.min.js"></script>
     <script type="text/javascript">
         $(function() {
             $('input[name="gender"]').on('click', function() {
@@ -277,6 +279,20 @@
                     $('#accno').hide();
                 }
             });
+        });
+        $(document).ready(function(){
+            $("input[data-type='number']").keyup(function(event){
+              // skip for arrow keys
+              if(event.which >= 37 && event.which <= 40){
+                  event.preventDefault();
+              }
+              var $this = $(this);
+              var num = $this.val().replace(/,/gi, "");
+              var num2 = num.split(/(?=(?:\d{3})+$)/).join(",");
+              console.log(num2);
+              // the following line has been simplified. Revision history contains original.
+              $this.val(num2);
+          });
         });
     </script>
 </body>
