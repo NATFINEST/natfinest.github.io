@@ -18,6 +18,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/tooltipster.bundle.min.css" rel="stylesheet">
 	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
 	
 	<!-- SPECIFIC CSS -->
@@ -159,10 +160,11 @@
 						<h3>Payment Solution</h3>
 						<p>
 							Make payment online using FCMB services
-							<button class="text-center btn-services pointer" data-toggle="tooltip" data-placement="left" title="As a business owner, you can bank conveniently on web from your home or office with FCMBOnline (Business Version)." onclick="window.open('https://onlineaccount.fcmb.com/', '_blank'); return false;">
+
+							<button class="text-center btn-services pointer tt1" title="As a business owner, you can bank conveniently on web from your home or office with FCMBOnline (Business Version)." onclick="window.open('https://onlineaccount.fcmb.com/', '_blank'); return false;">
 							  FCMBONLINE
 							</button>
-							<button class="text-center btn-services pointer" data-toggle="tooltip" data-placement="right" title="You can enjoy secure transactions conveniently with FCMB Gold Verve Card." onclick="window.open('https://apply.fcmb.com/request/debitcard/', '_blank'); return false;">
+							<button class="text-center btn-services pointer tt2"  title="You can enjoy secure transactions conveniently with FCMB Gold Verve Card." onclick="window.open('https://apply.fcmb.com/request/debitcard/', '_blank'); return false;">
 							  BUSINESS DEBIT CARD
 							</button>
 						</p>
@@ -172,9 +174,14 @@
 					<a class="box_feat" href="https://www.fcmb.com/quick-loan-service/index.php" target="_blank">
 						<i class="pe-7s-calculator"></i>
 						<h3>Apply for quick loan online</h3>
-						<button class="text-center btn-services" data-html="true" data-toggle="tooltip" data-placement="left" title="<b>Requirements:</b> <p class='text-left'>1. Have an FCMB Business Account  <br>2. 6 months of banking relationship  <br>3. Have access to the FCMB Internet Banking</p>" >
+						<button class="text-center btn-services tt3" data-tooltip-content="#tooltip_content" >
 							  Get a quick loan in hours without collateral.
-							</button>
+						</button>
+						<div class="ttt">
+							<div id="tooltip_content">
+							    <b>Requirements:</b> <p class='text-left'>1. Have an FCMB Business Account  <br>2. 6 months of banking relationship  <br>3. Have access to the FCMB Internet Banking</p>
+							</div>
+						</div>
 					</a>
 				</div>
 			</div>
@@ -268,6 +275,7 @@
     <script src="layerslider/js/layerslider.transitions.js"></script>
     <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
 	<script src="js/sina-nav.js"></script>
+	<script src="js/tooltipster.bundle.min.js"></script>
     <script type="text/javascript">
         'use strict';
         $('#layerslider').layerSlider({
@@ -290,6 +298,35 @@
 		    e.preventDefault();
 		});
     </script>
+    <script>
+        $(document).ready(function() {
+            $('.tt1').tooltipster({
+			   animation: 'fade',
+			   delay: 100,
+			   theme: 'tooltipster-noir',
+			   trigger: 'hover',
+			   side: 'left',
+			   maxWidth: 250
+            });
+            $('.tt2').tooltipster({
+			   animation: 'fade',
+			   delay: 100,
+			   theme: 'tooltipster-noir',
+			   trigger: 'hover',
+			   side: 'right',
+			   maxWidth: 250
+            });
+            $('.tt3').tooltipster({
+			   animation: 'fade',
+			   delay: 100,
+			   theme: 'tooltipster-noir',
+			   trigger: 'hover',
+			   side: 'right',
+			   maxWidth: 250
+            });
+        });
+    </script>
+
   
 </body>
 
