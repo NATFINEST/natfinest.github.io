@@ -156,7 +156,17 @@ h4{
 .bg-white{
     background: #fff;
 }
-
+.uk-container.uk-container-fluid{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+.tm-course-lesson-section{
+    margin-top: 1px!important;
+}
+p{
+    font-size: 14px
+}
 
 
 
