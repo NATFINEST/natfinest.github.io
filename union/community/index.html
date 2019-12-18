@@ -393,60 +393,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Pages widget -->
-                        <!-- /includes/widgets/recommended-pages-1-widget.html -->
-                        <div class="card">
-                            <div class="card-heading is-bordered">
-                                <h4>Recommended Forums</h4>
-                            </div>
-                            <div class="card-body no-padding">
-                                <!-- Recommended Page -->
-                                <div class="page-block transition-block">
-                                    <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/icons/logos/lonelydroid.svg" data-page-popover="1" alt="">
-                                    <div class="page-meta">
-                                        <span>Lonely Droid</span>
-                                        <span>Technology</span>
-                                    </div>
-                                    <div class="add-page add-transition">
-                                        <i data-feather="bookmark"></i>
-                                    </div>
-                                </div>
-                                <!-- Recommended Page -->
-                                <div class="page-block transition-block">
-                                    <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/icons/logos/metamovies.svg" data-page-popover="2" alt="">
-                                    <div class="page-meta">
-                                        <span>Meta Movies</span>
-                                        <span>Movies / Entertainment</span>
-                                    </div>
-                                    <div class="add-page add-transition">
-                                        <i data-feather="bookmark"></i>
-                                    </div>
-                                </div>
-                                <!-- Recommended Page -->
-                                <div class="page-block transition-block">
-                                    <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/icons/logos/nuclearjs.svg" data-page-popover="3" alt="">
-                                    <div class="page-meta">
-                                        <span>Nuclearjs</span>
-                                        <span>Technology</span>
-                                    </div>
-                                    <div class="add-page add-transition">
-                                        <i data-feather="bookmark"></i>
-                                    </div>
-                                </div>
-                                <!-- Recommended Page -->
-                                <div class="page-block transition-block">
-                                    <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/icons/logos/slicer.svg" data-page-popover="4" alt="">
-                                    <div class="page-meta">
-                                        <span>Slicer</span>
-                                        <span>Web / Design</span>
-                                    </div>
-                                    <div class="add-page add-transition">
-                                        <i data-feather="bookmark"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Fake Ad -->
                         <!-- /includes/widgets/latest-activity-1-widget.html -->
                         <div id="latest-activity-1" class="card">
                             <div class="card-heading is-bordered">
@@ -485,12 +431,6 @@
                                                 <a>
                                                     <span class="icon is-small"><i data-feather="edit-3"></i></span>
                                                     <span>Publish</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="modal-trigger" data-modal="albums-help-modal">
-                                                    <span class="icon is-small"><i data-feather="image"></i></span>
-                                                    <span>Albums</span>
                                                 </a>
                                             </li>
                                             <!-- Close X button -->
@@ -739,236 +679,15 @@
                                         <!-- General basic options -->
                                         <div id="basic-options" class="compose-options">
                                             <!-- Upload action -->
-                                            <div class="compose-option">
+                                            <div class="compose-option modal-trigger" data-modal="albums-modal">
+
                                                 <i data-feather="camera"></i>
-                                                <span>Media</span>
-                                                <input type="file">
-                                            </div>
-                                            <!-- Mood action -->
-                                            <div id="show-activities" class="compose-option">
-                                                <img src="assets/images/icons/emoji/emoji-1.svg" alt="">
-                                                <span>Activity</span>
-                                            </div>
-                                            <!-- Expand action -->
-                                            <div id="open-extended-options" class="compose-option">
-                                                <i data-feather="more-horizontal"></i>
+                                                <span>Photos</span>
                                             </div>
                                         </div>
                                         <!-- /General basic options -->
-
-                                        <!-- Hidden Options -->
-                                        <div class="hidden-options">
-                                            <div class="target-channels">
-                                                <!-- Publication Channel -->
-                                                <div class="channel">
-                                                    <div class="round-checkbox is-small">
-                                                        <div>
-                                                            <input type="checkbox" id="checkbox-1" checked>
-                                                            <label for="checkbox-1"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="channel-icon">
-                                                        <i data-feather="bell"></i>
-                                                    </div>
-                                                    <div class="channel-name">Activity Feed</div>
-                                                    <!-- Dropdown menu -->
-                                                    <div class="dropdown is-spaced is-modern is-right is-neutral dropdown-trigger">
-                                                        <div>
-                                                            <button class="button" aria-haspopup="true">
-                                                                <i class="main-icon" data-feather="smile"></i>
-                                                                <span>Friends</span>
-                                                                <i class="caret" data-feather="chevron-down"></i>
-                                                            </button>
-                                                        </div>
-                                                        <div class="dropdown-menu" role="menu">
-                                                            <div class="dropdown-content">
-                                                                <a href="#" class="dropdown-item">
-                                                                    <div class="media">
-                                                                        <i data-feather="globe"></i>
-                                                                        <div class="media-content">
-                                                                            <h3>Public</h3>
-                                                                            <small>Anyone can see this publication.</small>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <a class="dropdown-item">
-                                                                    <div class="media">
-                                                                        <i data-feather="users"></i>
-                                                                        <div class="media-content">
-                                                                            <h3>Friends</h3>
-                                                                            <small>only friends can see this publication.</small>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <a class="dropdown-item">
-                                                                    <div class="media">
-                                                                        <i data-feather="user"></i>
-                                                                        <div class="media-content">
-                                                                            <h3>Specific friends</h3>
-                                                                            <small>Don't show it to some friends.</small>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <hr class="dropdown-divider">
-                                                                <a class="dropdown-item">
-                                                                    <div class="media">
-                                                                        <i data-feather="lock"></i>
-                                                                        <div class="media-content">
-                                                                            <h3>Only me</h3>
-                                                                            <small>Only me can see this publication.</small>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Publication Channel -->
-                                                <div class="channel">
-                                                    <div class="round-checkbox is-small">
-                                                        <div>
-                                                            <input type="checkbox" id="checkbox-2">
-                                                            <label for="checkbox-2"></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="story-icon">
-                                                        <div class="plus-icon">
-                                                            <i data-feather="plus"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="channel-name">My Story</div>
-                                                    <!-- Dropdown menu -->
-                                                    <div class="dropdown is-spaced is-modern is-right is-neutral dropdown-trigger">
-                                                        <div>
-                                                            <button class="button" aria-haspopup="true">
-                                                                <i class="main-icon" data-feather="smile"></i>
-                                                                <span>Friends</span>
-                                                                <i class="caret" data-feather="chevron-down"></i>
-                                                            </button>
-                                                        </div>
-                                                        <div class="dropdown-menu" role="menu">
-                                                            <div class="dropdown-content">
-                                                                <a href="#" class="dropdown-item">
-                                                                    <div class="media">
-                                                                        <i data-feather="globe"></i>
-                                                                        <div class="media-content">
-                                                                            <h3>Public</h3>
-                                                                            <small>Anyone can see this publication.</small>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <a class="dropdown-item">
-                                                                    <div class="media">
-                                                                        <i data-feather="users"></i>
-                                                                        <div class="media-content">
-                                                                            <h3>Friends</h3>
-                                                                            <small>only friends can see this publication.</small>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                                <a class="dropdown-item">
-                                                                    <div class="media">
-                                                                        <i data-feather="users"></i>
-                                                                        <div class="media-content">
-                                                                            <h3>Friends and contacts</h3>
-                                                                            <small>Your friends and contacts.</small>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Friends list -->
-                                            <div class="friends-list is-hidden">
-                                                <!-- Header -->
-                                                <div class="list-header">
-                                                    <span>Send in a message</span>
-                                                    <div class="actions">
-                                                        <a id="open-compose-search" href="javascript:void(0);" class="search-trigger">
-                                                            <i data-feather="search"></i>
-                                                        </a>
-                                                        <!-- Hidden filter input -->
-                                                        <div id="compose-search" class="control is-hidden">
-                                                            <input type="text" class="input" placeholder="Search People">
-                                                            <span>
-                                                                    <i data-feather="search"></i>
-                                                                </span>
-                                                        </div>
-                                                        <a href="javascript:void(0);" class="is-inverted modal-trigger" data-modal="create-group-modal">Create group</a>
-                                                    </div>
-                                                </div>
-                                                <!-- List body -->
-                                                <div class="list-body">
-
-                                                    <!-- Friend -->
-                                                    <div class="friend-block">
-                                                        <div class="round-checkbox is-small">
-                                                            <div>
-                                                                <input type="checkbox" id="checkbox-3">
-                                                                <label for="checkbox-3"></label>
-                                                            </div>
-                                                        </div>
-                                                        <img class="friend-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
-                                                        <div class="friend-name">Dan Walker</div>
-                                                    </div>
-                                                    <!-- Friend -->
-                                                    <div class="friend-block">
-                                                        <div class="round-checkbox is-small">
-                                                            <div>
-                                                                <input type="checkbox" id="checkbox-4">
-                                                                <label for="checkbox-4"></label>
-                                                            </div>
-                                                        </div>
-                                                        <img class="friend-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/daniel.jpg" alt="">
-                                                        <div class="friend-name">Daniel Wellington</div>
-                                                    </div>
-                                                    <!-- Friend -->
-                                                    <div class="friend-block">
-                                                        <div class="round-checkbox is-small">
-                                                            <div>
-                                                                <input type="checkbox" id="checkbox-5">
-                                                                <label for="checkbox-5"></label>
-                                                            </div>
-                                                        </div>
-                                                        <img class="friend-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/stella.jpg" alt="">
-                                                        <div class="friend-name">Stella Bergmann</div>
-                                                    </div>
-                                                    <!-- Friend -->
-                                                    <div class="friend-block">
-                                                        <div class="round-checkbox is-small">
-                                                            <div>
-                                                                <input type="checkbox" id="checkbox-6">
-                                                                <label for="checkbox-6"></label>
-                                                            </div>
-                                                        </div>
-                                                        <img class="friend-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/david.jpg" alt="">
-                                                        <div class="friend-name">David Kim</div>
-                                                    </div>
-                                                    <!-- Friend -->
-                                                    <div class="friend-block">
-                                                        <div class="round-checkbox is-small">
-                                                            <div>
-                                                                <input type="checkbox" id="checkbox-7">
-                                                                <label for="checkbox-7"></label>
-                                                            </div>
-                                                        </div>
-                                                        <img class="friend-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/nelly.png" alt="">
-                                                        <div class="friend-name">Nelly Schwartz</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <!-- Footer buttons -->
                                         <div class="more-wrap">
-                                            <!-- View more button -->
-                                            <button id="show-compose-friends" type="button" class="button is-more" aria-haspopup="true">
-                                                <i data-feather="more-vertical"></i>
-                                                <span>View More</span>
-                                            </button>
                                             <!-- Publish button -->
                                             <button id="publish-button" type="submit" class="button is-solid accent-button is-fullwidth is-disabled">
                                                 Publish
@@ -2629,7 +2348,7 @@
                 <form action="gp" method="POST" >
                     <div class="card">
                         <div class="card-heading">
-                            <h3>New album</h3>
+                            <h3>Post Picture</h3>
                             <div class="button is-solid accent-button fileinput-button">
                                 <i class="mdi mdi-plus"></i> Add pictures/videos
                             </div>
@@ -2645,19 +2364,7 @@
                             <div class="left-section">
                                 <div class="album-form">
                                     <div class="control">
-                                        <input type="text" class="input is-sm no-radius is-fade" placeholder="Album name">
-                                        <div class="icon">
-                                            <i data-feather="camera"></i>
-                                        </div>
-                                    </div>
-                                    <div class="control">
-                                        <textarea class="textarea is-fade no-radius is-sm" rows="3" placeholder="describe your album ..."></textarea>
-                                    </div>
-                                    <div class="control">
-                                        <input type="text" class="input is-sm no-radius is-fade" placeholder="Place">
-                                        <div class="icon">
-                                            <i data-feather="map-pin"></i>
-                                        </div>
+                                        <textarea class="textarea is-fade no-radius is-sm" rows="3" placeholder="Write something about you..."></textarea>
                                     </div>
                                 </div>
 
@@ -2716,11 +2423,6 @@
                                                             <div class="progress-bar progress-bar-success" data-dz-uploadprogress></div>
                                                         </div>
                                                     </div>
-                                                    <div class="upload-item-description">
-                                                        <div class="control">
-                                                            <textarea class="textarea is-small is-fade no-radius" rows="4" placeholder="Describe this photo ..."></textarea>
-                                                        </div>
-                                                    </div>
                                                     <div class="upload-item-actions is-hidden">
                                                         <button class="button start is-hidden">
                                                             <span>Start</span>
@@ -2742,58 +2444,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <!-- Dropdown menu -->
-                            <div class="dropdown is-up is-spaced is-modern is-neutral is-right dropdown-trigger">
-                                <div>
-                                    <button class="button" aria-haspopup="true">
-                                        <i class="main-icon" data-feather="smile"></i>
-                                        <span>Friends</span>
-                                        <i class="caret" data-feather="chevron-down"></i>
-                                    </button>
-                                </div>
-                                <div class="dropdown-menu" role="menu">
-                                    <div class="dropdown-content">
-                                        <a href="#" class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="globe"></i>
-                                                <div class="media-content">
-                                                    <h3>Public</h3>
-                                                    <small>Anyone can see this publication.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="users"></i>
-                                                <div class="media-content">
-                                                    <h3>Friends</h3>
-                                                    <small>only friends can see this publication.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="user"></i>
-                                                <div class="media-content">
-                                                    <h3>Specific friends</h3>
-                                                    <small>Don't show it to some friends.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <hr class="dropdown-divider">
-                                        <a class="dropdown-item">
-                                            <div class="media">
-                                                <i data-feather="lock"></i>
-                                                <div class="media-content">
-                                                    <h3>Only me</h3>
-                                                    <small>Only me can see this publication.</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="button is-solid accent-button close-modal">Create album</button>
+                            <button type="submit" class="button is-solid accent-button close-modal">Publish</button>
                         </div>
                     </div>
                 </form>
