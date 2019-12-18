@@ -339,7 +339,7 @@ ul.sub-lang {
 
 /* home-1 > slider area */
 .single-slider {
-	min-height: 815px;
+	/*min-height: 815px;*/
 	background-color: #7e8188;
 	background-image: url(../img/slider/slider-bg.jpg);
 	background-size: cover;

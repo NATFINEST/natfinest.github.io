@@ -1,0 +1,32 @@
+a.primary-btn {
+    color: #fff;
+    background-color: #4582ff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+a.primary-btn:hover {
+    color: #fff;
+    background-color: #6e9bf7;
+    transition: .6s ease-out;
+    -webkit-transition: .6s ease-out;
+}
+.slider-content h1 {
+    font-size: 3.5em;
+ }
+.single-slider{
+ 	padding-top: 120px;
+ 	height: 500px
+ }
+ button.slick-arrow:hover {
+    background: #4582ff;
+}
+.course-content h5 a {
+    font-size: 16px;
+}
+.btn-sm{
+	padding: 7px 20px!important;
+	font-size: 12px!important;
+}
