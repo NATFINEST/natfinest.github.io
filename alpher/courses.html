@@ -43,9 +43,9 @@
                 <div class="row">
                     <!-- header logo -->
                     <div class="col-xl-2 col-lg-2 col-md-2 logo-wrapper mt-2">
-                        <div class="header-logo d-flex justify-content-start justify-content-xl-center">
-                            <a href="index.html"><img src="assets/img/alpher-logo.png" alt="Logo" style="width: 100px"></a>
-                        </div>
+                        <a href="index.html" class="header-logo d-flex justify-content-start justify-content-xl-center">
+                            <img src="assets/img/alpher-logo.png" alt="Logo" style="width: 100px;z-index: 999">
+                        </a>
                     </div>
                     <!-- navigation -->
                     <div class="col-xl-8 col-lg-8 col-md-8 nav-wrapper">
@@ -65,7 +65,7 @@
                                     <ul class="sub-menu page">
                                         <li><a href="dash/loans.html">Grants and Loans</a></li>
                                         <li><a href="dash/webiar.html">Latest Webinar</a></li>
-                                        <li><a href="events">Events</a></li>
+                                        <li><a href="events.html">Events</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -73,13 +73,13 @@
                     </div>
                     <!-- header link -->
                     <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block link-wrapper mt-md-4">
-                            <a href="login" class="primary-btn">Login</a>
+                        <a href="login.html" class="primary-btn">Login</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="mobile-menu"></div>
-    </header>    <!-- header end -->
+    </header>   <!-- header end -->
 
     <main>
         <!-- banner area -->
@@ -99,17 +99,16 @@
         <section class="latest-course pt-125 pb-70">
             <div class="container">
                 <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4">
+                <div class="col-xl-4 col-lg-4 col-md-6">
                   <div class="shorting">
                     <div class="short-search">
                       <form>
                         <input type="text" placeholder="Search your course" data-search />
-                        <button type="submit"><i class="fas fa-search"></i></button>
                       </form>
                     </div>
                   </div>
                 </div>
-                <div class="single-input col-xl-3 col-lg-3 col-md-4 offset-lg-3 col-5 offset-xl-5">
+                <div class="single-input col-xl-4 col-lg-4 col-md-6 offset-lg-4 col-5 offset-xl-4 mb-sm-3 col-sm-12">
                     <select name="courseSelect" id="CourseSelect2" style="display: none;">
                         <option value="all">All Courses</option>
                         <option value="fin">Financial Management</option>
@@ -274,12 +273,12 @@
     <footer class="pt-11">
         <div class="container">
             <div class="row footer-copyright mt-0">
-                <div class="col-xl-3 col-lg-3 text-center text-lg-left">
+                <div class="col-xl-3 col-lg-3 text-center text-lg-left my-3">
                     <div class="copyright-text">
                         <p>Copyright ©2019 Alpher.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 text-center">
+                <div class="col-xl-3 col-lg-3 text-center my-3">
                     <div class="footer-link">
                         <a class="fb" href="https://www.facebook.com/Unionbankng/"><i class="fab fa-facebook-f"></i></a>
                         <a class="twit" href="https://www.twitter.com/UNIONBANK_NG"><i class="fab fa-twitter"></i></a>
@@ -287,13 +286,13 @@
                         <a class="google" href="https://www.youtube.com/user/UnionBankNG"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 text-center">
-                    <div class="footer-menu d-flex justify-content-end">
-                        <ul>
+                <div class="col-xl-6 col-lg-6 text-center my-3">
+                    <div class="footer-menu d-flex">
+                        <ul class="text-center w-100">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">about us</a></li>
-                            <li><a href="course-standard.html">course</a></li>
-                            <li><a href="instructor.html">community</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="courses.html">courses</a></li>
+                            <li><a href="community/index.html">community</a></li>
                         </ul>
                     </div>
                 </div>
@@ -323,22 +322,24 @@
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#CourseSelect2').change(function () {
-                $('.group').hide();
-                $('.'+$(this).val()).show();
-              })
-
             $('[data-search]').on('keyup', function() {
                 var searchVal = $(this).val();
                 var filterItems = $('[data-filter-item]');
 
                 if ( searchVal != '' ) {
-                    filterItems.addClass('hidden');
-                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hidden');
+                    filterItems.hide();
+                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').show();
                 } else {
-                    filterItems.removeClass('hidden');
+                    filterItems.show();
                 }
             });
+
+            $('#CourseSelect2').change(function () {
+                $('.group').hide();
+                $('.'+$(this).val()).show();
+              })
+
+            
         });
     </script>
 

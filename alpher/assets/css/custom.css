@@ -118,8 +118,23 @@ span.current{
 a{
 	font-weight: 500
 }
-
-
+button.slick-arrow{
+	left: -2%;
+	box-shadow: 1px 1px 10px 1px #999;
+}
+button.slick-arrow.slick-next{
+	right: -2%;
+}
+.latest-course-4 button.slick-arrow.slick-next{
+	right: -2%;
+}
+.latest-course-4 button.slick-prev{
+	left: -2%;
+}
+.form-control{
+	height: 50px;
+	font-size: 14px;
+}
 
 
 

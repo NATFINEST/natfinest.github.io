@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/meanmenu.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -41,9 +42,9 @@
                 <div class="row">
                     <!-- header logo -->
                     <div class="col-xl-2 col-lg-2 col-md-2 logo-wrapper mt-2">
-                        <div class="header-logo d-flex justify-content-start justify-content-xl-center">
-                            <a href="index.html"><img src="assets/img/alpher-logo.png" alt="Logo" style="width: 100px"></a>
-                        </div>
+                        <a href="index.html" class="header-logo d-flex justify-content-start justify-content-xl-center">
+                            <img src="assets/img/alpher-logo.png" alt="Logo" style="width: 100px;z-index: 999">
+                        </a>
                     </div>
                     <!-- navigation -->
                     <div class="col-xl-8 col-lg-8 col-md-8 nav-wrapper">
@@ -63,7 +64,7 @@
                                     <ul class="sub-menu page">
                                         <li><a href="dash/loans.html">Grants and Loans</a></li>
                                         <li><a href="dash/webiar.html">Latest Webinar</a></li>
-                                        <li><a href="events">Events</a></li>
+                                        <li><a href="events.html">Events</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -71,7 +72,7 @@
                     </div>
                     <!-- header link -->
                     <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block link-wrapper mt-md-4">
-                            <a href="login" class="primary-btn">Login</a>
+                        <a href="login.html" class="primary-btn">Login</a>
                     </div>
                 </div>
             </div>
@@ -190,7 +191,7 @@
                     <div class="col-xl-4 text-center course-4">
                         <div class="single-course">
                             <div class="course-icon">
-                                <span><i class="far fa-credit-card"></i></span>
+                                <span><i class="fas fa-user-check"></i></span>
                             </div>
                             <div class="course-content">
                                 <h5 class="fw-normal"><a href="#">Mentorship</a></h5>
@@ -251,10 +252,10 @@
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
-                                    <h6><a href="course-details.html">Advabce Web Development</a></h6>
+                                    <h6><a href="course1.html">Advance Web Development</a></h6>
                                 </div>
                                 <div class="lat-course-footer d-flex justify-content-center">
-                                    <a href="course-details.html" class="primary-btn btn-sm">View Course</a>
+                                    <a href="course1.html" class="primary-btn btn-sm">View Course</a>
                                 </div>
                             </div>
                         </div>
@@ -269,10 +270,10 @@
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
-                                    <h6><a href="course-details.html">Advabce Web Development</a></h6>
+                                    <h6><a href="course1.html">Advance Web Development</a></h6>
                                 </div>
                                 <div class="lat-course-footer d-flex justify-content-center">
-                                    <a href="course-details.html" class="primary-btn btn-sm">View Course</a>
+                                    <a href="course1.html" class="primary-btn btn-sm">View Course</a>
                                 </div>
                             </div>
                         </div>
@@ -287,10 +288,10 @@
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
-                                    <h6><a href="course-details.html">Advabce Web Development</a></h6>
+                                    <h6><a href="course1.html">Advance Web Development</a></h6>
                                 </div>
                                 <div class="lat-course-footer d-flex justify-content-center">
-                                    <a href="course-details.html" class="primary-btn btn-sm">View Course</a>
+                                    <a href="course1.html" class="primary-btn btn-sm">View Course</a>
                                 </div>
                             </div>
                         </div>
@@ -305,10 +306,10 @@
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
-                                    <h6><a href="course-details.html">Advabce Web Development</a></h6>
+                                    <h6><a href="course1.html">Advance Web Development</a></h6>
                                 </div>
                                 <div class="lat-course-footer d-flex justify-content-center">
-                                    <a href="course-details.html" class="primary-btn btn-sm">View Course</a>
+                                    <a href="course1.html" class="primary-btn btn-sm">View Course</a>
                                 </div>
                             </div>
                         </div>
@@ -332,8 +333,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-xl-3">
-                        <div class="upcoming-events-link-2 text-right">
-                            <a href="event.html"><i class="fas fa-book"></i>explore all</a>
+                        <div class="upcoming-events-link-2">
+                            <a href="events.html">More Events</a>
                         </div>
                     </div>
                 </div>
@@ -347,16 +348,15 @@
                                     <img src="assets/img/upcoming-events/upcoming-events-1.jpg" alt="Upcoming Event">
                                 </div>
                                 <div class="upcoming-event-text mb-md-4 mb-lg-0 pr-20">
-                                    <a href="#" class="bg-primary">art competition</a>
-                                    <h4><a href="event-details.html">Graphics Design Conference</a></h4>
+                                    <h4><a href="event-register.html">Graphics Design Conference</a></h4>
                                     <div class="u-event-meta">
-                                        <p><span><i class="fas fa-map-marker-alt"></i>Dawsonville, New York</span><span><i class="far fa-calendar-alt"></i>05 July 2019</span></p>
-                                        <p><span><i class="far fa-clock"></i>10:00 am - 12:30 pm</span><span><i class="fas fa-tags"></i>$50:00</span></p>
+                                        <p><span><i class="fas fa-map-marker-alt"></i>Dawsonville, New York</span></p>
+                                        <p><span><i class="far fa-calendar-alt"></i>05 July 2019</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="upcoming-link">
-                                <a href="#" class="default-btn"><i class="fas fa-book"></i>join event</a>
+                                <a href="event-register.html" class="default-btn"><i class="fas fa-book"></i>Register</a>
                             </div>
                         </div>
                     </div>
@@ -370,12 +370,12 @@
     <footer class="pt-11">
         <div class="container">
             <div class="row footer-copyright mt-0">
-                <div class="col-xl-3 col-lg-3 text-center text-lg-left">
+                <div class="col-xl-3 col-lg-3 text-center text-lg-left my-3">
                     <div class="copyright-text">
                         <p>Copyright ©2019 Alpher.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 text-center">
+                <div class="col-xl-3 col-lg-3 text-center my-3">
                     <div class="footer-link">
                         <a class="fb" href="https://www.facebook.com/Unionbankng/"><i class="fab fa-facebook-f"></i></a>
                         <a class="twit" href="https://www.twitter.com/UNIONBANK_NG"><i class="fab fa-twitter"></i></a>
@@ -383,13 +383,13 @@
                         <a class="google" href="https://www.youtube.com/user/UnionBankNG"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 text-center">
-                    <div class="footer-menu d-flex justify-content-end">
-                        <ul>
+                <div class="col-xl-6 col-lg-6 text-center my-3">
+                    <div class="footer-menu d-flex">
+                        <ul class="text-center w-100">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">about us</a></li>
-                            <li><a href="course-standard.html">course</a></li>
-                            <li><a href="instructor.html">community</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="courses.html">courses</a></li>
+                            <li><a href="community/index.html">community</a></li>
                         </ul>
                     </div>
                 </div>
@@ -401,7 +401,6 @@
     <!-- Code end -->
 
     <!-- All js file -->
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
