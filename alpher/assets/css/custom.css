@@ -135,7 +135,9 @@ button.slick-arrow.slick-next{
 	height: 50px;
 	font-size: 14px;
 }
-
+.mean-container .mean-bar, .mean-container .mean-bar *{
+    z-index: 9999
+}
 
 
 

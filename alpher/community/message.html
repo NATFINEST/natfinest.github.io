@@ -30,12 +30,16 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/core.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- include the site stylesheet -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- include the site responsive stylesheet -->
-    <link rel="stylesheet" href="../css/responsive.css">
-    <!-- include the site custom stylesheet -->
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
 <body>
@@ -46,72 +50,50 @@
     <div class="app-overlay"></div>
 
 
-    <header id="page-header" class="page-header-stick">
-        <!-- header holder -->
-        <div class="header-holder">
+    <header class="bg-white">
+        <!-- main header -->
+        <div class="main-header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-2">
-                        <!-- logo -->
-                        <div class="logo">
-                            <a href="index.html">
-                                <img class="hidden-xs" src="../images/alpher-logo.png" alt="alpher">
-                                <img class="hidden-sm hidden-md hidden-lg" src="../images/alpher-logo.png" alt="alpher">
-                            </a>
-                        </div>
+                    <!-- header logo -->
+                    <div class="col-xl-2 col-lg-2 col-md-2 logo-wrapper mt-2">
+                        <a href="index.html" class="mt-md-3 d-flex justify-content-start justify-content-xl-center">
+                            <img src="../assets/img/alpher-logo.png" alt="Logo" style="width: 100px;z-index: 99999">
+                        </a>
                     </div>
-                    <div class="col-xs-6 col-sm-10 static-block">
-                        <!-- nav -->
-                        <nav id="nav" class="navbar navbar-default" style="box-shadow: none;">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <!-- navbar collapse -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <!-- main navigation -->
-                                <ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
-                                    <li><a href="" class="btn btn-login">Join Webinar</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mentorship</a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="">Financial Management</a></li>
-                                            <li><a href="">Marketing</a></li>
-                                            <li><a href="">Human Resource</a></li>
-                                            <li><a href="">Business Plan And Models</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="">Individual</a></li>
-                                            <li><a href="">Business</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="">Grants and Loans</a></li>
-                                            <li><a href="">Latest Webinar</a></li>
-                                            <li><a href="">Events</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="login.html" class="btn btn-login">Login</a></li>
-                                </ul>
-                            </div>
+                    <!-- navigation -->
+                    <div class="col-xl-8 col-lg-8 col-md-8 nav-wrapper">
+                        <nav id="mobile-menu-active">
+                            <ul class="text-center">
+                                <li><a href="dash/mentorship.html">Mentorship</a></li>
+                                <li><a href="courses.html">Courses</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Financial Management</a></li>
+                                        <li><a href="">Marketing</a></li>
+                                        <li><a href="">Human Resource</a></li>
+                                        <li><a href="">Business Plan And Models</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="community/index.html">Community</a></li>
+                                <li><a href="#">Resources</a>
+                                    <ul class="sub-menu page">
+                                        <li><a href="dash/loans.html">Grants and Loans</a></li>
+                                        <li><a href="dash/webiar.html">Latest Webinar</a></li>
+                                        <li><a href="events.html">Events</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </nav>
+                    </div>
+                    <!-- header link -->
+                    <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block link-wrapper mt-md-4">
+                        <a href="login.html" class="primary-btn">Login</a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+        <div class="mobile-menu"></div>
+    </header> 
 
     <div class="chat-wrapper active is-active">
         <div class="chat-inner">
@@ -1453,13 +1435,12 @@
     <script src="assets/js/touch.js"></script>
     <script src="assets/js/tour.js"></script>
 
-
-    <!-- include jQuery -->
-    <script src="../js/plugins.js"></script>
-    <!-- include jQuery -->
-    <script src="../js/jquery.main.js"></script>
-    <!-- include jQuery -->
-    <script type="text/javascript" src="../js/init.js"></script>
+    <!-- Plugins -->
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/jquery.meanmenu.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/plugin.js"></script>
 </body>
 
 </html>
