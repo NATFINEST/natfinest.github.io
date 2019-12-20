@@ -69,7 +69,7 @@
 .sw-theme-dots > ul.step-anchor > li > a {
     position: relative;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     background: transparent;
     border: none;
     color: #ccc;

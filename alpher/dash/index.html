@@ -10,7 +10,7 @@
         <link href="assets/img/brand/favicon.html" rel="icon" type="image/png">
         <link rel="stylesheet" id="redux-google-fonts-sf_uplift_options-css" href="https://fonts.googleapis.com/css?family=Serif%3A400%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&amp;ver=1572104180" type="text/css" media="all">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="assets/css/smart_wizard.css" rel="stylesheet" type="text/css" /> 
         <link href="assets/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
         <!-- Your stylesheet-->
@@ -47,53 +47,13 @@
                                 <img src="assets/images/alpher-logo.png" style="width: 100">
                             </a> 
                         </div>                         
-                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile"> 
+                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile" > 
                             <!-- this will clouse after display user icon -->                             
                             <span class="uk-hidden@m tm-mobile-user-close-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-times icon-large"></i></span> 
                             <ul class="uk-navbar-nav uk-flex-middle">
                                 <li> 
                                     <!-- your courses -->                                     
-                                    <a href="#"> <i class="fas fa-play uk-hidden@m"></i> <span class="uk-visible@m"> Your Courses</span> </a> 
-                                    <div uk-dropdown="pos: top-right ;mode : click; animation: uk-animation-slide-bottom-medium" class="uk-dropdown border-radius-6  uk-dropdown-top-right tm-dropdown-large uk-padding-remove"> 
-                                        <div class="uk-clearfix"> 
-                                            <div class="uk-float-left"> 
-                                                <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left">  Your Courses </h5> 
-                                            </div>                                            
-                                        </div>                                         
-                                        <hr class=" uk-margin-remove"> 
-                                        <div class="uk-padding-smaluk-text-left uk-height-medium"> 
-                                            <div class="demo1" data-simplebar> 
-                                                <div class="uk-child-width-1-2@s  uk-grid-small uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100 ;repeat: true" uk-grid> 
-                                                    <div> 
-                                                        <a href="course-index.html" class="uk-link-reset" target="_blank"> 
-                                                            <div class="uk-padding-small uk-card-default"> 
-                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
-                                                                <img src="assets/images/courses/course-10.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
-                                                                <p class="uk-text-bold uk-margin-remove uk-text-truncate">How can SEO benefit my business? </p> 
-                                                                
-                                                                <div class="uk-margin-small"> 
-                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="course-index.html" style="display:table-cell"> Course resume</a> 
-                                                                </div>                                                                 
-                                                            </div>                                                             
-                                                        </a>                                                         
-                                                    </div>                                                     
-                                                    <div> 
-                                                        <a href="course-index.html" class="uk-link-reset" target="_blank"> 
-                                                            <div class="uk-padding-small uk-card-default"> 
-                                                                <progress id="js-progressbar" class="uk-progress progress-coral  uk-margin-small-bottom" value="15" max="100" style="height: 7px !important;"></progress>                                                                 
-                                                                <img src="assets/images/courses/course-7.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
-                                                                <p class="uk-text-bold uk-margin-remove uk-text-truncate">Discover the fundamentals of starting your own business</p> 
-                                                                
-                                                                <div class="uk-margin-small"> 
-                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="course-index.html" style="display:table-cell"> Course resume</a> 
-                                                                </div>       
-                                                            </div>                                                     
-                                                        </a>                                                         
-                                                    </div>                                                    
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                        
-                                    </div>                                     
+                                    <a href="#" data-toggle="modal" data-target="#completeProfile"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Add Interest</span> </a>                                   
                                 </li>                                
                                 <li> 
                                     <!-- User profile -->                                     
@@ -149,7 +109,7 @@
         <!-- Navigation  -->
         <div class="uk-navbar-sticky uk-background-grey " uk-sticky="show-on-up: true; animation: uk-animation-slide-top;offset: 85">
             <nav class="uk-padding-small uk-visible@m uk-navbar-transparent uk-animation-slide-to uk-position-z-index" uk-navbar>
-                <div class="uk-flex uk-flex-center uk-width-expand">
+                <div class="uk-flex uk-flex-center uk-width-expand" style="margin-top: 10px">
                     <ul class="uk-subnav uk-subnav-2">
                         <li class="uk-active">
                             <a href="index.html"> <i class="fas fa-book-open icon-medium uk-margin-small-right"></i> All Courses </a>
@@ -311,11 +271,11 @@
         </button>         
 
         <!-- Complete Profile Modal -->
-        <div class="modal fade" id="completeProfile" tabindex="-1" role="dialog" aria-labelledby="completeProfileLabel" aria-hidden="true">
+        <form class="modal fade" id="completeProfile" tabindex="-1" role="dialog" aria-labelledby="completeProfileLabel" aria-hidden="true" action="go.html">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Smart Wizard modal</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Complete Profile</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -325,35 +285,32 @@
                         <!-- Smart Wizard HTML -->
                         <div id="smartwizard">
                             <ul>
-                                <li><a href="#step-1">Step Title<br /><small>Step description</small></a></li>
-                                <li><a href="#step-2">Step Title<br /><small>Step description</small></a></li>
-                                <li><a href="#step-3">Step Title<br /><small>Step description</small></a></li>
-                                <li><a href="#step-4">Step Title<br /><small>Step description</small></a></li>
+                                <li><a href="#step-1">Step Title<br /><small>educational</small></a></li>
+                                <li><a href="#step-2">Step Title<br /><small>professional</small></a></li>
+                                <li><a href="#step-3">Step Title<br /><small>social</small></a></li>
+                                <li><a href="#step-4">Step Title<br /><small>CV</small></a></li>
                             </ul>
 
                             <div>
                                 <div id="step-1" class="">
-                                    Step Content
+                                    Step Content 1
                                 </div>
                                 <div id="step-2" class="">
-                                    Step Content
+                                    Step Content 2
                                 </div>
                                 <div id="step-3" class="">
-                                    Step Content
+                                    Step Content 3
                                 </div>
                                 <div id="step-4" class="">
-                                    Step Content
+                                    Step Content 4
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
                 </div>
             </div>
-        </div>
+        </form>
 
         <script>
         // Preloader
@@ -397,9 +354,9 @@
 
         <script type="text/javascript">
             $(document).ready(function(){
-                $(window).on('load',function(){
-                    $('#completeProfile').modal('show');
-                });
+                // $(window).on('load',function(){
+                //     $('#completeProfile').modal('show');
+                // });
                 // Step show event
                 $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
                    //alert("You are on step "+stepNumber+" now");
@@ -416,7 +373,8 @@
                 // Toolbar extra buttons
                 var btnFinish = $('<button></button>').text('Finish')
                                                  .addClass('btn btn-info')
-                                                 .on('click', function(){ alert('Finish Clicked'); });
+                                                 .attr('type','submit')
+                                                 // .on('click', function(){ alert('Finish Clicked'); });
                 var btnCancel = $('<button></button>').text('Cancel')
                                                  .addClass('btn btn-danger')
                                                  .on('click', function(){ $('#smartwizard').smartWizard("reset"); });
@@ -427,8 +385,9 @@
                         theme: 'dots',
                         transitionEffect:'fade',
                         showStepURLhash: false,
-                        toolbarSettings: {toolbarPosition: 'both',
-                                          toolbarExtraButtons: [btnFinish, btnCancel]
+                        toolbarSettings: {toolbarPosition: 'bottom',
+                                          toolbarExtraButtons: [btnFinish],
+                                          toolbarButtonPosition: 'start'
                                         }
                 });
 

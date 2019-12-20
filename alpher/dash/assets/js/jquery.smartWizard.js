@@ -28,7 +28,7 @@
         },
         toolbarSettings: {
             toolbarPosition: 'bottom', // none, top, bottom, both
-            toolbarButtonPosition: 'end', // start, end
+            toolbarButtonPosition: 'start', // start, end
             showNextButton: true, // show/hide a Next button
             showPreviousButton: true, // show/hide a Previous button
             toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements

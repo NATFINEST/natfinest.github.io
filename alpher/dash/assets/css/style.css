@@ -167,9 +167,30 @@ h4{
 p{
     font-size: 14px
 }
-
-
-
+.uk-navbar-transparent {
+    height: 65px;
+    padding-top: 5px
+}
+.uk-background-grey.uk-sticky-fixed {
+    top: 66px!important;
+}
+.sw-btn-prev,.sw-btn-next{
+    font-size: 16px;
+    font-weight: 300;
+}
+.modal-title{
+    font-weight: 400;
+}
+.sw-btn-group{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.btn-info,.btn-info:hover{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #28a745;
+}
 
 
 
