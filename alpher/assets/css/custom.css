@@ -138,7 +138,18 @@ button.slick-arrow.slick-next{
 .mean-container .mean-bar, .mean-container .mean-bar *{
     z-index: 9999
 }
-
+.lat-course-title{
+    min-height: 70px;
+}
+.fs-14{
+    font-size: 14px
+}
+.mh-85{
+    min-height: 85px
+}
+footer {
+    background-color: #333;
+}
 
 
 
