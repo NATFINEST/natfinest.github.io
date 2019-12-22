@@ -6,7 +6,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+input {
     font-family: HCo Gotham Rounded SSm, sans-serif!important
 }
 h4{
@@ -144,13 +145,31 @@ button.slick-arrow.slick-next{
 .fs-14{
     font-size: 14px
 }
+.fs-16{
+    font-size: 16px
+}
 .mh-85{
     min-height: 85px
 }
 footer {
     background-color: #333;
 }
-
+.acc-sel .nice-select{
+    background: #333;
+    border: 0;
+}
+.acc-sel .nice-select .current{
+    color: #fff;
+}
+.form-group.single-input span{
+    left: 13%;
+    top: -5%;
+    color: #666;
+}
+.long-select .nice-select .list {
+    height: 200px;
+    overflow: scroll;
+}
 
 
 
