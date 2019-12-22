@@ -170,6 +170,15 @@ footer {
     height: 200px;
     overflow: scroll;
 }
+.tab-content>.tab-pane{
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.tab-content>.active{
+    
+  height: auto;
+}
 
 
 
