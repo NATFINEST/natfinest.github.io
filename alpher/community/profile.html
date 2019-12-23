@@ -104,7 +104,7 @@
     <div class="view-wrapper">
 
         <!-- Container -->
-        <div class="container is-custom">
+        <div class="container is-custom mt-3">
             
                 <!-- Profile page main wrapper -->
                 <div id="profile-main" class="view-wrap is-headless">
@@ -148,7 +148,7 @@
                                 <h4>Basic Infos</h4>
                             </div>
                             
-                            <div class="basic-infos-wrapper">
+                            <div class="basic-infos-wrapper pt-0">
                                 <div class="card is-profile-info">
                                     <div class="info-row">
                                         <div>
@@ -1559,160 +1559,6 @@
             
             </div>
         <!-- /Container -->
-
-        <!-- Albums onboarding modal -->
-        <!-- /includes/pages/feed/modals/albums-help-modal.html -->
-        <div id="albums-help-modal" class="modal albums-help-modal is-xsmall has-light-bg">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-
-                <div class="card">
-                    <div class="card-heading">
-                        <h3>Add Photos</h3>
-                        <!-- Close X button -->
-                        <div class="close-wrap">
-                            <span class="close-modal">
-                                    <i data-feather="x"></i>
-                                </span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="content-block is-active">
-                            <img src="assets/images/illustrations/cards/albums.svg" alt="">
-                            <div class="help-text">
-                                <h3>Manage your photos</h3>
-                            </div>
-                        </div>
-
-                        <div class="content-block">
-                            <img src="assets/images/illustrations/cards/upload.svg" alt="">
-                            <div class="help-text">
-                                <h3>Upload your photos</h3>
-                            </div>
-                        </div>
-
-                        <div class="slide-dots">
-                            <div class="dot is-active"></div>
-                            <div class="dot"></div>
-                        </div>
-                        <div class="action">
-                            <button type="button" class="button is-solid accent-button next-modal raised" data-modal="albums-modal">Next</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Album upload modal -->
-        <!-- /includes/pages/feed/modals/albums-modal.html -->
-        <div id="albums-modal" class="modal albums-modal is-xxl has-light-bg">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-                <form action="gp" method="POST" >
-                    <div class="card">
-                        <div class="card-heading">
-                            <h3>Post Picture</h3>
-                            <div class="button is-solid accent-button fileinput-button">
-                                <i class="mdi mdi-plus"></i> Add pictures/videos
-                            </div>
-
-                            <!-- Close X button -->
-                            <div class="close-wrap">
-                                <span class="close-modal">
-                                        <i data-feather="x"></i>
-                                    </span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="left-section">
-                                <div class="album-form">
-                                    <div class="control">
-                                        <textarea class="textarea is-fade no-radius is-sm" rows="3" placeholder="Write something about you..."></textarea>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="right-section has-slimscroll">
-
-                                <div class="modal-uploader">
-                                    <div id="actions" class="columns is-multiline no-mb">
-                                        <div class="column is-12">
-                                            <span class="button has-icon is-solid grey-button fileinput-button">
-                                                    <i data-feather="plus"></i>
-                                                </span>
-                                            <button type="submit" class="button start is-hidden">
-                                                <span>Upload</span>
-                                            </button>
-                                            <button type="reset" class="button is-solid grey-button cancel">
-                                                <span>Clear all</span>
-                                            </button>
-                                            <span class="file-count">
-                                                    <span id="modal-uploader-file-count">0</span> file(s) selected
-                                            </span>
-                                        </div>
-
-                                        <div class="column is-12 is-hidden">
-                                            <!-- The global file processing state -->
-                                            <div class="fileupload-process">
-                                                <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                                                    <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="columns is-multiline" id="previews">
-
-                                        <div id="template" class="column is-4 is-template">
-                                            <div class="preview-box">
-                                                <!-- This is used as the file preview template -->
-                                                <div class="remove-button" data-dz-remove>
-                                                    <i class="mdi mdi-close"></i>
-                                                </div>
-                                                <div>
-                                                    <span class="preview"><img src="../external.html?link=https://via.placeholder.com/120x120" data-dz-thumbnail alt=""/></span>
-                                                </div>
-                                                <div class="preview-body">
-                                                    <div class="item-meta">
-                                                        <div>
-                                                            <p class="name" data-dz-name></p>
-                                                            <strong class="error text-danger" data-dz-errormessage></strong>
-                                                        </div>
-                                                        <small class="size" data-dz-size></small>
-                                                    </div>
-                                                    <div class="upload-item-progress">
-                                                        <div class="progress active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-                                                            <div class="progress-bar progress-bar-success" data-dz-uploadprogress></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="upload-item-actions is-hidden">
-                                                        <button class="button start is-hidden">
-                                                            <span>Start</span>
-                                                        </button>
-                                                        <button data-dz-remove class="button cancel is-hidden">
-                                                            <span>Cancel</span>
-                                                        </button>
-                                                        <button data-dz-remove class="button delete is-hidden">
-                                                            <span>Delete</span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button type="submit" class="button is-solid accent-button close-modal">Publish</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
