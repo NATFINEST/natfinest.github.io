@@ -53,7 +53,7 @@
                             <ul class="uk-navbar-nav uk-flex-middle">
                                 <li> 
                                     <!-- your courses -->                                     
-                                    <a href="#" data-toggle="modal" data-target="#completeProfile"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Add Interest</span> </a>                                   
+                                    <a href="#" data-toggle="modal" data-target="#completeProfile"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Complete Profile</span> </a>                                   
                                 </li>                                
                                 <li> 
                                     <!-- User profile -->                                     
@@ -270,7 +270,7 @@
             <a href="#" class="uk-text-white" uk-totop uk-scroll></a> 
         </button>         
 
-        <!-- Complete Profile Modal -->
+        <!-- Complete Profile Modal for Individual -->
         <form class="modal fade" id="completeProfile" tabindex="-1" role="dialog" aria-labelledby="completeProfileLabel" aria-hidden="true" action="go.html">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -281,32 +281,114 @@
                         </button>
                     </div>
                     <div class="modal-body">
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Age</label>
+                                <input class="uk-input" type="number" placeholder="Your Age" required>
+                            </div>
+                            <div class="">
+                                <label>Nationality</label>
+                                <input class="uk-input" type="text" placeholder="Your Nationality" required>
+                            </div>
+                        </div>
 
-                        <!-- Smart Wizard HTML -->
-                        <div id="smartwizard">
-                            <ul>
-                                <li><a href="#step-1">Step Title<br /><small>educational</small></a></li>
-                                <li><a href="#step-2">Step Title<br /><small>professional</small></a></li>
-                                <li><a href="#step-3">Step Title<br /><small>social</small></a></li>
-                                <li><a href="#step-4">Step Title<br /><small>CV</small></a></li>
-                            </ul>
-
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Address</label>
+                                <input class="uk-input" type="text" placeholder="Your Address" required>
+                            </div>
                             <div>
-                                <div id="step-1" class="">
-                                    Step Content 1
+                                <label>Marital Status</label>
+                                <select class="uk-select">
+                                    <option>Single</option>
+                                    <option>Married</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>No. of children</label>
+                                <input class="uk-input" type="number" placeholder="No. of children" required>
+                            </div>
+                            <div class="">
+                                <label>What's your side hustle</label>
+                                <input class="uk-input" type="text" placeholder="Side hustle" required>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid uk-child-width-expand@s">
+
+                            <div class="">
+                                <label>Educational Profile</label>
+                                <div class="form-group" style="display: inline-flex;width: 100%">
+                                    <input id="uploadFile" placeholder="Upload Educational Profile" disabled="disabled" style="height: 45px;width: 80%;font-size: 14px" required/>
+                                    <div class="fileUpload">
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload" required />
+                                    </div>
                                 </div>
-                                <div id="step-2" class="">
-                                    Step Content 2
-                                </div>
-                                <div id="step-3" class="">
-                                    Step Content 3
-                                </div>
-                                <div id="step-4" class="">
-                                    Step Content 4
+                            </div>
+
+                            <div class="">
+                                <label>Profession</label>
+                                <input class="uk-input" type="text" placeholder="What's your profession" required >
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-medium-top uk-text-center">
+                            <button type="submit" class=" uk-button uk-button-secondary" style="font-size: 14px">Update Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Complete Profile Modal for Individual -->
+        <form class="modal fade" id="completeProfileBusiness" tabindex="-1" role="dialog" aria-labelledby="completeProfileLabel" aria-hidden="true" action="go.html">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Complete Profile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Primary Business Address</label>
+                                <input class="uk-input" type="text" placeholder="Your Business Address" required>
+                            </div>
+                            <div>
+                                <label>Do you have other businesses?</label>
+                                <select class="uk-select" required>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>No. of years in business</label>
+                                <input class="uk-input" type="number" placeholder="No. of years in business" required>
+                            </div>
+                            <div class="">
+                                <label>Educational Profile</label>
+                                <div class="form-group" style="display: inline-flex;width: 100%" required>
+                                    <input id="uploadFile" placeholder="Upload Educational Profile" disabled="disabled" style="height: 45px;width: 80%;font-size: 14px" required/>
+                                    <div class="fileUpload">
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload" required />
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="uk-margin-medium-top uk-text-center">
+                            <button type="submit" class=" uk-button uk-button-secondary" style="font-size: 14px">Update Profile</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -348,50 +430,17 @@
                     $('.group').hide();
                     // $('.group').addClass('w-0');
                     $('.'+$(this).val()).show();
-                  })
-            });
-        </script>
-
-        <script type="text/javascript">
-            $(document).ready(function(){
-                // $(window).on('load',function(){
-                //     $('#completeProfile').modal('show');
-                // });
-                // Step show event
-                $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
-                   //alert("You are on step "+stepNumber+" now");
-                   if(stepPosition === 'first'){
-                       $("#prev-btn").addClass('disabled');
-                   }else if(stepPosition === 'final'){
-                       $("#next-btn").addClass('disabled');
-                   }else{
-                       $("#prev-btn").removeClass('disabled');
-                       $("#next-btn").removeClass('disabled');
-                   }
                 });
 
-                // Toolbar extra buttons
-                var btnFinish = $('<button></button>').text('Finish')
-                                                 .addClass('btn btn-info')
-                                                 .attr('type','submit')
-                                                 // .on('click', function(){ alert('Finish Clicked'); });
-                var btnCancel = $('<button></button>').text('Cancel')
-                                                 .addClass('btn btn-danger')
-                                                 .on('click', function(){ $('#smartwizard').smartWizard("reset"); });
-
-                // Smart Wizard 1
-                $('#smartwizard').smartWizard({
-                        selected: 0,
-                        theme: 'dots',
-                        transitionEffect:'fade',
-                        showStepURLhash: false,
-                        toolbarSettings: {toolbarPosition: 'bottom',
-                                          toolbarExtraButtons: [btnFinish],
-                                          toolbarButtonPosition: 'start'
-                                        }
+                $(window).on('load',function(){
+                    $('#completeProfile').modal('show');
                 });
 
+
+                document.getElementById("uploadBtn").onchange = function () {
+                    document.getElementById("uploadFile").value = this.value;
+                };
             });
-        </script>        
+        </script>       
     </body>     
 </html>

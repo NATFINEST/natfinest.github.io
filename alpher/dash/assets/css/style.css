@@ -191,8 +191,16 @@ p{
     background-color: #5cb85c;
     border-color: #28a745;
 }
-
-
+label{
+    font-weight: 400;
+    font-size: 14px;
+}
+.uk-input, .uk-select, .uk-textarea {
+    font-size: 14px;
+}
+.uk-grid + .uk-grid, .uk-grid > .uk-grid-margin, * + .uk-grid-margin{
+    margin-top: 20px;
+}
 
 
 

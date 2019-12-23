@@ -163,7 +163,7 @@ footer {
 }
 .form-group.single-input span{
     left: 13%;
-    top: -5%;
+    top: 2%;
     color: #666;
 }
 .long-select .nice-select .list {
@@ -191,8 +191,27 @@ footer {
     height: 190px;
     object-fit: cover;
 }
-
-
+.instructor-form .form-group input, .form-group textarea{
+    height: 50px;
+}
+.instructor-form .form-group span{
+    line-height: 50px;
+    right: 25px
+}
+.nice-select .option.selected {
+    font-weight: 400; 
+    font-size: 14px;
+}
+.nice-select .option {
+    font-size: 14px;
+}
+.nice-select.open .list{
+    width: 80%;
+    margin-left: 10%;
+}
+.nice-select .option{
+    line-height: 30px
+}
 
 
 
