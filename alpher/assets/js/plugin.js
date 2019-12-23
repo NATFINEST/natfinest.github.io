@@ -358,7 +358,7 @@
   // Latest Course slider
   $('.latest-course-4').slick({
     dots: false,
-    infinite: true,
+    infinite: false,
     autoplay: false,
     fade: false,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
@@ -371,7 +371,7 @@
         settings: {
           arrows: false,
           dots: false,
-          infinite: true,
+          infinite: false,
           autoplay: false,
           fade: false,
           speed: 300,
@@ -383,7 +383,7 @@
         settings: {
           arrows: true,
           dots: false,
-          infinite: true,
+          infinite: false,
           autoplay: false,
           fade: false,
           speed: 300,
@@ -395,7 +395,7 @@
         settings: {
           arrows: true,
           dots: false,
-          infinite: true,
+          infinite: false,
           autoplay: false,
           fade: false,
           speed: 300,
@@ -407,7 +407,7 @@
         settings: {
           arrows: true,
           dots: false,
-          infinite: true,
+          infinite: false,
           autoplay: false,
           fade: false,
           speed: 300,
