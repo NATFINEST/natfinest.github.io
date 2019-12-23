@@ -176,8 +176,20 @@ footer {
     overflow: hidden;
 }
 .tab-content>.active{
-    
   height: auto;
+}
+.course-details-tab-menu ul.nav-tabs li a{
+    margin: 0 10px;
+}
+.single-lat-course {
+    margin-bottom: 0;
+}
+.lat-course-img {
+    height: 190px;
+}
+.lat-course-img img {
+    height: 190px;
+    object-fit: cover;
 }
 
 
