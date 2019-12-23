@@ -215,7 +215,11 @@ footer {
 .become-instructor-wrapper{
     min-height: 600px;
 }
-
+@media (max-width: 1199.98px) and (min-width: 992px){}
+nav ul li {
+    margin: 0px 5px;
+}
+}
 
 
 
