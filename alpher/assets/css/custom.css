@@ -137,7 +137,7 @@ button.slick-arrow.slick-next{
 	font-size: 14px;
 }
 .mean-container .mean-bar, .mean-container .mean-bar *{
-    z-index: 9999
+    z-index: 2;
 }
 .lat-course-title{
     min-height: 70px;
@@ -216,9 +216,12 @@ footer {
     min-height: 600px;
 }
 @media (max-width: 1199.98px) and (min-width: 992px){}
-nav ul li {
-    margin: 0px 5px;
+    nav ul li {
+        margin: 0px 5px;
+    }
 }
+.modal-content {
+    margin-top: 10%!important;
 }
 
 
