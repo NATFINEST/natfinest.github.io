@@ -223,6 +223,13 @@ footer {
 .modal-content {
     margin-top: 10%!important;
 }
+.single-slider:before{
+    opacity: 0;
+}
+.alpher1{
+    margin-left: 20px;
+    margin-top: 40%;
+}
 
 
 
