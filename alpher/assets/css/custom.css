@@ -237,8 +237,8 @@ footer {
   display: block;
   position: absolute;
   z-index: 11;
-  font-size: 13px;
-  color: #4582ff;
+  font-size: 16px;
+  color: #fead33;
 }
 .password-showing {
   z-index: 10;

@@ -38,17 +38,17 @@ $.fn.showPassword = function(options) {
     $parent.height(parentHeight);
   
     //Create the link
-    $('<a/>', {
+    var anchor = $('<a/>', {
       href: '#',
       'class': o.linkClass,
       click: function(e) {
         var $showPassInput = $parent.find('.'+o.showPasswordInputClass);
         if($this.css('display') === 'none') { //If the regular input is hidden, show it
-          $(this).text(o.linkText);
+          $(this).html('<i class="fas fa-eye"></i>');
           $this.val($showPassInput.val()).show();
           $showPassInput.hide();
         } else { //If the showing password input is hidden, show it
-          $(this).text(o.showPasswordLinkText);
+          $(this).html('<i class="fas fa-eye-slash"></i>');
           $showPassInput.val($this.val()).show();
           $this.hide();
         }
@@ -57,9 +57,14 @@ $.fn.showPassword = function(options) {
       css: {
         left: elPosition.left + elWidth,
         top: elPosition.top + elHeight
-      },
-      text: o.linkText
+      }
     }).appendTo($parent);
+
+    $('<i/>', {
+      'class': 'fas fa-eye',
+      css: {
+      },
+    }).appendTo(anchor);
     
     var $toggleAnchor = $parent.find('.'+o.linkClass),
         toggleAnchorWidth = $toggleAnchor.outerWidth(),
@@ -68,8 +73,8 @@ $.fn.showPassword = function(options) {
         toggleAnchorTop = parseInt($toggleAnchor.css('top'), 10);
         
     $toggleAnchor.css({
-      'left': (toggleAnchorLeft - toggleAnchorWidth - o.linkRightOffset - 5),
-      'top': (toggleAnchorTop - toggleAnchorHeight - o.linkTopOffset - 5)
+      'left': (toggleAnchorLeft - toggleAnchorWidth - o.linkRightOffset - 10),
+      'top': (toggleAnchorTop - toggleAnchorHeight - o.linkTopOffset - 2)
     });
     
     //Create the input to switch
