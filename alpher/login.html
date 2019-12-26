@@ -90,7 +90,7 @@
     <main>
         <!-- banner area -->
 
-        <section class="become-instructor-wrapper" style="background: url(assets/img/login.jpg);background-position-y:center;background-size: cover; ">
+        <section class="become-instructor-wrapper" style="background: url(assets/img/login.jpg);background-position-y:center;background-size: cover; min-height: 100vh">
             <div class="container">
                 <div class="row justify-content-center justify-content-lg-start">
                     <!-- Instructor Form Area -->
@@ -98,9 +98,20 @@
                         <div class="instructor-form-wrapper">
                             <!-- Form Title -->
                             <div class="instructor-form-title">
-                                <h1 class="text-white">Login</h1>
+                                <h2 class="text-white text-center">Login</h2>
                             </div>
-                            <form action="#" class="instructor-form">
+
+                            <div class="py-4">
+                                <div class="col-12 mx-auto form-group mb-3">
+                                    <button type="submit" class="btn btn-primary w-100 fs-14" style="height: 50px"><i class="fab fa-google"></i> SIGN UP USING GOOGLE ACCOUNT</button>
+                                </div>
+
+                                <div class="col-8 mx-auto form-group text-center">
+                                    <p class="text-white font-weight-bold">OR</p>
+                                </div>
+                            </div>
+
+                            <form action="#" class="instructor-form pt-0">
                                 <div class="col-12 form-group">
                                     <label for="email" class="sr-only">Your Email Address</label>
                                     <input type="email" id="email" name="email" placeholder="Your Email Address">
@@ -108,8 +119,8 @@
                                 </div>
                                 <div class="col-12 form-group">
                                     <label for="phoneNumber" class="sr-only">Your Password</label>
-                                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Your Password">
-                                    <span><i class="fas fa-lock"></i></span>
+                                    <input type="password" id="password" name="password" placeholder="Your Password">
+                                    <!-- <span><i class="fas fa-lock"></i></span> -->
                                 </div>
                                 <div class="col-12 form-group">
                                     <p class="text-white" style="font-weight: 600;text-align: right;"><a href="forgot.html" class="text-white">Forgot Password?</a></p>
@@ -180,6 +191,15 @@
     <script src="assets/js/plugin.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js//jquery.showPassword.js"></script>
+    <script>
+    $(document).ready(function() {
+      $(':password').showPassword({
+        linkRightOffset: 5,
+        linkTopOffset: 11
+      });
+    });
+    </script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('[data-search]').on('keyup', function() {
