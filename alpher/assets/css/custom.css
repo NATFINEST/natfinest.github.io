@@ -230,6 +230,18 @@ footer {
     margin-left: 20px;
     margin-top: 40%;
 }
-
+.forms li {
+  position: relative;
+}
+.show-password-link {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  font-size: 13px;
+  color: #4582ff;
+}
+.password-showing {
+  z-index: 10;
+}
 
 

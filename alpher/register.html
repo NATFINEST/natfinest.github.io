@@ -99,7 +99,7 @@
                         <div class="instructor-form-wrapper">
                             <!-- Form Title -->
                             <div class="instructor-form-title">
-                                <h2 class="text-white text-center">Register</h2>
+                                <h2 class="text-white text-center ml-2">Register</h2>
                             </div>
 
                             <div class="py-4">
@@ -207,7 +207,7 @@
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="password" class="sr-only">Your Password</label>
                                         <input type="password" id="password" name="password" placeholder="Your Password" required>
-                                        <span><i class="fas fa-lock"></i></span>
+                                        <!-- <span><i class="fas fa-lock"></i></span> -->
                                     </div>
                                 </div>
                                 <div class="col-12 form-group mb-0 text-center sub">
@@ -256,7 +256,7 @@
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="password" class="sr-only">Your Password</label>
                                         <input type="password" id="password" name="password" placeholder="Your Password" required>
-                                        <span><i class="fas fa-lock"></i></span>
+                                        <!-- <span><i class="fas fa-lock"></i></span> -->
                                     </div>
                                     <div class="col-12 col-md-6 form-group single-input">
                                         <select name="gender" id="CourseSelect2" style="display: none;" required>
@@ -343,6 +343,15 @@
     <script src="assets/js/plugin.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js//jquery.showPassword.js"></script>
+    <script>
+    $(document).ready(function() {
+      $(':password').showPassword({
+        linkRightOffset: 5,
+        linkTopOffset: 11
+      });
+    });
+    </script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('[data-search]').on('keyup', function() {

@@ -9,6 +9,8 @@
         <!-- Favicon -->
         <link href="assets/img/brand/favicon.html" rel="icon" type="image/png">
         <link rel="stylesheet" id="redux-google-fonts-sf_uplift_options-css" href="https://fonts.googleapis.com/css?family=Serif%3A400%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&amp;ver=1572104180" type="text/css" media="all">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Your stylesheet-->
         <link rel="stylesheet" href="assets/css/uikit.css"> 
         <link rel="stylesheet" href="assets/css/main.css"> 
@@ -24,8 +26,7 @@
         <div id="spinneroverlay"> 
             <div class="spinner"></div>             
         </div>         
-        <!-- header  -->
-        <header class="tm-header" uk-sticky>
+        <!-- header  --><header class="tm-header" uk-sticky>
             <div class=" uk-background-default uk-navbar-container uk-navbar-transparent uk-padding-small uk-navbar-sticky">
                 <div class="uk-position-relative">
                     <nav class="uk-navbar-transparent tm-mobile-header uk-animation-slide-top uk-position-z-index" uk-navbar>
@@ -43,68 +44,24 @@
                                 <img src="assets/images/alpher-logo.png" style="width: 100">
                             </a> 
                         </div>                         
-                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile"> 
+                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile" > 
                             <!-- this will clouse after display user icon -->                             
                             <span class="uk-hidden@m tm-mobile-user-close-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-times icon-large"></i></span> 
-                            <ul class="uk-navbar-nav uk-flex-middle">
-                                <li> 
-                                    <!-- your courses -->                                     
-                                    <a href="#"> <i class="fas fa-play uk-hidden@m"></i> <span class="uk-visible@m"> Your Courses</span> </a> 
-                                    <div uk-dropdown="pos: top-right ;mode : click; animation: uk-animation-slide-bottom-medium" class="uk-dropdown border-radius-6  uk-dropdown-top-right tm-dropdown-large uk-padding-remove"> 
-                                        <div class="uk-clearfix"> 
-                                            <div class="uk-float-left"> 
-                                                <h5 class="uk-padding-small uk-margin-remove uk-text-bold  uk-text-left">  Your Courses </h5> 
-                                            </div>                                            
-                                        </div>                                         
-                                        <hr class=" uk-margin-remove"> 
-                                        <div class="uk-padding-smaluk-text-left uk-height-medium"> 
-                                            <div class="demo1" data-simplebar> 
-                                                <div class="uk-child-width-1-2@s  uk-grid-small uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 100 ;repeat: true" uk-grid> 
-                                                    <div> 
-                                                        <a href="course-index.html" class="uk-link-reset" target="_blank"> 
-                                                            <div class="uk-padding-small uk-card-default"> 
-                                                                <progress id="js-progressbar" class="uk-progress progress-green uk-margin-small-bottom" value="100" max="100" style="height: 7px;"></progress>                                                                 
-                                                                <img src="assets/images/courses/course-10.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
-                                                                <p class="uk-text-bold uk-margin-remove uk-text-truncate">How can SEO benefit my business? </p> 
-                                                                
-                                                                <div class="uk-margin-small"> 
-                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="course-index.html" style="display:table-cell"> Course resume</a> 
-                                                                </div>                                                                 
-                                                            </div>                                                             
-                                                        </a>                                                         
-                                                    </div>                                                     
-                                                    <div> 
-                                                        <a href="course-index.html" class="uk-link-reset" target="_blank"> 
-                                                            <div class="uk-padding-small uk-card-default"> 
-                                                                <progress id="js-progressbar" class="uk-progress progress-coral  uk-margin-small-bottom" value="15" max="100" style="height: 7px !important;"></progress>                                                                 
-                                                                <img src="assets/images/courses/course-7.jpg" class="uk-align-left  uk-margin-small-right uk-margin-small-bottom  uk-width-1-3  uk-visible@s" alt=""> 
-                                                                <p class="uk-text-bold uk-margin-remove uk-text-truncate">Discover the fundamentals of starting your own business</p> 
-                                                                
-                                                                <div class="uk-margin-small"> 
-                                                                    <a class="Course-tags uk-margin-small-right   border-radius-6" href="course-index.html" style="display:table-cell"> Course resume</a> 
-                                                                </div>       
-                                                            </div>                                                     
-                                                        </a>                                                         
-                                                    </div>                                                    
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                        
-                                    </div>                                     
-                                </li>                                
+                            <ul class="uk-navbar-nav uk-flex-middle">                              
                                 <li> 
                                     <!-- User profile -->                                     
                                     <a href="#"> 
                                         <img src="assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
                                     </a>                                     
                                     <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-right" class="uk-dropdown uk-padding-small uk-dropdown-top-right  angle-top-right"> 
-                                        <p class="uk-margin-small-top"> Hamse Mohamoud  </p>
+                                        <p class="uk-margin-small-top"> Hamse Mohamoud  </p>  
                                         <ul class="uk-nav uk-dropdown-nav"> 
                                             <li> 
                                                 <a href="profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
                                             </li>                                             
                                             <li> 
                                                 <a href="../community/message.html"> <i class="fas fa-envelope uk-margin-small-right"></i> Messages </a> 
-                                            </li>                                             
+                                            </li>                                              
                                             <li class="uk-nav-divider"></li>                                             
                                             <li> 
                                                 <a href="#"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
@@ -127,17 +84,14 @@
                                         <a href="index.html" class="uk-text-black"> <i class="fas fa-book-open uk-margin-small-right"></i> Courses </a> 
                                     </li> 
                                     <li class="uk-margin-remove-top uk-padding-small"> 
-                                        <a href="mentorship.html" class="uk-text-black"> <i class="fas fa-user-tie uk-margin-small-right"></i> Mentorship </a> 
+                                        <a href="https://www.unionbankng.com/elite-banking" class="uk-text-black"> <i class="fas fa-user-tie uk-margin-small-right"></i> Mentorship </a> 
                                     </li>
                                     <li class="uk-margin-remove-top uk-padding-small"> 
-                                        <a href="tools.html" class="uk-text-black"> <i class="fas fa-tools uk-margin-small-right"></i>  Business Tools </a> 
-                                    </li> 
-                                     <li class="uk-margin-remove-top uk-padding-small"> 
-                                        <a href="lifestyle.html" class="uk-text-black"> <i class="fas fa-life-ring  uk-margin-small-right"></i>  Lifestyle </a> 
+                                        <a href="tools.html" class="uk-text-black"> <i class="fas fa-tools uk-margin-small-right"></i>  Discounted Services </a> 
                                     </li>                                      
                                     <li class="uk-margin-remove-top uk-padding-small"> 
-                                        <a href="network.html" class="uk-text-black"> <i class="fas fa-network-wired uk-margin-small-right"></i> Network </a> 
-                                    </li>                          
+                                        <a href="loans.html" class="uk-text-black"> <i class="fas fa-network-wired uk-margin-small-right"></i> Loans & Grants </a> 
+                                    </li>                            
                                 </ul>                                 
                             </div>
                         </div>                           
@@ -148,7 +102,7 @@
         <!-- Navigation  -->
         <div class="uk-navbar-sticky uk-background-grey " uk-sticky="show-on-up: true; animation: uk-animation-slide-top;offset: 85">
             <nav class="uk-padding-small uk-visible@m uk-navbar-transparent uk-animation-slide-to uk-position-z-index" uk-navbar>
-                <div class="uk-flex uk-flex-center uk-width-expand">
+                <div class="uk-flex uk-flex-center uk-width-expand" style="margin-top: 10px">
                     <ul class="uk-subnav uk-subnav-2">
                         <li>
                             <a href="index.html"> <i class="fas fa-book-open icon-medium uk-margin-small-right"></i> All Courses </a>
@@ -157,21 +111,11 @@
                             <a href="mentorship.html"> <i class="fas fa-user-tie icon-medium uk-margin-small-right"></i> Mentorship </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="fas fa-tools icon-medium uk-margin-small-right"></i> Discounted Services </a>
-                            <div uk-dropdown> 
-                                <ul class="uk-nav uk-dropdown-nav"> 
-                                    <li>
-                                        <a href="tools.html"> Business Tools </a>
-                                    </li>                                     
-                                    <li>
-                                        <a href="lifestyle.html"> Lifestyle</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <a href="https://www.unionbankng.com/elite-banking"> <i class="fas fa-tools icon-medium uk-margin-small-right"></i> Discounted Services </a>
                         </li>
                         <li>
-                            <a href="netwrk.html"> <i class="fas fa-network-wired icon-medium uk-margin-small-right"></i> Network </a>
-                        </li>              
+                            <a href="loans.html"> <i class="fas fa-network-wired icon-medium uk-margin-small-right"></i> Loans & Grants </a>
+                        </li>               
                     </ul>                     
                 </div>
             </nav>             
@@ -386,6 +330,7 @@
         </script>
 
         <script src="assets/js/jquery.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#filter').change(function () {
