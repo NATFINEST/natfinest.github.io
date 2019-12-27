@@ -167,11 +167,78 @@ h4{
 p{
     font-size: 14px
 }
-
-
-
-
-
+.uk-navbar-transparent {
+    height: 65px;
+    padding-top: 5px
+}
+.uk-background-grey.uk-sticky-fixed {
+    top: 66px!important;
+}
+.sw-btn-prev,.sw-btn-next{
+    font-size: 16px;
+    font-weight: 300;
+}
+.modal-title{
+    font-weight: 400;
+}
+.sw-btn-group{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.btn-info,.btn-info:hover{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #28a745;
+}
+label{
+    font-weight: 400;
+    font-size: 14px;
+}
+.uk-input, .uk-select, .uk-textarea {
+    font-size: 14px;
+}
+.uk-grid + .uk-grid, .uk-grid > .uk-grid-margin, * + .uk-grid-margin{
+    margin-top: 20px;
+}
+[class~=tm-course-section-list] ul {
+    width: 100%;
+    position: relative!important;
+}
+[class~=video-list] li {
+    height: 40px;
+}
+.video-list li a{
+    border: 0;
+    padding:0;
+}
+[class~=video-list] li a [class~=play-icon] {
+    left: 0;
+    top: 10px;
+}
+[class~=video-list] li a span[class~=uk-text-truncate]{
+    padding-left: 40px;
+}
+[class~=video-list] [class~=uk-active] a [class~=play-icon], [class~=video-list] li a span[class~=now-playing] {
+    color: #268ba2;
+    display: block;
+}
+.tm-course-fliud .tm-side-course-active-left-icon {
+    left: inherit;
+}
+.tm-course-lesson-section .uk-accordion-title h6 {
+    padding-top: 6px;
+    margin-bottom: 4px!important;
+}
+.li-video{
+    background: url(../images/loading.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.uk-switcher > :not(.uk-active){
+    display: block;
+}
 
 
 
