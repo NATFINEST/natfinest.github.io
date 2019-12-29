@@ -251,9 +251,11 @@ footer {
 .footer-link a.whatsapp {
     background: #2dc14f;
 }
-
 .footer-link a.whatsapp:hover {
     background-color: #fff;
     color: #2dc14f;
+}
+.modal-open .modal{
+    margin-top: 70px!important;
 }
 
