@@ -41,3 +41,20 @@ border: 3px solid rgb(26, 114, 255);
 	    max-height: calc(100vh - 160px) !important;
 	}
 }
+.cover-bg .avatar .pop-button{
+	left: -30px
+}
+.cover-bg .avatar .avatar-image{
+	height: 150px!important;
+	width: 150px!important;
+}
+.cover-bg .avatar{
+	width: 100%
+}
+.cover-bg .avatar .avatar-button {
+    left: 75%;
+}
+.cover-bg .avatar .avatar-button.is-active {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
