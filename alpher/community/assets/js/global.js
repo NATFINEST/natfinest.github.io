@@ -253,7 +253,7 @@ $(document).ready(function () {
 
         //Init Emojis
         $.fn.initEmojis = function () {
-            $(".comment-textarea").emojioneArea({
+            $(".comment-textare").emojioneArea({
                 pickerPosition: "bottom",
                 filtersPosition: "top",
                 tones: false,
@@ -289,7 +289,7 @@ $(document).ready(function () {
                 $('html, body').stop().animate({ scrollTop: new_position.top - 70 }, 500);
                 e.preventDefault();
                 setTimeout(function(){
-                    $('.emojionearea-editor').val('');
+                    $('.emojionearea-edito').val('');
                 }, 400);
             })
         };
