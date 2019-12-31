@@ -69,8 +69,9 @@ a.primary-btn:hover {
     font-size: 3.5em;
  }
 .single-slider{
- 	padding-top: 120px;
- 	height: 500px
+ 	padding-top: 5px!important;
+    background-size: cover!important;
+ 	height: 100%
  }
  button.slick-arrow:hover {
     background: #4582ff;
@@ -227,8 +228,9 @@ footer {
     opacity: 0;
 }
 .alpher1{
-    margin-left: 20px;
-    margin-top: 40%;
+    margin-left: 3%;
+    margin-top: 56%;
+    margin-bottom: 2%;
 }
 .forms li {
   position: relative;
@@ -258,4 +260,37 @@ footer {
 .modal-open .modal{
     margin-top: 70px!important;
 }
-
+button.slick-arrow.main.slick-next{
+    right: 1%!important;
+}
+button.slick-arrow.main.slick-prev{
+    left: 1%!important;
+}
+@media (min-width: 1200px) and (max-width:1500px) {
+    .slick-track{
+        height: 500px;
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 70vw;
+    }
+    .alpher1 {
+        margin-left: -17%;
+    }
+}
+@media (max-width: 767.98px) {
+    .single-slider{
+        background-size: contain!important;
+        background-repeat: no-repeat;
+        background-position-y: 0!important;
+     } 
+    .slick-list{
+        height: 41vw;
+     }  
+    .alpher1 {
+        margin-left: -23%;
+        margin-top: 30vw;
+        padding: 2vw;
+    } 
+}
