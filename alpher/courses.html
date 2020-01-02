@@ -131,7 +131,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-1.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">MARKETING</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="MARKETING" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -150,7 +150,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-2.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">BUSINESS MANAGEMENT</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="BUSINESS MANAGEMENT" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -169,7 +169,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-3.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">BUSINESS PLANS AND MODELS</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="BUSINESS PLANS AND MODELS" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -188,7 +188,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-1.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">FINANCIAL MANAGEMENT</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="FINANCIAL MANAGEMENT" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -207,7 +207,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-1.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">MARKETING</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="MARKETING" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -226,7 +226,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-2.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">BUSINESS MANAGEMENT</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="BUSINESS MANAGEMENT" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -245,7 +245,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-3.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">BUSINESS PLANS AND MODELS</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="BUSINESS PLANS AND MODELS" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -264,7 +264,7 @@
                             <div class="lat-course-img">
                                 <img src="assets/img/latest-course/course-img-1.jpg" alt="Course-Image">
                                 <a href="#" class="course-tag">FINANCIAL MANAGEMENT</a>
-                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share"><i class="fa fa-share-alt"></i></a>
+                                <a href="#" class="course-tag share" data-toggle="modal" data-target="#share" data-title="FINANCIAL MANAGEMENT" data-url="google.com"><i class="fa fa-share-alt"></i></a>
                             </div>
                             <div class="lat-course-content">
                                 <div class="lat-course-title">
@@ -325,6 +325,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <h6 class="modal-course-title"></h6>
+                    <h6 class="modal-course-url"></h6>
                     <div class="footer-link mx-auto text-center py-4">
                         <a class="fb mr-3" href="#"><i class="fab fa-facebook-f"></i></a>
                         <a class="twit mr-3" href="#"><i class="fab fa-twitter"></i></a>
@@ -374,8 +376,14 @@
             $('#CourseSelect2').change(function () {
                 $('.group').hide();
                 $('.'+$(this).val()).show();
-              })
+            })
 
+            $('#share').on('show.bs.modal', function (event) {
+                var modalCourseTitle = $(event.relatedTarget).data('title');
+                var modalCourseUrl = $(event.relatedTarget).data('url');
+                $(this).find(".modal-course-title").text(modalCourseTitle);
+                $(this).find(".modal-course-url").text(modalCourseUrl);
+            });
             
         });
     </script>

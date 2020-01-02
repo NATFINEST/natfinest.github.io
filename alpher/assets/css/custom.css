@@ -260,6 +260,12 @@ footer {
 .modal-open .modal{
     margin-top: 70px!important;
 }
+.success-img .slick-list .slick-track img{
+    height: auto!important;
+}
+.success-img .slick-arrow{
+    top: 50%!important;
+}
 button.slick-arrow.main.slick-next{
     right: 1%!important;
 }
@@ -292,5 +298,17 @@ button.slick-arrow.main.slick-prev{
         margin-left: -23%;
         margin-top: 30vw;
         padding: 2vw;
-    } 
+    }
+    .course-slider.custom-row .slick-list{
+        height: 55vh!important;
+    }
+    .latest-course-4.custom-row .slick-list{
+        height: 70vh!important;
+    }
+    .latest-course-4.home2 .slick-list{
+        height: 55vh!important;
+    }
+    .single-input.acc-sel,.col-9.mx-auto.form-group.mb-3{
+        max-width: 100%;
+    }
 }
