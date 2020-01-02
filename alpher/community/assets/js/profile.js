@@ -292,6 +292,15 @@ $(document).ready(function(){
                 type: 'canvas',
                 size: 'viewport'
             }).then(function (resp) {
+                $.ajax({
+                    type: "POST",
+                    url: "PAGE2.php",
+                    data: imgSrc,
+                    cache: false,
+                    success:  function(data){
+                        alert(data);
+                    }
+                });
                 popupResult({
                     src: resp
                 });
