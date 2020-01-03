@@ -288,25 +288,27 @@ $(document).ready(function(){
         });
 
         $('#submit-profile-picture').on('click', function (ev) {
+
+            var fd = new FormData();
+            var files = $('#upload-profile-picture')[0].files[0];
+            fd.append('file',files);
+            
+            $.ajax({
+                type: "POST",
+                url: "PAGE2.php",
+                data: files,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success:  function(data){
+                    alert(data);
+                },
+            });
+
             $uploadCrop.croppie('result', {
                 type: 'canvas',
                 size: 'viewport'
             }).then(function (resp) {
-                var fd = new FormData();
-                var files = $('#upload-profile-picture')[0].files[0];
-                fd.append('file',files);
-
-                $.ajax({
-                    type: "POST",
-                    url: "PAGE2.php",
-                    data: fd,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    success:  function(data){
-                        alert(data);
-                    },
-                });
                 popupResult({
                     src: resp
                 });
