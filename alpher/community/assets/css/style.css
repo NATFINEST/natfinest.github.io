@@ -29,18 +29,6 @@ border: 3px solid rgb(26, 114, 255);
 .modal-content {
     margin-top: 0px!important;
 }
-@media screen and (min-width: 769px), print{
-	.modal-content, .modal-card {
-	    margin: 0 auto;
-	    max-height: calc(100vh - 150px);
-	    width: 640px;
-	}
-}
-@media (max-width: 767px){
-	.modal-content {
-	    max-height: calc(100vh - 160px) !important;
-	}
-}
 .cover-bg .avatar .pop-button{
 	left: -30px
 }
@@ -57,4 +45,25 @@ border: 3px solid rgb(26, 114, 255);
 .cover-bg .avatar .avatar-button.is-active {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+}
+.chat-wrapper .chat-inner .chat-body.is-opened{
+	width: 100%!important;
+}
+.chat-wrapper .chat-inner .chat-body.is-opened .chat-action {
+    width: calc(100% - 60px) !important;
+}
+.chat-wrapper .chat-inner .chat-body .chat-body-inner .chat-message .message-block .message-text{
+	max-width: 500px;
+}
+@media screen and (min-width: 769px), print{
+	.modal-content, .modal-card {
+	    margin: 0 auto;
+	    max-height: calc(100vh - 150px);
+	    width: 640px;
+	}
+}
+@media (max-width: 767px){
+	.modal-content {
+	    max-height: calc(100vh - 160px) !important;
+	}
 }
