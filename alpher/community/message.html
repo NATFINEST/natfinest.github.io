@@ -377,7 +377,7 @@
 
                     <div class="field is-autocomplete">
                         <div class="control has-icon">
-                            <select class="js-example-basic-multiple w-100" name="state">
+                            <select class="js-example-basic-single w-100" name="state">
                               <option value="AL" data-chat-user="sam" data-full-name="David Kim" data-status="Busy" data-demo-src="david.jpg">David Kim</option>
                               <option value="WY">Wyoming</option>
                             </select>
@@ -427,7 +427,10 @@
     <script src="assets/js/select2.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
+            $(".js-example-basic-single").select2({
+                placeholder: "Select a user",
+                allowClear: true
+            });
         });
     </script>
 </body>
