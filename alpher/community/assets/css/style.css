@@ -17,9 +17,13 @@ border: 3px solid rgb(26, 114, 255);
 .chat-wrapper .chat-inner .chat-action .chat-action-inner .control .compose-dropdown{
 	right: 2%;
 	left: inherit;
+	top: 17%;
 }
 .chat-wrapper .chat-inner .chat-action .chat-action-inner .control .textarea{
-	padding-left: 5px;
+	padding: 20px;
+}
+.chat-wrapper .chat-inner .chat-action{
+	bottom: 1%;
 }
 .mean-container .mean-bar{
 	position: relative;
@@ -66,4 +70,18 @@ border: 3px solid rgb(26, 114, 255);
 	.modal-content {
 	    max-height: calc(100vh - 160px) !important;
 	}
+}
+.select2-container--default .select2-selection--multiple{
+	height: 40px!important;
+}
+.select2-container{
+	width: 100%!important;
+	font-size: 14px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+	padding-top: 5px;
+}
+.chat-wrapper .chat-inner .chat-action .chat-action-inner .control .textarea{
+	height: 60px;
+	max-height: 60px;
 }
