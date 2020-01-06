@@ -113,8 +113,8 @@
                             <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
                         </div>
                         <div class="username">
-                            <span>Dan Walker</span>
-                            <span><i data-feather="star"></i> <span>| Online</span></span>
+                            <span style="display: flex;color: #000;font-weight: 500;">Dan Walker <i class="dripicons-media-record is-Online"></i></span>
+                            <span> <span style="font-size: 12px;">30 mins ago</span></span>
                         </div>
                     </div>
                 </div>
@@ -123,42 +123,67 @@
             <div id="chat-sidebar" class="users-sidebar">
                 <!-- Header -->
                 <div class="header-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <div style="float: left;color: #009fe3;font-weight: 600;">MESSAGE</div>
+                    <div class="add-button modal-trigger compose" data-modal="add-conversation-modal"><i data-feather="edit"></i></div>
+                </div>
+                <div class="search-field">
+                    <i class="fa fa-search" style=""></i>
+                    <input type="text" placeholder="Start typing to search" >
                 </div>
                 <!-- User list -->
                 <div class="conversations-list has-slimscroll-xs" id="myDiv1">
                     <!-- User -->
-                    <div class="user-item is-active" data-chat-user="dan" data-full-name="Dan Walker" data-status="Online">
+                    <div class="user-item is-active" data-chat-user="dan" data-full-name="Dan Walker" data-status="Online" data-time="30 mins ago">
                         <div class="avatar-container">
                             <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
                             <div class="user-status is-online"></div>
                         </div>
+                        <div class="msg-container">
+                            <div class="fs-14 side-msg unread">Hi Dan! I made a new design, and i wanted to show it to you.</div>
+                        </div>
+                        <div class="msg-time">
+                            <div class="fs-12">2:49 AM</div>
+                        </div>
                     </div>
                     <!-- User -->
-                    <div class="user-item" data-chat-user="stella" data-full-name="Stella Bergmann" data-status="Busy">
+                    <div class="user-item" data-chat-user="stella" data-full-name="Stella Bergmann" data-status="Busy" data-time="1 hr ago">
                         <div class="avatar-container">
                             <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/stella.jpg" alt="">
                             <div class="user-status is-busy"></div>
                         </div>
+                        <div class="msg-container">
+                            <div class="fs-14 side-msg">Hey Stella! Aren't we supposed to go the theatre after work?.</div>
+                        </div>
+                        <div class="msg-time">
+                            <div class="fs-12">12:49 AM</div>
+                        </div>
                     </div>
                     <!-- User -->
-                    <div class="user-item" data-chat-user="daniel" data-full-name="Daniel Wellington" data-status="Away">
+                    <div class="user-item" data-chat-user="daniel" data-full-name="Daniel Wellington" data-status="Busy"  data-time="12 mins ago">
                         <div class="avatar-container">
                             <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/daniel.jpg" alt="">
                             <div class="user-status is-away"></div>
                         </div>
+                        <div class="msg-container">
+                            <div class="fs-14 side-msg">Daniel, Amanda told me about your issue, how can I help?</div>
+                        </div>
+                        <div class="msg-time">
+                            <div class="fs-12">10:49 AM</div>
+                        </div>
                     </div>
                     <!-- User -->
-                    <div class="user-item" data-chat-user="david" data-full-name="David Kim" data-status="Busy">
+                    <div class="user-item" data-chat-user="david" data-full-name="David Kim" data-status="Busy" data-time="10 mins ago">
                         <div class="avatar-container">
                             <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/david.jpg" alt="">
                             <div class="user-status is-busy"></div>
                         </div>
+                        <div class="msg-container">
+                            <div class="fs-14 side-msg unread">I just HATE aliens.</div>
+                        </div>
+                        <div class="msg-time">
+                            <div class="fs-12">5:49 PM</div>
+                        </div>
                     </div>
-                </div>
-                <!-- Add Conversation -->
-                <div class="footer-item">
-                    <div class="add-button modal-trigger" data-modal="add-conversation-modal"><i data-feather="user"></i></div>
                 </div>
             </div>
 

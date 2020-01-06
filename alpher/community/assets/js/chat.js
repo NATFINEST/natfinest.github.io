@@ -26,6 +26,7 @@ $(document).ready(function () {
         var userAvatar = $(this).find('img').attr('src');
         var targetUserFullname = $(this).attr('data-full-name');
         var userStatus = $(this).attr('data-status');
+        var userTime = $(this).attr('data-time');
 
         //Handle sidebar chat items active state
         $('.user-item.is-active').removeClass('is-active');
@@ -41,8 +42,8 @@ $(document).ready(function () {
         $('#' + targetUser + '-details').removeClass('is-hidden');
         //Handle conversation header update
         $('.recipient-block').find('.user-avatar').attr('src', userAvatar);
-        $('.recipient-block').find('.username span:first-child').text(targetUserFullname);
-        $('.recipient-block').find('.username span span').text('| ' + userStatus);
+        $('.recipient-block').find('.username span:first-child').html(targetUserFullname + '<i class="dripicons-media-record is-'+userStatus+'"></i>');
+        $('.recipient-block').find('.username span span').text(userTime);
 
     })
 
