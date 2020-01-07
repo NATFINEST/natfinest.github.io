@@ -47,4 +47,26 @@ $(document).ready(function () {
 
     })
 
+    $('#chat-send').on('click', function () {
+        var chat = $('#chat-text').val()
+        if (chat != "") {
+
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/todos/',
+                dataType: 'json',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify({"chat":chat}),
+                processData: false,
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( JSON.stringify( data ) );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                }
+            });
+            $('#chat-text').val('');
+        }
+    })
+
 })
