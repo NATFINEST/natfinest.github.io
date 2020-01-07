@@ -113,27 +113,20 @@ $(document).ready(function () {
 
         $('#create').submit(function(e) {
             e.preventDefault();
-            $.ajax({
-                type: "POST",
-                url: 'index.php',
-                data: $(this).serialize(),
-                success: function(response)
-                {
-                    console.log(response);
-                    var jsonData = JSON.parse(response);
-     
-                    // user is logged in successfully in the back-end
-                    // let's redirect
-                    if (jsonData.success == "1")
-                    {
-                        location.href = 'my_profile.php';
-                    }
-                    else
-                    {
-                        alert('Invalid Credentials!');
-                    }
-               }
-           });
+           $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/todos/',
+                dataType: 'json',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify( { "text": $('#publish').val()} ),
+                processData: false,
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( JSON.stringify( data ) );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                }
+            });
          });
 
         //Show activities
