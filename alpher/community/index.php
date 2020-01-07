@@ -22,7 +22,7 @@
     header('Content-Type: application/json');
 
     $ret = [
-        'result' => 'OK',
+        'result' => 'OK ',
     ];
     print json_encode($ret);
 echo "Something";
