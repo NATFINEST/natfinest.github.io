@@ -409,7 +409,7 @@
 
                         <!-- Publishing Area -->
                         <!-- /includes/pages/feed/compose-card.html -->
-                        <form action="gp" method="POST">
+                        <form method="POST" id="create">
                             <div id="compose-card" class="card is-new-content">
                                 <!-- Top tabs -->
                                 <div class="tabs-wrapper">
@@ -431,7 +431,7 @@
                                             <div class="compose-form">
                                                 <img src="assets/images/mentors/edache.jpg" alt="">
                                                 <div class="control">
-                                                    <textarea id="publish" class="textarea" rows="3" placeholder="Write something about you..."></textarea>
+                                                    <textarea id="publish" class="textarea" rows="3" placeholder="Write something about you..." name="name"></textarea>
                                                 </div>
                                             </div>
 
@@ -2003,6 +2003,7 @@
         <div class="modal-background"></div>
         <div class="modal-content">
     
+            <!-- <form method="post" action="" enctype="multipart/form-data" id="myform"> -->
                 <div class="card">
                     <div class="card-heading">
                         <h3>Upload Picture</h3>
@@ -2013,7 +2014,6 @@
                             </span>
                         </div>
                     </div>
-            <form method="post" action="" enctype="multipart/form-data" id="myform">
                     <div class="card-body">
                         <label class="profile-uploader-box" for="upload-profile-picture">
                             <span class="inner-content">
@@ -2029,11 +2029,11 @@
                             </div>
                         </div>
                     </div>
-            </form>
                     <div class="card-footer">
                         <button id="submit-profile-picture" class="button is-solid accent-button is-fullwidth raised close-modal is-disabled">Use Picture</button>
                     </div>
                 </div>
+            <!-- </form> -->
     
         </div>
     </div>
