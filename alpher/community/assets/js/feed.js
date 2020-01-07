@@ -127,6 +127,11 @@ $(document).ready(function () {
                     console.log( errorThrown );
                 }
             });
+            $('#publish').val("");
+            $('.app-overlay').removeClass('is-active');
+            $('.is-new-content').removeClass('is-highlighted');
+            $('#compose-search, #extended-options, .is-suboption').addClass('is-hidden');
+            $('#basic-options, #open-compose-search').removeClass('is-hidden');
          });
 
         

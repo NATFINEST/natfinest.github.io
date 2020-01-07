@@ -32,7 +32,6 @@ if ($('.modal-uploader').length) {
         // Make sure that the form isn't actually being sent.
         e.preventDefault();
         e.stopPropagation();
-        console.log(modalUploader.files)
         var up_file = modalUploader.files
         
         if (modalUploader.files != "") {
@@ -42,7 +41,7 @@ if ($('.modal-uploader').length) {
                 dataType: 'json',
                 type: 'post',
                 contentType: 'application/json',
-                data: JSON.stringify({up_file}),
+                data: JSON.stringify({"files":up_file,"media-text":$('#media-text').val()}),
                 processData: false,
                 success: function( data, textStatus, jQxhr ){
                     $('#response pre').html( JSON.stringify( data ) );
@@ -52,6 +51,12 @@ if ($('.modal-uploader').length) {
                 }
             });
         }
+        
+        $('#publish').val("");
+        $('.app-overlay').removeClass('is-active');
+        $('.is-new-content').removeClass('is-highlighted');
+        $('#compose-search, #extended-options, .is-suboption').addClass('is-hidden');
+        $('#basic-options, #open-compose-search').removeClass('is-hidden');
     });
 
     modalUploader.on("addedfile", function(file) {
