@@ -17,7 +17,7 @@ if ($('.modal-uploader').length) {
     previewNode.parentNode.removeChild(previewNode);
 
     var modalUploader = new Dropzone(document.body, { // Make the whole body a dropzone
-        url: "https://www.cssninja.io/dropzone.php", // Set the url
+        url: "https://www.cssninja.io/dropzone.pp", // Set the url
         thumbnailWidth: 800,
         thumbnailHeight: 600,
         parallelUploads: 20,
@@ -26,6 +26,32 @@ if ($('.modal-uploader').length) {
         autoQueue: true, // Make sure the files aren't queued until manually added
         previewsContainer: "#previews", // Define the container to display the previews
         clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+    });
+
+    $("#d-sub").on("click", function(e) {
+        // Make sure that the form isn't actually being sent.
+        e.preventDefault();
+        e.stopPropagation();
+        console.log(modalUploader.files)
+        var up_file = modalUploader.files
+        
+        if (modalUploader.files != "") {
+
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/todos/',
+                dataType: 'json',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify({up_file}),
+                processData: false,
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( JSON.stringify( data ) );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                }
+            });
+        }
     });
 
     modalUploader.on("addedfile", function(file) {
@@ -70,6 +96,8 @@ if ($('.modal-uploader').length) {
     document.querySelector("#actions .cancel").onclick = function() {
         modalUploader.removeAllFiles(true);
     };
+
+    
 
     // Now fake the file upload
 

@@ -129,6 +129,8 @@ $(document).ready(function () {
             });
          });
 
+        
+
         //Show activities
         $('#show-activities, #extended-show-activities').on('click', function () {
             $('.app-overlay').addClass('is-active');
