@@ -115,7 +115,7 @@ $(document).ready(function () {
             e.preventDefault();
             $.ajax({
                 type: "POST",
-                url: 'login.php',
+                url: 'index.php',
                 data: $(this).serialize(),
                 success: function(response)
                 {
