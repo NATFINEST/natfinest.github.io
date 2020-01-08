@@ -77,14 +77,3 @@ function (e) {
     "use strict";
     window.jQuery.Dashboard.init()
 }();
-function resize() {
-            if ($(window).width() < 1110) {
-             $('body').addClass('enlarged');
-            }
-            else {$('body').removeClass('enlarged');}
-        }
-
-        $(document).ready( function() {
-            $(window).resize(resize);
-            resize();
-        });
