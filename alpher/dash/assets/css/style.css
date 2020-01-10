@@ -239,6 +239,10 @@ label{
 .uk-switcher > :not(.uk-active){
     display: block;
 }
+.promote-img{
+    height: 200px;
+    object-fit: cover;
+}
 
 
 
