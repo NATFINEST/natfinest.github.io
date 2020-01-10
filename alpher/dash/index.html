@@ -50,11 +50,7 @@
                         <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile" > 
                             <!-- this will clouse after display user icon -->                             
                             <span class="uk-hidden@m tm-mobile-user-close-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-times icon-large"></i></span> 
-                            <ul class="uk-navbar-nav uk-flex-middle">
-                                <li> 
-                                    <!-- your courses -->                                     
-                                    <a href="#" data-toggle="modal" data-target="#completeProfile"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Complete Profile</span> </a>                                   
-                                </li>                                
+                            <ul class="uk-navbar-nav uk-flex-middle">                               
                                 <li> 
                                     <!-- User profile -->                                     
                                     <a href="#"> 
@@ -79,7 +75,11 @@
                                 <li> 
                                     <!-- messages -->                                     
                                     <a href="../community/message.html"><i class="fas fa-envelope icon-medium"></i></a>
-                                </li>                               
+                                </li>
+                                <li> 
+                                    <!-- your courses -->                                     
+                                    <a href="#" data-toggle="modal" data-target="#promoteBusiness"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Promote your business</span> </a>                                   
+                                </li>                                
                             </ul>                             
                         </div>
                         <!-- Navigation for mobile -->
@@ -127,6 +127,7 @@
                 </div>
             </nav>             
         </div>
+
         <main class="main-index">
 
             <!-- end feature contant-->                
@@ -423,6 +424,30 @@
 
                         <div class="uk-margin-medium-top uk-text-center">
                             <button type="submit" class=" uk-button uk-button-secondary" style="font-size: 14px">Update Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Promote your Bussiness -->
+        <form class="modal fade" id="promoteBusiness" tabindex="-1" role="dialog" aria-labelledby="promoteLabel" aria-hidden="true" action="go.html">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Promote your business</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <img src="assets/images/promote.jpg" class="promote-img">
+                        </div>
+                        <h4>If you have your own business, its important to promote your brand in order to attract new clients.</h4>
+
+                        <div class="uk-margin-medium-top uk-text-center">
+                            <button type="submit" class=" uk-button uk-button-secondary" style="font-size: 14px">Click here to promote your business</button>
                         </div>
                     </div>
                 </div>
