@@ -276,6 +276,9 @@ button.slick-arrow.main.slick-prev{
     .slick-track{
         height: 500px;
     }
+    .d-slick div div div div{
+        height: auto!important;
+    }
 }
 @media (max-width: 1200px) {
     .container{
