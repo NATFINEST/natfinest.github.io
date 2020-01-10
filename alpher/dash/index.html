@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="assets/css/style.css"> 
         <!-- font awesome -->         
         <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/intlTelInput.css">
         <!--  javascript -->
         <script src="assets/js/simplebar.js"></script>         
         <script src="assets/js/uikit.js"></script>         
@@ -447,13 +448,36 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div>
-                            <img src="assets/images/promote.jpg" class="promote-img">
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Business Name</label>
+                                <input class="uk-input" type="text" placeholder="Your Business Name" required>
+                            </div>
                         </div>
-                        <h4>If you have your own business, its important to promote your brand in order to attract new clients.</h4>
+
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Business Email</label>
+                                <input class="uk-input" type="email" placeholder="Your Business Email" required>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Business Description</label>
+                                <textarea class="uk-textarea" rows="5" placeholder="Business Description" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Phone Number</label>
+                                <input class="uk-input" placeholder="Phone Number" id="phone" name="phone" type="tel" required>
+                            </div>
+                        </div>
 
                         <div class="uk-margin-medium-top uk-text-center">
-                            <button type="submit" class=" uk-button uk-button-secondary" style="font-size: 14px">Click here to promote your business</button>
+                            <button type="submit" class=" uk-button uk-button-secondary" style="font-size: 14px">Submit </button>
                         </div>
                     </div>
                 </div>
@@ -507,6 +531,16 @@
                     document.getElementById("uploadFile").value = this.value;
                 };
             });
-        </script>       
+        </script>
+
+        <script src="assets/js/intlTelInput.js"></script>
+        <script>
+
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+              preferredCountries: ['ng'],
+              utilsScript: "assets/js/utils.js",
+            });
+        </script>   
     </body>     
 </html>
