@@ -1,0 +1,313 @@
+<html lang="en"> 
+    
+<head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/alpher-fav.png">
+        <meta name="description" content="">
+        <title> Alpher LMS</title>         
+        <!-- Favicon -->
+        <link href="assets/img/brand/favicon.html" rel="icon" type="image/png">
+        <link rel="stylesheet" id="redux-google-fonts-sf_uplift_options-css" href="https://fonts.googleapis.com/css?family=Serif%3A400%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&amp;ver=1572104180" type="text/css" media="all">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Your stylesheet-->
+        <link rel="stylesheet" href="assets/css/uikit.css"> 
+        <link rel="stylesheet" href="assets/css/main.css"> 
+        <link rel="stylesheet" href="assets/css/style.css"> 
+        <!-- font awesome -->         
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <!--  javascript -->
+        <script src="assets/js/simplebar.js"></script>         
+        <script src="assets/js/uikit.js"></script>         
+    </head>     
+    <body class="bg-white"> 
+        <!-- PreLoader -->         
+        <div id="spinneroverlay"> 
+            <div class="spinner"></div>             
+        </div>         
+        <!-- header  --><header class="tm-header" uk-sticky>
+            <div class=" uk-background-default uk-navbar-container uk-navbar-transparent uk-padding-small uk-navbar-sticky">
+                <div class="uk-position-relative">
+                    <nav class="uk-navbar-transparent tm-mobile-header uk-animation-slide-top uk-position-z-index" uk-navbar>
+                        <!-- logo -->
+                        <!-- mobile icon for side nav on nav-mobile-->                         
+                        <span class="uk-hidden@m tm-mobile-menu-icon" uk-toggle="target: #mobile-sidebar"><i class="fas fa-bars icon-large"></i></span> 
+                        <!-- mobile icon for user icon on nav-mobile -->                         
+                        <span class="uk-hidden@m tm-mobile-user-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-user icon-large"></i></span> 
+                        <!-- mobile logo -->                         
+                        <a class="uk-hidden@m uk-logo" href="../index.html"> 
+                            <img src="assets/images/alpher-logo.png" style="width: 100;margin-top: 10px">
+                        </a> 
+                        <div class="uk-navbar-left uk-visible@m">
+                            <a href="../index.html" class="uk-logo uk-margin-left"> 
+                                <img src="assets/images/alpher-logo.png" style="width: 100">
+                            </a> 
+                        </div>                         
+                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile" > 
+                            <!-- this will clouse after display user icon -->                             
+                            <span class="uk-hidden@m tm-mobile-user-close-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-times icon-large"></i></span> 
+                            <ul class="uk-navbar-nav uk-flex-middle">                              
+                                <li> 
+                                    <!-- User profile -->                                     
+                                    <a href="#"> 
+                                        <img src="assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
+                                    </a>                                     
+                                    <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-right" class="uk-dropdown uk-padding-small uk-dropdown-top-right  angle-top-right"> 
+                                        <p class="uk-margin-small-top"> Hamse Mohamoud  </p>  
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li> 
+                                                <a href="profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="../community/message.html"> <i class="fas fa-envelope uk-margin-small-right"></i> Messages </a> 
+                                            </li>                                              
+                                            <li class="uk-nav-divider"></li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                </li>   
+                                <li> 
+                                    <!-- messages -->                                     
+                                    <a href="../community/message.html"><i class="fas fa-envelope icon-medium"></i></a>
+                                </li>                               
+                            </ul>                             
+                        </div>
+                        <!-- Navigation for mobile -->
+                        <div id="mobile-sidebar" class="mobile-sidebar" uk-offcanvas="overlay:true">
+                            <div class="uk-offcanvas-bar uk-preserve-color uk-padding-remove"> 
+                                <ul uk-accordion> 
+
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="index.html" class="uk-text-black"> <i class="fas fa-book-open uk-margin-small-right"></i> Courses </a> 
+                                    </li> 
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="https://www.unionbankng.com/elite-banking" class="uk-text-black"> <i class="fas fa-user-tie uk-margin-small-right"></i> Mentorship </a> 
+                                    </li>
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="tools.html" class="uk-text-black"> <i class="fas fa-tools uk-margin-small-right"></i>  Discounted Services </a> 
+                                    </li>                                      
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="loans.html" class="uk-text-black"> <i class="fas fa-network-wired uk-margin-small-right"></i> Loans & Grants </a> 
+                                    </li>                            
+                                </ul>                                 
+                            </div>
+                        </div>                           
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation  -->
+        <div class="uk-navbar-sticky uk-background-grey " uk-sticky="show-on-up: true; animation: uk-animation-slide-top;offset: 85">
+            <nav class="uk-padding-small uk-visible@m uk-navbar-transparent uk-animation-slide-to uk-position-z-index" uk-navbar>
+                <div class="uk-flex uk-flex-center uk-width-expand" style="margin-top: 10px">
+                    <ul class="uk-subnav uk-subnav-2">
+                        <li>
+                            <a href="index.html"> <i class="fas fa-book-open icon-medium uk-margin-small-right"></i> All Courses </a>
+                        </li>
+                        <li class="uk-active">
+                            <a href="mentorship.html"> <i class="fas fa-user-tie icon-medium uk-margin-small-right"></i> Mentorship </a>
+                        </li>
+                        <li>
+                            <a href="https://www.unionbankng.com/elite-banking"> <i class="fas fa-tools icon-medium uk-margin-small-right"></i> Discounted Services </a>
+                        </li>
+                        <li>
+                            <a href="loans.html"> <i class="fas fa-network-wired icon-medium uk-margin-small-right"></i> Loans & Grants </a>
+                        </li>               
+                    </ul>                     
+                </div>
+            </nav>             
+        </div>
+        <main class="main-index">          
+            <div class="">
+                
+                <div class="uk-container uk-margin-top" id="more">
+                    <div class="section-heading none-border">
+                        <h3 class="uk-margin-remove-bottom fw-400">Opportunities</h3>
+                    </div>
+                    <!-- slider -->                 
+                    <div class="uk-position-relative uk-visible-toggle" id="browse-videos" uk-slider> 
+                        <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid> 
+                            <li class="uk-active"> 
+                                <div class="uk-card uk-card-default uk-card-small uk-card-hover border-radius-6"> 
+                                    <a href="#" class="uk-position-cover"></a> 
+                                    <img src="https://nignetworkcommunity.com/wp-content/uploads/2020/01/Tobly-Elumelu.jpg" class="preview-img"> 
+                                    <div class="uk-card-body"> 
+                                        <h6 class="uk-margin uk-margin-remove-bottom fs-14 minh-60"> 2020 TONY ELUMELU FOUNDATION ENTREPRENEURSHIP PROGRAMME </h6>
+                                    </div>                                 
+                                </div>                             
+                            </li>
+                            <li class="uk-active"> 
+                                <div class="uk-card uk-card-default uk-card-small uk-card-hover border-radius-6"> 
+                                    <a href="#" class="uk-position-cover"></a> 
+                                    <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/12/SympliFi.png" class="preview-img"> 
+                                    <div class="uk-card-body"> 
+                                        <h6 class="uk-margin uk-margin-remove-bottom fs-14 minh-60"> SYMPLIFI </h6>
+                                    </div>                                 
+                                </div>                             
+                            </li> 
+                            <li class="uk-active"> 
+                                <div class="uk-card uk-card-default uk-card-small uk-card-hover border-radius-6"> 
+                                    <a href="#" class="uk-position-cover"></a> 
+                                    <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/11/2020-for-young-african-entrepreneurs-696x392.png" class="preview-img"> 
+                                    <div class="uk-card-body"> 
+                                        <h6 class="uk-margin uk-margin-remove-bottom fs-14 minh-60"> CHALLENGE OF 1,000 FOR YOUNG AFRICAN ENTREPRENEURS </h6>
+                                    </div>                                 
+                                </div>                             
+                            </li> 
+                            <li class="uk-active"> 
+                                <div class="uk-card uk-card-default uk-card-small uk-card-hover border-radius-6"> 
+                                    <a href="#" class="uk-position-cover"></a> 
+                                    <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/11/UKBBS--1536x1090.png" class="preview-img"> 
+                                    <div class="uk-card-body"> 
+                                        <h6 class="uk-margin uk-margin-remove-bottom fs-14 minh-60"> MEET THE FOUNDER OF THE UK BLACK BUSINESS SHOW – RAPHAEL SOFOLUKE </h6>
+                                    </div>                                 
+                                </div>                             
+                            </li> 
+                            <li class="uk-active"> 
+                                <div class="uk-card uk-card-default uk-card-small uk-card-hover border-radius-6"> 
+                                    <a href="#" class="uk-position-cover"></a> 
+                                    <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/10/Quality-person.png" class="preview-img"> 
+                                    <div class="uk-card-body"> 
+                                        <h6 class="uk-margin uk-margin-remove-bottom fs-14 minh-60"> QUALITY ASSURANCE / FOOD SAFETY PERSONNEL – TASTY’S AFRICAN RESTAURANT </h6>
+                                    </div>                                 
+                                </div>                             
+                            </li>                   
+                        </ul>                     
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-hidden-hover uk-icon-button" href="#" uk-slidenav-previous uk-slider-item="previous"></a> 
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-hidden-hover uk-icon-button" href="#" uk-slidenav-next uk-slider-item="next"></a> 
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"> 
+                            <li uk-slider-item="0" class=""> 
+                                <a href="#"></a> 
+                            </li>                         
+                        </ul>                     
+                    </div>                 
+                    <!-- end slider -->                 
+                    <div class="section-heading uk-position-relative uk-margin-medium-top none-border uk-clearfix"> 
+                        <div class="uk-float-left"> 
+                            <h3 class="uk-margin-remove-bottom fw-400"> Interest</h3>
+                        </div>                    
+                    </div>
+                    <div class="uk-margin uk-grid-match uk-child-width-1-3@m uk-child-width-1-2@s" uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 200" uk-grid> 
+                        <div> 
+                            <a href="blog-post-single-2.html">
+                                <div class="uk-card-default uk-card-hover uk-card-small uk-margin-medium-bottom uk-inline-clip border-radius-6"> 
+                                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191203212318-GettyImages-1075187262.jpeg?format=jpg&width=400&crop=3:2"> 
+                                    <div class="uk-card-body minh-200"> 
+                                        <h4 class="uk-margin uk-margin-remove-bottom fs-14"> Finding Your Path to the C-Suite: 6 Tips for Women in Business  </h4> 
+                                        <p class="fs-12"> Assertiveness, thoughtfulness and the other traits that any woman in power will want to project.</p>
+                                    </div>                                 
+                                </div>
+                            </a>                         
+                        </div>                     
+                        <div> 
+                            <a href="blog-post-single-2.html">
+                                <div class="uk-card-default uk-card-hover uk-card-small uk-margin-medium-bottom uk-inline-clip border-radius-6"> 
+                                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191118213015-GettyImages-769731579.jpeg?format=jpg&width=400&crop=3:2"> 
+                                    <div class="uk-card-body minh-200"> 
+                                        <h4 class="uk-margin uk-margin-remove-bottom fs-14"> Inspiring Leadership Lessons From 13 Female Founders</h4> 
+                                        <p class="fs-12"> Entrepreneur reflects on the inspiring stories of 13 female founders on Women's Entrepreneurship Day.</p>
+                                    </div>                                 
+                                </div>
+                            </a>                         
+                        </div> 
+                        <div> 
+                            <a href="blog-post-single-2.html">
+                                <div class="uk-card-default uk-card-hover uk-card-small uk-margin-medium-bottom uk-inline-clip border-radius-6"> 
+                                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191114160104-GettyImages-1065795406.jpeg?format=jpg&width=400&crop=3:2"> 
+                                    <div class="uk-card-body minh-200"> 
+                                        <h4 class="uk-margin uk-margin-remove-bottom fs-14"> On Momternships: Do Working Moms Really Need to Start From Scratch?  </h4> 
+                                        <p class="fs-12"> Returning to the workforce shouldn't require jumping through so many hoops.</p>
+                                    </div>                                 
+                                </div>
+                            </a>                         
+                        </div> 
+                        <div> 
+                            <a href="blog-post-single-2.html">
+                                <div class="uk-card-default uk-card-hover uk-card-small uk-margin-medium-bottom uk-inline-clip border-radius-6"> 
+                                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191017195234-4943-Big-Bear-Road-Trip-Park-011-crop.jpeg?format=jpg&width=400&crop=3:2"> 
+                                    <div class="uk-card-body minh-200"> 
+                                        <h4 class="uk-margin uk-margin-remove-bottom fs-14"> New Report Suggests Women Are Thriving In Cannabis. Are They?  </h4> 
+                                        <p class="fs-12"> Women are enjoying great success in the cannabis industry; will it last?</p>
+                                    </div>                                 
+                                </div>
+                            </a>                         
+                        </div>                    
+                    </div> 
+                </div>
+            </div>            
+        </main>         
+        <!-- footer -->         
+        <div class="uk-section-small uk-margin-medium-top"> 
+            <div class="uk-container uk-align-center uk-margin-remove-bottom uk-position-relative">                 
+                <hr>
+                <p class="uk-postion-absoult uk-margin-remove uk-position-bottom-right" style="bottom: 8px;right: 60px;" uk-tooltip="title: Back to Home; pos: top-center"><a href="#" target="_blank" class="uk-text-bold uk-link-reset"> Alpher</a></p> 
+                <div class="uk-margin-small" uk-grid> 
+                    <div class="uk-width-1-2@m uk-width-1-2@s uk-first-column"> 
+                        <p class="uk-text-small"><i class="fas fa-copyright"></i> 2019 <span class="uk-text-bold">Alpher</span> . All rights reserved.</p> 
+                    </div>                     
+                    <div class="uk-width-1-3@m uk-width-1-2@s"> 
+                        <a href="https://www.youtube.com/user/UnionBankNG" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Youtube Chanal; pos: top-center">
+                            <i class="fab fa-youtube" style=" color: #fb7575  !important;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Unionbankng/" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Facebook; pos: top-center">
+                            <i class="fab fa-Facebook" style=" color: #9160ec  !important;"></i>
+                        </a>
+                        <a href="https://instagram.com/unionbankng" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Instagram; pos: top-center">
+                            <i class="fab fa-Instagram" style=" color: #dc2d2d  !important;"></i>
+                        </a>
+                        <a href="https://www.twitter.com/UNIONBANK_NG" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Twitter; pos: top-center">
+                            <i class="fab fa-twitter" style=" color: #6f23ff !important;"></i>
+                        </a>
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- footer  end -->         
+        <!-- app end -->         
+        <!-- button scrollTop -->         
+        <button id="scrollTop" class="uk-animation-slide-bottom-medium"> 
+            <a href="#" class="uk-text-white" uk-totop uk-scroll></a> 
+        </button>         
+        <!--  Night mood -->         
+        <script>
+
+        // Preloader
+        var spinneroverlay = document.getElementById("spinneroverlay");
+        window.addEventListener('load', function(){
+            spinneroverlay.style.display = 'none';
+        });
+
+         //scrollTop
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTop").style.display = "block";
+            } else {
+                document.getElementById("scrollTop").style.display = "none";
+            }
+        }        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        </script>
+
+        <script src="assets/js/jquery.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#filter').change(function () {
+                    $('.group').hide();
+                    // $('.group').addClass('w-0');
+                    $('.'+$(this).val()).show();
+                  })
+            });
+        </script>        
+    </body>     
+</html>

@@ -206,7 +206,7 @@ label{
     position: relative!important;
 }
 [class~=video-list] li {
-    height: 40px;
+    height: 60px;
 }
 .video-list li a{
     border: 0;
@@ -242,4 +242,20 @@ label{
 .promote-img{
     height: 200px;
     object-fit: cover;
+}
+.preview-img{
+    height: 150;
+    object-fit: cover;
+}
+.minh-60{
+    min-height: 60px;
+}
+.minh-200{
+    min-height: 200px;
+}
+.fs-12{
+    font-size: 12px!important;
+}
+.fs-14{
+    font-size: 14px!important;
 }
