@@ -472,16 +472,41 @@
 
                         <div class="uk-grid uk-child-width-expand@s">
                             <div class="">
-                                <label>Business Description</label>
-                                <textarea class="uk-textarea" rows="5" placeholder="Business Description" required></textarea>
+                                <label>Service Category</label>
+                                <select class="uk-select" id="CourseSelect2">
+                                    <option value="all">Catering</option>
+                                    <option value="abia">Fashion</option>
+                                    <option value="abj">Design</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="uk-grid uk-child-width-expand@s">
                             <div class="">
+                                <label>Service Description</label>
+                                <textarea class="uk-textarea" rows="5" placeholder="Service Description" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid uk-child-width-expand@s">
+                            <div class="">
+                                <label>Service Image</label>
+                                <div class="form-group" style="display: inline-flex;width: 100%">
+                                    <input id="uploadFile" placeholder="Upload profile picture" disabled="disabled"required style="font-size: 14px;height: 40px;width: 100%"/>
+                                    <div class="fileUpload btn btn-primary" style="height: 40px;width: 85px;" >
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="">
                                 <label>Phone Number</label>
                                 <input class="uk-input" placeholder="Phone Number" id="phone" name="phone" type="tel" required>
                             </div>
+                        </div>
+
+                        <div class="uk-grid uk-child-width-expand@s">
                         </div>
 
                         <div class="uk-margin-medium-top uk-text-center">
