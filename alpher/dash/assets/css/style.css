@@ -94,19 +94,6 @@ h4{
     font-size: 14px;
     font-weight: 400;
 }
-@media screen and (max-width: 900px){
-    [class~=tm-mobile-user-icon] {
-        padding-right: 8%!important;
-    }
-    .tm-show-on-mobile .uk-navbar-nav {
-        margin-right: 8%;
-    }
-}
-@media only screen and (min-width: 901px) and (max-width: 959px) {
-      .tm-mobile-user-close-icon{
-        visibility: hidden!important;
-      }
-}
 .fw-400{
     font-weight: 400;
 }
@@ -224,7 +211,11 @@ label{
     display: block;
 }
 .tm-course-fliud .tm-side-course-active-left-icon {
-    left: inherit;
+    left: 82%;
+    top: 130px;
+}
+[class~=tm-course-fliud] [class~=tm-discussions-header], [class~=tm-course-fliud] [class~=tm-course-content-header]{
+    margin-left: 0;
 }
 .tm-course-lesson-section .uk-accordion-title h6 {
     padding-top: 6px;
@@ -255,6 +246,27 @@ label{
 }
 .fs-12{
     font-size: 12px!important;
+}
+@media screen and (max-width: 900px){
+    [class~=tm-mobile-user-icon] {
+        padding-right: 8%!important;
+    }
+    .tm-show-on-mobile .uk-navbar-nav {
+        margin-right: 8%;
+    }
+    .tm-course-fliud .tm-side-course-active-left-icon {
+        left: 90%;
+        top: 104px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 959px) {
+      .tm-mobile-user-close-icon{
+        visibility: hidden!important;
+      }
+    .tm-course-fliud .tm-side-course-active-left-icon {
+        left: 90%;
+        top: 104px;
+    }
 }
 .fs-14{
     font-size: 14px!important;
