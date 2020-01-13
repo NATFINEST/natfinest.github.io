@@ -5,7 +5,6 @@ Chat js file
 ========================================================================== */
 
 $(document).ready(function () {
-
     "use strict";
 
     //Close chat app
@@ -18,6 +17,12 @@ $(document).ready(function () {
     $('#chat-panel .panel-close').on('click', function () {
         $('#chat-body, #chat-panel').removeClass('is-opened');
     })
+
+    $("#nomessage").hide();
+
+    if($('.user-item').length == 0){
+        $("#nomessage").show();
+    }
 
     $(document).on('click', '#myDiv1 .user-item', function () {
 
@@ -88,6 +93,7 @@ $(document).ready(function () {
             $('#' + id + '-conversation').removeClass('is-hidden');
         }
 
+
         //The user can now send messges
         $('#chat-send').removeAttr("disabled")
     });
@@ -118,6 +124,7 @@ $(document).ready(function () {
         //Check if the textarea is empty
         if (chat != "") {
             $('#chat-text').focus();
+            $("#nomessage").hide();
 
             //Check if a conversation has already begun
             if($('.user-item#'+id).length == 0){
