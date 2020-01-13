@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <style type="text/css">
+      
+  </style>
 </head>
 
 <body>
@@ -141,64 +147,58 @@
                                         <label for="phone" class="sr-only">Phone Number</label>
                                         <input name="phone" type="tel" class="phone form-control element-block pl-5"  required>
                                     </div>
-                                    <div class="col-12 col-md-6 form-group single-input long-select">
+                                    <div class="col-12 col-md-6">
                                         <label for="text" class="sr-only">State of Residence</label>
-                                        <select name="state" class="" id="CourseSelect2" style="display: none;" required>
-                                            <option selected="true" disabled="disabled">Select State of Residence</option>
-                                            <option>ABUJA FCT</option>
-                                            <option>ABIA</option>
-                                            <option>ADAMAWA</option>
-                                            <option>AKWA IBOM</option>
-                                            <option>ANAMBRA</option>
-                                            <option>BAUCHI</option>
-                                            <option>BAYELSA</option>
-                                            <option>BENUE</option>
-                                            <option>BORNO</option>
-                                            <option>CROSS RIVER</option>
-                                            <option>DELTA</option>
-                                            <option>EBONYI</option>
-                                            <option>EDO</option>
-                                            <option>EKITI</option>
-                                            <option>ENUGU</option>
-                                            <option>GOMBE</option>
-                                            <option>IMO</option>
-                                            <option>JIGAWA</option>
-                                            <option>KADUNA</option>
-                                            <option>KANO</option>
-                                            <option>KATSINA</option>
-                                            <option>KEBBI</option>
-                                            <option>KOGI</option>
-                                            <option>KWARA</option>
-                                            <option>LAGOS</option>
-                                            <option>NASSARAWA</option>
-                                            <option>NIGER</option>
-                                            <option>OGUN</option>
-                                            <option>ONDO</option>
-                                            <option>OSUN</option>
-                                            <option>OYO</option>
-                                            <option>PLATEAU</option>
-                                            <option>RIVERS</option>
-                                            <option>SOKOTO</option>
-                                            <option>TARABA</option>
-                                            <option>YOBE</option>
-                                            <option>ZAMFARA</option>
+                                        <select name="state" id="state" class="form-control" required>
+                                              <option value="" selected="selected" > Select State </option>
+                                              <option value='Abia'>Abia</option>
+                                              <option value='Adamawa'>Adamawa</option>
+                                              <option value='AkwaIbom'>AkwaIbom</option>
+                                              <option value='Anambra'>Anambra</option>
+                                              <option value='Bauchi'>Bauchi</option>
+                                              <option value='Bayelsa'>Bayelsa</option>
+                                              <option value='Benue'>Benue</option>
+                                              <option value='Borno'>Borno</option>
+                                              <option value='Cross River'>Cross River</option>
+                                              <option value='Delta'>Delta</option>
+                                              <option value='Ebonyi'>Ebonyi</option>
+                                              <option value='Edo'>Edo</option>
+                                              <option value='Ekiti'>Ekiti</option>
+                                              <option value='Enugu'>Enugu</option>
+                                              <option value='FCT'>FCT</option>
+                                              <option value='Gombe'>Gombe</option>
+                                              <option value='Imo'>Imo</option>
+                                              <option value='Jigawa'>Jigawa</option>
+                                              <option value='Kaduna'>Kaduna</option>
+                                              <option value='Kano'>Kano</option>
+                                              <option value='Katsina'>Katsina</option>
+                                              <option value='Kebbi'>Kebbi</option>
+                                              <option value='Kogi'>Kogi</option>
+                                              <option value='Kwara'>Kwara</option>
+                                              <option value='Lagos'>Lagos</option>
+                                              <option value='Nasarawa'>Nasarawa</option>
+                                              <option value='Niger'>Niger</option>
+                                              <option value='Ogun'>Ogun</option>
+                                              <option value='Ondo'>Ondo</option>
+                                              <option value='Osun'>Osun</option>
+                                              <option value='Oyo'>Oyo</option>
+                                              <option value='Plateau'>Plateau</option>
+                                              <option value='Rivers'>Rivers</option>
+                                              <option value='Sokoto'>Sokoto</option>
+                                              <option value='Taraba'>Taraba</option>
+                                              <option value='Yobe'>Yobe</option>
+                                              <option value='Zamfara'>Zamafara</option>
                                         </select>
                                     </div>
-                                    <div class="col-12 col-md-6 form-group single-input long-select">
+
+                                    <div class="col-12 col-md-6 ">
                                         <label for="text" class="sr-only">LGA</label>
-                                        <select name="lga" id="CourseSelect2" style="display: none;" required>
-                                            <option selected="true" disabled="disabled">Select LGA</option>
-                                            <option value="ind">Lagos</option>
-                                            <option value="bus">Akure</option>
+                                        <select name="lga" id="lga" class="form-control" required>
+                                              <option value="" selected="selected" > Select LGA </option>
                                         </select>
-                                    </div>
-                                    <!-- <div class="col-12 col-md-6 form-group">
-                                        <label for="acc" class="sr-only">Union Bank Acc. No.</label>
-                                        <input type="text" id="acc" name="acc" placeholder="Union Bank Acc. No." required>
-                                        <span><i class="fas fa-credit-card"></i></span>
-                                    </div> -->
-                                    <div class="col-12 col-md-6 form-group single-input">
-                                        <select name="gender" id="gender" style="display: none;" required>
+                                    </div>                                    
+                                    <div class="col-12 col-md-6">
+                                        <select name="gender" id="gender" required>
                                             <option selected="true" disabled="disabled">Select Gender</option>
                                             <option value="ind">Male</option>
                                             <option value="bus">Female</option>
@@ -241,16 +241,11 @@
                                         <input type="text" id="bname" name="bname" placeholder="Your Business Name *" required>
                                         <span><i class="far fa-user"></i></span>
                                     </div>
-                                    <!-- <div class="col-12 col-md-6 form-group">
-                                        <label for="acc" class="sr-only">Union Bank Business Acc. No.</label>
-                                        <input type="text" id="acc" name="acc" placeholder="Union Bank Business Acc. No." required>
-                                        <span><i class="fas fa-credit-card"></i></span>
-                                    </div> -->
-                                    <div class="col-12 col-md-6 form-group single-input">
-                                        <select name="gender" id="CourseSelect2" style="display: none;" required>
+                                    <div class="col-12 col-md-6">
+                                        <select name="gender" id="gender2" required>
                                             <option selected="true" disabled="disabled">Select Gender</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
+                                            <option value="ind">Male</option>
+                                            <option value="bus">Female</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-md-6 form-group">
@@ -380,6 +375,9 @@
     </script>
 
     <script src="assets/js/intlTelInput.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="assets/js/lga.js"></script>
     <script>
         var input1 = document.querySelector(".phone");
         window.intlTelInput(input1, {
