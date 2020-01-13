@@ -18,15 +18,12 @@
     <!-- set the page title -->
     <title>Alpher</title>
     <!-- Fonts -->
-    <link href="../external.html?link=https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
-    <link href="../external.html?link=https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="assets/css/webfont.css" rel="stylesheet">
     <link href="assets/css/select2.min.css" rel="stylesheet" />
     <!-- Core CSS -->
 
     <!-- include the site bootstrap stylesheet -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/bulma.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/core.css">
@@ -110,11 +107,11 @@
                 <div class="nav-start">
                     <div class="recipient-block">
                         <div class="avatar-container">
-                            <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
+                            <img class="user-avatar" src="" alt="">
                         </div>
                         <div class="username">
-                            <span style="display: flex;color: #000;font-weight: 500;">Dan Walker <i class="dripicons-media-record is-Online"></i></span>
-                            <span> <span style="font-size: 12px;">30 mins ago</span></span>
+                            <span style="display: flex;color: #000;font-weight: 500;"> </span>
+                            <span> <span style="font-size: 12px;"></span></span>
                         </div>
                     </div>
                 </div>
@@ -126,249 +123,28 @@
                     <div style="float: left;color: #009fe3;font-weight: 600;">MESSAGE</div>
                     <div class="add-button modal-trigger composed" data-modal="add-conversation-modal"><i data-feather="edit"></i></div>
                 </div>
-                <div class="search-field">
+                <!-- <div class="search-field">
                     <i class="fa fa-search" style=""></i>
                     <input type="text" placeholder="Start typing to search" >
-                </div>
+                </div> -->
                 <!-- User list -->
                 <div class="conversations-list has-slimscroll-xs" id="myDiv1">
-                    <!-- User -->
-                    <div class="user-item is-active" data-chat-user="dan" data-full-name="Dan Walker" data-status="Online" data-time="30 mins ago">
-                        <div class="avatar-container">
-                            <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
-                            <div class="user-status is-online"></div>
-                        </div>
-                        <div class="msg-container">
-                            <div class="fs-14 side-msg unread">Hi Dan! I made a new design, and i wanted to show it to you.</div>
-                        </div>
-                        <div class="msg-time">
-                            <div class="fs-12">2:49 AM</div>
-                        </div>
-                    </div>
-                    <!-- User -->
-                    <div class="user-item" data-chat-user="stella" data-full-name="Stella Bergmann" data-status="Busy" data-time="1 hr ago">
-                        <div class="avatar-container">
-                            <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/stella.jpg" alt="">
-                            <div class="user-status is-busy"></div>
-                        </div>
-                        <div class="msg-container">
-                            <div class="fs-14 side-msg">Hey Stella! Aren't we supposed to go the theatre after work?.</div>
-                        </div>
-                        <div class="msg-time">
-                            <div class="fs-12">12:49 AM</div>
-                        </div>
-                    </div>
-                    <!-- User -->
-                    <div class="user-item" data-chat-user="daniel" data-full-name="Daniel Wellington" data-status="Busy"  data-time="12 mins ago">
-                        <div class="avatar-container">
-                            <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/daniel.jpg" alt="">
-                            <div class="user-status is-away"></div>
-                        </div>
-                        <div class="msg-container">
-                            <div class="fs-14 side-msg">Daniel, Amanda told me about your issue, how can I help?</div>
-                        </div>
-                        <div class="msg-time">
-                            <div class="fs-12">10:49 AM</div>
-                        </div>
-                    </div>
-                    <!-- User -->
-                    <div class="user-item" data-chat-user="david" data-full-name="David Kim" data-status="Busy" data-time="10 mins ago">
-                        <div class="avatar-container">
-                            <img class="user-avatar" src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/david.jpg" alt="">
-                            <div class="user-status is-busy"></div>
-                        </div>
-                        <div class="msg-container">
-                            <div class="fs-14 side-msg unread">I just HATE aliens.</div>
-                        </div>
-                        <div class="msg-time">
-                            <div class="fs-12">5:49 PM</div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <!-- Chat body -->
             <div id="chat-body" class="chat-body is-opened">
                 <div id="myDiv2">
-                    <!-- Conversation with Dan -->
-                    <div id="dan-conversation" class="chat-body-inner has-slimscroll">
-                        <div class="date-divider">
-                            <hr class="date-divider-line">
-                            <span class="date-divider-text">Today</span>
-                        </div>
-
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
-                            <div class="message-block">
-                                <span>8:03am</span>
-                                <div class="message-text">Hi Jenna! I made a new design, and i wanted to show it to you.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
-                            <div class="message-block">
-                                <span>8:03am</span>
-                                <div class="message-text">It's quite clean and it's inspired from Bulkit.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>8:12am</span>
-                                <div class="message-text">Oh really??! I want to see that.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/dan.jpg" alt="">
-                            <div class="message-block">
-                                <span>8:13am</span>
-                                <div class="message-text">FYI it was done in less than a day.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>8:17am</span>
-                                <div class="message-text">Great to hear it. Just send me the PSD files so i can have a look at it.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>8:18am</span>
-                                <div class="message-text">And if you have a prototype, you can also send me the link to it.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conversation with Stella -->
-                    <div id="stella-conversation" class="chat-body-inner has-slimscroll is-hidden">
-                        <div class="date-divider">
-                            <hr class="date-divider-line">
-                            <span class="date-divider-text">Today</span>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>10:34am</span>
-                                <div class="message-text">Hey Stella! Aren't we supposed to go the theatre after work?.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>10:37am</span>
-                                <div class="message-text">Just remembered it.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/stella.jpg" alt="">
-                            <div class="message-block">
-                                <span>11:22am</span>
-                                <div class="message-text">Yeah you always do that, forget about everything.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conversation with Daniel -->
-                    <div id="daniel-conversation" class="chat-body-inner has-slimscroll is-hidden">
-                        <div class="date-divider">
-                            <hr class="date-divider-line">
-                            <span class="date-divider-text">Yesterday</span>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>3:24pm</span>
-                                <div class="message-text">Daniel, Amanda told me about your issue, how can I help?</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/daniel.jpg" alt="">
-                            <div class="message-block">
-                                <span>3:42pm</span>
-                                <div class="message-text">Hey Jenna, thanks for answering so quickly. Iam stuck, i need a car.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/daniel.jpg" alt="">
-                            <div class="message-block">
-                                <span>3:43pm</span>
-                                <div class="message-text">Can i borrow your car for a quick ride to San Fransisco? Iam running behind and there' no train in sight.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conversation with David -->
-                    <div id="david-conversation" class="chat-body-inner has-slimscroll is-hidden">
-                        <div class="date-divider">
-                            <hr class="date-divider-line">
-                            <span class="date-divider-text">Today</span>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>12:34pm</span>
-                                <div class="message-text">Damn you! Why would you even implement this in the game?.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>12:32pm</span>
-                                <div class="message-text">I just HATE aliens.</div>
-                            </div>
-                        </div>
-
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/david.jpg" alt="">
-                            <div class="message-block">
-                                <span>13:09pm</span>
-                                <div class="message-text">C'mon, you just gotta learn the tricks. You can't expect aliens to behave like humans. I mean that's how the mechanics are.</div>
-                            </div>
-                        </div>
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/david.jpg" alt="">
-                            <div class="message-block">
-                                <span>13:11pm</span>
-                                <div class="message-text">I checked the replay and for example, you always get supply blocked. That's not the right thing to do.</div>
-                            </div>
-                        </div>
-                        <div class="chat-message is-sent">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/jenna.png" alt="">
-                            <div class="message-block">
-                                <span>13:12pm</span>
-                                <div class="message-text">I know but i struggle when i have to decide what to make from larvas.</div>
-                            </div>
-                        </div>
-                        <div class="chat-message is-received">
-                            <img src="../external.html?link=https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/david.jpg" alt="">
-                            <div class="message-block">
-                                <span>13:17pm</span>
-                                <div class="message-text">Join me in game, i'll show you.</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <!-- Compose message area -->
                 <div class="chat-action">
                     <div class="chat-action-inner">
                         <div class="control">
-                            <textarea class="textarea comment-textarea" rows="1" id="chat-text"></textarea>
+                            <textarea class="textarea comment-textarea" rows="1" id="chat-text" autofocus=""></textarea>
                             <div class="dropdown compose-dropdown">
                                 <div>
                                     <div class="add-button">
-                                        <button class="button-inner" id="chat-send">
+                                        <button class="button-inner" id="chat-send" disabled>
                                             <i data-feather="send"></i>
                                         </button>
                                     </div>
@@ -402,11 +178,16 @@
 
                     <div class="field is-autocomplete">
                         <div class="control has-icon">
-                            <select class="js-example-basic-single w-100" name="state">
-                              <option value="AL" data-chat-user="sam" data-full-name="David Kim" data-status="Busy" data-demo-src="david.jpg">David Kim</option>
-                              <option value="WY">Wyoming</option>
+                            <select class="js-example-basic-single w-100" name="state" id="select-contact">
+                              <option data-chat-user="korede" data-full-name="Korede Bello" data-status="online" data-demo-src="stella.jpg" data-id="2" data-last-seen="online">Korede Bello</option>
+                              <option data-chat-user="davids" data-full-name="Davids Kim" data-status="busy" data-demo-src="david.jpg" data-id="1" data-last-seen="5 mins Ago">Davids Kim</option>
                             </select>
                         </div>
+                        <!-- <select class="drop-down">
+                             <option value="0" data-name="AAA">A</option>
+                             <option value="1" data-name="BBB">B</option>
+                        </select> -->
+
                     </div>
 
 
@@ -457,6 +238,17 @@
                 allowClear: true
             });
         });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+            $('.drop-down').select2().on("change", function(e) {
+                // var obj = $(".drop-down").select2("data");
+                // console.log("change val=" + obj[0].id);  // 0 or 1 on change
+            });
+        });
+
+        
     </script>
 </body>
 
