@@ -1,0 +1,144 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=auto";
+
+:root {
+    --primary-color : #3A88C7;
+    --secondary-color : #787878;
+    --form-text: #979797;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+    line-height: 1.85;
+    background-color: var(--white) !important;
+}
+
+.left {
+    background-color: var(--primary-color);
+}
+
+.height--100 {
+    height: 100vh;
+}
+
+.position-center--vertical {
+    padding: 40% 0 0 0;   
+}
+
+.transact_bottom {
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.transact_left {
+    top: 20%;
+    left: 0;
+    width: 25%
+}
+
+.transact_line {
+    top: 0;
+    left: 40%;
+    max-height: 100vh;
+}
+
+.transact_line_2 {
+    top: 0;
+    left: 55%;
+    max-height: 100vh;
+}
+
+.z-4 {
+    z-index: 4000 !important;
+    position: relative;
+}
+
+.toggle_wrapper {
+    width: 60%;
+    margin: 20px auto 0px;
+    background: #D8D8D8;
+    border-radius: 50px;
+    font-size: 17px;
+}
+
+.toggle_wrapper div {
+    cursor: pointer;
+}
+
+.active_state {
+    background: var(--primary-color);
+    border-radius: 50px;
+    color: var(--white);
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input--indent input {
+    text-indent: 20px;
+}
+
+.field--img {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.form-control {
+    height: 42px;   
+    border: 1px solid #D5D5D5 !important;
+    border-radius: 5px !important;
+    padding: 5px 20px;
+}
+
+.form-control::placeholder {
+    color: var(--form-text);
+    font-weight: 300 !important;
+}
+
+.reset-password--color {
+    color : #656972;
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn--primary:hover {
+    background-color: #328CD5;
+    color: var(--white);
+}
+
+.bottom-links {
+    bottom: -34%;
+    font-size: 12px;
+}
+
+.bottom-links a {
+    color: var(--white);
+}
+
+.none {
+    display: none;
+}
+
+ul .dammy{
+    background-color: #3a88c7 !important;
+    border-color: #3a88c7 !important;
+}
+@media (max-width: 767px) and (min-width: 321px){
+    .position-center--vertical {
+        padding: 20% 0 0 0 !important;
+    }
+    .height-md--40 {
+        height: 40vh !important;
+    }
+}
+
+
+
+

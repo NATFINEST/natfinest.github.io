@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Civic Foundation for Innovation">
+    <meta name="author" content="Nathaniel Odukpahie">
+    <title>Civic Foundation for Innovation</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Main css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <div class="main left">
+
+        <div class="container">
+            <div style="text-align: center;padding-top: 20px"><a href="index.html"><img src="img/logo.jpg" width="240" height="70"></a></div>
+            <h2 style="margin-bottom: 10px; font-weight: 500"> Registration</h2>
+            <form method="POST" id="signup-form" class="signup-form" action="index.html">
+                <h3>
+                    <span class="title_text">Personal Information</span>
+                </h3>
+                <fieldset>
+                    <div class="fieldset-content">
+                        <div class="form-group">
+                            <label for="cont_first_name" class="form-label">Contact First Name</label>
+                            <input type="text" name="cont_first_name" id="cont_first_name" placeholder="Contact First Name"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="cont_last_name" class="form-label">Contact Last Name</label>
+                            <input type="text" name="cont_last_name" id="cont_last_name" placeholder="Contact Last Name"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="cont_phone_num" class="form-label">Contact Phone Number</label>
+                            <input type="digits" name="cont_phone_num" id="cont_phone_num" placeholder="Contact Phone Number"  />
+                        </div>
+                        <div class="form-group form-password">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="password" id="password" data-indicator="pwindicator"  />
+                            <div id="pwindicator">
+                                <div class="bar-strength">
+                                    <div class="bar-process">
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
+                                <div class="label"></div>
+                            </div>
+                        </div>
+                        <div class="form-group form-password">
+                            <label for="password_again" class="form-label">Confirm Password</label>
+                            <input type="password" name="password_again" id="password_again" data-indicator="pwindicator"  />
+                            <div id="pwindicator">
+                                <div class="bar-strength">
+                                    <div class="bar-process">
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
+                                <div class="label"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset-footer">
+                        <span>Step 1 of 3</span>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">School Information</span>
+                </h3>
+                <fieldset>
+
+                    <div class="fieldset-content">
+                        <div class="form-group">
+                            <label for="sch_name" class="form-label">School Name</label>
+                            <input type="text" name="sch_name" id="sch_name" placeholder="Name of School"  />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sch_add" class="form-label">School Address</label>
+                            <input type="text" name="sch_add" id="sch_add" placeholder="Address of School"  />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="avg_stud" class="form-label">Average Number of Students</label>
+                            <input type="number" name="avg_stud" id="avg_stud" placeholder="Avg no. of Students"  />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tot_stud" class="form-label">Total Number of Computer Science Student</label>
+                            <input type="number" name="tot_stud" id="tot_stud" placeholder="Total Number of CS Students"  />
+                        </div>
+    
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <span>Step 2 of 3</span>
+                    </div>
+
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Principal Officers Information</span>
+                </h3>
+                <fieldset>
+                    <div class="fieldset-content">
+                        <div class="form-group">
+                            <label for="po_first_name" class="form-label">P.O. First Name</label>
+                            <input type="text" name="po_first_name" id="po_first_name" placeholder="Principal Officer First Name"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="po_last_name" class="form-label">P.O. Last Name</label>
+                            <input type="text" name="po_last_name" id="po_last_name" placeholder="Principal Officer Last Name"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="po_email" class="form-label">P.O. Email</label>
+                            <input type="email" name="po_email" id="po_email" placeholder="Principal Officer Email"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="po_phone_num" class="form-label">P.O. Phone Number</label>
+                            <input type="digits" name="po_phone_num" id="po_phone_num" placeholder="Principal Officer Phone Number"  />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="app_let" class="form-label">Upload Approval Letter(JPG or PNG)</label>
+                            <div class="form-file">
+                                <input type="file" name="app_let" id="app_let" class="custom-file-input" />
+                                <span id='val'></span>
+                                <span id='button' style="margin-top: 6px">Select File</span>
+                            </div>
+                        </div>
+                        <small style="display: block;color: blue;padding: 15px 40px;">* Pls upload a scanned copy of the approval letter for the school to participate in the civic foundation lab stem programme</small>
+
+                        <div class="fieldset-footer">
+                            <span>Step 3 of 3</span>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/jquery.pwstrength/jquery.pwstrength.js"></script>
+    <script src="https://unpkg.com/sweetalert2@7.12.10/dist/sweetalert2.all.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(function() {
+            $('input[name="acc_no"]').on('click', function() {
+                if ($(this).val() == 'yes') {
+                    $('#bus').show();
+                }
+                else if ($(this).val() == 'no') {
+                    $('#bus').hide();             
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
