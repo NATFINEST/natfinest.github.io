@@ -1,0 +1,273 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: HCo Gotham Rounded SSm, sans-serif!important
+}
+h4{
+    font-weight: 400!important;
+    font-size: 16px!important;
+}
+.uk-button.course-badge{
+    font-size: 12px!important;
+    font-weight: 400!important;
+        padding: 5px 7px;
+}
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(../fonts/GothamRndSSm-Light_Web.otf) format('truetype'), url(../fonts/GothamRndSSm-Light_Web.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(../fonts/GothamRndSSm-Book_Web.otf) format('truetype'), url(../fonts/GothamRndSSm-Book_Web.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(../fonts/GothamRndSSm-Medium_Web.otf) format('truetype'), url(../fonts/GothamRndSSm-Medium_Web.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(../fonts/GothamRndSSm-Bold_Web.otf) format('truetype'), url(../fonts/GothamRndSSm-Bold_Web.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block
+}
+.main-index{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.w-0{
+    width: 0!important;
+}
+.group{
+    margin-bottom: 30px!important
+}
+.uk-grid > .uk-grid-margin, * + .uk-grid-margin{
+    margin-top: 0!important;
+}
+.uk-navbar-nav > li > a {
+    color: #666;
+    font-weight: 600;
+}
+.uk-navbar-nav > li > a:hover,.uk-navbar-nav > li > a:focus,.uk-navbar-nav > li > a.uk-open {
+    color: #333!important;
+}
+.uk-subnav > * > :first-child{
+    font-size: 14px;
+    font-weight: 300;
+}
+.uk-dropdown{
+    padding: 9px 20px;
+}
+.uk-subnav > *{
+    padding-left: 10px;
+}
+.uk-tab > * > a{
+    font-size: 14px;
+}
+[class~=video-list] li a span[class~=uk-text-truncate]{
+    font-size: 14px;
+    font-weight: 300;
+}
+.back-to-dhashboard{
+    font-size: 14px;
+    line-height: 2;
+}
+.uk-margin-remove{
+    font-size: 14px;
+    font-weight: 400;
+}
+.fw-400{
+    font-weight: 400;
+}
+.btn-mt{
+    padding: 0 10px;
+    font-size: 14px;
+}
+.uk-modal-body{
+    width: 800px;
+}
+.uk-card-default{
+    margin-bottom: 20px!important;
+}
+.uk-nav > li > a{
+    font-size: 14px;
+}
+[class~=video-responsive] iframe {
+    padding:0;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    margin: 0; 
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #1e87f0;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.fileUpload input.upload {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.dropdown-menu>li>a{
+    font-weight: 500;
+}
+.bg-white{
+    background: #fff;
+}
+.uk-container.uk-container-fluid{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+.tm-course-lesson-section{
+    margin-top: 1px!important;
+}
+p{
+    font-size: 14px
+}
+.uk-navbar-transparent {
+    height: 65px;
+    padding-top: 5px
+}
+.uk-background-grey.uk-sticky-fixed {
+    top: 66px!important;
+}
+.sw-btn-prev,.sw-btn-next{
+    font-size: 16px;
+    font-weight: 300;
+}
+.modal-title{
+    font-weight: 400;
+}
+.sw-btn-group{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.btn-info,.btn-info:hover{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #28a745;
+}
+label{
+    font-weight: 400;
+    font-size: 14px;
+}
+.uk-input, .uk-select, .uk-textarea {
+    font-size: 14px;
+}
+.uk-grid + .uk-grid, .uk-grid > .uk-grid-margin, * + .uk-grid-margin{
+    margin-top: 20px;
+}
+[class~=tm-course-section-list] ul {
+    width: 100%;
+    position: relative!important;
+}
+[class~=video-list] li {
+    height: 60px;
+}
+.video-list li a{
+    border: 0;
+    padding:0;
+}
+[class~=video-list] li a [class~=play-icon] {
+    left: 0;
+    top: 10px;
+}
+[class~=video-list] li a span[class~=uk-text-truncate]{
+    padding-left: 40px;
+}
+[class~=video-list] [class~=uk-active] a [class~=play-icon], [class~=video-list] li a span[class~=now-playing] {
+    color: #268ba2;
+    display: block;
+}
+.tm-course-fliud .tm-side-course-active-left-icon {
+    left: 82%;
+    top: 130px;
+}
+[class~=tm-course-fliud] [class~=tm-discussions-header], [class~=tm-course-fliud] [class~=tm-course-content-header]{
+    margin-left: 0;
+}
+.tm-course-lesson-section .uk-accordion-title h6 {
+    padding-top: 6px;
+    margin-bottom: 4px!important;
+}
+.li-video{
+    background: url(../images/loading.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.uk-switcher > :not(.uk-active){
+    display: block;
+}
+.promote-img{
+    height: 200px;
+    object-fit: cover;
+}
+.preview-img{
+    height: 150;
+    object-fit: cover;
+}
+.minh-60{
+    min-height: 60px;
+}
+.minh-200{
+    min-height: 200px;
+}
+.fs-12{
+    font-size: 12px!important;
+}
+@media screen and (max-width: 900px){
+    [class~=tm-mobile-user-icon] {
+        padding-right: 8%!important;
+    }
+    .tm-show-on-mobile .uk-navbar-nav {
+        margin-right: 8%;
+    }
+    .tm-course-fliud .tm-side-course-active-left-icon {
+        left: 90%;
+        top: 104px;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 959px) {
+      .tm-mobile-user-close-icon{
+        visibility: hidden!important;
+      }
+    .tm-course-fliud .tm-side-course-active-left-icon {
+        left: 90%;
+        top: 104px;
+    }
+}
+.fs-14{
+    font-size: 14px!important;
+}

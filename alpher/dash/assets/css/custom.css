@@ -1,0 +1,163 @@
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.single-chart {
+    width: 33%;
+    justify-content: space-around;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.orange .circle {
+    stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+    stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+.course-card-grid>*,.course-card-grid .uk-grid-margin {
+    margin-bottom: 15px !important;
+    margin-top: 0 !important;
+}
+/* User Menu Small Nav */
+ul.dropdown-men {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 6px 0px;
+}
+
+ul.dropdown-men li {
+  margin: 0;
+  padding: 0;
+  display: block !important;
+}
+
+ul.dropdown-men li a {
+  display: block;
+  font-size: 14px;
+  transition: 0.3s;
+  color: #9799a2;
+  padding: 9px 20px;
+  font-weight: 600;
+}
+
+ul.dropdown-men li a:hover {
+  /* background-color: #f0f5fd; */
+  color: #2f3152;
+}
+
+ul.dropdown-men li a i {
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+  margin-right: 7px;
+  -webkit-font-smoothing: antialiased;
+  transition: 0.3s;
+}
+
+ul.dropdown-men .menu-divider {
+  margin: 4px 0;
+  border: .3px solid rgba(222, 223, 224, .45);
+}
+
+#backtotop{
+	bottom: 60px;
+}
+.course-content{
+	order: 1;
+}
+.course-header .btn-back i::before{
+    content: "\e930";
+}
+.course-sidebar-title{
+	width: 100%;
+}
+.video a:before{
+	content: "\e9af"!important;
+}
+.pdf a:before{
+	content: "\e964"!important;
+}
+.course-content-inner{
+	/*height: 400px!important*/
+}
+.course-content{
+	height: fit-content;
+}
+#video-slider li{
+    background: url(../images/loading.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.discount h4 a{
+	color: #000;
+}
+.discounted div{
+	margin-bottom: 15px;
+}
+.fs-14 {
+    font-size: 16px!important;
+}
+.fs-12 {
+    font-size: 14px!important;
+}
+p{
+	margin-top: 15px;
+}
+.promote-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+.minh-200 {
+    min-height: 200px;
+}
+.uk-card-default {
+    margin-bottom: 20px!important;
+}
+.uk-card-title {
+    font-size: 1.2rem;
+}
+.minh-60 {
+    min-height: 60px;
+}

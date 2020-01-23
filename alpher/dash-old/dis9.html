@@ -1,0 +1,341 @@
+<html lang="en"> 
+    
+<head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/alpher-fav.png">
+        <meta name="description" content="">
+        <title> Alpher LMS</title>         
+        <!-- Favicon -->
+        <link href="assets/images/brand/favicon.html" rel="icon" type="image/png">
+        <link rel="stylesheet" id="redux-google-fonts-sf_uplift_options-css" href="https://fonts.googleapis.com/css?family=Serif%3A400%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&amp;ver=1572104180" type="text/css" media="all">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Your stylesheet-->
+        <link rel="stylesheet" href="assets/css/uikit.css"> 
+        <link rel="stylesheet" href="assets/css/main.css"> 
+        <link rel="stylesheet" href="assets/css/style.css"> 
+        <!-- font awesome -->         
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <!--  javascript -->
+        <script src="assets/js/simplebar.js"></script>         
+        <script src="assets/js/uikit.js"></script>         
+    </head>     
+    <body class="bg-white"> 
+        <!-- PreLoader -->         
+        <div id="spinneroverlay"> 
+            <div class="spinner"></div>             
+        </div>         
+        <!-- header  -->
+        <header class="tm-header" uk-sticky>
+            <div class=" uk-background-default uk-navbar-container uk-navbar-transparent uk-padding-small uk-navbar-sticky">
+                <div class="uk-position-relative">
+                    <nav class="uk-navbar-transparent tm-mobile-header uk-animation-slide-top uk-position-z-index" uk-navbar>
+                        <!-- logo -->
+                        <!-- mobile icon for side nav on nav-mobile-->                         
+                        <span class="uk-hidden@m tm-mobile-menu-icon" uk-toggle="target: #mobile-sidebar"><i class="fas fa-bars icon-large"></i></span> 
+                        <!-- mobile icon for user icon on nav-mobile -->                         
+                        <span class="uk-hidden@m tm-mobile-user-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-user icon-large"></i></span> 
+                        <!-- mobile logo -->                         
+                        <a class="uk-hidden@m uk-logo" href="../index.html"> 
+                            <img src="assets/images/alpher-logo.png" style="width: 100;margin-top: 10px">
+                        </a> 
+                        <div class="uk-navbar-left uk-visible@m">
+                            <a href="../index.html" class="uk-logo uk-margin-left"> 
+                                <img src="assets/images/alpher-logo.png" style="width: 100">
+                            </a> 
+                        </div>                         
+                        <div class="uk-navbar-right tm-show-on-mobile uk-flex-right" id="tm-show-on-mobile" > 
+                            <!-- this will clouse after display user icon -->                             
+                            <span class="uk-hidden@m tm-mobile-user-close-icon uk-align-right" uk-toggle="target: #tm-show-on-mobile; cls: tm-show-on-mobile-active"><i class="fas fa-times icon-large"></i></span> 
+                            <ul class="uk-navbar-nav uk-flex-middle"> 
+                                <li> 
+                                    <!-- your courses -->                                     
+                                    <a href="https://uniononline.unionbankng.com/OnlineBanking/"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Internet Banking</span> </a>                                   
+                                </li> 
+                                <li> 
+                                    <!-- your courses -->                                     
+                                    <a href="https://www.unionbankng.com/personal/accounts/"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Open an account</span> </a>                                   
+                                </li> 
+                                <li> 
+                                    <!-- your courses -->                                     
+                                    <a href="#" data-toggle="modal" data-target="#promoteBusiness"> <i class="fas fa-edit uk-hidden@m"></i> <span class="uk-visible@m"> Promote your business</span> </a>                                   
+                                </li>                               
+                                <li> 
+                                    <!-- User profile -->                                     
+                                    <a href="#"> 
+                                        <img src="assets/images/avatures/avature-2.png" alt="" class="uk-border-circle user-profile-tiny"> 
+                                    </a>                                     
+                                    <div uk-dropdown="pos: top-right ;mode : click ;animation: uk-animation-slide-right" class="uk-dropdown uk-padding-small uk-dropdown-top-right  angle-top-right"> 
+                                        <p class="uk-margin-small-top"> Hamse Mohamoud  </p>  
+                                        <ul class="uk-nav uk-dropdown-nav"> 
+                                            <li> 
+                                                <a href="profile.html"> <i class="fas fa-user uk-margin-small-right"></i> Profile</a> 
+                                            </li>                                             
+                                            <li> 
+                                                <a href="../community/message.html"> <i class="fas fa-envelope uk-margin-small-right"></i> Messages </a> 
+                                            </li>                                              
+                                            <li class="uk-nav-divider"></li>                                             
+                                            <li> 
+                                                <a href="#"> <i class="fas fa-sign-out-alt uk-margin-small-right"></i> Log out</a> 
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                </li>   
+                                <li> 
+                                    <!-- messages -->                                     
+                                    <a href="../community/message.html"><i class="fas fa-envelope icon-medium"></i></a>
+                                </li>                               
+                            </ul>                             
+                        </div>
+                        <!-- Navigation for mobile -->
+                        <div id="mobile-sidebar" class="mobile-sidebar" uk-offcanvas="overlay:true">
+                            <div class="uk-offcanvas-bar uk-preserve-color uk-padding-remove"> 
+                                <ul uk-accordion> 
+
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="index.html" class="uk-text-black"> <i class="fas fa-book-open uk-margin-small-right"></i> Courses </a> 
+                                    </li> 
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="https://www.unionbankng.com/elite-banking" class="uk-text-black"> <i class="fas fa-user-tie uk-margin-small-right"></i> Mentorship </a> 
+                                    </li>
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="tools.html" class="uk-text-black"> <i class="fas fa-tools uk-margin-small-right"></i>  Discounted Services </a> 
+                                    </li>                                      
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="loans.html" class="uk-text-black"> <i class="fas fa-network-wired uk-margin-small-right"></i> Loans & Grants </a> 
+                                    </li>  
+                                    <li class="uk-margin-remove-top uk-padding-small"> 
+                                        <a href="promote.html" class="uk-text-black"> <i class="fas fa-network-wired uk-margin-small-right"></i> Business Services </a> 
+                                    </li>                            
+                                </ul>                                 
+                            </div>
+                        </div>                           
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation  -->
+        <div class="uk-navbar-sticky uk-background-grey " uk-sticky="show-on-up: true; animation: uk-animation-slide-top;offset: 85">
+            <nav class="uk-padding-small uk-visible@m uk-navbar-transparent uk-animation-slide-to uk-position-z-index" uk-navbar>
+                <div class="uk-flex uk-flex-center uk-width-expand" style="margin-top: 10px">
+                    <ul class="uk-subnav uk-subnav-2">
+                        <li>
+                            <a href="index.html"> <i class="fas fa-book-open icon-medium uk-margin-small-right"></i> All Courses </a>
+                        </li>
+                        <li>
+                            <a href="mentorship.html"> <i class="fas fa-user-tie icon-medium uk-margin-small-right"></i> Mentorship </a>
+                        </li>
+                        <li class="uk-active">
+                            <a href="discounted.html"> <i class="fas fa-tools icon-medium uk-margin-small-right"></i> Discounted Services </a>
+                        </li>
+                        <li>
+                            <a href="loans.html"> <i class="fas fa-network-wired icon-medium uk-margin-small-right"></i> Loans & Grants </a>
+                        </li>   
+                        <li>
+                            <a href="promote.html"> <i class="fas fa-briefcase icon-medium uk-margin-small-right"></i> Business Services </a>
+                        </li>              
+                    </ul>                     
+                </div>
+            </nav>             
+        </div>
+        <main class="main-index">          
+            <div class="">
+                <div class="row">
+                    <h3 class="el-title uk-margin-medium-top fw-400 ml-3">Inlaks Energy Limited</h3>
+                    </div>
+                </div>
+                
+                <!-- latest-course area -->
+                <section class="latest-course pt-40 pb-40">
+                    <div class="container">
+                        <div class="row">
+                            <!-- single news slide -->
+                            <div class="col-md-7 mb-55">
+                                <div class="single-news-slide">
+                                    <div class="news-slide-img">
+                                        <a href="dis1.html"><img src="assets/images/Inlaks-Energy.jpg" alt="News"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 mb-55">
+                                <div class="single-news-slide">
+                                    <div class="news-slide-img">
+                                        <p>
+                                        Inlaks energy is a division of the Inlaks computers limited which operates in West Africa. It is an online shopping destination for solar and alternative energy solution in Nigeria providing customers with effortless shopping experience.</p>
+
+                                        <hr>
+
+                                        <p><b>OFFER:</b> 10% off products.</p>
+
+                                        <p><b>WEBSITE:</b> <a href="http://www.inlaksenergy.com" target="_blank" style="text-decoration: none;">www.inlaksenergy.com</a></p>
+
+                                        <p><b>HOW TO ACCESS:</b> Visit the website and Apply coupon code
+                                        </p>
+
+                                        <p><b>COUPON CODE:</b> #Union</p>
+
+                                        <hr>
+
+                                        <div class="uk-width-3-3@m uk-width-2-2@s"> 
+                                            <a href="https://www.youtube.com/user/UnionBankNG" class="btn btn-danger">
+                                                <i class="fab fa-youtube" style=" color: #fff  !important;"></i>
+                                            </a>
+                                            <a href="https://www.facebook.com/Unionbankng/" class="btn btn-primary">
+                                                <i class="fab fa-Facebook" style=" color: #fff  !important;"></i>
+                                            </a>
+                                            <a href="https://instagram.com/unionbankng" class="btn btn-danger">
+                                                <i class="fab fa-Instagram" style=" color: #fff  !important;"></i>
+                                            </a>
+                                            <a href="https://www.twitter.com/UNIONBANK_NG" class="btn btn-primary">
+                                                <i class="fab fa-twitter" style=" color: #fff !important;"></i>
+                                            </a>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <h4 class="w-100 ml-3">More Offers</h4>
+                            <!-- single news slide -->
+                            <div class="col-lg-4 col-md-6 mb-55 group all onl bus" data-filter-item data-filter-name="87 origins">
+                                <div class="single-news-slide">
+                                    <div class="news-slide-img">
+                                        <a href="dis1.html"><img src="assets/images/87-origin-400x300.jpg" alt="News"></a>
+                                    </div>
+                                    <div class="news-slide-content">
+                                        <h5 style="margin:10px 0;"><a style="text-decoration: none;" href="dis1.html">87 Origins</a></h5>
+                                        <h6 style="font-weight: 400;margin:10px 0">Fashion, Online</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single news slide end -->
+                            <!-- single news slide -->
+                            <div class="col-lg-4 col-md-6 mb-55 group all lag res" data-filter-item data-filter-name="cookie jar & gourment bakery">
+                                <div class="single-news-slide">
+                                    <div class="news-slide-img">
+                                        <a href="https://www.unionbankng.com/portfolio/cookie-jar-gourment-bakery/"><img src="assets/images/Cookie-Jar-Gourment-Bakery-1-400x300.jpg" alt="News"></a>
+                                    </div>
+                                    <div class="news-slide-content">
+                                        <h5 style="margin:10px 0;"><a style="text-decoration: none;" href="https://www.unionbankng.com/portfolio/cookie-jar-gourment-bakery/">Cookie Jar & Gourment Bakery</a></h5>
+                                        <h6 style="font-weight: 400;margin:10px 0">Restaurant, Lagos</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single news slide end -->
+                            <!-- single news slide -->
+                            <div class="col-lg-4 col-md-6 mb-55 group all lag hot" data-filter-item data-filter-name="ibis hotel">
+                                <div class="single-news-slide">
+                                    <div class="news-slide-img">
+                                        <a href="https://www.unionbankng.com/portfolio/ibis-hotel/"><img src="assets/images/ibis-hotel-building-400x300.jpg" alt="News"></a>
+                                    </div>
+                                    <div class="news-slide-content">
+                                        <h5 style="margin:10px 0;"><a style="text-decoration: none;" href="https://www.unionbankng.com/portfolio/ibis-hotel/">IBIS HOTEL</a></h5>
+                                        <h6 style="font-weight: 400;margin:10px 0">Hotel, Lagos</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single news slide end -->
+                        </div>
+                    </div>
+                </section>
+                <!-- latest-course area end -->
+            </div>            
+        </main>         
+        <!-- footer -->         
+        <div class="uk-section-small uk-margin-medium-top"> 
+            <div class="uk-container uk-align-center uk-margin-remove-bottom uk-position-relative">                 
+                <hr>
+                <p class="uk-postion-absoult uk-margin-remove uk-position-bottom-right" style="bottom: 8px;right: 60px;" uk-tooltip="title: Back to Home; pos: top-center"><a href="#" target="_blank" class="uk-text-bold uk-link-reset"> Alpher</a></p> 
+                <div class="uk-margin-small" uk-grid> 
+                    <div class="uk-width-1-2@m uk-width-1-2@s uk-first-column"> 
+                        <p class="uk-text-small"><i class="fas fa-copyright"></i> 2019 <span class="uk-text-bold">Alpher</span> . All rights reserved.</p> 
+                    </div>                     
+                    <div class="uk-width-1-3@m uk-width-1-2@s"> 
+                        <a href="https://www.youtube.com/user/UnionBankNG" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Youtube Chanal; pos: top-center">
+                            <i class="fab fa-youtube" style=" color: #fb7575  !important;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Unionbankng/" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Facebook; pos: top-center">
+                            <i class="fab fa-Facebook" style=" color: #9160ec  !important;"></i>
+                        </a>
+                        <a href="https://instagram.com/unionbankng" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Instagram; pos: top-center">
+                            <i class="fab fa-Instagram" style=" color: #dc2d2d  !important;"></i>
+                        </a>
+                        <a href="https://www.twitter.com/UNIONBANK_NG" class="uk-icon-button uk-link-reset" uk-tooltip="title: Our Twitter; pos: top-center">
+                            <i class="fab fa-twitter" style=" color: #6f23ff !important;"></i>
+                        </a>
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- footer  end -->         
+        <!-- app end -->         
+        <!-- button scrollTop -->         
+        <button id="scrollTop" class="uk-animation-slide-bottom-medium"> 
+            <a href="#" class="uk-text-white" uk-totop uk-scroll></a> 
+        </button>         
+        <!--  Night mood -->         
+        <script>
+
+        // Preloader
+        var spinneroverlay = document.getElementById("spinneroverlay");
+        window.addEventListener('load', function(){
+            spinneroverlay.style.display = 'none';
+        });
+
+         //scrollTop
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollTop").style.display = "block";
+            } else {
+                document.getElementById("scrollTop").style.display = "none";
+            }
+        }        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        </script>
+
+        <script src="assets/js/jquery.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#filter').change(function () {
+                    $('.group').hide();
+                    // $('.group').addClass('w-0');
+                    $('.'+$(this).val()).show();
+                  })
+            });
+        </script>  
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('[data-search]').on('keyup', function() {
+                var searchVal = $(this).val();
+                var filterItems = $('[data-filter-item]');
+
+                if ( searchVal != '' ) {
+                    filterItems.hide();
+                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').show();
+                } else {
+                    filterItems.show();
+                }
+            });
+
+            $('#CourseSelect2').change(function () {
+                $('.group').hide();
+                $('.'+$(this).val()).show();
+              })
+
+            
+        });
+    </script>      
+    </body>     
+</html>
