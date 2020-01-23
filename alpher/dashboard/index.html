@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/framework.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css">
 
     <!-- icons
     ================================================== -->
@@ -623,6 +624,18 @@
             };
         });
     </script>
+    <script src="assets/js/intlTelInput.js"></script>
+    <script>
+
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          preferredCountries: ['ng'],
+          utilsScript: "assets/js/utils.js",
+        });
+        document.getElementById("uploadBtn").onchange = function () {
+            document.getElementById("uploadFile").value = this.value;
+        };
+    </script> 
 
 
 </body>
