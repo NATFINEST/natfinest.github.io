@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Alpher LMS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MasterKit - Professional A unique and beautiful collection of UI elements">
+
+    <!-- Favicon -->
+    <link href="assets/images/alpher-fav.png" rel="icon" type="image/png">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/framework.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+
+    <!-- Google font -->
+    <link rel="stylesheet" id="redux-google-fonts-sf_uplift_options-css" href="https://fonts.googleapis.com/css?family=Serif%3A400%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&amp;ver=1572104180" type="text/css" media="all">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- mobile header -->
+        <div class="mobile-header nav-overlay">
+
+            <!-- menu icon -->
+            <span class="btn-mobile" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+
+            <a href="index.html" class="logo">
+                <img src="assets/images/alpher-fav.png" style="height: 30px;width: 30px;margin-right: 10px;"> Alpher LMS
+            </a>
+
+        </div>
+
+
+        <!-- side nav-->
+        <div class="side-nav uk-animation-slide-left-medium">
+
+            <div class="side-nav-bg"></div>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="index.html">
+                    <img src="assets/images/alpher-fav.png" style="height: 30px;width: 30px;margin-right: 10px;">
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="enrolled.html"> <i class="uil-play-circle"></i> <span class="tooltips"> Enrolled Courses </span> </a>
+                </li>
+                <li>
+                    <a href="courses.html"> <i class="uil-book-alt"></i> <span class="tooltips"> All Courses </span> </a>
+                </li>
+                <li>
+                    <a href="discounted.html"> <i class="uil-suitcase-alt"></i> <span class="tooltips"> Discounted Services </span> </a>
+                </li>
+                <li>
+                    <a href="loans.html"> <i class="icon-line-awesome-money"></i> <span class="tooltips"> Loans & Grants </span> </a>
+                </li>
+                <li>
+                    <a href="promote.html"> <i class="uil-object-group"></i> <span class="tooltips"> Business Services </span> </a>
+                </li>
+                <li>
+                    <a href="book.html"> <i class="icon-feather-star"></i> <span class="tooltips"> Promote your business </span> </a>
+                </li>
+
+            </ul>
+            <ul class="uk-position-bottom">
+                <li>
+                    <a href="#" class="bg-grey text-white">
+                        <span class="icon-feather-user"></span>
+                    </a>
+                    <div uk-drop="pos: right-bottom ;mode:click ; offset: 10;animation: uk-animation-slide-right-small">
+                        <div class="uk-card-default rounded p-0">
+                            <a href="user-profile.html" class="p-0">
+
+                                <div class="dropdown-user-details">
+                                    <div class="dropdown-user-avatar">
+                                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                                    </div>
+                                    <div class="dropdown-user-name">
+                                        Richard Ali <span>Students</span>
+                                    </div>
+                                </div>
+
+                            </a>
+                            <ul class="dropdown-men">
+                                <li>
+                                    <a href="https://uniononline.unionbankng.com/OnlineBanking/">
+                                        <i class="icon-feather-globe"></i> Internet Banking</a>
+                                </li>
+                                <li><a href="https://www.unionbankng.com/personal/accounts/">
+                                        <i class="uil-link-alt"></i> Open an Account</a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="uil-envelope-alt"></i> Messages</a>
+                                </li>
+                                <li><a href="#">
+                                        <i class="icon-feather-user"></i> Profile</a>
+                                </li>
+                                <li class="menu-divider">
+                                </li>
+                                <li><a href="../index.html">
+                                        <i class="icon-feather-log-out"></i> Log Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-content">
+            <div class="page-content__inner">
+                <!-- breadcrumbs -->
+                <nav id="breadcrumbs">
+                    <ul>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li> Discounted Services</li>
+                    </ul>
+                </nav>
+
+                <div class="">
+                    <div class="row mb-3">
+                        <h3 class="el-title uk-margin-medium-top col-lg-4 col-md-6 "> Discounted Services</h3>
+                        <div class="col-lg-4 col-md-6 ml-auto uk-margin-medium-top">
+                            <select class="uk-select" id="CourseSelect2">
+                                <option value="all">All</option>
+                                <option value="abia">Abia</option>
+                                <option value="abj">Abuja</option>
+                                <option value="bus">Busisnes</option>
+                                <option value="hot">Hotel</option>
+                                <option value="lag">Lagos</option>
+                                <option value="onl">Online</option>
+                                <option value="res">Restaurant</option>
+                                <option value="spa">Spa</option>
+                                <option value="wel">Wellness</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <section class="latest-course pt-40 pb-40">
+                        <div class="container">
+                            <div class="row discounted">
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all onl bus" data-filter-item data-filter-name="87 origins">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis1.html"><img src="assets/images/87-origin-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis1.html">87 Origins</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Fashion, Online</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all lag res" data-filter-item data-filter-name="cookie jar & gourment bakery">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis2.html"><img src="assets/images/Cookie-Jar-Gourment-Bakery-1-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis2.html">Cookie Jar & Gourment Bakery</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Restaurant, Lagos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all lag hot" data-filter-item data-filter-name="ibis hotel">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis3.html"><img src="assets/images/ibis-hotel-building-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis3.html">IBIS HOTEL</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Hotel, Lagos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all abia hot" data-filter-item data-filter-name="IBIS HOTEL">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis4.html"><img src="assets/images/Hotel-du-Golf-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis4.html">Hotel Du Golf</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Hotel, Abia</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all abj hot" data-filter-item data-filter-name="finmark apartments">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis5.html"><img src="assets/images/Finmark-Apartments-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis5.html">Finmark Apartments</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Hotel, Abuja</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all wel spa" data-filter-item data-filter-name="bioviva spa">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis6.html"><img src="assets/images/Bioviva-Spa-1-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis6.html">Bioviva Spa</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Spa, Lagos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all lag spa" data-filter-item data-filter-name="epe resort and spa">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis7.html"><img src="assets/images/Epe-Resort-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis7.html">Epe Resort and Spa</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Epe Resort, Lagos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all wel fit" data-filter-item data-filter-name="gate gold nig. ltd">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis8.html"><img src="assets/images/Gate-gold-Nig.-Ltd-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis8.html">Gate Gold Nig. Ltd</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Fitness, Lagos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all bus onl" data-filter-item data-filter-name="inlaks energy limited">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis9.html"><img src="assets/images/Inlaks-Energy-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis9.html">Inlaks Energy Limited</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Business, Online</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all bus onl" data-filter-item data-filter-name="Business Day Online">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis10.html"><img src="assets/images/Business-Day-online-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis10.html">Business Day Online</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Business, Online</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all abj hot" data-filter-item data-filter-name="bolton white hotel, abuja">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis11.html"><img src="assets/images/Bolton-White-Hotel-Abuja-1-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis11.html">Bolton White Hotel, Abuja</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Hotel, Abuja</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+
+                                <!-- single news slide -->
+                                <div class="col-lg-4 col-md-6 mb-55 group all lag hot" data-filter-item data-filter-name="lagos oriental hotel">
+                                    <div class="single-news-slide">
+                                        <div class="news-slide-img">
+                                            <a href="dis12.html"><img src="assets/images/Lagos-Oriental-Hotel-400x300.jpg" alt="News"></a>
+                                        </div>
+                                        <div class="news-slide-content discount">
+                                            <h4 style="margin:10px 0;"><a style="text-decoration: none;" href="dis12.html">Lagos Oriental Hotel</a></h4>
+                                            <h5 style="font-weight: 400;margin:10px 0">Hotel, Lagos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single news slide end -->
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>  
+
+                <!-- footer
+               ================================================== -->
+                <div class="footer">
+                    <div class="uk-grid-collapse" uk-grid>
+                        <div class="uk-width-expand@s uk-first-column">
+                            <p>© 2020 <strong>Alpher</strong>. All Rights Reserved. </p>
+                        </div>
+                        <div class="uk-width-auto@s">
+                            <nav class="footer-nav-icon">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/Unionbankng/"><i class="icon-brand-facebook"></i></a></li>
+                                    <li><a href="https://instagram.com/unionbankng"><i class="icon-brand-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/user/UnionBankNG"><i class="icon-brand-youtube"></i></a></li>
+                                    <li><a href="https://www.twitter.com/UNIONBANK_NG"><i class="icon-brand-twitter"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+    <!-- javaScripts
+    ================================================== -->
+    <script src="assets/js/framework.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/simplebar.js"></script>
+    <script src="assets/js/simplebar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('#filter').change(function () {
+                    $('.group').hide();
+                    // $('.group').addClass('w-0');
+                    $('.'+$(this).val()).show();
+                  })
+            });
+        </script>  
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('[data-search]').on('keyup', function() {
+                var searchVal = $(this).val();
+                var filterItems = $('[data-filter-item]');
+
+                if ( searchVal != '' ) {
+                    filterItems.hide();
+                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').show();
+                } else {
+                    filterItems.show();
+                }
+            });
+
+            $('#CourseSelect2').change(function () {
+                $('.group').hide();
+                $('.'+$(this).val()).show();
+              })
+
+            
+        });
+    </script> 
+
+</body>
+
+</html>
