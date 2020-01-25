@@ -1,0 +1,75 @@
+.tour_triangle {
+    top: 10px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16.5px 23px 16.5px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.modal-tour {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 13%;
+}
+
+.modal-staff {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 18.5%;
+}
+
+.modal-department {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 22%;
+}
+
+.modal-courses {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 53vh;
+}
+
+.modal-reports {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 59vh;
+}
+
+.modal-quiz {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 66vh;
+}
+
+.modal-message {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 47vh;
+}
+
+.modal-billing {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 72vh;
+}
+
+.modal-blog {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 53vh;
+}
+
+.modal-admin {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 65vh;
+}
+
+.modal-settings {
+    margin-left: 200px !important;
+    max-width: 259px !important;
+    margin-top: 79vh;
+}
