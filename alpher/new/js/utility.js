@@ -357,11 +357,6 @@ if ($('.dropzone').length) {
     Dropzone.options.myAwesomeDropzone = {
         init: function () {
             var myDropZone = this;
-            // url: "https://www.cssninja.io/dropzone.pp";
-            console(url);
-            this.on("processing", function(file) {
-              this.options.url = "/some-other-url";
-            });
             this.on("addedfile", function(file) {
                 $(".dropzone").css("border", "0px #28a745");
                 $(".img-caption").show('slow');
