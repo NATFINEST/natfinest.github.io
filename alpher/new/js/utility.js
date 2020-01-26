@@ -109,7 +109,7 @@ $(document).ready(function () {
             $('.hide_upload').show('slow');
             $('.text_upload').hide('slow');
             // var myDropzone = new Dropzone("#my-awesome-dropzone", { url: "/file/post"});
-            $('.dropzone').get(0).dropzone.hiddenFileInput.click();
+            // $('.dropzone').get(0).dropzone.hiddenFileInput.click();
         })
     }
     // bar chart if element exists
@@ -352,24 +352,47 @@ $(document).ready(function () {
         }
 
 });
+Dropzone.autoDiscover = false;
+$(".dropzone").dropzone({
+  init: function() { 
+    myDropzone = this;
+    $.ajax({
+      url: 'upload.php',
+      type: 'post',
+      data: {request: 2},
+      dataType: 'json',
+      success: function(response){
 
-if ($('.dropzone').length) {
-    Dropzone.options.myAwesomeDropzone = {
-        init: function () {
-            var myDropZone = this;
-            this.on("addedfile", function(file) {
-                $(".dropzone").css("border", "0px #28a745");
-                $(".img-caption").show('slow');
-            }),
+        $.each(response, function(key,value) {
+          var mockFile = { name: value.name, size: value.size };
 
-                $("#btnRemoveAll").click(function () {
-                $(".img-caption").hide('slow');
-                $(".dropzone").css("border", "2px #28a745");
-                myDropZone.removeAllFiles();
-            });
-        }
-    };
-}
+          myDropzone.emit("addedfile", mockFile);
+          myDropzone.emit("thumbnail", mockFile, value.path);
+          myDropzone.emit("complete", mockFile);
+
+        });
+
+      }
+    });
+  }
+});
+// if ($('.dropzone').length) {
+//     Dropzone.options.myAwesomeDropzone = {
+//         init: function () {
+//             var myDropZone = this;
+//             this.on("addedfile", function(file) {
+//                 $(".dropzone").css("border", "0px #28a745");
+//                 $(".img-caption").show('slow');
+//             }),
+
+//                 $("#btnRemoveAll").click(function () {
+//                 $(".img-caption").hide('slow');
+//                 $(".dropzone").css("border", "2px #28a745");
+//                 myDropZone.removeAllFiles();
+//             });
+//         }
+//     };
+// }
 
 $("#d-sub").on("click", function(e) {
     console.log(myAwesomeDropzone.files);
