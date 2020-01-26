@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/intlTelInput.css">
+        <link rel="stylesheet" href="css/profile.css">
+
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <img src="img/dashboard.svg" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="15" /> Dashboard
+                        </a>
+
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <img src="img/courses.svg" alt="all courses" class="mb-1 mr-3 img-fluid" width="15" /> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <img src="img/department_sidebar.svg" alt="enrolled courses" class="mb-1 mr-3 img-fluid" width="15" /> Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <img src="img/reports.svg" alt="discounted Services" class="mb-1 mr-3 img-fluid" width="15" /> Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <img src="img/staff.svg" alt="webinar" class="mb-1 mr-3 img-fluid" width="15" /> Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <img src="img/admins.svg" alt="loans" class="mb-1 mr-3 img-fluid" width="15" /> Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <img src="img/billing.svg" alt="interest" class="mb-1 mr-3 img-fluid" width="15" /> Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <img src="img/communication.svg" alt="Message" class="mb-1 mr-3 img-fluid" width="15" /> Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <img src="img/blog.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Blog
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <img src="img/admins.png" alt="Admin" class="mb-1 mr-3 img-fluid" width="15" /> Internet Banking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <img src="img/billing.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Open an Account
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="settings.html">
+                            <img src="img/Settings.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/logout.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Log Out
+                        </a>
+                    </li>
+                </ul>
+
+
+            </nav>
+
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="mt-md-4">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="row mx-md-2">
+
+                    <div class="col-md-3 my-3">
+                        <div class="card--dashboard profile-height-default">
+                            <div class="">
+                                <form class="">
+
+                                    <div class="wrap-custom-file">
+                                        <input type="file" name="image1" id="image1" accept=".gif, .jpg, .png" />
+                                        <label  for="image1">
+                                        <div class="overlay"></div>
+                                          <i class="fas fa-camera" style="position: absolute;bottom: 43%;font-size: 20px;color: #fff;left: 43%;"></i>
+                                        </label>
+                                    </div>
+
+                                    <div class="px-2 text-center">
+                                        <p class="text-green ">Upload Photo</p>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-7 text-lg-left">Date Added:</div>
+                                            <div class="font-12 col text-md-right">28-03-2019</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Assigned Course:</div>
+                                            <div class="font-12 col text-md-right">07</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Trophy:</div>
+                                            <div class="font-12 col text-md-right">12</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Status:</div>
+                                            <div class="font-12 col text-md-right">Active</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-5 text-lg-left">Department:</div>
+                                            <div class="font-12 col-lg-7 text-md-right">Customer Service</div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 my-3">
+                        <div class="card--dashboard profile-height-default">
+                            <div class="d-flex border-bottom">
+                                <div class="col px-4">
+                                    <h5 class="text-grey my-2 weight-semi-bold">My Profile</h5>                                
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 px-4">
+                                <div class="col-lg-12 mt-3 mb-5">
+                                    <form class="">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-5 mr-md-4">
+                                                <label for="first_name" class="text-grey small">First Name</label>
+                                                <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="" value="Chioma" disabled>
+                                            </div>
+
+                                            <div class="form-group col-md-5">
+                                                <label for="last_name" class="text-grey small">Last Name</label>
+                                                <input type="text" class="form-control mb-2" value="Chioma" id="last_name" name="last_name" placeholder="" disabled>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-5 mr-md-4">
+                                                <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                                <input id="phone" name="phone" type="tel" class="form-control mb-2" value="07012345678">
+                                            </div>
+                                            <div class="form-group col-md-5">
+                                                <label for="email" class="text-grey small">Email</label>
+                                                <input type="text" class="form-control mb-2" id="email" name="email" placeholder="" value="Chioma@gmail.com">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-5">
+                                                <label for="gender" class="text-grey small">Select Gender</label>
+                                                <select type="text" class="custom-select mb-2 font-12" id="gender" name="gender" placeholder="">
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mt-3">
+                                            <div class="col-md-7">
+                                                <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Update Changes</button>
+
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Start of itdacademy Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
+        <!-- End of itdacademy Zendesk Widget script -->
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/profile.js"></script>  
+        <script src="js/intlTelInput.js"></script>
+        <script>
+
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+              preferredCountries: ['ng'],
+              utilsScript: "js/utils.js",
+            });
+        </script> 
+
+    </body>
+
+</html>
