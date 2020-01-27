@@ -1,5 +1,37 @@
 // A $( document ).ready() block.
+
 $(document).ready(function () {
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      preferredCountries: ['ng'],
+      utilsScript: "js/utils.js",
+    });
+
+    document.getElementById("uploadBtn").onchange = function () {
+        document.getElementById("uploadFile").value = this.value;
+    };
+
+    $('[data-search]').on('keyup', function() {
+        var searchVal = $(this).val();
+        var filterItems = $('[data-filter-item]');
+
+        if ( searchVal != '' ) {
+            filterItems.hide();
+            $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').show();
+        } else {
+            filterItems.show();
+        }
+    });
+
+    $(function () {
+            $(".openModal").click(function () {
+                var desc = $(this).data('desc');
+                var title = $(this).data('title');
+                $(".modal-body .desc").html(desc);
+                $(".modal-title").html(title);
+            })
+        });
+
     var color = "20A354"
     document.documentElement.style.setProperty('--theme-color', `#${color}`);
     console.log('set')
@@ -103,6 +135,9 @@ $(document).ready(function () {
             $('.hide_upload').hide('slow');
         })
     }
+    $('#albums-modal').click(function () {
+            $('.modal-uploader').show('slow');
+        })
     if ($(".display_image_upload").length) {
         $('.display_image_upload').click(function () {
             $('.blog_upload').show('slow');

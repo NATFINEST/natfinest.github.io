@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/intlTelInput.css">
         <link rel="stylesheet" href="css/profile.css">
 
 
@@ -80,22 +79,41 @@
 
                     <li>
                         <a href="index.html">
-                            <img src="img/dashboard.svg" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="15" /> Dashboard
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
                         </a>
 
                     </li>
 
-                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
 
                     <li>
                         <a href="courses.html">
-                            <img src="img/courses.svg" alt="all courses" class="mb-1 mr-3 img-fluid" width="15" /> All Courses
+                            <i class="mdi mdi-book fs-20"></i> All Courses
                         </a>
                     </li>
 
                     <li>
                         <a href="enrolled.html">
-                            <img src="img/department_sidebar.svg" alt="enrolled courses" class="mb-1 mr-3 img-fluid" width="15" /> Enrolled Courses
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
                         </a>
                     </li>
 
@@ -103,25 +121,43 @@
 
                     <li>
                         <a href="discounted.html">
-                            <img src="img/reports.svg" alt="discounted Services" class="mb-1 mr-3 img-fluid" width="15" /> Discounted Services
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
                         </a>
                     </li>
 
                     <li>
                         <a href="webinar.html">
-                            <img src="img/staff.svg" alt="webinar" class="mb-1 mr-3 img-fluid" width="15" /> Webinar
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
                         </a>
                     </li>
 
                     <li>
                         <a href="loans.html">
-                            <img src="img/admins.svg" alt="loans" class="mb-1 mr-3 img-fluid" width="15" /> Loans & Grants
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
                         </a>
                     </li>
 
                     <li>
                         <a href="interest.html">
-                            <img src="img/billing.svg" alt="interest" class="mb-1 mr-3 img-fluid" width="15" /> Interest & Opportunity
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
                         </a>
                     </li>
 
@@ -129,13 +165,22 @@
 
                     <li>
                         <a href="message.html">
-                            <img src="img/communication.svg" alt="Message" class="mb-1 mr-3 img-fluid" width="15" /> Message
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
                         </a>
                     </li>
 
                     <li>
                         <a href="blog.html">
-                            <img src="img/blog.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Blog
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
                         </a>
                     </li>
 
@@ -143,30 +188,31 @@
 
                     <li>
                         <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
-                            <img src="img/admins.png" alt="Admin" class="mb-1 mr-3 img-fluid" width="15" /> Internet Banking
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
-                            <img src="img/billing.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Open an Account
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
                         </a>
                     </li>
 
                     <li class="active">
                         <a href="settings.html">
-                            <img src="img/Settings.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Profile
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img src="img/logout.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Log Out
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
                         </a>
                     </li>
                 </ul>
-
-
             </nav>
 
 
@@ -201,26 +247,21 @@
                                     </div>
 
                                     <div class="px-2 text-center">
-                                        <p class="text-green ">Upload Photo</p>
                                         <div class="row my-3">
-                                            <div class="font-12 col-lg-7 text-lg-left">Date Added:</div>
+                                            <div class="font-12 col-lg-7 text-lg-left">Date Joined:</div>
                                             <div class="font-12 col text-md-right">28-03-2019</div>
                                         </div>
                                         <div class="row my-3">
-                                            <div class="font-12 col-lg-8 text-lg-left">Assigned Course:</div>
+                                            <div class="font-12 col-lg-8 text-lg-left">Enrolled Course:</div>
                                             <div class="font-12 col text-md-right">07</div>
                                         </div>
                                         <div class="row my-3">
-                                            <div class="font-12 col-lg-8 text-lg-left">Trophy:</div>
+                                            <div class="font-12 col-lg-8 text-lg-left">Networks:</div>
                                             <div class="font-12 col text-md-right">12</div>
                                         </div>
                                         <div class="row my-3">
                                             <div class="font-12 col-lg-8 text-lg-left">Status:</div>
                                             <div class="font-12 col text-md-right">Active</div>
-                                        </div>
-                                        <div class="row my-3">
-                                            <div class="font-12 col-lg-5 text-lg-left">Department:</div>
-                                            <div class="font-12 col-lg-7 text-md-right">Customer Service</div>
                                         </div>
                                     </div>
 
@@ -230,7 +271,7 @@
                     </div>
 
                     <div class="col-md-8 my-3">
-                        <div class="card--dashboard profile-height-default">
+                        <div class="card--dashboard">
                             <div class="d-flex border-bottom">
                                 <div class="col px-4">
                                     <h5 class="text-grey my-2 weight-semi-bold">My Profile</h5>                                
@@ -241,23 +282,23 @@
                                 <div class="col-lg-12 mt-3 mb-5">
                                     <form class="">
                                         <div class="form-row">
-                                            <div class="form-group col-md-5 mr-md-4">
+                                            <div class="form-group col-md-6">
                                                 <label for="first_name" class="text-grey small">First Name</label>
-                                                <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="" value="Chioma" disabled>
+                                                <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="" value="Chioma">
                                             </div>
 
-                                            <div class="form-group col-md-5">
+                                            <div class="form-group col-md-6">
                                                 <label for="last_name" class="text-grey small">Last Name</label>
-                                                <input type="text" class="form-control mb-2" value="Chioma" id="last_name" name="last_name" placeholder="" disabled>
+                                                <input type="text" class="form-control mb-2" value="Chioma" id="last_name" name="last_name" placeholder="">
                                             </div>
                                         </div>
 
                                         <div class="form-row">
-                                            <div class="form-group col-md-5 mr-md-4">
+                                            <div class="form-group col-md-6">
                                                 <label for="mobile_number" class="text-grey small">Mobile Number</label>
                                                 <input id="phone" name="phone" type="tel" class="form-control mb-2" value="07012345678">
                                             </div>
-                                            <div class="form-group col-md-5">
+                                            <div class="form-group col-md-6">
                                                 <label for="email" class="text-grey small">Email</label>
                                                 <input type="text" class="form-control mb-2" id="email" name="email" placeholder="" value="Chioma@gmail.com">
                                             </div>
@@ -265,19 +306,122 @@
 
                                         <div class="form-row">
 
-                                            <div class="form-group col-md-5">
+                                            <div class="form-group col-md-6">
                                                 <label for="gender" class="text-grey small">Select Gender</label>
-                                                <select type="text" class="custom-select mb-2 font-12" id="gender" name="gender" placeholder="">
+                                                <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
                                                     <option>Male</option>
-                                                    <option>Female</option>
+                                                    <option selected="">Female</option>
                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="nation" class="text-grey small">Nationality</label>
+                                                <input type="text" class="form-control mb-2" id="nation" name="nation" placeholder="" value="Nigeria">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="gender" class="text-grey small">Marital Status</label>
+                                                <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                                    <option>Single</option>
+                                                    <option selected="">Married</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="prof" class="text-grey small">Profession</label>
+                                                <input type="text" class="form-control mb-2" id="prof" name="prof" placeholder="" value="Doctor">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="gender" class="text-grey small">Educational Profile</label>
+                                                <div class="form-group" style="display: inline-flex;width: 100%">
+                                                    <input id="uploadFile" placeholder="Upload Educational Profile" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                                    <div class="fileUpload">
+                                                        <span>Upload</span>
+                                                        <input id="uploadBtn" type="file" class="upload" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="address" class="text-grey small">Address</label>
+                                                <input type="text" class="form-control mb-2" id="address" name="address" placeholder="" value="Lagos">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <label for="" class="text-grey small w-100">Interest</label>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Health
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Family
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Lifestyle
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Career
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Technology
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Personal
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Growth
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Entrepreneurship
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Leadership
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-4 pl-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Finance
+                                                </label>
                                             </div>
                                         </div>
 
                                         <div class="form-row mt-3">
-                                            <div class="col-md-7">
+                                            <div class="col-md-7 mx-auto">
                                                 <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Update Changes</button>
-
                                             </div>
                                         </div>
 
