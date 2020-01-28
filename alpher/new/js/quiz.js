@@ -16,8 +16,8 @@
 // this requests the file and executes a callback with the parsed result once
 //   it is available
 fetchJSONFile('js/file.json', function(data){
-    // do something with your data
-    console.log(data);
+    ques = data;
+    console.log(ques);
 });
 
   // Functions
@@ -173,6 +173,7 @@ fetchJSONFile('js/file.json', function(data){
       correctAnswer: "d"
     }
   ];
+  console.log(myQuestions);
 
   // Kick things off
   buildQuiz();
