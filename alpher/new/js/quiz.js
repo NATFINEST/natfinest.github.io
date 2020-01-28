@@ -1,24 +1,14 @@
 (function(){
-  
-  function fetchJSONFile(path, callback) {
-    var httpRequest = new XMLHttpRequest();
-    httpRequest.onreadystatechange = function() {
-        if (httpRequest.readyState === 4) {
-            if (httpRequest.status === 200) {
-                var data = JSON.parse(httpRequest.responseText);
-                if (callback) callback(data);
-            }
-        }
-    };
-    httpRequest.open('GET', path);
-    httpRequest.send(); 
-}
 
-// this requests the file and executes a callback with the parsed result once
-//   it is available
-fetchJSONFile('js/file.json', function(data){
-    ques = data;
-    console.log(ques);
+$.ajax({
+    url: 'js/file.json',
+    dataType: 'json',
+    success: function( data, textStatus, jQxhr ){
+        console.log(data)
+    },
+    error: function( jqXhr, textStatus, errorThrown ){
+        console.log( errorThrown );
+    }
 });
 
   // Functions
