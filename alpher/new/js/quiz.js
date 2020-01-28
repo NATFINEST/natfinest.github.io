@@ -1,4 +1,5 @@
 (function(){
+  
   function fetchJSONFile(path, callback) {
     var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
@@ -173,7 +174,6 @@ fetchJSONFile('js/file.json', function(data){
       correctAnswer: "d"
     }
   ];
-  console.log(myQuestions);
 
   // Kick things off
   buildQuiz();
