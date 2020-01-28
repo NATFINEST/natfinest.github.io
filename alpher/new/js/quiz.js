@@ -1,16 +1,5 @@
 (function(){
 
-$.ajax({
-    url: 'js/file.json',
-    dataType: 'json',
-    success: function( data, textStatus, jQxhr ){
-        console.log(data)
-    },
-    error: function( jqXhr, textStatus, errorThrown ){
-        console.log( errorThrown );
-    }
-});
-
   // Functions
   $('#after').hide();
   $('.timer').startTimer({
