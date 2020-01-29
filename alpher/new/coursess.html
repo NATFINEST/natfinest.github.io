@@ -102,7 +102,7 @@
 
                     <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
 
-                    <li>
+                    <li class="active">
                         <a href="courses.html">
                             <i class="mdi mdi-book fs-20"></i> All Courses
                         </a>
@@ -152,7 +152,7 @@
                         </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                         <a href="interest.html">
                             <i class="mdi mdi-shape fs-20"></i>
                             Interest & Opportunity
@@ -230,145 +230,182 @@
                 </nav>
 
 
-                <div class="">
+                <div class="row mx-md-2 my-4">
+                    <div class="col-md-12">
 
-                    <h4 class="el-title my-3"> Interest & Opportunities</h4>
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header bg-info px-1 cursor-pointer" data-toggle="collapse" data-target="#collapseOne"id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn text-white fs-16" type="button"  aria-expanded="true" aria-controls="collapseOne">
-                                      Opportunities
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                                        <div class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://nignetworkcommunity.com/wp-content/uploads/2020/01/Tobly-Elumelu.jpg" alt="" class="opp-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="card-title minh-75"><a href="#">2020 TONY ELUMELU FOUNDATION ENTREPRENEURSHIP PROGRAMME</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                                        <div class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/12/SympliFi.png" alt="" class="opp-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="card-title minh-75"><a href="#">SYMPLIFI</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                                        <div class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/11/2020-for-young-african-entrepreneurs-696x392.png" alt="" class="opp-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="card-title minh-75"><a href="#">CHALLENGE OF 1,000 FOR YOUNG AFRICAN ENTREPRENEURS</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                                        <div class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/11/UKBBS--1536x1090.png" alt="" class="opp-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="card-title minh-75"><a href="#">MEET THE FOUNDER OF THE UK BLACK BUSINESS SHOW – RAPHAEL SOFOLUKE</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                                        <div class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://nignetworkcommunity.com/wp-content/uploads/2019/10/Quality-person.png" alt="" class="opp-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h6 class="card-title minh-75"><a href="#">QUALITY ASSURANCE / FOOD SAFETY PERSONNEL – TASTY’S AFRICAN RESTAURANT</a></h6>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="card--dashboard">
+                            <div class="d-flex border-bottom bg-info top-rounded px-lg-4 px-2">
+                                <div class="col">
+                                    <p class="my-2 text-uppercase text-white">Select Courses to get you started</p>        
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header bg-info px-1 cursor-pointer" data-toggle="collapse" data-target="#collapseTwo"  id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseTwo">
-                                      Interest
-                                    </button>
-                                </h2>
+
+                            <div class="px-lg-4 px-2 py-2 d-flex flex-column flex-lg-row">
+                                <div class="col my-2">
+                                    <h5 class="mt-1 mb-0">All Courses</h5>
+                                </div>
+
+                                <div class="col-lg-3 my-2 text-right">
+                                    <select class="custom-select custom-select-sm" id="filter" style="height: 40px;font-size: 16px;">
+                                        <option value="all">All Courses</option>
+                                        <option value="mgt">Business Management</option>
+                                        <option value="bus">Business Plan and Model</option>
+                                        <option value="mak">Marketing</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191203212318-GettyImages-1075187262.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+
+                            <div class="row mt-3 px-lg-4 px-2">
+                                <div class="col-lg-12 mb-5">
+
+                                    <div class=" group all mak">
+                                        <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                            <div class="col-lg-3">
+                                                <div style="background-image: url(img/course_placeholder.jpg);
+                                                            height: 150px;
+                                                            width: 100%;
+                                                            background-size: cover;
+                                                            background-repeat: no-repeat">
+                                                </div>
                                             </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Finding Your Path to the C-Suite: 6 Tips for Women in Business</h5>
-                                                <p>Assertiveness, thoughtfulness and the other traits that any woman in power will want to project.</p>
+
+                                            <div class="col-lg-6">
+                                                <p class="mb-1">Project Management Professional (PMP) </p>
+                                                <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                    <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                    <span class="text-muted small">(12048 views)</span>
+                                                </div>
+                                                <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
                                             </div>
-                                        </a>
+
+                                            <div class="col-lg-3">
+
+                                                <div class="show_button">
+                                                    <div class="mb-3">
+                                                        <a href="course1.html" class="btn btn-green font-12 px-4 mt-lg-5" >View Course</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191118213015-GettyImages-769731579.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+
+                                    <div class=" group all mgt">
+                                        <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                            <div class="col-lg-3">
+                                                <div style="background-image: url(img/course_placeholder.jpg);
+                                                            height: 150px;
+                                                            width: 100%;
+                                                            background-size: cover;
+                                                            background-repeat: no-repeat">
+                                                </div>
                                             </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Inspiring Leadership Lessons From 13 Female Founders</h5>
-                                                <p>Entrepreneur reflects on the inspiring stories of 13 female founders on Women's Entrepreneurship Day.</p>
+
+                                            <div class="col-lg-6">
+                                                <p class="mb-1">Project Management Professional (PMP) </p>
+                                                <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                    <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                    <span class="text-muted small">(12048 views)</span>
+                                                </div>
+                                                <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
                                             </div>
-                                        </a>
+
+                                            <div class="col-lg-3">
+
+                                                <div class="show_button">
+                                                    <div class="mb-3">
+                                                        <a href="course1.html" class="btn btn-green font-12 px-4 mt-lg-5" >View Course</a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191114160104-GettyImages-1065795406.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+
+                                    <div class=" group all bus">
+                                        <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                            <div class="col-lg-3">
+                                                <div style="background-image: url(img/course_placeholder.jpg);
+                                                            height: 150px;
+                                                            width: 100%;
+                                                            background-size: cover;
+                                                            background-repeat: no-repeat">
+                                                </div>
                                             </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">On Momternships: Do Working Moms Really Need to Start From Scratch?</h5>
-                                                <p>Returning to the workforce shouldn't require jumping through so many hoops.</p>
+
+                                            <div class="col-lg-6">
+                                                <p class="mb-1">Project Management Professional (PMP) </p>
+                                                <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                    <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                    <span class="text-muted small">(12048 views)</span>
+                                                </div>
+                                                <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
                                             </div>
-                                        </a>
+
+                                            <div class="col-lg-3">
+
+                                                <div class="show_button">
+                                                    <div class="mb-3">
+                                                        <a href="course1.html" class="btn btn-green font-12 px-4 mt-lg-5" >View Course</a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191017195234-4943-Big-Bear-Road-Trip-Park-011-crop.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+
+                                    <div class=" group all mak">
+                                        <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                            <div class="col-lg-3">
+                                                <div style="background-image: url(img/course_placeholder.jpg);
+                                                            height: 150px;
+                                                            width: 100%;
+                                                            background-size: cover;
+                                                            background-repeat: no-repeat">
+                                                </div>
                                             </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">New Report Suggests Women Are Thriving In Cannabis. Are They?</h5>
-                                                <p>Women are enjoying great success in the cannabis industry; will it last?</p>
+
+                                            <div class="col-lg-6">
+                                                <p class="mb-1">Project Management Professional (PMP) </p>
+                                                <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                    <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                    <span class="text-muted small">(12048 views)</span>
+                                                </div>
+                                                <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
                                             </div>
-                                        </a>
+
+                                            <div class="col-lg-3">
+
+                                                <div class="show_button">
+                                                    <div class="mb-3">
+                                                        <a href="course1.html" class="btn btn-green font-12 px-4 mt-lg-5" >View Course</a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </div>
 
-
-        <!-- Start of itdacademy Zendesk Widget script -->
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
-        <!-- End of itdacademy Zendesk Widget script -->
-<!-- Modal -->
+        <!-- Modal -->
         <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -450,6 +487,11 @@
             </div>
         </div>
 
+        <!-- Start of itdacademy Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
+        <!-- End of itdacademy Zendesk Widget script -->
+
+
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="js/jquery.min.js"></script>
         <!-- Popper.JS -->
@@ -457,8 +499,17 @@
         <!-- Bootstrap JS -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/chart.js/dist/Chart.min.js"></script>
-        <script src="js/utility.js"></script>
         <script src="js/intlTelInput.js"></script>
+        <script src="js/utility.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#filter').change(function () {
+                    $('.group').hide();
+                    // $('.group').addClass('w-0');
+                    $('.'+$(this).val()).show();
+                });
+            });
+        </script>
 
     </body>
 
