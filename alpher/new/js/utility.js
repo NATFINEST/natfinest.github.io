@@ -1,6 +1,7 @@
 // A $( document ).ready() block.
 
 $(document).ready(function () {
+
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
       preferredCountries: ['ng'],

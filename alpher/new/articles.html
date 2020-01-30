@@ -7,11 +7,12 @@
         <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Welcome to AlphaLMS</title>
+        <title>Welcome to AlphaLMS </title>
         <link rel="shortcut icon" href="img/favicon.png">
 
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
 
@@ -213,14 +214,11 @@
                 </ul>
             </nav>
 
-
-            <div class="dasboard-top-wrapper">
-
-            </div>
-
             <!-- Page Content  -->
-            <div id="content" class="mt-md-4">
+            <div id="content">
+                <div class="dasboard-top-wrapper">
 
+                </div>
                 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
                     <div class="container-fluid">
                         <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
@@ -229,253 +227,254 @@
                     </div>
                 </nav>
 
-                <div class="row mx-md-2 mt-5">
-                    <div class="col-lg-8">
-                        <div class="d-flex">
-                            <div class="col px-0">
-                                <h5 class="text-green text-uppercase">Community</h5>                                
-                            </div> 
+                <div class="container my-5">
+
+                    <div class="row my-3">
+                        <h5 class="el-title uk-margin-medium-top col-md-4"> Blog</h5>
+                        <div class="col-lg-4 col-md-6 ml-auto uk-margin-medium-top">
+                            <select class="custom-select custom-select-sm" id="CourseSelect2">
+                                <option value="all">All</option>
+                                <option value="love">Love & Relationship</option>
+                                <option value="fash">Fashion and Beauty</option>
+                                <option value="gist">Gist Zone</option>
+                                <option value="money">Money Matters</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- single news slide -->
+                        <div class="col-lg-4 col-md-6 mb-55 group all fash mb-4" data-filter-item data-filter-name="clothing services">
+                            <a href="article1.html" class="card card-default card-small">
+                                <div class="card-media-top">
+                                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191203212318-GettyImages-1075187262.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title minh-45">Finding Your Path to the C-Suite: 6 Tips for Women in Business</h6>
+                                    <p>Assertiveness, thoughtfulness and the other traits that any woman in power will want to project.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-55 group all love mb-4" data-filter-item data-filter-name="sewing services">
+                            <a href="article1.html" class="card card-default card-small">
+                                <div class="card-media-top">
+                                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191118213015-GettyImages-769731579.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title minh-45">Inspiring Leadership Lessons From 13 Female Founders</h6>
+                                    <p>Entrepreneur reflects on the inspiring stories of 13 female founders on Women's Entrepreneurship Day.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-55 group all gist mb-4" data-filter-item data-filter-name="home-based chef">
+                            <div class="single-news-slide">
+                                <a href="article1.html" class="card card-default card-small">
+                                    <div class="card-media-top">
+                                        <img src="https://assets.entrepreneur.com/content/3x2/2000/20191114160104-GettyImages-1065795406.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="card-title minh-45">On Momternships: Do Working Moms Really Need to Start From Scratch?</h6>
+                                        <p>Returning to the workforce shouldn't require jumping through so many hoops.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-55 group all money mb-4" data-filter-item data-filter-name="interior designer">
+                            <a href="article1.html" class="card card-default card-small">
+                                <div class="card-media-top">
+                                    <img src="https://assets.entrepreneur.com/content/3x2/2000/20191017195234-4943-Big-Bear-Road-Trip-Park-011-crop.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title minh-45">New Report Suggests Women Are Thriving In Cannabis. Are They?</h6>
+                                    <p>Women are enjoying great success in the cannabis industry; will it last?</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header bg-info px-1 cursor-pointer" data-toggle="collapse" data-target="#collapseOne"id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn text-white fs-16" type="button"  aria-expanded="true" aria-controls="collapseOne">
-                                      Love & Relationship
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191203212318-GettyImages-1075187262.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Finding Your Path to the C-Suite: 6 Tips for Women in Business</h5>
-                                                <p>Assertiveness, thoughtfulness and the other traits that any woman in power will want to project.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191118213015-GettyImages-769731579.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Inspiring Leadership Lessons From 13 Female Founders</h5>
-                                                <p>Entrepreneur reflects on the inspiring stories of 13 female founders on Women's Entrepreneurship Day.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191114160104-GettyImages-1065795406.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">On Momternships: Do Working Moms Really Need to Start From Scratch?</h5>
-                                                <p>Returning to the workforce shouldn't require jumping through so many hoops.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191017195234-4943-Big-Bear-Road-Trip-Park-011-crop.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">New Report Suggests Women Are Thriving In Cannabis. Are They?</h5>
-                                                <p>Women are enjoying great success in the cannabis industry; will it last?</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header bg-info px-1 cursor-pointer" data-toggle="collapse" data-target="#collapseTwo"  id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseTwo">
-                                      Fashion and Beauty
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191203212318-GettyImages-1075187262.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Finding Your Path to the C-Suite: 6 Tips for Women in Business</h5>
-                                                <p>Assertiveness, thoughtfulness and the other traits that any woman in power will want to project.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191118213015-GettyImages-769731579.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Inspiring Leadership Lessons From 13 Female Founders</h5>
-                                                <p>Entrepreneur reflects on the inspiring stories of 13 female founders on Women's Entrepreneurship Day.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191114160104-GettyImages-1065795406.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">On Momternships: Do Working Moms Really Need to Start From Scratch?</h5>
-                                                <p>Returning to the workforce shouldn't require jumping through so many hoops.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191017195234-4943-Big-Bear-Road-Trip-Park-011-crop.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">New Report Suggests Women Are Thriving In Cannabis. Are They?</h5>
-                                                <p>Women are enjoying great success in the cannabis industry; will it last?</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header bg-info px-1 cursor-pointer" data-toggle="collapse" data-target="#collapseThree"id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn text-white fs-16" type="button"  aria-expanded="true" aria-controls="collapseThree">
-                                      Gist Zone
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191203212318-GettyImages-1075187262.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Finding Your Path to the C-Suite: 6 Tips for Women in Business</h5>
-                                                <p>Assertiveness, thoughtfulness and the other traits that any woman in power will want to project.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191118213015-GettyImages-769731579.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Inspiring Leadership Lessons From 13 Female Founders</h5>
-                                                <p>Entrepreneur reflects on the inspiring stories of 13 female founders on Women's Entrepreneurship Day.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191114160104-GettyImages-1065795406.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">On Momternships: Do Working Moms Really Need to Start From Scratch?</h5>
-                                                <p>Returning to the workforce shouldn't require jumping through so many hoops.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191017195234-4943-Big-Bear-Road-Trip-Park-011-crop.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">New Report Suggests Women Are Thriving In Cannabis. Are They?</h5>
-                                                <p>Women are enjoying great success in the cannabis industry; will it last?</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header bg-info px-1 cursor-pointer" data-toggle="collapse" data-target="#collapseFour"  id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseFour">
-                                      Money Matters
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191203212318-GettyImages-1075187262.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Finding Your Path to the C-Suite: 6 Tips for Women in Business</h5>
-                                                <p>Assertiveness, thoughtfulness and the other traits that any woman in power will want to project.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191118213015-GettyImages-769731579.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Inspiring Leadership Lessons From 13 Female Founders</h5>
-                                                <p>Entrepreneur reflects on the inspiring stories of 13 female founders on Women's Entrepreneurship Day.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191114160104-GettyImages-1065795406.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">On Momternships: Do Working Moms Really Need to Start From Scratch?</h5>
-                                                <p>Returning to the workforce shouldn't require jumping through so many hoops.</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 my-3">
-                                        <a href="article1.html" class="card card-default card-small">
-                                            <div class="card-media-top">
-                                                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191017195234-4943-Big-Bear-Road-Trip-Park-011-crop.jpeg?format=jpg&width=400&crop=3:2" alt="" class="promote-img">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">New Report Suggests Women Are Thriving In Cannabis. Are They?</h5>
-                                                <p>Women are enjoying great success in the cannabis industry; will it last?</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="viewDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="desc">Description</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Start of itdacademy Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
@@ -489,7 +488,9 @@
         <!-- Bootstrap JS -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="js/intlTelInput.js"></script>
         <script src="js/utility.js"></script>
+        <script src="js/intlTelInput.js"></script>
 
     </body>
 

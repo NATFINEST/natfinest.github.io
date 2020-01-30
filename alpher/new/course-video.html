@@ -243,7 +243,10 @@
                         <div class="card--dashboard col-12">
                             <div class="d-flex border-bottom">
                                 <div class="col">
-                                    <h6 class="text-green my-2 font-weight-light">Business Management </h6>                                
+                                    <h6 class="text-green my-2 font-weight-light">Business Management </h6>
+                                </div>
+                                <div class="col mt-1 text-right">
+                                    <a href="quiz.html" class="btn btn-green btn-sm">Take Quiz</a>
                                 </div>
                             </div>
                             <div class="row">
@@ -372,7 +375,87 @@
                 </div>
             </div>
         </div>
+<!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
 
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Start of itdacademy Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
@@ -387,6 +470,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/chart.js/dist/Chart.min.js"></script>
         <script src="js/utility.js"></script>
+        <script src="js/intlTelInput.js"></script>
 
     </body>
 

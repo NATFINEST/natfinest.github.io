@@ -13,6 +13,7 @@
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/quiz.css">
         <link rel="stylesheet" href="css/style.css">
 
         <!-- Font Awesome JS -->
@@ -108,7 +109,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="active">
                         <a href="enrolled.html">
                             <i class="mdi mdi-book-open fs-20"></i>
                             Enrolled Courses
@@ -131,7 +132,7 @@
                         </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                         <a href="events.html">
                             <i class="mdi mdi-calendar-clock fs-20"></i>
                              Events
@@ -229,127 +230,76 @@
                     </div>
                 </nav>
 
+                
 
-                <div class="">
-                    <h4 class="el-title my-3">Upcoming Events</h4>
+                <div class="row mx-md-2 my-5">
 
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4 mb-3">
-                            <div class="card card-default card-small">
-                                <div class="card-media-top">
-                                    <img src="images/Union-Plus-1.jpg" alt="" class="promote-img">
+                        <div class="d-flex">
+                            <div class="col px-0 my-3">
+                                <a href="course-video.html" class="text-grey font-13">
+                                    <img src="img/back_button.svg" alt="go back" class="img-fluid" /> Back
+                                </a>     
+                            </div>
+                        </div>
+
+                        <div class="row mx-md-2 my-5" style="display: contents;!important">
+                            <div class="col-md-12">
+                                <div class="d-flex">
+                                    <div class="col px-0">
+                                        <p class="text-green text-uppercase">Take Quiz</p>                                
+                                    </div> 
+
+                                    <div class="col text-right px-0">
+                                        <!-- <button class="btn btn-green py-1 font-12 px-4">Submit Quiz</button> -->
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="web-date">Jan 20, 2020</div>
-                                    <h6 class="card-title minh-35"><a href="#">Getting to know about business</a></h6>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Register Now</a>
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal4">
-                                        About Event
-                                    </button>
 
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h6 class="modal-title" id="exampleModalLabel">Getting to know about business</h6>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body text-left">
-                                                    <p><b>Date:</b> Jan 10, 2019</p>
-                                                    <p><b>Time:</b> 10:00 am</p>
-                                                    <p><b>Location:</b> Lagos Nigeria</p>
-                                                    <p><b>Description:</b> Some few descrition about the events. Some few descrition about the events. Some few descrition about the events</p>
-                                                </div>
+                                <div class="card--dashboard profile-height-default" id="before">
+                                    <div class="d-flex flex-column flex-lg-row mt-3 float-right">
+                                        <div class="col"> 
+                                            <!-- <p class="text-dark text-uppercase text-md-right timer d-flex float-right fs-16" data-seconds-left=10></p> -->
+                                        </div> 
+                                    </div>
+
+                                    <div class="row mt-3 px-4 pb-5 position-relative">
+                                        <div class="col-lg-12">
+                                            
+
+                                            <div class="quiz-container">
+                                                <div id="quiz"></div>
                                             </div>
+                                            <div class="text-left mt-4">
+                                                <button class="btn btn-green font-12  px-5 text-uppercase md-btn-block my-2" id="previous">Previous Question</button>
+                                                <button class="btn btn-green font-12 px-4 text-uppercase ml-lg-5 md-btn-block my-2" id="next">Next Question</button>
+                                                <button class="btn btn-green font-12 px-4 text-uppercase ml-lg-5 md-btn-block my-2" id="submit">Submit Quiz</button>
+                                            </div>                                            
                                         </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card--dashboard profile-height-default" id="after">
+
+                                    <div class="row mt-3 px-4 pb-5 text-center justify-content-center">
+                                        <div class="col-lg-7 my-3"> 
+                                            <img src="" alt="quiz completed" class="img-fluid mt-5 mb-4" id="quiz-icon" />
+                                            <h4 id="quiz-output"></h4>
+                                            
+                                            <div id="results"></div>
+
+                                            <div class="mt-3"><a href="course-video.html" class="btn btn-green py-1 font-12 px-4">Go back to course</a> </div>
+
+                                            <!-- <div class="mt-4">
+                                                <button class="btn btn-outline--green font-12  px-5 text-uppercase md-btn-block my-2">View report</button>
+                                                <button class="btn btn-green font-12 px-4 text-uppercase ml-lg-5 md-btn-block my-2">Download Report</button>
+                                            </div> -->
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 mb-3">
-                            <div class="card card-default card-small">
-                                <div class="card-media-top">
-                                    <img src="images/Union-Flexi.jpg" alt="" class="promote-img">
-                                </div>
-                                <div class="card-body">
-                                    <div class="web-date">Jan 20, 2020</div>
-                                    <h6 class="card-title minh-35"><a href="#">Business tools required for every business</a></h6>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Register Now</a>
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal5">
-                                        About Event
-                                    </button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h6 class="modal-title" id="exampleModalLabel">Business tools required for every business</h6>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body text-left">
-                                                    <p><b>Date:</b> Jan 20, 2020</p>
-                                                    <p><b>Time:</b> 10:00 am</p>
-                                                    <p><b>Location:</b> Lagos Nigeria</p>
-                                                    <p><b>Description:</b> Some few descrition about the events. Some few descrition about the events. Some few descrition about the events</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 mb-3">
-                            <div class="card card-default card-small">
-                                <div class="card-media-top">
-                                    <img src="images/PayAdvance.jpg" alt="" class="promote-img">
-                                </div>
-                                <div class="card-body">
-                                    <div class="web-date">Jan 20, 2020</div>
-                                    <h6 class="card-title minh-35"><a href="#">Up and running in five days</a></h6>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Register Now</a>
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal6">
-                                        About Event
-                                    </button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h6 class="modal-title" id="exampleModalLabel">Up and running in five days</h6>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body text-left">
-                                                    <p><b>Date:</b> Jan 20, 2020</p>
-                                                    <p><b>Time:</b> 10:00 am</p>
-                                                    <p><b>Location:</b> Lagos Nigeria</p>
-                                                    <p><b>Description:</b> Some few descrition about the events. Some few descrition about the events. Some few descrition about the events</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
+                </div>
             </div>
         </div>
 
@@ -357,6 +307,7 @@
         <!-- Start of itdacademy Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
         <!-- End of itdacademy Zendesk Widget script -->
+
 <!-- Modal -->
         <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -438,7 +389,6 @@
                 </div>
             </div>
         </div>
-
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="js/jquery.min.js"></script>
         <!-- Popper.JS -->
@@ -447,6 +397,8 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/chart.js/dist/Chart.min.js"></script>
         <script src="js/utility.js"></script>
+        <script src="js/jquery.simple.timer.js"></script>
+        <script src="js/quiz.js"></script>
         <script src="js/intlTelInput.js"></script>
 
     </body>
