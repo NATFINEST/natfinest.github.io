@@ -123,11 +123,11 @@ body {
     height: 40vh;
     overflow-y: auto;
 }
-#dis{
-    background: url(../images/loading.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
+#dis,#videoplayeriframe,.c-video-player,.c-video-player .f-core-player video, .c-video-player .f-core-player object,.c-video-player .f-video-trigger div{
+    background: url(../images/loading.gif)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position-x: center!important;
 }
 .fileUpload {
     position: relative;
