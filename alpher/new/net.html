@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <i class="mdi mdi-book fs-20"></i> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="mt-md-4">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+
+                <div class="">
+                    <div class="col-lg-3 px-0 ml-2 my-5">
+                        <p class="text-dark text-uppercase">
+                            <a href="networks.html" class="font-13"><img src="img/back_button.png" alt="go back to reports" /> Back</a></p>
+                    </div>
+
+                    <div class="row my-3">
+                        <h5 class="el-title col-md-4"> Suggested Networks</h5>
+
+                        <div class="col-md-4 ml-auto">
+                            <input type="text" class="form-control fs-16" placeholder="Enter search item" data-search />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 mb-3" data-filter-item data-filter-name="chioma ifeanyi-eze">
+                            <div class="card card-default card-small">
+                                <div class="card-media-top d-flex">
+                                    <img src="images/chioma.jpg" alt="" class="network-img">
+                                    <h6 class="card-title mt-50">CHIOMA IFEANYI-EZE</h6>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Add Network</a>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal1">
+                                        About
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">CHIOMA IFEANYI-EZE</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                    Chioma is a brilliant accountant and entrepreneur who passionately loves small businesses.
+                                                    <br><br>She had an exciting 11-year working career, as an accountant, starting from PricewaterhouseCoopers, and going on head the finance/accounting functions in several organizations, including Jumia Nigeria.
+                                                    <br><br>In 2016, Chioma went on to launch Accounting hub, a tech-accounting firm, focused on serving accounting services to small business, using the most reachable delivery methods.
+                                                    <br><br>She built an online accounting shop which allowed businesses access to accounting services, by simply choosing the service they wanted and paying for it, like products.
+                                                    <br><br>Till date, accounting hub has served over 500 businesses and trained well over 3000 business owners.
+                                                    <br><br>Chioma says she is on a mission to reinvent the way that small business owners access help with their accounting and tax needs in Nigeria; using the power of story-telling and technology.
+                                                    <br><br>While learning to run Accounting hub, Chioma developed huge love for entrepreneurship and shares this with other people in business, as well as people looking to launch businesses, via her Facebook page, using the hashtag #chiomasbusinessschool.
+                                                    <br><br>She challenges old ways and believes there can always be a better way of doing things. She implements accounting systems for businesses in a record-period of 24 hours, she grew a massive stocktaking community of over 2000 people and automated the accounting system for over 250 businesses within 2 years.
+                                                    <br><br>Chioma is well-known as Nigeria's small business accountant and the tech-accountant.
+                                                    <br><br>She is a Chartered Accountant of 13 years, a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN), has a BSc in Accounting, an MSc in Accounting & Finance and and MBA. 
+                                                    <br><br>She is a recipient of several awards, both academic and entrepreneurial, as well as an amazing speaker and writer.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3" data-filter-item data-filter-name="just ibe">
+                            <div class="card card-default card-small">
+                                <div class="card-media-top d-flex">
+                                    <img src="images/just.jpg" alt="" class="network-img">
+                                    <h6 class="card-title mt-50">JUST IBE</h6>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Add Network</a>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal2">
+                                        About
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">JUST IBE</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                    Just Omomo Ibe is a “Sales Guru”. She is a self-motivated sales and marketing consultant with excellent communication skills. As the first point of contact, she engages with clients providing them expert advice. She approaches every customer with the sole purpose of serving their every need whilst making it a fun and enjoyable 5* experience.
+
+                                                    <br><br>Just Ibe is a Certified Management consultant and a London Graduate school specialist in Time Management. An Experienced banker with a known pedigree for turning around business situations. Working towards personal and team targets, she plays a key role in the success of my bank; developing and continually updating her product knowledge and expertise and sharing her passion about her fantastic products. She has bagged a number of awards for her contribution to entrepreneurship in Nigeria.
+
+                                                    <br><br>Just Ibe has authored 4 books aimed at showing entrepreneurs how to leverage digital media to maximize Sales. 
+
+                                                    <br><br>Her key competencies are creating sales and marketing strategies that produce a 360 degree turnaround in revenue and profit in addition to equipping employees of businesses with critical thinking skills to identify opportunities to grow.
+
+                                                    <br><br>Just Ibe has trained, empowered and coached over 1000 entrepreneurs across Africa, United Kingdom and USA all with a proven track record of visible business growth.
+
+                                                    <br><br>“Just Ibe runs three major businesses and recently launched a Tech company that is revolutionizing content creation and distribution in Africa and beyond. Her utmost desire is to help entrepreneurs in Africa and beyond leverage digital marketing to achieve exponential business results.”
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3" data-filter-item data-filter-name="edache obe">
+                            <div class="card card-default card-small">
+                                <div class="card-media-top d-flex">
+                                    <img src="images/edache.jpg" alt="" class="network-img">
+                                    <h6 class="card-title mt-50">EDACHE OBE</h6>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Add Network</a>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal3">
+                                        About
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">EDACHE OBE</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                    Edache Obe is a Digital Media Strategist who provides innovative digital media solutions for SME’s, SBM’s and large enterprises through digital media.
+
+                                                    <br><br>He is a graduate of Economics from the University of Jos Nigeria, he worked in the banking industry for 8 years which exposed him to different industries and levels of business stages, he learnt a lot of vital lessons operating a business, and those lessons he still carries till date.
+
+                                                    <br><br>After his exit from the banking industry in the year 2016, he kicked off his Digital and branding company that same year, Dacheo Media and Branding to provide digital media solutions. 
+                                                    Edache Obe has won the Unsung heroes award by Omaliving show and has also been reorganised by Business day Nigeria as one of the individuals that help promote SME’s and entrepreneurship.
+
+                                                    <br><br>He is currently working on a digital tool to help businesses maximize their investments through digital media processes.
+
+                                                    <br><br>He is a lover of food, traveling and education. He is also the founder of Lagos foodie association and Dacheo Media Academy.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3" data-filter-item data-filter-name="glory edozien">
+                            <div class="card card-default card-small">
+                                <div class="card-media-top d-flex">
+                                    <img src="images/glory.jpg" alt="" class="network-img">
+                                    <h6 class="card-title mt-50">GLORY EDOZIEN</h6>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Add Network</a>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal4">
+                                        About
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">GLORY EDOZIEN</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                    Edache Obe is a Digital Media Strategist who provides innovative digital media solutions for SME’s, SBM’s and large enterprises through digital media.
+
+                                                    <br><br>He is a graduate of Economics from the University of Jos Nigeria, he worked in the banking industry for 8 years which exposed him to different industries and levels of business stages, he learnt a lot of vital lessons operating a business, and those lessons he still carries till date.
+
+                                                    <br><br>After his exit from the banking industry in the year 2016, he kicked off his Digital and branding company that same year, Dacheo Media and Branding to provide digital media solutions. 
+                                                    Edache Obe has won the Unsung heroes award by Omaliving show and has also been reorganised by Business day Nigeria as one of the individuals that help promote SME’s and entrepreneurship.
+
+                                                    <br><br>He is currently working on a digital tool to help businesses maximize their investments through digital media processes.
+
+                                                    <br><br>He is a lover of food, traveling and education. He is also the founder of Lagos foodie association and Dacheo Media Academy.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+
+        <!-- Start of itdacademy Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
+        <!-- End of itdacademy Zendesk Widget script -->
+<!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/intlTelInput.js"></script>
+
+    </body>
+
+</html>

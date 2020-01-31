@@ -185,7 +185,16 @@ body {
 .slide,.active-slide{
     z-index: 0;
 }
-
+.network-img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.mt-50{
+    margin-top: 50px;
+}
 
 
 
