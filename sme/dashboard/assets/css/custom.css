@@ -1,0 +1,301 @@
+.side-menu{
+    /* background: -webkit-gradient(linear, left top, right top, from(#BBD406), to(#aebf00)); */
+    background: #3d3935;
+    box-shadow: 1px 0 5px 0px #00000012;
+    color: #fff;
+}
+.mentor-img{
+    height: 300px!important;
+    object-fit: cover!important;
+}
+
+#sidebar-menu>ul>li>a, .submenu li.active>a, .submenu li>a {
+    color: $fff;
+}
+
+#sidebar-menu>ul>li>a.active {
+    background: #fff!important;
+    color: #000!important;
+}
+
+#sidebar-menu>ul>li>a:hover{
+    background: #4582ff!important;
+}
+
+.widget-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.widget-icon{
+    position: absolute;
+    right: -20px;
+    top: 15px;
+    height: 71px;
+    transform: rotate(18deg);
+}
+
+.text-black{
+    color: black;
+}
+
+#sidebar-menu>ul>li>a.active {
+    background: #00000017;
+}
+
+#sidebar-menu{
+    padding-top: 0px;
+}
+
+.card-image-info{
+    position: relative;
+}
+
+.type-info{
+    position: absolute;
+    top: 17px;
+    background: #4582ff;
+    color: white;
+    padding: 5px 23px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 0
+}
+
+.event-vid{
+    position: relative;
+}
+
+.play-btn{
+    position: absolute;
+    top: 31%;
+    font-size: 37px;
+    background: #0000004d;
+    padding: 7px 21px;
+    color: white;
+    border-radius: 7px;
+    left: 40%;
+}
+
+.profile-image{
+    text-align: center
+}
+
+.profile-image img{
+    width: 144px;
+    border: 7px solid #b0c50054;
+    margin: 15px 0px;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-details .name{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.course-video-frame{
+    width: 100%;
+    height: 430px;
+}
+
+.btn-theme{
+    background: #A6368C;
+    border-color: #b2c700;
+    color: white!important;
+}
+
+.btn-theme:hover{
+    background: #899b01;
+    border-color: #899b01;
+}
+
+.videos-content{
+    max-height: 440px;
+    overflow: scroll;
+}
+
+.quiz-info{
+    background: #b2c700;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 13px 21px;
+    border-radius: 37px;
+}
+
+.marks{
+    color: #b2c700;
+    font-weight: bold;
+}
+
+.question-liney{
+    height: 2px;
+    background: #b3ca00;
+    width: 13%;
+    margin: 17px 0px;
+}
+
+.answer-hint{
+    background: #A6368C;
+    display: inline;
+    padding: 7px 19px;
+    border-radius: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+.quiz-options{
+    margin-top: 35px;
+}
+
+.quiz-radio{
+    display: inline-block;
+    width: auto;
+    margin-right: 12px;
+    height: 14px;
+}
+
+.quiz-option-group{
+    background: #f3f3f3;
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 25px;
+}
+
+.quiz-option-group label{
+    cursor: pointer;
+}
+
+.timer-time{
+    border: 2px solid #A6368C;
+    display: inline-block;
+    padding: 20px;
+}
+
+.progress-bar {
+    background-color: #b1c500;
+}
+
+/* Customize the label (the container) */
+.container.round {
+  display: block;
+  position: relative;
+  padding-left: 31px;
+  margin: 0;
+  margin-bottom: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container.round input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #9e9e9e;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+body.merchant{
+  font-family: Poppins, Helvetica, sans-serif;
+}
+@font-face{
+    font-family:'Gotham-Book';
+       src: url('fonts/Gotham-Book.eot');
+         src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+           url('fonts/Gotham-Book.woff') format('woff'),
+           url('fonts/Gotham-Book.ttf') format('truetype'),
+       url('fonts/Gotham-Book.otf') format('truetype'),
+           url('fonts/Gotham-Book.svg#AvenirLT-Medium') format('svg');
+      font-style:normal;
+  } 
+  @font-face{
+    font-family:'Gotham';
+       src: url('fonts/Gotham-Medium.eot');
+         src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+           url('fonts/Gotham-Medium.ttf') format('truetype'),
+       url('fonts/Gotham-Medium.otf') format('truetype'),
+           url('fonts/Gotham-Medium.svg#AvenirLT-Medium') format('svg');
+      font-style: normal;
+    font-weight:500;
+  } 
+  @font-face{
+    font-family:'Gotham';
+       src: url('fonts/Gotham-Light.eot');
+         src: url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+           url('fonts/Gotham-Light.woff') format('woff'),
+           url('fonts/Gotham-Light.ttf') format('truetype'),
+       url('fonts/Gotham-Light.otf') format('truetype'),
+           url('fonts/Gotham-Light.svg#AvenirLT-Medium') format('svg');
+      font-style:normal;
+    
+  } 
+  @font-face{
+    font-family:'Gotham';
+       src: url('fonts/Gotham-Bold.eot');
+         src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+           /*url('fonts/Gotham-Bold.woff') format('woff'),*/
+           url('fonts/Gotham-Bold.ttf') format('truetype'),
+       url('fonts/Gotham-Bold.otf') format('truetype'),
+           url('fonts/Gotham-Bold.svg#AvenirLT-Medium') format('svg');
+      font-style: normal;
+    font-weight:700;
+  }
+
+body {
+    background: #f8f8f8;
+    font-size: .875rem;
+    line-height: 1.6;
+    font-family:"Gotham","Open Sans",Helvetica,Arial,sans-serif,Arial;
+    color: #555
+}

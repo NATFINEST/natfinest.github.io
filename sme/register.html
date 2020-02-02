@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="UnionBank Business Zone">
+    <meta name="author" content="Nathaniel Odukpahie">
+    <title>UnionBank Business Zone</title>
+    
+    <script src="js/browser.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- material design icons -->
+
+</head>
+
+<body id="login_bg">
+	
+	<nav id="menu" class="fake_menu"></nav>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- End Preload -->
+	
+	<div id="login">
+		<aside>
+			<figure>
+				<a href="index.html"><img src="img/union-bank-white.png" width="170" height="70" data-retina="true" alt=""></a>
+			</figure>
+			<form autocomplete="off">
+				<div class="form-group">
+
+					<span class="input">
+					<input class="input_field" type="text">
+						<label class="input_label">
+						<span class="input__label-content">Your Name</span>
+					</label>
+					</span>
+
+					<span class="input">
+					<input class="input_field" type="text">
+						<label class="input_label">
+						<span class="input__label-content">Your Last Name</span>
+					</label>
+					</span>
+
+					<span class="input">
+					<input class="input_field" type="email">
+						<label class="input_label">
+						<span class="input__label-content">Your Email</span>
+					</label>
+					</span>
+
+					<span class="input">
+					<input class="input_field" type="password" id="password1">
+						<label class="input_label">
+						<span class="input__label-content">Your password</span>
+					</label>
+					</span>
+
+					<span class="input">
+					<input class="input_field" type="password" id="password2">
+						<label class="input_label">
+						<span class="input__label-content">Confirm password</span>
+					</label>
+					</span>
+					
+					<div id="pass-info" class="clearfix"></div>
+				</div>
+				<a href="#0" class="btn_1 rounded full-width add_top_30">Register</a><div class="text-center mt-4">
+                    Already have an acccount?<br>
+                    <button class="btn btn-nude" type="button" onclick="location.href='login.html'">Sign in!</button>
+                </div>
+			</form>
+			<div class="copy">© <script>document.write(new Date().getFullYear())</script> UnionBank Business Zone</div>
+		</aside>
+	</div>
+	<!-- /login -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/common_scripts.js"></script>
+    <script src="js/main.js"></script>
+	<script src="assets/validate.js"></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+    <script src="layerslider/js/greensock.js"></script>
+    <script src="layerslider/js/layerslider.transitions.js"></script>
+    <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript">
+        'use strict';
+        $('#layerslider').layerSlider({
+            autoStart: true,
+            navButtons: true,
+            navStartStop: false,
+            showCircleTimer: false,
+            responsive: true,
+            responsiveUnder: 1280,
+            layersContainer: 1200,
+            skinsPath: 'layerslider/skins/'
+                // Please make sure that you didn't forget to add a comma to the line endings
+                // except the last line!
+        });
+    </script>
+    <script src="js/datatables/jquery.dataTables.js"></script>
+    <script src="js/datatables/dataTables.bootstrap4.js"></script>
+    <script src="js/admin-datatables.js"></script>
+  
+</body>
+</html>
