@@ -11,7 +11,8 @@
     
 	<script src="js/browser.js" type="text/javascript"></script>
 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
     <!-- BASE CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
 	
 	<!-- SPECIFIC CSS -->
-    <link href="css/blog.css" rel="stylesheet">
+    <link href="layerslider/css/layerslider.css" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
@@ -131,7 +132,7 @@
 		<section id="hero_in" style="background: url(img/header.jpg) center center no-repeat;background-size: cover;height: 270px">
 			<div class="wrapper">
 				<div class="container">
-					<h1 class="fadeInUp"><span></span>EVENTS</h1>
+					<h1 class="fadeInUp"><span></span>COURSES</h1>
 				</div>
 			</div>
 		</section>
@@ -139,77 +140,151 @@
 
 		<div class="container margin_60_35">
 			<div class="row">
-				<div class="col-lg-9">
-					<div class="bloglist singlepost">
-						<p><img alt="" class="img-fluid" src="img/bwork.jpg"></p>
-						<h1>UnionBank BUSINESS WORKSHOP</h1>
-						<div class="postmeta">
-							<ul>
-								<li><a href="#"><i class="icon-calendar-5"></i> 23/12/2015</a></li>
-								<li><a href="#"><i class="icon-clock"></i> 09:00 AM - 02:00 PM</a></li>
-								<li><a href="#"><i class="icon-location"></i> Plot 161D, Raufu Taylor Close, Off Idejo Street, Victoria Island.</a></li>
-							</ul>
-						</div>
-						<!-- /post meta -->
-						<form autocomplete="off">
-							<div class="form-group">
+                <div class="col-sm-9 my-2">
+                    <h5 class="mt-1 mb-0">All Courses</h5>
+                </div>
 
-								<span class="input">
-								<input class="input_field" type="text">
-									<label class="input_label">
-									<span class="input__label-content">Your First Name</span>
-								</label>
-								</span>
+                <div class="col-sm-3 my-2 text-right">
+                    <select class="custom-select custom-select-sm" id="filter" style="height: 40px;font-size: 16px;">
+                        <option value="all">All Courses</option>
+                        <option value="mgt">Business Management</option>
+                        <option value="bus">Business Plan and Model</option>
+                        <option value="mak">Marketing</option>
+                    </select>
+                </div>
+            </div>
 
-								<span class="input">
-								<input class="input_field" type="text">
-									<label class="input_label">
-									<span class="input__label-content">Your Last Name</span>
-								</label>
-								</span>
-
-								<span class="input">
-								<input class="input_field" type="email">
-									<label class="input_label">
-									<span class="input__label-content">Your Email</span>
-								</label>
-								</span>
-								
-								<div id="pass-info" class="clearfix"></div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3 group all mak">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course1.html"><img src="img/lumia.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>TECHNOLOGY</small>
+									<h6>Do More With Your Microsoft Lumia Phone</h6>
+								</div>
+								<ul class="text-center">
+									<li><a href="course1.html">Enroll now</a></li>
+								</ul>
 							</div>
-							<a href="" class="btn_1 rounded full-width add_top_30">Register</a>
-						</form>
-
-					</div>
-					<!-- /single-post -->
-
-				</div>
-				<!-- /col -->
-
-				<aside class="col-lg-3">
-					<div class="widget">
-						<div class="widget-title">
-							<h4>Other Events</h4>
 						</div>
-						<ul class="comments-list">
-							<li>
-								<div class="alignleft">
-									<a href="#0"><img src="img/dweb.jpg" alt=""></a>
+						<!-- /box_grid -->
+						<div class="col-sm-6 col-md-4 col-lg-3 group all mak">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course1.html"><img src="img/sme.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>MARKETING</small>
+									<h6>How can SEO benefit my business?</h6>
 								</div>
-								<small>11.03.2019</small>
-								<h3><a href="#" title="">UnionBank BUSINESS WEBINAR</a></h3>
-							</li>
-							<li>
-								<div class="alignleft">
-									<a href="#0"><img src="img/dweb.jpg" alt=""></a>
+								<ul class="text-center">
+									<li><a href="course1.html">Enroll now</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-sm-6 col-md-4 col-lg-3 group all mgt">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course1.html"><img src="img/finance.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>FINANCIAL MANAGEMENT</small>
+									<h6>How can I ensure my business keeps up ...</h6>
 								</div>
-								<small>11.03.2019</small>
-								<h3><a href="#" title="">LEGAL SYSTEM AND YOUR BUSINESS</a></h3>
-							</li>
-						</ul>
+								<ul class="text-center">
+									<li><a href="course1.html">Enroll now</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-sm-6 col-md-4 col-lg-3 group all mak">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course-detail.html"><img src="img/m1.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>BUSINESS PLANS AND MODELS</small>
+									<h6>Go to Market advice for SMEs in growth & acceleration phase</h6>
+								</div>
+								<ul class="text-center">
+									<li><a href="course-detail.html">Enroll now</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 group all bus">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course1.html"><img src="img/lumia.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>TECHNOLOGY</small>
+									<h6>Do More With Your Microsoft Lumia Phone</h6>
+								</div>
+								<ul class="text-center">
+									<li><a href="course1.html">Enroll now</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-sm-6 col-md-4 col-lg-3 group all bus">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course1.html"><img src="img/sme.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>MARKETING</small>
+									<h6>How can SEO benefit my business?</h6>
+								</div>
+								<ul class="text-center">
+									<li><a href="course1.html">Enroll now</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-sm-6 col-md-4 col-lg-3 group all bus">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course1.html"><img src="img/finance.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>FINANCIAL MANAGEMENT</small>
+									<h6>How can I ensure my business keeps up ...</h6>
+								</div>
+								<ul class="text-center">
+									<li><a href="course1.html">Enroll now</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-sm-6 col-md-4 col-lg-3 group all mgt">
+							<div class="box_grid wow">
+								<figure class="block-reveal">
+									<a href="course-detail.html"><img src="img/m1.jpg" class="img-fluid" alt=""></a>
+									<div class="preview"><span>Preview course</span></div>
+								</figure>
+								<div class="wrapper">
+									<small>BUSINESS PLANS AND MODELS</small>
+									<h6>Go to Market advice for SMEs in growth & acceleration phase</h6>
+								</div>
+								<ul class="text-center">
+									<li><a href="course-detail.html">Enroll now</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</aside>
-				<!-- /aside -->
+				</div>
 			</div>
 			<!-- /row -->
 		</div>
@@ -293,6 +368,15 @@
             skinsPath: 'layerslider/skins/'
                 // Please make sure that you didn't forget to add a comma to the line endings
                 // except the last line!
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#filter').change(function () {
+                $('.group').hide();
+                // $('.group').addClass('w-0');
+                $('.'+$(this).val()).show();
+            });
         });
     </script>
   
