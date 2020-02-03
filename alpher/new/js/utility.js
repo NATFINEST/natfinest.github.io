@@ -656,3 +656,20 @@ $(function () {
         $(".img-p"+i).slice(0, 1).show();
     };
 });
+$(function () {
+    // postlen = $('.card--dashboard').length
+    // for (i = 1; i <= postlen; i++) {
+    //     $(".p"+i).slice(0, 4).show();
+    // };
+    $(".card--dashboard").slice(0, 4).show();
+    $(".loadPost").on('click', function (e) {
+        e.preventDefault();
+        $(".card--dashboard:hidden").slice(0, 4).slideDown();
+        if ($(".card--dashboard:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});

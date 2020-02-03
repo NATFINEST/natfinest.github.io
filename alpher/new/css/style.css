@@ -430,6 +430,7 @@ body {
     box-sizing: border-box;
     box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
+    display: none;
 }
 
 .card-height--323 {
