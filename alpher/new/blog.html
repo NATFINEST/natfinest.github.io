@@ -22,6 +22,10 @@
         <!-- Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+        <!--LightBox -->        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+        
     </head>
 
     <body class="dashboard-body">
@@ -245,7 +249,7 @@
 
                 <div class="row mx-md-2 mb-5">
                     <div class="col-lg-8 mx-auto">
-                        <div class="card--dashboard">
+                        <div class="card--dashboard mt-4">
                             <div class="row justify-content-center mx-md-0">
                                 <div class="col-md-8 col-6 border-right py-3 cursor" data-toggle="modal" data-target="#albums-modal">
                                     <div class="px-md-4">
@@ -272,65 +276,815 @@
                             <div class="row mb-4">
                                 <div class="col-md-12 my-2 pt-2">
                                     <div class="px-4 row">
-                                        <div class="col-3 col-lg-1">
-                                            <img src="img/course_img.png" class="mt-1" />
-                                        </div>
-                                        <div class="col-9">
-                                            <p class="font-weight-bold mb-0 font-14">vitae nasceturis</p>
-                                            <p class="font-weight-light font-14">risus euismod vitae vitae</p>
+                                        <div class="col-9 d-flex">
+                                            <div class="mr-2">
+                                                <img src="img/course_img.png" class="mt-1" />
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0 font-14">Brandee Sanders</p>
+                                                <p class="font-weight-light font-14">5 mins ago</p>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="px-4">
-                                        <p class="font-14 font-weight-light">risus euismod vitae nasceturis us euismod vitae nascetu risus euismod hdjsd. nasceturisus euismod.</p>
-
-                                        <a href="#" class="text-green">https://lnkd.in/e49veKc #dailyui #mobileapp #uxdesign #ui #figma  #challenge</a>
+                                        <p class="font-14 font-weight-light">I am Post 1</p>
                                     </div>
-                                    <img src="img/blog-3.jpg" class="img-fluid mt-2" />
+                                    <div class="row">
+                                        <div class="col-12 img-p1 post-image">
+                                            <a href="images/Business-Day-online.jpg" data-lightbox="img-p1" class="content">
+                                                <div class="content-overlay"></div>
+                                                <img src="images/Business-Day-online.jpg" class="img-fluid mt-2 comm-img" />
+                                                <div class="content-details fadeIn-top">
+                                                    <h3>VIEW 3+ IMAGES</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 img-p1 post-image">
+                                            <a href="images/Hotel-du-Golf.jpg" data-lightbox="img-p1" ><img class="img-fluid mt-2 comm-img" src="images/Hotel-du-Golf.jpg"></a>
+                                        </div>
+                                        <div class="col-12 img-p1 post-image">
+                                            <a href="images/Bioviva-Spa-1.jpg" data-lightbox="img-p1" ><img class="img-fluid mt-2 comm-img" src="images/Bioviva-Spa-1.jpg"></a>
+                                        </div>
+                                    </div>
 
                                     <div class="px-4 row mt-3">
-                                        <div class="col-lg-2 col-6 pr-0">
-                                            <p class="font-14 font-weight-light"><img src="img/like.png" alt="like post" class="img-fluid" /> Like <span class="text-blue">20</span></p>
-                                        </div>
-                                        <div class="col-lg-3 col-6 pl-3 pr-0">
-                                            <p class="font-14 font-weight-light"><img src="img/comment.png" alt="like post" class="img-fluid" /> Comment <span class="text-blue">2</span></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="px-4 row mt-3">
-                                        <div class="col-2 col-lg-1">
-                                            <img src="img/course_img.png" class="mt-1" />
-                                        </div>
-                                        <div class="col-lg-11 col-10">
+                                        <div class="col-lg-12 col-10 d-flex">
+                                            <img src="img/course_img.png" class="mt-1 mr-2" />
                                             <input type="text" placeholder="Add a comment" class="form-control mt-2" />
                                         </div>
                                     </div>
 
-                                    <div class="px-4 row mt-3">
-                                        <div class="col-1">
-                                            <img src="img/course_img.png" class="mt-1" />
-                                        </div>
-                                        <div class="col-11">
-                                            <div class="p-2 position-relative blog_comment">
-                                                <p class="weight-semi-bold mb-1">Brandee Sanders </p>
-                                                <p class="font-13 font-weight-light mb-1">risus euismod vitae nasceturis us euismod vitae nascetu risus euismod hdjsd. nasceturisus euismod.</p>
-
-                                                <img src="img/option_dots.svg" class="position-absolute" style="right: 10px; top: 10px;" />
-                                            </div>
-
-                                            <div class="row mt-3">
-                                                <div class="col-1">
-                                                    <p class="font-14 font-weight-light"><img src="img/like.png" alt="like post" class="img-fluid" /></p>
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px">
+                                        <div class="col-12 blog_comment p1">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
                                                 </div>
-                                                <div class="col-1">
-                                                    <p class="font-14 font-weight-light"><img src="img/comment.png" alt="like post" class="img-fluid" /></p>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p1">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p1">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p1">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 4</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p1">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p1">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 6</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p1">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 7</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
+                                    <div class="w-100 text-center mt-4">
+                                        <a href="#" class="btn btn-green loadMore" data-id="p1">Load More</a>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="card--dashboard mt-4">
+
+                            <div class="row mb-4">
+                                <div class="col-md-12 my-2 pt-2">
+                                    <div class="px-4 row">
+                                        <div class="col-9 d-flex">
+                                            <div class="mr-2">
+                                                <img src="img/course_img.png" class="mt-1" />
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0 font-14">Korede Bello</p>
+                                                <p class="font-weight-light font-14">5 mins ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4">
+                                        <p class="font-14 font-weight-light">I am Post 2</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 img-p2 post-image">
+                                            <a href="images/Business-Day-online.jpg" data-lightbox="img-p2" class="content">
+                                                <div class="content-overlay"></div>
+                                                <img src="images/Gate-gold-Nig.-Ltd.jpg" class="img-fluid mt-2 comm-img" />
+                                                <div class="content-details fadeIn-top">
+                                                    <h3>VIEW 2+ IMAGES</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 img-p1 post-image">
+                                            <a href="images/ibis-hotel-building.jpg" data-lightbox="img-p2" ><img class="img-fluid mt-2 comm-img" src="images/Hotel-du-Golf.jpg"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3">
+                                        <div class="col-lg-12 col-10 d-flex">
+                                            <img src="img/course_img.png" class="mt-1 mr-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 4</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 6</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 7</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 8</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 9</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p2">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Korede Bello </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 text-center mt-4">
+                                        <a href="#" class="btn btn-green loadMore" data-id="p2">Load More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card--dashboard mt-4">
+
+                            <div class="row mb-4">
+                                <div class="col-md-12 my-2 pt-2">
+                                    <div class="px-4 row">
+                                        <div class="col-9 d-flex">
+                                            <div class="mr-2">
+                                                <img src="img/course_img.png" class="mt-1" />
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0 font-14">James Smart</p>
+                                                <p class="font-weight-light font-14">5 mins ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4">
+                                        <p class="font-14 font-weight-light">I am Post 3</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 img-p3 post-image">
+                                            <a href="images/Business-Day-online.jpg" data-lightbox="img-p3" class="content">
+                                                <div class="content-overlay"></div>
+                                                <img src="images/Gate-gold-Nig.-Ltd.jpg" class="img-fluid mt-2 comm-img" />
+                                                <div class="content-details fadeIn-top">
+                                                    <h3>VIEW 2+ IMAGES</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 img-p1 post-image">
+                                            <a href="images/ibis-hotel-building.jpg" data-lightbox="img-p3" ><img class="img-fluid mt-2 comm-img" src="images/Hotel-du-Golf.jpg"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3">
+                                        <div class="col-lg-12 col-10 d-flex">
+                                            <img src="img/course_img.png" class="mt-1 mr-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 4</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 6</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 7</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 8</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 9</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p3">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">James Smart </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 text-center mt-4">
+                                        <a href="#" class="btn btn-green loadMore" data-id="p3">Load More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card--dashboard mt-4">
+
+                            <div class="row mb-4">
+                                <div class="col-md-12 my-2 pt-2">
+                                    <div class="px-4 row">
+                                        <div class="col-9 d-flex">
+                                            <div class="mr-2">
+                                                <img src="img/course_img.png" class="mt-1" />
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0 font-14">Jide Sanwoolu</p>
+                                                <p class="font-weight-light font-14">5 mins ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4">
+                                        <p class="font-14 font-weight-light">I am Post 3</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 img-p4 post-image">
+                                            <a href="images/Business-Day-online.jpg" data-lightbox="img-p4" class="content">
+                                                <div class="content-overlay"></div>
+                                                <img src="images/Gate-gold-Nig.-Ltd.jpg" class="img-fluid mt-2 comm-img" />
+                                                <div class="content-details fadeIn-top">
+                                                    <h3>VIEW 2+ IMAGES</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 img-p1 post-image">
+                                            <a href="images/ibis-hotel-building.jpg" data-lightbox="img-p4" ><img class="img-fluid mt-2 comm-img" src="images/Hotel-du-Golf.jpg"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3">
+                                        <div class="col-lg-12 col-10 d-flex">
+                                            <img src="img/course_img.png" class="mt-1 mr-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 4</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 6</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 7</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 8</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 9</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p4">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Jide Sanwoolu </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 text-center mt-4">
+                                        <a href="#" class="btn btn-green loadMore" data-id="p4">Load More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card--dashboard mt-4">
+
+                            <div class="row mb-4">
+                                <div class="col-md-12 my-2 pt-2">
+                                    <div class="px-4 row">
+                                        <div class="col-9 d-flex">
+                                            <div class="mr-2">
+                                                <img src="img/course_img.png" class="mt-1" />
+                                            </div>
+                                            <div>
+                                                <p class="font-weight-bold mb-0 font-14">Sowande Tunde</p>
+                                                <p class="font-weight-light font-14">5 mins ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4">
+                                        <p class="font-14 font-weight-light">I am Post 5</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 img-p5 post-image">
+                                            <a href="images/Business-Day-online.jpg" data-lightbox="img-p5" class="content">
+                                                <div class="content-overlay"></div>
+                                                <img src="images/Gate-gold-Nig.-Ltd.jpg" class="img-fluid mt-2 comm-img" />
+                                                <div class="content-details fadeIn-top">
+                                                    <h3>VIEW 2+ IMAGES</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 img-p1 post-image">
+                                            <a href="images/ibis-hotel-building.jpg" data-lightbox="img-p5" ><img class="img-fluid mt-2 comm-img" src="images/Hotel-du-Golf.jpg"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3">
+                                        <div class="col-lg-12 col-10 d-flex">
+                                            <img src="img/course_img.png" class="mt-1 mr-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                        </div>
+                                    </div>
+
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 4</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 6</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 7</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 8</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 9</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 blog_comment p5">
+                                            <div class="d-flex">
+                                                <div class="mr-2">
+                                                    <img src="img/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="p-2 position-relative">
+                                                    <p class="weight-semi-bold mb-1">Sowande Tunde </p>
+                                                    <p class="font-13 font-weight-light mb-1">Comment 10</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 text-center mt-4">
+                                        <a href="#" class="btn btn-green loadMore" data-id="p5">Load More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 text-center mt-4">
+                            <a href="#" class="btn btn-primary btn-large w-50 loadMore" data-id="p5">More Posts</a>
                         </div>
                     </div>
 
@@ -450,7 +1204,7 @@
                 </div>
             </div>
         </div>
-<!-- Modal -->
+        <!-- Modal -->
         <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -547,6 +1301,8 @@
         <script src="js/utility.js"></script>
         <script src="js/modal-uploader.js"></script>
         <script src="js/intlTelInput.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
     </body>
 

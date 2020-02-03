@@ -630,3 +630,29 @@ $(document).ready(function() {
         $('#convo'+id).show();
     })
 });
+
+// For Community
+$(function () {
+    postlen = $('.card--dashboard').length
+    for (i = 1; i <= postlen; i++) {
+        $(".p"+i).slice(0, 4).show();
+    };
+    // $(".blog_comment").slice(0, 4).show();
+    $(".loadMore").on('click', function (e) {
+        e.preventDefault();
+        id = $(this).data("id");
+        $("." + id + ":hidden").slice(0, 4).slideDown();
+        if ($("." + id + ":hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('.post').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});
+$(function () {
+    imglen = $('.card--dashboard').length
+    for (i = 1; i <= imglen; i++) {
+        $(".img-p"+i).slice(0, 1).show();
+    };
+});
