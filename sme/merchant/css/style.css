@@ -61,14 +61,14 @@ input, select, textarea{
   border: 2px solid #be1fa1!important;
 }
 .actions ul li a {
-  background: #5a3092!important;
+  background: #009afe!important;
 }
 .actions ul li:first-child a {
   background: #f8f8f8!important;
 }
 .actions ul li a:hover {
-  color: #000!important;
-  background-color: #fcb61c!important;
+  color: #fff!important;
+  background-color: #2190d8!important;
 }
 .number{
   width: 50px!important;
