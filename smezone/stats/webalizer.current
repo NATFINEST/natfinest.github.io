@@ -1,0 +1,427 @@
+# Webalizer V2.23-08 Incremental Data - 01/29/2019 14:29:08
+2019 1 29 14 29 8
+542 447 18 102 16 7 28359215 60 19 0 0 0
+3 32 93 2 29
+0 0 0 0 0 0 0 0
+88 61 7055464 4 8 3 0 0
+129 114 5658572 2 17 3 0 0
+60 34 630317 1 8 2 0 0
+28 27 3591136 3 2 2 0 0
+0 0 0 0 0 0 0 0
+30 19 834432 1 3 1 0 0
+54 51 1023667 4 4 3 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+30 21 540381 1 3 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+91 89 5081145 1 11 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+32 31 3944101 3 4 3 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+52 50 1005560 4 0 0
+30 29 3916447 3 0 0
+2 1 18107 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+125 99 2148148 16 0 0
+35 21 3063590 5 0 0
+32 31 3944101 4 0 0
+58 48 4131517 5 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+30 19 834432 3 0 0
+32 21 442894 4 0 0
+146 128 8854419 16 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0
+0
+0
+447
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+82
+0
+0
+0
+0
+0
+0
+13
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/dashboard/assets/fonts/fontawesome-webfont3e6e.woff2
+0 2 441733091426304 77588 0 0 0 0
+/images/explore.png
+1 12 0 1315300 0 0 0 0
+/dashboard/plugins/select2/js/select2.min.js
+0 3 0 58102 0 0 0 0
+/dashboard/plugins/datatables/buttons.bootstrap4.min.js
+0 3 0 2428 0 0 0 0
+/dashboard/assets/images/small/img-5.jpg
+1 1 0 51818 0 0 0 0
+/fonts/fa-regular-401.html
+0 5 0 62858 1 0 0 0
+/dashboard/plugins/peity-chart/jquery.peity.min.js
+0 3 0 6239 0 0 0 0
+/dashboard/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js
+0 3 0 31249 0 0 0 0
+/style.css
+0 12 0 442041 0 0 0 0
+/dashboard/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js
+0 3 0 6529 0 0 0 0
+/dashboard/assets/css/metismenu.min.css
+0 3 0 3107 0 0 0 0
+/dashboard/plugins/datatables/buttons.bootstrap4.min.css
+0 3 0 3580 0 0 0 0
+/dashboard/assets/css/style.css
+0 3 0 39304 0 0 0 0
+/images/img01.jpg
+1 12 0 1386764 0 0 0 0
+/fonts/fa-brands-401.html
+0 10 0 547603 0 1 0 0
+/dashboard/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js
+0 3 0 6700 0 0 0 0
+/dashboard/assets/js/jquery.slimscroll.js
+0 3 0 12358 0 0 0 0
+/js/plugins.js
+0 11 0 1879190 0 0 0 0
+/dashboard/plugins/datatables/responsive.bootstrap4.min.css
+0 3 0 3838 0 0 0 0
+/dashboard/plugins/datatables/dataTables.bootstrap4.min.css
+0 3 0 4027 0 0 0 0
+/dashboard/plugins/datatables/vfs_fonts.js
+0 3 0 883933 0 0 0 0
+/css/colors.css
+0 12 0 11315 0 0 0 0
+/dashboard/assets/js/modernizr.min.js
+0 3 0 14561 0 0 0 0
+/fonts/fa-brands-400.woff
+0 11 0 384878 0 0 0 0
+/dashboard/assets/images/course.svg
+0 1 0 2267 0 0 0 0
+/css/plugins.css
+0 12 0 46872 0 0 0 0
+/dashboard/account.html
+0 2 0 5292 0 0 0 0
+/dashboard/plugins/datatables/jszip.min.js
+0 3 0 72697 0 0 0 0
+/dashboard/plugins/morris/morris.css
+0 3 0 1735 0 0 0 0
+/dashboard/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js
+0 3 0 18079 0 0 0 0
+/dashboard/plugins/datatables/responsive.bootstrap4.min.js
+0 3 0 2857 0 0 0 0
+/js/jquery.js
+0 11 0 369891 0 0 0 0
+/dashboard/community.html
+0 1 0 2538 0 0 0 0
+/dashboard/assets/images/small/img-6.jpg
+1 3 0 101859 0 0 0 0
+/dashboard/assets/images/small/img-3.jpg
+1 2 0 52521 0 0 0 0
+/js/jquery.main.js
+0 11 0 15990 0 0 0 0
+/dashboard/plugins/datatables/buttons.print.min.js
+0 3 0 4147 0 0 0 0
+/tooltipster/js/tooltipster.bundle.min.js
+0 11 0 115550 0 0 0 0
+/fonts/fa-solid-901.html
+0 10 0 391002 1 1 0 0
+/dashboard/bet.html
+0 2 0 6539 0 0 0 0
+/dashboard/plugins/datatables/dataTables.buttons.min.js
+0 3 0 18988 0 0 0 0
+/dashboard/assets/css/custom.css
+0 3 0 3670 0 0 0 0
+/dashboard/assets/pages/dashboard.js
+0 3 0 2914 0 0 0 0
+/dashboard/assets/images/small/img-2.jpg
+1 1 0 174 0 0 0 0
+/dashboard/assets/pages/form-advanced.js
+0 3 0 3820 0 0 0 0
+/images/svg/hearts.svg
+0 12 0 13062 0 0 0 0
+/dashboard/plugins/datatables/jquery.dataTables.min.js
+0 3 0 85180 0 0 0 0
+/fonts/fa-solid-900.woff
+0 11 0 294830 0 0 0 0
+/dashboard/assets/images/event.svg
+0 1 0 3245 0 0 0 0
+/dashboard/competition.html
+0 2 0 5543 0 0 0 0
+/js/init.js
+0 12 0 6789 0 0 0 0
+/images/professor.svg
+0 12 0 26772 0 0 0 0
+/dashboard/plugins/raphael/raphael-min.js
+0 3 0 97351 0 0 0 0
+/dashboard/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js
+0 3 0 9493 0 0 0 0
+/dashboard/assets/js/jquery.min.js
+0 3 0 91948 0 0 0 0
+/images/img11.jpg
+1 12 0 64991 0 0 0 0
+/dashboard/plugins/datatables/buttons.colVis.min.js
+0 3 0 3886 0 0 0 0
+/dashboard/plugins/datatables/pdfmake.min.js
+0 3 0 308653 0 0 0 0
+/dashboard/webinar.html
+0 2 0 5645 0 0 0 0
+/dashboard/assets/images/webinar.svg
+0 1 0 172 0 0 0 0
+/dashboard/assets/fonts/dripicons-v2.woff
+0 3 0 52761 0 0 0 0
+/images/diamondbg.png
+1 12 0 15968848 0 0 0 0
+/dashboard/assets/fonts/materialdesignicons-webfont9391.woff2
+0 3 0 275436 0 0 0 0
+/dashboard/plugins/magnific-popup/jquery.magnific-popup.min.js
+0 2 0 15378 0 0 0 0
+/css/bootstrap.css
+0 14 0 262227 0 0 0 0
+/dashboard/assets/css/bootstrap.min.css
+0 3 0 64134 0 0 0 0
+/dashboard/assets/js/waves.js
+0 3 0 68717 0 0 0 0
+/dashboard/assets/images/small/img-7.jpg
+1 1 0 173 0 0 0 0
+/login.html
+0 1 0 1983 0 0 0 0
+/dashboard/assets/images/small/img-1.jpg
+1 1 0 173 0 0 0 0
+/dashboard/assets/pages/lightbox.js
+0 2 0 1904 0 0 0 0
+/dashboard/assets/js/app.js
+0 3 0 3085 0 0 0 0
+/images/students.svg
+0 12 0 41158 0 0 0 0
+/dashboard/quiz.html
+0 2 0 6030 0 0 0 0
+/dashboard/assets/pages/datatables.init.js
+0 3 0 1549 0 0 0 0
+/
+0 15 0 79290 15 0 0 0
+/dashboard/event-videos.html
+0 1 0 2766 0 0 0 0
+/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css
+0 12 0 8240 0 0 0 0
+/images/smelogo.png
+1 12 0 113926 0 0 0 0
+/dashboard/assets/css/icons.css
+0 3 0 123640 0 0 0 0
+/dashboard/plugins/morris/morris.min.js
+0 3 0 31087 0 0 0 0
+/dashboard/assets/images/smelogo.png
+1 3 0 28481 0 0 0 0
+/fonts/fa-regular-400.woff
+0 5 0 45353 0 0 0 0
+/images/award.svg
+0 12 0 21696 0 0 0 0
+/dashboard/courses.html
+0 3 0 8478 1 0 0 0
+/dashboard/assets/js/metisMenu.min.js
+0 3 0 6857 0 0 0 0
+/dashboard/assets/images/favicon.png
+1 2 0 8311 0 0 0 0
+/dashboard/assets/images/users/adeniran.jpg
+1 3 0 20893 0 0 0 0
+/dashboard/plugins/datatables/buttons.html5.min.js
+0 3 0 19870 0 0 0 0
+/dashboard/
+0 1 0 3121 0 0 0 0
+/dashboard/plugins/datatables/dataTables.bootstrap4.min.js
+0 3 0 4324 0 0 0 0
+/images/img02.jpg
+1 14 0 162265 0 0 0 0
+/dashboard/event-pictures.html
+0 1 0 2732 0 0 0 0
+/dashboard/plugins/datatables/dataTables.responsive.min.js
+0 3 0 12934 0 0 0 0
+/css/custom.css
+0 12 0 34365 0 0 0 0
+/images/tweet.png
+1 10 0 1184914 0 0 0 0
+/dashboard/plugins/magnific-popup/magnific-popup.css
+0 2 0 4289 0 0 0 0
+/css/responsive.css
+0 12 0 82315 0 0 0 0
+/dashboard/assets/js/bootstrap.bundle.min.js
+0 3 0 63112 0 0 0 0
+/tooltipster/css/tooltipster.bundle.min.css
+0 12 0 17324 0 0 0 0
+/dashboard/assets/images/small/img-4.jpg
+1 1 0 173 0 0 0 0
+/dashboard/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css
+0 3 0 7195 0 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+105.112.27.140
+0 30 19 834432 1 1546886407 0 0
+/fonts/fa-brands-401.html
+154.120.81.187
+0 32 18 417827 1 1546433925 0 0
+/fonts/fa-brands-401.html
+105.112.42.177
+0 2 1 18107 0 0 0 0
+-
+41.217.106.186
+0 91 89 5081145 1 1548103723 0 0
+/dashboard/competition.html
+66.249.93.86
+0 12 12 329082 1 1548772145 0 0
+/fonts/fa-brands-401.html
+169.159.109.219
+0 1 1 5286 1 1546700717 0 0
+/
+66.249.93.90
+0 10 9 164761 1 1548772141 0 0
+/
+197.210.227.210
+0 2 0 845 1 1546932563 0 0
+-
+197.210.226.72
+0 16 16 530253 1 1546932536 0 0
+/dashboard/account.html
+66.249.93.88
+0 10 10 3450258 1 1548772145 0 0
+/fonts/fa-solid-901.html
+41.217.123.66
+0 60 34 630317 2 1546635290 0 0
+/fonts/fa-brands-401.html
+160.152.10.66
+0 29 17 3051786 1 1546434096 0 0
+/fonts/fa-brands-401.html
+197.242.97.251
+0 72 60 862860 1 1546520428 0 0
+/dashboard/
+168.235.195.96
+0 24 24 3472436 1 1546701568 0 0
+/
+197.255.173.114
+0 30 21 540381 1 1547737724 0 0
+/fonts/fa-brands-401.html
+197.210.226.177
+0 34 34 474462 1 1546932416 0 0
+/dashboard/courses.html
+197.211.61.139
+0 63 58 5022541 2 1546520039 0 0
+/fonts/fa-brands-401.html
+168.235.194.132
+0 24 24 3472436 1 1546462074 0 0
+/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+66.249.93.86
+0 12 12 329082 1 1548772145 0 0
+/fonts/fa-brands-401.html
+66.249.93.90
+0 10 9 164761 1 1548772141 0 0
+/
+66.249.93.88
+0 10 10 3450258 1 1548772145 0 0
+/fonts/fa-solid-901.html
+# End Of Table - sites (daily)
+# -referrers- 
+http://ui.diamondsmezone.com/dashboard/event-videos.html
+0 1
+http://ui.diamondsmezone.com/dashboard/bet.html
+0 8
+http://ui.diamondsmezone.com/dashboard/index.html
+0 4
+http://ui.diamondsmezone.com/dashboard/webinar.html
+0 3
+http://ui.diamondsmezone.com/css/custom.css
+0 22
+http://ui.diamondsmezone.com/dashboard/competition.html
+0 3
+http://ui.diamondsmezone.com/dashboard/quiz.html
+0 90
+- (Direct Request)
+0 26
+http://ui.diamondsmezone.com/dashboard/assets/css/icons.css
+0 8
+http://ui.diamondsmezone.com/dashboard/settings.html
+0 1
+http://ui.diamondsmezone.com/dashboard/courses.html
+0 48
+http://ui.diamondsmezone.com/style.css
+0 52
+http://ui.diamondsmezone.com/dashboard/event-pictures.html
+0 5
+http://ui.diamondsmezone.com/dashboard/community.html
+0 1
+http://ui.diamondsmezone.com/
+0 269
+http://ui.diamondsmezone.com/dashboard/account.html
+0 1
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+0 337
+WhatsApp/2.18.380 A
+0 1
+Mozilla/5.0 (Linux; U; Android 8.1.0; en-US; Infinix X604 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Ch
+0 27
+Mozilla/5.0 (Linux; U; Android 8.1.0; en-US; Infinix X604 Build/O11019) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UC
+0 27
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+0 29
+Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 89
+Mozilla/5.0 (Linux; Android 8.1.0; SM-J701F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36
+0 32
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

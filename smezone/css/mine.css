@@ -1,0 +1,61 @@
+.access-more{
+    background: url(../images/xclusivbg.png) no-repeat top left;
+    background-color: rgba(181,211,52,1);
+    min-height: 225px;
+    width: 550px;
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 0;
+    float: left;
+    padding: 5% 4% 2% 8%;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+}
+.fwd-arrow-list ul,.listed-items ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.fwd-arrow-list ul li {
+    font-size: 15px!important;
+    padding-bottom: 10px;
+    position: relative;
+    right: 10px;
+    color: #757575!important;
+    background: url(../images/mission-arrows.png) no-repeat;
+    padding-left: 40px;
+    background-position: 0 4px;
+}
+.listed-items ul li {
+    list-style: none;
+    background: url(../images/checklist-check.png) no-repeat;
+    background-position: top left;
+    padding-left: 30px;
+    color: #7e8388;
+    padding-bottom: 15px;
+}
+.benefits{
+    background: url(../images/light-caret-bg.png)no-repeat;
+    background-color: #ddd6cd;
+    background-position: top center;
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 10px 50px;"
+}
+p {
+    margin: 0 0 12px;
+}
+.light-blue{
+    color:#003783; 
+    font-size:36px;
+}
+.f24{
+    font-size: 24px;
+    line-height: 2
+}
+.text-white{
+    color: #fff;
+}
