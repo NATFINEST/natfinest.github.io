@@ -162,24 +162,16 @@
 
                             <div class="py-4">
                                 <div class="col-9 mx-auto form-group mb-3">
-                                    <button type="submit" class="btn btn-primary w-100 fs-14" style="height: 50px"><i class="fab fa-google"></i> SIGN UP USING GOOGLE ACCOUNT</button>
+                                    <button type="submit" class="btn btn-primary w-100 fs-16 fw-700" style="height: 50px"><i class="fab fa-google"></i> SIGN UP USING GOOGLE ACCOUNT</button>
                                 </div>
 
                                 <div class="col-8 mx-auto form-group text-center">
                                     <p class="text-white font-weight-bold">OR</p>
                                 </div>
-
-                                <div class="col-9 mx-auto single-input mb-3 acc-sel">
-                                    <select name="acctype" id="CourseSelect2" style="display: none;">
-                                        <option selected="true" disabled="disabled">Select Account Type</option>
-                                        <option value="ind">Individual</option>
-                                        <option value="bus">Business Owner</option>
-                                    </select>
-                                </div>
                             </div>
 
-                            <form action="#" class="instructor-form ind group">
-                                <div class="row">
+                            <form action="#" class="instructor-form pt-0">
+                                <div class="row ind group">
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="fname" class="sr-only">Firstname</label>
                                         <input type="text" id="fname" name="fname" placeholder="Your Firstname *" required>
@@ -199,10 +191,10 @@
                                         <label for="phone" class="sr-only">Phone Number</label>
                                         <input name="phone" type="tel" class="phone form-control element-block pl-5"  required>
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-12">
                                         <label for="text" class="sr-only">State of Residence</label>
                                         <select name="state" id="state" class="form-control" required>
-                                              <option value="" selected="selected" > Select State </option>
+                                              <option value="" selected="selected" > Select State of Residence </option>
                                               <option value='Abia'>Abia</option>
                                               <option value='Adamawa'>Adamawa</option>
                                               <option value='AkwaIbom'>AkwaIbom</option>
@@ -241,14 +233,7 @@
                                               <option value='Yobe'>Yobe</option>
                                               <option value='Zamfara'>Zamafara</option>
                                         </select>
-                                    </div>
-
-                                    <div class="col-12 col-md-6 ">
-                                        <label for="text" class="sr-only">LGA</label>
-                                        <select name="lga" id="lga" class="form-control" required>
-                                              <option value="" selected="selected" > Select LGA </option>
-                                        </select>
-                                    </div>                                    
+                                    </div>                                   
                                     <div class="col-12 col-md-6">
                                         <select name="gender" id="gender" required>
                                             <option selected="true" disabled="disabled">Select Gender</option>
@@ -262,48 +247,20 @@
                                         <!-- <span><i class="fas fa-lock"></i></span> -->
                                     </div>
                                 </div>
-                                <div class="col-12 form-group mb-0 text-center sub">
-                                    <button type="submit" class="submit-btn w-100">Register</button>
-                                </div>
-                            </form>
 
-                            <form action="#" class="instructor-form bus group">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 form-group">
-                                        <label for="fname" class="sr-only">Firstname</label>
-                                        <input type="text" id="fname" name="fname" placeholder="Your Firstname *" required>
-                                        <span><i class="far fa-user"></i></span>
-                                    </div>
-                                    <div class="col-12 col-md-6 form-group">
-                                        <label for="sname" class="sr-only">Surname</label>
-                                        <input type="text" id="sname" name="sname" placeholder="Your Surname *" required>
-                                        <span><i class="far fa-user"></i></span>
-                                    </div>
-                                    <div class="col-12 col-md-6 form-group">
-                                        <label for="email" class="sr-only">Your Email Address</label>
-                                        <input type="email" id="email" name="email" placeholder="Your Email Address*" required>
-                                        <span><i class="far fa-envelope-open"></i></span>
-                                    </div>
-                                    <div class="col-12 col-md-6 form-group">
-                                        <label for="phone" class="sr-only">Phone Number</label>
-                                        <input name="phone" type="tel" class="phones form-control element-block pl-5" required>
-                                    </div>
+                                <div class="col-9 mx-auto single-input mb-3 acc-sel">
+                                    <select name="acctype" id="CourseSelect2" style="display: none;">
+                                        <option selected="true" disabled="disabled">Do you have a businesss?</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="">No</option>
+                                    </select>
+                                </div>
+
+                                <div class="row bus group">
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="bname" class="sr-only">Business Name</label>
                                         <input type="text" id="bname" name="bname" placeholder="Your Business Name *" required>
                                         <span><i class="far fa-user"></i></span>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <select name="gender" id="gender2" required>
-                                            <option selected="true" disabled="disabled">Select Gender</option>
-                                            <option value="ind">Male</option>
-                                            <option value="bus">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-md-6 form-group">
-                                        <label for="password" class="sr-only">Your Password</label>
-                                        <input type="password" id="password" name="password" placeholder="Your Password" required>
-                                        <!-- <span><i class="fas fa-lock"></i></span> -->
                                     </div>
                                     <div class="col-12 col-md-6 form-group single-input">
                                         <select name="gender" id="CourseSelect2" style="display: none;" required>
@@ -391,27 +348,20 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('[data-search]').on('keyup', function() {
-                var searchVal = $(this).val();
-                var filterItems = $('[data-filter-item]');
 
-                if ( searchVal != '' ) {
-                    filterItems.hide();
-                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').show();
-                } else {
-                    filterItems.show();
-                }
-            });
 
-            $('.ind').hide();
+            // $('.ind').hide();
             $('.bus').hide();
-            $('.sub').hide();
-            $('.log').hide();
+            // $('.sub').hide();
+            // $('.log').hide();
             $('#CourseSelect2').change(function () {
-                $('.group').hide();
-                $('.sub').show();
-                $('.log').show();
-                $('.'+$(this).val()).show();
+                if($(this).val() == 'yes'){
+                    $('.bus').show();
+                }
+                else{
+                    $('.bus').hide();
+                }
+                // $('.'+$(this).val()).show();
             })
         });
     </script>
