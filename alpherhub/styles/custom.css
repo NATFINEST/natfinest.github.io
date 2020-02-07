@@ -81,13 +81,35 @@ footer{
     top: 2%;
     color: #666;
 }
+.video-js .vjs-big-play-button {
+    left: 40% !important;
+    top: 40% !important;
+    width: 20%;
+    height: 20%;
+}
+
+.video-js .vjs-play-control:before {
+    top:20% !important;
+    content: '\f101';
+    font-size: 48px;
+}
 p,a{
 	font-size: 18px;
 }
 .down-content p{
 	margin-bottom: 10px!important;
 }
-body, p,h1, h2, h3, h4, h5, h6 {
-  font-family: "Cormorant", Arial, Helvetica, serif;
+.fw-700{
+	font-weight: 700;
+}
+.fs-18{
+	font-size: 18px
+}
+body, p,h1, h2, h3, h4, h5, h6, a {
+  font-family: "Cormorant", Arial, Helvetica, serif!important;
   color: #000; 
+}
+span.current, .instructor-form .form-group input, .form-group textarea,.select2-container--default .select2-selection--single .select2-selection__rendered{
+  font-family: "Cormorant", Arial, Helvetica, serif!important;
+	font-size: 18px!important;
 }
