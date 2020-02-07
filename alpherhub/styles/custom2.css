@@ -1,0 +1,317 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input {
+    font-family: HCo Gotham Rounded SSm, sans-serif!important
+}
+h4{
+    font-weight: 400!important;
+    font-size: 16px!important;
+}
+.uk-button.course-badge{
+    font-size: 12px!important;
+    font-weight: 400!important;
+        padding: 5px 7px;
+}
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(fonts/GothamRndSSm-Light_Web.otf) format('truetype'), url(fonts/GothamRndSSm-Light_Web.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(fonts/GothamRndSSm-Book_Web.otf) format('truetype'), url(fonts/GothamRndSSm-Book_Web.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(fonts/GothamRndSSm-Medium_Web.otf) format('truetype'), url(fonts/GothamRndSSm-Medium_Web.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: hco gotham rounded ssm;
+    src: url(fonts/GothamRndSSm-Bold_Web.otf) format('truetype'), url(fonts/GothamRndSSm-Bold_Web.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block
+}
+a.primary-btn {
+    color: #fff;
+    background-color: #4582ff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+a.primary-btn:hover {
+    color: #fff;
+    background-color: #6e9bf7;
+    transition: .6s ease-out;
+    -webkit-transition: .6s ease-out;
+}
+.slider-content h1 {
+    font-size: 3.5em;
+ }
+.single-slider{
+ 	padding-top: 5px!important;
+    background-size: cover!important;
+ 	height: 100%
+ }
+ button.slick-arrow:hover {
+    background: #4582ff;
+}
+.course-content h5 a {
+    font-size: 16px;
+}
+.btn-sm{
+	padding: 7px 20px!important;
+	font-size: 12px!important;
+}
+section.banner{
+	height: 250px;
+	min-height: 150px;
+}
+.banner-title.text-center h1 {
+    font-size: 3.5em;
+}
+.banner-content{
+	padding-top: 5%;
+}
+.single-input .nice-select {
+    height: 50px;
+    border: 2px solid #F2F2F2;
+    padding-top: 11px;
+    width: 100%;
+    display: block;
+    padding-left: 25px;
+    padding-right: 40px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: #fff;
+}
+.nice-select .list{
+	top: 50%;
+}
+.hidden {
+	display: none;
+}
+.section-title-2 h2,.section-title h2,.success-content h2 {
+    font-size: 2em;
+}
+span.current{
+	font-size: 14px!important;
+}
+a{
+	font-weight: 500
+}
+button.slick-arrow{
+	left: -2%;
+	box-shadow: 1px 1px 10px 1px #999;
+}
+button.slick-arrow.slick-next{
+	right: -2%;
+}
+.latest-course-4 button.slick-arrow.slick-next{
+	right: -2%;
+}
+.latest-course-4 button.slick-prev{
+	left: -2%;
+}
+.form-control{
+	height: 50px;
+	font-size: 14px;
+}
+.mean-container .mean-bar, .mean-container .mean-bar *{
+    z-index: 2;
+}
+.lat-course-title{
+    min-height: 70px;
+}
+.fs-14{
+    font-size: 14px
+}
+.fs-16{
+    font-size: 16px
+}
+.mh-85{
+    min-height: 85px
+}
+footer {
+    background-color: #333;
+}
+.acc-sel .nice-select{
+    background: #333;
+    border: 0;
+}
+.acc-sel .nice-select .current{
+    color: #fff;
+}
+.form-group.single-input span{
+    left: 13%;
+    top: 2%;
+    color: #666;
+}
+.long-select .nice-select .list {
+    height: 200px;
+    overflow: scroll;
+}
+.tab-content>.tab-pane{
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.tab-content>.active{
+  height: auto;
+}
+.course-details-tab-menu ul.nav-tabs li a{
+    margin: 0 10px;
+}
+.single-lat-course {
+    margin-bottom: 25px;
+}
+.lat-course-img {
+    height: 190px;
+}
+.lat-course-img img {
+    height: 190px;
+    object-fit: cover;
+}
+.instructor-form .form-group input, .form-group textarea{
+    height: 50px;
+}
+.instructor-form .form-group span{
+    line-height: 50px;
+    right: 25px
+}
+.nice-select .option.selected {
+    font-weight: 400; 
+    font-size: 14px;
+}
+.nice-select .option {
+    font-size: 14px;
+}
+.nice-select.open .list{
+    width: 80%;
+    margin-left: 10%;
+}
+.nice-select .option{
+    line-height: 30px
+}
+.become-instructor-wrapper{
+    min-height: 600px;
+}
+@media (max-width: 1199.98px) and (min-width: 992px){}
+    nav ul li {
+        margin: 0px 5px;
+    }
+}
+.modal-content {
+    margin-top: 10%!important;
+}
+.single-slider:before{
+    opacity: 0;
+}
+.alpher1{
+    margin-left: 3%;
+    margin-top: 56%;
+    margin-bottom: 2%;
+}
+.forms li {
+  position: relative;
+}
+.show-password-link {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  font-size: 16px;
+  color: #fead33;
+}
+.password-showing {
+  z-index: 10;
+}  
+.course-tag.share{
+    top: 75%!important;
+    left: 83%!important;
+    font-size: 16px!important;
+}
+.footer-link a.whatsapp {
+    background: #2dc14f;
+}
+.footer-link a.whatsapp:hover {
+    background-color: #fff;
+    color: #2dc14f;
+}
+.modal-open .modal{
+    margin-top: 70px!important;
+}
+.success-img .slick-list .slick-track img{
+    height: auto!important;
+}
+.success-img .slick-arrow{
+    top: 50%!important;
+}
+button.slick-arrow.main.slick-next{
+    right: 1%!important;
+}
+button.slick-arrow.main.slick-prev{
+    left: 1%!important;
+}
+@media (min-width: 1200px) and (max-width:1500px) {
+    .slick-track{
+        height: 500px;
+    }
+    .d-slick div div div div{
+        height: auto!important;
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 70vw;
+    }
+    .alpher1 {
+        margin-left: -17%;
+    }
+}
+@media (max-width: 767.98px) {
+    .single-slider{
+        background-size: contain!important;
+        background-repeat: no-repeat;
+        background-position-y: 0!important;
+     } 
+    .slick-list{
+        height: 41vw;
+     }  
+    .alpher1 {
+        margin-left: -23%;
+        margin-top: 30vw;
+        padding: 2vw;
+    }
+    .course-slider.custom-row .slick-list{
+        height: 55vh!important;
+    }
+    .latest-course-4.custom-row .slick-list{
+        height: 70vh!important;
+    }
+    .latest-course-4.home2 .slick-list{
+        height: 55vh!important;
+    }
+    .single-input.acc-sel,.col-9.mx-auto.form-group.mb-3{
+        max-width: 100%;
+    }
+}

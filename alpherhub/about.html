@@ -15,10 +15,6 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles/bootstrap.css" />
-    <link rel="stylesheet" href="styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="styles/custom2.css" />
-    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/custom.css" />
 
@@ -146,55 +142,35 @@
     </header>
     <!-- /Header -->
 
-    <section class="contact-me contact-version-one" style="background: url(images/login.jpg);background-position-y:center;background-size: cover; min-height: 100vh;background-position-x: center;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-lg-5 mt-5">
-                    <div class="widget-sidebar contact-me">
-                        <div class="widget-header">
-                            <h4 class="bg-white text-dark">Login</h4>
-                        </div>
-                        <div class="widget-content">
-                            <div class="py-4">
-                                <div class="col-12 mx-auto form-group mb-3">
-                                    <button type="submit" class="btn btn-primary w-100 fs-14" style="height: 50px"><i class="fab fa-google"></i> SIGN UP USING GOOGLE ACCOUNT</button>
-                                </div>
-
-                                <div class="col-8 mx-auto form-group text-center">
-                                    <p class="text-white font-weight-bold">OR</p>
-                                </div>
+    <section class="large-gap about-me about-version-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="widget-sidebar about-me">
+                    <div class="widget-header">
+                        <h4>About Me</h4>
+                    </div>
+                    <div class="widget-content">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="images/abt1.png" alt="">
                             </div>
-                            <div class="contact-form">
-                                <form action="#" class="instructor-form pt-0">
-                                <div class="col-12 form-group">
-                                    <label for="email" class="sr-only">Your Email Address</label>
-                                    <input type="email" id="email" name="email" placeholder="Your Email Address">
-                                    <span><i class="far fa-envelope-open"></i></span>
-                                </div>
-                                <div class="col-12 form-group">
-                                    <label for="phoneNumber" class="sr-only">Your Password</label>
-                                    <input type="password" id="password" name="password" placeholder="Your Password">
-                                    <!-- <span><i class="fas fa-lock"></i></span> -->
-                                </div>
-                                <div class="col-12 form-group">
-                                    <p class="text-white" style="font-weight: 600;text-align: right;"><a href="forgot.html" class="text-white">Forgot Password?</a></p>
-                                </div>
-                                <div class="col-12 form-group mb-0 text-center">
-                                    <button type="submit" class="submit-btn w-100">Login</button>
-                                </div>
-                                <div class="col-12 form-group">
-                                    <p class="text-dark text-center py-2 my-3" style="font-weight: 600;font-size: 16px; background: white; border-radius: 5">New Member? <a href="register.html" class="text-primary">Register</a></p>
-                                </div>
-                            </form>
+                            <div class="col-lg-8">
+                                <p>We recognize how important you are and are excited that you are joining a league of women with great power and ample opportunities for growth.</p>
+
+                                <p>αlpher was created to enable women to be the best versions of themselves. We aim to help women on their respective journeys of greatness whether your aim is to start or expand your business, meet new people, build new partnerships or develop capacity for growth; αlpher is here to enable your success.</p>
+
+                                <p>As an organisation committed to gender parity and the development of women and girls, Union Bank is positioned to deliver tailored services to support the growth of women and female-owned business.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="mt-0">
+    <footer class="mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -231,37 +207,6 @@
     <script src="scripts/vendors/jquery.appear.js"></script>
     <script src="scripts/vendors/jquery.countTo.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/jquery.showPassword.js"></script>
-    <script>
-    $(document).ready(function() {
-      $(':password').showPassword({
-        linkRightOffset: 5,
-        linkTopOffset: 11
-      });
-    });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('[data-search]').on('keyup', function() {
-                var searchVal = $(this).val();
-                var filterItems = $('[data-filter-item]');
-
-                if ( searchVal != '' ) {
-                    filterItems.hide();
-                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').show();
-                } else {
-                    filterItems.show();
-                }
-            });
-
-            $('#CourseSelect2').change(function () {
-                $('.group').hide();
-                $('.'+$(this).val()).show();
-              })
-
-            
-        });
-    </script>
 
 </body>
 
