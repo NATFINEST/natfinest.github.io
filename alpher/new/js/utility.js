@@ -146,7 +146,7 @@ $(document).ready(function () {
             $('.hide_upload').show('slow');
             $('.text_upload').hide('slow');
             // var myDropzone = new Dropzone("#my-awesome-dropzone", { url: "/file/post"});
-            $('.dropzone').get(0).dropzone.hiddenFileInput.click();
+            // $('.dropzone').get(0).dropzone.hiddenFileInput.click();
         })
     }
     // bar chart if element exists

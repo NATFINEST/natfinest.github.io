@@ -23,6 +23,7 @@ if ($('.modal-uploader').length) {
     var modalUploader = new Dropzone(document.body, { // Make the whole body a dropzone
         url: "https://jsonplaceholder.typicode.com/todos/", // Set the url
         thumbnailWidth: 800,
+        acceptedFiles: "image/jpeg,image/png,image/gif",
         thumbnailHeight: 600,
         parallelUploads: 20,
         previewTemplate: previewTemplate,
@@ -32,12 +33,14 @@ if ($('.modal-uploader').length) {
         clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
     });
 
-    $("#d-sub").on("click", function(e) {
+    var arr = [];
+
+    $("#d-sub").on("click", function(e,files) {
         // Make sure that the form isn't actually being sent.
         e.preventDefault();
         e.stopPropagation();
         var up_file = modalUploader.files
-        // console.log(modalUploader)
+        // console.log(arr)
         if (modalUploader.files != "") {
 
             $.ajax({
@@ -82,7 +85,8 @@ if ($('.modal-uploader').length) {
         // Hookup the start button
         file.previewElement.querySelector(".start").onclick = function() { modalUploader.enqueueFile(file); };
         //Set the new file count
-        $('#modal-uploader-file-count').html(count);    });
+        $('#modal-uploader-file-count').html(count);   
+    });
 
     modalUploader.on("removedfile", function(file) {
         //Get the file count
@@ -116,6 +120,7 @@ if ($('.modal-uploader').length) {
     };
     document.querySelector("#actions .cancel").onclick = function() {
         modalUploader.removeAllFiles(true);
+        arr = [];
     };
 
     
@@ -133,6 +138,7 @@ if ($('.modal-uploader').length) {
         for (var i = 0; i < files.length; i++) {
 
             var file = files[i];
+            arr.push(file);
             var totalSteps = Math.round(Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep)));
 
             for (var step = 0; step < totalSteps; step++) {
@@ -144,6 +150,7 @@ if ($('.modal-uploader').length) {
                             total: file.size,
                             bytesSent: (step + 1) * file.size / totalSteps
                         };
+
 
                         self.emit('uploadprogress', file, file.upload.progress, file.upload.bytesSent);
                         if (file.upload.progress == 100) {
@@ -157,6 +164,7 @@ if ($('.modal-uploader').length) {
             }
         }
     }
+
 
 }
 
