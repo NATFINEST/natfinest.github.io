@@ -30,17 +30,7 @@
 
 <body>
 
-    <div id="js-preloader" class="js-preloader">
-        <div class="cp-preloader cp-preloader_type1">
-            <span class="cp-preloader__letter" data-preloader="L">L</span>
-            <span class="cp-preloader__letter" data-preloader="O">O</span>
-            <span class="cp-preloader__letter" data-preloader="A">A</span>
-            <span class="cp-preloader__letter" data-preloader="D">D</span>
-            <span class="cp-preloader__letter" data-preloader="I">I</span>
-            <span class="cp-preloader__letter" data-preloader="N">N</span>
-            <span class="cp-preloader__letter" data-preloader="G">G</span>
-        </div>
-    </div>
+    <div id="js-preloader" class="js-preloader"></div>
 
     <!-- Mobile Menu -->
     <div class="mobile-nav-wrapper">
@@ -151,9 +141,9 @@
     <!-- /Header -->
 
     <section class="contact-me contact-version-one" style="background: url(images/login.jpg);background-position-y:center;background-size: cover; min-height: 100vh;background-position-x: center;">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 col-lg-6 mt-5">
+                <div class="col-md-8 col-lg-6 col-sm-8 mt-5">
                     <div class="widget-sidebar contact-me">
                         <div class="widget-header">
                             <h4 class="bg-white text-dark">Register</h4>
@@ -162,7 +152,10 @@
 
                             <div class="py-4">
                                 <div class="col-9 mx-auto form-group mb-3">
-                                    <button type="submit" class="btn btn-primary w-100 fs-16 fw-700" style="height: 50px"><i class="fab fa-google"></i> SIGN UP USING GOOGLE ACCOUNT</button>
+                                    <button type="submit" class="btn btn-primary w-100 fs-16 fw-700" style="height: 50px">
+                                        <i class="fab fa-google"></i> 
+                                        <span class="google-text">GOOGLE SIGN UP</span>
+                                    </button>
                                 </div>
 
                                 <div class="col-8 mx-auto form-group text-center">
