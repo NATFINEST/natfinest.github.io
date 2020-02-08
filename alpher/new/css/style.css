@@ -39,6 +39,10 @@ body {
     background-color: #009fe3!important;
 }
 
+.comment-send{
+    height: calc(1.5em + .75rem + 2px);
+}
+
 .btn-info {
     color: #fff;
     background-color: #009fe3;

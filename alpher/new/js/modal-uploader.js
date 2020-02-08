@@ -37,7 +37,7 @@ if ($('.modal-uploader').length) {
         e.preventDefault();
         e.stopPropagation();
         var up_file = modalUploader.files
-        
+        // console.log(modalUploader)
         if (modalUploader.files != "") {
 
             $.ajax({
@@ -82,8 +82,7 @@ if ($('.modal-uploader').length) {
         // Hookup the start button
         file.previewElement.querySelector(".start").onclick = function() { modalUploader.enqueueFile(file); };
         //Set the new file count
-        $('#modal-uploader-file-count').html(count);
-    });
+        $('#modal-uploader-file-count').html(count);    });
 
     modalUploader.on("removedfile", function(file) {
         //Get the file count
