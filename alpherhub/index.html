@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/custom.css" />
 
@@ -430,10 +430,27 @@
         </div>
     </footer>
 
+    <!-- Adverts -->
+    <div class="modal fade" id="ad" tabindex="-1" role="dialog" aria-labelledby="adLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: transparent;border: 0">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 3em;padding: 0;color: #fff;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                <div class="modal-body p-0">
+                    <img src="images/login.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- Scripts -->
     <script src="scripts/vendors/jquery-3.4.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/vendors/jquery.hoverIntent.min.js"></script>
     <script src="scripts/vendors/perfect-scrollbar.min.js"></script>
     <script src="scripts/vendors/jquery.easing.min.js"></script>
@@ -446,7 +463,12 @@
     <script src="scripts/vendors/jquery.appear.js"></script>
     <script src="scripts/vendors/jquery.countTo.js"></script>
     <script src="scripts/main.js"></script>
-  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load',function(){
+                $('#ad').modal('show');
+            });
+    </script>
 
 </body>
 
