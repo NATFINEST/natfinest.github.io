@@ -127,12 +127,20 @@ span.current, .instructor-form .form-group input, .form-group textarea,.select2-
 	background-position: center;
   background-size: 50%;
 }
+.footer .copyright-text p a{
+  text-transform: none!important;
+  font-size: 20px!important;
+}
 section.above-header{
   padding: 20px 0px;
 }
 .main-banner{
   margin-top: 0;
 }
+.nice-select:after{
+  right: 35px;
+}
+
 @media (max-width: 400px) {
 	.contact-me .widget-sidebar{
 		padding: 15px 5px!important;
