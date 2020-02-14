@@ -140,7 +140,12 @@ section.above-header{
 .nice-select:after{
   right: 35px;
 }
-
+.header-logo img{
+  height: 67px!important;
+}
+.site-header.fixed-header{
+  height: 115px!important;
+}
 @media (max-width: 400px) {
 	.contact-me .widget-sidebar{
 		padding: 15px 5px!important;
