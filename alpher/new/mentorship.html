@@ -231,10 +231,38 @@
 
 
                 <div class="">
-                    <h5 class="el-title my-3"> Mentors</h5>
+                    <div class="row my-3">
+                        <h3 class="el-title uk-margin-medium-top col-lg-4 col-md-6 ">Mentors</h3>
+                        <div class="col-lg-4 col-md-6 ml-auto uk-margin-medium-top">
+                            <select class="custom-select custom-select-sm" id="CourseSelect2">
+                                <option value="all">All</option>
+                                <option value="agriculture">Agriculture (Agri-business, Farming, etc.) </option>
+                                <option value="commercial">Commercial/Retail</option>
+                                <option value="construction">Construction</option>
+                                <option value="education">Education</option>
+                                <option value="fashion">Fashion</option>
+                                <option value="creative">Creative industry (literary, visual and performing arts etc)</option>
+                                <option value="fitness">Fitness, Health and Wellne</option>
+                                <option value="hair">Hair and skincare</option>
+                                <option value="aviation">Aviation</option>
+                                <option value="energy">Energy/Power Generation </option>
+                                <option value="financial">Financial Services </option>
+                                <option value="fmcg">FMCG</option>
+                                <option value="logistics">Logistics</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="technology">Technology</option>
+                                <option value="waste">Waste Management/Recycling solution</option>
+                                <option value="tourism">Tourism/Hospitality</option>
+                                <option value="consulting">Consulting/ Professional Services</option>
+                                <option value="oil">Oil & Gas, Petroleum products</option>
+                                <option value="media">Media & Entertainment</option>
+                                <option value="manufacturing">Manufacturing</option>
+                            </select>
+                        </div>
+                    </div>
 
                     <div class="row">
-                        <div class="col-sm-4 col-md-3 mb-3">
+                        <div class="col-sm-4 col-md-3 mb-3 group all agriculture">
                             <div class="card card-default card-small">
                                 <div class="card-media-top">
                                     <img src="images/chioma.jpg" alt="" class="promote-img">
@@ -243,7 +271,7 @@
                                     <h6 class="card-title">CHIOMA IFEANYI-EZE</h6>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Request Mentor</a>
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2 requestModal" data-toggle="modal" data-target="#RequestMentor" data-mentor="CHIOMA IFEANYI-EZE">Request Mentor</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal1">
                                         View Bio
@@ -279,7 +307,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-3 mb-3">
+                        <div class="col-sm-4 col-md-3 mb-3 group all commercial">
                             <div class="card card-default card-small">
                                 <div class="card-media-top">
                                     <img src="images/just.jpg" alt="" class="promote-img">
@@ -288,7 +316,7 @@
                                     <h6 class="card-title">JUST IBE</h6>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Request Mentor</a>
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2 requestModal" data-toggle="modal" data-target="#RequestMentor" data-mentor="JUST IBE">Request Mentor</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal2">
                                         View Bio
@@ -324,7 +352,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-3 mb-3">
+                        <div class="col-sm-4 col-md-3 mb-3 group all construction">
                             <div class="card card-default card-small">
                                 <div class="card-media-top">
                                     <img src="images/edache.jpg" alt="" class="promote-img">
@@ -333,7 +361,7 @@
                                     <h6 class="card-title">EDACHE OBE</h6>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Request Mentor</a>
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2 requestModal" data-toggle="modal" data-target="#RequestMentor" data-mentor="EDACHE OBE">Request Mentor</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal3">
                                         View Bio
@@ -368,7 +396,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-3 mb-3">
+                        <div class="col-sm-4 col-md-3 mb-3 group all education">
                             <div class="card card-default card-small">
                                 <div class="card-media-top">
                                     <img src="images/glory.jpg" alt="" class="promote-img">
@@ -377,7 +405,7 @@
                                     <h6 class="card-title">GLORY EDOZIEN</h6>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Request Mentor</a>
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2 requestModal" data-toggle="modal" data-target="#RequestMentor" data-mentor="GLORY EDOZIEN">Request Mentor</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal4">
                                         View Bio
@@ -421,7 +449,32 @@
         <!-- Start of itdacademy Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
         <!-- End of itdacademy Zendesk Widget script -->
-<!-- Modal -->
+
+        <!-- Request a mentor -->
+        <div class="modal fade" id="RequestMentor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="desc fs-16">Reason for Request:</div>
+                        <form class="requestForm w-100">
+                            <input type="hidden" name="mentor" value="" id="mentor">
+                            <textarea class="w-100 my-2 p-2" name="reason" placeholder="Write a brief paragraph on why you think the mentor is the right fit for you" style="border: 1px solid #ccc;border-radius: 5px;" rows="5"></textarea>
+                            <div class="text-center my-2">
+                                <button class="btn btn-primary">Send Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
         <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

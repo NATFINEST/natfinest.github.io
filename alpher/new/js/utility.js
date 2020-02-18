@@ -25,13 +25,21 @@ $(document).ready(function () {
     });
 
     $(function () {
-            $(".openModal").click(function () {
-                var desc = $(this).data('desc');
-                var title = $(this).data('title');
-                $(".modal-body .desc").html(desc);
-                $(".modal-title").html(title);
-            })
-        });
+        $(".openModal").click(function () {
+            var desc = $(this).data('desc');
+            var title = $(this).data('title');
+            $(".modal-body .desc").html(desc);
+            $(".modal-title").html(title);
+        })
+    });
+
+    $(function () {
+        $(".requestModal").click(function () {
+            var title = $(this).data('mentor');
+            $('#mentor').val(title);
+            $(".modal-title").html(title);
+        })
+    });
 
     var color = "20A354"
     document.documentElement.style.setProperty('--theme-color', `#${color}`);
