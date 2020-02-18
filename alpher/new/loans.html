@@ -12,6 +12,8 @@
 
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/nice-select.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
 
@@ -244,7 +246,7 @@
                                     <p>The Unionplus loan is designed for salaried customers. Customers can access up to 15 million Naira and can pay back for up to 60 months.</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Apply Now!</a>
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2 loanModal" data-toggle="modal" data-target="#loanModal" data-loan="Unionplus">Apply Now!</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal1">
                                         About Loan
@@ -286,7 +288,7 @@
                                     <p>The Unionflexi loan is designed for salaried customers. Customers can access up to 50 million Naira and can pay back for up to 60 months.</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Apply Now!</a>
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2 loanModal" data-toggle="modal" data-target="#loanModal" data-loan="Unionflexi">Apply Now!</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal2">
                                         About Loan
@@ -327,7 +329,7 @@
                                     <p>The Payadvance loan is designed for salaried customers. Customers can access up to 50% of their monthly salary and can pay back for up to 12 months.</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Apply Now!</a>
+                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2 loanModal" data-toggle="modal" data-target="#loanModal" data-loan="Payadvance">Apply Now!</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal3">
                                         About Loan
@@ -367,7 +369,8 @@
         <!-- Start of itdacademy Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
         <!-- End of itdacademy Zendesk Widget script -->
-<!-- Modal -->
+        
+        <!-- Modal -->
         <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -449,6 +452,96 @@
             </div>
         </div>
 
+        <!-- Loan Request Modal -->
+        <div class="modal fade" id="loanModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Apply for loan</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <input type="hidden" name="loan">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">BVN</label>
+                                    <input type="text" class="form-control mb-1" id="BVN" name="BVN" placeholder="Your BVN" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Estimated loan amount</label>
+                                    <input type="text" class="form-control mb-1" id="email" name="email" placeholder="Estimated loan amount" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="purpose" class="text-grey small">Purpose of loan</label>
+                                    <input type="text" class="form-control mb-1" id="purpose" name="purpose" placeholder="Purpose of loan" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="tenor" class="text-grey small">Loan tenor</label>
+                                    <input type="text" class="form-control mb-1" id="tenor" name="tenor" placeholder="Loan tenor" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="address" class="text-grey small">Residnetial address</label>
+                                    <input type="text" class="form-control mb-1" id="address" name="address" placeholder="Residnetial address" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">State</label>
+                                    <input type="text" class="form-control mb-1" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="col-9 mx-auto single-input mb-3 acc-sel">
+                                <select name="acctype" id="quest" class="form-control">
+                                    <option selected="true" disabled="disabled">Do you have a Union Bank account?</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="">No</option>
+                                </select>
+                            </div>
+
+                            <div class="row bus group">
+                                <div class="col-12 col-md-12 form-group single-input">
+                                    <select name="quest1" class="form-control mb-1" id="quest1" style="display: none;">
+                                        <option selected="true" disabled="disabled">Select account type</option>
+                                        <option value="Business account">Business account</option>
+                                        <option value="Personal account?">Personal account</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-12 form-group">
+                                    <label for="accno" class="sr-only">Account Number</label>
+                                    <input type="text" class="form-control mb-1" id="accno" name="accno" placeholder="Your Account Number">
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="js/jquery.min.js"></script>
         <!-- Popper.JS -->
@@ -458,6 +551,32 @@
         <script src="js/chart.js/dist/Chart.min.js"></script>
         <script src="js/utility.js"></script>
         <script src="js/intlTelInput.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script type="text/javascript">
+            $('.bus').hide();
+            $('#quest').change(function () {
+                if($(this).val() == 'yes'){
+                    $('.bus').show();
+                }
+                else{
+                    $('.bus').hide();
+                }
+            })
+            $('select#quest').niceSelect();
+            $('select#quest1').niceSelect();
+            $('select#quest2').niceSelect();
+            var input1 = document.querySelector(".phone");
+            window.intlTelInput(input1, {
+              preferredCountries: ['ng'],
+              utilsScript: "scripts/utils.js",
+            });
+            var input2 = document.querySelector(".phones");
+            window.intlTelInput(input2, {
+              preferredCountries: ['ng'],
+              utilsScript: "scripts/utils.js",
+            });
+        </script>
 
     </body>
 
