@@ -41,6 +41,13 @@ $(document).ready(function () {
         })
     });
 
+    $(function () {
+        $(".loanModal").click(function () {
+            var title = $(this).data('loan');
+            $('#loan').val(title);
+        })
+    });
+
     var color = "20A354"
     document.documentElement.style.setProperty('--theme-color', `#${color}`);
     console.log('set')

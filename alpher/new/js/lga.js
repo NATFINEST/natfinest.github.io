@@ -25,9 +25,9 @@
             $('.bus').hide();
         }
     })
-    $('select#quest').niceSelect();
-    $('select#quest1').niceSelect();
-    $('select#quest2').niceSelect();
+    $('select#quest').select2();
+    $('select#quest1').select2();
+    $('select#quest2').select2();
     var input1 = document.querySelector(".phone");
     window.intlTelInput(input1, {
       preferredCountries: ['ng'],
