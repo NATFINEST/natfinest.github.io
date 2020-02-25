@@ -490,7 +490,7 @@ $(document).ready(function() {
                     + minutes + " " + ampm
 
         //Check if chat has already been itialized with a selected user
-        if($('#convo'+id).length == 0){
+        if($('#'+id).length == 0){
 
                 $(".chat_history").append('\
                                         <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
@@ -519,7 +519,60 @@ $(document).ready(function() {
                                         </div>');
         }else{
             $('.message_detail#'+id).addClass('active_message');
-            $('#convo'+id).show();
+            $('.timeline-wrapper').show();
+            $.ajax({
+                url: 'http://dummy.restapiexample.com/api/v1/employees',
+                dataType: 'json',
+                type: 'get',
+                contentType: 'application/json',
+                param: '{}',
+                async: true,
+                success: function( data, textStatus, jQxhr ){
+                    $(".chat_history").html('\
+                                                    <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
+                                                        <div class="d-flex border-bottom height--50p">\
+                                                            <div class="col">\
+                                                                <p class="mb-0 text-dark">Louis <img src="img/'+status+'.svg" /></p>\
+                                                                <p class="small mb-0 text-grey font-weight-light">'+lastSeen+'</p>\
+                                                            </div>\
+                                                        </div>\
+                                                        <div class="px-3 mt-2">\
+                                                            <div class="row py-2 border-bottom">\
+                                                                <div class="col-lg-2 text-md-center">\
+                                                                    <img src="img/'+img+'" class="img-fluid" alt="user name" />\
+                                                                </div>\
+                                                                <div class="col-lg-9 pl-lg-0">\
+                                                                    <div class="row">\
+                                                                        <div class="col">\
+                                                                            <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
+                                                                        </div>\
+                                                                    </div>\
+                                                                    <p class="text-muted font-13 mb-1">'+job+'</p>\
+                                                                </div>\
+                                                            </div>\
+                                                            <div class="chat-wrapper">\
+                                                                <div class="row py-2 sent">\
+                                                                    <div class="col-lg-12 pl-lg-2">\
+                                                                        <div class="row chat-time">\
+                                                                            <div class="text-right">\
+                                                                                <div class="text-dim font-weight-light mb-0 message_time chat-time">1:35 pm</div>\
+                                                                            </div>\
+                                                                        </div>\
+                                                                        <p class="text-muted font-13 mb-1">sdds</p>\
+                                                                    </div>\
+                                                                </div>\
+                                                            </div>\
+                                                        </div>\
+                                                    </div>');
+                    $('#convo'+id).show();
+                    $('.timeline-wrapper').hide();
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                }
+            });
+
+            // $('#convo'+id).show();
         }
     });
 
@@ -551,7 +604,7 @@ $(document).ready(function() {
 
                 if($('#'+id).length == 0){
                     $(".chat-sidebar").append('\
-                                                <div class="backgrond-muted message_detail cursor active_message" id="'+id+'">\
+                                                <div class="backgrond-muted message_detail cursor active_message" id="'+id+'" data-full-name="'+name+'" data-status="'+status+'" data-demo-src="'+img+'" data-id="'+id+'" data-job="'+job+'" data-last-seen="'+lastSeen+'">\
                                                     <div class="px-3 position-relative">\
                                                         <div class="row py-2 border-bottom">\
                                                             <div class="col-lg-3 col-3 text-center ">\
@@ -615,7 +668,7 @@ $(document).ready(function() {
                                     </div>');
 
             $.ajax({
-                url: 'https://jsonplaceholder.typicode.com/todos/',
+                url: 'http://dummy.restapiexample.com/api/v1/create',
                 dataType: 'json',
                 type: 'post',
                 contentType: 'application/json',
@@ -629,6 +682,9 @@ $(document).ready(function() {
                 }
             });
             $('#chat-text').val('');
+                    $('.chat-wrapper').animate({
+                        scrollTop: $(this).offset().top
+                    }, 1500);
         }
     })
     $('#start-conversation').click(function(){
@@ -636,13 +692,81 @@ $(document).ready(function() {
         $('.chat-conversation').hide();
         // $('#convo'+id).hide();
     })
+
+    if($('.message_detail').length > 0){
+        $('#nomessage').hide();
+    }
+
+
     $(document).on('click', '.message_detail', function () {
-        var id = $(this).attr('id');
-        $('.message_detail').removeClass('active_message');
-        $(this).addClass('active_message');
+        id = $(this).attr('id');
+        name = $(this).data('fullName');
+        status = $(this).data('status');
+        img = $(this).data('demoSrc');
+        lastSeen = $(this).data('lastSeen');
+        job = $(this).data('job');
+        id = $(this).data('id');
         $('.new_message').hide();
         $('.chat-conversation').hide();
-        $('#convo'+id).show();
+        $('.timeline-wrapper').show();
+        $.ajax({
+            url: 'http://dummy.restapiexample.com/api/v1/employees',
+            dataType: 'json',
+            type: 'get',
+            contentType: 'application/json',
+            param: '{}',
+            async: true,
+            success: function( data, textStatus, jQxhr ){
+                $('#response pre').html( JSON.stringify( data ) );
+
+                $('.message_detail').removeClass('active_message');
+                $('.new_message').hide();
+                $('.chat-conversation').hide();
+                $(".chat_history").html('\
+                                                <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
+                                                    <div class="d-flex border-bottom height--50p">\
+                                                        <div class="col">\
+                                                            <p class="mb-0 text-dark">Louis <img src="img/'+status+'.svg" /></p>\
+                                                            <p class="small mb-0 text-grey font-weight-light">'+lastSeen+'</p>\
+                                                        </div>\
+                                                    </div>\
+                                                    <div class="px-3 mt-2">\
+                                                        <div class="row py-2 border-bottom">\
+                                                            <div class="col-lg-2 text-md-center">\
+                                                                <img src="img/'+img+'" class="img-fluid" alt="user name" />\
+                                                            </div>\
+                                                            <div class="col-lg-9 pl-lg-0">\
+                                                                <div class="row">\
+                                                                    <div class="col">\
+                                                                        <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
+                                                                    </div>\
+                                                                </div>\
+                                                                <p class="text-muted font-13 mb-1">'+job+'</p>\
+                                                            </div>\
+                                                        </div>\
+                                                        <div class="chat-wrapper">\
+                                                            <div class="row py-2 sent">\
+                                                                <div class="col-lg-12 pl-lg-2">\
+                                                                    <div class="row chat-time">\
+                                                                        <div class="text-right">\
+                                                                            <div class="text-dim font-weight-light mb-0 message_time chat-time">1:35 pm</div>\
+                                                                        </div>\
+                                                                    </div>\
+                                                                    <p class="text-muted font-13 mb-1">sdds</p>\
+                                                                </div>\
+                                                            </div>\
+                                                        </div>\
+                                                    </div>\
+                                                </div>');
+                $('#convo'+id).show();
+                $('.timeline-wrapper').hide();
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+                console.log( errorThrown );
+            }
+        });
+        $(this).addClass('active_message');
+
     })
 });
 
