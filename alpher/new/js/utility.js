@@ -521,7 +521,7 @@ $(document).ready(function() {
             $('.message_detail#'+id).addClass('active_message');
             $('.timeline-wrapper').show();
             $.ajax({
-                url: 'http://dummy.restapiexample.com/api/v1/employees',
+                url: 'https://reqres.in/api/users',
                 dataType: 'json',
                 type: 'get',
                 contentType: 'application/json',
@@ -668,7 +668,7 @@ $(document).ready(function() {
                                     </div>');
 
             $.ajax({
-                url: 'http://dummy.restapiexample.com/api/v1/create',
+                url: 'https://reqres.in/api/users',
                 dataType: 'json',
                 type: 'post',
                 contentType: 'application/json',
@@ -710,7 +710,7 @@ $(document).ready(function() {
         $('.chat-conversation').hide();
         $('.timeline-wrapper').show();
         $.ajax({
-            url: 'http://dummy.restapiexample.com/api/v1/employees',
+            url: 'https://reqres.in/api/users',
             dataType: 'json',
             type: 'get',
             contentType: 'application/json',
