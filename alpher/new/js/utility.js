@@ -686,7 +686,8 @@ $(document).ready(function() {
                         scrollTop: $(this).offset().top
                     }, 1500);
         }
-    })
+    });
+
     $('#start-conversation').click(function(){
         $('.new_message').show();
         $('.chat-conversation').hide();
