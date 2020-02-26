@@ -529,41 +529,44 @@ $(document).ready(function() {
                 async: true,
                 success: function( data, textStatus, jQxhr ){
                     $(".chat_history").html('\
-                                                    <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
-                                                        <div class="d-flex border-bottom height--50p">\
-                                                            <div class="col">\
-                                                                <p class="mb-0 text-dark">Louis <img src="img/'+status+'.svg" /></p>\
-                                                                <p class="small mb-0 text-grey font-weight-light">'+lastSeen+'</p>\
+                                                <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
+                                                    <div class="d-flex border-bottom height--50p">\
+                                                        <div class="col">\
+                                                            <p class="mb-0 text-dark">Louis <img src="img/'+status+'.svg" /></p>\
+                                                            <p class="small mb-0 text-grey font-weight-light">'+lastSeen+'</p>\
+                                                        </div>\
+                                                    </div>\
+                                                    <div class="px-3 mt-2">\
+                                                        <div class="row py-2 border-bottom">\
+                                                            <div class="col-lg-2 text-md-center">\
+                                                                <img src="img/'+img+'" class="img-fluid" alt="user name" />\
+                                                            </div>\
+                                                            <div class="col-lg-9 pl-lg-0">\
+                                                                <div class="row">\
+                                                                    <div class="col">\
+                                                                        <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
+                                                                    </div>\
+                                                                </div>\
+                                                                <p class="text-muted font-13 mb-1">'+job+'</p>\
                                                             </div>\
                                                         </div>\
-                                                        <div class="px-3 mt-2">\
-                                                            <div class="row py-2 border-bottom">\
-                                                                <div class="col-lg-2 text-md-center">\
-                                                                    <img src="img/'+img+'" class="img-fluid" alt="user name" />\
-                                                                </div>\
-                                                                <div class="col-lg-9 pl-lg-0">\
-                                                                    <div class="row">\
-                                                                        <div class="col">\
-                                                                            <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
-                                                                        </div>\
-                                                                    </div>\
-                                                                    <p class="text-muted font-13 mb-1">'+job+'</p>\
-                                                                </div>\
-                                                            </div>\
-                                                            <div class="chat-wrapper">\
+                                                    </div>\
+                                                    <div class="chat-wrapper"></div>\
+                                                </div>');
+                                                $.each(data.data, function(index, item) {
+                                                    $(".chat-wrapper").append('\
                                                                 <div class="row py-2 sent">\
                                                                     <div class="col-lg-12 pl-lg-2">\
                                                                         <div class="row chat-time">\
                                                                             <div class="text-right">\
-                                                                                <div class="text-dim font-weight-light mb-0 message_time chat-time">1:35 pm</div>\
+                                                                                <div class="text-dim font-weight-light mb-0 message_time chat-time">'+item.id+' pm</div>\
                                                                             </div>\
                                                                         </div>\
-                                                                        <p class="text-muted font-13 mb-1">sdds</p>\
+                                                                        <p class="text-muted font-13 mb-1">'+item.email+'</p>\
                                                                     </div>\
                                                                 </div>\
-                                                            </div>\
-                                                        </div>\
-                                                    </div>');
+                                                        ');
+                                                });
                     $('#convo'+id).show();
                     $('.timeline-wrapper').hide();
                 },
@@ -622,10 +625,6 @@ $(document).ready(function() {
                                                                 <p class="text-muted font-13 mb-1">'+chat+'</p>\
                                                             </div>\
                                                         </div>\
-                                                        <div class="question_info_1">\
-                                                            <img src="img/delete_dark.svg" class="position-absolute" style="right: 50px; top: 10px;" />\
-                                                            <img src="img/mail_dark.svg" class="position-absolute" style="right: 15px; top: 10px;" />\
-                                                        </div>\
                                                     </div>\
                                                 </div>');
                 }else{
@@ -646,10 +645,6 @@ $(document).ready(function() {
                                         </div>\
                                         <p class="text-muted font-13 mb-1">'+chat+'</p>\
                                     </div>\
-                                </div>\
-                                <div class="question_info_1">\
-                                    <img src="img/delete_dark.svg" class="position-absolute" style="right: 50px; top: 10px;" />\
-                                    <img src="img/mail_dark.svg" class="position-absolute" style="right: 15px; top: 10px;" />\
                                 </div>\
                             </div>');
                 }
@@ -718,6 +713,7 @@ $(document).ready(function() {
             param: '{}',
             async: true,
             success: function( data, textStatus, jQxhr ){
+                console.log(data);
                 $('#response pre').html( JSON.stringify( data ) );
 
                 $('.message_detail').removeClass('active_message');
@@ -745,20 +741,24 @@ $(document).ready(function() {
                                                                 <p class="text-muted font-13 mb-1">'+job+'</p>\
                                                             </div>\
                                                         </div>\
-                                                        <div class="chat-wrapper">\
-                                                            <div class="row py-2 sent">\
-                                                                <div class="col-lg-12 pl-lg-2">\
-                                                                    <div class="row chat-time">\
-                                                                        <div class="text-right">\
-                                                                            <div class="text-dim font-weight-light mb-0 message_time chat-time">1:35 pm</div>\
-                                                                        </div>\
-                                                                    </div>\
-                                                                    <p class="text-muted font-13 mb-1">sdds</p>\
-                                                                </div>\
-                                                            </div>\
-                                                        </div>\
                                                     </div>\
+                                                    <div class="chat-wrapper"></div>\
                                                 </div>');
+                                                $.each(data.data, function(index, item) {
+                                                    $(".chat-wrapper").append('\
+                                                                <div class="row py-2 sent">\
+                                                                    <div class="col-lg-12 pl-lg-2">\
+                                                                        <div class="row chat-time">\
+                                                                            <div class="text-right">\
+                                                                                <div class="text-dim font-weight-light mb-0 message_time chat-time">'+item.id+' pm</div>\
+                                                                            </div>\
+                                                                        </div>\
+                                                                        <p class="text-muted font-13 mb-1">'+item.email+'</p>\
+                                                                    </div>\
+                                                                </div>\
+                                                        ');
+                                                });
+
                 $('#convo'+id).show();
                 $('.timeline-wrapper').hide();
             },
