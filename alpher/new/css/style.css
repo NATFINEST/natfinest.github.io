@@ -46,20 +46,26 @@ body {
         display: none;
     }
 
-    .sent #delete {
+    .img-avatar{
+        width: 50px;
+        height: auto;
+    }
+
+    .sent #delete_chat {
         position: absolute;
         left: -850px;
         width: 50px;
         height: 44px;
-        background: red;
+        background: #F44336;
         padding: 10px;
         transition: .1s;
         color: #fff;
         font-size: 10px;
         display: block;
+        border-radius: 6px 0px 0px 6px;
     }
 
-    .sent .wrappers:hover #delete {
+    .sent .wrappers:hover #delete_chat {
         transition: .1s;
         left: 100px;
         top: 21px;
@@ -1151,6 +1157,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .course_videos, .question_info_1, .question_info_2 {
     display: none;
     cursor: pointer;
+    position: relative;
 }
 
 .question_detail:hover .question_info_1, .question_detail:hover .question_info_2 {

@@ -502,10 +502,10 @@ $(document).ready(function() {
                                             </div>\
                                             <div class="px-3 mt-2">\
                                                 <div class="row py-2 border-bottom">\
-                                                    <div class="col-lg-2 text-md-center">\
-                                                        <img src="img/'+img+'" class="img-fluid" alt="user name" />\
+                                                    <div class="col-2 text-md-center">\
+                                                        <img class="img-avatar" src="img/'+img+'" class="img-fluid" alt="user name" />\
                                                     </div>\
-                                                    <div class="col-lg-9 pl-lg-0">\
+                                                    <div class="col-9 pl-lg-0">\
                                                         <div class="row">\
                                                             <div class="col">\
                                                                 <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
@@ -538,10 +538,10 @@ $(document).ready(function() {
                                                     </div>\
                                                     <div class="px-3 mt-2">\
                                                         <div class="row py-2 border-bottom">\
-                                                            <div class="col-lg-2 text-md-center">\
-                                                                <img src="img/'+img+'" class="img-fluid" alt="user name" />\
+                                                            <div class="col-2 text-md-center">\
+                                                                <img class="img-avatar" src="img/'+img+'" class="img-fluid" alt="user name" />\
                                                             </div>\
-                                                            <div class="col-lg-9 pl-lg-0">\
+                                                            <div class="col-9 pl-lg-0">\
                                                                 <div class="row">\
                                                                     <div class="col">\
                                                                         <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
@@ -555,14 +555,17 @@ $(document).ready(function() {
                                                 </div>');
                                                 $.each(data.data, function(index, item) {
                                                     $(".chat-wrapper").append('\
-                                                                <div class="row py-2 sent">\
+                                                                <div class="row py-2 sent" id="delete'+unique_time+'">\
                                                                     <div class="col-lg-12 pl-lg-2">\
                                                                         <div class="row chat-time">\
                                                                             <div class="text-right">\
                                                                                 <div class="text-dim font-weight-light mb-0 message_time chat-time">'+item.id+' pm</div>\
                                                                             </div>\
                                                                         </div>\
-                                                                        <p class="text-muted font-13 mb-1">'+item.email+'</p>\
+                                                                        <div class="wrappers">\
+                                                                            <p class="text-muted font-13 mb-1">'+item.email+'</p>\
+                                                                            <i id="delete_chat" class="fa fa-trash-alt cursor" data-id="'+unique_time+'"></i>\
+                                                                        </div>\
                                                                     </div>\
                                                                 </div>\
                                                         ');
@@ -590,6 +593,7 @@ $(document).ready(function() {
     
     //When user sends a message
     $('#chat-send').on('click', function () {
+        var unique_time = $.now();
         var chat = $('#chat-text').val()
         var currentdate = new Date(); 
         var hours = currentdate.getHours();
@@ -607,8 +611,8 @@ $(document).ready(function() {
 
                 if($('#'+id).length == 0){
                     $(".chat-sidebar").append('\
-                                                <div class="backgrond-muted message_detail cursor active_message" id="'+id+'" data-full-name="'+name+'" data-status="'+status+'" data-demo-src="'+img+'" data-id="'+id+'" data-job="'+job+'" data-last-seen="'+lastSeen+'">\
-                                                    <div class="px-3 position-relative">\
+                                                <div class="backgrond-muted message_detail cursor active_message" id="'+id+'" >\
+                                                    <div class="px-3 position-relative message_detail_click"  id="'+id+'" data-full-name="'+name+'" data-status="'+status+'" data-demo-src="'+img+'" data-id="'+id+'" data-job="'+job+'" data-last-seen="'+lastSeen+'">\
                                                         <div class="row py-2 border-bottom">\
                                                             <div class="col-lg-3 col-3 text-center ">\
                                                                 <img src="img/'+img+'" class="img-fluid" alt="user name" />\
@@ -619,13 +623,15 @@ $(document).ready(function() {
                                                                         <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
                                                                     </div>\
                                                                     <div class="text-right col-5">\
-                                                                        <p class="text-dark font-weight-light mb-0 message_time">'+datetime+'</p>\
                                                                     </div>\
                                                                 </div>\
                                                                 <p class="text-muted font-13 mb-1">'+chat+'</p>\
                                                             </div>\
                                                         </div>\
                                                     </div>\
+                                                    <div class="question_info_1 cursor" id="delete_user" data-id="'+id+'">\
+                                                        <img src="img/delete_dark.svg" class="position-absolute" style="right: 5px; bottom: 40px;" />\
+                                                    </div> \
                                                 </div>');
                 }else{
                      $('#'+id).html('\
@@ -640,7 +646,6 @@ $(document).ready(function() {
                                                 <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
                                             </div>\
                                             <div class="text-right col-5">\
-                                                <p class="text-dark font-weight-light mb-0 message_time">'+datetime+'</p>\
                                             </div>\
                                         </div>\
                                         <p class="text-muted font-13 mb-1">'+chat+'</p>\
@@ -651,14 +656,17 @@ $(document).ready(function() {
 
             //Output the message that was sent on the screen
             $("#convo"+ id).find('.chat-wrapper').append('\
-                                    <div class="row py-2 sent">\
+                                    <div class="row py-2 sent" id="delete'+unique_time+'">\
                                         <div class="col-lg-12 pl-lg-2">\
                                             <div class="row chat-time">\
                                                 <div class="text-right">\
                                                     <div class="text-dim font-weight-light mb-0 message_time chat-time">'+datetime+'</div>\
                                                 </div>\
                                             </div>\
-                                            <p class="text-muted font-13 mb-1">'+chat+'</p>\
+                                            <div class="wrappers">\
+                                                <p class="text-muted font-13 mb-1">'+chat+'</p>\
+                                                <i id="delete_chat" class="fa fa-trash-alt cursor" data-id="'+unique_time+'"></i>\
+                                            </div>\
                                         </div>\
                                     </div>');
 
@@ -667,7 +675,7 @@ $(document).ready(function() {
                 dataType: 'json',
                 type: 'post',
                 contentType: 'application/json',
-                data: JSON.stringify({"message":chat,"recipient-name":name,"recipient-id":id,"recipient-status":status,"send-time":datetime}),
+                data: JSON.stringify({"message":chat,"recipient-name":name,"recipient-id":id,"recipient-status":status,"send-time":datetime,"unique_time":unique_time}),
                 processData: false,
                 success: function( data, textStatus, jQxhr ){
                     $('#response pre').html( JSON.stringify( data ) );
@@ -693,7 +701,7 @@ $(document).ready(function() {
         $('#nomessage').hide();
     }
 
-    $(document).on('click', '.message_detail', function () {
+    $(document).on('click', '.message_detail_click', function () {
         id = $(this).attr('id');
         name = $(this).data('fullName');
         status = $(this).data('status');
@@ -701,6 +709,7 @@ $(document).ready(function() {
         lastSeen = $(this).data('lastSeen');
         job = $(this).data('job');
         id = $(this).data('id');
+        var unique_time = $.now();
         $('.new_message').hide();
         $('.chat-conversation').hide();
         $('.timeline-wrapper').show();
@@ -726,10 +735,10 @@ $(document).ready(function() {
                                                     </div>\
                                                     <div class="px-3 mt-2">\
                                                         <div class="row py-2 border-bottom">\
-                                                            <div class="col-lg-2 text-md-center">\
+                                                            <div class="col-2 text-md-center">\
                                                                 <img src="img/'+img+'" class="img-fluid" alt="user name" />\
                                                             </div>\
-                                                            <div class="col-lg-9 pl-lg-0">\
+                                                            <div class="col-9 pl-lg-0">\
                                                                 <div class="row">\
                                                                     <div class="col">\
                                                                         <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
@@ -743,7 +752,7 @@ $(document).ready(function() {
                                                 </div>');
                                                 $.each(data.data, function(index, item) {
                                                     $(".chat-wrapper").append('\
-                                                                <div class="row py-2 sent" id="'+item.id+'">\
+                                                                <div class="row py-2 sent" id="delete'+unique_time+'">\
                                                                     <div class="col-lg-12 pl-lg-2">\
                                                                         <div class="row chat-time">\
                                                                             <div class="text-right">\
@@ -752,7 +761,7 @@ $(document).ready(function() {
                                                                         </div>\
                                                                         <div class="wrappers">\
                                                                             <p class="text-muted font-13 mb-1">'+item.email+'</p>\
-                                                                            <i id="delete" class="fa fa-trash-alt cursor" data-id="'+item.id+'"></i>\
+                                                                            <i id="delete_chat" class="fa fa-trash-alt cursor" data-id="'+unique_time+'"></i>\
                                                                         </div>\
                                                                     </div>\
                                                                 </div>\
@@ -761,32 +770,53 @@ $(document).ready(function() {
 
                 $('#convo'+id).show();
                 $('.timeline-wrapper').hide();
+                $('.message_detail#'+id).addClass('active_message');
             },
             error: function( jqXhr, textStatus, errorThrown ){
                 console.log( errorThrown );
             }
         });
-        $(this).addClass('active_message');
     })
 
 });
 
-    //Delete Message
-    $(document).on('click','#delete',function(e){
-        e.preventDefault();
-        id = $(this).data("id");
-        $.ajax({
-            url: 'https://reqres.in/api/users',
-            dataType: 'json',
-            type: 'post',
-            contentType: 'application/json',
-            param: '{}',
-            async: true,
-            success: function( data, textStatus, jQxhr ){
-                $(".row #"+id).remove();
-            }
-        })
-    });
+//Delete User Chat
+$(document).on('click','#delete_chat',function(e){
+    e.preventDefault();
+    id = $(this).data("id");
+    $.ajax({
+        url: 'https://reqres.in/api/users',
+        dataType: 'json',
+        type: 'post',
+        contentType: 'application/json',
+        param: '{}',
+        async: true,
+        success: function( data, textStatus, jQxhr ){
+            $(".row #delete"+id).remove();
+        }
+    })
+});
+
+//Delete User
+$(document).on('click','#delete_user',function(e){
+    e.preventDefault();
+    id = $(this).data("id");
+    $.ajax({
+        url: 'https://reqres.in/api/users',
+        dataType: 'json',
+        type: 'post',
+        contentType: 'application/json',
+        param: '{}',
+        async: true,
+        success: function( data, textStatus, jQxhr ){
+            alert(id);
+            $(".message_detail#"+id).remove();
+            $("#convo"+id).remove();
+            $(".new_message").show();
+        }
+    })
+});
+
 // For Community
 $(function () {
     $('.loadMore').hide();
