@@ -635,7 +635,7 @@ $(document).ready(function() {
                                                 </div>');
                 }else{
                      $('#'+id).html('\
-                            <div class="px-3 position-relative">\
+                            <div class="px-3 position-relative message_detail_click"  id="'+id+'" data-full-name="'+name+'" data-status="'+status+'" data-demo-src="'+img+'" data-id="'+id+'" data-job="'+job+'" data-last-seen="'+lastSeen+'">\
                                 <div class="row py-2 border-bottom">\
                                     <div class="col-lg-3 col-3 text-center ">\
                                         <img src="img/'+img+'" class="img-fluid" alt="user name" />\
@@ -651,6 +651,9 @@ $(document).ready(function() {
                                         <p class="text-muted font-13 mb-1">'+chat+'</p>\
                                     </div>\
                                 </div>\
+                            </div>\
+                            <div class="question_info_1 cursor" id="delete_user" data-id="'+id+'">\
+                                <img src="img/delete_dark.svg" class="position-absolute" style="right: 5px; bottom: 40px;" />\
                             </div>');
                 }
 
