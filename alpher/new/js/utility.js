@@ -693,7 +693,6 @@ $(document).ready(function() {
         $('#nomessage').hide();
     }
 
-
     $(document).on('click', '.message_detail', function () {
         id = $(this).attr('id');
         name = $(this).data('fullName');
@@ -713,9 +712,7 @@ $(document).ready(function() {
             param: '{}',
             async: true,
             success: function( data, textStatus, jQxhr ){
-                console.log(data);
                 $('#response pre').html( JSON.stringify( data ) );
-
                 $('.message_detail').removeClass('active_message');
                 $('.new_message').hide();
                 $('.chat-conversation').hide();
@@ -746,14 +743,17 @@ $(document).ready(function() {
                                                 </div>');
                                                 $.each(data.data, function(index, item) {
                                                     $(".chat-wrapper").append('\
-                                                                <div class="row py-2 sent">\
+                                                                <div class="row py-2 sent" id="'+item.id+'">\
                                                                     <div class="col-lg-12 pl-lg-2">\
                                                                         <div class="row chat-time">\
                                                                             <div class="text-right">\
                                                                                 <div class="text-dim font-weight-light mb-0 message_time chat-time">'+item.id+' pm</div>\
                                                                             </div>\
                                                                         </div>\
-                                                                        <p class="text-muted font-13 mb-1">'+item.email+'</p>\
+                                                                        <div class="wrappers">\
+                                                                            <p class="text-muted font-13 mb-1">'+item.email+'</p>\
+                                                                            <i id="delete" class="fa fa-trash-alt cursor" data-id="'+item.id+'"></i>\
+                                                                        </div>\
                                                                     </div>\
                                                                 </div>\
                                                         ');
@@ -767,10 +767,26 @@ $(document).ready(function() {
             }
         });
         $(this).addClass('active_message');
-
     })
+
 });
 
+    //Delete Message
+    $(document).on('click','#delete',function(e){
+        e.preventDefault();
+        id = $(this).data("id");
+        $.ajax({
+            url: 'https://reqres.in/api/users',
+            dataType: 'json',
+            type: 'post',
+            contentType: 'application/json',
+            param: '{}',
+            async: true,
+            success: function( data, textStatus, jQxhr ){
+                $(".row #"+id).remove();
+            }
+        })
+    });
 // For Community
 $(function () {
     $('.loadMore').hide();

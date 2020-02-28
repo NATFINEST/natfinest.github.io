@@ -41,7 +41,30 @@ body {
         height: 450px;
         overflow: scroll;
     }
-    
+
+    #delete{
+        display: none;
+    }
+
+    .sent #delete {
+        position: absolute;
+        left: -850px;
+        width: 50px;
+        height: 44px;
+        background: red;
+        padding: 10px;
+        transition: .1s;
+        color: #fff;
+        font-size: 10px;
+        display: block;
+    }
+
+    .sent .wrappers:hover #delete {
+        transition: .1s;
+        left: 100px;
+        top: 21px;
+    }
+
     .timeline-wrapper {
       background-color: #fff;
       color: #141823;
@@ -267,6 +290,10 @@ body {
 
 .cursor-pointer{
     cursor: pointer;
+}
+
+.recieve {
+    margin-left: -7px;
 }
 .recieve div p{
     float: left;
@@ -1666,3 +1693,21 @@ MEDIAQUERIES
         border-right: 0px solid #dee2e6 !important;
     }
 }
+@media (max-width: 568px) {
+    .chat-sidebar {
+        height: 161px;
+    }
+    .message_detail{
+        width: 25%;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    .message_detail div div div{
+        display: none;
+    }
+    .message_detail div div div.text-center{
+        display: block;
+        width: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
