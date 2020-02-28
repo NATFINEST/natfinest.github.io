@@ -479,6 +479,7 @@ $(document).ready(function() {
         $('.message_detail').removeClass('active_message');
 
         //set current chat time
+        var unique_time = $.now();
         var currentdate = new Date(); 
         var hours = currentdate.getHours();
         var minutes = currentdate.getMinutes();
@@ -517,6 +518,8 @@ $(document).ready(function() {
                                                 <div class="chat-wrapper"></div>\
                                             </div>\
                                         </div>');
+
+
         }else{
             $('.message_detail#'+id).addClass('active_message');
             $('.timeline-wrapper').show();
@@ -580,6 +583,10 @@ $(document).ready(function() {
 
             // $('#convo'+id).show();
         }
+
+        // $('.select2-selection__clear').trigger('mousedown');
+        // $('.js-example-basic-single').select2("data", "");
+        // $('.js-example-basic-single').val(null).trigger('change');
     });
 
     //Press Enter to send
@@ -812,7 +819,6 @@ $(document).on('click','#delete_user',function(e){
         param: '{}',
         async: true,
         success: function( data, textStatus, jQxhr ){
-            alert(id);
             $(".message_detail#"+id).remove();
             $("#convo"+id).remove();
             $(".new_message").show();
