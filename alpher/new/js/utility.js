@@ -584,9 +584,6 @@ $(document).ready(function() {
             // $('#convo'+id).show();
         }
 
-        // $('.select2-selection__clear').trigger('mousedown');
-        // $('.js-example-basic-single').select2("data", "");
-        // $('.js-example-basic-single').val(null).trigger('change');
     });
 
     //Press Enter to send
