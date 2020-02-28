@@ -36,6 +36,11 @@ body {
         background-position: 468px 0
       }
     }
+
+    .chat-sidebar{
+        height: 450px;
+        overflow: scroll;
+    }
     
     .timeline-wrapper {
       background-color: #fff;
