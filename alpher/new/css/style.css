@@ -42,7 +42,7 @@ body {
         overflow: scroll;
     }
 
-    #delete{
+    #delete_chat{
         display: none;
     }
 
