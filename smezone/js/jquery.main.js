@@ -38,8 +38,7 @@ $(document).ready(function() {
       fade: true,
       adaptiveHeight: true,
       draggable: false,
-      autoplay: true,
-      pauseOnHover:false
+      autoplay: false
     });
 
     jQuery('.popular-posts-slider').slick({

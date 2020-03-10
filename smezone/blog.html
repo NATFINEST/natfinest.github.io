@@ -291,26 +291,26 @@
                 </div> -->
 
                 <div class="row mx-md-2 my-5">
-                    <div class="col-md-8">
+                    <div class="col-lg-8 mx-auto">
                         <div class="card--dashboard mt-4">
                             <div class="row justify-content-center mx-md-0">
-                                <div class="col-md-8 col-6 border-right py-3 cursor" data-toggle="modal" data-target="#albums-modal" id="fake">
+                                <div class="col-md-8 col-6 border-right py-3 cursor" data-toggle="modal" data-target="#albums-modal">
                                     <div class="px-md-4">
                                         <p class="mt-1 mb-0"> <img src="images/writing.svg" alt="start post" class="mb-2"> Start a post</p>
                                     </div>
                                 </div>
 
-                                <div class="col-md-2 col-2 py-3 border-right display_image_upload cursor fileinput-button" data-toggle="modal" data-target="#albums-modal" data-op="mu" id="fake">
+                                <div class="col-md-2 col-2 py-3 border-right display_image_upload cursor fileinput-button" data-toggle="modal" data-target="#albums-modal" data-op="mu">
                                     <div class="text-center">
                                         <img src="images/pic.svg" alt="upload picture" class="mt-2" width="25">
                                     </div>
                                 </div>
 
-                                <div class="col-md-2 col-2 py-3 display_image_upload cursor fileinput-button" data-toggle="modal" data-target="#albums-modal" data-op="mu" id="fake">
+                                <!-- <div class="col-md-2 col-2 py-3 display_image_upload cursor fileinput-button" data-toggle="modal" data-target="#albums-modal" data-op="mu">
                                     <div class="text-center">
                                         <img src="images/video.svg" alt="upload video" class="mt-lg-2 mt-1">
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -355,72 +355,14 @@
                                     </div>
 
                                     <div class="px-4 row mt-3">
-                                        <div class="col-lg-12 col-10 d-flex">
+                                        <div class="col-lg-12 col-12 d-flex">
                                             <img src="images/course_img.png" class="mt-1 mr-2" />
-                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-1" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                            <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-1" data-load="p1">Send</button>
                                         </div>
                                     </div>
 
-                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px">
-                                        <div class="col-12 blog_comment p1">
-                                            <div class="d-flex">
-                                                <div class="mr-2">
-                                                    <img src="images/course_img.png" class="mt-1" />
-                                                </div>
-                                                <div class="p-2 position-relative">
-                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
-                                                    <p class="font-13 font-weight-light mb-1">Comment 1</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 blog_comment p1">
-                                            <div class="d-flex">
-                                                <div class="mr-2">
-                                                    <img src="images/course_img.png" class="mt-1" />
-                                                </div>
-                                                <div class="p-2 position-relative">
-                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
-                                                    <p class="font-13 font-weight-light mb-1">Comment 2</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 blog_comment p1">
-                                            <div class="d-flex">
-                                                <div class="mr-2">
-                                                    <img src="images/course_img.png" class="mt-1" />
-                                                </div>
-                                                <div class="p-2 position-relative">
-                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
-                                                    <p class="font-13 font-weight-light mb-1">Comment 3</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 blog_comment p1">
-                                            <div class="d-flex">
-                                                <div class="mr-2">
-                                                    <img src="images/course_img.png" class="mt-1" />
-                                                </div>
-                                                <div class="p-2 position-relative">
-                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
-                                                    <p class="font-13 font-weight-light mb-1">Comment 4</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 blog_comment p1">
-                                            <div class="d-flex">
-                                                <div class="mr-2">
-                                                    <img src="images/course_img.png" class="mt-1" />
-                                                </div>
-                                                <div class="p-2 position-relative">
-                                                    <p class="weight-semi-bold mb-1">Brandee Sanders </p>
-                                                    <p class="font-13 font-weight-light mb-1">Comment 5</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-1">
 
                                         <div class="col-12 blog_comment p1">
                                             <div class="d-flex">
@@ -447,7 +389,7 @@
                                         </div>
                                     </div>
                                     <div class="w-100 text-center mt-4">
-                                        <a href="#" class="btn btn-theme loadMore" data-id="p1">Load More</a>
+                                        <a href="#" class="btn btn-green loadMore" data-id="p1" id="p1">Load More</a>
                                     </div>
                                 </div>
                             </div>
@@ -472,7 +414,7 @@
                                     <div class="px-4">
                                         <p class="font-14 font-weight-light">I am Post 2</p>
                                     </div>
-                                    <div class="row">
+                                    <!-- <div class="row">
                                         <div class="col-12 img-p2 post-image">
                                             <a href="images/Business-Day-online.jpg" data-lightbox="img-p2" class="content">
                                                 <div class="content-overlay"></div>
@@ -485,16 +427,17 @@
                                         <div class="col-12 img-p1 post-image">
                                             <a href="images/ibis-hotel-building.jpg" data-lightbox="img-p2" ><img class="img-fluid mt-2 comm-img" src="images/Hotel-du-Golf.jpg"></a>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="px-4 row mt-3">
-                                        <div class="col-lg-12 col-10 d-flex">
+                                        <div class="col-lg-12 col-12 d-flex">
                                             <img src="images/course_img.png" class="mt-1 mr-2" />
-                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text"  id="input-comment-2" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                            <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-2" data-load="p2">Send</button>
                                         </div>
                                     </div>
 
-                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px" id="comment-2">
                                         <div class="col-12 blog_comment p2">
                                             <div class="d-flex">
                                                 <div class="mr-2">
@@ -616,7 +559,7 @@
                                         </div>
                                     </div>
                                     <div class="w-100 text-center mt-4">
-                                        <a href="#" class="btn btn-theme loadMore" data-id="p2">Load More</a>
+                                        <a href="#" class="btn btn-green loadMore" data-id="p2" id="p2">Load More</a>
                                     </div>
                                 </div>
                             </div>
@@ -657,13 +600,14 @@
                                     </div>
 
                                     <div class="px-4 row mt-3">
-                                        <div class="col-lg-12 col-10 d-flex">
+                                        <div class="col-lg-12 col-12 d-flex">
                                             <img src="images/course_img.png" class="mt-1 mr-2" />
-                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text"  id="input-comment-3" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                            <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-3" data-load="p3">Send</button>
                                         </div>
                                     </div>
 
-                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px" id="comment-3">
                                         <div class="col-12 blog_comment p3">
                                             <div class="d-flex">
                                                 <div class="mr-2">
@@ -785,7 +729,7 @@
                                         </div>
                                     </div>
                                     <div class="w-100 text-center mt-4">
-                                        <a href="#" class="btn btn-theme loadMore" data-id="p3">Load More</a>
+                                        <a href="#" class="btn btn-green loadMore" data-id="p3" id="p3">Load More</a>
                                     </div>
                                 </div>
                             </div>
@@ -826,13 +770,14 @@
                                     </div>
 
                                     <div class="px-4 row mt-3">
-                                        <div class="col-lg-12 col-10 d-flex">
+                                        <div class="col-lg-12 col-12 d-flex">
                                             <img src="images/course_img.png" class="mt-1 mr-2" />
-                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text"  id="input-comment-4" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                            <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-4" data-load="p4">Send</button>
                                         </div>
                                     </div>
 
-                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px" id="comment-4">
                                         <div class="col-12 blog_comment p4">
                                             <div class="d-flex">
                                                 <div class="mr-2">
@@ -954,7 +899,7 @@
                                         </div>
                                     </div>
                                     <div class="w-100 text-center mt-4">
-                                        <a href="#" class="btn btn-theme loadMore" data-id="p4">Load More</a>
+                                        <a href="#" class="btn btn-green loadMore" data-id="p4" id="p4">Load More</a>
                                     </div>
                                 </div>
                             </div>
@@ -995,13 +940,14 @@
                                     </div>
 
                                     <div class="px-4 row mt-3">
-                                        <div class="col-lg-12 col-10 d-flex">
+                                        <div class="col-lg-12 col-12 d-flex">
                                             <img src="images/course_img.png" class="mt-1 mr-2" />
-                                            <input type="text" placeholder="Add a comment" class="form-control mt-2" />
+                                            <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-5" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                            <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-5" data-load="p5">Send</button>
                                         </div>
                                     </div>
 
-                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px">
+                                    <div class="px-4 row mt-3 post" style="overflow-y:auto;height: 280px" id="comment-5">
                                         <div class="col-12 blog_comment p5">
                                             <div class="d-flex">
                                                 <div class="mr-2">
@@ -1123,7 +1069,7 @@
                                         </div>
                                     </div>
                                     <div class="w-100 text-center mt-4">
-                                        <a href="#" class="btn btn-theme loadMore" data-id="p5">Load More</a>
+                                        <a href="#" class="btn btn-green loadMore" data-id="p5" id="p5">Load More</a>
                                     </div>
                                 </div>
                             </div>

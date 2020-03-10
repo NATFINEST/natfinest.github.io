@@ -635,17 +635,20 @@ $(document).ready(function() {
 
 // For Community
 $(function () {
+    $('.loadMore').hide();
     postlen = $('.card--dashboard').length
     for (i = 1; i <= postlen; i++) {
         $(".p"+i).slice(0, 4).show();
+        if(($(".p"+i).length)>4){
+            $('.loadMore#p'+i).show();
+        }
     };
-    // $(".blog_comment").slice(0, 4).show();
     $(".loadMore").on('click', function (e) {
         e.preventDefault();
         id = $(this).data("id");
         $("." + id + ":hidden").slice(0, 4).slideDown();
         if ($("." + id + ":hidden").length == 0) {
-            $("#load").fadeOut('slow');
+            $(".loadMore#"+id).fadeOut('slow');
         }
         $('.post').animate({
             scrollTop: $(this).offset().top
@@ -659,19 +662,49 @@ $(function () {
     };
 });
 $(function () {
-    // postlen = $('.card--dashboard').length
-    // for (i = 1; i <= postlen; i++) {
-    //     $(".p"+i).slice(0, 4).show();
-    // };
     $(".card--dashboard").slice(0, 4).show();
+    if($('.card--dashboard').length < 3){
+        $(".loadPost").hide();
+    }
     $(".loadPost").on('click', function (e) {
         e.preventDefault();
         $(".card--dashboard:hidden").slice(0, 4).slideDown();
         if ($(".card--dashboard:hidden").length == 0) {
-            $("#load").fadeOut('slow');
+            $(".loadPost").fadeOut('slow');
         }
         $('html,body').animate({
             scrollTop: $(this).offset().top
         }, 1500);
     });
 });
+
+$('.comment-send').on('click', function () {
+    var id = $(this).data('id');
+    var comment = $('#input-'+id).val();
+    var img = $('.comment-text').data('img');
+    var name = $('.comment-text').data('name');
+    var load = $(this).data('load');
+    //Check if the textarea is empty
+    if (comment != "") {
+        // $('.comment-text').focus();
+
+                $("#"+id).append('<div class="col-12 blog_comment p1 d-block">\
+                                        <div class="d-flex">\
+                                            <div class="mr-2">\
+                                                <img src="img/'+img+'" class="mt-1" />\
+                                            </div>\
+                                            <div class="p-2 position-relative">\
+                                                <p class="weight-semi-bold mb-1">'+name+' </p>\
+                                                <p class="font-13 font-weight-light mb-1">'+comment+'</p>\
+                                            </div>\
+                                        </div>\
+                                    </div>');
+
+    }
+
+    $('#input-'+id).val('');
+
+    $('.post#'+id).animate({
+        scrollTop: $(this).offset().top
+    }, 1500);
+})
