@@ -371,10 +371,33 @@
                 </div><!-- container-fluid -->
             </div><!-- content -->
             <footer class="footer">© 2019 FCMB SMEHub</footer>
+
         </div><!-- ============================================================== -->
         <!-- End Right content here -->
         <!-- ============================================================== -->
     </div><!-- END wrapper -->
+
+    <!-- Modal -->
+    <div class="modal fade" data-keyboard="false" data-backdrop="static" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="text-align: center;display: block;padding: 10px 0;">
+            <h6 class="" id="exampleModalLabel">Attention</h6>
+          </div>
+          <div class="modal-body text-center">
+            <p style="font-weight: 500;font-size: 14px">You must agree to the terms and conditions before you proceed</p>
+            <form>
+                <div class="form-check" style="font-size: 16px">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label class="form-check-label" for="terms">I agree to the <a href="../terms.html" target="_blank">Terms and Condition</a> </label>
+                 </div>
+             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- jQuery  -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -413,6 +436,16 @@
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="assets/pages/dashboard.js"></script><!-- App js -->
     <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#termsModal').modal('show');
+            $("#terms").change(function() {
+                if(this.checked) {
+                    $('#termsModal').modal('hide')
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
