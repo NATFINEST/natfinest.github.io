@@ -20,6 +20,7 @@
         <!-- include the site bootstrap stylesheet -->
         <!-- <link rel="stylesheet" href="css/bootstrap.minn.css"> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"  crossorigin="anonymous">
+        <link rel="stylesheet" href="css/choices.css" />
 
         <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -37,6 +38,7 @@
     
         <!-- include the site responsive stylesheet -->
         <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/base.css" /> -->
     </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -278,15 +280,22 @@
             
             <div id="two-columns" class="container">
 				<div class="row">
-                    <div class="col-lg-4">
-                        <img src="images/clinic.png" style="width:100%">
+                    <div class="col-lg-5">
+                        <img src="images/clinic2.jpg" style="width:100%">
                     </div>
-                    <div class="col-lg-8">
-                        <p>We recognize how important you are and are excited that you are joining a league of women with great power and ample opportunities for growth.</p>
+                    <div class="col-lg-7">
+                        <p>We’re committed to helping small businesses. Whether you're just starting out or looking to expand, we'll take the time to get to know your business and help provide solutions that are right for you.</p>
 
-                        <p>αlpher was created to enable women to be the best versions of themselves. We aim to help women on their respective journeys of greatness whether your aim is to start or expand your business, meet new people, build new partnerships or develop capacity for growth; αlpher is here to enable your success.</p>
+                        <p>The Access Business Clinics are one-on-one business consulting and advisory sessions with experts, consultants and successful entrepreneurs who diagnose and proffer practical and tailor-made solutions to the challenges you might be experiencing in the course of running your business. They cut across the following focus areas;</p>
 
-                        <p>As an organisation committed to gender parity and the development of women and girls, Union Bank is positioned to deliver tailored services to support the growth of women and female-owned business.</p>
+                        <ul>
+                            <li>Financial Management</li>
+                            <li>Sales & Marketing</li>
+                            <li>Brands & Advertising</li>
+                            <li>Human Resources</li>
+                            <li>Tax</li>
+                        </ul>
+
                     </div>
                 </div>
 			</div>
@@ -295,7 +304,7 @@
                     <div class="row">
                         <h3 class=" col-lg-4 col-sm-6 " style="padding: 10px 30px;margin: 0">Experts</h3>
                         <div class="col-lg-2 col-sm-2 pull-right" style="padding: 10px 20px;">
-                            <select class="uk-select" id="CourseSelect2" style="width:100%;padding: 10px 20px;">
+                            <select class="" id="filter" style="width:100%;padding: 10px 20px;">
                                 <option value="all">All</option>
                                 <option value="abia">Technology</option>
                                 <option value="abj">Fashion</option>
@@ -322,29 +331,6 @@
 					                            </div>
 					                            <div class="lib-row lib-btn">
 					                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
-					                            	<!-- Modal -->
-				                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-													    <div class="modal-dialog" role="document">
-													        <div class="modal-content">
-													            <div class="modal-header">
-											                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											                            <span aria-hidden="true">&times;</span>
-											                        </button>
-											                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-											                    </div>
-											                    <div class="modal-body">
-											                        <div class="desc fs-16">Reason for Request:</div>
-											                        <form class="requestForm w-100">
-											                            <input type="hidden" name="mentor" value="" id="mentor">
-											                            <textarea class="w-100 my-2 p-2" name="reason" placeholder="Write a brief paragraph on why you think the mentor is the right fit for you" style="border: 1px solid #ccc;border-radius: 5px;" rows="5"></textarea>
-											                            <div class="text-center my-2">
-											                                <button class="btn btn-primary">Send Request</button>
-											                            </div>
-											                        </form>
-											                    </div>
-													        </div>
-													    </div>
-													</div>
 					                            </div>
 						                    </div>
 						                </div>
@@ -364,7 +350,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -384,7 +370,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -404,7 +390,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -424,7 +410,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -444,7 +430,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -464,7 +450,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -484,7 +470,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -504,7 +490,7 @@
 						                            	Tech Startup & Funding
 						                            </div>
 						                            <div class="lib-row lib-btn">
-						                            	<button class="btn btn-primary btn-sm">Apply for business clinic</button>
+						                            	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Apply for business clinic</button>
 						                            </div>
 						                    </div>
 						                </div>
@@ -614,26 +600,136 @@
 			</form>
 		</div>
 	</div>
+
+    <!-- Business Clinic Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel">DIGITAL BUSINESS CLINIC REGISTRATION FORM</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="bus-name">Business Name</label>
+                        <input type="text" class="form-control" id="bus-name" placeholder="Business Name">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="per-name">Personal Name</label>
+                        <input type="text" class="form-control" id="per-name" placeholder="Personal Name">
+                      </div>
+                      <div class="form-group col-sm-12">
+                        <label class="sr-only" for="bus-add">Business Address</label>
+                        <input type="text" class="form-control" id="bus-add" placeholder="Business Address">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="acct">Account Number</label>
+                        <input type="number" class="form-control" id="acct" placeholder="Account Number">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="per-name">Email Address </label>
+                        <input type="email" class="form-control" id="per-name" placeholder="Email Address ">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="phone">Phone No:</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Phone No">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="sector">Business Sector:</label>
+                        <input type="text" class="form-control" id="sector" placeholder="Business Sector">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="">Number of Staff:</label>
+                        <input type="number" class="form-control" id="staff" placeholder="Number of Staff">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="outlets">Number Of Outlets/Branches</label>
+                        <input type="number" class="form-control" id="outlets" placeholder="Number Of Outlets/Branches">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="counts">Count Of Female Employees :</label>
+                        <input type="number" class="form-control" id="counts" placeholder="Count Of Female Employees">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label class="sr-only" for="bus-type">Business Type:</label>
+                        <input type="text" class="form-control" id="bus-type" placeholder="Business Type">
+                      </div>
+                      <div class="form-group col-sm-12">
+                        <label class="sr-only" for="desc">Brief Description:</label>
+                            <textarea class="form-control" rows="3" placeholder="Brief Description" id="desc"></textarea>
+                      </div>
+
+                      <div class="form-group col-sm-12">
+                            <label for="choices-multiple-default">PLEASE SELECT YOUR TOP 3 BUSINESS NEEDS REQUIRING CONSULTING</label>
+                            <select
+                              class="form-control"
+                              data-trigger
+                              name="choices-multiple-default"
+                              id="choices-multiple-default"
+                              placeholder="This is a placeholder"
+                              multiple
+                            >
+                              Ineffective business model
+                                <option>In need of investment capital/Equity</option>
+                                <option>Access to loans</option>
+                                <option>Financial mismanagement</option>
+                                <option>Difficulties retaining your business proceeds</option>
+                                <option>Fast uncontrollable business growth</option>
+                                <option>Difficulties Transitioning from old record keeping system to a modern model</option>
+                                <option>Difficulty understanding tax –Benefits /implications of tax default</option>
+                                <option>Product image acceptance</option>
+                                <option>Need to improve on the image of the enterprise  due to poor branding</option>
+                                <option>Difficulties reaching your target market as a result of miscommunication : YES</option>
+                                <option>Ineffective marketing and promotional strategies in use :  YES</option>
+                                <option>Poor public perception as a result of decreasing product quality standard</option>
+                                <option>Engagement of the enterprise with consumers/channels: YES</option>
+                                <option>Taking product beyond local markets</option>
+                                <option>logistics and supply chain management </option>
+                                <option>Poor customer retention strategy: YES</option>
+                                <option>lack of capacity to identify new markets</option>
+                                <option>High staff turnover</option>
+                                <option>Problems retaining qualified people</option>
+                                <option>Poor working conditions</option>
+                                <option>Managing work-life balance</option>
+                                <option>Creating a performance driven culture</option>
+                                <option>Poor succession planning</option>
+                            </select>
+                      </div>
+                      <div class="form-group col-sm-12">
+                        <label class="sr-only" for="desc">Give a brief description of this challenge.:</label>
+                            <textarea class="form-control" rows="3" placeholder="Give a brief description of this challenge" id="chal"></textarea>
+                      </div>
+                      <div class="form-group col-sm-12 text-center">
+                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 	<!-- include jQuery -->
 	<script src="js/jquery.js"></script>
 	<!-- include jQuery -->
-	<!-- <script src="js/plugins.js"></script> -->
+	<script src="js/plugins.js"></script>
 	<!-- include jQuery -->
 	<script src="js/jquery.main.js"></script>
-	<!-- <script src="js/bootstrap.min.js"></script> -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="js/choices.js"></script>
+
 	<!-- include jQuery -->
 	<script type="text/javascript" src="js/init.js"></script>
 	<script type="text/javascript">
-            $(document).ready(function() {
-                $('#filter').change(function () {
-                    $('.group').hide();
-                    // $('.group').addClass('w-0');
-                    $('.'+$(this).val()).show();
-                  })
-            });
-        </script>  
-        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#filter').change(function () {
+                $('.group').hide();
+                $('.'+$(this).val()).show();
+            })
+        });
+    </script>  
+    <script type="text/javascript">
         $(document).ready(function() {
             $('[data-search]').on('keyup', function() {
                 var searchVal = $(this).val();
@@ -650,11 +746,26 @@
             $('#CourseSelect2').change(function () {
                 $('.group').hide();
                 $('.'+$(this).val()).show();
-              })
+            })
 
-            
+            // $('.js-example-basic-multiple').select2();
         });
     </script> 
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+        var textRemove = new Choices(
+          document.getElementById('choices-multiple-default'),
+          {
+            delimiter: ',',
+            editItems: true,
+            maxItemCount: 3,
+            removeItemButton: true,
+          }
+        );
+
+      });
+    </script>
 </body>
 
 </html>
