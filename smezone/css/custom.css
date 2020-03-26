@@ -667,8 +667,10 @@ a.down:hover {
 
 .lib-panel .lib-row.lib-header {
     background-color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px 20px 0 20px;
+    min-height: 50px;
+    line-height: 20px;
 }
 
 .lib-panel .lib-row.lib-header .lib-header-seperator {
@@ -682,6 +684,8 @@ a.down:hover {
     position: relative;
     display: block;
     font-size: 13px;
+    line-height: 15px;
+    min-height: 36px;
 }
 .lib-panel .lib-row.lib-desc a{
     position: absolute;
@@ -701,6 +705,10 @@ a.down:hover {
 
 .no-padding {
     padding: 0;
+}
+
+.modal-backdrop{
+    background-color: #000000a3;
 }
 
 
