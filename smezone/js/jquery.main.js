@@ -36,7 +36,7 @@ $(document).ready(function() {
       prevArrow: '<a href="#" class="slick-prev fas fa-chevron-left"><span class="sr-only">Previous</span></a>',
       nextArrow: '<a href="#" class="slick-next fas fa-chevron-right"><span class="sr-only">Next</span></a>',
       fade: true,
-      adaptiveHeight: true,
+      adaptiveHeight: false,
       draggable: false,
       autoplay: true,
       pauseOnHover:false

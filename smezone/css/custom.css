@@ -711,6 +711,93 @@ a.down:hover {
     background-color: #000000a3;
 }
 
+.slider.fade-slider .slick-list{
+    /*height: 500px;*/
+}
+
+.intro-block-slide{
+    min-height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.comment-send{
+    height: 35px;
+}
+
+.fs-12{
+    font-size: 12px
+}
+
+.thumbnail{
+    object-fit: cover;
+    min-height: 180px;
+}
+
+
+.btn-vertical-slider{ margin-left:35px; cursor:pointer;}
+a {  cursor:pointer;}
+.carousel.vertical .carousel-inner .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+ .carousel.vertical .active {
+  top: 0;
+}
+
+ .carousel.vertical .next {
+  top: 100%;
+}
+
+ .carousel.vertical .prev {
+  top: -100%;
+}
+
+ .carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+ .carousel.vertical .active.left {
+  top: -100%;
+}
+
+ .carousel.vertical .active.right {
+  top: 100%;
+}
+
+ .carousel.vertical .item {
+    left: 0;
+}​
+
+.carousel-inner {
+    margin: 60px 0 0 0!important;
+}
+
+.popular-posts-block {
+    padding-top: 50px!important;
+}
+
+
+@media (min-width: 1200px){
+    .popular-posts-block {
+        padding-top: 40px!important;
+    }
+}
+
+@media (max-width: 740px){
+    .slider.fade-slider .slick-list {
+        /*height: 300px!important;*/
+    }
+    .intro-block-slide{
+        min-height: 35vh;
+    }
+}
+
 
 @media (max-width: 767px){
     .forum-msg {

@@ -355,16 +355,16 @@
             <section class="marketing">
                 <div class="container">
                     <div class="row">
-                        <a href="#" class="col-md-4">
+                        <a href="#" class="col-md-3">
                             <div class="card card-market card-market-first">
                                 <div class="card-body">
                                     <img src="images/tv2.png" width="70">
                                     <h4>Ebonylife TV</h4>
-                                    <p>Advertise your business with ebonylife tv</p>
+                                    <p>Advertise your business</p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="col-md-4">
+                        <a href="#" class="col-md-3">
                             <div class="card card-market card-market-second">
                                 <div class="card-body">
                                     <img src="images/webinar2.png" width="70">
@@ -374,12 +374,22 @@
                             </div>
                         </a>
 
-                        <a href="#" class="col-md-4">
+                        <a href="#" class="col-md-3">
                             <div class="card card-market card-market-first">
                                 <div class="card-body">
                                     <img src="images/board2.png" width="70">
                                     <h4>Business Clinic</h4>
                                     <p>Attend our business clinic</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="col-md-3">
+                            <div class="card card-market card-market-second">
+                                <div class="card-body">
+                                    <img src="images/group.png" width="70">
+                                    <h4>Community</h4>
+                                    <p>Join our community</p>
                                 </div>
                             </div>
                         </a>
@@ -417,7 +427,7 @@
                                     <div class="col-md-4">
                                         <div class="border-right-no">
                                             <img class="img-responsive explore-icon" src="images/students.svg">
-                                            <h4 class="explore-value">6+</h4>
+                                            <h4 class="explore-value">10+</h4>
                                             <p>Monthly Webinar</p>
                                         </div>
                                     </div>
@@ -442,6 +452,48 @@
 					</div>
 				</div>
 			</section>
+
+            <div class="container" style="margin-top: 60px">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="myCarousel" class="vertical-slider carousel vertical slide col-md-12" data-ride="carousel">
+                            <br />
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a href=""> <img src="http://placehold.it/1200x220" class="thumbnail" alt="Image" width="100%" /></a>
+                                        </div>
+                                    </div>
+                                    <!--/row-fluid-->
+                                </div>
+                                <!--/item-->
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a href=""> <img src="http://placehold.it/1200x220" class="thumbnail" alt="Image" width="100%" /></a>
+                                        </div>
+                                    </div>
+                                    <!--/row-fluid-->
+                                </div>
+                                <!--/item-->
+
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a href=""> <img src="http://placehold.it/1200x220" class="thumbnail" alt="Image" width="100%" /></a>
+                                        </div>
+                                    </div>
+                                    <!--/row-fluid-->
+                                </div>
+                                <!--/item-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 			<!-- popular posts block -->
 			<section class="popular-posts-block container">
 			    <header class="popular-posts-head">
@@ -752,7 +804,7 @@
                     <!-- <img src="https://accessmezone.com/img/5c327a6c3fa0f.jpg"> -->
                     
                     <!-- For Video Use This -->
-                    <video id="my-video" class="video-js" liveui="true" controls="true" width="100%" height="100%" poster="https://accessmezone.com/img/5c327a6c3fa0f.jpg" data-setup="{}">
+                    <video id="my-video" class="video-js" liveui="true" controls="true" width="100%" height="100%"  data-setup="{}">
                         <source src="https://accessmezone.com/video/video.mp4" type="video/mp4" />
                         <p class="vjs-no-js">
                             To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -760,6 +812,7 @@
                           >
                         </p>
                     </video>
+                    <!-- <iframe id="vid1" style="height: 100%;width: 100%;" src="https://accessmezone.com/video/video.mp4" frameborder="0" uk-video="automute: true" allowfullscreen uk-responsive></iframe> -->
                 </div>
             </div>
         </div>
@@ -797,6 +850,10 @@
                 $('.multi-level').removeClass('multi-hover');
             })
         })
+
+        $(document).ready(function () {
+            $("#myCarousel").carousel({interval: 180000})
+        });
     </script>
 </body>
 

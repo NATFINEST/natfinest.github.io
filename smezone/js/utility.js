@@ -708,3 +708,57 @@ $('.comment-send').on('click', function () {
         scrollTop: $(this).offset().top
     }, 1500);
 })
+
+$('.text-likes').text($('.num-likes').text() == '1' ? 'like' : 'likes');
+$('.text-comments').text($('.num-comments').text() == '1' ? 'comment' : 'comments');
+$('.text-shares').text($('.num-shares').text() == '1' ? 'share' : 'shares');
+
+$(".like").click(function(e) {
+    user_id = $(this).data("user");
+    post_id = $(this).data("post");
+    if ($(".like-unlike").html() == 'Like') {
+        $(this).css("pointer-events", "none");
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/todos/',
+            dataType: 'json',
+            type: 'post',
+            contentType: 'application/json',
+            data: JSON.stringify({'user_id':user_id,'post_id':post_id,'message':'1'}),
+            processData: false,
+            success: function( data, textStatus, jQxhr ){
+                $('#response pre').html( JSON.stringify( data ) );
+                $(".like-unlike").html('Unlike');
+                $(".icon").html('<i class="fa fa-thumbs-down mt-1"></i>');
+                $(".like").css("pointer-events", "auto");
+                $(".num-likes").text(parseInt($('.num-likes').text()) + 1);
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+                $(".like-unlike").html('Like');
+                $(".icon").html('<i class="fa fa-thumbs-up mt-1"></i>');
+            }
+        });
+    }
+    else {
+        $(this).css("pointer-events", "none");
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/todos/',
+            dataType: 'json',
+            type: 'post',
+            contentType: 'application/json',
+            data: JSON.stringify({'user_id':user_id,'post_id':post_id,'message':'-1'}),
+            processData: false,
+            success: function( data, textStatus, jQxhr ){
+                $('#response pre').html( JSON.stringify( data ) );
+                $(".like-unlike").html('Like');
+                $(".icon").html('<i class="fa fa-thumbs-up mt-1"></i>');
+                $(".like").css("pointer-events", "auto");
+                $(".num-likes").text(parseInt($('.num-likes').text()) - 1);
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+                $(".like-unlike").html('Unlike');
+                $(".icon").html('<i class="fa fa-thumbs-down mt-1"></i>');
+            }
+        });
+    }
+    return false;
+});
