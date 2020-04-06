@@ -713,10 +713,17 @@ $('.text-likes').text($('.num-likes').text() == '1' ? 'like' : 'likes');
 $('.text-comments').text($('.num-comments').text() == '1' ? 'comment' : 'comments');
 $('.text-shares').text($('.num-shares').text() == '1' ? 'share' : 'shares');
 
+$('#share').on('show.bs.modal', function (event) {
+    var id = $(event.relatedTarget).data('id');
+    var post_id = $(event.relatedTarget).data('post');
+    var user_id = $(event.relatedTarget).data('user');
+});
+
 $(".like").click(function(e) {
+    id = $(this).data("id");
     user_id = $(this).data("user");
     post_id = $(this).data("post");
-    if ($(".like-unlike").html() == 'Like') {
+    if ($(".like-unlike#like-unlike-" + id).html() == 'Like') {
         $(this).css("pointer-events", "none");
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/',
@@ -727,14 +734,14 @@ $(".like").click(function(e) {
             processData: false,
             success: function( data, textStatus, jQxhr ){
                 $('#response pre').html( JSON.stringify( data ) );
-                $(".like-unlike").html('Unlike');
-                $(".icon").html('<i class="fa fa-thumbs-down mt-1"></i>');
+                $(".like-unlike#like-unlike-" + id).html('Unlike');
+                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
                 $(".like").css("pointer-events", "auto");
-                $(".num-likes").text(parseInt($('.num-likes').text()) + 1);
+                $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) + 1);
             },
             error: function( jqXhr, textStatus, errorThrown ){
-                $(".like-unlike").html('Like');
-                $(".icon").html('<i class="fa fa-thumbs-up mt-1"></i>');
+                $(".like-unlike#like-unlike-" + id).html('Like');
+                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
             }
         });
     }
@@ -749,14 +756,14 @@ $(".like").click(function(e) {
             processData: false,
             success: function( data, textStatus, jQxhr ){
                 $('#response pre').html( JSON.stringify( data ) );
-                $(".like-unlike").html('Like');
-                $(".icon").html('<i class="fa fa-thumbs-up mt-1"></i>');
+                $(".like-unlike#like-unlike-" + id).html('Like');
+                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
                 $(".like").css("pointer-events", "auto");
-                $(".num-likes").text(parseInt($('.num-likes').text()) - 1);
+                $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) - 1);
             },
             error: function( jqXhr, textStatus, errorThrown ){
-                $(".like-unlike").html('Unlike');
-                $(".icon").html('<i class="fa fa-thumbs-down mt-1"></i>');
+                $(".like-unlike#like-unlike-" + id).html('Unlike');
+                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
             }
         });
     }
