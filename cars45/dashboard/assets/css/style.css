@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+	font-family: 'Montserrat',serif;
+}
 .bg-primary {
     background-color: #33b5ab!important;
 }
