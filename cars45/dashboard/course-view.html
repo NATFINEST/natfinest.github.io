@@ -113,13 +113,13 @@
                                         <li class="list-group-item d-flex">
                                             <a href="https://lms.vfdgroup.com/scrum-content/38/100">1. Control and compliance Topic : Scrom content</a>
                                             <div class="ml-auto d-flex align-items-center">
-                                                <button class="btn btn-light btn-block btn-sm">Watch</button>
+                                                <button class="btn btn-light btn-block btn-sm" data-toggle="modal" data-target="#video" data-type='regular' data-url='https://accessmezone.com/video/video.mp4'>Watch</button>
                                             </div>
                                         </li>
                                         <li class="list-group-item d-flex">
                                             <a href="https://lms.vfdgroup.com/scrum-content/38/100">2. Control and compliance Topic : Scrom content</a>
                                             <div class="ml-auto">
-                                                <button class="btn btn-light btn-block btn-sm">Watch</button>
+                                                <button class="btn btn-light btn-block btn-sm" data-toggle="modal" data-target="#video" data-type='hosted' data-url='https://www.youtube.com/embed/YcApt9RgiT0'>Watch</button>
                                             </div>
                                         </li>
                                         
@@ -182,6 +182,38 @@
     </div>
     <!-- // END drawer-layout -->
 
+    <!-- Adverts -->
+    <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="adLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: transparent;border: 0;box-shadow: none;">
+                <div class="modal-header" style="border-bottom: 0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 3em;padding: 0;color: #fff;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                <div class="modal-body p-0">
+                    
+                    <!-- For Regular Video Use This -->
+                    <video id="container-regular" class="video-js" liveui="true" controls="true" width="100%" style="max-height: 400px;" data-setup="{}">
+                        <source id="regular" src="https://accessmezone.com/video/video.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a
+                          >
+                        </p>
+                    </video>
+
+
+                    <!-- For Hosted Video Use This -->
+                    <div id="container-hosted">
+                        <iframe id="hosted" height="100%" style="width: 100%;height: 400px;" src="https://www.youtube.com/embed/YcApt9RgiT0" frameborder="0" uk-video="automute: true" allowfullscreen uk-responsive></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
 
@@ -218,23 +250,39 @@
     <script src="assets/js/flatpickr.js"></script>
 
     <script type="text/javascript" src="assets/js/jquery-comments.js"></script>
-        <script type="text/javascript">
-            $('#comments-container').comments({
-                profilePictureURL: 'assets/img/dammy.jpg',
-                getComments: function(success, error) {
-                    var commentsArray = [{
-                        id: 1,
-                        created: '2015-10-01',
-                        content: 'Lorem ipsum dolort sit amet',
-                        fullname: 'Simon Powell',
-                        upvote_count: 2,
-                        user_has_upvoted: false
-                    }];
-                    success(commentsArray);
-                },
-                postCommentOnEnter: true
+    <script type="text/javascript">
+        $('#comments-container').comments({
+            profilePictureURL: 'assets/img/dammy.jpg',
+            getComments: function(success, error) {
+                var commentsArray = [{
+                    id: 1,
+                    created: '2015-10-01',
+                    content: 'Lorem ipsum dolort sit amet',
+                    fullname: 'Simon Powell',
+                    upvote_count: 2,
+                    user_has_upvoted: false
+                }];
+                success(commentsArray);
+            },
+            postCommentOnEnter: true
+        });
+    </script> 
+    <script>
+        $(document).ready(function() {
+            $('#video').on('show.bs.modal', function (event) {
+                $('#container-regular').hide();
+                $('#container-hosted').hide();
+                var type = $(event.relatedTarget).data('type');
+                var url = $(event.relatedTarget).data('url');
+                // if (type == 'regular'){
+                    $('#'+type).attr('src', url);
+                    $('#container-'+type).show()
+                // } else {
+
+                // }
             });
-        </script> 
+        });
+    </script>
 
 
 </body>
