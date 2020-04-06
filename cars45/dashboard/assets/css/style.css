@@ -1,0 +1,12 @@
+.bg-primary {
+    background-color: #33b5ab!important;
+}
+a{
+	text-decoration: none!important;
+}
+[dir=ltr] .sidebar-menu-item.active .sidebar-menu-icon{
+	background: #33b5ab!important;
+}
+[dir=ltr] .sidebar-menu-item{
+	margin: 15px 0;
+}
