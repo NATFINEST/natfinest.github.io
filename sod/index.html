@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="This is a boilerplate for a Bootstrap 4.1.1 project">
+		<meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
+		<meta name="author" content="Henrik H. Boelsmand">
+		<title>SCHOOL OF DISCIPLES</title>
+		<link rel="shortcut icon" href="assets/img/favicon.png">
+
+    
+		<!-- build:css -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		<!-- endbuild -->
+
+		<!-- material design icons -->
+	    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+	    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	    <!-- material design icons -->
+
+	    <!--Simp Font -->
+	    <link rel="stylesheet" href="assets/css/simp.css">
+	    <!-- Simp Font -->
+
+	    <!-- Custom Navbar -->
+	    <link rel="stylesheet" type="text/css" href="assets/css/line-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/bsnav.min.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/examples.min.css">
+	    <!-- Custom Navbar -->
+
+    	<link rel="stylesheet" href="assets/css/intlTelInput.css">
+    	<link rel="stylesheet" href="assets/css/nav.css">
+    	<link rel="stylesheet" href="assets/css/hVCarousel.css">
+    	<link rel="stylesheet" href="assets/css/dcalendar.picker.css">
+
+    	<!-- Owl Slider -->
+    	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+    	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    	<!-- Owl Slider -->
+
+		<!-- style:css -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- endbuild -->
+	</head>
+
+	<body>
+		<div class="ad">
+			<div class="container">
+				<div class="row text-center">
+					<a class="close text-white pt-4 mr-2" id="hide"><i class="mdi mdi-close"></i></a>
+					<div class="col-4 d-none d-md-block col-md-5 text-right">
+						<span class="ad-20"><p id="demo"></p></span>
+					</div>
+					<div class="col-5 col-lg-3 text-left">
+						The 2019/2020 Nigerian ADP Registration will END after:
+					</div>
+					<div class="col-3 col-md-1 col-lg-2 text-left">
+						<button class="btn btn-primary ad-btn mt-sm-2 mt-md-4" data-toggle="modal" data-target="#advert">LEARN MORE</button>
+					</div>
+					<!-- Modal For Advert -->
+					<div class="modal fade" id="advert" tabindex="-1" role="dialog" aria-labelledby="advert" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header bg-danger">
+					        <h5 class="modal-title" id="advert">Discount on courses</h5>
+					        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <div class="container-fluid text-danger">
+							    <div class="row">
+							    	<h4 class=" my-4">Enjoy amazing discount on popular courses</h4>
+								    <div class="col-md-6 ad-discount">Use coupon code<br> <h5 class="mt-3">XMAS50</h5> <br> to enjoy 50% discount</div>
+								    <div class="col-md-6 ad-discount">Use coupon code<br> <h5 class="mt-3">DAV50</h5> <br> to enjoy 30% discount</div>
+							    </div>
+							</div>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal For Advert -->
+				</div>
+			</div>
+		</div><!--advert section-->
+
+    	<div class="navbar navbar-expand-lg bsnav px-md-5" style="z-index: 10">
+      		<button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+			<a class="navbar-brnd" href="index.html"><img src="assets/img/sod_logo.png" width="auto" height="70px"></a>
+      		<div class="collapse navbar-collapse justify-content-md-end">
+        		<ul class="navbar-nav navbar-mobile">
+        			<li class="nav-item nav-item-fill active"><a href="home.html" class="ml-4 btn btn-clear-dark">Home</a></li>
+        			<li class="nav-item nav-item-fill active"><a href="about.html" class="ml-4 btn btn-clear-dark">About</a></li>
+        			<li class="nav-item nav-item-fill active"><a href="courses.html" class="ml-4 btn btn-clear-dark">Courses</a></li>
+        			<li class="nav-item nav-item-fill active"><a href="programs.html" class="ml-4 btn btn-clear-dark">Programs</a></li>
+          			<li class="nav-item nav-item-fill active"><a href="login.html" class="nav-link ml-4 btn btn-login">Login</a></li>
+        		</ul>
+      		</div>
+    	</div>
+
+		<div class="bsnav-mobile">
+      		<div class="bsnav-mobile-overlay"></div>
+      		<div class="navbar"></div>
+    	</div>
+
+		 <section class="">
+			<div id="myCrousel" class="hVCarousel">
+                <div class="hVCarousel-inner">
+                    <div class="hVCarousel-slides">
+                        <figure class="hVCarousel-item">
+                            <img src="assets/img/car5.jpg" alt=""/>
+                            <figcaption class="cr-caption row justify-content-start align-items-start">
+                                <div class="col-md-5">
+                                    <div class="bg-dark p-3">
+                                        <h4 class="text-white">Welcome to the School of Disciples</h4>
+	                                    <p class="text-white mb-0">
+	                                        The school of disciples which started in 1985 is co-ordinated by the Christ the Redeemer’s Ministries, an evangelical arm of the Redeemed Christian Church of God. It is a school where Christians of all denominations learn how to be a true and genuine disciples of Jesus Christ, how to study to show oneself approved unto God.
+	                                    </p>
+	                                    <a href="#" class="btn btn-sm btn-light mt-2">Read More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="hVCarousel-item">
+                            <img src="assets/img/car4.jpg" alt=""/>
+                            <figcaption class="cr-caption row justify-content-start align-items-end">
+                                <div class="col-md-5 bg-warning py-3">
+                                    <h4 class="text-dark">Who we are</h4>
+                                    <p class="text-dark mb-0">
+                                        The school of Disciples is a unique school to train the disciples of Jesus Christ. It was founded by the help of the Holy Spirit under the Christ the Redeemers’ Ministries, which is an evangelical arm of the Redeemed Christian Church of God through our Principal Pastor E .A Adeboye who is also the General Overseer of the Church.
+                                    </p>
+	                                <a href="#" class="btn btn-sm btn-light mt-2">Read More</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="hVCarousel-item">
+                            <img src="assets/img/car2.jpg" alt=""/>
+                            <figcaption class="cr-caption row justify-content-end align-items-end">
+                                <div class="col-md-5 bg-danger py-3">
+                                    <h4 class="text-white">Our Programs</h4>
+                                    <p class="text-white mb-0">
+                                        The school is currently running Four programmes
+                                        <ol class="text-white py-2" style="padding-left: 14px">
+                                        	<li>Accelerated Discipleship Program (ADP)</li>
+                                        	<li>The 3-3-4 System</li>
+                                        	<li>The Executive class:</li>
+                                        	<li>The Refresher class</li>
+                                        </ol>
+                                    </p>
+	                                <a href="#" class="btn btn-sm btn-light mt-2">Read More</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+		</section><!--banner-->
+
+		<section class="featured-courses courses m-200">
+			<div class="container">
+				<div class="row category-filter">
+					<h4 class="w-100 text-center">Featured Courses</h4>
+
+					<div class="owl-carousel owl-theme">
+						<div class="category-button cursor-pointer" data-filter="pm" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="pm-col">
+							<div class="course cert">
+						  	<div class="cert-cover pmp">
+						  		<i class="mdi mdi-light mdi-certificate "></i>
+						  	</div>
+						  	<p class="font-weight-bold p-2">Refresher Course</p>
+						  	<span class="text-muted p-2">1 courses</span>
+						  </div>
+						</div>
+
+						<div class="category-button cursor-pointer" data-filter="hr" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<div class="course cert">
+						  	<div class="cert-cover hr">
+						  		<i class="mdi mdi-light mdi-certificate "></i>
+						  	</div>
+						  	<p class="font-weight-bold p-2">Executive Class</p>
+						  	<span class="text-muted p-2">2 courses</span>
+						  </div>
+						</div>
+
+						<div class="category-button cursor-pointer" data-filter="ican" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<div class="course cert">
+						  	<div class="cert-cover ican">
+						  		<i class="mdi mdi-light mdi-certificate "></i>
+						  	</div>
+						  	<p class="font-weight-bold p-2">ADP Courses</p>
+						  	<span class="text-muted p-2">6 courses</span>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-4 collapse collapse-toggle" id="collapseExample">
+					<a href="pmp.html" class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single pmp filter pm">
+					  		<p class="p-2 ellipsis multiline">Project Management Professionals</p>
+					  		<i class="mdi mdi-light mdi-briefcase-outline"></i>
+					  	</div>
+					</a>
+
+					<div class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single filter hr">
+					  		<p class="p-2 ellipsis multiline">Certificate In Human Resource Administration</p>
+					  		<i class="mdi mdi-light mdi-account-multiple"></i>
+					  	</div>
+					</div>
+
+					<div class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single filter hr">
+					  		<p class="p-2 ellipsis multiline ">HR Recruitment & Selection Course (HRSC) </p>
+					  		<i class="mdi mdi-light mdi-teach"></i>
+					  	</div>
+					</div>
+
+					<div class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single filter ican">
+					  		<p class="p-2 ellipsis multiline">Financial Reporting</p>
+					  		<i class="mdi mdi-light mdi-finance"></i>
+					  	</div>
+					</div>
+
+					<div class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single filter ican">
+					  		<p class="p-2 ellipsis multiline">Audit and Assurance </p>
+					  		<i class="mdi mdi-light mdi-theater"></i>
+					  	</div>
+					</div>
+
+					<div class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single filter ican">
+					  		<p class="p-2 ellipsis multiline">Taxation  </p>
+					  		<i class="mdi mdi-light mdi-cash-multiple"></i>
+					  	</div>
+					</div>
+
+					<div class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single filter ican">
+					  		<p class="p-2 ellipsis multiline">Performance Management</p>
+					  		<i class="mdi mdi-light mdi-account-switch"></i>
+					  	</div>
+					</div>
+
+					<div class="col-sm-4 col-md-3 mt-5">
+					  	<div class="course-single filter ican">
+					  		<p class="p-2 ellipsis multiline">Public Sector Accounting and Finance</p>
+					  		<i class="mdi mdi-light mdi-pulse"></i>
+					  	</div>
+					</div>
+
+					<div class="col-sm-4 col-md-3 offset-md-4 mt-5">
+					  	<div class="course-single filter ican">
+					  		<p class="p-2 ellipsis multiline">Management, Governance, and Ethics</p>
+					  		<i class="mdi mdi-light mdi-book-open-page-variant"></i>
+					  	</div>
+					</div>
+
+				</div>
+
+				<a href="courses.html" class="btn btn-primary text-center d-block mt-5" style="margin: 0 auto;width: 120px">All Courses</a>
+			</div>
+		</section><!-- faetured courses-->
+
+		<section class="helping" >
+			<div class="container-fluid">
+				<div class="row">
+					<h3 class="fw-200 w-100 text-center mb-2">Programs of School of Disciples</b></h3>
+					<div class="col">
+						<div class="text-center helping-icons"><i class="mdi mdi-chemical-weapon"></i></div>
+						<h5 class="text-center h-group">Accelerated Discipleship Program (ADP)</h5>
+						<p class="text-center">one year intensive special programme organized for ministers and their wives</p>
+					</div>
+					<div class="col">
+						<div class="text-center helping-icons"><i class="mdi mdi-teach"></i></div>
+						<h5 class="text-center h-group">The 3-3-4 System:</h5>
+						<p class="text-center">a fast track programme organized for workers, members and non members</p>
+					</div>
+					<div class="col">
+						<div class="text-center helping-icons"><i class="mdi mdi-bible"></i></div>
+						<h5 class="text-center h-group">The regular ten years program</h5>
+						<p class="text-center">This programme is organized for those who are not in a hurry</p>
+					</div>
+					<div class="col">
+						<div class="text-center helping-icons"><i class="mdi mdi-star"></i></div>
+						<h5 class="text-center h-group">The Executive class</h5>
+						<p class="text-center">This course will run for 10 days (including Sunday for Manual Labour).</p>
+					</div>
+					<div class="col">
+						<div class="text-center helping-icons"><i class="mdi mdi-book-open-page-variant"></i></div>
+						<h5 class="text-center h-group">The Refresher class</h5>
+						<p class="text-center">This course is for Alumni of the School of Disciples.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="our-clients mt-3">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2 col-12 client">
+						<h4 class="text-white">Clients Profile</h4>
+					</div>
+					<div class="col-lg-5 col-12 dia">
+						<img src="assets/img/dia.png" class="client-logo dia">
+						<h5>Diamond Bank Plc</h5>
+						<p class="fw-400">Customer Engagement via E-learning</p>
+						<p><a href="" class="text-white btn btn-primary btn-sm">Read Article >></a></p>
+					</div>
+					<div class="col-lg-5 col-12 dia lea">
+						<img src="assets/img/lead.png" class="client-logo dia">
+						<h5>Leadway Pensure PFA Limited</h5>
+						<p class="fw-400">Developing Talent Internally</p>
+						<p><a href="" class="text-white btn btn-primary btn-sm">Read Article >></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="d-media">
+			<div class="container">
+				<div class="row">
+					<h2 class="w-100 text-center mb-5 mt-3">In the media</h2>
+					<div class="col-5 offset-1 col-sm-4 offset-sm-2 col-md-2 offset-md-3">
+						<img src="assets/img/distript.png" class="w-100">
+					</div>
+					<div class="col-5 col-sm-4 col-md-2">
+						<img src="assets/img/techpoint.png" class="w-100 mt-3">
+					</div>
+					<div class="col-6 offset-3 col-sm-4 offset-sm-4 mt-4 col-md-2 offset-md-0 mt-md-0">
+						<img src="assets/img/techcabal.png" class="w-100">
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<footer class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-4 links follow">
+					  <h5>Follow us!</h5>
+					  <div class="container">
+						  <div class="row">
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-facebook social facebook"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-twitter social twitter"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-youtube social youtube"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-linkedin social linkedin"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-google-plus social google"></i></a>
+	 						</div>
+	 					</div>
+					</div>
+					<div class="col col-md-3 links">
+					  <h5>Quick Links</h5>
+					  <ul>
+					  	<li><a href="home.html">Home</a></li>
+					  	<li><a href="about.html">About</a></li>
+					  	<li><a href="contact.html">Contact</a></li>
+					  	<li><a href="courses.html">Courses</a></li>
+					  	<li><a href="programs.html">Programs</a></li>
+					  </ul>	
+					</div>
+					<div class="col col-md-5 links">
+					  <h5>Contact Us</h5>
+					  <ul>
+					  	<li class="my-2 fw-400" style="color: #888"><i class="mdi mdi-phone mdi-18px mr-3"></i> +2347035400926</li>
+					  	<li class="my-2 fw-400" style="color: #888"><i class="mdi mdi-email mdi-18px mr-3"></i> crm_sod@yahoo.com, crmsodict@gmail.com</li>
+					  	<li class="my-2 fw-400" style="color: #888"><i class="mdi mdi-map-marker mdi-18px mr-3"></i> Km 46, Lagos-Ibadan Expressway, Mowe, Ogun State</li>
+					  </ul>	
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<footer class="sub">
+			<div class="container">
+				<div class="row sub-links">
+					<div class="col text-left">
+					  	<a href="" class="btn"><i class="mdi mdi-phone"></i><span class="d-none d-sm-inline">Call us<span class="d-none d-md-inline">: +2347035400926</span></span></a>
+					</div>
+					<div class="col text-right">
+					  	<div class="mt-3 fw-400">&copy; School of Disciples 2020. All Rights Reserved</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- build:js -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="assets/js/dcalendar.picker.js"></script>
+		<script>
+			$('#demo').dcalendarpicker();
+			$('#calendar-demo').dcalendar(); //creates the calendar
+		</script>
+		<script src="assets/js/main.js"></script>
+		 <!-- endbuild -->
+
+		<script src="assets/js/category-filter.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.ellipsis.js"></script>
+		<script type="text/javascript">$(".ellipsis").ellipsis();</script>
+		<script type="text/javascript">$('.category-filter .category-button').categoryFilter();</script>
+		<script src="assets/js/jquery.singlePageNav.js"></script>
+		<script src="assets/js/intlTelInput.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script type="text/javascript">
+		</script>
+		<script src="assets/js/video.js"></script>
+		<script src="assets/js/nav.js"></script>
+		<script src="https://rawgit.com/fitodac/bsnav/master/dist/bsnav.min.js"></script>
+    	<script src="assets/js/hVCarousel.min.js"></script>
+
+		<script>
+		    $(function () {
+		        $('#myCrousel').hVCarousel({
+		            arrow: true,
+		            dots: true,
+		            autoplay: true,
+		            interval: 5000
+		        });
+		    });
+		</script>
+		<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Apr 21, 2020 15:37:25").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+		  // Get today's date and time
+		  var now = new Date().getTime();
+
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		  // Display the result in the element with id="demo"
+		  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+
+		  // If the count down is finished, write some text
+		  if (distance < 0) {
+		    clearInterval(x);
+		    document.getElementById("demo").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+		</script>
+	</body>
+
+</html>

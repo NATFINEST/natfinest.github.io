@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Category Filter Demo</title>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<style type="text/css">
+		button:focus, button:active {
+			outline:0;
+		}
+		.filter {
+			transition: all 2s ease;
+		}
+        .container { margin:150px auto;}
+        body { background-color:#f7f7f7;}
+        img { border:1px solid #222; border-radius:3px;}
+		</style>
+
+	</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/Minimal-In-page-Content-Filter-Plugin-jQuery-Category-Filter.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container p-5">
+	<div class="row">
+		<div class="col-sm-12 mb-3">
+			<h1>jQuery Category Filter Demo</h1>
+		</div>
+		<div class="col-sm-12">
+			<div class="category-filter pb-5">
+    			<button class="btn btn-outline-primary category-button active mr-3" data-filter="all">All</button>
+    			<button class="btn btn-outline-primary category-button mr-3" data-filter="portraits">Portraits</button>
+    			<button class="btn btn-outline-primary category-button mr-3" data-filter="landscapes">Landscapes</button>
+    			<button class="btn btn-outline-primary category-button mr-3" data-filter="urban">Urban</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-lg-3 filter portraits mb-5">
+		  <img src="https://placeimg.com/645/480/people" class="img-fluid">
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 filter portraits mb-5">
+		  <img src="https://placeimg.com/635/480/people" class="img-fluid">
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 filter landscapes mb-5">
+		  <img src="https://placeimg.com/640/480/nature" class="img-fluid">
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 filter landscapes mb-5">
+		  <img src="https://placeimg.com/645/480/nature" class="img-fluid">
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 filter urban mb-5">
+		  <img src="https://placeimg.com/640/480/arch" class="img-fluid">
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 filter landscapes mb-5">
+		  <img src="https://placeimg.com/635/480/nature" class="img-fluid">
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 filter portraits mb-5">
+		  <img src="https://placeimg.com/640/480/people" class="img-fluid">
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 filter landscapes mb-5">
+		  <img src="https://placeimg.com/660/480/nature" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="category-filter.js"></script>
+<script type="text/javascript">
+$('.category-filter .category-button').categoryFilter();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
