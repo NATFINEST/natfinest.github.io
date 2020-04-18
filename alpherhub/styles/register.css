@@ -1,3 +1,25 @@
+.gj-datepicker [role=right-icon]{
+    right: 32px;
+    top: -10px;
+    position: absolute;
+}
+.nice-select.open .list{
+    z-index: 9999;
+}
+.single-input .nice-select{
+    height: 46px;
+}
+.form-group.single-input span{
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.nice-select:after{
+    top: 20px!important;
+}
 #lga,
 #state,
 #gender {
@@ -8,7 +30,7 @@
 .select2-selection.select2-selection--single {
     width: 100%!important;
     left: -27%!important;
-    height: 50px;
+    height: 40px;
     margin-bottom: 15px;
 }
 
@@ -22,7 +44,7 @@
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     right: 20px;
-    top: 10px;
+    top: 3px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {

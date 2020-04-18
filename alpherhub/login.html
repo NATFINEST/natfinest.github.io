@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/custom2.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <link rel="stylesheet" href="styles/custom.css" />
 
 </head>
@@ -126,52 +127,40 @@
     </header>
     <!-- /Header -->
 
-    <section class="contact-me contact-version-one" style="background: url(images/login.jpg);background-position-y:center;background-size: cover; min-height: 100vh;background-position-x: center;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8 col-lg-5 col-sm-8 mt-5">
-                    <div class="widget-sidebar contact-me">
-                        <div class="widget-header">
-                            <h4 class="bg-white text-dark">Login</h4>
-                        </div>
-                        <div class="widget-content">
-                            <div class="py-4">
-                                <div class="col-12 mx-auto form-group mb-3">
-                                    <button type="submit" class="btn btn-primary w-100 fs-16" style="height: 50px">
-                                        <i class="fab fa-google"></i> 
-                                        <span class="google-text">GOOGLE SIGN UP</span>
-                                    </button>
+    <section class="contact-me contact-version-one p-0" style="background: url(images/login.jpg);background-position-y:center;background-size: cover;background-position-x: center;">
+        <div style="background: rgba(0,0,0,0.6); min-height: 100vh;">
+            
+            <div class="container">
+                <form action="#">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8 col-lg-5 mx-auto">
+                            <div class="login-screen">
+                                <div class="login-box">
+                                    <h4>Login</h4>
+                                    <div class="row gutters">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actions clearfix">
+                                        <button type="submit" class="btn btn-primary btn-block">Signup</button>
+                                    </div>
+                                    <div class="or">
+                                        <span>or login using</span>
+                                    </div>
+                                    <div class="row gutters">
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-fb btn-block">Google</button>
+                                        </div>
+                                    </div>
+                                    <a href="register.html" class="additional-link">New member? <span>Register</span></a>
                                 </div>
-
-                                <div class="col-8 mx-auto form-group text-center">
-                                    <p class="text-white font-weight-bold">OR</p>
-                                </div>
-                            </div>
-                            <div class="contact-form">
-                                <form action="#" class="instructor-form pt-0">
-                                <div class="col-12 form-group">
-                                    <label for="email" class="sr-only">Your Email Address</label>
-                                    <input type="email" id="email" name="email" placeholder="Your Email Address">
-                                    <span><i class="far fa-envelope-open"></i></span>
-                                </div>
-                                <!-- <div class="col-12 form-group">
-                                    <label for="phoneNumber" class="sr-only">Your Password</label>
-                                    <input type="password" id="password" name="password" placeholder="Your Password">
-                                </div>
-                                <div class="col-12 form-group">
-                                    <p class="text-white" style="font-weight: 600;text-align: right;"><a href="forgot.html" class="text-white">Forgot Password?</a></p>
-                                </div> -->
-                                <div class="col-12 form-group mb-0 text-center">
-                                    <button type="submit" class="submit-btn w-100">Login</button>
-                                </div>
-                                <div class="col-12 form-group">
-                                    <p class="text-dark text-center py-2 my-3" style="font-weight: 600;font-size: 16px; background: white; border-radius: 5">New Member? <a href="register.html" class="text-primary">Register</a></p>
-                                </div>
-                            </form>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>

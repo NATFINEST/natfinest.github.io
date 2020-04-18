@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/custom2.css" />
     <link rel="stylesheet" href="styles/intlTelInput.css">
     <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/custom.css" />
@@ -131,45 +132,28 @@
     </header>
     <!-- /Header -->
 
-    <section class="contact-me contact-version-one" style="background: url(images/login.jpg);background-position-y:center;background-size: cover; min-height: 100vh;background-position-x: center;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8 col-lg-6 col-sm-8 mt-5">
-                    <div class="widget-sidebar contact-me">
-                        <div class="widget-header">
-                            <h4 class="bg-white text-dark">Register</h4>
-                        </div>
-                        <div class="instructor-form-wrapper">
-
-                            <div class="py-4">
-                                <div class="col-9 mx-auto form-group mb-3">
-                                    <button type="submit" class="btn btn-primary w-100 fs-16 fw-700" style="height: 50px">
-                                        <i class="fab fa-google"></i> 
-                                        <span class="google-text">GOOGLE SIGN UP</span>
-                                    </button>
-                                </div>
-
-                                <div class="col-8 mx-auto form-group text-center">
-                                    <p class="text-white font-weight-bold">OR</p>
-                                </div>
-                            </div>
-
-                            <form action="#" class="instructor-form pt-0">
-                                <div class="row ind group">
+    <section class="contact-me contact-version-one p-0" style="background: url(images/login.jpg);background-position-y:center;background-size: cover;background-position-x: center;">
+        <div style="background: rgba(0,0,0,0.6); min-height: 100vh;">
+            
+            <div class="container">
+                <form action="#">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8 col-lg-5 mx-auto">
+                            <div class="login-screen">
+                                <div class="login-box">
+                                    <h4>Sign Up</h4>
+                                    <div class="row ind group">
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="fname" class="sr-only">Firstname</label>
-                                        <input type="text" id="fname" name="fname" placeholder="Your Firstname *" required>
-                                        <span><i class="far fa-user"></i></span>
+                                        <input class="form-control" type="text" id="fname" name="fname" placeholder="Your Firstname *" required>
                                     </div>
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="sname" class="sr-only">Surname</label>
-                                        <input type="text" id="sname" name="sname" placeholder="Your Surname *" required>
-                                        <span><i class="far fa-user"></i></span>
+                                        <input class="form-control" type="text" id="sname" name="sname" placeholder="Your Surname *" required>
                                     </div>
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="email" class="sr-only">Your Email Address</label>
-                                        <input type="email" id="email" name="email" placeholder="Your Email Address*" required>
-                                        <span><i class="far fa-envelope-open"></i></span>
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Your Email Address*" required>
                                     </div>
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="phone" class="sr-only">Phone Number</label>
@@ -178,7 +162,7 @@
                                     <div class="col-12 col-md-6">
                                         <label for="text" class="sr-only">State of Residence</label>
                                         <select name="state" id="state" class="form-control" required>
-                                              <option value="" selected="selected" > Select State of Residence </option>
+                                              <option value="" selected="selected" > Select State </option>
                                               <option value='Abia'>Abia</option>
                                               <option value='Adamawa'>Adamawa</option>
                                               <option value='AkwaIbom'>AkwaIbom</option>
@@ -254,8 +238,7 @@
                                 <div class="row bus group">
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="bname" class="sr-only">Business Name</label>
-                                        <input type="text" id="bname" name="bname" placeholder="Your Business Name *">
-                                        <span><i class="far fa-user"></i></span>
+                                        <input type="text" class="form-control" id="bname" name="bname" placeholder="Your Business Name *">
                                     </div>
                                     <div class="col-12 col-md-6 form-group single-input">
                                         <select name="quest1" id="quest1" style="display: none;">
@@ -276,13 +259,11 @@
                                 <div class="row prof group">
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="organ" class="sr-only">Organisation</label>
-                                        <input type="text" id="organ" name="organ" placeholder="Organisation *" required>
-                                        <span><i class="far fa-building"></i></span>
+                                        <input type="text" class="form-control" id="organ" name="organ" placeholder="Organisation *" required>
                                     </div>
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="job" class="sr-only">Job title</label>
-                                        <input type="text" id="job" name="job" placeholder="Job title *" required>
-                                        <span><i class="fas fa-suitcase"></i></span>
+                                        <input type="text" class="form-control" id="job" name="job" placeholder="Job title *" required>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <select name="education" id="education" required>
@@ -294,28 +275,28 @@
                                     </div>
                                     <div class="col-12 col-md-6 form-group">
                                         <label for="linkedin" class="sr-only">LinkedIn</label>
-                                        <input type="text" id="linkedin" name="linkedin" placeholder="LinkedIn Handle *" required>
-                                        <span><i class="fa fa-linkedin-in"></i></span>
+                                        <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="LinkedIn Handle *" required>
                                     </div>
                                 </div>
-
-                                <div class="col-12 form-group mb-0 text-center sub">
-                                    <button type="submit" class="submit-btn w-100">Register</button>
-                                </div>
-                            </form>
-
-                            <div class="row">
-                                <div class="col-12 form-group log">
-                                    <p class="text-dark text-center py-2 my-3" style="font-weight: 600;font-size: 16px; background: white; border-radius: 5">Already a Member? <a href="login.html" class="text-primary">Login</a></p>
+                                    <div class="or">
+                                        <span>or sign up using</span>
+                                    </div>
+                                    <div class="row gutters">
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-fb btn-block">Google</button>
+                                        </div>
+                                    </div>
+                                    <a href="login.html" class="additional-link">Already a member? <span>Login</span></a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
+
+   
 
     <footer class="mt-0">
         <div class="container">
