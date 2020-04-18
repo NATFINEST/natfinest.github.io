@@ -17,12 +17,15 @@
     $("select#education").select2();
     $("select#gender2").select2();
     $('.bus').hide();
+    $('.prof').hide();
     $('#quest').change(function () {
-        if($(this).val() == 'yes'){
-            $('.bus').show();
+        if($(this).val() == 'professional'){
+            $('.bus').hide();
+            $('.prof').show();
         }
         else{
-            $('.bus').hide();
+            $('.prof').hide();
+            $('.bus').show();
         }
     })
     $('select#quest').niceSelect();
