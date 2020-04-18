@@ -17,12 +17,19 @@
     $("select#education").select2();
     $("select#gender2").select2();
     $('.bus').hide();
+    $('.prof').hide();
     $('#quest').change(function () {
-        if($(this).val() == 'yes'){
+        if($(this).val() == 'professional'){
+            $('.bus').hide();
+            $('.prof').show();
+        }
+        else if($(this).val() == 'business'){
+            $('.prof').hide();
             $('.bus').show();
         }
         else{
             $('.bus').hide();
+            $('.prof').hide();
         }
     })
     $('select#quest').select2();
@@ -31,12 +38,12 @@
     var input1 = document.querySelector(".phone");
     window.intlTelInput(input1, {
       preferredCountries: ['ng'],
-      utilsScript: "scripts/utils.js",
+      utilsScript: "js/utils.js",
     });
     var input2 = document.querySelector(".phones");
     window.intlTelInput(input2, {
       preferredCountries: ['ng'],
-      utilsScript: "scripts/utils.js",
+      utilsScript: "js/utils.js",
     });
     // $("#state").change(function() {
     //     var state=$(this).val();
