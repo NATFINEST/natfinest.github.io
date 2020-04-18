@@ -23,9 +23,13 @@
             $('.bus').hide();
             $('.prof').show();
         }
-        else{
+        else if($(this).val() == 'business'){
             $('.prof').hide();
             $('.bus').show();
+        }
+        else{
+            $('.bus').hide();
+            $('.prof').hide();
         }
     })
     $('select#quest').niceSelect();
