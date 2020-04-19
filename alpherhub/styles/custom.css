@@ -219,6 +219,9 @@ section{
 .medium-gap, .large-gap{
   margin-top: 0!important;
 }
+.post-image img{
+  height: 400px!important;
+}
 @media (max-width: 1200px) {
     .mentor-img {
         min-height: 60vh;
