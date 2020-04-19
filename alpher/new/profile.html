@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/intlTelInput.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/profile.css">
+
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <i class="mdi mdi-book fs-20"></i> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="settings.html">
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="mt-md-4">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="row mx-md-2">
+
+                    <div class="col-md-3 my-3">
+                        <div class="card--dashboard profile-height-default">
+                            <div class="">
+                                <form class="">
+
+                                    <div class="wrap-custom-file">
+                                        <img src="images/chioma.jpg" style="height: 150px;width: 150px;object-fit: cover;border-radius: 50%;">
+                                    </div>
+
+                                    <div class="px-2 text-center">
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-7 text-lg-left">Date Joined:</div>
+                                            <div class="font-12 col text-md-right">28-03-2019</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Enrolled Course:</div>
+                                            <div class="font-12 col text-md-right">07</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Networks:</div>
+                                            <div class="font-12 col text-md-right">12</div>
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="font-12 col-lg-8 text-lg-left">Status:</div>
+                                            <div class="font-12 col text-md-right">Active</div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 my-3">
+                        <div class="card--dashboard">
+                            <div class="d-flex border-bottom">
+                                <div class="col px-4">
+                                    <h5 class="text-grey my-2 weight-semi-bold">Personal Information</h5>                                
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 px-4">
+                                <div class="col-lg-12 mt-3 mb-5">
+                                    <form action="#" class="instructor-form pt-0">
+                                        <div class="row ind group">
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="fname" class="font-weight-bold">Firstname</label>
+                                                <div>James</div>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="sname" class="font-weight-bold">Surname</label>
+                                                <div>Smart</div>
+
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="email" class="font-weight-bold">Email Address</label>
+                                                <div>js@gmail.com</div>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="phone" class="font-weight-bold">Phone Number</label>
+                                                <div>07099999999</div>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="text" class="font-weight-bold">State of Residence</label>
+                                                <div>Lagos</div>
+                                            </div>                                   
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="text" class="font-weight-bold">Gender</label>
+                                                <div>Male</div>                             
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="text" class="font-weight-bold">Religion</label>
+                                                <div>Christianity</div> 
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card--dashboard my-3">
+                            <div class="d-flex border-bottom">
+                                <div class="col px-4">
+                                    <h5 class="text-grey my-2 weight-semi-bold">Business/Professional Information</h5>                                
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 px-4">
+                                <div class="col-lg-12 mt-3 mb-5">
+                                    <form action="#" class="instructor-form pt-0">
+                                        <div class="row ind group">
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="fname" class="font-weight-bold">Business Name</label>
+                                                <div>Davtonlearn</div>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="sname" class="font-weight-bold">Organisation</label>
+                                                <div>Js Mutual</div>
+
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="email" class="font-weight-bold">Job title</label>
+                                                <div>Business Advocate</div>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-group">
+                                                <label for="phone" class="font-weight-bold">LinkedIn</label>
+                                                <div>iamjsmart</div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Start of itdacademy Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
+        <!-- End of itdacademy Zendesk Widget script -->
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery.showPassword.js"></script>
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+        <script src="js/intlTelInput.js"></script>
+        <script src="js/utility.js"></script>   
+        <script src="js/tagsinput.js"></script>
+        <script src="js/lga.js"></script>
+
+    </body>
+
+</html>
