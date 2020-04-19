@@ -46,7 +46,7 @@ a{
 .ad-20{
 	font-size: 32px;
     font-weight: 500;
-    color: #e86b93;
+    color: #00923f;
 }
 .ad-percent{
     font-weight: 500;
@@ -76,7 +76,7 @@ a{
 	margin-top: 20px;
 }
 .ad-discount{
-	border: 2px dashed red;
+	border: 2px dashed #28a745;
 	text-align: center;
 	padding: 10px;
 }
@@ -149,7 +149,7 @@ a{
     padding: 7% 10px 7% 10px;
 }
 .banner.course{
-	background-image: radial-gradient(circle at 28% 36%,#ff9195,#ff5d63);
+	background-image: radial-gradient(circle at 28% 36%,#01913c,#0093dd);
 	height: 100%;
 	padding: 20px;
 	border: 0;
@@ -635,8 +635,8 @@ header.request{
 	vertical-align: middle;
 }
 .feat-icon i:before{
-	color: #ff8286;
-    border: 1px solid #ff878c;
+	color: #00923f;
+    border: 1px solid #259f56;
     border-radius: 45%;
     font-size: 22px;
     height: 33px;
@@ -663,7 +663,7 @@ a.btn-instructor{
     color: #008ad6;
 }
 a.btn-instructor:hover{
-	color: #ff6167;
+	color: #00923f;
 }
 .fw-300{
 	font-weight: 300;
@@ -1158,12 +1158,13 @@ label:hover:before {
     border: 0 none;
     padding: 0;
     margin: 0;
-    min-height: 270px;
     position: relative;
 }
 
 .card .thumbnail img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card .thumb-cover {
@@ -1552,9 +1553,7 @@ a, a:hover, a:focus, .btn:focus, .btn:hover, .btn:active, .btn:active:focus, .bt
 
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-    .hVCarousel .hVCarousel-item .cr-caption{
-        display: none;
-    }
+    
   	.terms::after{
   		background: transparent;
   	}
@@ -1712,11 +1711,13 @@ a, a:hover, a:focus, .btn:focus, .btn:hover, .btn:active, .btn:active:focus, .bt
 	}
 }
 
+@media (max-width: 769px) {
+    .hVCarousel .hVCarousel-item .cr-caption{
+        display: none;
+    }
+}
 
-
-
-
-  @media (min-width: 769px) {
+@media (min-width: 769px) {
     .hVCarousel .hVCarousel-item {
       max-height: 70vh;
     }
