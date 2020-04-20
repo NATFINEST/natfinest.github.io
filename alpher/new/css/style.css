@@ -255,7 +255,7 @@ body {
 }
 
 .opp-img{
-    height: 120px;
+    height: auto;
     object-fit: cover;
     width: 100%;
 }
