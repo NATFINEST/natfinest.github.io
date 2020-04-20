@@ -225,6 +225,9 @@ section{
 .course-img{
   height: auto!important;
 }
+.single-posts .single-post{
+  margin-bottom: 0;
+}
 @media (max-width: 1200px) {
     .mentor-img {
         min-height: 60vh;
