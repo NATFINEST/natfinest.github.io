@@ -220,7 +220,10 @@ section{
   margin-top: 0!important;
 }
 .single-post .post-image img{
-  height: 400px!important;
+  height: auto!important;
+}
+.course-img{
+  height: auto!important;
 }
 @media (max-width: 1200px) {
     .mentor-img {
