@@ -40,6 +40,12 @@
     font-style: normal;
   font-weight:700;
 }
+.slick-prev:before, .slick-next:before{
+      color: #554a74;
+}
+.slick-initialized .slick-slide{
+  display: inline-block;
+}
 a.box_feat:hover{
       color: #ba15a3!important;
 }
@@ -565,5 +571,5 @@ input[type='file'] {
 }
 
 .grid.grid_1 ul li figcaption, .grid ul li figure img{
-  height: 180px!important;
+  height: auto!important;
 }

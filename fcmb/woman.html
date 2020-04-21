@@ -21,6 +21,11 @@
 	<!-- SPECIFIC CSS -->
     <link href="layerslider/css/layerslider.css" rel="stylesheet">
 
+    <!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/blog.css" rel="stylesheet">
@@ -251,11 +256,12 @@
 					<span><em></em></span>
 					<h2>SheVentures Teaser</h2>
 				</div>
-				<div class="grid">
-					<ul class="magnific-gallery">
+
+				<div class="container grid">
+				    <ul class="magnific-gallery multiple-items">
 						<li>
 							<figure>
-								<img src="http://i3.ytimg.com/vi/i1L0s_7xdzo/hqdefault.jpg" alt="" style="height:210px!important;">
+								<img src="http://i3.ytimg.com/vi/i1L0s_7xdzo/hqdefault.jpg" alt="" >
 								<figcaption>
 								<div class="caption-content">
 									<a href="https://www.youtube.com/embed/i1L0s_7xdzo" class="video" title="Video Vimeo">
@@ -269,7 +275,7 @@
 				
 						<li>
 							<figure>
-								<img src="http://i3.ytimg.com/vi/_8HfLs5V4rE/hqdefault.jpg" alt="" style="height:210px!important;">
+								<img src="http://i3.ytimg.com/vi/_8HfLs5V4rE/hqdefault.jpg" alt="" >
 								<figcaption>
 								<div class="caption-content">
 									 <a href="https://www.youtube.com/embed/_8HfLs5V4rE" class="video" title="Video Youtube">
@@ -282,7 +288,7 @@
 						</li>
 						<li>
 							<figure>
-								<img src="http://i3.ytimg.com/vi/-fqGTt2QL3w/hqdefault.jpg" alt="" style="height:210px!important;">
+								<img src="http://i3.ytimg.com/vi/-fqGTt2QL3w/hqdefault.jpg" alt="" >
 								<figcaption>
 								<div class="caption-content">
 									<a href="https://www.youtube.com/embed/_8HfLs5V4rE" class="video" title="Video Vimeo">
@@ -295,7 +301,7 @@
 						</li>
 						<li>
 							<figure>
-								<img src="http://i3.ytimg.com/vi/-fqGTt2QL3w/hqdefault.jpg" alt="" style="height:210px!important;">
+								<img src="http://i3.ytimg.com/vi/-fqGTt2QL3w/hqdefault.jpg" alt="" >
 								<figcaption>
 								<div class="caption-content">
 									<a href="https://www.youtube.com/embed/_8HfLs5V4rE" class="video" title="Video Vimeo">
@@ -308,7 +314,6 @@
 						</li>
 					</ul>
 				</div>
-				<!-- /grid -->
 			</div>
 			<!-- /container -->
 		</div>
@@ -380,6 +385,7 @@
     <script src="layerslider/js/greensock.js"></script>
     <script src="layerslider/js/layerslider.transitions.js"></script>
     <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
         'use strict';
         $('#layerslider').layerSlider({
@@ -405,7 +411,43 @@
 			// WOW animation initialize
 			new WOW().init();
 		});
-	</script	
+	</script>
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.multiple-items').slick({
+      	slide: 'li',
+		  infinite: true,
+		  slidesToShow: 4,
+		  slidesToScroll: 4,
+		  responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		   ]
+		});
+    });
+  </script>
 	
 </body>
 

@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/sina-nav.css">
+    <link href="css/intlTelInput.css" rel="stylesheet">
 
 </head>
 
@@ -165,7 +166,7 @@
 						<!-- /post -->
 
 						<div class="container">
-							<p class="text-center mt-3"><a href="" class="btn_1 rounded">Register</a></p>
+							<p class="text-center mt-3"><a href="" class="btn_1 rounded" data-toggle="modal" data-target="#eventModal">Register</a></p>
 						</div>
 
 					</div>
@@ -257,11 +258,53 @@
 		<!--/footer-->
 	</div>
 	<!-- page -->
+
+	<!-- Events Modal -->
+    <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 0!important;font-size: 16px!important">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Event Registration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="user-log-form" style="border: 0;padding: 0">
+                        <div class="row">
+                            <div class="form-group col-md-12 my-1">
+                                <input type="text" class="form-control element-block fs-14" placeholder="Firstname *" required>
+                            </div>
+                            <div class="form-group col-md-12 my-1">
+                                <input type="text" class="form-control element-block fs-14" placeholder="Lastname *" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-12 my-1">
+                                <input type="email" class="form-control element-block fs-14" placeholder="Email address *" required>
+                            </div>
+                            <div class="form-group col-md-12 my-1">
+                                <input id="phone" name="phone" type="tel" class="form-control element-block fs-14" required>
+                            </div>
+                        </div>
+
+                        <div class="w-100 alert alert-info mt-2" style="font-size: 14px">Upon completion of this form, If you are not already member of businesszone, an account will be created automatically.</div>
+
+                        <div class="btns-wrap my-3 text-center">
+                            <button type="submit" class="btn btn-primary bg-primary fs-14" style="margin: 0 auto;">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 	
 	<!-- COMMON SCRIPTS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/common_scripts.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main_admission.js"></script>
+    <script src="js/intlTelInput.js"></script>
 	<script src="assets/validate.js"></script>
 	<script src="js/sina-nav.js"></script>
 	
@@ -283,6 +326,16 @@
                 // Please make sure that you didn't forget to add a comma to the line endings
                 // except the last line!
         });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+              preferredCountries: ['ng'],
+              utilsScript: "js/utils.js",
+            });
+
+        })
     </script>
   
 </body>
