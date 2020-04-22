@@ -723,8 +723,12 @@ $(".like").click(function(e) {
     id = $(this).data("id");
     user_id = $(this).data("user");
     post_id = $(this).data("post");
-    if ($(".like-unlike#like-unlike-" + id).html() == 'Like') {
-        $(this).css("pointer-events", "none");
+    if ($(".like-unlike#like-unlike-" + id).html() === 'Like') {
+        $(".like-unlike#like-unlike-" + id).html('Unlike');
+        $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
+        $(".like").css("pointer-events", "auto");
+        $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) + 1);
+        // $(this).css("pointer-events", "none");
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/',
             dataType: 'json',
@@ -734,19 +738,19 @@ $(".like").click(function(e) {
             processData: false,
             success: function( data, textStatus, jQxhr ){
                 $('#response pre').html( JSON.stringify( data ) );
-                $(".like-unlike#like-unlike-" + id).html('Unlike');
-                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
-                $(".like").css("pointer-events", "auto");
-                $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) + 1);
             },
             error: function( jqXhr, textStatus, errorThrown ){
-                $(".like-unlike#like-unlike-" + id).html('Like');
-                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+                // $(".like-unlike#like-unlike-" + id).html('Like');
+                // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
             }
         });
     }
     else {
-        $(this).css("pointer-events", "none");
+        // $(this).css("pointer-events", "none");
+        $(".like-unlike#like-unlike-" + id).html('Like');
+        $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+        $(".like").css("pointer-events", "auto");
+        $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) - 1);
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/',
             dataType: 'json',
@@ -756,10 +760,6 @@ $(".like").click(function(e) {
             processData: false,
             success: function( data, textStatus, jQxhr ){
                 $('#response pre').html( JSON.stringify( data ) );
-                $(".like-unlike#like-unlike-" + id).html('Like');
-                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
-                $(".like").css("pointer-events", "auto");
-                $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) - 1);
             },
             error: function( jqXhr, textStatus, errorThrown ){
                 $(".like-unlike#like-unlike-" + id).html('Unlike');
