@@ -713,10 +713,14 @@ $('.text-likes').text($('.num-likes').text() == '1' ? 'like' : 'likes');
 $('.text-comments').text($('.num-comments').text() == '1' ? 'comment' : 'comments');
 $('.text-shares').text($('.num-shares').text() == '1' ? 'share' : 'shares');
 
-$('#share').on('show.bs.modal', function (event) {
-    var id = $(event.relatedTarget).data('id');
-    var post_id = $(event.relatedTarget).data('post');
-    var user_id = $(event.relatedTarget).data('user');
+
+$(document).ready(function(){
+    $('.share_link').on('click', function () {
+        id = $(this).data("id");
+        user_id = $(this).data("user");
+        post_id = $(this).data("post");
+        $('#share').modal('show');
+    })
 });
 
 $(".like").click(function(e) {
