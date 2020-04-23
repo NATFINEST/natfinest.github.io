@@ -742,6 +742,8 @@ $(".like").click(function(e) {
             error: function( jqXhr, textStatus, errorThrown ){
                 // $(".like-unlike#like-unlike-" + id).html('Like');
                 // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+                 $(".like-unlike#like-unlike-" + id).html('Like');
+                 $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
             }
         });
     }
