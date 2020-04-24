@@ -11,7 +11,6 @@ $('#start').on('click', function () {
 });
 
 if ($('.modal-uploader').length) {
-
         Dropzone.autoDiscover = false;
 
     // Get the template HTML and remove it from the doument
@@ -37,8 +36,105 @@ if ($('.modal-uploader').length) {
         e.preventDefault();
         e.stopPropagation();
         var up_file = modalUploader.files
+        var time = $.now(); 
+        var currentdate = new Date(); 
+        var datetime = currentdate.getFullYear() + "-"
+                + ("0" + currentdate.getMonth()+1).slice(-2) + "-" 
+                + ("0" + currentdate.getDate()).slice(-2) + " " 
+                + ("0" + currentdate.getHours()).slice(-2) + ":"  
+                + ("0" + currentdate.getMinutes()).slice(-2) + ":" 
+                + ("0" + currentdate.getSeconds()).slice(-2);
+
         
         if (modalUploader.files != "") {
+            $(".card-content").prepend(`
+                <div class="card--dashboard mt-4" style="display: block;">
+
+                    <div class="row mb-4">
+                        <div class="col-md-12 my-2 pt-2">
+                            <div class="px-4 row">
+                                <div class="col-9 d-flex">
+                                    <div class="mr-2">
+                                        <img src="images/course_img.png" class="mt-1" />
+                                    </div>
+                                    <div>
+                                        <p class="font-weight-bold mb-0 font-14">Brandee Sanders</p>
+                                        <p class="font-weight-light font-14">`+datetime+`</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-4">
+                                <p class="font-14 font-weight-light">`+$('#media-text').val()+`</p>
+                            </div>
+                            <div class="row">
+                                <div class="col col-image" id="col-image-`+time+`">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="like-share row my-3 px-4">
+                                <div class=" col text-left">
+                                    <a class="like" data-user='1' data-post='`+time+`' data-id="`+time+`">
+                                        <span class="icon" id="icon-`+time+`"><i class="fa fa-thumbs-up"></i></span>
+                                        <span class="like-unlike" id="like-unlike-`+time+`">Like</span>
+                                    </a>
+                                </div>
+                                <div class="share col text-left">
+                                    <a class="share_link" data-post='`+time+`' data-user='1' data-id="`+time+`">
+                                        <span><i class="fa fa-share"></i></span>
+                                        <span>Share</span>
+                                    </a>
+                                </div>
+                                <div class="like-share-value text-right">
+                                    <span class="mr-1 fs-12 likes-val"><span class="num-likes" id="num-likes-`+time+`">0</span> <span class="text-likes">like</span></span>
+                                    <span class="mr-1 fs-12 comments-val"><span class="num-comments">0</span> <span class="text-comments">comment</span></span>
+                                    <!-- <span class="mr-1 fs-12 shares-val"><span class="num-shares">3</span> <span class="text-shares">shares</span></span> -->
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="px-4 row mt-3">
+                                <div class="col-lg-12 col-12 d-flex">
+                                    <img src="images/course_img.png" class="mt-1 mr-2" />
+                                    <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-`+time+`" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                    <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-`+time+`" data-load="p`+time+`">Send</button>
+                                </div>
+                            </div>
+
+                            <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-`+time+`">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>`)
+
+                for (i = 0; i < up_file.length; i++) {
+                    if(i==0){
+                        $(".col-image#col-image-"+time).append(`
+                            <div class="col-12 img-p`+time+` post-image" style="display:block;">
+                                <a href="`+up_file[i].dataURL+`" data-lightbox="img-p`+time+`" class="content">
+                                    <div class="content-overlay"></div>
+                                    <img src="`+up_file[i].dataURL+`" class="img-fluid mt-2 comm-img" />
+                                    <div class="content-details fadeIn-top">
+                                        <h3>VIEW IMAGE</h3>
+                                    </div>
+                                </a>
+                                
+                            </div>`)
+                    }
+                    else{
+                        $(".col-image#col-image-"+time).append(`
+                            <div class="col-12 img-p`+time+` post-image">
+                                <a href="`+up_file[i].dataURL+`" data-lightbox="img-p`+time+`" ><img class="img-fluid mt-2 comm-img" src="`+up_file[i].dataURL+`"></a>
+                            </div>`)
+                    }
+                }
+
+                $('html,body').animate({
+                    scrollTop: $('.card-content').offset().top
+                }, 1500);
 
             $.ajax({
                 url: 'https://jsonplaceholder.typicode.com/todos/',
@@ -55,6 +151,68 @@ if ($('.modal-uploader').length) {
                 }
             });
         }else{
+            $(".card-content").prepend(`
+                <div class="card--dashboard mt-4" style="display: block;">
+
+                    <div class="row mb-4">
+                        <div class="col-md-12 my-2 pt-2">
+                            <div class="px-4 row">
+                                <div class="col-9 d-flex">
+                                    <div class="mr-2">
+                                        <img src="images/course_img.png" class="mt-1" />
+                                    </div>
+                                    <div>
+                                        <p class="font-weight-bold mb-0 font-14">Brandee Sanders</p>
+                                        <p class="font-weight-light font-14">`+datetime+`</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-4">
+                                <p class="font-14 font-weight-light">`+$('#media-text').val()+`</p>
+                            </div>
+                            <div class="row">
+                                <div class="col col-image" id="col-image-`+time+`">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="like-share row my-3 px-4">
+                                <div class=" col text-left">
+                                    <a class="like" data-user='1' data-post='`+time+`' data-id="`+time+`">
+                                        <span class="icon" id="icon-`+time+`"><i class="fa fa-thumbs-up"></i></span>
+                                        <span class="like-unlike" id="like-unlike-`+time+`">Like</span>
+                                    </a>
+                                </div>
+                                <div class="share col text-left">
+                                    <a class="share_link" data-post='`+time+`' data-user='1' data-id="`+time+`">
+                                        <span><i class="fa fa-share"></i></span>
+                                        <span>Share</span>
+                                    </a>
+                                </div>
+                                <div class="like-share-value text-right">
+                                    <span class="mr-1 fs-12 likes-val"><span class="num-likes" id="num-likes-`+time+`">0</span> <span class="text-likes">like</span></span>
+                                    <span class="mr-1 fs-12 comments-val"><span class="num-comments">0</span> <span class="text-comments">comment</span></span>
+                                    <!-- <span class="mr-1 fs-12 shares-val"><span class="num-shares">3</span> <span class="text-shares">shares</span></span> -->
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="px-4 row mt-3">
+                                <div class="col-lg-12 col-12 d-flex">
+                                    <img src="images/course_img.png" class="mt-1 mr-2" />
+                                    <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-`+time+`" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                    <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-`+time+`" data-load="p`+time+`">Send</button>
+                                </div>
+                            </div>
+
+                            <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-`+time+`">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>`)
             $.ajax({
                 url: 'https://jsonplaceholder.typicode.com/todos/',
                 dataType: 'json',

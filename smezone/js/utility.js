@@ -635,6 +635,7 @@ $(document).ready(function() {
 
 // For Community
 $(function () {
+    
     $('.loadMore').hide();
     postlen = $('.card--dashboard').length
     for (i = 1; i <= postlen; i++) {
@@ -678,7 +679,8 @@ $(function () {
     });
 });
 
-$('.comment-send').on('click', function () {
+
+$("body").delegate(".comment-send", "click", function(){
     var id = $(this).data('id');
     var comment = $('#input-'+id).val();
     var img = $('.comment-text').data('img');
@@ -691,7 +693,7 @@ $('.comment-send').on('click', function () {
                 $("#"+id).append('<div class="col-12 blog_comment p1 d-block">\
                                         <div class="d-flex">\
                                             <div class="mr-2">\
-                                                <img src="img/'+img+'" class="mt-1" />\
+                                                <img src="images/'+img+'" class="mt-1" />\
                                             </div>\
                                             <div class="p-2 position-relative">\
                                                 <p class="weight-semi-bold mb-1">'+name+' </p>\
@@ -702,6 +704,9 @@ $('.comment-send').on('click', function () {
 
     }
 
+    $(".num-comments#num-"+id).text(parseInt($(".num-comments#num-"+id).text()) + 1);
+    plural();
+
     $('#input-'+id).val('');
 
     $('.post#'+id).animate({
@@ -709,13 +714,17 @@ $('.comment-send').on('click', function () {
     }, 1500);
 })
 
-$('.text-likes').text($('.num-likes').text() == '1' ? 'like' : 'likes');
-$('.text-comments').text($('.num-comments').text() == '1' ? 'comment' : 'comments');
-$('.text-shares').text($('.num-shares').text() == '1' ? 'share' : 'shares');
-
+//Pluralize like(s) and comment(s)
+function plural() {
+    $.each($('.like-share'), function(index, val) {
+        $(this).find(".text-likes").text($(this).find(".num-likes").text() >= 2 ? 'likes' : 'like');
+        $(this).find(".text-comments").text($(this).find(".num-comments").text() >= 2 ? 'comments' : 'comment');
+    });
+}
 
 $(document).ready(function(){
-    $('.share_link').on('click', function () {
+    plural();
+    $("body").delegate(".share_link", "click", function(){
         id = $(this).data("id");
         user_id = $(this).data("user");
         post_id = $(this).data("post");
@@ -723,7 +732,7 @@ $(document).ready(function(){
     })
 });
 
-$(".like").click(function(e) {
+$("body").delegate(".like", "click", function(){
     id = $(this).data("id");
     user_id = $(this).data("user");
     post_id = $(this).data("post");
@@ -732,6 +741,7 @@ $(".like").click(function(e) {
         $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
         $(".like").css("pointer-events", "auto");
         $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) + 1);
+        plural();
         // $(this).css("pointer-events", "none");
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/',
@@ -746,8 +756,6 @@ $(".like").click(function(e) {
             error: function( jqXhr, textStatus, errorThrown ){
                 // $(".like-unlike#like-unlike-" + id).html('Like');
                 // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
-                 $(".like-unlike#like-unlike-" + id).html('Like');
-                 $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
             }
         });
     }
@@ -757,6 +765,7 @@ $(".like").click(function(e) {
         $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
         $(".like").css("pointer-events", "auto");
         $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) - 1);
+        plural();
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/',
             dataType: 'json',
