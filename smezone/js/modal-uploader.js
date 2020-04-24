@@ -88,8 +88,7 @@ if ($('.modal-uploader').length) {
                                 </div>
                                 <div class="like-share-value text-right">
                                     <span class="mr-1 fs-12 likes-val"><span class="num-likes" id="num-likes-`+time+`">0</span> <span class="text-likes">like</span></span>
-                                    <span class="mr-1 fs-12 comments-val"><span class="num-comments">0</span> <span class="text-comments">comment</span></span>
-                                    <!-- <span class="mr-1 fs-12 shares-val"><span class="num-shares">3</span> <span class="text-shares">shares</span></span> -->
+                                    <span class="mr-1 fs-12 comments-val"><span class="num-comments" id="num-comment-`+time+`">0</span> <span class="text-comments">comment</span></span>
                                 </div>
                             </div>
 
