@@ -1,3 +1,24 @@
 .modal-backdrop.in{
     display: none!important;
 }
+.reply{
+	max-width: 80%;
+    margin: 0 auto;
+    display: none;
+    /*background: rgba(204, 204, 204, .4);*/
+}
+.blog_comment div div.mr-2{
+	min-width: 50px;
+    height: auto;
+}
+.comment_reply{
+    max-width: 80%;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 5px;
+    display: none;
+}
+.loadReply{
+	border-radius: 50%;
+	padding: 0px 6px;
+}

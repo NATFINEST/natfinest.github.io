@@ -100,6 +100,19 @@ if ($('.modal-uploader').length) {
                                     <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-`+time+`" data-img="course_img.png" data-name="Kelvin Sam"/>
                                     <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-`+time+`" data-load="p`+time+`">Send</button>
                                 </div>
+                                <div class="col-12 comment_reply mx-auto" id="p`+time+`">
+                                    <div class="d-flex">
+                                        <div class="p-2 position-relative">
+                                            <p class="weight-semi-bold mb-1" id="comment-reply-name"></p>
+                                            <p class="font-13 font-weight-light mb-1" id="comment-reply-text"></p>
+                                            <p class="d-none" id="comment-reply-post-id"></p>
+                                            <p class="d-none" id="comment-reply-comment-id"></p>
+                                        </div>
+                                        <div class="ml-auto mt-2">
+                                            <a href="#" class="hide-comment"><i class="mdi mdi-close"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-`+time+`">
@@ -191,8 +204,7 @@ if ($('.modal-uploader').length) {
                                 </div>
                                 <div class="like-share-value text-right">
                                     <span class="mr-1 fs-12 likes-val"><span class="num-likes" id="num-likes-`+time+`">0</span> <span class="text-likes">like</span></span>
-                                    <span class="mr-1 fs-12 comments-val"><span class="num-comments">0</span> <span class="text-comments">comment</span></span>
-                                    <!-- <span class="mr-1 fs-12 shares-val"><span class="num-shares">3</span> <span class="text-shares">shares</span></span> -->
+                                    <span class="mr-1 fs-12 comments-val"><span class="num-comments" id="num-comment-`+time+`">0</span> <span class="text-comments">comment</span></span>
                                 </div>
                             </div>
 
@@ -203,6 +215,19 @@ if ($('.modal-uploader').length) {
                                     <img src="images/course_img.png" class="mt-1 mr-2" />
                                     <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-`+time+`" data-img="course_img.png" data-name="Kelvin Sam"/>
                                     <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-`+time+`" data-load="p`+time+`">Send</button>
+                                </div>
+                                <div class="col-12 comment_reply mx-auto" id="p`+time+`">
+                                    <div class="d-flex">
+                                        <div class="p-2 position-relative">
+                                            <p class="weight-semi-bold mb-1" id="comment-reply-name"></p>
+                                            <p class="font-13 font-weight-light mb-1" id="comment-reply-text"></p>
+                                            <p class="d-none" id="comment-reply-post-id"></p>
+                                            <p class="d-none" id="comment-reply-comment-id"></p>
+                                        </div>
+                                        <div class="ml-auto mt-2">
+                                            <a href="#" class="hide-comment"><i class="mdi mdi-close"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 

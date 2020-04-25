@@ -656,6 +656,28 @@ $(function () {
         }, 1500);
     });
 });
+
+$(function () {
+    $('.loadReply').hide();
+    replen = $('.card--dashboard').length
+    for (i = 1; i <= replen; i++) {
+        $(".r"+i).slice(0, 2).show();
+        if(($(".r"+i).length)>2){
+            $('.loadReply#r'+i).show();
+        }
+    };
+    $(".loadReply").on('click', function (e) {
+        e.preventDefault();
+        id = $(this).data("id");
+        $("." + id + ":hidden").slice(0, 2).slideDown();
+        if ($("." + id + ":hidden").length == 0) {
+            $(".loadReply#"+id).fadeOut('slow');
+        }
+        $('.post').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});
 $(function () {
     imglen = $('.card--dashboard').length
     for (i = 1; i <= imglen; i++) {
@@ -679,28 +701,83 @@ $(function () {
     });
 });
 
-
 $("body").delegate(".comment-send", "click", function(){
     var id = $(this).data('id');
+    var post_id = $(this).data('load');
     var comment = $('#input-'+id).val();
     var img = $('.comment-text').data('img');
     var name = $('.comment-text').data('name');
-    var load = $(this).data('load');
+    comment_id = $(".comment_reply#"+post_id).find("#comment-reply-comment-id").text();
+    var time = $.now(); 
+    
     //Check if the textarea is empty
     if (comment != "") {
-        // $('.comment-text').focus();
+        if($('.comment_reply').is(':visible')){
+            $("."+post_id+"#"+comment_id).find('.replies').prepend(`
+                <div class="col-12 reply" id="reply-1" style="display:block">
+                    <div class="d-flex">
+                        <div class="mr-2">
+                            <img src="images/`+img+`" class="mt-1" />
+                        </div>
+                        <div class="p-2 position-relative">
+                            <p class="weight-semi-bold mb-1" id="reply-name">`+name+`</p>
+                            <p class="font-13 font-weight-light mb-1" id="reply-text">`+comment+`</p>
+                        </div>
+                    </div>
+                </div>`);
+            $('.comment_reply').slideUp("slow");
+            
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/todos/',
+                dataType: 'json',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify({'post_id':post_id,'comment_id':comment_id,'reply_name':name,'reply_text':comment}),
+                processData: false,
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( JSON.stringify( data ) );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    // $(".like-unlike#like-unlike-" + id).html('Like');
+                    // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+                }
+            });
+        }
+        else{
+            $("#"+id).prepend(`<div class=" d-block col-12 blog_comment `+post_id+`" id="`+id+`">
+                                <div class="d-flex">
+                                    <div class="mr-2">
+                                        <img src="images/`+img+`" class="mt-1" />
+                                    </div>
+                                    <div class="p-2 position-relative">\
+                                        <p class="weight-semi-bold mb-1" id="comment-name">`+name+` </p>
+                                        <p class="font-13 font-weight-light mb-1" id="comment-text">`+comment+`</p>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <a href="#" class="show-comment">Reply</a>
+                                    </div>
+                                </div>
+                                <div class="replies">
 
-                $("#"+id).append('<div class="col-12 blog_comment p1 d-block">\
-                                        <div class="d-flex">\
-                                            <div class="mr-2">\
-                                                <img src="images/'+img+'" class="mt-1" />\
-                                            </div>\
-                                            <div class="p-2 position-relative">\
-                                                <p class="weight-semi-bold mb-1">'+name+' </p>\
-                                                <p class="font-13 font-weight-light mb-1">'+comment+'</p>\
-                                            </div>\
-                                        </div>\
-                                    </div>');
+                                </div>
+                            </div>`);
+
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/todos/',
+                dataType: 'json',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify({'post_id':post_id,'reply_name':name,'reply_text':comment}),
+                processData: false,
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( JSON.stringify( data ) );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    // $(".like-unlike#like-unlike-" + id).html('Like');
+                    // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+                }
+            });
+        }
 
     }
 
@@ -708,11 +785,29 @@ $("body").delegate(".comment-send", "click", function(){
     plural();
 
     $('#input-'+id).val('');
-
-    $('.post#'+id).animate({
-        scrollTop: $(this).offset().top
-    }, 1500);
 })
+
+$("body").delegate(".hide-comment", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $('.comment_reply').slideUp("slow");
+});
+
+$("body").delegate(".show-comment", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    name = $((this).closest('.blog_comment')).find('#comment-name').text();
+    text = $((this).closest('.blog_comment')).find('#comment-text').text();
+    post_id = $((this).closest('.blog_comment')).attr('class').split(' ').pop();
+    comment_id = $((this).closest('.blog_comment')).attr('id');
+
+    $(".comment_reply#"+post_id).find("#comment-reply-name").text(name);
+    $(".comment_reply#"+post_id).find("#comment-reply-text").text(text);
+    $(".comment_reply#"+post_id).find("#comment-reply-post-id").text(post_id);
+    $(".comment_reply#"+post_id).find("#comment-reply-comment-id").text(comment_id);
+    $('.comment_reply#'+post_id).slideDown("slow");
+
+});
 
 //Pluralize like(s) and comment(s)
 function plural() {
