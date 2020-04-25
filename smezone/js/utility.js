@@ -744,7 +744,7 @@ $("body").delegate(".comment-send", "click", function(){
             });
         }
         else{
-            $("#"+id).prepend(`<div class=" d-block col-12 blog_comment `+post_id+`" id="`+id+`">
+            $(".post#"+id).prepend(`<div class=" d-block col-12 blog_comment `+post_id+`" id="`+time+`">
                                 <div class="d-flex">
                                     <div class="mr-2">
                                         <img src="images/`+img+`" class="mt-1" />
@@ -796,6 +796,7 @@ $("body").delegate(".hide-comment", "click", function(e){
 $("body").delegate(".show-comment", "click", function(e){
     e.preventDefault();
     e.stopPropagation();
+
     name = $((this).closest('.blog_comment')).find('#comment-name').text();
     text = $((this).closest('.blog_comment')).find('#comment-text').text();
     post_id = $((this).closest('.blog_comment')).attr('class').split(' ').pop();
