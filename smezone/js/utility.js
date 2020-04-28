@@ -392,6 +392,7 @@ $(document).ready(function () {
 
 });
 
+
 if ($('.dropzone').length) {
     Dropzone.options.myAwesomeDropzone = {
         init: function () {
