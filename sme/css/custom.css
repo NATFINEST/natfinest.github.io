@@ -349,6 +349,89 @@ ul.list_3.albums li:before{
 .slider{
   margin-top: 87px;
 }
+.articles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article .article-title h1{
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.article .article-body{
+    font-size: 1.4rem;
+    margin: 3rem 0;
+    line-height: 2.4rem;
+}
+
+.article .read-more{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.article {
+    background-color: rgba(0, 0, 0, .02);
+    padding: 4rem 3rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles .article-flex{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.article .icon-themes{
+    overflow: hidden;
+    height: 8rem;
+    width: 8rem;   
+}
+
+.article .icon-themes i:before{
+  font-size: 90px;
+}
+.article-title h6{
+  min-height: 3vw;
+}
+.article.fade{
+  visibility: visible; opacity: 1; 
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+   transition: all 0.3s ease-in-out 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+.articles .icon-themes img{
+    width: 100%;
+}
+
+.article:hover{
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, .1); 
+    background-color: #fff !important;
+}
+
+.article-heading {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;   
+}
+
+.article-heading h1{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 5rem 0;
+}
+
+.article a{
+    color: #000;
+}
 @media (max-width:991px) {
   .slider{
     margin-top: 57px;
