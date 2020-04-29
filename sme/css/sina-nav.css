@@ -707,7 +707,7 @@ a.btn_1:hover {
   }
   .sina-nav .navbar-collapse {
     overflow-y: auto !important;
-    border: 1px solid #5c2684!important;
+    border: 1px solid #121921!important;
   }
   .sina-nav .mega-menu-col .mega-menu-col-title,
   .sina-nav .dropdown .dropdown-toggle {
@@ -838,7 +838,7 @@ a.btn_1:hover {
     padding: 0 0 60px;
     margin: 0;
     transition: all 0.4s ease-in-out;
-    background-color: #5c2684!important;
+    background-color: #121921!important;
   }
   .sina-nav.mobile-sidebar .navbar-collapse.show {
     left: 0;
