@@ -468,7 +468,7 @@ a.btn_1:hover {
     float: left;
   }
   .sina-nav .sina-menu > .dropdown > .dropdown-toggle {
-    padding-right: 20px;
+    padding-right: 15px;
   }
   .sina-nav .sina-menu > .dropdown > .dropdown-toggle:after {
     content: "\f107";
