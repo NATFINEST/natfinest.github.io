@@ -451,6 +451,12 @@ input[type='file'] {
   background: #4ec0b4;
 }
 
+.solar{
+  background: url(../img/solar.jpg);
+  background-size: cover;height: 34vw;
+  background-position-x: left;
+}
+
 @media (max-width: 300px) {
   button {
     width: 100%;
@@ -572,4 +578,11 @@ input[type='file'] {
 
 .grid.grid_1 ul li figcaption, .grid ul li figure img{
   height: auto!important;
+}
+
+.modal-backdrop.show{
+  z-index: -999999999999999;
+}
+.modal-open .modal{
+  background: #2222228f;
 }
