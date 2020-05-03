@@ -236,6 +236,9 @@ section{
 footer .copyright-text{
   margin-top: 20px;
 }
+.main-menu{
+  align-items: center;
+}
 @media (max-width: 1200px) {
     .mentor-img {
         min-height: 60vh;

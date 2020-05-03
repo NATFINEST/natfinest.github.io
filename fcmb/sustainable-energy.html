@@ -25,6 +25,7 @@
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/nice-select.css" rel="stylesheet">
 	<!-- material design icons -->
     <link href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
     <!-- material design icons -->
@@ -625,13 +626,30 @@
                                 <input type="email" class="form-control element-block fs-14" placeholder="Email address *" required>
                             </div>
                             <div class="form-group col-md-6 my-1">
-                                <input id="phone" name="phone" type="tel" class="form-control element-block fs-14" required>
+                                <input id="phone" name="phone" type="tel" class="form-control element-block fs-14" placeholder="Phone *" required>
                             </div>
                             <div class="form-group col-md-6 my-1">
                                 <input type="text" class="form-control element-block fs-14" placeholder="Address where the solar unit will be installed" required>
                             </div>
                             <div class="form-group col-md-6 my-1">
                                 <input type="text" class="form-control element-block fs-14" placeholder="Business Name" required>
+                            </div>
+                            <div class="form-group col-md-6 my-1">
+                                <select class="w-100" id="provider">
+								  <option data-display="Select Provider">Select Provider</option>				  
+								  <option>A4&T Integrated</option>
+								  <option>Zola Electric</option>
+								</select>
+                            </div>
+                            <div class="form-group col-md-6 my-1 d-flex align-items-center justify-content-between">
+                                <select class="w-100" id="plan">
+								  <option data-display="Select Plan">Select Plan</option>				  
+								  <option>A4&T Integrated</option>
+								  <option>Zola Electric</option>
+								</select>
+								<a href="plans.pdf" class="ml-3" target="_blank" data-toggle="tooltip" data-placement="right" title="View Energy Plans">
+									<span class="icon-eye"></span>
+								</a>  
                             </div>
                             <div class="form-group col-md-12 my-1">
 	                            <h6 class="mt-3">Do you have an FCMB account?</h6>
@@ -780,6 +798,7 @@
 	<script src="js/sina-nav.js"></script>
 	<script src="js/modernizr_tables.js"></script>
 	<script src="js/tables_func.js"></script>
+	<script src="js/jquery.nice-select.js"></script>
 
 	<script>
     	function addCommas(nStr) {
@@ -836,6 +855,14 @@
 		        }
 		    });
 		});
+
+		$(document).ready(function() {
+		  $('select').niceSelect();
+		});
+
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
     </script>
   
 </body>
