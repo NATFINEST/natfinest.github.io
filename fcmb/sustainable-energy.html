@@ -388,7 +388,11 @@
 			
 		</div>
 
-		<div class="bg_color_1">
+		<div class="text-center pb-3">
+			<p class=""><a href="#" id="industry" class="btn_1 rounded mt-3">View energy need by industry</a></p>
+		</div>
+
+		<div class="bg_color_1" style="display: none;" id="industryslide">
 			<div class="container margin_120_95">
 				<div class="main_title_2">
 					<span><em></em></span>
@@ -629,7 +633,7 @@
                                 <input id="phone" name="phone" type="tel" class="form-control element-block fs-14" placeholder="Phone *" required>
                             </div>
                             <div class="form-group col-md-6 my-1">
-                                <input type="text" class="form-control element-block fs-14" placeholder="Address where the solar unit will be installed" required>
+                                <input type="text" class="form-control element-block fs-14" placeholder="Address where the solar unit will be installed" data-toggle="tooltip" data-placement="left" title="Address where the solar unit will be installed" required>
                             </div>
                             <div class="form-group col-md-6 my-1">
                                 <input type="text" class="form-control element-block fs-14" placeholder="Business Name" required>
@@ -642,10 +646,16 @@
 								</select>
                             </div>
                             <div class="form-group col-md-6 my-1 d-flex align-items-center justify-content-between">
-                                <select class="w-100" id="plan">
-								  <option data-display="Select Plan">Select Plan</option>				  
-								  <option>A4&T Integrated</option>
-								  <option>Zola Electric</option>
+                                <select class="w-100" id="plans">
+								  <option data-display="Select Cost Plan">Select Cost Plan</option>				  
+								  <option value="620000">&#8358; 620,000</option>
+								  <option value="670000">&#8358; 670,000</option>
+								  <option value="720000">&#8358; 720,000</option>
+								  <option value="970000">&#8358; 970,000</option>
+								  <option value="1090000">&#8358; 1,090,000</option>
+								  <option value="1158600">&#8358; 1,158,600</option>
+								  <option value="2150000">&#8358; 2,150,000</option>
+								  <option value="2247200">&#8358; 2,247,200</option>
 								</select>
 								<a href="plans.pdf" class="ml-3" target="_blank" data-toggle="tooltip" data-placement="right" title="View Energy Plans">
 									<span class="icon-eye"></span>
@@ -665,6 +675,10 @@
 
 							<div class="form-group col-md-12 my-1" style="display: none;" id="accno">
                                 <input type="text" class="form-control element-block fs-14" placeholder="Account Number" required>
+                            </div>
+
+                            <div class="form-group col-md-12 my-1" style="display: none;" id="contrib">
+                                <div class="alert alert-info">Your 20% contribution for the loan is <span id="plans-value"></span> </div>
                             </div>
                         </div>
 
@@ -862,6 +876,22 @@
 
 		$(function () {
 		  $('[data-toggle="tooltip"]').tooltip()
+		})
+
+		$(function () {
+		  $("#industry").click(function(e){
+		  	e.preventDefault();
+		  	$('#industryslide').slideDown();
+		  	$("#industry").fadeOut();
+		  })
+		})
+
+		$(function () {
+			$('#plans').change(function () {
+			    plan = addCommas($(this).val() * 0.2);
+			    $("#plans-value").html("&#8358;" + plan);
+		        $('#contrib').show();
+			})
 		})
     </script>
   
