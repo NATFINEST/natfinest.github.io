@@ -457,6 +457,12 @@ input[type='file'] {
   background-position-x: left;
 }
 
+.nice-select.open .list{
+    max-height: 200px;
+    overflow: scroll;
+    width: 100%;
+}
+
 @media (max-width: 300px) {
   button {
     width: 100%;
