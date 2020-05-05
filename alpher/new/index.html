@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/intlTelInput.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/nice.css">
 
         <!-- Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -319,6 +320,18 @@
                                             <p class="mb-0 text-white small line-height--14">We have a network of qualified mentors to assist you</p>
                                             <img src="img/department_card.png" class="img-fluid position-absolute card-image">
                                             <a href="mentorship.html" class="btn btn-white mt-1 font-12 py-1">Request a mentor</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 px-md-2 my-3">
+                                <a href="reports.html">
+                                    <div class="step-card--purple">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Contact Us</p>
+                                            <p class="mb-0 text-white--dim">Send a request now</p>
+                                            <img src="img/department_card.png" class="img-fluid position-absolute card-image" />
+                                            <a href="#" class="btn btn-white mt-1 font-12 py-1" data-toggle="modal" data-target="#contactModal">Contact Us</a>
                                         </div>
                                     </div>
                                 </a>
@@ -766,9 +779,54 @@
             </div>
         </div>
 
-        <!-- Start of itdacademy Zendesk Widget script -->
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
-        <!-- End of itdacademy Zendesk Widget script -->
+        <!-- Contact Us -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="adLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Contact Us</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="user-log-form">
+                            <div class="row">
+                                <div class="form-group col-md-6 my-3">
+                                    <input type="text" class="form-control element-block fs-14" placeholder="Firstname *" required>
+                                </div>
+                                <div class="form-group col-md-6 my-3">
+                                    <input type="text" class="form-control element-block fs-14" placeholder="Lastname *" required>
+                                </div>
+                                <div class="form-group col-md-6 my-3">
+                                    <input type="email" class="form-control element-block fs-14" placeholder="Email address *" required>
+                                </div>
+                                <div class="form-group col-md-6 my-3">
+                                    <input id="phone" name="phone" type="tel" class="form-control element-block fs-14" placeholder="Phone *" required>
+                                </div>
+                                <div class="form-group col-md-12 my-3">
+                                    <select class="w-100" id="request">
+                                      <option data-display="Select reason for contact">Select reason for contact</option>
+                                      <option>Partnership with alpher</option>
+                                      <option>Advisory Services</option>
+                                      <option>Issues on portal</option>
+                                      <option>Others</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12 my-3">
+                                    <textarea rows="5" cols="5" class="form-control w-100" placeholder="Please provide more infromation if any" style="height: 100px"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="btns-wrap my-3 text-center">
+                                <button type="submit" class="btn btn-primary fs-12" style="margin: 0 auto;">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -786,6 +844,7 @@
         <script src="js/utility.js"></script>   
         <script src="js/tagsinput.js"></script>
         <script src="js/lga.js"></script>
+        <script src="js/jquery-nice-select.js"></script>
         <script type="text/javascript">
             $(window).on('load',function(){
                 $('#profileModal').modal('show');
@@ -805,6 +864,10 @@
                 });
 
             })
+
+            $(document).ready(function() {
+              $('#request').niceSelect();
+            });
 
         </script>
 

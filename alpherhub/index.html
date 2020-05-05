@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/nice.css" />
     <link rel="stylesheet" href="styles/custom.css" />
 
 </head>
@@ -584,6 +585,7 @@
                     <ul class="footer-social-icons">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">about us</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#contactModal">Contact</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#faqsModal">FAQs</a></li>
                     </ul>
                 </div>
@@ -610,6 +612,54 @@
                   </div>
                 <div class="modal-body p-0">
                     <img src="images/login.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="adLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLabel">Contact Us</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="user-log-form">
+                        <div class="row">
+                            <div class="form-group col-md-6 my-3">
+                                <input type="text" class="form-control element-block fs-14" placeholder="Firstname *" required>
+                            </div>
+                            <div class="form-group col-md-6 my-3">
+                                <input type="text" class="form-control element-block fs-14" placeholder="Lastname *" required>
+                            </div>
+                            <div class="form-group col-md-6 my-3">
+                                <input type="email" class="form-control element-block fs-14" placeholder="Email address *" required>
+                            </div>
+                            <div class="form-group col-md-6 my-3">
+                                <input id="phone" name="phone" type="tel" class="form-control element-block fs-14" placeholder="Phone *" required>
+                            </div>
+                            <div class="form-group col-md-12 my-3">
+                                <select class="w-100" id="provider">
+                                  <option data-display="Select reason for contact">Select reason for contact</option>
+                                  <option>Partnership with alpher</option>
+                                  <option>Advisory Services</option>
+                                  <option>Issues on portal</option>
+                                  <option>Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12 my-3">
+                                <textarea rows="5" cols="5" class="form-control w-100" placeholder="Please provide more infromation if any" style="height: 100px"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="btns-wrap my-3 text-center">
+                            <button type="submit" class="btn btn-primary fs-12" style="margin: 0 auto;">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -793,11 +843,15 @@
     <script src="scripts/vendors/jquery.appear.js"></script>
     <script src="scripts/vendors/jquery.countTo.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/jquery.nice-select.min.js"></script>    
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <script type="text/javascript">
         $(window).on('load',function(){
                 $('#ad').modal('show');
-            });
+        });
+        $(document).ready(function() {
+          $('select').niceSelect();
+        });
     </script>
 
 </body>
