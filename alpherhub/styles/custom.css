@@ -233,6 +233,17 @@ section{
   font-size: 20px;
   font-weight: 400;
 }
+.alpha-mobile{
+  display: flex!important;
+  justify-content: start!important;
+  align-items: baseline!important;
+}
+.alpha-mobile .alpha{
+  font-size: 24px!important;
+}
+.alpha-mobile i{
+  margin-left: 27%;
+}
 footer .copyright-text{
   margin-top: 20px;
 }
