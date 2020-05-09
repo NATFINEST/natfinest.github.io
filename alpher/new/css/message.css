@@ -4,3 +4,19 @@
 .compose_message{
 	border-radius: 0;
 }
+.message_detail.unread {
+	background: #eee;
+}
+.unread .col-5{
+    background: #009fe3;
+    max-width: 2px!important;
+    height: 12px;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 4px;
+    padding: 6px;
+}
+.question_info_1{
+	left: -3px;
+    bottom: -18px;
+}
