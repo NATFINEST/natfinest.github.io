@@ -733,6 +733,7 @@ $(document).ready(function() {
         $('.new_message').hide();
         $('.chat-conversation').hide();
         $('.timeline-wrapper').show();
+        $(this).removeClass('unread');
         $.ajax({
             url: 'https://reqres.in/api/users',
             dataType: 'json',
