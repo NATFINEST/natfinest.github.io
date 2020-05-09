@@ -25,28 +25,13 @@ $(document).ready(function () {
     });
 
     $(function () {
-        $(".openModal").click(function () {
-            var desc = $(this).data('desc');
-            var title = $(this).data('title');
-            $(".modal-body .desc").html(desc);
-            $(".modal-title").html(title);
-        })
-    });
-
-    $(function () {
-        $(".requestModal").click(function () {
-            var title = $(this).data('mentor');
-            $('#mentor').val(title);
-            $(".modal-title").html(title);
-        })
-    });
-
-    $(function () {
-        $(".loanModal").click(function () {
-            var title = $(this).data('loan');
-            $('#loan').val(title);
-        })
-    });
+            $(".openModal").click(function () {
+                var desc = $(this).data('desc');
+                var title = $(this).data('title');
+                $(".modal-body .desc").html(desc);
+                $(".modal-title").html(title);
+            })
+        });
 
     var color = "20A354"
     document.documentElement.style.setProperty('--theme-color', `#${color}`);
@@ -153,6 +138,8 @@ $(document).ready(function () {
     }
     $('#albums-modal').click(function () {
             $('.modal-uploader').show('slow');
+        $('#albums-modal').addClass('show');
+
         })
     if ($(".display_image_upload").length) {
         $('.display_image_upload').click(function () {
@@ -161,7 +148,7 @@ $(document).ready(function () {
             $('.hide_upload').show('slow');
             $('.text_upload').hide('slow');
             // var myDropzone = new Dropzone("#my-awesome-dropzone", { url: "/file/post"});
-            // $('.dropzone').get(0).dropzone.hiddenFileInput.click();
+            $('.dropzone').get(0).dropzone.hiddenFileInput.click();
         })
     }
     // bar chart if element exists
@@ -309,7 +296,7 @@ $(document).ready(function () {
             caption.innerHTML = "The chart is displaying " + text;
         };
     }
-    //			Pie chart
+    //          Pie chart
     if ($("#donutChart").length) {
         var ctx = document.getElementById("donutChart").getContext('2d');
         var myChart = new Chart(ctx, {
@@ -456,27 +443,28 @@ $(document).ready(function() {
        $('#vid1').attr('src', idToSRC);
     });
 });
-$(document).ready(function() {
-    $('.chat-conversation').hide();
 
-    $('.js-example-basic-single').select2({
-        placeholder: "Select a contact to start a conversation",
-    }).on("change", function(e) {
-        //Initialize variables
-        name = $("#select-contact").select2('data')[0].element.dataset['fullName'];
-        status = $("#select-contact").select2('data')[0].element.dataset['status'];
-        img = $("#select-contact").select2('data')[0].element.dataset['demoSrc'];
-        id = $("#select-contact").select2('data')[0].element.dataset['id'];
-        lastSeen = $("#select-contact").select2('data')[0].element.dataset['lastSeen'];        
-        job = $("#select-contact").select2('data')[0].element.dataset['job'];
+if($('.chat-sidebar').length && localStorage.getItem('sent')){
+    id = localStorage.getItem('user_id');
+    name = localStorage.getItem('name');
+    status = localStorage.getItem('status');
+    img = localStorage.getItem('img');
+    lastSeen = localStorage.getItem('lastSeen');
+    job = localStorage.getItem('job');
+    homePageOnly();
+    $('.new_message').hide();
+    $('#nomessage').hide();
+    localStorage.removeItem('sent')
+    localStorage.removeItem('user_id')
+    localStorage.removeItem('name')
+    localStorage.removeItem('status')
+    localStorage.removeItem('img')
+    localStorage.removeItem('lastSeen')
+    localStorage.removeItem('job')
+}
 
-        //Set cursor to text area
-        $('#chat-text').focus();
-        var chat = $('#chat-text').val()
-        $('#nomessage').hide();
-        $('.new_message').hide();
-        $('.chat-conversation').hide();
-        $('.message_detail').removeClass('active_message');
+function homePageOnly(){
+        chat = ""
 
         //set current chat time
         var unique_time = $.now();
@@ -490,8 +478,34 @@ $(document).ready(function() {
         var datetime = hours + ":"  
                     + minutes + " " + ampm
 
+                    $(".chat-sidebar").prepend('\
+                                                <div class="backgrond-muted message_detail cursor active_message" id="'+id+'" >\
+                                                    <div class="px-3 position-relative message_detail_click"  id="'+id+'" data-full-name="'+name+'" data-status="'+status+'" data-demo-src="'+img+'" data-id="'+id+'" data-job="'+job+'" data-last-seen="'+lastSeen+'">\
+                                                        <div class="row py-2 border-bottom">\
+                                                            <div class="col-lg-3 col-3 text-center ">\
+                                                                <img src="img/'+img+'" class="img-fluid" alt="user name" />\
+                                                            </div>\
+                                                            <div class="col-lg-9 col-9">\
+                                                                <div class="row">\
+                                                                    <div class="col">\
+                                                                        <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
+                                                                    </div>\
+                                                                    <div class="text-right col-5">\
+                                                                    </div>\
+                                                                </div>\
+                                                                <p class="text-muted font-13 mb-1">'+chat+'</p>\
+                                                            </div>\
+                                                        </div>\
+                                                    </div>\
+                                                    <div class="question_info_1 cursor" id="delete_user" data-id="'+id+'">\
+                                                        <img src="img/delete_dark.svg" class="position-absolute" style="right: 5px; bottom: 40px;" />\
+                                                    </div> \
+                                                </div>');
+
+
         //Check if chat has already been itialized with a selected user
-        if($('#'+id).length == 0){
+
+        if($('#'+id).length == 0 && !localStorage.getItem('sent')){
 
                 $(".chat_history").append('\
                                         <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
@@ -583,6 +597,125 @@ $(document).ready(function() {
 
             // $('#convo'+id).show();
         }
+}
+
+$(document).ready(function() {
+    $('.chat-conversation').hide();
+
+    $('.js-example-basic-single').select2({
+        placeholder: "Select a contact to start a conversation",
+    }).on("change", function(e) {
+        //Initialize variables
+        name = $("#select-contact").select2('data')[0].element.dataset['fullName'];
+        status = $("#select-contact").select2('data')[0].element.dataset['status'];
+        img = $("#select-contact").select2('data')[0].element.dataset['demoSrc'];
+        id = $("#select-contact").select2('data')[0].element.dataset['id'];
+        lastSeen = $("#select-contact").select2('data')[0].element.dataset['lastSeen'];        
+        job = $("#select-contact").select2('data')[0].element.dataset['job'];
+
+        //Set cursor to text area
+        $('#chat-text').focus();
+        var chat = $('#chat-text').val()
+        $('#nomessage').hide();
+        $('.new_message').hide();
+        $('.chat-conversation').hide();
+        $('.message_detail').removeClass('active_message');
+
+        homePageOnly();
+
+        //Check if chat has already been itialized with a selected user
+        // if($('#'+id).length == 0){
+
+        //         $(".chat_history").append('\
+        //                                 <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
+        //                                     <div class="d-flex border-bottom height--50p">\
+        //                                         <div class="col">\
+        //                                             <p class="mb-0 text-dark">Louis <img src="img/'+status+'.svg" /></p>\
+        //                                             <p class="small mb-0 text-grey font-weight-light">'+lastSeen+'</p>\
+        //                                         </div>\
+        //                                     </div>\
+        //                                     <div class="px-3 mt-2">\
+        //                                         <div class="row py-2 border-bottom">\
+        //                                             <div class="col-2 text-md-center">\
+        //                                                 <img class="img-avatar" src="img/'+img+'" class="img-fluid" alt="user name" />\
+        //                                             </div>\
+        //                                             <div class="col-9 pl-lg-0">\
+        //                                                 <div class="row">\
+        //                                                     <div class="col">\
+        //                                                         <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
+        //                                                     </div>\
+        //                                                 </div>\
+        //                                                 <p class="text-muted font-13 mb-1">'+job+'</p>\
+        //                                             </div>\
+        //                                         </div>\
+        //                                         <div class="chat-wrapper"></div>\
+        //                                     </div>\
+        //                                 </div>');
+
+
+        // }else{
+        //     $('.message_detail#'+id).addClass('active_message');
+        //     $('.timeline-wrapper').show();
+        //     $.ajax({
+        //         url: 'https://reqres.in/api/users',
+        //         dataType: 'json',
+        //         type: 'get',
+        //         contentType: 'application/json',
+        //         param: '{}',
+        //         async: true,
+        //         success: function( data, textStatus, jQxhr ){
+        //             $(".chat_history").html('\
+        //                                         <div id="convo'+id+'" class="chat-conversation" style="min-height:40vh;">\
+        //                                             <div class="d-flex border-bottom height--50p">\
+        //                                                 <div class="col">\
+        //                                                     <p class="mb-0 text-dark">Louis <img src="img/'+status+'.svg" /></p>\
+        //                                                     <p class="small mb-0 text-grey font-weight-light">'+lastSeen+'</p>\
+        //                                                 </div>\
+        //                                             </div>\
+        //                                             <div class="px-3 mt-2">\
+        //                                                 <div class="row py-2 border-bottom">\
+        //                                                     <div class="col-2 text-md-center">\
+        //                                                         <img class="img-avatar" src="img/'+img+'" class="img-fluid" alt="user name" />\
+        //                                                     </div>\
+        //                                                     <div class="col-9 pl-lg-0">\
+        //                                                         <div class="row">\
+        //                                                             <div class="col">\
+        //                                                                 <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
+        //                                                             </div>\
+        //                                                         </div>\
+        //                                                         <p class="text-muted font-13 mb-1">'+job+'</p>\
+        //                                                     </div>\
+        //                                                 </div>\
+        //                                             </div>\
+        //                                             <div class="chat-wrapper"></div>\
+        //                                         </div>');
+        //                                         $.each(data.data, function(index, item) {
+        //                                             $(".chat-wrapper").append('\
+        //                                                         <div class="row py-2 sent" id="delete'+unique_time+'">\
+        //                                                             <div class="col-lg-12 pl-lg-2">\
+        //                                                                 <div class="row chat-time">\
+        //                                                                     <div class="text-right">\
+        //                                                                         <div class="text-dim font-weight-light mb-0 message_time chat-time">'+item.id+' pm</div>\
+        //                                                                     </div>\
+        //                                                                 </div>\
+        //                                                                 <div class="wrappers">\
+        //                                                                     <p class="text-muted font-13 mb-1">'+item.email+'</p>\
+        //                                                                     <i id="delete_chat" class="fa fa-trash-alt cursor" data-id="'+unique_time+'"></i>\
+        //                                                                 </div>\
+        //                                                             </div>\
+        //                                                         </div>\
+        //                                                 ');
+        //                                         });
+        //             $('#convo'+id).show();
+        //             $('.timeline-wrapper').hide();
+        //         },
+        //         error: function( jqXhr, textStatus, errorThrown ){
+        //             console.log( errorThrown );
+        //         }
+        //     });
+
+        //     // $('#convo'+id).show();
+        // }
 
     });
 
@@ -613,31 +746,6 @@ $(document).ready(function() {
         if (chat != "") {
             $('#chat-text').focus();
 
-                if($('#'+id).length == 0){
-                    $(".chat-sidebar").append('\
-                                                <div class="backgrond-muted message_detail cursor active_message" id="'+id+'" >\
-                                                    <div class="px-3 position-relative message_detail_click"  id="'+id+'" data-full-name="'+name+'" data-status="'+status+'" data-demo-src="'+img+'" data-id="'+id+'" data-job="'+job+'" data-last-seen="'+lastSeen+'">\
-                                                        <div class="row py-2 border-bottom">\
-                                                            <div class="col-lg-3 col-3 text-center ">\
-                                                                <img src="img/'+img+'" class="img-fluid" alt="user name" />\
-                                                            </div>\
-                                                            <div class="col-lg-9 col-9">\
-                                                                <div class="row">\
-                                                                    <div class="col">\
-                                                                        <p class="text-dark mb-0 weight-semi-bold">'+name+'</p>\
-                                                                    </div>\
-                                                                    <div class="text-right col-5">\
-                                                                    </div>\
-                                                                </div>\
-                                                                <p class="text-muted font-13 mb-1">'+chat+'</p>\
-                                                            </div>\
-                                                        </div>\
-                                                    </div>\
-                                                    <div class="question_info_1 cursor" id="delete_user" data-id="'+id+'">\
-                                                        <img src="img/delete_dark.svg" class="position-absolute" style="right: 5px; bottom: 40px;" />\
-                                                    </div> \
-                                                </div>');
-                }else{
                      $('#'+id).html('\
                             <div class="px-3 position-relative message_detail_click"  id="'+id+'" data-full-name="'+name+'" data-status="'+status+'" data-demo-src="'+img+'" data-id="'+id+'" data-job="'+job+'" data-last-seen="'+lastSeen+'">\
                                 <div class="row py-2 border-bottom">\
@@ -659,7 +767,6 @@ $(document).ready(function() {
                             <div class="question_info_1 cursor" id="delete_user" data-id="'+id+'">\
                                 <img src="img/delete_dark.svg" class="position-absolute" style="right: 5px; bottom: 40px;" />\
                             </div>');
-                }
 
             //Output the message that was sent on the screen
             $("#convo"+ id).find('.chat-wrapper').append('\
@@ -825,6 +932,7 @@ $(document).on('click','#delete_user',function(e){
 
 // For Community
 $(function () {
+    
     $('.loadMore').hide();
     postlen = $('.card--dashboard').length
     for (i = 1; i <= postlen; i++) {
@@ -839,6 +947,28 @@ $(function () {
         $("." + id + ":hidden").slice(0, 4).slideDown();
         if ($("." + id + ":hidden").length == 0) {
             $(".loadMore#"+id).fadeOut('slow');
+        }
+        $('.post').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});
+
+$(function () {
+    $('.loadReply').hide();
+    replen = $('.card--dashboard').length
+    for (i = 1; i <= replen; i++) {
+        $(".r"+i).slice(0, 2).show();
+        if(($(".r"+i).length)>2){
+            $('.loadReply#r'+i).show();
+        }
+    };
+    $(".loadReply").on('click', function (e) {
+        e.preventDefault();
+        id = $(this).data("id");
+        $("." + id + ":hidden").slice(0, 2).slideDown();
+        if ($("." + id + ":hidden").length == 0) {
+            $(".loadReply#"+id).fadeOut('slow');
         }
         $('.post').animate({
             scrollTop: $(this).offset().top
@@ -868,33 +998,223 @@ $(function () {
     });
 });
 
-$('.comment-send').on('click', function () {
-        var id = $(this).data('id');
-        var comment = $('#input-'+id).val();
-        var img = $('.comment-text').data('img');
-        var name = $('.comment-text').data('name');
-        var load = $(this).data('load');
-        //Check if the textarea is empty
-        if (comment != "") {
-            // $('.comment-text').focus();
+$("body").delegate(".comment-send", "click", function(){
+    var id = $(this).data('id');
+    var post_id = $(this).data('load');
+    var comment = $('#input-'+id).val();
+    var img = $('.comment-text').data('img');
+    var name = $('.comment-text').data('name');
+    comment_id = $(".comment_reply#"+post_id).find("#comment-reply-comment-id").text();
+    var time = $.now(); 
+    user_id = $(".comment_reply div div").data('user')
+    
+    //Check if the textarea is empty
+    if (comment != "") {
+        if($('.comment_reply').is(':visible')){
+            $("."+post_id+"#"+comment_id).find('.replies').prepend(`
+                <div class="col-12 reply" id="reply-1" style="display:block">
+                    <div class="d-flex">
+                        <div class="mr-2">
+                            <img src="images/`+img+`" class="mt-1" />
+                        </div>
+                        <div class="p-2 position-relative info cursor" data-user=`+user_id+`>
+                            <p class="weight-semi-bold mb-1" id="reply-name">`+name+`</p>
+                            <p class="font-13 font-weight-light mb-1" id="reply-text">`+comment+`</p>
+                        </div>
+                    </div>
+                </div>`);
+            $('.comment_reply').slideUp("slow");
+            
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/todos/',
+                dataType: 'json',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify({'post_id':post_id,'comment_id':comment_id,'reply_name':name,'reply_text':comment}),
+                processData: false,
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( JSON.stringify( data ) );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    // $(".like-unlike#like-unlike-" + id).html('Like');
+                    // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+                }
+            });
+        }
+        else{
+            $(".post#"+id).prepend(`<div class=" d-block col-12 blog_comment `+post_id+`" id="`+time+`">
+                                <div class="d-flex">
+                                    <div class="mr-2">
+                                        <img src="images/`+img+`" class="mt-1" />
+                                    </div>
+                                    <div class="p-2 position-relative info cursor" data-user=`+user_id+`>\
+                                        <p class="weight-semi-bold mb-1" id="comment-name">`+name+` </p>
+                                        <p class="font-13 font-weight-light mb-1" id="comment-text">`+comment+`</p>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <a href="#" class="show-comment">Reply</a>
+                                    </div>
+                                </div>
+                                <div class="replies">
 
-                    $("#"+id).append('<div class="col-12 blog_comment p1 d-block">\
-                                            <div class="d-flex">\
-                                                <div class="mr-2">\
-                                                    <img src="img/'+img+'" class="mt-1" />\
-                                                </div>\
-                                                <div class="p-2 position-relative">\
-                                                    <p class="weight-semi-bold mb-1">'+name+' </p>\
-                                                    <p class="font-13 font-weight-light mb-1">'+comment+'</p>\
-                                                </div>\
-                                            </div>\
-                                        </div>');
+                                </div>
+                            </div>`);
 
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/todos/',
+                dataType: 'json',
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify({'post_id':post_id,'reply_name':name,'reply_text':comment}),
+                processData: false,
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( JSON.stringify( data ) );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    // $(".like-unlike#like-unlike-" + id).html('Like');
+                    // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+                }
+            });
         }
 
-        $('#input-'+id).val('');
+    }
 
-        $('.post#'+id).animate({
-            scrollTop: $(this).offset().top
-        }, 1500);
+    $(".num-comments#num-"+id).text(parseInt($(".num-comments#num-"+id).text()) + 1);
+    plural();
+
+    $('#input-'+id).val('');
+})
+
+$("body").delegate(".hide-comment", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $('.comment_reply').slideUp("slow");
+});
+
+$("body").delegate(".show-comment", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    name = $((this).closest('.blog_comment')).find('#comment-name').text();
+    text = $((this).closest('.blog_comment')).find('#comment-text').text();
+    post_id = $((this).closest('.blog_comment')).attr('class').split(' ').pop();
+    comment_id = $((this).closest('.blog_comment')).attr('id');
+
+    $(".comment_reply#"+post_id).find("#comment-reply-name").text(name);
+    $(".comment_reply#"+post_id).find("#comment-reply-text").text(text);
+    $(".comment_reply#"+post_id).find("#comment-reply-post-id").text(post_id);
+    $(".comment_reply#"+post_id).find("#comment-reply-comment-id").text(comment_id);
+    $('.comment_reply#'+post_id).slideDown("slow");
+
+});
+
+//Pluralize like(s) and comment(s)
+function plural() {
+    $.each($('.like-share'), function(index, val) {
+        $(this).find(".text-likes").text($(this).find(".num-likes").text() >= 2 ? 'likes' : 'like');
+        $(this).find(".text-comments").text($(this).find(".num-comments").text() >= 2 ? 'comments' : 'comment');
+    });
+}
+
+$(document).ready(function(){
+    plural();
+    $("body").delegate(".share_link", "click", function(){
+        id = $(this).data("id");
+        user_id = $(this).data("user");
+        post_id = $(this).data("post");
+        $('#share').modal('show');
     })
+});
+
+$("body").delegate(".like", "click", function(){
+    id = $(this).data("id");
+    user_id = $(this).data("user");
+    post_id = $(this).data("post");
+    if ($(".like-unlike#like-unlike-" + id).html() === 'Like') {
+        $(".like-unlike#like-unlike-" + id).html('Unlike');
+        $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
+        $(".like").css("pointer-events", "auto");
+        $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) + 1);
+        plural();
+        // $(this).css("pointer-events", "none");
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/todos/',
+            dataType: 'json',
+            type: 'post',
+            contentType: 'application/json',
+            data: JSON.stringify({'user_id':user_id,'post_id':post_id,'message':'1'}),
+            processData: false,
+            success: function( data, textStatus, jQxhr ){
+                $('#response pre').html( JSON.stringify( data ) );
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+                // $(".like-unlike#like-unlike-" + id).html('Like');
+                // $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+            }
+        });
+    }
+    else {
+        // $(this).css("pointer-events", "none");
+        $(".like-unlike#like-unlike-" + id).html('Like');
+        $(".icon#icon-"+id).html('<i class="fa fa-thumbs-up mt-1"></i>');
+        $(".like").css("pointer-events", "auto");
+        $(".num-likes#num-likes-"+id).text(parseInt($(".num-likes#num-likes-"+id).text()) - 1);
+        plural();
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/todos/',
+            dataType: 'json',
+            type: 'post',
+            contentType: 'application/json',
+            data: JSON.stringify({'user_id':user_id,'post_id':post_id,'message':'-1'}),
+            processData: false,
+            success: function( data, textStatus, jQxhr ){
+                $('#response pre').html( JSON.stringify( data ) );
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+                $(".like-unlike#like-unlike-" + id).html('Unlike');
+                $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
+            }
+        });
+    }
+    return false;
+});
+
+$("body").delegate(".info", "click", function(){
+    user_id = $(this).data("user");
+    $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/todos/',
+        dataType: 'json',
+        type: 'post',
+        contentType: 'application/json',
+        data: JSON.stringify({'user_id':user_id}),
+        processData: false,
+        success: function( data, textStatus, jQxhr ){
+            $('#response pre').html( JSON.stringify( data ) );
+        },
+        error: function( jqXhr, textStatus, errorThrown ){
+            $(".like-unlike#like-unlike-" + id).html('Unlike');
+            $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
+        }
+    });
+    $('#info').modal('show');
+})
+
+$("body").delegate("#send-message", "click", function(e){
+    e.preventDefault();
+    user_id = $(this).data("id");
+    name = $(this).data('fullName');
+    status = $(this).data('status');
+    img = $(this).data('demoSrc');
+    lastSeen = $(this).data('lastSeen');
+    job = $(this).data('job');
+    localStorage.setItem('user_id', user_id)
+    localStorage.setItem('name', name)
+    localStorage.setItem('status', status)
+    localStorage.setItem('img', img)
+    localStorage.setItem('lastSeen', lastSeen)
+    localStorage.setItem('job', job)
+    localStorage.setItem('sent', true)
+    window.location.href = "message.html";
+    // $.redirect('message.html', {'arg1': 'value1', 'arg2': 'value2'});
+})
+
