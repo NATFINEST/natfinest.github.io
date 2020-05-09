@@ -1,3 +1,6 @@
 .img-avatar, .img-fluid{
 	border-radius: 50%;
 }
+.compose_message{
+	border-radius: 0;
+}
