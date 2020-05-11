@@ -1,0 +1,18 @@
+.popover{
+	max-width: 100%;
+}
+.popover-body{
+	width: 434px;
+}
+@media (max-width:767px) {
+	.popover{
+		transform: translate3d(15px, 519px, 0px)!important;
+		max-width: 93vw;
+	}
+	.popover .arrow{
+		display: none;
+	}
+	.popover-body{
+		width: 100%;
+	}
+}

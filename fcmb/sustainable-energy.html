@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/sina-nav.css">
+	<link rel="stylesheet" href="css/energy.css">
 
 </head>
 
@@ -158,7 +159,7 @@
 						</ol>
 						<div class="d-flex my-5">
 							<p class="col-md-6"><a href="#0" class="btn_1 rounded mt-3 w-100" data-toggle="modal" data-target="#applyModal">Apply Now</a></p>
-							<p class="col-md-6"><a href="#0" class="btn_1 rounded mt-3 w-100" data-toggle="modal" data-target="#loanModal">Loan Calculator</a></p>
+							<!-- <p class="col-md-6"><a href="#0" class="btn_1 rounded mt-3 w-100" data-toggle="modal" data-target="#loanModal">Loan Calculator</a></p> -->
 						</div>
 					</div>
 				</div>
@@ -618,13 +619,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                	<div class="alert alert-danger" id="error" style="display: none;">Please fill all fields</div>
                     <form action="#" class="user-log-form" style="border: 0;padding: 0">
-                        <div class="row">
-                            <div class="form-group col-md-12 mt-2 text-center">
-                            	<a href="energy_plans.pdf" class="ml-3 btn_1 rounded btn-sm" target="_blank">
-									View Plans
-								</a> 
-							</div>
+                        <div class="row" id="prev-slide">
                             <div class="form-group col-md-6 my-1">
                                 <input type="text" class="form-control element-block fs-14" placeholder="Firstname *" required>
                             </div>
@@ -657,26 +654,25 @@
 								  <option value="ROOF TOP">Roof Top</option>
 								</select>
                             </div>
-                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="mobile-A4">
-                                <select class="w-100" id="plans">
-								  <option data-display="Select Cost Plan">Select Cost Plan</option>				  
+                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="MOBILE-A4">
+                                <select class="w-100 plans plans-selector" >
+								  <option data-display="Select Cost Plan" value="">Select Cost Plan</option>
 								  <option value="27000">&#8358; 27,000</option>
 								  <option value="57000">&#8358; 57,000</option>
 								  <option value="85000">&#8358; 85,000</option>
 								  <option value="145000">&#8358; 145,000</option>
-								  <option value="185000">&#8358; 185,000</option>
 								</select>
                             </div>
-                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="mobile-Zola">
-                                <select class="w-100" id="plans">
-								  <option data-display="Select Cost Plan">Select Cost Plan</option>				  
+                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="MOBILE-ZOLA">
+                                <select class="w-100 plans plans-selector">
+								  <option data-display="Select Cost Plan" value="">Select Cost Plan</option>				  
 								  <option value="169000">&#8358; 169,000</option>
 								  <option value="209000">&#8358; 209,000</option>
 								</select>
                             </div>
-                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="roof-A4">
-                                <select class="w-100" id="plans">
-								  <option data-display="Select Cost Plan">Select Cost Plan</option>				  
+                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="ROOF-A4">
+                                <select class="w-100 plans plans-selector">
+								  <option data-display="Select Cost Plan" value="">Select Cost Plan</option>				  
 								  <option value="620000">&#8358; 620,000</option>
 								  <option value="670000">&#8358; 670,000</option>
 								  <option value="720000">&#8358; 720,000</option>
@@ -688,9 +684,9 @@
 								  <option value="2865200">&#8358; 2,865,200</option>
 								</select>
                             </div>
-                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="roof-Zola">
-                                <select class="w-100" id="plans">
-								  <option data-display="Select Cost Plan">Select Cost Plan</option>				  
+                            <div class="form-group options col-md-6 my-1 align-items-center justify-content-between" style="display: none;" id="ROOF-ZOLA">
+                                <select class="w-100 plans plans-selector">
+								  <option data-display="Select Cost Plan" value="">Select Cost Plan</option>				  
 								  <option value="209000">&#8358; 209,000</option>
 								  <option value="875160">&#8358; 875,160</option>
 								  <option value="1572840">&#8358; 1,572,840</option>
@@ -712,14 +708,29 @@
 							<div class="form-group col-md-12 my-1 order-md-3" style="display: none;" id="accno">
                                 <input type="text" class="form-control element-block fs-14" placeholder="Account Number" required>
                             </div>
+                        </div>
 
-                            <div class="form-group col-md-12 my-1 order-md-4" style="display: none;" id="contrib">
-                                <div class="alert alert-info">Your 20% contribution for the loan is <span id="plans-value"></span> </div>
+                        <div class="row" style="display: none;" id="next-slide">
+                            <div class="form-group col-md-6 my-1">
+                                <input type="text" class="form-control element-block fs-14" placeholder="Firstname *">
+                            </div>
+                            <div class="form-group col-md-6 my-1">
+                                <select class="w-100 selectors" id="provider">
+								  <option data-display="Select Provider" value="">Select Provider</option>				  
+								  <option value="A4">A4&T Integrated</option>
+								  <option value="ZOLA">Zola Electric</option>
+								</select>
                             </div>
                         </div>
 
-                        <div class="btns-wrap my-3 text-center">
-                            <button type="submit" class="btn_1 rounded fs-12" style="margin: 0 auto;">Apply Now</button>
+                        <div class="btns-wrap my-3 text-left float-left" id="prev-container" style="display: none;">
+                            <button id="prev" class="btn_1 rounded outline fs-12" style="margin: 0 auto;">Previous</button>
+                        </div>
+                        <div class="btns-wrap my-3  text-right float-right" id="next-container">
+                            <button id="next" class="btn_1 rounded fs-12" style="margin: 0 auto;">Next</button>
+                        </div>
+                        <div class="btns-wrap my-3 text-right float-right" id="apply-container" style="display: none;">
+                            <button type="submit" class="btn_1 rounded fs-12" style="margin: 0 auto;">Apply</button>
                         </div>
                     </form>
                 </div>
@@ -837,6 +848,7 @@
             </div>
         </div>
     </div>
+
 	
 	<!-- COMMON SCRIPTS -->
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -848,7 +860,9 @@
 	<script src="js/sina-nav.js"></script>
 	<script src="js/modernizr_tables.js"></script>
 	<script src="js/tables_func.js"></script>
+    <script src="js/jquery.modal-wizard.js"></script>
 	<script src="js/jquery.nice-select.js"></script>
+	<script src="js/products.js"></script>
 
 	<script>
     	function addCommas(nStr) {
@@ -931,42 +945,69 @@
 		})
 
 		$(function() {
-			$('#plans').change(function () {
-			    plan = addCommas($(this).val() * 0.2);
-			    $("#plans-value").html("&#8358;" + plan);
-		        $('#contrib').show();
-			})
-		})
-
-		$(function() {
-			$('.selectors').change(function () {
+			$("body").delegate(".selectors", "change", function(e){
 				product = $("#product").val();
 				provider = $("#provider").val();
 		        $('.options').hide();
 		        $('.options select').attr('required',false);
 				if (provider == 'A4' && product == 'MOBILE SHS'){
-		        	$('#mobile-A4').show();
-		        	$('#mobile-A4 select').attr('required',true);
+		        	$('#MOBILE-A4').show();
+		        	$('#MOBILE-A4 select').attr('required',true);
 				}
 		        
 		        else if (provider == 'A4' && product == 'ROOF TOP'){
-		        	$('#roof-A4').show();
-		        	$('#roof-A4 select').attr('required',true);
+		        	$('#ROOF-A4').show();
+		        	$('#ROOF-A4 select').attr('required',true);
 		        }
 		        
 				else if (provider == 'ZOLA' && product == 'MOBILE SHS'){
-		        	$('#mobile-Zola').show();
-		        	$('#mobile-Zola select').attr('required',true);
+		        	$('#MOBILE-ZOLA').show();
+		        	$('#MOBILE-ZOLA select').attr('required',true);
 				}
 		        
 		        else if (provider == 'ZOLA' && product == 'ROOF TOP'){
-		        	$('#roof-Zola').show();
-		        	$('#roof-Zola select').attr('required',true);
+		        	$('#ROOF-ZOLA').show();
+		        	$('#ROOF-ZOLA select').attr('required',true);
 		        }
-		        
-				
 			})
+
+			$("body").delegate("#next", "click", function(e){
+				e.preventDefault()
+    			isEmpty = false
+				  $('input[type=text]:required').each(function() {
+				    if ($(this).val() === '')
+				      isEmpty = true;
+				  });
+
+				  $('select:required').each(function() {
+				    if ($(this).val() === '')
+				      isEmpty = true;
+				  });
+
+				  if (isEmpty)
+				    $("#error").slideDown(500)
+				                  .delay(2000)
+				                  .slideUp(500)
+				  else{
+			        $('#prev-slide').hide();
+			        $('#next-container').hide();
+			        $('#prev-container').show();
+			        $('#apply-container').show();
+			        $('#next-slide').show();
+			    }
+    		})
+
+    		$("body").delegate("#prev", "click", function(e){
+				e.preventDefault()
+		        $('#prev-slide').show();
+		        $('#next-container').show();
+		        $('#prev-container').hide();
+		        $('#apply-container').hide();
+		        $('#next-slide').hide();
+    		})
 		})
+
+
     </script>
   
 </body>

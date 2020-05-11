@@ -592,3 +592,14 @@ input[type='file'] {
 .modal-open .modal{
   background: #2222228f;
 }
+.btn_1.outline:hover, a.btn_1.outline:hover {
+    background: #333333;
+    color: #fff;
+    border-color: #333333;
+}
+form .error {
+  color: #ff0000;
+}
+button:focus{
+  outline: none;
+}
