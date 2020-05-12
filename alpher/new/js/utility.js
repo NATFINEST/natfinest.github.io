@@ -1089,18 +1089,30 @@ $("body").delegate(".like", "click", function(){
 $("body").delegate(".info", "click", function(){
     user_id = $(this).data("user");
     $.ajax({
-        url: 'https://jsonplaceholder.typicode.com/todos/',
+        url: 'https://reqres.in/api/users',
         dataType: 'json',
         type: 'post',
         contentType: 'application/json',
         data: JSON.stringify({'user_id':user_id}),
         processData: false,
         success: function( data, textStatus, jQxhr ){
-            $('#response pre').html( JSON.stringify( data ) );
+            firstname = "tobi"
+            lastname = "obasa"
+            job = "system engineer"
+            Organ = "godaddy"
+            religion = "christianity"
+            lives = "lagos"
+            joined = "28-03-2019"
+            avatar = 'images/glory.jpg'
+            $('#info').find('#fullname').text(firstname + ' ' + lastname);
+            $('#info').find('#occupation').text(job + ' at ' + Organ);
+            $('#info').find('#lives-in').text(lives);
+            $('#info').find('#joined-on').text(joined);
+            $('#info').find('#religion').text(religion);
+            $('#info').find('#avatar').attr('src',avatar);
         },
         error: function( jqXhr, textStatus, errorThrown ){
-            $(".like-unlike#like-unlike-" + id).html('Unlike');
-            $(".icon#icon-"+id).html('<i class="fa fa-thumbs-down mt-1"></i>');
+            
         }
     });
     $('#info').modal('show');

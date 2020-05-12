@@ -108,6 +108,9 @@
 .description-block>.description-text {
     text-transform: uppercase;
 }
+#fullname, #occupation{
+    text-transform: capitalize;
+}
 @media (max-width: 767px){
     .modal .modal-content {
         max-width: none;
