@@ -6,7 +6,7 @@
 }
 @media (max-width:767px) {
 	.popover{
-		transform: translate3d(15px, 715px, 0px)!important;
+		transform: translate3d(15px, 760px, 0px)!important;
 		max-width: 93vw;
 	}
 	.popover .arrow{
