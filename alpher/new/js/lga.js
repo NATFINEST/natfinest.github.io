@@ -7,17 +7,25 @@
         linkTopOffset: 11
     });
 
-    $cbx_group = $("input:checkbox[name='user_interest_ids[]']");
-    $cbx_group = $("input:checkbox[id^='user_interest_ids-']"); // name is not always helpful ;)
+    // $cbx_group = $("input:checkbox[name='user_interest_ids[]']");
+    // $cbx_group = $("input:checkbox[id^='user_interest_ids-']"); // name is not always helpful ;)
 
-    $cbx_group.prop('required', true);
-    if($cbx_group.is(":checked")){
-      $cbx_group.prop('required', false);
-    }
+    // $cbx_group.prop('required', true);
+    // if($cbx_group.is(":checked")){
+    //   $cbx_group.prop('required', false);
+    // }
 
-    if ($("input:checkbox[name='user_interest_ids[]']").length > 0){
-        alert('h')
-    }
+    // var checked=false;
+    // var elements = document.getElementsByName("user_interest_ids[]");
+    // for(var i=0; i < elements.length; i++){
+    //     if(elements[i].checked) {
+    //         checked = true;
+    //     }
+    // }
+    // if (!checked) {
+    //     alert('Yada yada yada, some error message');
+    // }
+    // return checked;
 
     $('.optional').attr('required',false);
     $('select#state').niceSelect('destroy');
@@ -42,12 +50,14 @@
     $("select#gender2").select2();
     $('.bus').hide();
     $('.prof').hide();
+    $('.oths').hide();
     $('#quest').change(function () {
         $('.optional').attr('required',false);
         if($(this).val() == 'professional'){
             $('.bus').hide();
-            $('#other-occupation').hide();
+            $('.oths').hide();
             $('.prof').show();
+            $('#other-occupation').hide();
             $('#organ').attr('required',true);
             $('#job').attr('required',true);
             $('#org-ind').attr('required',true);
@@ -55,8 +65,9 @@
         }
         else if($(this).val() == 'business'){
             $('.prof').hide();
-            $('#other-occupation').hide();
+            $('.oths').hide();
             $('.bus').show();
+            $('#other-occupation').hide();
             $('#bname').attr('required',true);
             $('#btitle').attr('required',true);
             $('#bus-ind').attr('required',true);
@@ -64,11 +75,11 @@
             $('#quest2').attr('required',true);
             $('#brief-desc').attr('required',true);
         }
-        else{
+        else if($(this).val() == 'others'){
             $('.bus').hide();
             $('.prof').hide();
+            $('.oths').show();
             $('#other-occupation').attr('required',true);
-            $('#other-occupation').show();
         }
     })
     $('select#quest').select2();

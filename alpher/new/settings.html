@@ -387,47 +387,47 @@
                                 <label for="" class="text-grey w-100">Interest</label>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-1" class="form-check-input" type="checkbox" value="1" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-1" class="form-check-input" type="checkbox" value="1">
                                     <label class="mb-2">Health</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-2" class="form-check-input" type="checkbox" value="2" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-2" class="form-check-input" type="checkbox" value="2">
                                     <label class="mb-2">Family</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-3" class="form-check-input" type="checkbox" value="3" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-3" class="form-check-input" type="checkbox" value="3">
                                     <label class="mb-2">Lifestyle</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-4" class="form-check-input" type="checkbox" value="4" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-4" class="form-check-input" type="checkbox" value="4">
                                     <label class="mb-2">Career</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-5" class="form-check-input" type="checkbox" value="5" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-5" class="form-check-input" type="checkbox" value="5">
                                     <label class="mb-2">Technology</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-6" class="form-check-input" type="checkbox" value="6" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-6" class="form-check-input" type="checkbox" value="6">
                                     <label class="mb-2">Personal Growth</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-7" class="form-check-input" type="checkbox" value="7" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-7" class="form-check-input" type="checkbox" value="7">
                                     <label class="mb-2">Entrepreneurship</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-8" class="form-check-input" type="checkbox" value="8" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-8" class="form-check-input" type="checkbox" value="8">
                                     <label class="mb-2">Leadership</label>
                                 </div>
                                 <div class="form-check col-md-4 pl-4">
 
-                                    <input name="user_interest_ids[]" id="user_interest_ids-9" class="form-check-input" type="checkbox" value="9" required>
+                                    <input name="user_interest_ids[]" id="user_interest_ids-9" class="form-check-input" type="checkbox" value="9">
                                     <label class="mb-2">Finance</label>
                                 </div>
                             </div>
@@ -441,9 +441,12 @@
                                 </select>
                             </div>
 
-                            <div class="col-12 form-group">
-                                <input class="form-control" type="text" id="other-occupation" name="other-occupation" placeholder="Others (Specify)" style="display: none;">
+                            <div class="row oths group">
+                                <div class="col-12 form-group">
+                                    <input class="form-control optional" type="text" id="other-occupation" name="other-occupation" placeholder="Others (Specify)">
+                                </div>
                             </div>
+
                             <div class="row bus group">
                                 <div class="col-12 col-md-6 form-group">
                                     <label for="bname" class="sr-only">Business Name</label>
@@ -454,8 +457,8 @@
                                     <input class="form-control optional" type="text" id="btitle" name="btitle" placeholder="Your Business Title e.g = CEO *">
                                 </div>
                                 <div class="col-12 col-md-6 form-group">
-                                    <select class="form-control optional" name="bus-ind" id="bus-ind" style="display: none;">
-                                        <option selected="true" disabled="disabled">Industry</option>
+                                    <select class="form-control optional" name="bus-ind" id="bus-ind">
+                                        <option selected="true" disabled="disabled" value="">Industry</option>
                                         <option value="">Agriculture</option>
                                         <option value="">Music </option>
                                         <option value="">Healthcare</option>
@@ -471,15 +474,15 @@
                                     </select>
                                 </div>
                                 <div class="col-12 col-md-6 form-group">
-                                    <select class="form-control optional" name="quest1" id="quest1" style="display: none;">
-                                        <option selected="true" disabled="disabled">Is your business registered with CAC?</option>
+                                    <select class="form-control optional" name="quest1" id="quest1">
+                                        <option selected="true" disabled="disabled" value="">Is your business registered with CAC?</option>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-md-12 form-group">
-                                    <select class="form-control optional" name="quest2" id="quest2" style="display: none;">
-                                        <option selected="true" disabled="disabled">Is your business owned or managed by women?</option>
+                                    <select class="form-control optional" name="quest2" id="quest2">
+                                        <option selected="true" disabled="disabled" value="">Is your business owned or managed by women?</option>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
@@ -508,8 +511,8 @@
                                   </div>
                                 </div>
                                 <div class="col-12 col-md-6 form-group">
-                                    <select class="form-control optional" name="org-ind" id="org-ind" style="display: none;">
-                                        <option selected="true" disabled="disabled">Industry</option>
+                                    <select class="form-control optional" name="org-ind" id="org-ind">
+                                        <option selected="true" disabled="disabled" value="">Industry</option>
                                         <option value="">Agriculture</option>
                                         <option value="">Music </option>
                                         <option value="">Healthcare</option>
@@ -526,7 +529,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <select class="form-control optional" name="education" id="education">
-                                        <option selected="true" disabled="disabled">Highest Level of Education</option>
+                                        <option selected="true" disabled="disabled" value="">Highest Level of Education</option>
                                         <option value="bac">Bachelors</option>
                                         <option value="mas">Masters</option>
                                         <option value="doc">Doctorate</option>
