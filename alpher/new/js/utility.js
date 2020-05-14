@@ -890,7 +890,7 @@ $(function () {
     };
 });
 $(function () {
-    $(".card--dashboard").slice(0, 4).show();
+    $(".card--dashboard").slice(0, 12).show();
     if($('.card--dashboard').length < 3){
         $(".loadPost").hide();
     }
@@ -1104,9 +1104,9 @@ $("body").delegate(".info", "click", function(){
             organisation_title = "system engineer"
             organisation_name = "godaddy"
             interest = "photography, business advisory"
-            about="jygjyuy"
+            about="DavtonLearn is an online video learning platform for professional certification. When you think of a Lynda.com for professional management certification training in Nigeria, then comes DavtonLearn.com"
             industry = "science"
-            avatar = 'images/glory.jpg'
+            avatar = 'images/tobi.jpg'
             isBusiness = true;
             $('#info').find('#fullname').text(firstname + ' ' + lastname);
             if (isBusiness == true){
@@ -1114,7 +1114,7 @@ $("body").delegate(".info", "click", function(){
                 $('#about-business').attr('data-original-title','About Business')   
                 $('#about-business').attr('data-html',"true" )   
                 $('#about-business').attr('data-content',about)  
-                $('#about-business').attr('data-placement','left')  
+                $('#about-business').attr('data-placement','bottom')  
                 $('#about-business').attr('data-trigger','focus') 
                 $('#about-business').show();
             }
@@ -1122,7 +1122,7 @@ $("body").delegate(".info", "click", function(){
                 $('#info').find('#occupation').text(organisation_title + ' at ' + organisation_name);
                 $('#about-business').show();
             }
-            $('#info').find('#interest').text('Interset: ' + interest);
+            $('#info').find('#interest').text('Interest: ' + interest);
             $('#info').find('#industry').text('Industry: ' + industry);
             $('#info').find('#avatar').attr('src',avatar);
         },

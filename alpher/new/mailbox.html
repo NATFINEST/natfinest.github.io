@@ -246,7 +246,6 @@
                                     <button class="btn btn-primary m-r-xxs" data-toggle="modal" data-target="#compose">Compose</button>
                                     <button class="btn btn-secondary m-r-xxs">Refresh</button>
                                     <button class="btn btn-secondary m-r-xxs">Mark all as read</button>
-                                    <button class="btn btn-secondary m-r-xxs">Settings</button>
                                     <p class="mail-count ml-auto">1-50 of 1,957</p>
                                     <button class="btn btn-secondary m-l-xxs mail-left-btn">&lt;</button>
                                     <button class="btn btn-secondary float-right m-l-xxs no-m-r mail-right-btn">&gt;</button>
@@ -400,8 +399,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="mail-container">
+                            <div class="col-lg-6 mails">
+                                <div class="mail-container border-bottom-2 mb-5">
                                     <div class="mail-header">
                                         <div class="mail-title">
                                             Notes have been uploaded for next exam
@@ -429,6 +428,63 @@
                                         <p>Dear Sir/Madam,<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut ante id elit molestie ornare. Pellentesque porttitor facilisis risus, sit amet semper ante efficitur et. Etiam quis rutrum leo, vitae posuere augue. Donec odio leo, dapibus id sollicitudin vel, luctus sit amet justo. Aenean cursus, tellus ut consectetur commodo, est dolor fringilla mauris, nec tristique magna orci in diam. Cras eget libero sit amet felis tincidunt mattis.<br><br>Waiting your reply ASAP,<br>Thanks in advance.</p>
                                     </div>
                                 </div>
+                                <div class="mail-container border-bottom-2 mb-5">
+                                    <div class="mail-header">
+                                        <div class="mail-title">
+                                            Notes have been uploaded for next exam
+                                        </div>
+                                        <div class="mail-actions">
+                                            <button class="btn btn-secondary">Reply</button>
+                                            <button class="btn btn-secondary">Forwawrd</button>
+                                            <button class="btn btn-secondary">Delete</button>
+                                        </div>
+                                    </div>
+                                    <div class="mail-info">
+                                        <div class="mail-author">
+                                            <img src="images/avatars/avatar3.png" alt="">
+                                            <div class="mail-author-info">
+                                                <span class="mail-author-name">Kenny Highland</span>
+                                                <span class="mail-author-address">kenny.high@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="mail-other-info">
+                                            <span>18:01</span>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="mail-text">
+                                        <p>Dear Sir/Madam,<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut ante id elit molestie ornare. Pellentesque porttitor facilisis risus, sit amet semper ante efficitur et. Etiam quis rutrum leo, vitae posuere augue. Donec odio leo, dapibus id sollicitudin vel, luctus sit amet justo. Aenean cursus, tellus ut consectetur commodo, est dolor fringilla mauris, nec tristique magna orci in diam. Cras eget libero sit amet felis tincidunt mattis.<br><br>Waiting your reply ASAP,<br>Thanks in advance.</p>
+                                    </div>
+                                </div>
+                                <div class="mail-container border-bottom-2 mb-5">
+                                    <div class="mail-header">
+                                        <div class="mail-title">
+                                            Notes have been uploaded for next exam
+                                        </div>
+                                        <div class="mail-actions">
+                                            <button class="btn btn-secondary">Reply</button>
+                                            <button class="btn btn-secondary">Forwawrd</button>
+                                            <button class="btn btn-secondary">Delete</button>
+                                        </div>
+                                    </div>
+                                    <div class="mail-info">
+                                        <div class="mail-author">
+                                            <img src="images/avatars/avatar3.png" alt="">
+                                            <div class="mail-author-info">
+                                                <span class="mail-author-name">Kenny Highland</span>
+                                                <span class="mail-author-address">kenny.high@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="mail-other-info">
+                                            <span>18:01</span>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="mail-text">
+                                        <p>Dear Sir/Madam,<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut ante id elit molestie ornare. Pellentesque porttitor facilisis risus, sit amet semper ante efficitur et. Etiam quis rutrum leo, vitae posuere augue. Donec odio leo, dapibus id sollicitudin vel, luctus sit amet justo. Aenean cursus, tellus ut consectetur commodo, est dolor fringilla mauris, nec tristique magna orci in diam. Cras eget libero sit amet felis tincidunt mattis.<br><br>Waiting your reply ASAP,<br>Thanks in advance.</p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         
@@ -569,6 +625,7 @@
                             <div class="form-group">
                                 <select class="js-example-basic-single w-100" name="state" id="select-contact">
                                     <option></option>
+                                    <option data-full-name="Korede Bello" data-status="online" data-demo-src="avatar_lg.png" data-id="3" data-job="Lawyer" data-last-seen="online">Admin</option>
                                     <option data-full-name="Korede Bello" data-status="online" data-demo-src="avatar_lg.png" data-id="3" data-job="Lawyer" data-last-seen="online">Korede Bello</option>
                                     <option data-full-name="Davids Kim" data-status="offline" data-demo-src="avatar_lg.png" data-id="2" data-job="Doctor" data-last-seen="5 mins Ago">Davids Kims</option>
                                 </select>
@@ -577,7 +634,7 @@
                                 <input type="text" class="form-control" id="subject" placeholder="Subject">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Message" id="mail-message" rows="3"></textarea>
+                                <textarea class="form-control" placeholder="Message" id="mail-message" rows="3" maxlength="200"></textarea>
                             </div>
                     </div>
                     <div class="modal-footer">
