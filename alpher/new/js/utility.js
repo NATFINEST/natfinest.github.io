@@ -604,6 +604,7 @@ $(document).ready(function() {
 
     $('.js-example-basic-single').select2({
         placeholder: "Select a contact to start a conversation",
+        dropdownParent: $("#compose"),
     }).on("change", function(e) {
         //Initialize variables
         name = $("#select-contact").select2('data')[0].element.dataset['fullName'];
@@ -1098,17 +1099,31 @@ $("body").delegate(".info", "click", function(){
         success: function( data, textStatus, jQxhr ){
             firstname = "tobi"
             lastname = "obasa"
-            job = "system engineer"
-            Organ = "godaddy"
-            religion = "christianity"
-            lives = "lagos"
-            joined = "28-03-2019"
+            business_title = "CEO"
+            business_name = "Davtonlearn"
+            organisation_title = "system engineer"
+            organisation_name = "godaddy"
+            interest = "photography, business advisory"
+            about="jygjyuy"
+            industry = "science"
             avatar = 'images/glory.jpg'
+            isBusiness = true;
             $('#info').find('#fullname').text(firstname + ' ' + lastname);
-            $('#info').find('#occupation').text(job + ' at ' + Organ);
-            $('#info').find('#lives-in').text(lives);
-            $('#info').find('#joined-on').text(joined);
-            $('#info').find('#religion').text(religion);
+            if (isBusiness == true){
+                $('#info').find('#business').text(business_title + ' at ' + business_name);
+                $('#about-business').attr('data-original-title','About Business')   
+                $('#about-business').attr('data-html',"true" )   
+                $('#about-business').attr('data-content',about)  
+                $('#about-business').attr('data-placement','left')  
+                $('#about-business').attr('data-trigger','focus') 
+                $('#about-business').show();
+            }
+            else{
+                $('#info').find('#occupation').text(organisation_title + ' at ' + organisation_name);
+                $('#about-business').show();
+            }
+            $('#info').find('#interest').text('Interset: ' + interest);
+            $('#info').find('#industry').text('Industry: ' + industry);
             $('#info').find('#avatar').attr('src',avatar);
         },
         error: function( jqXhr, textStatus, errorThrown ){
@@ -1117,6 +1132,11 @@ $("body").delegate(".info", "click", function(){
     });
     $('#info').modal('show');
 })
+
+$("body").delegate("#about-business", "click", function(e){
+        $(this).popover('show'); 
+});
+
 
 $("body").delegate("#send-message", "click", function(e){
     e.preventDefault();

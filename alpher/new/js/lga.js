@@ -6,6 +6,20 @@
         linkRightOffset: 5,
         linkTopOffset: 11
     });
+
+    $cbx_group = $("input:checkbox[name='user_interest_ids[]']");
+    $cbx_group = $("input:checkbox[id^='user_interest_ids-']"); // name is not always helpful ;)
+
+    $cbx_group.prop('required', true);
+    if($cbx_group.is(":checked")){
+      $cbx_group.prop('required', false);
+    }
+
+    if ($("input:checkbox[name='user_interest_ids[]']").length > 0){
+        alert('h')
+    }
+
+    $('.optional').attr('required',false);
     $('select#state').niceSelect('destroy');
     $('select#lga').niceSelect('destroy');
     $('select#gender').niceSelect('destroy');
@@ -14,27 +28,66 @@
     $("select#lga").select2();
     $("select#gender").select2();
     $("select#religion").select2();
+    $('#religion').change(function () {
+        $('.optional').attr('required',false);
+        if($(this).val() == 'oth'){
+            $('#other-religion').attr('required',true);
+            $('#other-religion').show();
+        }
+        else{
+            $('#other-religion').hide();
+        }
+    })
     $("select#education").select2();
     $("select#gender2").select2();
     $('.bus').hide();
     $('.prof').hide();
     $('#quest').change(function () {
+        $('.optional').attr('required',false);
         if($(this).val() == 'professional'){
             $('.bus').hide();
+            $('#other-occupation').hide();
             $('.prof').show();
+            $('#organ').attr('required',true);
+            $('#job').attr('required',true);
+            $('#org-ind').attr('required',true);
+            $('#education').attr('required',true);
         }
         else if($(this).val() == 'business'){
             $('.prof').hide();
+            $('#other-occupation').hide();
             $('.bus').show();
+            $('#bname').attr('required',true);
+            $('#btitle').attr('required',true);
+            $('#bus-ind').attr('required',true);
+            $('#quest1').attr('required',true);
+            $('#quest2').attr('required',true);
+            $('#brief-desc').attr('required',true);
         }
         else{
             $('.bus').hide();
             $('.prof').hide();
+            $('#other-occupation').attr('required',true);
+            $('#other-occupation').show();
         }
     })
     $('select#quest').select2();
     $('select#quest1').select2();
     $('select#quest2').select2();
+    $('select#org-ind').select2();
+    $('select#bus-ind').select2();
+    $('select#hear').select2();
+    $('#hear').change(function () {
+        $('.optional').attr('required',false);
+        if($(this).val() == 'other'){
+            $('#other-reason').attr('required',true);
+            $('#other-reason').show();
+        }
+        else{
+            $('#other-reason').attr('required',false);
+            $('#other-reason').hide();
+        }
+    })
     var input1 = document.querySelector(".phone");
     window.intlTelInput(input1, {
       preferredCountries: ['ng'],
