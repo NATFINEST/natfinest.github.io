@@ -1327,8 +1327,20 @@ button.dropdown-toggle::after {
 
 .form-control {
     font-size: 14px;
-    color: #B7B7B7;
+    color: #333;
     border-radius: 5px !important;
+}
+::placeholder,.select2-container--default .select2-selection--single .select2-selection__rendered { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #666!important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #666!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #666!important;
 }
 .custom-select {
     color: #4F4F4F;

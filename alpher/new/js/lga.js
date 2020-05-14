@@ -7,25 +7,23 @@
         linkTopOffset: 11
     });
 
-    // $cbx_group = $("input:checkbox[name='user_interest_ids[]']");
-    // $cbx_group = $("input:checkbox[id^='user_interest_ids-']"); // name is not always helpful ;)
-
-    // $cbx_group.prop('required', true);
-    // if($cbx_group.is(":checked")){
-    //   $cbx_group.prop('required', false);
-    // }
-
-    // var checked=false;
-    // var elements = document.getElementsByName("user_interest_ids[]");
-    // for(var i=0; i < elements.length; i++){
-    //     if(elements[i].checked) {
-    //         checked = true;
-    //     }
-    // }
-    // if (!checked) {
-    //     alert('Yada yada yada, some error message');
-    // }
-    // return checked;
+    $(function(){
+        var chbxs = $(':checkbox[required]');
+        var namedChbxs = {};
+        chbxs.each(function(){
+            var name = $(this).attr('name');
+            namedChbxs[name] = (namedChbxs[name] || $()).add(this);
+        });
+        chbxs.change(function(){
+            var name = $(this).attr('name');
+            var cbx = namedChbxs[name];
+            if(cbx.filter(':checked').length>0){
+                cbx.removeAttr('required');
+            }else{
+                cbx.attr('required','required');
+            }
+        });
+    });
 
     $('.optional').attr('required',false);
     $('select#state').niceSelect('destroy');
