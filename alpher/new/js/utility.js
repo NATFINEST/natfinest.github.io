@@ -649,7 +649,6 @@ $(document).ready(function() {
             },
             cache: true
           },
-          placeholder: 'Search for a repository',
           minimumInputLength: 1,
           templateResult: formatRepo,
           templateSelection: formatRepoSelection
