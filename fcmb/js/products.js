@@ -1,5 +1,5 @@
 $(".plans-selector").change(function() {
-    var state=$(this).val();
+    window.state=$(this).val();
     plan = addCommas($(this).val() * 0.2);
     cat = $(this).closest('.options').attr('id')
 

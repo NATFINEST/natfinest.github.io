@@ -4,6 +4,15 @@
 .popover-body{
 	width: 434px;
 }
+.input-group>.input-group-prepend>.input-group-text, .input-group>.input-group-append>.input-group-text{
+	height: 38px;
+	margin-top: 6px;
+	border: 0
+}
+.fs-cal{
+	font-size: 14px;
+	font-weight: 500
+}
 @media (max-width:767px) {
 	.popover{
 		transform: translate3d(15px, 760px, 0px)!important;

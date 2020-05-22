@@ -899,16 +899,77 @@
                         </div>
 
                         <div class="row" style="display: none;" id="next-slide">
-                            <div class="form-group col-md-6 my-1">
-                                <input type="text" class="form-control element-block fs-14" placeholder="Firstname *">
-                            </div>
-                            <div class="form-group col-md-6 my-1">
-                                <select class="w-100 selectors" id="provider">
-								  <option data-display="Select Provider" value="">Select Provider</option>				  
-								  <option value="A4">A4&T Integrated</option>
-								  <option value="ZOLA">Zola Electric</option>
-								</select>
-                            </div>
+                            <div class="col-12">	
+                        		<div class="alert alert-danger" id="invalid" style="display: none;">Repayment period must be between 3 and 12 months</div>					
+								<div class="card">
+								  	<div class="card-header text-white text-left" style="background: linear-gradient(to right, rgb(92, 38, 132) 0%,rgb(187, 22, 163) 100%); font-weight: 500">
+								    	Loan Calculator
+								  	</div>
+								  	<div class="card-body px-4 mx-0" style="border: 1px solid #ccc">
+								  	<h5 style="color: red; font-size: 13px;text-align: left;">* Please be adviced that addition management fee of 1% applies on all loans disbursed</h5>
+								  		<div class="row my-3">
+											<div class="fs-cal col-8 text-left mt-1">
+									    		Minimum equity contribution (20%)
+									    	</div>
+									    	<div class="col-4">
+									    		<div class="input-group">
+												  <div class="input-group-prepend">
+												    <span class="input-group-text" >&#x20A6;</span>
+												  </div>
+												  <input type="text" class="form-control" id="equity" value="20000" disabled>
+												</div>
+									    	</div>
+									    </div>
+
+									    <div class="row my-3">
+											<div class="fs-cal col-8 text-left mt-1">
+									    		Full loan amount to be disbursed (80%)
+									    	</div>
+									    	<div class="col-4">
+									    		<div class="input-group">
+												  <div class="input-group-prepend">
+												    <span class="input-group-text" >&#x20A6;</span>
+												  </div>
+												  <input type="text" class="form-control" id="full" value="20000" disabled>
+												</div>
+									    	</div>
+									    </div>
+
+								  		<div class="row my-3">
+									    	<div class="fs-cal col-8 text-left mt-1">
+									    		Interest Rate
+									    	</div>
+									    	<div class="col-4">
+									    		<div class="input-group">
+												  <input type="text" class="form-control" id="rate" value="22.6" disabled >
+												  <div class="input-group-append">
+												    <span class="input-group-text" >%</span>
+												  </div>
+												</div>
+									    	</div>
+									    </div>
+
+
+								  		<div class="row my-3">
+									    	<div class="fs-cal col-8 text-left mt-1">
+									    		Repayment period (between 3 and 12 months)
+									    	</div>
+									    	<div class="col-4">
+									    		<div class="input-group">
+												  <input type="number" class="form-control" id="time" min="3" max="12">
+												</div>
+									    	</div>
+									    </div>
+
+									  	<div class="text-center w-100" id="content">
+											<a href="#0" class="btn_1 rounded add_top_30" id="cal">Calculate</a>					  		
+									  	</div>
+
+									  	<div class="alert alert-success mt-3" id="final" style="display: none;"></div>
+								  	</div>
+								</div>
+
+							</div>
                         </div>
 
                         <div class="btns-wrap my-3 text-left float-left" id="prev-container" style="display: none;">
@@ -918,7 +979,7 @@
                             <button id="next" class="btn_1 rounded fs-12" style="margin: 0 auto;">Next</button>
                         </div>
                         <div class="btns-wrap my-3 text-right float-right" id="apply-container" style="display: none;">
-                            <button type="submit" class="btn_1 rounded fs-12" style="margin: 0 auto;">Apply</button>
+                            <button id="apply" class="btn_1 rounded fs-12" style="margin: 0 auto;">Apply for loan</button>
                         </div>
                     </form>
                 </div>
@@ -939,6 +1000,7 @@
     <script src="js/jquery.modal-wizard.js"></script>
 	<script src="js/jquery.nice-select.js"></script>
 	<script src="js/products.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 	<script>
     	function addCommas(nStr) {
@@ -954,35 +1016,9 @@
 		}
     </script>
     <script>
-    	$(document).ready(function(){
-			$("#btn-calculate").click(function(){
-			    var amt = $("#amount-input").val();
-			    var rate = $("#rate-input").val(); 
-			    var years = $("#years-input").val();  
-			    if (amt == "" || rate == "" || years == "" || !$.isNumeric(amt) || !$.isNumeric(rate) || !$.isNumeric(years)){
-			    	alert("Please provide valid numerical values for loan amount, interest rate, and number of years");
-			    }
-			    else{
-			    	jQuery('html').animate({
-					scrollTop: jQuery("#content").offset().top
-					});
-
-				    var n = years * 12;
-				    var i = rate/100/12;
-				    var x = (1+i) ** n;  
-				    var d = (x - 1) / (i * x);
-
-				    p = Math.round(amt / d);
-
-				    // $('#amount-value').text(amt);
-				    amt = addCommas(amt);
-				    p = addCommas(p);
-				    $('#amount-value').html("&#x20A6;" + amt);
-				    $('#rate-value').text(rate + "%");
-				    $('#years-value').text(years);
-				    $('#monthly-value').html("&#x20A6;" + p);
-				}
-			});
+    	var state;
+    	$(document).on("keydown", "form", function(event) { 
+		    return event.key != "Enter";
 		});
 
 		$(function() {
@@ -1050,26 +1086,33 @@
 			$("body").delegate("#next", "click", function(e){
 				e.preventDefault()
     			isEmpty = false
-				  $('input[type=text]:required').each(function() {
+				$('input[type=text]:required').each(function() {
 				    if ($(this).val() === '')
 				      isEmpty = true;
-				  });
+				});
 
-				  $('select:required').each(function() {
+				$('select:required').each(function() {
 				    if ($(this).val() === '')
 				      isEmpty = true;
-				  });
+				});
 
-				  if (isEmpty)
+				if (isEmpty)
 				    $("#error").slideDown(500)
 				                  .delay(2000)
 				                  .slideUp(500)
-				  else{
+				else{
 			        $('#prev-slide').hide();
 			        $('#next-container').hide();
 			        $('#prev-container').show();
 			        $('#apply-container').show();
 			        $('#next-slide').show();
+			        main = window.state;
+			        equity = main * 0.2
+			        full = main * 0.8
+			        rate = 22.6
+			        $('#equity').val(equity)
+			        $('#full').val(full)
+			        $('#rate').val(rate)
 			    }
     		})
 
@@ -1080,6 +1123,57 @@
 		        $('#prev-container').hide();
 		        $('#apply-container').hide();
 		        $('#next-slide').hide();
+    		})
+
+    		function round(num) {
+			    return Math.round(num*10)/10;
+			}
+
+    		$("body").delegate("#cal", "click", function(e){
+				e.preventDefault()
+				if($('#time').val() > 2 && $('#time').val() < 13){
+			        si = ($('#full').val() * $('#rate').val() * ($('#time').val()/12) * 0.01 );
+			        monthly = addCommas(Math.round(si + parseInt($('#full').val() / $('#time').val())/ 10) * 10);
+		        	$('#final').html('Your monthly payments for ' + $('#time').val() + ' months will be &#8358;' + monthly + ' per month')
+		        	$('#final').slideDown()
+				}
+				else{
+	        		$('#invalid').slideDown(500)
+				                  .delay(2000)
+				                  .slideUp(500)
+				}
+
+    		})
+
+    		$("body").delegate("#apply", "click", function(e){
+				e.preventDefault()
+				Swal.showLoading({
+					title: 'Processing'
+				})
+				$.ajax({
+		            url: 'https://reqres.in/api/users',
+		            dataType: 'json',
+		            type: 'post',
+		            contentType: 'application/json',
+		            data: JSON.stringify({'message':'-1'}),
+		            processData: false,
+		            success: function( data, textStatus, jQxhr ){
+		                Swal.fire({
+						  title: 'Success!',
+						  text: 'Your apllication was successful! An email hs been sent to you.',
+						  icon: 'success'
+						})
+						$('#applyModal').modal('hide');
+		            },
+		            error: function( jqXhr, textStatus, errorThrown ){
+		                Swal.fire({
+						  title: 'Error!',
+						  text: 'Your apllication was unsuccessful! Please try again',
+						  icon: 'error'
+						})
+						$('#applyModal').modal('hide');
+		            }
+		        });
     		})
 		})
 
