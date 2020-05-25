@@ -961,9 +961,9 @@
 									    	</div>
 									    </div>
 
-									  	<div class="text-center w-100" id="content">
-											<a href="#0" class="btn_1 rounded add_top_30" id="cal">Calculate</a>					  		
-									  	</div>
+									  	<!-- <div class="text-center w-100" id="content">
+											<a href="#0" class="btn_1 rounded add_top_30" id="cal">Calculate</a>	
+									  	</div> -->
 
 									  	<div class="alert alert-success mt-3" id="final" style="display: none;"></div>
 								  	</div>
@@ -1129,8 +1129,7 @@
 			    return Math.round(num*10)/10;
 			}
 
-    		$("body").delegate("#cal", "click", function(e){
-				e.preventDefault()
+    		$('#time').on('input', function() { 
 				if($('#time').val() > 2 && $('#time').val() < 13){
 			        si = ($('#full').val() * $('#rate').val() * ($('#time').val()/12) * 0.01 );
 			        monthly = addCommas(Math.round(si + parseInt($('#full').val() / $('#time').val())/ 10) * 10);
