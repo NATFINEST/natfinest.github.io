@@ -624,8 +624,8 @@
 									<option>More than 10 years</option>
                                 </select>
                             </div>
-                            <div class="form-group col-sm-12">
-                                <label for="choices-multiple-default" class="fw-b">What are the three (3) most critical business challenges your business is currently facing?</label>
+                            <!-- <div class="form-group col-sm-12">
+                                <label for="choices-multiple-default" class="fw-b">What is the most critical business challenges your business is currently facing?</label>
                                 <select class="form-control" data-trigger name="choices-multiple-default" id="choices-multiple-default" placeholder="This is a placeholder" multiple>
                                    	<option>Access to Finance</option>
 									<option>Training for staff</option>
@@ -633,10 +633,24 @@
 									<option>Poor Infrastructure</option>
 									<option>Costs of Production</option>
 									<option>Poor Infrastructure</option>
+                                    <option>Others (Please Specify)</option>
+                                </select>
+                            </div> -->
+                            <div class="form-group col-md-12">
+                                <label for="text" class="fw-b">What is the most critical business challenges your business is currently facing?</label>
+                                <select name="challenge" id="challenge" class="form-control" required>
+                                    <option value="" selected="selected"> What is the most critical business challenges your business is currently facing? </option>
+                                    <option>Access to Finance</option>
+                                    <option>Training for staff</option>
+                                    <option>Lack of business support services</option>
+                                    <option>Poor Infrastructure</option>
+                                    <option>Costs of Production</option>
+                                    <option>Poor Infrastructure</option>
+                                    <option>Others (Please Specify)</option>
                                 </select>
                             </div>
                             <div class="form-group col-sm-12">
-                                <label class="sr-only" for="specify-challenge">Specify Sector</label>
+                                <label class="sr-only" for="specify-challenge">Specify Challenge</label>
                                 <input type="text" class="form-control" id="specify-challenge" placeholder="Specify challenges ">
                             </div>
                             <div class="form-group col-md-12">
@@ -661,7 +675,7 @@
                                 <textarea class="form-control" rows="3" placeholder="What do you hope to achieve in this program?" id="hope"></textarea>
                             </div>
                             <div class="form-group col-md-12">
-                                <label for="available" class="fw-b">For the next 3 months, will you be available for weekly physical classes</label>
+                                <label for="available" class="fw-b">For the next 3 months, will you be available for online classes and WhatsApp engagement</label>
                                 <select name="available" id="available" class="form-control" required>
                                     <option>Yes</option>
                                    	<option>No</option>
@@ -674,9 +688,13 @@
                                    	<option>No</option>
                                 </select>
                             </div>
-                            <div class="form-group col-sm-6">
+                            <div class="form-group col-sm-12">
                                 <label class="sr-only" for="acc-no">Account Number</label>
                                 <input type="text" class="form-control" id="acc-no" placeholder="Account Number">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label class="sr-only" for="acc-no">Whatsapp Number</label>
+                                <input type="text" class="form-control" placeholder="Whatsapp Number">
                             </div>
                             <div class="form-group col-sm-12 text-center">
                                 <button class="btn_1 rounded" type="submit">Submit</button>
@@ -723,7 +741,7 @@
 			        $("#specify-sector").hide();
 			      }
 			    });
-			    $('.choices__item is-highlighted').on('change', function() {
+			    $('#challenge').on('change', function() {
 			      if (this.value == 'Others (Please Specify)')
 			      {
 			        $("#specify-challenge").show();
@@ -735,6 +753,12 @@
 			    });
 			    
 	        });
+	  //       $(document).on('show.bs.modal', '.modal', function () {
+			//     $(".nav-container").css({"position": "relative", "z-index" : "0"})
+			// });
+			// $(document).on('hide.bs.modal', '.modal', function () {
+			//     $(".nav-container").css({"position": "sticky", "z-index" : "3"})
+			// });
 	    </script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -743,7 +767,7 @@
                     document.getElementById('choices-multiple-default'), {
                         delimiter: ',',
                         editItems: true,
-                        maxItemCount: 3,
+                        maxItemCount: 1,
                         removeItemButton: true,
                     }
                 );
