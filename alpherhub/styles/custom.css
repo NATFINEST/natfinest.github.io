@@ -250,6 +250,13 @@ footer .copyright-text{
 .main-menu{
   align-items: center;
 }
+footer ul.footer-social-icons li{
+  display: block;
+  margin: 0px 30px 8px;
+}
+footer ul.footer-social-icons li a{
+  text-transform: none;
+}
 @media (max-width: 1200px) {
     .mentor-img {
         min-height: 60vh;
