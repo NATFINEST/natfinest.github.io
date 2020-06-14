@@ -603,3 +603,11 @@ form .error {
 button:focus{
   outline: none;
 }
+.btn_1.disabled,.btn_1:disabled{
+  opacity: .65;
+  cursor: auto;
+}
+.btn_1.disabled:hover,.btn_1:disabled:hover{
+  background: #bb16a3;
+  color: #fff;
+}
