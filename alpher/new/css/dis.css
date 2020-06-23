@@ -1,0 +1,15 @@
+.new-dis{
+   background: #E91E63;
+  color: #fff;
+  position: absolute;
+  right: 14.5px;
+  padding: 5px 13px;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+}
+.new-side{
+  color: #e91e63;
+  position: absolute;
+  right: 1.5%;
+  margin-top: -9px;
+}
