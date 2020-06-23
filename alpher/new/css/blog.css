@@ -144,6 +144,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #007bff!important;
     margin-left: 12px;
 }
+img.mt-1.mr-2, .mr-2 img.mt-1{
+    width: 42px;
+    height: auto;
+    border-radius: 50%;
+}
+.loadReply{
+    border-radius: 50%;
+    padding: 2px 7px;
+}
+.loadPost{
+    font-size: 14px;
+    border-radius: 5px;
+}
 
 @media (max-width: 767px){
     .modal .modal-content {
