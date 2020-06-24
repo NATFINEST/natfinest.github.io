@@ -223,7 +223,7 @@ body {
 }
 
 .news-slide-img a img{
-    width: 100%;
+    width: 100%!important;
 }
 
 .fs-16{
