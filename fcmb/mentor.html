@@ -528,7 +528,11 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form class="row">
+                        <div class="form-info">
+                            <p>Thank you for your interest in the FCMB SheVentures Mentorship Program for Women in Business.</p> 
+                            <p>The offer for this quarter is now closed. However, if you would like to be informed on when the portal will be opened, <span class="form-show" style="cursor: pointer;color: #bb16a3;font-weight: 500;">please click here</span></p>
+                        </div>
+                        <form class="row form-content" style="display: none;">
                             <div class="form-group col-sm-6">
                                 <label class="sr-only" for="bus-name">Full Name</label>
                                 <input type="text" class="form-control" id="full-name" placeholder="Full Name">
@@ -751,6 +755,10 @@
 			        $("#specify-challenge").hide();
 			      }
 			    });
+                $('.form-show').on('click', function() {
+                  $('.form-info').hide();
+                  $('.form-content').show();
+                });
 			    
 	        });
 	  //       $(document).on('show.bs.modal', '.modal', function () {
