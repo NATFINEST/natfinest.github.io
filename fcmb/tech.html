@@ -30,6 +30,7 @@
     <!-- material design icons -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/intlTel.css">
 	<link rel="stylesheet" href="css/sina-nav.css">
 
 </head>
@@ -210,19 +211,19 @@
 
 								    	<div class="col-md-6 mb-3">
 								    		<div class="input-group">
-											  <input type="text" class="form-control" style="font-weight:500;" id="amount-input" placeholder="Current Phone Number" required>
+											  <input type="number" class="form-control" style="font-weight:500;" id="amount-input" placeholder="Current Phone Number" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" onKeyDown="if(this.value.length==11 && event.keyCode!=8) return false;" required>
 											</div>
 								    	</div>
 
 								    	<div class="col-md-6 mb-3">
 								    		<div class="input-group">
-											  <input type="text" class="form-control" style="font-weight:500;" id="amount-input" placeholder="Alternative Phone Number" required>
+											  <input type="number" class="form-control" style="font-weight:500;" id="amount-input" placeholder="Alternative Phone Number" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" onKeyDown="if(this.value.length==11 && event.keyCode!=8) return false;" required>
 											</div>
 								    	</div>
 
 								    	<div class="col-md-8 mb-3 mx-auto">
 								    		<div class="input-group">
-											  <input type="text" class="form-control" style="font-weight:500;" id="smartno" placeholder="Desired Smart number" required>
+											  <input type="text" class="form-control" style="font-weight:500;" id="smartno" placeholder="Desired SMAT number e.g. 0800SAMSUNG" required>
 											</div>
 								    	</div>
 								    	<div class="alert alert-danger error w-100" style="display: none;"></div>
@@ -452,7 +453,7 @@
 					    c) The Interactive Voice Response makes a company looks big and sophisticated .<br><br>
 					    d) The Integrated Voice Messaging improves the image of a company, giving it the persona of a structured corporate entity.<br><br>
 					    e) Improves customer service and it is a neat way to project your image.<br><br>
-					    f) Cheap outbound call to all network at 11k per second.<br><br>
+					    <!-- f) Cheap outbound call to all network at 11k per second.<br><br> -->
                     </p>
                 </div>
             </div>
