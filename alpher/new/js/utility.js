@@ -938,6 +938,12 @@ $(function () {
     };
 });
 $(function () {
+    gallen = $('.col-gallery .col-6').length
+    for (i = 1; i <= gallen; i++) {
+        $(".img-gallery").slice(0, 4).show();
+    };
+});
+$(function () {
     $(".card--dashboard").slice(0, 12).show();
     if($('.card--dashboard').length < 3){
         $(".loadPost").hide();
