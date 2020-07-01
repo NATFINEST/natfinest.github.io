@@ -158,6 +158,23 @@ img.mt-1.mr-2, .mr-2 img.mt-1{
     border-radius: 5px;
 }
 
+.gall-img{
+    /*height: 100px;*/
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-gallery {
+    margin-bottom: 15px;
+    display: none;
+}
+
+.content .content-overlay.image{
+    height: 93%;
+    width: calc(100% - 15px);
+    left: 7px;
+}
+
 @media (max-width: 767px){
     .modal .modal-content {
         max-width: none;
