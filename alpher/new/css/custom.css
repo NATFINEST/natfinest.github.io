@@ -1,4 +1,4 @@
-html,
+/*html,
 body,
 h1,
 h2,
@@ -41,7 +41,7 @@ p {
     font-style: normal;
     font-display: block
 }
-
+*/
 
 .btn{
     padding: 10px 20px;	
@@ -154,6 +154,9 @@ p,a{
 .fs-18{
 	font-size: 14px
 }
+.fs-12{
+  font-size: 12px
+}
 body, p,h1, h2, h3, h4, h5, h6, a {
   color: #000; 
 }
@@ -211,6 +214,49 @@ section.above-header{
 }
 .medium-gap, .large-gap{
   margin-top: 0!important;
+}
+.new-dis {
+    background: #E91E63;
+    color: #fff;
+    position: absolute;
+    left: 32.5px;
+    top: 8px;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.past-dis {
+    background: #222;
+    color: #fff;
+    position: absolute;
+    left: 32.5px;
+    top: 8px;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.new-opp {
+    background: #E91E63;
+    color: #fff;
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.new-side{
+  color: #e91e63;
+  position: absolute;
+  right: 1.5%;
+  margin-top: -9px;
+  font-weight: 600;
+}
+.btn{
+  padding: .375rem .75rem;
 }
 @media (max-width: 1200px) {
     .mentor-img {

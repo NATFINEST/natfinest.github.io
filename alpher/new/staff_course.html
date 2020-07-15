@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="Meristem Securities Limited is a Capital Market Conglomerate regulated by the Securities and Exchange Commission (SEC). We expertly offer Investment Banking, Wealth Management, Stockbroking, Registrar and Trustees Services.">
+        <meta name="author" content="">
+        <title>Welcome to DavtonLearn</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"  href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" >
+        <link rel="stylesheet"  href="https://cdn.datatables.net/select/1.3.0/css/select.dataTables.min.css" >
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/logo.svg" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Welcome to Davtonlearn.</p>
+
+                    <li class="">
+                        <a href="staff_dashboard.html">
+                            <img src="img/dashboard.svg" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="15" /> Dashboard
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+                        <a href="staff_course.html">
+                            <img src="img/courses.svg" alt="department" class="mb-1 mr-3 img-fluid" width="15" /> Courses
+                        </a> 
+                    </li>
+
+                    <li>
+                        <a href="staff_report.html">
+                            <img src="img/reports.svg" alt="reports" class="mb-1 mr-3 img-fluid" width="15" /> Reports
+                        </a> 
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="staff_message.html">
+                            <img src="img/communication.svg" alt="Message" class="mb-1 mr-3 img-fluid" width="15" /> Message
+                        </a> 
+                    </li>
+
+                    <li>
+                        <a href="staff_blog.html">
+                            <img src="img/blog.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Blog
+                        </a> 
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="staff_settings.html">
+                            <img src="img/Settings.svg" alt="Admin" class="mb-1 mr-3 img-fluid" width="15" /> Settings
+                        </a> 
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/logout.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Log Out
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content">
+
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+
+                <div class="row mx-md-2 my-5">
+                    <div class="col-md-12">
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="col px-0">
+                                <p class="text-green text-uppercase">Courses</p>                                
+                            </div> 
+
+                            <div class="col text-md-right px-0">
+                                <a href="staff_course_library.html" class="btn btn-green py-1 font-13">+ Request a Course</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card--dashboard mt-3">
+
+                            <section id="tabs" class="project-tab">
+
+                                <nav>
+                                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                        <a class="nav-dash nav-item nav-link active text-uppercase weight-semi-bold py-3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Requested</a> 
+
+                                        <a class="nav-dash nav-item nav-link text-uppercase weight-semi-bold py-3" id="nav-assigned-tab" data-toggle="tab" href="#nav-assigned" role="tab" aria-controls="nav-assigned" aria-selected="false">Assigned</a>
+
+                                        <a class="nav-item nav-link text-uppercase weight-semi-bold py-3" id="nav-other-tab" data-toggle="tab" href="#nav-other" role="tab" aria-controls="nav-other" aria-selected="false">Completed</a>
+                                    </div>
+                                </nav>
+
+                                <div class="tab-content my-3" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="">
+
+                                            <div class="px-lg-4 py-1 d-flex flex-column flex-lg-row">
+                                                <div class="col">
+                                                    <h5 class="mt-1 mb-lg-0 my-2">All Courses</h5>
+                                                </div>
+
+                                                <div class="col-lg-4 text-right my-2">
+                                                    <input type="text" placeholder="Search Courses" class="form-control form-control-sm font-13" />
+                                                </div>
+
+                                                <div class="col-lg-3 text-right my-2">
+                                                    <select class="custom-select custom-select-sm">
+                                                        <option disabled selected>All Courses</option>
+                                                        <option>Filter</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mt-3 px-4">
+                                                <div class="col-lg-12 mb-5">
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 width-150 md-btn-block" type="button">Cancel Request</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <a href="staff_course_preview.html" class="btn btn-outline--green font-12 px-4 width-150 md-btn-block" type="button">Watch Preview </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 width-150 md-btn-block" type="button">Cancel Request</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <a href="staff_course_preview.html" class="btn btn-outline--green font-12 px-4 width-150 md-btn-block" type="button">Watch Preview </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 width-150 md-btn-block" type="button">Cancel Request</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <a href="staff_course_preview.html" class="btn btn-outline--green font-12 px-4 width-150 md-btn-block" type="button">Watch Preview </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 width-150 md-btn-block" type="button">Cancel Request</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <a href="staff_course_preview.html" class="btn btn-outline--green font-12 px-4 width-150 md-btn-block" type="button">Watch Preview </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <nav aria-label="..." class="px-4">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="tab-pane fade" id="nav-assigned" role="tabpanel" aria-labelledby="nav-assigned-tab">
+                                        <div class="">
+                                            <div class="row mt-3 px-4">
+                                                <div class="col-lg-12 mb-5">
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management</p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <h5 class="mb-4">₦100,400</h5>
+
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 px-4 width-150 md-btn-block" type="button">Add Course</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <button class="btn btn-outline--green font-12 px-3 width-150 md-btn-block" type="button">Watch Preview</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management</p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <h5 class="mb-4">₦100,400</h5>
+
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 px-4 width-150 md-btn-block" type="button">Add Course</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <button class="btn btn-outline--green font-12 px-3 width-150 md-btn-block" type="button">Watch Preview</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <nav aria-label="..." class="px-4">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab">
+                                        <div class="">
+
+                                            <div class="row mt-3 px-4">
+                                                <div class="col-lg-12 mb-5">
+
+
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management</p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <h5 class="mb-4">₦100,400</h5>
+
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 px-4 width-150 md-btn-block" type="button">Add Course</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <button class="btn btn-outline--green font-12 px-3 width-150 md-btn-block" type="button">Watch Preview</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+
+
+                                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                                        <div class="col-lg-3">
+                                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                                        height: 150px;
+                                                                        width: 100%;
+                                                                        background-size: cover;
+                                                                        background-repeat: no-repeat">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6">
+                                                            <p class="mb-1">Project Management</p>
+                                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                                            <div class="mb-2">
+                                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                                <span class="text-muted small">(12048 views)</span>
+                                                            </div>
+                                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <h5 class="mb-4">₦100,400</h5>
+
+                                                            <div class="show_button">
+                                                                <div class="mb-3">
+                                                                    <button class="btn btn-green font-12 px-4 width-150 md-btn-block" type="button">Add Course</button>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <button class="btn btn-outline--green font-12 px-3 width-150 md-btn-block" type="button">Watch Preview</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <nav aria-label="..." class="px-4">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="acc_details" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-right" role="document">
+                    <div class="modal-content text-center">
+                        <button aria-label="Close" class="close text-right pr-2" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <div class="onboarding-content with-radient px-3">
+
+                            <ul class="list-unstyled">
+                                <li class="font-weight-bold text-left text-green my-2"><a href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Learning path Modal -->
+            <div class="modal fade" id="path-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title text-center mx-auto">Create LEARNING PATH(s)</h6>
+                            <button type="button" class="close pr-3" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-9 mx-auto">
+                                        <input id="" type="text" placeholder="Enter Path Title i.e PMP  Learning path" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-lg-9 mx-auto">
+                                        <select id="" class="custom-select custom-select-sm">
+                                            <option>Select the No. of levels you need in your learning Path</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-lg-3 ml-auto mx-0">
+                                        <button type="button" class="btn btn-success btn-sm btn-block">Next</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Learning path End -->
+        </div>
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.slim.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/select/1.3.0/js/dataTables.select.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/utility.js"></script>
+        <script>
+            //            $('#quiz').DataTable({
+            //                
+            //                "dom" : "<'row'<'col-sm-5 searchStyle'p><'col-sm-3'l><'col-sm-3'f>>" + "<'row'<'col-sm-12'tr>>"
+            //            });
+        </script>
+
+    </body>
+
+</html>

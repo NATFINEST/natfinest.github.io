@@ -26,6 +26,28 @@
 
         <!--LightBox -->        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+        <style>
+            #demo {
+                -webkit-transition: width 2s ease;
+                -moz-transition: width 2s ease;
+                -o-transition: width 2s ease;
+                transition: width 2s ease;
+                
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                background: yellow;
+                vertical-align: middle;
+                line-height: 30px;
+                height: 30px;
+
+                width: 0px;
+            }
+            #demo.in {
+                width: 220px;
+            }
+        </style>
         
     </head>
 
@@ -355,7 +377,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-1">
+                                        <div class="text-center my-2">
+                                            <button class="btn btn-sm btn-green show-drop" id="comment-1">Show Comment</button>
+                                        </div>
+
+                                        <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px; display: none;" id="comment-1">
 
                                             <div class="col-12 blog_comment p1" id="comment-1">
                                                 <div class="d-flex">
@@ -499,6 +525,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             
                             <div class="card--dashboard mt-4">
 
@@ -566,7 +593,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-2">
+                                        <div class="text-center my-2">
+                                            <button class="btn btn-sm btn-green show-drop" id="comment-2">Show Comment</button>
+                                        </div>
+
+                                        <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px;display: none;" id="comment-2">
 
                                             <div class="col-12 blog_comment p2" id="comment-2">
                                                 <div class="d-flex">
@@ -1012,6 +1043,7 @@
         <script src="js/jquery.redirect.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+        
 
     </body>
 

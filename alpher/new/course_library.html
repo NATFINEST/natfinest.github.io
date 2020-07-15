@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="Meristem Securities Limited is a Capital Market Conglomerate regulated by the Securities and Exchange Commission (SEC). We expertly offer Investment Banking, Wealth Management, Stockbroking, Registrar and Trustees Services.">
+        <meta name="author" content="">
+        <title>Welcome to DavtonLearn</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+
+        <!-- Font Awesome JS -->
+        <link
+              href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+              rel="stylesheet"
+              integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+              crossorigin="anonymous"
+              />
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/logo.svg" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li class="">
+                        <a href="index.html">
+                            <img src="img/dashboard.svg" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="15" /> Dashboard
+                        </a>
+
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Staff Management</p>
+
+                    <li>
+                        <a href="staff.html">
+                            <img src="img/staff.svg" alt="STAFF" class="mb-1 mr-3 img-fluid" width="15" /> Staff
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="department.html">
+                            <img src="img/department_sidebar.svg" alt="department" class="mb-1 mr-3 img-fluid" width="15" /> Department
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="courses.html">
+                            <img src="img/courses.svg" alt="courses" class="mb-1 mr-3 img-fluid" width="15" /> Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reports.html">
+                            <img src="img/reports.svg" alt="reports" class="mb-1 mr-3 img-fluid" width="15" /> Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="quizes.html">
+                            <img src="img/department_sidebar.svg" alt="quizes" class="mb-1 mr-3 img-fluid" width="15" /> Quizzes
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <img src="img/communication.svg" alt="Message" class="mb-1 mr-3 img-fluid" width="15" /> Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <img src="img/blog.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Blog
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="admin.html">
+                            <img src="img/admins.png" alt="Admin" class="mb-1 mr-3 img-fluid" width="15" /> Admins
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="billing.html">
+                            <img src="img/billing.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Billing & Subcription
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <img src="img/Settings.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Settings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/logout.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Log Out
+                        </a>
+                    </li>
+
+                    <button type="button" class="btn btn-green px-4 position-relative support_button"><img src="img/question.png" class="img-fluid"> Support</button>
+
+                    <div class="support-links pt-4 none">
+
+                        <li class="font-weight-light">
+                            <a href="#">
+                                Help Desk
+                            </a>
+                        </li>
+
+                        <li class="font-weight-light">
+                            <a href="#">
+                                API Documentation
+                            </a>
+                        </li>
+
+                        <li class="font-weight-light">
+                            <a href="#">
+                                Course Development
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+            </nav>
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content">
+
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+
+                <div class="row mx-md-2 my-4">
+                    <div class="col-md-12">
+                        <div class="d-flex mt-4">
+                            <div class="col px-0 mb-4">
+                                <a href="#" class="text-dark text-uppercase text-grey font-13"><img src="img/back_button.svg" class="img-fluid mr-2" />Back</a>
+                            </div>
+                        </div>
+
+                        <div class="card--dashboard">
+                            <div class="d-flex border-bottom bg-success top-rounded px-4">
+                                <div class="col">
+                                    <p class="my-2 text-uppercase text-white">Select Courses to get you started</p>
+                                </div>
+                            </div>
+
+                            <div class="px-4 py-3">
+                                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active course-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Most popular</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link course-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Trending</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content mb-5" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                                        <div class="row">
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-lg-3 my-2">
+                                                <a href="course_detail.html">
+                                                    <div class="course_detail_right">
+                                                        <div class="course_detail_img" style="background-image: url(img/course_placeholder.jpg);">
+                                                        </div>
+
+                                                        <div class="px-3 my-2">
+                                                            <div class="text-dark">
+                                                                Project Management Professional (PMP)
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <p class="small mb-0"> <img src="img/star.png"  alt="rating" class="img-fluid"/> (12048 views)</p>
+                                                            </div>
+
+                                                            <p class="small mb-4">Kirill Eremenko</p>
+                                                            <h5 class="mb-4 text-right text-primary">₦100,400</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <h6>Most popular</h6>
+
+                                <div class="row popular slider justify-content-center">
+                                    <div class="col-lg-3">
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+
+                                        <div class="p-2 my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                     border-radius: 3px;">
+                                            <p class="mb-0">Design Thinking</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="mt-5">Featured Course</h6>
+                                <div class="d-flex flex-column flex-lg-row my-3" style="border: 0.956126px solid rgba(209, 209, 209, 0.33);
+                                                                                        box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+                                                                                        border-radius: 3px;">
+                                    <div class="col-lg-4 px-0">
+                                        <div style="background-image: url(img/course_placeholder.jpg);
+                                                    height: 200px;
+                                                    width: 100%;
+                                                    background-size: cover;
+                                                    background-repeat: no-repeat">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <p class="my-1">Project Management Professional (PMP) </p>
+                                        <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                        <div class="mb-2">
+                                            <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                            <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                            <span class="text-muted small">(12048 views)</span>
+                                        </div>
+                                        <p class="font-12">Understand your audience, envision a creative solution.</p>
+
+                                        <div class="mb-3">
+                                            <button class="btn btn-green font-12 px-4 md-btn-block my-2" type="button">Add Course</button>
+                                            <button class="btn btn-outline--green font-12 px-3 ml-md-5 md-btn-block my-2" type="button">Watch Preview</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <h5 class="mb-4 mt-1">₦100,400</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="px-4 py-3 d-flex flex-column flex-lg-row">
+                                <div class="col my-2">
+                                    <h5 class="mt-1 mb-0">All Courses</h5>
+                                </div>
+
+                                <div class="col-lg-4 my-2 text-right">
+                                    <input type="text" placeholder="Search Courses" class="form-control form-control-sm font-13" />
+                                </div>
+
+                                <div class="col-lg-3 my-2 text-right">
+                                    <select class="custom-select custom-select-sm">
+                                        <option disabled selected>All Courses</option>
+                                        <option>Filter</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 px-4">
+                                <div class="col-lg-12 mb-5">
+                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                        <div class="col-lg-3">
+                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                        height: 150px;
+                                                        width: 100%;
+                                                        background-size: cover;
+                                                        background-repeat: no-repeat">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                            <div class="mb-2">
+                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                <span class="text-muted small">(12048 views)</span>
+                                            </div>
+                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <h5 class="mb-4">₦100,400</h5>
+
+                                            <div class="show_button">
+                                                <div class="mb-3">
+                                                    <button class="btn btn-green font-12 px-4" type="button">Add Course</button>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-outline--green font-12 px-3" type="button">Watch Preview</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                        <div class="col-lg-3">
+                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                        height: 150px;
+                                                        width: 100%;
+                                                        background-size: cover;
+                                                        background-repeat: no-repeat">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                            <div class="mb-2">
+                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                <span class="text-muted small">(12048 views)</span>
+                                            </div>
+                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <h5 class="mb-4">₦100,400</h5>
+
+                                            <div class="show_button">
+                                                <div class="mb-3">
+                                                    <button class="btn btn-green font-12 px-4" type="button">Add Course</button>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-outline--green font-12 px-3" type="button">Watch Preview</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                        <div class="col-lg-3">
+                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                        height: 150px;
+                                                        width: 100%;
+                                                        background-size: cover;
+                                                        background-repeat: no-repeat">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                            <div class="mb-2">
+                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                <span class="text-muted small">(12048 views)</span>
+                                            </div>
+                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <h5 class="mb-4">₦100,400</h5>
+
+                                            <div class="show_button">
+                                                <div class="mb-3">
+                                                    <button class="btn btn-green font-12 px-4" type="button">Add Course</button>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-outline--green font-12 px-3" type="button">Watch Preview</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-column flex-lg-row border-bottom py-3 my-3 course_info">
+                                        <div class="col-lg-3">
+                                            <div style="background-image: url(img/course_placeholder.jpg);
+                                                        height: 150px;
+                                                        width: 100%;
+                                                        background-size: cover;
+                                                        background-repeat: no-repeat">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <p class="mb-1">Project Management Professional (PMP) </p>
+                                            <p class="text-muted small mb-1">Last Updated April 2019</p>
+                                            <div class="mb-2">
+                                                <button class="btn btn-green font-11 py-0 weight-semi-bold rounded-0" type="button">HIGHEST RATED</button>
+                                                <img src="img/star.png"  alt="rating" class="img-fluid mx-2"/>
+                                                <span class="text-muted small">(12048 views)</span>
+                                            </div>
+                                            <p class="font-12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+                                        </div>
+
+                                        <div class="col-lg-3">
+                                            <h5 class="mb-4">₦100,400</h5>
+
+                                            <div class="show_button">
+                                                <div class="mb-3">
+                                                    <button class="btn btn-green font-12 px-4" type="button">Add Course</button>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <button class="btn btn-outline--green font-12 px-3" type="button">Watch Preview</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <nav aria-label="..." class="px-2">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/utility.js"></script>
+
+    </body>
+
+</html>

@@ -25,13 +25,13 @@ $(document).ready(function () {
     });
 
     $(function () {
-            $(".openModal").click(function () {
-                var desc = $(this).data('desc');
-                var title = $(this).data('title');
-                $(".modal-body .desc").html(desc);
-                $(".modal-title").html(title);
-            })
-        });
+        $(".openModal").click(function () {
+            var desc = $(this).data('desc');
+            var title = $(this).data('title');
+            $(".modal-body .desc").html(desc);
+            $(".modal-title").html(title);
+        })
+    });
 
     var color = "20A354"
     document.documentElement.style.setProperty('--theme-color', `#${color}`);
@@ -1211,3 +1211,24 @@ $("body").delegate("#send-message", "click", function(e){
     // $.redirect('message.html', {'arg1': 'value1', 'arg2': 'value2'});
 })
 
+
+
+//Newly Added           
+$("body").delegate(".show-drop", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    id = $(this).attr('id')
+    $('.post#'+id).slideDown("slow");
+    $(this).text('Hide Comment');
+    $(this).removeClass('show-drop');
+    $(this).addClass('hide-drop');
+});
+$("body").delegate(".hide-drop", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    id = $(this).attr('id')
+    $('.post#'+id).slideUp("slow");
+    $(this).text('Show Comment');
+    $(this).removeClass('hide-drop');
+    $(this).addClass('show-drop');
+});
