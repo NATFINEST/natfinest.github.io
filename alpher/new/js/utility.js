@@ -33,6 +33,25 @@ $(document).ready(function () {
         })
     });
 
+    $(function () {
+        $(".openDir").click(function () {
+            var desc = $(this).data('desc');
+            var title = $(this).data('title');
+            var ig = $(this).data('ig');
+            var fb = $(this).data('fb');
+            var email = $(this).data('email');
+            var cat = $(this).data('cat');
+            var phone = $(this).data('phone');
+            $(".modal-body .cat").html(cat);
+            $(".modal-body .fb").html(`<a href="`+fb+`" class="text-primary">`+fb+`</a>`);
+            $(".modal-body .ig").html(`<a href="`+ig+`" class="text-primary">`+ig+`</a>`);
+            $(".modal-body .phone").html(`<a href="tel:/`+phone+`" class="text-primary">`+phone+`</a>`);
+            $(".modal-body .desc").html(desc);
+            $(".modal-body .title").html(title);
+            $(".modal-title").html(title);
+        })
+    });
+
     var color = "20A354"
     document.documentElement.style.setProperty('--theme-color', `#${color}`);
     console.log('set')

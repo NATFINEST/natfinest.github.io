@@ -31,7 +31,7 @@ $(window).on('load',function(){
                     save.classList.remove('hide');
                     options.classList.remove('hide');
                     // init cropper
-                    cropper = new Cropper(img, { aspectRatio: img_w / img_h});
+                    cropper = new Cropper(img, { aspectRatio: img_w / img_h, movable : true});
           }
         };
         reader.readAsDataURL(e.target.files[0]);

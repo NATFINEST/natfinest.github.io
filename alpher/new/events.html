@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/custom.css">
 
+        <link rel="stylesheet" href="css/modal-video.min.css">
+
         <!-- Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -285,7 +287,7 @@
                                     <h6 class="card-title minh-35"><a href="#">Business tools required for every business</a></h6>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-primary btn-small fw-400 mb-2">Watch</a>
+                                    <a href="#" data-video-id="OfmIZujnRFc" data-fancybox="gallery" data-caption="" class="video-btn vid js-video-button btn btn-primary btn-small fw-400 mb-2">Watch</a>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#modal5">
                                         About Event
@@ -451,6 +453,20 @@
         <script src="js/chart.js/dist/Chart.min.js"></script>
         <script src="js/utility.js"></script>
         <script src="js/intlTelInput.js"></script>
+
+       <script src="js/jquery-modal-video.js"></script>
+       <script>
+          $(".js-modal-btn").modalVideo();
+          $(".js-video-button").modalVideo({
+             youtube:{
+                controls:1,
+                nocookie: true,
+                loop: 1,
+                autoplay: 1,
+                rel : 0
+             }
+          });
+       </script>
 
     </body>
 
