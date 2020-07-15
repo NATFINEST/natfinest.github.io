@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS </title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <i class="mdi mdi-book fs-20"></i> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- Page Content  -->
+            <div id="content">
+                <div class="dasboard-top-wrapper">
+
+                </div>
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="container my-5">
+
+                    <div class="col-lg-3 px-0 ml-2 my-5">
+                        <p class="text-dark text-uppercase">
+                            <a href="index.html" class="font-13"><img src="img/back_button.png" alt="go back to reports" /> Back</a></p>
+                    </div>
+
+                    <div class="row my-3">
+                        <h5 class="el-title uk-margin-medium-top col-lg-12 w-100"> Business Directory</h5>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <input type="text" class="form-control fs-16" placeholder="Enter search item" data-search />
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 ml-auto uk-margin-medium-top">
+                            <select class="custom-select custom-select-sm" id="CourseSelect2">
+                                <option value="all">All</option>
+                                <option value="fash">Fashion</option>
+                                <option value="cat">Catering</option>
+                                <option value="des">Design</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- single news slide -->
+                        <div class="col-lg-3 col-md-6 mb-55 group all fash mb-4" data-filter-item data-filter-name="clothing services">
+                            <div class="single-news-slide text-center border">
+                                <div class="news-slide-img border">
+                                    <a href="dis1.html"><img src="https://bestsmallventure.com/wp-content/uploads/2019/06/clothing-business.jpg" alt="News"></a>
+                                </div>
+                                <div class="news-slide-content">
+                                    <h6 style="margin:10px 0;"><a style="text-decoration: none;" href="">Clothing services</a></h6>
+                                    <!-- Button trigger modal -->
+                                    <a href="#" class="btn btn-dark btn-sm mb-2 openModal p-1 fs-12" data-toggle="modal" data-target="#viewDetails" data-desc="A few description goes here..." data-title="Clothing services">View Details</a>
+
+                                    <div class="footer-link mx-auto text-center">
+                                        <a class="fb mr-3" href="#"><i class="mdi mdi-8px mdi-facebook"></i></a>
+                                        <a class="twit mr-3" href="#"><i class="mdi mdi-8px mdi-twitter"></i></a>
+                                        <a class="insta mr-3" href="#"><i class="mdi mdi-8px mdi-instagram"></i></a>
+                                        <a class="google mr-3" href="#"><i class="mdi mdi-8px mdi-email"></i></a>
+                                        <a class="whatsapp mr-3" href="#"><i class="mdi mdi-8px mdi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-55 group all fash mb-4" data-filter-item data-filter-name="sewing services">
+                            <div class="single-news-slide text-center">
+                                <div class="news-slide-img">
+                                    <a href="dis1.html"><img src="https://bestsmallventure.com/wp-content/uploads/2019/06/sewing-business.jpg" alt="News"></a>
+                                </div>
+                                <div class="news-slide-content">
+                                    <h6 style="margin:10px 0;"><a style="text-decoration: none;" href="">Sewing services</a></h6>
+                                    <a href="#" class="btn btn-dark btn-sm mb-2 openModal p-1 fs-12" data-toggle="modal" data-target="#viewDetails" data-desc="A few description goes here..." data-title="Sewing services">View Details</a>
+                                    <div class="footer-link mx-auto text-center">
+                                        <a class="fb mr-3" href="#"><i class="mdi mdi-8px mdi-facebook"></i></a>
+                                        <a class="twit mr-3" href="#"><i class="mdi mdi-8px mdi-twitter"></i></a>
+                                        <a class="insta mr-3" href="#"><i class="mdi mdi-8px mdi-instagram"></i></a>
+                                        <a class="google mr-3" href="#"><i class="mdi mdi-8px mdi-email"></i></a>
+                                        <a class="whatsapp mr-3" href="#"><i class="mdi mdi-8px mdi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-55 group all cat mb-4" data-filter-item data-filter-name="home-based chef">
+                            <div class="single-newe-slide text-center">
+                                <div class="news-slide-img">
+                                    <a href="dis1.html"><img src="https://bestsmallventure.com/wp-content/uploads/2019/07/cooking-classes.jpg" alt="News"></a>
+                                </div>
+                                <div class="news-slide-content">
+                                    <h6 style="margin:10px 0;"><a style="text-decoration: none;" href="">Home-based chef</a></h6>
+                                    <!-- Button trigger modal -->
+                                    <a href="#" class="btn btn-dark btn-sm mb-2 openModal p-1 fs-12" data-toggle="modal" data-target="#viewDetails" data-desc="A few description goes here..." data-title="Home-based chef">View Details</a>
+                                    <div class="footer-link mx-auto text-center">
+                                        <a class="fb mr-3" href="#"><i class="mdi mdi-8px mdi-facebook"></i></a>
+                                        <a class="twit mr-3" href="#"><i class="mdi mdi-8px mdi-twitter"></i></a>
+                                        <a class="insta mr-3" href="#"><i class="mdi mdi-8px mdi-instagram"></i></a>
+                                        <a class="google mr-3" href="#"><i class="mdi mdi-8px mdi-email"></i></a>
+                                        <a class="whatsapp mr-3" href="#"><i class="mdi mdi-8px mdi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-55 group all des mb-4" data-filter-item data-filter-name="interior designer">
+                            <div class="single-news-slide text-center">
+                                <div class="news-slide-img">
+                                    <a href="dis1.html"><img src="https://bestsmallventure.com/wp-content/uploads/2019/07/interior-designing.jpg" alt="News"></a>
+                                </div>
+                                <div class="news-slide-content">
+                                    <h6 style="margin:10px 0;"><a style="text-decoration: none;" href="">Interior designer</a></h6>
+                                    <!-- Button trigger modal -->
+                                    <a href="#" class="btn btn-dark btn-sm mb-2 openModal p-1 fs-12" data-toggle="modal" data-target="#viewDetails" data-desc="A few description goes here..." data-title="Interior designer">View Details</a>
+                                    <div class="footer-link mx-auto text-center">
+                                        <a class="fb mr-3" href="#"><i class="mdi mdi-8px mdi-facebook"></i></a>
+                                        <a class="twit mr-3" href="#"><i class="mdi mdi-8px mdi-twitter"></i></a>
+                                        <a class="insta mr-3" href="#"><i class="mdi mdi-8px mdi-instagram"></i></a>
+                                        <a class="google mr-3" href="#"><i class="mdi mdi-8px mdi-email"></i></a>
+                                        <a class="whatsapp mr-3" href="#"><i class="mdi mdi-8px mdi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-55 group all onl bus mb-4" data-filter-item data-filter-name="food service">
+                            <div class="singlenews-slide text-center">
+                                <div class="news-slide-img">
+                                    <a href="dis1.html"><img src="https://bestsmallventure.com/wp-content/uploads/2019/06/food-business.jpg" alt="News"></a>
+                                </div>
+                                <div class="news-slide-content">
+                                    <h6 style="margin:10px 0;"><a style="text-decoration: none;" href="">Food service</a></h6>
+                                    <!-- Button trigger modal -->
+                                    <a href="#" class="btn btn-dark btn-sm mb-2 openModal p-1 fs-12" data-toggle="modal" data-target="#viewDetails" data-desc="A few description goes here..." data-title="Food service">View Details</a>
+                                    <div class="footer-link mx-auto text-center">
+                                        <a class="fb mr-3" href="#"><i class="mdi mdi-8px mdi-facebook"></i></a>
+                                        <a class="twit mr-3" href="#"><i class="mdi mdi-8px mdi-twitter"></i></a>
+                                        <a class="insta mr-3" href="#"><i class="mdi mdi-8px mdi-instagram"></i></a>
+                                        <a class="google mr-3" href="#"><i class="mdi mdi-8px mdi-email"></i></a>
+                                        <a class="whatsapp mr-3" href="#"><i class="mdi mdi-8px mdi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="viewDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="desc">Description</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start of itdacademy Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
+        <!-- End of itdacademy Zendesk Widget script -->
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="js/intlTelInput.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/intlTelInput.js"></script>
+
+    </body>
+
+</html>

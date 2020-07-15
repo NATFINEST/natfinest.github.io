@@ -43,8 +43,8 @@ $(window).on('load',function(){
       e.preventDefault();
       // get result to data uri
       let imgSrc = cropper.getCroppedCanvas({
-            width: img_w.value, // input value
-            height: img_h.value // input value
+            width: img_w, // input value
+            height: img_h // input value
         }).toDataURL();
       // remove hide class of img
       cropped.classList.remove('hide');
@@ -56,6 +56,7 @@ $(window).on('load',function(){
       // dwn.setAttribute('href',imgSrc);
       console.log(imgSrc)
       $('.logo-src').attr('value',imgSrc)
+      $('button#profile').removeAttr('disabled')
     });
 
 
