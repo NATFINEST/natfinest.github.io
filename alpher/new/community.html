@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="css/core.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/materialdesignicons.min.css" rel="stylesheet">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/dropzone.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/blog.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+        <!--LightBox -->        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+        <style>
+            #demo {
+                -webkit-transition: width 2s ease;
+                -moz-transition: width 2s ease;
+                -o-transition: width 2s ease;
+                transition: width 2s ease;
+                
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                background: yellow;
+                vertical-align: middle;
+                line-height: 30px;
+                height: 30px;
+
+                width: 0px;
+            }
+            #demo.in {
+                width: 220px;
+            }
+        </style>
+        
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <i class="mdi mdi-book fs-20"></i> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="blog.html">
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="mt-md-4">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+
+                <div class="row mx-md-2 mt-5">
+                    <div class="col-lg-8">
+                        <div class="d-flex">
+                            <div class="col px-0">
+                                <h5 class="text-green text-uppercase">Community</h5>                                
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mx-md-2 mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card--dashboard mt-4">
+                            <div class="row justify-content-center mx-md-0">
+                                <div class="col-md-8 col-6 border-right py-3 cursor" data-toggle="modal" data-target="#albums-modal">
+                                    <div class="px-md-4">
+                                        <p class="mt-1 mb-0"> <img src="img/writing.svg" alt="start post" class="mb-2"> Start a post</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-2 py-3 border-right display_image_upload cursor fileinput-button" data-toggle="modal" data-target="#albums-modal" data-op="mu">
+                                    <div class="text-center">
+                                        <img src="img/pic.svg" alt="upload picture" class="mt-2" width="25">
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-md-2 col-2 py-3 display_image_upload cursor fileinput-button" data-toggle="modal" data-target="#albums-modal" data-op="mu">
+                                    <div class="text-center">
+                                        <img src="img/video.svg" alt="upload video" class="mt-lg-2 mt-1">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="card-content px-0">
+
+                            <div class="card--dashboard mt-4">
+
+                                <div class="row mb-4">
+                                    <div class="col-md-12 my-2 pt-2">
+                                        <div class="px-4 row">
+                                            <div class="col-9 d-flex">
+                                                <div class="mr-2">
+                                                    <img src="images/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="info cursor" data-user='1'>
+                                                    <p class="font-weight-bold mb-0 font-14">Brandee Sanders</a>
+                                                    <p class="font-weight-light font-14">5 mins ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="px-4">
+                                            <p class="font-14 font-weight-light">I am Post 1</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-image" id="col-image-1">
+                                                <div class="col-12 img-p1 post-image">
+                                                    <a href="images/Business-Day-online.jpg" data-lightbox="img-p1" class="content">
+                                                        <div class="content-overlay"></div>
+                                                        <img src="images/Business-Day-online.jpg" class="img-fluid mt-2 comm-img" />
+                                                        <div class="content-details fadeIn-top">
+                                                            <h3>VIEW 3+ IMAGES</h3>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 img-p1 post-image">
+                                                    <a href="images/Hotel-du-Golf.jpg" data-lightbox="img-p1" ><img class="img-fluid mt-2 comm-img" src="images/Hotel-du-Golf.jpg"></a>
+                                                </div>
+                                                <div class="col-12 img-p1 post-image">
+                                                    <a href="images/Bioviva-Spa-1.jpg" data-lightbox="img-p1" ><img class="img-fluid mt-2 comm-img" src="images/Bioviva-Spa-1.jpg"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="like-share row my-3 px-4">
+                                            <div class=" col text-left">
+                                                <a class="like" href="#" data-user='1' data-post='1' data-id="1">
+                                                    <span class="icon" id="icon-1"><i class="fa fa-thumbs-up"></i></span>
+                                                    <span class="like-unlike" id="like-unlike-1">Like</span>
+                                                </a>
+                                            </div>
+                                            <div class="share col text-left">
+                                                <a href="#" class="share_link" data-post='1' data-user='1' data-id="1">
+                                                    <span><i class="fa fa-share"></i></span>
+                                                    <span>Share</span>
+                                                </a>
+                                            </div>
+                                            <div class="like-share-value text-right">
+                                                <span class="mr-1 fs-12 likes-val"><span class="num-likes" id="num-likes-1">1</span> <span class="text-likes"></span></span>
+                                                <span class="mr-1 fs-12 comments-val" ><span class="num-comments" id="num-comment-1">0</span> <span class="text-comments"></span></span> 
+                                            </div>
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="px-4 row mt-3">
+                                            <div class="col-lg-12 col-12 d-flex">
+                                                <img src="images/course_img.png" class="mt-1 mr-2" />
+                                                <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-1" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                                <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-1" data-load="p1">Send</button>
+                                            </div>
+                                            <div class="col-12 comment_reply mx-auto" id="p1">
+                                                <div class="d-flex">
+                                                    <div class="p-2 position-relative info cursor" data-user='1'>
+                                                        <p class="weight-semi-bold mb-1" id="comment-reply-name"></p>
+                                                        <p class="font-13 font-weight-light mb-1" id="comment-reply-text"></p>
+                                                        <p class="d-none" id="comment-reply-post-id"></p>
+                                                        <p class="d-none" id="comment-reply-comment-id"></p>
+                                                    </div>
+                                                    <div class="ml-auto mt-2">
+                                                        <a href="#" class="hide-comment"><i class="mdi mdi-close"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center my-2">
+                                            <button class="btn btn-sm btn-green show-drop" id="comment-1">Show Comment</button>
+                                        </div>
+
+                                        <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px; display: none;" id="comment-1">
+
+                                            <div class="col-12 blog_comment p1" id="comment-1">
+                                                <div class="d-flex">
+                                                    <div class="mr-2">
+                                                        <img src="images/course_img.png" class="mt-1" />
+                                                    </div>
+                                                    <div class="p-2 position-relative info cursor" data-user='1'>
+                                                        <p class="weight-semi-bold mb-1" id="comment-name">Brandee Sanderssss </p>
+                                                        <p class="font-13 font-weight-light mb-1" id="comment-text">Comment 6 </p>
+                                                    </div>
+                                                    <div class="ml-auto">
+                                                        <a href="#" class="show-comment">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <div class="replies">
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 reply r1" id="reply-1">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee Colly </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 1  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100 text-center mt-1 mb-3">
+                                                        <a href="#" class="btn btn-green loadReply" data-id="r1" id="r1"><i class="mdi mdi-chevron-down mdi-24px"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 blog_comment p1" id="comment-2">
+                                                <div class="d-flex">
+                                                    <div class="mr-2">
+                                                        <img src="images/course_img.png" class="mt-1" />
+                                                    </div>
+                                                    <div class="p-2 position-relative info cursor" data-user='1'>
+                                                        <p class="weight-semi-bold mb-1" id="comment-name">Nats </p>
+                                                        <p class="font-13 font-weight-light mb-1" id="comment-text">Comment New </p>
+                                                    </div>
+                                                    <div class="ml-auto">
+                                                        <a href="#" class="show-comment">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <div class="replies">
+                                                    <div class="col-12 reply" id="reply-2">
+                                                        <div class="d-flex">
+                                                            <div class="mr-2">
+                                                                <img src="images/course_img.png" class="mt-1" />
+                                                            </div>
+                                                            <div class="p-2 position-relative info cursor" data-user='1'>
+                                                                <p class="weight-semi-bold mb-1" id="reply-name">Brandee David </p>
+                                                                <p class="font-13 font-weight-light mb-1" id="reply-text">Reply 100  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 text-center mt-4">
+                                            <a href="#" class="btn btn-green loadMore" data-id="p1" id="p1">Load More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="card--dashboard mt-4">
+
+                                <div class="row mb-4">
+                                    <div class="col-md-12 my-2 pt-2">
+                                        <div class="px-4 row">
+                                            <div class="col-9 d-flex">
+                                                <div class="mr-2">
+                                                    <img src="images/course_img.png" class="mt-1" />
+                                                </div>
+                                                <div class="info cursor" data-user='1'>
+                                                    <p class="font-weight-bold mb-0 font-14">Yemi Fash</p>
+                                                    <p class="font-weight-light font-14">5 mins ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="px-4">
+                                            <p class="font-14 font-weight-light">I am Post 2</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-image" id="col-image-2">
+                                            </div>
+                                        </div>
+
+                                        <div class="like-share row my-3 px-4">
+                                            <div class=" col text-left">
+                                                <a class="like" href="#" data-user='1' data-post='2' data-id="2">
+                                                    <span class="icon" id="icon-2"><i class="fa fa-thumbs-up"></i></span>
+                                                    <span class="like-unlike" id="like-unlike-2">Like</span>
+                                                </a>
+                                            </div>
+                                            <div class="share col text-left">
+                                                <a href="#" class="share_link" data-post='2' data-user='1' data-id="2">
+                                                    <span><i class="fa fa-share"></i></span>
+                                                    <span>Share</span>
+                                                </a>
+                                            </div>
+                                            <div class="like-share-value text-right">
+                                                <span class="mr-1 fs-12 likes-val"><span class="num-likes" id="num-likes-2">1</span> <span class="text-likes"></span></span>
+                                                <span class="mr-1 fs-12 comments-val" ><span class="num-comments" id="num-comment-2">0</span> <span class="text-comments"></span></span> 
+                                            </div>
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="px-4 row mt-3">
+                                            <div class="col-lg-12 col-12 d-flex">
+                                                <img src="images/course_img.png" class="mt-1 mr-2" />
+                                                <input type="text" placeholder="Add a comment" class="form-control mt-2 comment-text" id="input-comment-2" data-img="course_img.png" data-name="Kelvin Sam"/>
+                                                <button class="btn btn-sm btn-green mt-2 comment-send" data-id="comment-2" data-load="p2">Send</button>
+                                            </div>
+                                            <div class="col-12 comment_reply mx-auto" id="p2">
+                                                <div class="d-flex">
+                                                    <div class="p-2 position-relative info cursor" data-user='1'>
+                                                        <p class="weight-semi-bold mb-1" id="comment-reply-name"></p>
+                                                        <p class="font-13 font-weight-light mb-1" id="comment-reply-text"></p>
+                                                        <p class="d-none" id="comment-reply-post-id"></p>
+                                                        <p class="d-none" id="comment-reply-comment-id"></p>
+                                                    </div>
+                                                    <div class="ml-auto mt-2">
+                                                        <a href="#" class="hide-comment"><i class="mdi mdi-close"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center my-2">
+                                            <button class="btn btn-sm btn-green show-drop" id="comment-2">Show Comment</button>
+                                        </div>
+
+                                        <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px;display: none;" id="comment-2">
+
+                                            <div class="col-12 blog_comment p2" id="comment-2">
+                                                <div class="d-flex">
+                                                    <div class="mr-2">
+                                                        <img src="images/course_img.png" class="mt-1" />
+                                                    </div>
+                                                    <div class="p-2 position-relative info cursor" data-user='1'>
+                                                        <p class="weight-semi-bold mb-1" id="comment-name">James Smart </p>
+                                                        <p class="font-13 font-weight-light mb-1" id="comment-text">Comment 26 </p>
+                                                    </div>
+                                                    <div class="ml-auto">
+                                                        <a href="#" class="show-comment">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <div class="replies">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 text-center mt-4">
+                                            <a href="#" class="btn btn-green loadMore" data-id="p2" id="p2">Load More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="w-100 text-center mt-4">
+                            <a href="#" class="btn btn-primary btn-large w-50 loadPost" >More Posts</a>
+                        </div>
+                    </div>
+
+                    <aside class="col-md-4">
+                        <!-- widget popular posts -->
+                        <section class="widget widget_popular_posts mt-5">
+                            <h5 class="mb-4 text-primary">Interest Groups</h5>
+                            <!-- widget cources list -->
+                            <ul class="widget-cources-list list-unstyled">
+                                <li class="mb-3">
+                                    <a href="">
+                                        <i class="fa fa-angle-right mr-2" style="margin-top: 3px"></i>
+                                        <h6>Category 1</h6>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="">
+                                        <i class="fa fa-angle-right mr-2" style="margin-top: 3px"></i>
+                                        <h6>Category 2</h6>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="">
+                                        <i class="fa fa-angle-right mr-2" style="margin-top: 3px"></i>
+                                        <h6>Category 3</h6>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="">
+                                        <i class="fa fa-angle-right mr-2" style="margin-top: 3px"></i>
+                                        <h6>Category 4</h6>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="">
+                                        <i class="fa fa-angle-right mr-2" style="margin-top: 3px"></i>
+                                        <h6>Ask the experts Q&A</h6>
+                                    </a>
+                                </li>
+                                                           
+                            </ul>
+                        </section>
+
+                        <section class="widget widget_popular_posts mt-5">
+                            <h5 class="mb-2 text-primary">Upcoming Event</h5>
+                            <a href="#"><img src="https://alpherwoman.com/images/Y6CFKSktn0UGgxhFq1kRPbTfuQFkHIPN9aDEKDUv.jpeg" width="100%"></a>
+                        </section>
+
+                        <section class="widget widget_popular_posts mt-5">
+                            <h5 class="mb-2 text-primary">Discounted Services</h5>
+                            <!-- widget cources list -->
+                            <div class="row  col-gallery">
+                                <div class="col-6 img-gallery px-2">
+                                    <a href="#" class="content">
+                                        <div class="content-overlay image"></div>
+                                        <img src="images/Business-Day-online.jpg" class="img-fluid mt-2 gall-img" />
+
+                                        <div class="content-details fadeIn-top">
+                                            <span class="text-white font-weight-bold">87 Origins</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 img-gallery px-2">
+                                    <a href="#" class="content">
+                                        <div class="content-overlay image"></div>
+                                        <img class="img-fluid mt-2 gall-img" src="images/Hotel-du-Golf.jpg">
+
+                                        <div class="content-details fadeIn-top">
+                                            <span class="text-white font-weight-bold">Cookie Jar & Gourment Bakery</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 img-gallery px-2">
+                                    <a href="#" class="content">
+                                        <div class="content-overlay image"></div>
+                                        <img class="img-fluid mt-2 gall-img" src="images/Bioviva-Spa-1.jpg">
+
+                                        <div class="content-details fadeIn-top">
+                                            <span class="text-white font-weight-bold">IBIS HOTEL</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 img-gallery px-2">
+                                    <a href="#" class="content">
+                                        <div class="content-overlay image"></div>
+                                        <img class="img-fluid mt-2 gall-img" src="images/Epe-Resort.jpg">
+                                        <div class="content-details fadeIn-top">
+                                            <span class="text-white font-weight-bold">Hotel Du Golf</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-6 img-gallery px-2">
+                                    <a href="#" class="content">
+                                        <div class="content-overlay image"></div>
+                                        <img class="img-fluid mt-2 gall-img" src="images/Epe-Resort.jpg">
+                                        <div class="content-details fadeIn-top">
+                                            <span class="text-white font-weight-bold">Hotel Du Golf</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="widget widget_popular_posts mt-5">
+                            <h5 class="mb-4 text-primary">Latest Articles</h5>
+                            <!-- widget cources list -->
+                            <div class="row ">
+                                <div class="col-12 px-3 mb-4">
+                                    <a href="#" class="d-flex">
+                                        <div class="col-4 px-1">
+                                          <img style="width: 100px" src="images/Business-Day-online.jpg" alt="">
+                                        </div>
+                                        <div class="col-8 px-2">
+                                          <h6>Free Online Classes To Help You Succeed In Your Career</h6>
+                                          <span>Jun 22, 2020</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-12 px-3 mb-4">
+                                    <a href="#" class="d-flex">
+                                        <div class="col-4 px-1">
+                                          <img style="width: 100px" src="images/Business-Day-online.jpg" alt="">
+                                        </div>
+                                        <div class="col-8 px-2">
+                                          <h6>Your Business And The Storms</h6>
+                                          <span>Jun 14, 2020</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="widget widget_popular_posts mt-5">
+                            <h5 class="mb-4 text-primary">Featured Courses</h5>
+                            <!-- widget cources list -->
+                            <div class="row ">
+                                <div class="col-12 px-3 mb-4">
+                                    <a href="#" class="d-flex">
+                                        <div class="col-4 px-1">
+                                          <img style="width: 100px" src="images/Business-Day-online.jpg" alt="">
+                                        </div>
+                                        <div class="col-8 px-2">
+                                          <h6>Business Intelligence</h6>
+                                          <span>Business</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-12 px-3 mb-4">
+                                    <a href="#" class="d-flex">
+                                        <div class="col-4 px-1">
+                                          <img style="width: 100px" src="images/Business-Day-online.jpg" alt="">
+                                        </div>
+                                        <div class="col-8 px-2">
+                                          <h6>Marketing for dummies</h6>
+                                          <span>Marketing</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="albums-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="#" class="hide_upload none"><img src="img/back_button.png" alt="go back" /> Back</a>
+                        <h5 class="mx-auto mb-0 mt-1">
+                            Start a post</h5>
+                        <button type="button" id="btnRemoveAll" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="img/modal_cancel.svg" alt="close modal" /></span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="text_upload">
+                            <form>
+                                <textarea class="form-control border-0" placeholder="What do you want to talk about?" rows="5" id="media-text"></textarea>
+                            </form>
+                        </div>
+
+                        <form id="create-media" method="POST" >
+                            <div class="">
+                                <div class="card-body" style="">
+                                    <div class="right-seciont w-100 has-slimscroll">
+
+                                        <div class="modal-uploader" style="height: 250px">
+                                            <div id="actions" class="columns is-multiline no-mb">
+                                                <div class="column is-12">
+                                                    <span class="button has-icon is-solid grey-button fileinput-button">
+                                                            <i class="mdi mdi-plus"></i>
+                                                        </span>
+                                                    <button type="submit" class="button start is-hidden">
+                                                        <span>Upload</span>
+                                                    </button>
+                                                    <button type="reset" class="button is-solid grey-button cancel">
+                                                        <span>Clear all</span>
+                                                    </button>
+                                                    <span class="file-count">
+                                                            <span id="modal-uploader-file-count">0</span> file(s) selected
+                                                    </span>
+                                                </div>
+
+                                                <div class="column is-12 is-hidden">
+                                                    <!-- The global file processing state -->
+                                                    <div class="fileupload-process">
+                                                        <div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                            <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="columns is-multiline" id="previews">
+
+                                                <div id="template" class="column is-4 is-template">
+                                                    <div class="preview-box">
+                                                        <!-- This is used as the file preview template -->
+                                                        <!-- <div class="remove-button" data-dz-remove>
+                                                            <i class="mdi mdi-close"></i>
+                                                        </div> -->
+                                                        <div>
+                                                            <span class="preview"><img src="" data-dz-thumbnail alt=""/></span>
+                                                        </div>
+                                                        <div class="preview-body">
+                                                            <div class="item-meta">
+                                                                <div>
+                                                                    <p class="name" data-dz-name></p>
+                                                                    <strong class="error text-danger" data-dz-errormessage></strong>
+                                                                </div>
+                                                                <small class="size" data-dz-size></small>
+                                                            </div>
+                                                            <div class="upload-item-progress">
+                                                                <div class="progress active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                                    <div class="progress-bar progress-bar-success" data-dz-uploadprogress></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="upload-item-actions is-hidden">
+                                                                <button class="button start is-hidden">
+                                                                    <span>Start</span>
+                                                                </button>
+                                                                <button data-dz-remove class="button cancel is-hidden">
+                                                                    <span>Cancel</span>
+                                                                </button>
+                                                                <button data-dz-remove class="button delete is-hidden">
+                                                                    <span>Delete</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="mr-auto">
+                            <img src="img/pic.svg" class="img-fluid cursor display_image_upload fileinput-button" />
+                            <!-- <img src="img/video.svg" class="mb-1 mx-4 img-fluid cursor display_image_upload fileinput-button" /> -->
+                        </div>
+                        <!-- <button type="button" class="btn btn-green px-4 py-2" id="d-sub">Post</button> -->
+                        <button type="submit" id="d-sub" class="button is-solid accent-button close-modal">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Modal -->
+        <div class="modal" id="share" tabindex="-1" role="dialog" aria-labelledby="shareModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Share this page </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="modal-course-title"></h6>
+                        <h6 class="modal-course-url"></h6>
+                        <div class="footer-link mx-auto text-center py-4">
+                            <a class="fb mr-3" href="#"><i class="mdi mdi-36px mdi-facebook"></i></a>
+                            <a class="twit mr-3" href="#"><i class="mdi mdi-36px mdi-twitter"></i></a>
+                            <a class="insta mr-3" href="#"><i class="mdi mdi-36px mdi-instagram"></i></a>
+                            <a class="google mr-3" href="#"><i class="mdi mdi-36px mdi-email"></i></a>
+                            <a class="whatsapp mr-3" href="#"><i class="mdi mdi-36px mdi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Modal -->
+        <div class="modal" id="info" tabindex="-1" role="dialog" aria-labelledby="shareModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background: transparent;">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;margin-top: -20px;font-size: xx-large;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="row bootstrap snippets">
+                            <div class="col-md-12">
+                              <div class="panel widget">
+                                <div class="widget-header bg-primary"></div>
+                                <div class="widget-body text-center bg-white">
+                                  <img alt="Profile Picture" id="avatar" class="widget-img img-circle img-border-light" src="">
+                                  <h4 class="mar-no" id="fullname"></h4>
+                                  <p class="text-muted mar-btm" id="occupation"></p>
+                                  <p class="text-muted mar-btm" id="business"></p>
+                                  <p class="text-muted mar-btm" id="industry"></p>
+                                  <p class="text-muted mar-btm" id="interest"></p>
+                                  <div class="pad-ver">
+                                    <a href="mailbox.html" class="btn btn-success" style="font-size: 14px">Send Message</a>
+                                    <button class="btn btn-primary" style="font-size: 14px" id="about-business" style="display: none;">About Business</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js' type='text/javascript'></script>
+        <script src="js/utility.js"></script>
+        <script src="js/modal-uploader.js"></script>
+        <script src="js/intlTelInput.js"></script>
+        <script src="js/jquery.redirect.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+        
+
+    </body>
+
+</html>

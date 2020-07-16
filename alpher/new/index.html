@@ -7,7 +7,7 @@
         <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Welcome to AlphaLMS </title>
+        <title>Welcome to AlphaLMS</title>
         <link rel="shortcut icon" href="img/favicon.png">
 
         <!-- Bootstrap CSS CDN -->
@@ -19,6 +19,8 @@
 
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/intlTelInput.css">
+        <link rel="stylesheet" href="css/cropper.min.css">
+        <link rel="stylesheet" href="css/crop.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/register.css">
         <link rel="stylesheet" href="css/nice.css">
@@ -359,11 +361,14 @@
                                     </div>
                                 </a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
         <!-- Promote your business Modal -->
         <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -376,18 +381,18 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form class="">
+                        <form class=""  onsubmit="validateMyForm();">
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="first_name" class="text-grey small">Business Name</label>
-                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="" required>
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="email" class="text-grey small">Business Email</label>
-                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="" required>
                                 </div>
                             </div>
 
@@ -396,19 +401,34 @@
                                 
                                 <div class="form-group col-md-12">
                                     <label for="mobile_number" class="text-grey small">Mobile Number</label>
-                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="" required>
                                 </div>
                             </div>
 
                             <div class="form-row">
 
                                 <div class="form-group col-md-12">
-                                    <label for="gender" class="text-grey small">Service Category</label>
-                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
-                                        <option value="all">Catering</option>
-                                        <option value="abia">Fashion</option>
-                                        <option value="abj">Design</option>
+                                    <label for="category" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="category" name="category" placeholder="" required>
+                                        <option>Catering</option>
+                                        <option>Fashion</option>
+                                        <option>Design</option>
+                                        <option>Cosmetics</option>
+                                        <option>Financial</option>
+                                        <option>Healthcare</option>
+                                        <option>Recreation</option>
+                                        <option>Travel</option>
+                                        <option>Technology</option>
+                                        <option>Education</option>
+                                        <option>Others</option>
                                     </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row other" style="display: none;">
+                                <div class="form-group col-md-12">
+                                    <label for="other-category" class="text-grey small">Specify Category</label>
+                                    <input type="text" class="form-control mb-2" id="other-category" name="other-category" placeholder="Specify Service Category">
                                 </div>
                             </div>
 
@@ -417,21 +437,46 @@
 
                                 <div class="form-group col-md-12">
                                     <label for="gender" class="text-grey small">Service Description</label>
-                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text" required></textarea>
                                 </div>
                             </div>
 
                             <div class="form-row">
 
                                 <div class="form-group col-md-12">
-                                    <label for="gender" class="text-grey small">Service Image</label>
-                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                    <label for="gender" class="text-grey small">Upload Logo</label>
+                                    <main class="page">
+                                        <div class="box">
+                                            <input type="file" id="file-input" accept="image/*">
+                                        </div>
+                                        <input type="hidden" class="logo-src" name="logo" value="">
+                                        <!-- leftbox -->
+                                        <div class="box-2">
+                                            <div class="result"></div>
+                                            <div class="options hide">
+                                                <span class="img-w" style="display: none;">150</span>
+                                                <span class="img-h" style="display: none;">150</span>
+                                            </div>
+                                            <button class="btn btn-green btn-sm save hide mt-2">Crop</button>
+                                        </div>
+                                        <!--rightbox-->
+                                        <div class="box-2 img-result hide">
+                                            <div>Preview</div>
+                                            <!-- result of crop -->
+                                            <img class="cropped" src="" alt="">
+                                        </div>
+                                        <!-- input file -->
+                                        <div class="box">
+                                        </div>
+                                    </main>
+                                    <!-- <div class="form-group" style="display: inline-flex;width: 100%">
                                         <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
                                         <div class="fileUpload">
                                             <span>Upload</span>
-                                            <input id="uploadBtn" type="file" class="upload" required />
+                                            <input id="uploadBtn" type="file" class="upload" required accept="image/*" />
+                                            <input type="hidden" id="sub">
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -868,9 +913,11 @@
         <script src="js/tagsinput.js"></script>
         <script src="js/lga.js"></script>
         <script src="js/jquery-nice-select.js"></script>
+        <script src="js/cropper.min.js"></script>
+        <script src="js/crop.js"></script>
         <script type="text/javascript">
             $(window).on('load',function(){
-                $('#profileModal').modal('show');
+                // $('#profileModal').modal('show');
             });
 
             $(document).ready(function() {
@@ -886,6 +933,38 @@
                   }
                 });
 
+            })
+
+            $(document).ready(function() {
+                $('#uploadBtn').bind('change', function () {
+                    let img = new Image()
+                    img.src = window.URL.createObjectURL(event.target.files[0])
+                    img.onload = () => {
+                       if(img.width === 640 && img.height === 640){
+                            // alert(`Nice, image is the right size. It can be uploaded`)
+                            $('#sub').attr('val','true')
+                        } 
+                        else {
+                            $('#sub').attr('val','false')
+                       }                
+                    }
+                })
+
+                $('#category').bind('change', function () {
+                    name = $(this).val()
+                    $('.other').hide()
+                    if (name == 'Others') {
+                        $('.other').show()
+                    }
+                })
+
+
+                function validateMyForm(){
+                    if($('#sub').attr('val') == 'false'){
+                        event.preventDefault();
+                        alert(`Requierd size: 100px x 100px`);
+                    }
+                }
             })
 
             $(document).ready(function() {

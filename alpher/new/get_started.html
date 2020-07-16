@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="Meristem Securities Limited is a Capital Market Conglomerate regulated by the Securities and Exchange Commission (SEC). We expertly offer Investment Banking, Wealth Management, Stockbroking, Registrar and Trustees Services.">
+        <meta name="author" content="">
+        <title>Welcome to DavtonLearn</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/queries.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        <style>
+            .form-control {
+                font-size: 1rem;
+                color: #B7B7B7;
+            }
+            .custom-select {
+                color: #4F4F4F;
+            }
+        </style>
+    </head>
+
+    <body class="dashboard-body">
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/logo.svg" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li class="">
+                        <a href="index.html">
+                            <img src="img/dashboard.svg" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="15" /> Dashboard
+                        </a>
+
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Staff Management</p>
+
+                    <li>
+                        <a href="staff.html">
+                            <img src="img/staff.svg" alt="STAFF" class="mb-1 mr-3 img-fluid" width="15" /> Staff
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="department.html">
+                            <img src="img/department_sidebar.svg" alt="department" class="mb-1 mr-3 img-fluid" width="15" /> Department
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            <img src="img/courses.svg" alt="courses" class="mb-1 mr-3 img-fluid" width="15" /> Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reports.html">
+                            <img src="img/reports.svg" alt="reports" class="mb-1 mr-3 img-fluid" width="15" /> Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="quizes.html">
+                            <img src="img/department_sidebar.svg" alt="quizes" class="mb-1 mr-3 img-fluid" width="15" /> Quizzes
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <img src="img/communication.svg" alt="Message" class="mb-1 mr-3 img-fluid" width="15" /> Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <img src="img/blog.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Blog
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="admin.html">
+                            <img src="img/admins.png" alt="Admin" class="mb-1 mr-3 img-fluid" width="15" /> Admins
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="billing.html">
+                            <img src="img/billing.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Billing & Subcription
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <img src="img/Settings.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Settings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/logout.svg" alt="Blog" class="mb-1 mr-3 img-fluid" width="15" /> Log Out
+                        </a>
+                    </li>
+
+                    <button type="button" class="btn btn-green px-4 position-relative support_button"><img src="img/question.png" class="img-fluid"> Support</button>
+
+                    <div class="support-links pt-4 none">
+
+                        <li class="font-weight-light">
+                            <a href="#">
+                                Help Desk
+                            </a>
+                        </li>
+
+                        <li class="font-weight-light">
+                            <a href="#">
+                                API Documentation
+                            </a>
+                        </li>
+
+                        <li class="font-weight-light">
+                            <a href="#">
+                                Course Development
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+
+            </nav>
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+            <!-- Page Content  -->
+            <div id="content">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+
+
+                <div class="row mx-md-1 my-5 justify-content-center">
+                    <div class="col-md-9">
+                        <h4 class="text-grey text-center">Hi, Adeyemi - Welcome to DavtonLearn!</h4>
+                        <p class="text-center font-14">Your business has been activated. The guides below are still available to show you how to use Davtonlearn and to give you a quick primer on how we can work for your Employees.</p>
+                    </div>
+                </div>
+
+                <div class="row mx-md-4 my-5">
+
+                    <div class="col-md-4 my-3">
+
+                        <div class="card--dashboard card-height--323">
+                            <div class="px-4 pt-5 pb-2 position-relative text-center">
+                                <img src="img/course_development.svg" class="img-fluid" />
+
+                                <h6 class="font-weight-bold text-center mb-0 mt-3">Course Development</h6>
+                                <p class="mb-0 mt-3 font-weight-light">Eget feugiat amet varius a mauris nullam tempor. Tortor, aliquam sit sed nulla mi sit amet imperdiet.</p>
+
+                                <button class="btn btn-outline--green my-4 w-50">Show Me</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4 my-3">
+
+                        <div class="card--dashboard card-height--323">
+                            <div class="px-3 pt-5 pb-2 position-relative text-center">
+                                <img src="img/setup_davton.png" class="img-fluid" alt="Setup DavtonLearn" />
+
+                                <h6 class="font-weight-bold text-center mb-0 mt-3">Setup DavtonLearn</h6>
+                                <p class="mb-0 mt-3 font-weight-light">Eget feugiat amet varius a mauris nullam tempor. Tortor, aliquam sit sed nulla mi sit amet imperdiet.</p>
+
+                                <a href="customize_dashboard.html" class="btn btn-outline--green my-4 w-50">Set Up</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4 my-3">
+
+                        <div class="card--dashboard card-height--323">
+                            <div class="px-3 pt-5 pb-2 position-relative text-center">
+                                <img src="img/dashboard_tour.png" class="img-fluid" alt="Dashboard Tour" />
+
+                                <h6 class="font-weight-bold text-center mb-0 mt-3">Dashboard Tour</h6>
+                                <p class="mb-0 mt-3 font-weight-light">Eget feugiat amet varius a mauris nullam tempor. Tortor, aliquam sit sed nulla mi sit amet imperdiet.</p>
+
+                                <button class="btn btn-outline--green my-4 w-50" type="button" data-target="#dashboard" data-toggle="modal">Show Me</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row mx-md-4 my-5">
+                    <div class="col-md-12">
+                        <hr class="mb-0"/>
+                    </div>
+                </div>
+
+
+                <div class="dasboard-bottom-wrapper">
+                    <div class="row mx-md-4 py-5">
+                        <div class="col-md-3">
+                            <p class="font-35 text-muted font-weight-light" style="line-height: 1.2em">Shortcuts for <br> Developers</p>
+
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="padder">
+                                <h5 class="text-md font-bold m-t-none">API Docs</h5>
+                                <p class="font-13">Our documentation contains the Libraries, APIs, and SDKs you need to integrate Paystack
+                                    in your website or app.</p>
+                                <a href="#" target="_blank" class="btn btn-green font-13">Goto docs</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--            Dashboard tour modals starts here-->
+
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="dashboard" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-tour" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Dashboard</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#staff" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="staff" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-staff" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Staff</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#department" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="department" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-department" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Department</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#courses" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="courses" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-courses" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Courses</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button" data-target="#dashboard" data-toggle="modal">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#reports" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="reports" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-reports" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Reports</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#quizes" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="quizes" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-quiz" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Quizes</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#message" data-toggle="modal" id="show_settings">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="message" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-message" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Message</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#blog" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="blog" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-blog" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Blog</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#admin" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="admin" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-admin" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Admin</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#billing" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="billing" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-billing" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Billing</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button">Close</button>
+
+                                <button class="btn btn-outline--grey ml-3 px-3" type="button" data-dismiss="modal"  data-target="#settings" data-toggle="modal">Next</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="settings" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-settings" role="document">
+                    <div class="modal-content tour-modal">
+                        <div class="onboarding-content with-radient p-3 position-relative">
+                            <h6 class="text-green">Settings</h6>
+
+                            <p class="font-weight-light">Here you'll find an overview of how your business is performing.</p>
+
+                            <div class="tour_triangle position-absolute">
+
+                            </div>
+
+                            <div>
+                                <button aria-label="Close" class="btn btn-outline--grey px-4" data-dismiss="modal" type="button" data-target="#settings" data-toggle="modal">Close</button>
+
+                                <!--                                <button class="btn btn-outline--grey ml-3 px-3" type="button">Next</button>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <!--        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+        <script
+                src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="js/utility.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                $('.navbar-toggler').on('click', function() {
+                    $('#sidebar').toggleClass('active');
+                    $('body').toggleClass('no-scroll');
+                });
+            });
+
+            $(document).ready(function() {
+                $('#sidebarCollapse-1').on('click', function() {
+                    $('#sidebar').toggleClass('active');
+                    $('#navbar').addClass('d-block');
+                });
+            });
+
+        </script>
+    </body>
+
+</html>

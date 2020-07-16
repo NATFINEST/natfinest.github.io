@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/dis.css">
+        <link rel="stylesheet" href="css/custom.css">
 
         <!-- Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -257,10 +257,10 @@
                             <div class="single-news-slide">
                                 <div class="news-slide-img">
                                     <span class="new-dis">New</span>
-                                    <a href="dis1.html"><img src="images/87-origin-400x300.jpg" alt="News"></a>
+                                    <a href="#" class="openModal" data-toggle="modal" data-target="#viewDetails" data-desc="A few description goes here..." data-title="87 Origins"><img src="images/87-origin-400x300.jpg" alt="News"></a>
                                 </div>
                                 <div class="news-slide-content">
-                                    <h5 style="margin:10px 0;"><a style="text-decoration: none;" href="dis1.html">87 Origins</a></h5>
+                                    <h5 style="margin:10px 0;"><a style="text-decoration: none;" href="#" class="openModal" data-toggle="modal" data-target="#viewDetails" data-desc="A few description goes here..." data-title="87 Origins">87 Origins</a></h5>
                                     <h6 style="font-weight: 400;margin:10px 0">Fashion, Online</h6>
                                 </div>
                             </div>
@@ -500,6 +500,8 @@
             </div>
         </div>
 
+        
+
         <!-- Start of itdacademy Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=fa65cc9e-a5f4-4497-90c1-4c51edcac049"> </script>
         <!-- End of itdacademy Zendesk Widget script -->
@@ -514,6 +516,27 @@
         <script src="js/chart.js/dist/Chart.min.js"></script>
         <script src="js/utility.js"></script>
         <script src="js/intlTelInput.js"></script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="viewDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>Are you intrested in this lifestyle discount?</div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="dis1.html" class="btn btn-primary">Yes</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                      </div>
+                </div>
+            </div>
+    </div>
 
     </body>
 

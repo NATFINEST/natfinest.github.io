@@ -25,13 +25,13 @@ $(document).ready(function () {
     });
 
     $(function () {
-            $(".openModal").click(function () {
-                var desc = $(this).data('desc');
-                var title = $(this).data('title');
-                $(".modal-body .desc").html(desc);
-                $(".modal-title").html(title);
-            })
-        });
+        $(".openModal").click(function () {
+            var desc = $(this).data('desc');
+            var title = $(this).data('title');
+            $(".modal-body .desc").html(desc);
+            $(".modal-title").html(title);
+        })
+    });
 
     var color = "20A354"
     document.documentElement.style.setProperty('--theme-color', `#${color}`);
@@ -938,6 +938,12 @@ $(function () {
     };
 });
 $(function () {
+    gallen = $('.col-gallery .col-6').length
+    for (i = 1; i <= gallen; i++) {
+        $(".img-gallery").slice(0, 4).show();
+    };
+});
+$(function () {
     $(".card--dashboard").slice(0, 12).show();
     if($('.card--dashboard').length < 3){
         $(".loadPost").hide();
@@ -1205,3 +1211,45 @@ $("body").delegate("#send-message", "click", function(e){
     // $.redirect('message.html', {'arg1': 'value1', 'arg2': 'value2'});
 })
 
+
+
+//Newly Added           
+$("body").delegate(".show-drop", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    id = $(this).attr('id')
+    $('.post#'+id).slideDown("slow");
+    $(this).text('Hide Comment');
+    $(this).removeClass('show-drop');
+    $(this).addClass('hide-drop');
+});
+$("body").delegate(".hide-drop", "click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    id = $(this).attr('id')
+    $('.post#'+id).slideUp("slow");
+    $(this).text('Show Comment');
+    $(this).removeClass('hide-drop');
+    $(this).addClass('show-drop');
+});
+
+$(function () {
+    $(".openDir").click(function () {
+        var desc = $(this).data('desc');
+        var title = $(this).data('title');
+        var ig = $(this).data('ig');
+        var web = $(this).data('web');
+        var email = $(this).data('email');
+        var cat = $(this).data('cat');
+        var phone = $(this).data('phone');
+        var email = $(this).data('email');
+        $(".modal-body .cat").html(cat);
+        $(".modal-body .web").html(`<a href="`+web+`" class="text-primary">`+web+`</a>`);
+        $(".modal-body .ig").html(`<a href="`+ig+`" class="text-primary">`+ig+`</a>`);
+        $(".modal-body .email").html(`<a href="mailto:/`+email+`" class="text-primary">`+email+`</a>`);
+        $(".modal-body .phone").html(`<a href="tel:/`+phone+`" class="text-primary">`+phone+`</a>`);
+        $(".modal-body .desc").html(desc);
+        $(".modal-body .title").html(title);
+        $(".modal-title").html(title);
+    })
+    });

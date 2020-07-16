@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS </title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link href="css/tagsinput.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/intlTelInput.css">
+        <link rel="stylesheet" href="css/cropper.min.css">
+        <link rel="stylesheet" href="css/crop.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/nice.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto align-items-center">
+
+                            <li class="nav-item px-md-1 pt-1">
+                                <a class="nav-link text-white" href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                                    Internet Banking
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 pt-1">
+                                <a class="nav-link text-white" href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                                    Open an Account
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 pt-1">
+                                <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#faqsModal">
+                                    FAQs
+                                </a>
+                            </li>
+
+                            <!-- <li class="nav-item px-md-1 pt-1">
+                                <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#referModal">
+                                    Refer a friend
+                                </a>
+                            </li> -->
+
+                            <!-- <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li> -->
+
+                            
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white" href="message.html" id="notification">
+                                     <i class="fa fa-envelope fa-2x text-white"></i>
+                                     <span style="background: #cc564c;border-radius: 50%;padding: 0% 10%;font-size: 12px;font-weight: 500;position: absolute;left: 23px;">9</span>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-14" href="settings.html">Profile</a>
+                                    <a class="dropdown-item font-14" href="#">Log Out</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <i class="mdi mdi-book fs-20"></i> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li>
+                        <a href="message.html">
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12 d-md-none ">Account Management</p>
+
+                    <li class="d-md-none ">
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
+                        </a>
+                    </li>
+
+                    <li class="d-md-none ">
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
+                        </a>
+                    </li>
+
+                    <li class="d-md-none ">
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-comment-question-outline fs-20"></i>
+                            FAQs
+                        </a>
+                    </li>
+
+                    <li class="d-md-none ">
+                        <a href="settings.html">
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="d-md-none ">
+                        <a href="#">
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- Page Content  -->
+            <div id="content">
+                <div class="dasboard-top-wrapper">
+
+                </div>
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="row mx-md-1 my-5">
+                    <div class="col-md-12">
+
+                        <div class="row">
+
+                            <div class="col-md-4 px-md-2 my-3">
+                                <a href="courses.html">
+                                    <div class="step-card--blue">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Enrolled Courses</p>
+                                            <p class="mb-0 text-white--dim">You have enrooled for 2 courses.</p>
+                                            <img src="img/courses_card.png" class="img-fluid position-absolute card-image" />
+                                            <a href="enrolled.html" class="btn btn-white mt-1 font-12 py-1">Manage Courses</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 px-md-2 my-3">
+                                <a href="reports.html">
+                                    <div class="step-card--purple">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Networks</p>
+                                            <p class="mb-0 text-white--dim">You have 0 network.</p>
+                                            <img src="img/reports_card.png" class="img-fluid position-absolute card-image" />
+                                            <a href="networks.html" class="btn btn-white mt-1 font-12 py-1">View Network</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 px-md-2 my-3">
+                                <a href="settings.html">
+                                    <div class="step-card step-card--white">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-dark mb-0 mt-1">Business Directory</p>
+                                            <p class="mb-3 text-dark small line-height--14">Use the button below to request<br> available business services.</p>
+                                            <img src="img/manage_account_card.png" width="120" class="img-fluid position-absolute card-image" />
+                                            <a href="services.html" class="btn btn-card--white mt-1 font-12 py-1 px-4">Search</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 px-md-2 my-3 my-lg-0">
+                                <a href="staff_course.html">
+                                    <div class="step-card--green">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Health Insurance Plan</p>
+                                            <p class="mb-0 text-white--dim">Get access to amazing health packages</p>
+                                            <img src="img/staff_card.png" class="img-fluid position-absolute card-image">
+                                            <a href="#" class="btn btn-white mt-1 font-12 py-1">Get Now</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 px-md-2 my-3 my-lg-0">
+                                <a href="#">
+                                    <div class="step-card--orange">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-1">Lifestyle Discount</p>
+                                            <p class="mb-0 small text-white">Get access to discounted <br>tools and services</p>
+                                            <img src="img/learning_group.png" class="img-fluid position-absolute card-image">
+                                            <a href="discounted.html" class="btn btn-card--green mt-2 font-12 py-1">View More</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 px-md-2 my-3 my-lg-0">
+                                <a href="staff_course.html">
+                                    <div class="step-card--green">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Mentorship and coaching</p>
+                                            <p class="mb-0 text-white small line-height--14">We have a network of qualified mentors to assist you</p>
+                                            <img src="img/department_card.png" class="img-fluid position-absolute card-image">
+                                            <a href="mentorship.html" class="btn btn-white mt-1 font-12 py-1">Request a mentor</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 px-md-2 my-3">
+                                <a href="reports.html">
+                                    <div class="step-card--purple">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Contact Us</p>
+                                            <p class="mb-0 text-white--dim">Send a request now</p>
+                                            <img src="img/department_card.png" class="img-fluid position-absolute card-image" />
+                                            <a href="#" class="btn btn-white mt-1 font-12 py-1" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Promote your business Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class=""  onsubmit="validateMyForm();">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" onKeyDown="if(this.value.length==11 && event.keyCode!=8) return false;" value="" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="category" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="category" name="category" placeholder="" required>
+                                        <option>Catering</option>
+                                        <option>Fashion</option>
+                                        <option>Design</option>
+                                        <option>Cosmetics</option>
+                                        <option>Financial</option>
+                                        <option>Healthcare</option>
+                                        <option>Recreation</option>
+                                        <option>Travel</option>
+                                        <option>Technology</option>
+                                        <option>Education</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row other" style="display: none;">
+                                <div class="form-group col-md-12">
+                                    <label for="other-category" class="text-grey small">Specify Category</label>
+                                    <input type="text" class="form-control mb-2" id="other-category" name="other-category" placeholder="Specify Service Category">
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email" class="text-grey small w-100">Social Media</label>
+                                
+                                <div class="form-group col-md-6">
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-globe"></i></span>
+                                      </div>
+                                      <input type="text" class="form-control" placeholder="Website Url">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fab fa-instagram"></i></span>
+                                      </div>
+                                      <input type="text" class="form-control" placeholder="Instagram Url" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Upload Logo</label>
+                                    <main class="page">
+                                        <div class="box">
+                                            <input type="file" id="file-input" accept="image/*" required>
+                                        </div>
+                                        <input type="hidden" class="logo-src" name="logo" value="">
+                                        <!-- leftbox -->
+                                        <div class="box-2">
+                                            <div class="result"></div>
+                                            <div class="options hide">
+                                                <span class="img-w" style="display: none;">150</span>
+                                                <span class="img-h" style="display: none;">150</span>
+                                            </div>
+                                            <button class="btn btn-green btn-sm save hide mt-2">Crop</button>
+                                        </div>
+                                        <!--rightbox-->
+                                        <div class="box-2 img-result hide">
+                                            <div>Preview</div>
+                                            <!-- result of crop -->
+                                            <img class="cropped" src="" alt="">
+                                        </div>
+                                        <!-- input file -->
+                                        <div class="box">
+                                        </div>
+                                    </main>
+                                    <!-- <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required accept="image/*" />
+                                            <input type="hidden" id="sub">
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile" disabled>Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Refer Modal -->
+        <div class="modal fade" id="referModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Refer a friend</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="go">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey">Enter friend's email address</label>
+                                    <input type="text" value="" data-role="tagsinput" placeholder="Your can enter multiple email addresses by pressing enter" id="femail" name="femail">
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Complete Profile</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="instructor-form pt-0">
+                            <div class="row ind group">
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="fname" class="sr-only">Firstname</label>
+                                    <input class="form-control" type="text" id="fname" name="fname" placeholder="Your Firstname *" required>
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="sname" class="sr-only">Surname</label>
+                                    <input class="form-control" type="text" id="sname" name="sname" placeholder="Your Surname *" required>
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="email" class="sr-only">Your Email Address</label>
+                                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email Address*" required>
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="phone" class="sr-only">Phone Number</label>
+                                    <input name="phone" type="tel" class="phone form-control element-block pl-5"  required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="text" class="sr-only">State of Residence</label>
+                                    <select name="state" id="state" class="form-control mb-3" required>
+                                          <option value="" selected="selected" > Select State of Residence </option>
+                                          <option value='Abia'>Abia</option>
+                                          <option value='Adamawa'>Adamawa</option>
+                                          <option value='AkwaIbom'>AkwaIbom</option>
+                                          <option value='Anambra'>Anambra</option>
+                                          <option value='Bauchi'>Bauchi</option>
+                                          <option value='Bayelsa'>Bayelsa</option>
+                                          <option value='Benue'>Benue</option>
+                                          <option value='Borno'>Borno</option>
+                                          <option value='Cross River'>Cross River</option>
+                                          <option value='Delta'>Delta</option>
+                                          <option value='Ebonyi'>Ebonyi</option>
+                                          <option value='Edo'>Edo</option>
+                                          <option value='Ekiti'>Ekiti</option>
+                                          <option value='Enugu'>Enugu</option>
+                                          <option value='FCT'>FCT</option>
+                                          <option value='Gombe'>Gombe</option>
+                                          <option value='Imo'>Imo</option>
+                                          <option value='Jigawa'>Jigawa</option>
+                                          <option value='Kaduna'>Kaduna</option>
+                                          <option value='Kano'>Kano</option>
+                                          <option value='Katsina'>Katsina</option>
+                                          <option value='Kebbi'>Kebbi</option>
+                                          <option value='Kogi'>Kogi</option>
+                                          <option value='Kwara'>Kwara</option>
+                                          <option value='Lagos'>Lagos</option>
+                                          <option value='Nasarawa'>Nasarawa</option>
+                                          <option value='Niger'>Niger</option>
+                                          <option value='Ogun'>Ogun</option>
+                                          <option value='Ondo'>Ondo</option>
+                                          <option value='Osun'>Osun</option>
+                                          <option value='Oyo'>Oyo</option>
+                                          <option value='Plateau'>Plateau</option>
+                                          <option value='Rivers'>Rivers</option>
+                                          <option value='Sokoto'>Sokoto</option>
+                                          <option value='Taraba'>Taraba</option>
+                                          <option value='Yobe'>Yobe</option>
+                                          <option value='Zamfara'>Zamafara</option>
+                                    </select>
+                                </div>                                   
+                                <div class="col-12 col-md-6">
+                                    <select class="form-control" name="gender" id="gender" required>
+                                        <option selected="true" disabled="disabled">Select Gender</option>
+                                        <option value="ind">Male</option>
+                                        <option value="bus">Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <select class="form-control" name="religion" id="religion" id="" required>
+                                        <option selected="true" disabled="disabled">Religion</option>
+                                        <option value="chr">Christian</option>
+                                        <option value="isl">Islam</option>
+                                        <option value="oth">Others</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="datepicker" class="sr-only">DOB</label>
+                                    <input class="form-control" id="datepicker" name="DOB" placeholder="DOB *" required/>
+                                </div>
+                            </div>
+
+                            <div class="file-upload mb-3">
+                              <div class="file-select">
+                                <div class="file-select-button" id="fileName">Choose Profile Image</div>
+                                <div class="file-select-name" id="noFile">No file chosen...</div> 
+                                <input type="file" name="chooseFile" id="chooseFile" accept="image/*">
+                              </div>
+                            </div>
+
+                            <div class="col-9 mx-auto single-input mb-3 acc-sel">
+                                <select name="acctype" id="quest" style="display: none;">
+                                    <option selected="true" disabled="disabled">Who are you?</option>
+                                    <option value="professional">A Professional</option>
+                                    <option value="business">A Business Owner</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+
+                            <div class="row bus group">
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="bname" class="sr-only">Business Name</label>
+                                    <input class="form-control" type="text" id="bname" name="bname" placeholder="Your Business Name *">
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <select class="form-control" name="quest1" id="quest1" style="display: none;">
+                                        <option selected="true" disabled="disabled">Is your business registered with CAC?</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-12 form-group">
+                                    <select class="form-control" name="quest2" id="quest2" style="display: none;">
+                                        <option selected="true" disabled="disabled">Is your business owned or managed by women?</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row prof group">
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="organ" class="sr-only">Organisation</label>
+                                    <input class="form-control" type="text" id="organ" name="organ" placeholder="Organisation *" required>
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="job" class="sr-only">Job title</label>
+                                    <input class="form-control" type="text" id="job" name="job" placeholder="Job title *" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <select class="form-control" name="education" id="education" required>
+                                        <option selected="true" disabled="disabled">Highest Level of Education</option>
+                                        <option value="bac">Bachelors</option>
+                                        <option value="mas">Masters</option>
+                                        <option value="doc">Doctorate</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="linkedin" class="sr-only">LinkedIn</label>
+                                    <input class="form-control" type="text" id="linkedin" name="linkedin" placeholder="LinkedIn Handle" required>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group mb-0 text-center sub">
+                                <button type="submit" class="btn-primary w-100 py-2">Update Profile</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs Modal -->
+        <div class="modal fade" id="faqsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">FAQs</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-4">
+                            <h6 class="text-info">For Customers</h6>
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header bg-info px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseOne"id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn text-white fs-16" type="button"  aria-expanded="true" aria-controls="collapseOne">
+                                              What is αlpher?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="px-3 py-2">αlpher is Union Bank’s proposition aimed at enabling success for the Nigerian woman. αlpher is for women from all walks of life. </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-info px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseTwo"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseTwo">
+                                              Why αlpher?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="px-3 py-2">Women, through their entrepreneurship and enterprise, make a substantial contribution to the economy and the society. In spite of their contributions, they face huge obstacles and challenges that severely limit their potential. At Union Bank, we want to be the support and enabler that will help women actualise their highest potential because we know that when women do well, we all do well. </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-info px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseThree"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseThree">
+                                              What are the benefits of being an αlpher woman?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="px-3 py-2">
+                                            To our vibrant community of women, αlpher offers a variety of benefits ranging from access to professional and personal development, business support services and invaluable networking opportunities. We also offer quick cashflow loans at competitive rates, discounted healthcare plans and amazing lifestyle benefits. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-info px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseFour"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseFour">
+                                              How can I join αlpher?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="px-3 py-2">
+                                            Open an account with Union Bank of Nigeria, and you automatically get invited to the community.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-info px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseFive"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseFive">
+                                              How is the αlpher proposition different?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="px-3 py-2">
+                                            How is the αlpher proposition different?</b> At αlpher, we know and understand that women are multi-faceted and have interests that cut across different areas. We want to create solutions that fit every area of her life.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-4">
+                            <h6 class="text-primary">For Employees</h6>
+                            <div class="accordion" id="accordionExample2">
+                                <div class="card">
+                                    <div class="card-header bg-primary px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseOneOne"id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn text-white fs-16" type="button"  aria-expanded="true" aria-controls="collapseOneOne">
+                                              What is αlpher?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOneOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample2">
+                                        <div class="px-3 py-2">αlpher is Union Bank’s proposition aimed at enabling success for the Nigerian woman. αlpher is for women from all walks of life. </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-primary px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseOneTwo"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseOneTwo">
+                                              Why αlpher?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOneTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                        <div class="px-3 py-2">Women, through their entrepreneurship and enterprise, make a substantial contribution to the economy and the society. In spite of their contributions, they face huge obstacles and challenges that severely limit their potential. At Union Bank, we want to be the support and enabler that will help women actualise their highest potential because we know that when women do well, we all do well. </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-primary px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseOneThree"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapsecollapseOneThreeThree">
+                                              What is the value proposition of αlpher?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOneThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                        <div class="px-3 py-2">
+                                            αlpher is not a product. It is a proposition that enhances our existing products and provides a suite of benefits to enable us attract and retain more customers.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-primary px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseOneFour"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseOneFour">
+                                              What is the value proposition of αlpher?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOneFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                        <div class="px-3 py-2">
+                                            To our vibrant community of women, αlpher offers a variety of benefits ranging from access to professional and personal development, business support services and invaluable networking opportunities. We also offer quick cashflow loans at competitive rates, discounted healthcare plans and amazing lifestyle benefits. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header bg-primary px-1 cursor-pointer py-0" data-toggle="collapse" data-target="#collapseOneFive"  id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" type="button" aria-expanded="false" aria-controls="collapseOneFive">
+                                              What is expected of me as a Union Bank employee?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOneFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                        <div class="px-3 py-2">
+                                            You are expected to understand the αlpher proposition, drive it in line with the Bank’s commitment, and use it to meet your KPIs and targets.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="adLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Contact Us</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="user-log-form">
+                            <div class="row">
+                                <div class="form-group col-md-6 my-3">
+                                    <input type="text" class="form-control element-block fs-14" placeholder="Firstname *" required>
+                                </div>
+                                <div class="form-group col-md-6 my-3">
+                                    <input type="text" class="form-control element-block fs-14" placeholder="Lastname *" required>
+                                </div>
+                                <div class="form-group col-md-6 my-3">
+                                    <input type="email" class="form-control element-block fs-14" placeholder="Email address *" required>
+                                </div>
+                                <div class="form-group col-md-6 my-3">
+                                    <input id="phone" name="phone" type="tel" class="form-control element-block fs-14" placeholder="Phone *" required>
+                                </div>
+                                <div class="form-group col-md-12 my-3">
+                                    <select class="w-100" id="request">
+                                      <option data-display="Select reason for contact">Select reason for contact</option>
+                                      <option>Partnership with alpher</option>
+                                      <option>Advisory Services</option>
+                                      <option>Issues on portal</option>
+                                      <option>Others</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12 my-3">
+                                    <textarea rows="5" cols="5" class="form-control w-100" placeholder="Please provide more infromation if any" style="height: 100px"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="btns-wrap my-3 text-center">
+                                <button type="submit" class="btn btn-primary fs-12" style="margin: 0 auto;">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery.showPassword.js"></script>
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+        <script src="js/intlTelInput.js"></script>
+        <script src="js/utility.js"></script>   
+        <script src="js/tagsinput.js"></script>
+        <script src="js/lga.js"></script>
+        <script src="js/jquery-nice-select.js"></script>
+        <script src="js/cropper.min.js"></script>
+        <script src="js/crop.js"></script>
+        <script type="text/javascript">
+            $(window).on('load',function(){
+                // $('#profileModal').modal('show');
+            });
+
+            $(document).ready(function() {
+                $('#chooseFile').bind('change', function () {
+                  var filename = $("#chooseFile").val();
+                  if (/^\s*$/.test(filename)) {
+                    $(".file-upload").removeClass('active');
+                    $("#noFile").text("No file chosen..."); 
+                  }
+                  else {
+                    $(".file-upload").addClass('active');
+                    $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+                  }
+                });
+
+            })
+
+            $(document).ready(function() {
+                $('#uploadBtn').bind('change', function () {
+                    let img = new Image()
+                    img.src = window.URL.createObjectURL(event.target.files[0])
+                    img.onload = () => {
+                       if(img.width === 640 && img.height === 640){
+                            // alert(`Nice, image is the right size. It can be uploaded`)
+                            $('#sub').attr('val','true')
+                        } 
+                        else {
+                            $('#sub').attr('val','false')
+                       }                
+                    }
+                })
+
+                $('#category').bind('change', function () {
+                    name = $(this).val()
+                    $('.other').hide()
+                    if (name == 'Others') {
+                        $('.other').show()
+                    }
+                })
+
+
+                function validateMyForm(){
+                    if($('#sub').attr('val') == 'false'){
+                        event.preventDefault();
+                        alert(`Requierd size: 100px x 100px`);
+                    }
+                }
+            })
+
+            $(document).ready(function() {
+              $('#request').niceSelect();
+            });
+
+        </script>
+
+    </body>
+
+</html>

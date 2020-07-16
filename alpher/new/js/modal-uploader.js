@@ -116,6 +116,10 @@ if ($('.modal-uploader').length) {
                                 </div>
                             </div>
 
+                            <div class="text-center my-2">
+                                <button class="btn btn-sm btn-green show-drop" id="comment-`+time+`">Show Comment</button>
+                            </div>
+
                             <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-`+time+`">
 
                             </div>
@@ -230,6 +234,10 @@ if ($('.modal-uploader').length) {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="text-center my-2">
+                                <button class="btn btn-sm btn-green show-drop" id="comment-`+time+`">Show Comment</button>
                             </div>
 
                             <div class="px-4 row mt-3 post" style="overflow-y:auto;max-height: 280px" id="comment-`+time+`">
