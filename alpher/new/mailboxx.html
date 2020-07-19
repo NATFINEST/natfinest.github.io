@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Welcome to AlphaLMS</title>
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/blog.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/fontawesome.css" rel="stylesheet">
+        <link href="css/concept.css" rel="stylesheet">
+        <link href="css/admin2.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/mailbox.css">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <img src="img/top_strip.jpg" class="img-fluid position-absolute" />
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand py-0" href="#"><img src="img/Alpher-logo-full-white.png" style="width: 100px" class="mt-2" alt="Davton logo" width="" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="message.html" data-target="#acc_details">
+                                    <img src="img/mail.svg" alt="Messages" class="mt-1">
+                                </a>
+                            </li>
+
+                            <li class="nav-item px-md-1 d-none">
+                                <a class="nav-link text-dark" href="#" data-target="#acc_details">
+                                    <img src="img/notification.svg" alt="user name" class="">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="py-1 px-2" style="border-radius: 3px; background-color: white; color: #14AD51">M</span>&nbsp; &nbsp; Hr247@asanta.com &nbsp;
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Adeyemi Inc. </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">Hr247@asanta.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard fs-20"></i>
+                            Dashboard
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="request.html">
+                            <i class="mdi mdi-table fs-20"></i> 
+                             View Requests
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#promoteModal">
+                            <i class="mdi mdi-sale fs-20"></i> 
+                            Promote your business
+                        </a>
+
+                    </li>
+
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Learning</p>
+
+                    <li>
+                        <a href="courses.html">
+                            <i class="mdi mdi-book fs-20"></i> All Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enrolled.html">
+                            <i class="mdi mdi-book-open fs-20"></i>
+                            Enrolled Courses
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Services</p>
+
+                    <li>
+                        <a href="discounted.html">
+                            <i class="mdi mdi-room-service fs-20"></i>
+                            Discounted Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="webinar.html">
+                            <i class="mdi mdi-webcam fs-20"></i>
+                            Webinar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            <i class="mdi mdi-calendar-clock fs-20"></i>
+                             Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="loans.html">
+                            <i class="mdi mdi-cash-refund fs-20"></i>
+                             Loans & Grants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mentorship.html">
+                            <i class="mdi mdi-account-box-multiple fs-20"></i>
+                            Mentorship
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="interest.html">
+                            <i class="mdi mdi-shape fs-20"></i>
+                            Interest & Opportunity
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Communications</p>
+
+                    <li class="active">
+                        <a href="message.html">
+                            <i class="mdi mdi-email fs-20"></i>
+                            Message
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="articles.html">
+                            <i class="mdi mdi-newspaper fs-20"></i>
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <i class="mdi mdi-chat-processing fs-20"></i>
+                            Community
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li>
+                        <a href="https://uniononline.unionbankng.com/OnlineBanking/" target="_blank">
+                            <i class="mdi mdi-bank-transfer-in fs-20"></i>
+                            Internet Banking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.unionbankng.com/personal/accounts/" target="_blank">
+                            <i class="mdi mdi-key fs-20"></i>
+                            Open an Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="settings.html">
+                            <i class="mdi mdi-account-settings fs-20"></i>Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-power fs-20"></i>
+                             Log Out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="mt-md-4">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+
+                <div class="page-inner w-100 no-page-title" style="background-image: url(https://wallpaperplay.com/walls/full/5/4/3/228310.jpg);background-size: cover;">
+                    <div id="main-wrapper">
+                        <div class="content-header">
+                            <h1 class="page-title text-white">Messages</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="mailbox-options d-flex align-items-center">
+                                    <button class="btn btn-primary m-r-xxs" data-toggle="modal" data-target="#compose"><i class="mr-2 fa fa-edit"></i> Compose</button>
+                                    <button class="btn btn-secondary m-r-xxs"><i class="mr-2 fa fa-inbox"></i> Inbox</button>
+                                    <button class="btn btn-success m-r-xxs"><i class="mr-2 fa fa-paper-plane"></i> Sent</button>
+                                    <button class="btn btn-info m-r-xxs"><i class="mr-2 fa fa-envelope"></i> Draft</button>
+                                    <p class="mail-count ml-auto text-white">1 of 1</p>
+                                    <button class="btn btn-secondary m-l-xxs mail-left-btn" disabled="">&lt;</button>
+                                    <button class="btn btn-secondary float-right m-l-xxs no-m-r mail-right-btn" disabled="">&gt;</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="email-list bg-white">
+                                    <ul class="list-unstyled">
+                                        <li class="active">
+                                            <a href="#">
+                                                <div class="email-list-item">
+                                                    <div class="email-author">
+                                                        <img src="http://via.placeholder.com/35x35" alt="">
+                                                        <span class="author-name">Alpherwoman</span>
+                                                        <span class="email-date">5m ago</span>
+                                                    </div>
+                                                    <div class="email-info">
+                                                        <span class="email-subject">
+                                                            Welcome to Alpherwoman
+                                                        </span>
+                                                        <span class="email-text">
+                                                            <p>We are delighted that you've decided to join the alpherwoman development hub.</p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 bg-white">
+                                <div class="mail-header py-3 border-bottom">
+                                    <div class="mail-actions">
+                                        <button class="btn btn-secondary" data-toggle="modal" data-target="#reply">Reply</button>
+                                    </div>
+                                </div>
+                                <div class="mails">
+                                    <div class="mail-container border-bottom-2 mb-5">
+                                        <div class="mail-info">
+                                            <div class="mail-author">
+                                                <img src="images/avatars/avatar3.png" alt="">
+                                                <div class="mail-author-info">
+                                                    <span class="mail-author-name">Alpherwoman</span>
+                                                    <span class="mail-author-address">alpherwoman@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="mail-other-info">
+                                                <span>18:01</span>
+                                            </div>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="mail-text">
+                                            <p>We are delighted that you've decided to join the alpherwoman development hub.</p>
+
+                                            <p>We recognize how important you are and are excited that you are joining a league of women with great power and ample opportunities for growth.</p>
+
+                                            <p>αlpher was created to enable women to be the best versions of themselves. We aim to help women on their respective journeys of greatness whether your aim is to start or expand your business, meet new people, build new partnerships or develop capacity for growth; αlpher is here to enable your success.</p>
+
+                                            <p>As an organisation committed to gender parity and the development of women and girls, Union Bank is positioned to deliver tailored services to support the growth of women and female-owned business.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <aside class="col-md-4">
+
+                                <section class="widget widget_popular_posts mb-5">
+                                    <h5 class="mb-2 text-primary font-weight-bold">Upcoming Event</h5>
+                                    <a href="#"><img src="https://alpherwoman.com/images/Y6CFKSktn0UGgxhFq1kRPbTfuQFkHIPN9aDEKDUv.jpeg" width="100%"></a>
+                                </section>
+
+                                <section class="widget widget_popular_posts mb-5">
+                                    <h5 class="mb-2 text-primary font-weight-bold">Discounted Services</h5>
+                                    <!-- widget cources list -->
+                                    <div class="row  col-gallery">
+                                        <div class="col-6 img-gallery px-2">
+                                            <a href="#" class="content">
+                                                <div class="content-overlay image"></div>
+                                                <img src="images/Business-Day-online.jpg" class="img-fluid mt-2 gall-img" />
+
+                                                <div class="content-details fadeIn-top">
+                                                    <span class="text-white font-weight-bold">87 Origins</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 img-gallery px-2">
+                                            <a href="#" class="content">
+                                                <div class="content-overlay image"></div>
+                                                <img class="img-fluid mt-2 gall-img" src="images/Hotel-du-Golf.jpg">
+
+                                                <div class="content-details fadeIn-top">
+                                                    <span class="text-white font-weight-bold">Cookie Jar & Gourment Bakery</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 img-gallery px-2">
+                                            <a href="#" class="content">
+                                                <div class="content-overlay image"></div>
+                                                <img class="img-fluid mt-2 gall-img" src="images/Bioviva-Spa-1.jpg">
+
+                                                <div class="content-details fadeIn-top">
+                                                    <span class="text-white font-weight-bold">IBIS HOTEL</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 img-gallery px-2">
+                                            <a href="#" class="content">
+                                                <div class="content-overlay image"></div>
+                                                <img class="img-fluid mt-2 gall-img" src="images/Epe-Resort.jpg">
+                                                <div class="content-details fadeIn-top">
+                                                    <span class="text-white font-weight-bold">Hotel Du Golf</span>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-6 img-gallery px-2">
+                                            <a href="#" class="content">
+                                                <div class="content-overlay image"></div>
+                                                <img class="img-fluid mt-2 gall-img" src="images/Epe-Resort.jpg">
+                                                <div class="content-details fadeIn-top">
+                                                    <span class="text-white font-weight-bold">Hotel Du Golf</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </aside>
+                        </div>
+                        
+                    </div><!-- Main Wrapper -->
+                </div><!-- /Page Inner -->
+                <div class="page-right-sidebar" id="main-right-sidebar">
+                    <div class="page-right-sidebar-inner">
+                        <div class="right-sidebar-top">
+                            <span class="chat-header">Chat</span>
+                            <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="icon-close"></i></a>
+                        </div>
+                        <div class="right-sidebar-content">
+                            <!-- Tab panes -->
+                                <div class="chat-list">
+                                    <span class="chat-title">Recent</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="images/avatars/avatar1.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">David</span>
+                                            <span class="chat-text">Hello there!</span>
+                                            <span class="chat-time">16:20</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="images/avatars/avatar2.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Bob</span>
+                                            <span class="chat-text">Hello there!</span>
+                                            <span class="chat-time">11:34</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="chat-list">
+                                    <span class="chat-title">Older</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="images/avatars/avatar3.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Tom</span>
+                                            <span class="chat-text">Hello there!</span>
+                                            <span class="chat-time">2d</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="images/avatars/avatar4.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Anna</span>
+                                            <span class="chat-text">Hello there!</span>
+                                            <span class="chat-time">4d</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="images/avatars/avatar5.png" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Noah</span>
+                                            <span class="chat-text">Hello there!</span>
+                                            <span class="chat-time">&nbsp;</span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="load-more-messages"  data-toggle="tooltip" data-placement="bottom" title="Load More">&bull;&bull;&bull;</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-right-sidebar" id="chat-right-sidebar">
+                    <div class="page-right-sidebar-inner">
+                        <div class="right-sidebar-top">
+                            <div class="chat-top-info">
+                                <span class="chat-name">Noah</span>
+                                <span class="chat-state">2h ago</span>
+                            </div>
+                            <a href="javascript:void(0)" class="right-sidebar-toggle chat-sidebar-close float-right" data-sidebar-id="chat-right-sidebar"><i class="icon-keyboard_arrow_right"></i></a>
+                        </div>
+                        <div class="right-sidebar-content">
+                            <div class="right-sidebar-chat slimscroll">
+                                <div class="chat-bubbles">
+                                <div class="chat-start-date">02/06/2017 5:58PM</div>
+                                    <div class="chat-bubble them">
+                                        <div class="chat-bubble-img-container">
+                                            <img src="images/avatars/avatar1.png" alt="">
+                                        </div>
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">Hello</span>
+                                        </div>
+                                    </div>
+                                    <div class="chat-bubble me">
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">Hello!</span>
+                                        </div>
+                                    </div>
+                                <div class="chat-start-date">03/06/2017 4:22AM</div>
+                                    <div class="chat-bubble me">
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">lorem</span>
+                                        </div>
+                                    </div>
+                                    <div class="chat-bubble them">
+                                        <div class="chat-bubble-img-container">
+                                            <img src="images/avatars/avatar1.png" alt="">
+                                        </div>
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">ipsum dolor sit amet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-write">
+                                <form class="form-horizontal" action="javascript:void(0);">
+                                    <input type="text" class="form-control" placeholder="Say something">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /Page Content -->   
+        </div>
+
+        <!-- Compose Modal -->
+        <div class="modal fade" id="compose" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <form action="jhkjhkj" class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New Message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="form-group">
+                                <select class="js-example-basic-single w-100" name="state" id="select-contact">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message" id="mail-message" rows="3" maxlength="200"></textarea>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Reply Modal -->
+        <div class="modal fade" id="reply" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <form action="jhkjhkj" class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Reply</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message" id="mail-message" rows="3" maxlength="200"></textarea>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Promote your business</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="first_name" class="text-grey small">Business Name</label>
+                                    <input type="text" class="form-control mb-2" id="first_name" name="first_name" placeholder="Your Business Name" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="email" class="text-grey small">Business Email</label>
+                                    <input type="text" class="form-control mb-2" id="email" name="email" placeholder="Your Business Email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                
+                                <div class="form-group col-md-12">
+                                    <label for="mobile_number" class="text-grey small">Mobile Number</label>
+                                    <input id="phone" name="phone" type="tel" class="form-control mb-2" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Category</label>
+                                    <select type="text" class="form-control mb-2 font-12" id="gender" name="gender" placeholder="">
+                                        <option value="all">Catering</option>
+                                        <option value="abia">Fashion</option>
+                                        <option value="abj">Design</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Description</label>
+                                    <textarea class="form-control font-12" placeholder="Tell us about the service" rows="4" id="media-text"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-12">
+                                    <label for="gender" class="text-grey small">Service Image</label>
+                                    <div class="form-group" style="display: inline-flex;width: 100%">
+                                        <input id="uploadFile" placeholder="Upload Image" disabled="disabled" style="height: 40px;width: 80%;font-size: 14px" required/>
+                                        <div class="fileUpload">
+                                            <span>Upload</span>
+                                            <input id="uploadBtn" type="file" class="upload" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-green font-14 my-2 md-btn-block" id="profile">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/chart.js/dist/Chart.min.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/bselect.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+        <script src="js/concept.js"></script>
+        <script src="js/intlTelInput.js"></script>
+
+    </body>
+
+</html>

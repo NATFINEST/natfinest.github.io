@@ -5,3 +5,10 @@ p, h6{
     max-height: 510px;
     overflow: auto;
 }
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent;
+}
+.nav .show > a, .nav .show > a:hover, .nav .show > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
