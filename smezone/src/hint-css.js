@@ -212,7 +212,6 @@
           }
         }
         else if($(window).width() <= 991){
-          console.log($(window).width())
             $('.popular-post').removeClass('hint--left')
             //  if ($e.hasClass('hint--top')) {
             // return 's'
