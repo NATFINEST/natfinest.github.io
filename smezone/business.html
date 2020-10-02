@@ -29,6 +29,7 @@
     
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/mine.css">
+        <link rel="stylesheet" href="css/font.css">
     
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
          crossorigin="anonymous">
@@ -41,56 +42,75 @@
     <link rel="stylesheet" href="src/xsIcon.css">
 	    <style type="text/css">
 	    	.slider {
-    width: 80%;
-    margin: 40px auto;
-}
+			    width: 80%;
+			    margin: 40px auto;
+			}
 
-.slick-slide {
-  margin: 0px 20px;
-}
+			.slick-slide {
+			  margin: 0px 20px;
+			}
 
-.slick-slide img {
-  width: 100%;
-}
+			.slick-slide img {
+			  width: 100%;
+			}
 
-.slick-prev:before,
-.slick-next:before {
-  color: #009fe3;
-  font-weight: 600;
-  opacity: 1
-}
+			.slick-prev:before,
+			.slick-next:before {
+			  color: #009fe3;
+			  font-weight: 600;
+			  opacity: 1
+			}
 
-.discounts .slick-prev:before, .discounts .slick-next:before {
-  color: #fff;
-  font-weight: 600;
-  opacity: 1
-}
+			.discounts .slick-prev:before, .discounts .slick-next:before {
+			  color: #fff;
+			  font-weight: 600;
+			  opacity: 1
+			}
 
 
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
+			.slick-slide {
+			  transition: all ease-in-out .3s;
+			  opacity: .2;
+			}
 
-.slick-active {
-  opacity: 1;
-}
+			.slick-active {
+			  opacity: 1;
+			}
 
-.slick-current {
-  opacity: 1;
-}
+			.slick-current {
+			  opacity: 1;
+			}
 
-.slick-prev:before, .slick-next:before{
-  font-family: 'iconfont' !important;
-}
+			.slick-prev:before, .slick-next:before{
+			  font-family: 'iconfont' !important;
+			}
 
-.slick-prev:before {
-  content: "\e879"
-}
+			.slick-prev:before {
+			  content: "\e879"
+			}
 
-.slick-next:before {
-  content: "\e87a";
-}
+			.slick-next:before {
+			  content: "\e87a";
+			}
+
+			.modal{
+				text-align: center;
+			}
+
+			@media screen and (min-width: 768px) { 
+			  .modal:before {
+			    display: inline-block;
+			    vertical-align: middle;
+			    content: " ";
+			    height: 100%;
+			  }
+			}
+
+			.modal-dialog {
+			  display: inline-block;
+			  text-align: left;
+			  vertical-align: middle;
+			}
 	    </style>
     </head>
 	<body>
@@ -494,7 +514,7 @@
 
 	            <div class="container">
 					<div class="row">
-						<h3 class="light-blue" style="text-align: center;">Our Propostion</h3>
+						<h3 class="light-blue" style="text-align: center;">Our Propostions</h3>
 				        <div class="">
 				            <div >
 				                <div class="col-sm-6 col-md-3" >
@@ -732,8 +752,8 @@
 		</div>
 
 	    <!-- Claim Modal -->
-	    <div class="modal" id="claimModal" aria-labelledby="claimModalLabel">
-	        <div class="modal-dialog" role="document">
+	    <div class="modal fade" id="claimModal" aria-labelledby="claimModalLabel">
+	        <div class="modal-dialog modal-dialog-centered" role="document" style="width: 400px" >
 	            <div class="modal-content">
 	                <div class="modal-header">
 	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -742,20 +762,31 @@
 	                    <h5 class="modal-title" id="exampleModalLabel">BUSINESS DEBIT CARD OFFER</h5>
 	                </div>
 	                <div class="modal-body">
-	                    <form class="row business-form">
+	                    <form class="row claim-form" action="https://smeoffers.poshvine.com/">
 	                      <div class="form-group col-sm-12">
-	                        <label class="sr-only" for="acct">Account Number</label>
-	                        <input type="number" class="form-control" id="acct" placeholder="Account Number" maxlength="10" pattern="\d{10}" required>
+	                        <label class="sr-only small font-normal" for="acct">Account Number</label>
+	                        <input type="text" class="form-control" id="acct" placeholder="Account Number" maxlength="10" pattern="\d{10}" onkeypress='validate(event)' required>
 	                      </div>
 	                      <div class="form-group col-sm-12">
-	                        <label class="sr-only" for="bus-add">Last Four Digits of Business Debit Card</label>
-	                        <input type="text" class="form-control" id="bus-add" placeholder="Last Four Digits of Business Debit Card e.g 3447" maxlength="4" pattern="\d{4}" required>
-	                      </div>
+	                        <label class="small font-normal w-100" for="bus-add">First Eight Digits of Business Debit Card</label>
+	                        <div class="col-xs-3">
+		                        <input type="text" class="form-control inputs" id="bus-add" onkeypress='validate(event)' maxlength="4" pattern="\d{4}" required>
+		                    </div>
+		                    <div class="col-xs-3">
+		                        <input type="text" class="form-control inputs second" id="bus-add" onkeypress='validate(event)' maxlength="4" pattern="\d{4}" required>
+		                    </div>
+		                    <div class="col-xs-3">
+		                        <input type="text" class="form-control" id="bus-add" value="xxxx" disabled="" required>
+		                    </div>
+		                    <div class="col-xs-3">
+		                        <input type="text" class="form-control" id="bus-add" value="xxxx" disabled="" required>
+		                    </div>
+		                </div>
 	                      <div class="form-group col-sm-12 text-center">
 	                        <b>Don't have a business debit card? <a href="https://www.accessbankplc.com/Ways-To-Bank/Cards/Business-Debit-Card/apply-for-card" target="_blank">Apply for card</a></b>
 	                      </div>
 	                      <div class="form-group col-sm-12 text-center">
-		                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+		                        <button class="btn btn-dark btn-lg" type="submit">Submit</button>
 		                    </div>
 	                    </form>
 	                </div>
@@ -764,8 +795,8 @@
 	    </div>
 
 		<!-- Business Clinic Modal -->
-	    <div class="modal" id="myModal" aria-labelledby="myModalLabel">
-	        <div class="modal-dialog" role="document">
+	    <div class="modal fade" id="myModal" aria-labelledby="myModalLabel">
+	        <div class="modal-dialog modal-dialog-centered" style="width: 400px" role="document">
 	            <div class="modal-content">
 	                <div class="modal-header">
 	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -777,30 +808,27 @@
 	                    <form class="row business-form">
 	                    <input type="hidden" class="selected" name="selected" value="">
 	                      <div class="form-group col-sm-12">
-	                        <label class="sr-only" for="bus-name">Business Name</label>
+	                        <label class="sr-only small font-normal" for="bus-name">Business Name</label>
 	                        <input type="text" class="form-control" id="bus-name" placeholder="Business Name" required>
 	                      </div>
 	                      <div class="form-group col-sm-12">
-	                        <label class="sr-only" for="per-name">Email Address </label>
+	                        <label class="sr-only small font-normal" for="per-name">Email Address </label>
 	                        <input type="email" class="form-control" id="per-name" placeholder="Email Address " required>
 	                      </div>
 	                      <div class="form-group col-sm-12">
-	                        <label class="sr-only" for="phone">Phone No:</label>
-	                        <input type="text" class="form-control" id="phone" placeholder="Phone No" required>
+	                        <label class="sr-only small font-normal" for="phone">Phone No:</label>
+	                        <input type="text" class="form-control" onkeypress='validate(event)' maxlength="11" id="phone" placeholder="Phone No" required>
 	                      </div>
 	                      <div class="form-group col-sm-12">
-	                        <label class="sr-only" for="acct">Account Number</label>
-	                        <input type="number" class="form-control" id="acct" placeholder="Account Number" maxlength="10" pattern="\d{10}" required>
+	                        <label class="sr-only small font-normal" for="acct">Account Number</label>
+	                        <input type="text" class="form-control" id="acct" placeholder="Account Number" maxlength="10" size="10" pattern="\d{10}" onkeypress='validate(event)' required>
 	                      </div>
-	                      <div class="form-group col-sm-12">
-	                        <label class="sr-only" for="bus-add">Last Four Digits of Business Debit Card</label>
-	                        <input type="text" class="form-control" id="bus-add" placeholder="Last Four Digits of Business Debit Card e.g 3447" maxlength="4" pattern="\d{4}" required>
-	                      </div>
+	                      
 	                      <div class="form-group col-sm-12 text-center">
 	                        <b>Don't have a business debit card? <a href="https://www.accessbankplc.com/Ways-To-Bank/Cards/Business-Debit-Card/apply-for-card" target="_blank">Apply for card</a></b>
 	                      </div>
 	                      <div class="form-group col-sm-12 text-center">
-	                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+	                        <button id="submit" class="btn btn-dark btn-lg">Submit</button>
 	                    </div>
 	                    </form>
 	                </div>
@@ -819,6 +847,7 @@
 		<script type="text/javascript" src="js/init.js"></script>
 		<script src="src/hint-css.js"></script>
         <script src="src/slick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 		<script>
 			$(function () {
 			  $('[data-toggle="tooltip"]').tooltip()
@@ -862,6 +891,65 @@
                   ]
                 });
             })
+            function validate(evt) {
+			  var theEvent = evt || window.event;
+
+			  // Handle paste
+			  if (theEvent.type === 'paste') {
+			      key = event.clipboardData.getData('text/plain');
+			  } else {
+			  // Handle key press
+			      var key = theEvent.keyCode || theEvent.which;
+			      key = String.fromCharCode(key);
+			  }
+			  var regex = /[0-9]|\./;
+			  if( !regex.test(key) ) {
+			    theEvent.returnValue = false;
+			    if(theEvent.preventDefault) theEvent.preventDefault();
+			  }
+			}
+			$(function() {
+			    $(".inputs").keyup(function () {
+			        if (this.value.length == this.maxLength) {
+					  var $next = $(this).parent().parent().next().find(".inputs")
+					  if ($next.length)
+					      $(this).next('.inputs').focus();
+					  else
+					      $('.second').focus();
+					      $(this).blur();
+					}
+			    });
+			});
+		    $(document).on('submit','form.business-form',function(e){
+				e.preventDefault()
+				Swal.showLoading({
+					title: 'Processing'
+				})
+				$.ajax({
+		            url: 'https://reqres.in/api/users',
+		            dataType: 'json',
+		            type: 'post',
+		            contentType: 'application/json',
+		            data: JSON.stringify({'message':'-1'}),
+		            processData: false,
+		            success: function( data, textStatus, jQxhr ){
+		                Swal.fire({
+						  title: 'Success!',
+						  text: 'Your Request was successful. You will be contacted shortly',
+						  icon: 'success'
+						})
+				        $('#myModal').modal('hide')
+		            },
+		            error: function( jqXhr, textStatus, errorThrown ){
+		                Swal.fire({
+						  title: 'Error!',
+						  text: 'An error occured while processing request! Please try again',
+						  icon: 'error'
+						})
+						$('#applyModal').modal('hide');
+		            }
+		        });
+			});
 		</script>
 	</body>
 </html>
