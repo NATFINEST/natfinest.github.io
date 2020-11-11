@@ -272,12 +272,10 @@
                                             <img alt="image" class="img" src="src/7085.jpg">
                                             <h3 class="m-b-xs"><strong>Courier service <br></strong></h3>
 
-                                            <div class="font-bold">Get up to 20% off your delivery to your customers via Fedex, DHL, GIG.<br></div>
+                                            <div class="font-bold">Get up to 20% off your delivery to your customers via Red Star Express.<br></div>
 
-                                            <div class="row" style="margin-bottom: 10px">
-                                                <div class="col-md-4 col-xs-6"><img style="width: 100%" src="https://cdn.freebiesupply.com/logos/large/2x/fedex-logo-png-transparent.png"></div>
-                                                <div class="col-md-4 col-xs-6"><img style="width: 100%" src="https://getbyrd.com/wp-content/uploads/DHL-LOGO.jpg"></div>
-                                                <div class="col-md-4 col-xs-6"><img style="width: 100%" src="https://giglogistics.ng/wp-content/uploads/2018/01/GIGL-GIG-LOGISTICS-LOGO-HQ.png"></div>
+                                            <div class="row" style="margin-top: 10px">
+                                                <div class="col-md-12"><img style="width: 100%" src="images/redstar.jpeg"></div>
                                             </div>
 
                                             <br>
@@ -903,7 +901,7 @@
                                 <input type="text" class="form-control" id="acct" placeholder="Account Number" maxlength="10" size="10" pattern="\d{10}" onkeypress='validate(event)' required>
                             </div>
                             <div class="form-group col-sm-12">
-                                <label class="sr-only small font-normal" for="acct">Do you have an aceess business card</label>
+                                <label class="sr-only small font-normal" for="acct">Do you have an aceess business card?</label>
                                 <select class="cselect" required>
 								  <option value="">Do you have an aceess business card?</option>
 								  <option value="1">Yes</option>
@@ -927,6 +925,11 @@
                                 </div>
                                 <br><br>
                             </div>
+
+                            <div class="form-group col-sm-12 c2 text-center" style="display: none;">
+                                <a href="https://www.accessbankplc.com/Ways-To-Bank/Cards/Business-Debit-Card/apply-for-card" target="_blank"><b>Click here to register for the business debit card to enjoy this offer</b></a>
+                            </div>
+
                             <div class="form-group col-sm-12 text-center">
                                 <button id="submit" class="btn btn-dark btn-lg">Submit</button>
                             </div>
@@ -1001,10 +1004,17 @@
                     $('.selected').val(modalTitle)
                 });
                 $('.cselect').on('change',function(){
-                	$('.c1').hide();
+                    $('.c1').hide();
+                	$('.c2').hide();
                 	val = $(this).val();
-                	if (val == 1)
+                	if (val == 1){
                 		$('.c1').show();
+                        $("#submit").removeAttr('disabled')
+                    }
+                    else{
+                        $('.c2').show();
+                        $("#submit").attr('disabled','true')
+                    }
                 })
                 $(document).ready(function() {
 
