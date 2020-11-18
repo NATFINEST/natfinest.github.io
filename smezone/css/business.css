@@ -1,0 +1,143 @@
+.slider {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.intro-block .slick-slide {
+    margin: 0;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #009fe3;
+    font-weight: 600;
+    opacity: 1
+}
+
+.discounts .slick-prev:before,
+.discounts .slick-next:before {
+    color: #fff;
+    font-weight: 600;
+    opacity: 1
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'iconfont' !important;
+}
+
+.slick-prev:before {
+    content: "\e879"
+}
+
+.slick-next:before {
+    content: "\e87a";
+}
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* CONTACTS */
+
+.contact-box {
+    background-color: #ffffff;
+    border: 1px solid #e7eaec;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform .4s;
+}
+
+.contact-box:hover {
+    transform: scale(1.1);
+}
+
+.contact-box>div {
+    color: inherit;
+}
+
+.contact-box.center-version {
+    border: 1px solid #e7eaec;
+    padding: 0;
+}
+
+.contact-box.center-version>div {
+    display: block;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-box.center-version>div img {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-box.center-version address {
+    margin-bottom: 0;
+}
+
+.contact-box .contact-box-footer {
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e7eaec;
+    padding: 15px 20px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.nice-select{
+	width: 100%!important;
+}
+
+.intro-block-slide-2{
+    min-height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 740px){
+    .intro-block-slide-2{
+        min-height: 25vh;
+    }
+}
