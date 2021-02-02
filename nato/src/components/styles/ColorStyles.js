@@ -13,7 +13,7 @@ export const themes = {
   },
   tetiary: {
     main: "#fff",
-    light: "#eee",
+    light: "#ede7ff",
     dark: "#ccc",
     text: "#000",
   },

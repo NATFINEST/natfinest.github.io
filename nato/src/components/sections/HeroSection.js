@@ -44,9 +44,10 @@ const ContentWrapper = styled.div`
   padding: 80px 10px;
   max-width: 1234px;
   display: grid;
-  grid-template-columns: 450px auto;
+  grid-template-columns: auto auto;
   justify-content: space-between;
   margin: 0 auto;
+  gap: 120px;
 
   @media (max-width: 996px) {
     grid-template-columns: auto;
@@ -59,18 +60,19 @@ const ContentWrapper = styled.div`
 `
 const TextWrapper = styled.div`
   display: grid;
-  gap: 30px;
+  gap: 0px;
 `
 
 const Title = styled.h1`
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
   line-height: 60px;
 `
 
 const Description = styled.p`
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: normal;
+  line-height: 30px;
 `
 
 const WorksButton = styled(Button)``
