@@ -1,17 +1,17 @@
-import React from "react"
-import styled from "styled-components"
-import { servicesData } from "../../data/ServicesData"
-import { themes } from "../styles/ColorStyles"
+import React from "react";
+import styled from "styled-components";
+import { servicesData } from "../../data/ServicesData";
+import { themes } from "../styles/ColorStyles";
 
 export default function AboutSection(props) {
-  const { id } = props
+  const { id } = props;
 
   return (
     <Wrapper id={id}>
       <ContentWrapper>
         <ServiceWrapper>
           <Caption>Services</Caption>
-          <Title>My Services</Title>
+          <Title>My Service</Title>
           <HR />
           <ServiceList>
             {servicesData.map((item, index) => (
@@ -25,13 +25,13 @@ export default function AboutSection(props) {
         </ServiceWrapper>
       </ContentWrapper>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.div`
   background: ${themes.tetiary.light};
   color: black;
-`
+`;
 const ContentWrapper = styled.div`
   padding: 80px 10px;
   max-width: 1234px;
@@ -50,13 +50,13 @@ const ContentWrapper = styled.div`
     margin: 0 auto;
     padding: 50px 10px;
   }
-`
+`;
 const ServiceWrapper = styled.div`
   display: grid;
   align-items: center;
   gap: 25px;
   text-align: center;
-`
+`;
 
 const Caption = styled.h2`
   font-size: 16px;
@@ -69,25 +69,25 @@ const Caption = styled.h2`
   margin: 0 auto;
   @media (max-width: 996px) {
   }
-`
+`;
 
 const Title = styled.h2`
   font-size: 30px;
   font-weight: bold;
-`
+`;
 
 const ServiceList = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 30px;
   padding: 10px 0;
-`
+`;
 const ServiceNumber = styled.div`
   font-size: 40px;
   font-weight: bold;
   color: ${themes.primary.main};
   padding: 0 0 20px;
-`
+`;
 
 const ServiceItem = styled.div`
   background: ${themes.tetiary.main};
@@ -96,19 +96,19 @@ const ServiceItem = styled.div`
   padding: 30px;
   display: grid;
   gap: 10px;
-`
+`;
 const ServiceTitle = styled.div`
   font-size: 20px;
   font-weight: bold;
-`
+`;
 const ServiceValue = styled.div`
   font-size: 16px;
   opacity: 0.5;
   padding: 0 0 7px;
-`
+`;
 const HR = styled.div`
   background: ${themes.primary.light};
   width: 50px;
   height: 5px;
   margin: 0 auto;
-`
+`;
