@@ -11,7 +11,7 @@ export default function AboutSection(props) {
       <ContentWrapper>
         <ServiceWrapper>
           <Caption>Services</Caption>
-          <Title>My Service</Title>
+          <Title>My Services</Title>
           <HR />
           <ServiceList>
             {servicesData.map((item, index) => (
