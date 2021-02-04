@@ -1,20 +1,20 @@
 // import React from "react"
-import Button from "../buttons/Button"
-import styled from "styled-components"
-import { Link as LinkTo } from "react-scroll"
-import React, { useState, useLayoutEffect } from "react"
+import Button from "../buttons/Button";
+import styled from "styled-components";
+import { Link as LinkTo } from "react-scroll";
+import React, { useState, useLayoutEffect } from "react";
 
 export default function BackToTop() {
-  const [scrollPosition, setPosition] = useState(0)
+  const [scrollPosition, setPosition] = useState(0);
 
   useLayoutEffect(() => {
     function updatePosition() {
-      setPosition(window.pageYOffset)
+      setPosition(window.pageYOffset);
     }
-    window.addEventListener("scroll", updatePosition)
-    updatePosition()
-    return () => window.removeEventListener("scroll", updatePosition)
-  }, [])
+    window.addEventListener("scroll", updatePosition);
+    updatePosition();
+    return () => window.removeEventListener("scroll", updatePosition);
+  }, []);
 
   return (
     <ButtonWrapper display={scrollPosition > 100 ? "block" : "none"}>
@@ -31,7 +31,7 @@ export default function BackToTop() {
         {/* <BackToTopButton position={scrollPosition} /> */}
       </LinkTo>
     </ButtonWrapper>
-  )
+  );
 }
 
 const ButtonWrapper = styled.div`
@@ -39,6 +39,7 @@ const ButtonWrapper = styled.div`
   bottom: 20px;
   right: 20px;
   transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  display: ${props => props.display};
-`
-const BackToTopButton = styled(Button)``
+  display: ${(props) => props.display};
+  z-index: 3;
+`;
+const BackToTopButton = styled(Button)``;

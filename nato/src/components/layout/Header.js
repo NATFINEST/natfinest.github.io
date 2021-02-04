@@ -1,21 +1,21 @@
-import { Link as LinkTo } from "react-scroll"
-import React, { useState, useLayoutEffect } from "react"
-import styled from "styled-components"
-import { menuData } from "../../data/MenuData"
-import Button from "../buttons/Button"
-import { themes } from "../styles/ColorStyles"
+import { Link as LinkTo } from "react-scroll";
+import React, { useState, useLayoutEffect } from "react";
+import styled from "styled-components";
+import { menuData } from "../../data/MenuData";
+import Button from "../buttons/Button";
+import { themes } from "../styles/ColorStyles";
 
 export default function Header() {
-  const [scrollPosition, setPosition] = useState(0)
+  const [scrollPosition, setPosition] = useState(0);
 
   useLayoutEffect(() => {
     function updatePosition() {
-      setPosition(window.pageYOffset)
+      setPosition(window.pageYOffset);
     }
-    window.addEventListener("scroll", updatePosition)
-    updatePosition()
-    return () => window.removeEventListener("scroll", updatePosition)
-  }, [])
+    window.addEventListener("scroll", updatePosition);
+    updatePosition();
+    return () => window.removeEventListener("scroll", updatePosition);
+  }, []);
 
   return (
     <Wrapper
@@ -44,15 +44,15 @@ export default function Header() {
         </MenuWrapper>
       </ContentWrapper>
     </Wrapper>
-  )
+  );
 }
 const Wrapper = styled.div`
   background: ${themes.primary.main};
   color: ${themes.primary.text};
-  position: ${props => props.position};
+  position: ${(props) => props.position};
   width: 100%;
-  z-index: 1;
-`
+  z-index: 9;
+`;
 
 const ContentWrapper = styled.div`
   width: 100%;
@@ -63,15 +63,15 @@ const ContentWrapper = styled.div`
   margin: 0 auto;
   align-items: center;
   padding: 10px;
-`
+`;
 const LogoWrapper = styled.div`
   img {
     height: 50px;
   }
-`
+`;
 const MenuWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(${props => props.count}, auto);
+  grid-template-columns: repeat(${(props) => props.count}, auto);
   gap: 30px;
   align-items: center;
   cursor: pointer;
@@ -108,10 +108,10 @@ const MenuWrapper = styled.div`
       height: 4px;
     }
   }
-`
-const MenuItem = styled.div``
+`;
+const MenuItem = styled.div``;
 
 const HireButton = styled(Button)`
   background: ${themes.primary.text};
   color: ${themes.primary.main};
-`
+`;
