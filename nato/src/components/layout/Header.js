@@ -37,10 +37,13 @@ export default function Header() {
               offset={0}
               duration={500}
             >
-              <MenuItem>{item.title}</MenuItem>
+              {item.link === "/contact" ? (
+                <HireButton title="Hire Me" />
+              ) : (
+                <MenuItem>{item.title}</MenuItem>
+              )}
             </LinkTo>
           ))}
-          <HireButton title="Hire Me" link="/hire" />
         </MenuWrapper>
       </ContentWrapper>
     </Wrapper>
@@ -80,7 +83,7 @@ const MenuWrapper = styled.div`
     position: relative;
     *,
     & {
-      transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     :after {
@@ -107,6 +110,12 @@ const MenuWrapper = styled.div`
       width: 100%;
       height: 4px;
     }
+  }
+
+  a.active:last-child:after,
+  a:last-child:hover:after {
+    width: 0;
+    height: 0;
   }
 `;
 const MenuItem = styled.div``;
