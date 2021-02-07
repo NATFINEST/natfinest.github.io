@@ -15,4 +15,8 @@ export const menuData = [
     title: "Portfolio",
     link: "/portfolio",
   },
-]
+  {
+    title: "Hire Me",
+    link: "/contact",
+  },
+];

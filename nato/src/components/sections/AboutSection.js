@@ -1,14 +1,16 @@
-import React from "react"
-import styled from "styled-components"
-import { bioData } from "../../data/BioData"
-import Button from "../buttons/Button"
-import { themes } from "../styles/ColorStyles"
+import React from "react";
+import styled from "styled-components";
+import { bioData } from "../../data/BioData";
+import Button from "../buttons/Button";
+import { themes } from "../styles/ColorStyles";
+import { WhiteWrapper } from "../wrappers/Wrapper";
+import { ContentWrapper } from "../wrappers/ContentWrapper";
 
 export default function AboutSection(props) {
-  const { id } = props
+  const { id } = props;
 
   return (
-    <Wrapper id={id}>
+    <WhiteWrapper id={id}>
       <ContentWrapper>
         <ImageWrapper>
           <Image>
@@ -41,38 +43,15 @@ export default function AboutSection(props) {
           />
         </TextWrapper>
       </ContentWrapper>
-    </Wrapper>
-  )
+    </WhiteWrapper>
+  );
 }
 
-const Wrapper = styled.div`
-  background: white;
-  color: black;
-`
-const ContentWrapper = styled.div`
-  padding: 80px 10px;
-  max-width: 1234px;
-  display: grid;
-  grid-template-columns: 450px auto;
-  justify-content: space-between;
-  margin: 0 auto;
-  gap: 30px;
-  align-items: center;
-
-  @media (max-width: 996px) {
-    grid-template-columns: auto;
-    gap: 10px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 50px 10px;
-  }
-`
 const TextWrapper = styled.div`
   display: grid;
   align-items: center;
   gap: 20px;
-`
+`;
 
 const Caption = styled.h2`
   font-size: 16px;
@@ -85,39 +64,39 @@ const Caption = styled.h2`
   @media (max-width: 996px) {
     margin: 0 auto;
   }
-`
+`;
 
 const Title = styled.h2`
   font-size: 30px;
   font-weight: bold;
-`
+`;
 
 const Description = styled.p`
   font-size: 16px;
   font-weight: lighter;
-`
+`;
 
 const ImageWrapper = styled.div`
   margin: 0 auto;
-`
+`;
 
 const BioList = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   gap: 30px;
-`
-const BioItem = styled.div``
+`;
+const BioItem = styled.div``;
 const BioTitle = styled.div`
   font-size: 20px;
   font-weight: bold;
-`
+`;
 const BioValue = styled.div`
   font-size: 16px;
   opacity: 0.5;
   padding: 0 0 7px;
-`
+`;
 
-const CVButton = styled(Button)``
+const CVButton = styled(Button)``;
 
 const Image = styled.div`
   position: relative;
@@ -134,4 +113,4 @@ const Image = styled.div`
     width: 350px;
     height: 350px;
   }
-`
+`;

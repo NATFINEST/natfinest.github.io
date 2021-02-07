@@ -1,25 +1,37 @@
-import React from "react"
-import styled from "styled-components"
-import Button from "../buttons/Button"
-import { Ring } from "../ring/Ring"
-import { themes } from "../styles/ColorStyles"
+import React from "react";
+import styled from "styled-components";
+import Button from "../buttons/Button";
+import { Ring } from "../ring/Ring";
+import { themes } from "../styles/ColorStyles";
+import { DarkWrapper } from "../wrappers/Wrapper";
+import { ContentWrapper } from "../wrappers/ContentWrapper";
+import { Link as LinkTo } from "react-scroll";
 
 export default function HeroSection(props) {
-  const { id } = props
+  const { id } = props;
 
   return (
-    <Wrapper id={id}>
-      <ContentWrapper>
+    <DarkWrapper id={id}>
+      <HeroWrapper>
         <TextWrapper>
           <Title>
             I'm <br /> Odukpahie Nathanael
           </Title>
           <Description>
-            Always new beginnings can move the business forward.A user
+            Always new beginnings can move the business forward. A user
             experience is required before service. Now is a great opportunity to
             work with me and move your brand forward.
           </Description>
-          <WorksButton title="View More" link="/" />
+          <LinkTo
+            activeClass="active"
+            to="Portfolio"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <WorksButton title="View Works" />
+          </LinkTo>
         </TextWrapper>
 
         <ImageWrapper>
@@ -31,55 +43,46 @@ export default function HeroSection(props) {
             </Ring>
           </Image>
         </ImageWrapper>
-      </ContentWrapper>
-    </Wrapper>
-  )
+      </HeroWrapper>
+    </DarkWrapper>
+  );
 }
 
-const Wrapper = styled.div`
-  background: black;
-  color: white;
-`
-const ContentWrapper = styled.div`
-  padding: 80px 10px;
-  max-width: 1234px;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  margin: 0 auto;
-  gap: 120px;
-
-  @media (max-width: 996px) {
-    grid-template-columns: auto;
-    gap: 60px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 50px 10px;
+const HeroWrapper = styled(ContentWrapper)`
+  @media (min-width: 996px) {
+    grid-template-columns: auto auto;
   }
-`
+  gap: 20px;
+`;
+
 const TextWrapper = styled.div`
   display: grid;
-  gap: 0px;
-`
+  gap: 40px;
+
+  @media (max-width: 996px) {
+    a {
+      margin: 0 auto;
+    }
+  }
+`;
 
 const Title = styled.h1`
   font-size: 55px;
   font-weight: bold;
   line-height: 60px;
-`
+`;
 
 const Description = styled.p`
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
-`
+`;
 
-const WorksButton = styled(Button)``
+const WorksButton = styled(Button)``;
 
 const ImageWrapper = styled.div`
   margin: 0 auto;
-`
+`;
 
 const Image = styled.div`
   position: relative;
@@ -96,4 +99,4 @@ const Image = styled.div`
     width: 350px;
     height: 350px;
   }
-`
+`;

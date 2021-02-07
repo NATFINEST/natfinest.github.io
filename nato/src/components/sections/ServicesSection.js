@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { servicesData } from "../../data/ServicesData";
 import { themes } from "../styles/ColorStyles";
+import { LightWrapper } from "../wrappers/Wrapper";
+import { ContentWrapper } from "../wrappers/ContentWrapper";
 
-export default function AboutSection(props) {
+export default function ServicesSection(props) {
   const { id } = props;
 
   return (
-    <Wrapper id={id}>
+    <LightWrapper id={id}>
       <ContentWrapper>
         <ServiceWrapper>
           <Caption>Services</Caption>
@@ -15,9 +17,9 @@ export default function AboutSection(props) {
           <HR />
           <ServiceList>
             {servicesData.map((item, index) => (
-              <ServiceItemWrapper>
-                <ServiceItem key={index}>
-                  <img src={item.image} />
+              <ServiceItemWrapper key={index}>
+                <ServiceItem>
+                  <img src={item.image} alt={item.title} />
                   <ServiceNumber>0{index + 1}</ServiceNumber>
                   <ServiceTitle>{item.title}:</ServiceTitle>
                   <ServiceValue>{item.description}</ServiceValue>
@@ -31,33 +33,9 @@ export default function AboutSection(props) {
           </ServiceList>
         </ServiceWrapper>
       </ContentWrapper>
-    </Wrapper>
+    </LightWrapper>
   );
 }
-
-const Wrapper = styled.div`
-  background: ${themes.tetiary.light};
-  color: black;
-`;
-const ContentWrapper = styled.div`
-  padding: 80px 10px;
-  max-width: 1234px;
-  display: grid;
-  justify-content: space-between;
-  margin: 0 auto;
-  gap: 30px;
-  align-items: center;
-  width: 100%;
-
-  @media (max-width: 996px) {
-    grid-template-columns: auto;
-    gap: 10px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 50px 40px;
-  }
-`;
 const ServiceWrapper = styled.div`
   display: grid;
   align-items: center;
