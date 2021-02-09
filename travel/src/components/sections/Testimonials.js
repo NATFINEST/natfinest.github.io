@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Testimonials = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query {
       allFile(
         filter: {
           ext: { regex: "/(jpg)|(png)|(jpeg)/" }
@@ -16,9 +16,9 @@ const Testimonials = () => {
       ) {
         edges {
           node {
-            childrenImageSharp {
+            childImageSharp {
               fluid {
-                src
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -34,20 +34,32 @@ const Testimonials = () => {
         <ContentWrapper>
           <ColumnOne>
             <Testimonial>
-              <IoMdCheckmarkCircleOutline />
-              <h3>Sean Micheal</h3>
+              <FaRegLightbulb
+                css={`
+                  color: #f9b19b;
+                  font-size: 2rem;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Sarah Kim</h3>
               <p>"The greatest experience of my lifetime"</p>
             </Testimonial>
             <Testimonial>
-              <FaRegLightbulb />
-              <h3>Sarah Kim</h3>
+              <IoMdCheckmarkCircleOutline
+                css={`
+                  color: #3fffa8;
+                  font-size: 2rem;
+                  margin-bottom: 1rem;
+                `}
+              />
+              <h3>Sean Micheal</h3>
               <p>"The greatest experience of my lifetime"</p>
             </Testimonial>
           </ColumnOne>
 
           <ColumnTwo>
             {data.allFile.edges.map((image, key) => (
-              <Image key={key} fluid={image.node.childrenImageSharp.fluid} />
+              <Images key={key} fluid={image.node.childImageSharp.fluid} />
             ))}
           </ColumnTwo>
         </ContentWrapper>
@@ -89,7 +101,7 @@ const ContentWrapper = styled.div`
 `
 const ColumnOne = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 `
 const Testimonial = styled.div`
   padding-top: 1rem;
@@ -116,7 +128,7 @@ const ColumnTwo = styled.div`
   }
 `
 
-const Image = styled(Img)`
+const Images = styled(Img)`
   border-radius: 10px;
   height: 100%;
 `
