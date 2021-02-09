@@ -33,7 +33,6 @@ const Trips = ({ heading }) => {
       tripsArray.push(
         <ProductCard key={index}>
           <ProductImage
-            src={items.node.img.childImageSharp.fluid.src}
             alt={items.node.alt}
             fluid={items.node.img.childImageSharp.fluid}
           />
