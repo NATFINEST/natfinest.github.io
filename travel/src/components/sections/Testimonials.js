@@ -3,8 +3,29 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 import { FaRegLightbulb } from "react-icons/fa"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Testimonials = () => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allFile(
+        filter: {
+          ext: { regex: "/(jpg)|(png)|(jpeg)/" }
+          name: { in: ["testimonial-1", "testimonial-2"] }
+        }
+      ) {
+        edges {
+          node {
+            childrenImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
   return (
     <div>
       <TestimonialsContainer>
@@ -25,16 +46,9 @@ const Testimonials = () => {
           </ColumnOne>
 
           <ColumnTwo>
-            <Testimonial>
-              <IoMdCheckmarkCircleOutline />
-              <h3>Sean Micheal</h3>
-              <p>"The greatest experience of my lifetime"</p>
-            </Testimonial>
-            <Testimonial>
-              <FaRegLightbulb />
-              <h3>Sarah Kim</h3>
-              <p>"The greatest experience of my lifetime"</p>
-            </Testimonial>
+            {data.allFile.edges.map((image, key) => (
+              <Image key={key} fluid={image.node.childrenImageSharp.fluid} />
+            ))}
           </ColumnTwo>
         </ContentWrapper>
       </TestimonialsContainer>
@@ -102,7 +116,7 @@ const ColumnTwo = styled.div`
   }
 `
 
-const Images = styled(Img)`
+const Image = styled(Img)`
   border-radius: 10px;
   height: 100%;
 `
