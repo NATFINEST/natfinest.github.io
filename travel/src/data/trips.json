@@ -1,0 +1,26 @@
+[
+  {
+    "img": "../assets/images/travel-1.jpg",
+    "alt": "tian Tan Budha",
+    "name": "tian Tan Budha",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-2.jpg",
+    "alt": "Ad Deir",
+    "name": "Ad Deir",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-3.jpg",
+    "alt": "Lagos Nigeria",
+    "name": "Lagos Nigeria",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-4.jpg",
+    "alt": "Waterfall",
+    "name": "Waterfall",
+    "button": "View Destination"
+  }
+]
