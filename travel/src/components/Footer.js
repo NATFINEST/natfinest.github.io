@@ -27,4 +27,5 @@ const FooterContainer = styled.div``
 const FooterLinksWrapper = styled.div``
 const FooterDescription = styled.div``
 const FooterLinkTitle = styled.div``
+const FooterLinksItems = styled.div``
 const FooterLink = styled.div``
