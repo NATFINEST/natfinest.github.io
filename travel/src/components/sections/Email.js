@@ -1,17 +1,37 @@
 import React from "react"
 import styled from "styled-components"
 import EmailBG from "../../assets/images/email-2.jpg"
+import { Button } from "../Button"
 const Email = () => {
   return (
     <EmailContainer>
       <EmailContent>
         <h1>Get Access to Exclusive Offers</h1>
-        <p>Signup fro your news;letter below to get $100</p>
+        <p>Signup for your news;letter below to get $100</p>
         <form action="#">
           <FormWrap>
             <label htmlFor="email">
               <input type="email" placeholder="Enter your email" id="email" />
             </label>
+            <Button
+              as="button"
+              type="submit"
+              primary="true"
+              round="true"
+              css={`
+                height: 40px;
+                @media screen and (max-width: 760px) {
+                  width: 100%;
+                  min-width: 350px;
+                }
+                @media screen and (max-width: 400px) {
+                  width: 100%;
+                  min-width: 250px;
+                }
+              `}
+            >
+              Sign Up
+            </Button>
           </FormWrap>
         </form>
       </EmailContent>
@@ -25,7 +45,7 @@ const EmailContainer = styled.div`
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.5) 35%,
+      rgba(0, 0, 0, 0.5) 15%,
       rgba(0, 0, 0, 0.1) 100%
     ),
     url(${EmailBG});
@@ -40,7 +60,8 @@ const EmailContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  color: #fff;
+  gap: 30px;
   h1 {
     text-align: center;
     margin-bottom: 1rem;
