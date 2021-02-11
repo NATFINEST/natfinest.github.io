@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Travel Website`,
+    title: `BetaTravel`,
     description: `Simple Travel Website built with React and Gatsby`,
     author: `@natfinest`,
   },
@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-ico.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-json`,
