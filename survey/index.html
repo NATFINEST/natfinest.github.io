@@ -8,40 +8,58 @@
     <style type="text/css">
       * {
         font-family: 'Open Sans', sans-serif;
+        color: #000;
       }
-      .btn-primary {
-        color: #fff;
-        background-color: #016FB2;
-        border-color: #016FB2;
-    }
-    .text-primary{
-      color: #016FB2!important;
-    }
+      .sv_main.sv_frame .sv_container{
+          max-width:100%;
+      }
+      #survey{
+        top:0!Important;
+        padding-bottom: 10px;
+       }
+      .sv_main.sv_default_css input[type="button"], 
+      .sv_default_css button{
+         font-size: 16px;
+         margin-bottom: 20px;
+       }
     </style>
 </head>
 <body>
-	<section class="text-center my-5">
+	<section class="text-center my-3">
     <div class="container">
-      <h2 class="jumbotron-heading mb-4">Welcome to LIMA Maintainabilty Survey</h2>
+      <h2 class="jumbotron-heading mb-4">Welcome to the heuristics evaluation of PRIMCO</h2>
       <h5 class="mb-4">
-      	This survey attempt to evaluate the improvement in the maintaianabilty LIMA.
+      	This survey attempt to evaluate usability issues in PRIMCO's prototype.
       </h5>
       <h6 class="mb-4">
-        In each case, two samples (A and B) will be provided and follow-up questions will be asked.
+        Feel free to interact with the design prototype displayed below.
       </h6>
       <h6 class="mb-4">
-      	We would love your personal opinion based on your programming experience.
+      	Having satisfactory evaluated the design, click Next for further instructions.
       </h6>
     </div>
   </section>
 
   <section class="text-center my-5">
     <div class="container">
-      <h4 class="jumbotron-heading mb-4">A Sample is shown below</h4>
-      <div>
-        <img src="sample-question.png" class="w-100">
-      </div>    
+      <iframe class="clickup-embed" src="https://natfinest.github.io/civic/index.html" onwheel="" width="500px" height="700px" style="background: transparent; border: 1px solid #ccc;"></iframe>
     </div>
   </section>
+
+  <section class="my-3">
+    <div class="container">
+      <h5 class="jumbotron-heading mb-3">On the next couple of slides, You would be required to evaluate the prototype based on 10  Nielsen's Heuristics.</h5>
+      <h6 class="jumbotron-heading mb-3">Kindly ensure you provide an honest remark based on your personal opinion.</h6>
+      <h6 class="jumbotron-heading mb-3">For each heuristic, you will be provided with a list of questions, to which three options are provided <b>Yes</b>, <b>No</b> or <b>N/A</b>.</h6>
+      <h6 class="mb-3">Kindly provide specific and consise comment to all questions. This will help us understand your reasoning.</h6>
+    </div>
+  </section>
+
+  <section class="my-3">
+    <div class="container">
+      <h5 class="jumbotron-heading mb-3">An example is show below</h4>
+    </div>
+  </section>
+
 </body>
 </html>
