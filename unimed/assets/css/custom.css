@@ -1,0 +1,108 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap';
+:root {
+	--main: #2cbba9;
+	--domain: #009688;
+	--light: #e1fff7;
+	--dark: #29303a;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+	color: var(--domain)!important;
+}
+
+.bg-main {
+	background: var(--main);
+}
+
+.bg-light {
+	background: var(--light);
+}
+
+.bg-dark {
+	background: var(--dark);
+}
+
+.text-main {
+	color: var(--main);
+}
+
+.text-light {
+	color: var(--light);
+}
+
+.text-dark {
+	color: var(--dark);
+}
+
+.font-20{
+	font-size: 20px;
+}
+
+.font-25{
+	font-size: 25px;
+}
+
+.font-35{
+	font-size: 35px;
+}
+
+.font-40{
+	font-size: 40px;
+}
+
+.font-55{
+	font-size: 55px;
+}
+
+.font-bold{
+	font-weight: bold!important;
+}
+
+.btn-primary{
+	background: var(--main);
+	color: #fff!important;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+	background: var(--domain);
+	color: #fff!important;
+}
+
+.form-control{
+	border: 1px solid #ccc!important;
+}
+
+.bottom-0{
+	bottom: 0;
+}
+
+.z-1{
+	z-index: 1;
+}
+
+.cursor{
+	cursor: pointer;
+}
+
+.verify-code{
+	border: 0!important;
+    border-bottom: 2px solid #ccc !important;
+}
+
+.dash-widget-bg1, .dash-widget-bg2{
+	width: auto;
+	height: auto;
+	line-height: 0;
+}
+
+.dash-widget-bg1{
+	padding: 10px!important;	
+}
+
+.dash-widget-bg2{
+	padding: 15px 10px !important;
+}
