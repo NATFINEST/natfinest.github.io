@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>UniMed</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="dashboard.html" class="d-flex align-items-center justify-content-center mt-1"><i class="fa fa-stethoscope text-white font-25 font-bold"></i>  <div class="font-25 text-white font-bold ml-2">UniMed</div></a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                        </li>
+						<li>
+                            <a href="drugs.html"><i class="fa fa-capsules"></i> <span>Drugs</span></a>
+                        </li>
+                        <li>
+                            <a href="assigned.html"><i class="fa fa-clipboard-list"></i> <span>Assigned Medications</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="labels.html"><i class="fa fa-tags"></i> <span>Labels</span></a>
+                        </li>
+                        <li>
+                            <a href="help.html"><i class="fa fa-question-circle"></i> <span>Help</span></a>
+                        </li>
+                        <li>
+                            <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
+                        </li>
+                        <li>
+                            <a href="about.html"><i class="fa fa-info-circle"></i> <span>About</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper bg-white">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-12 mb-3">
+                        <div class="">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Labels</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-3">
+                        <h4 class="page-title">Labels</h4>
+                    </div>
+                    <div class="col-sm-8 col-9 text-right m-b-20">
+                        <a href="add-label.html" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Create New Label</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mb-3">
+                        <div class="d-flex align-items-center border border-round px-3">
+                            <input type="text" class="form-control border-0 px-0 font-bold" id="myTable_filter" name="drugs" placeholder="Search Labels">
+                            <span><i class="fa fa-search text-muted"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table id="myTable" class="display" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>Label</th>
+                                        <th>Patient Name</th>
+                                        <th>Medication</th>
+                                        <th>Dosage</th>
+                                        <th>Frequency</th>
+                                        <th>Quantity</th>
+                                        <th>Storage Location</th>
+                                        <th>Prepared By</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>LN001</td>
+                                        <td>John Doe</td>
+                                        <td>Phynylamine</td>
+                                        <td>5mg/ml</td>
+                                        <td>Daily</td>
+                                        <td>2</td>
+                                        <td>Box 212</td>
+                                        <td>Micheal Smith</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/Chart.bundle.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            var table = $('#myTable').DataTable({
+                "sDom":"tipr"
+            });
+                $('#myTable_filter').on('keyup', function () {
+                   table.search( this.value ).draw();
+                });
+        } );
+    </script>
+
+</body>
+
+
+</html>
