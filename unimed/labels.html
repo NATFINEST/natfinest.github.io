@@ -31,27 +31,24 @@
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
                         <li class="menu-title">Main</li>
-                        <li>
-                            <a href="dashboard.html"><i class="fa fa-home"></i> <span>Dashboard</span></a>
-                        </li>
-						<li>
-                            <a href="drugs.html"><i class="fa fa-capsules"></i> <span>Drugs</span></a>
-                        </li>
-                        <li>
-                            <a href="assigned.html"><i class="fa fa-clipboard-list"></i> <span>Assigned Medications</span></a>
-                        </li>
                         <li class="active">
-                            <a href="labels.html"><i class="fa fa-tags"></i> <span>Labels</span></a>
+                            <a href="dashboard.html"><ion-icon class="font-25" name="home"></ion-icon> <span>Dashboard</span></a>
                         </li>
                         <li>
-                            <a href="help.html"><i class="fa fa-question-circle"></i> <span>Help</span></a>
+                            <a href="labels.html"><ion-icon class="font-25" name="pricetags"></ion-icon> <span>Create Label</span></a>
                         </li>
                         <li>
-                            <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
+                            <a href="add-label.html"><ion-icon class="font-25" name="pricetags"></ion-icon> <span>View All Labels</span></a>
+                        </li>
+                        <!-- <li>
+                            <a href="help.html"><ion-icon class="font-25" name="help-circle"></ion-icon> <span>Help</span></a>
                         </li>
                         <li>
-                            <a href="about.html"><i class="fa fa-info-circle"></i> <span>About</span></a>
+                            <a href="settings.html"><ion-icon class="font-25" name="settings"></ion-icon> <span>Settings</span></a>
                         </li>
+                        <li>
+                            <a href="about.html"><ion-icon class="font-25" name="information-circle"></ion-icon> <span>About</span></a>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -63,7 +60,7 @@
                         <div class="">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Labels</li>
                                 </ol>
                             </nav>
@@ -75,7 +72,7 @@
                         <h4 class="page-title">Labels</h4>
                     </div>
                     <div class="col-sm-8 col-9 text-right m-b-20">
-                        <a href="add-label.html" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Create New Label</a>
+                        <a href="add-label.html" class="btn btn-primary btn-rounded float-right text-uppercase font-bold">Create New Label</a>
                     </div>
                 </div>
                 <div class="row">
@@ -94,26 +91,41 @@
                                     <tr>
                                         <th>S/N</th>
                                         <th>Label</th>
-                                        <th>Patient Name</th>
+                                        <!-- <th>Patient Name</th>
                                         <th>Medication</th>
                                         <th>Dosage</th>
                                         <th>Frequency</th>
                                         <th>Quantity</th>
-                                        <th>Storage Location</th>
+                                        <th>Storage Location</th> -->
                                         <th>Prepared By</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>LN001</td>
-                                        <td>John Doe</td>
+                                        <!-- <td>John Doe</td>
                                         <td>Phynylamine</td>
                                         <td>5mg/ml</td>
                                         <td>Daily</td>
                                         <td>2</td>
-                                        <td>Box 212</td>
+                                        <td>Box 212</td> -->
                                         <td>Micheal Smith</td>
+                                        <td>Prepared</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                  <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="edit-label.html">Edit Label</a>
+                                                    <a class="dropdown-item cursor" href="#" data-toggle="modal" data-target="#view-label">View Label</a>
+                                                    <a class="dropdown-item cursor" href="#" data-toggle="modal" data-target="#update-status">Update Status</a>
+                                                  </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -123,6 +135,64 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="update-status" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Update Status for Label LN001</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <label class="container">Prepared
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Administered
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Returned
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Destroyed
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="col-12 text-center">
+                        <a href="labels.html" class="btn btn-primary border-round my-4 font-bold text-uppercase">Update Status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="view-label" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-0 border-0">
+                <div class="modal-body">
+                    <div class="label-card border p-0 text-uppercase font-bold" style="border-radius: 10px;">
+                        <div class="d-flex justify-content-between align-items-center p-2 py-1 w-100 bg-main text-white" style="border-radius: 10px 10px 0 0;">
+                            <div>BRAIN JONES</div>
+                            <div>LBL# 12253</div>
+                        </div>
+                        
+                        <div class="mb-4 p-2">TAKE ONE TABLET BY MOUTH TWICE DAILY</div>
+                        <div class="p-2 bg-main text-white">
+                            <div>EryPed 200MG CAP</div>
+                            <div>Erythromycin Ethylsuccinate</div>
+                        </div>
+                        <div class="p-2">Qty: 20</div>
+                        <a href="dashboard.html" class="d-flex align-items-center justify-content-center p-2 mt-1"><i class="fa fa-stethoscope text-main font-25 font-bold"></i>  <div class="font-25 font-bold ml-2 text-main">UniMed</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="sidebar-overlay" data-reff=""></div>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>

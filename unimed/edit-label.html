@@ -61,8 +61,8 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
-                                    <!-- <li class="breadcrumb-item"><a href="labels.html">Labels</a></li> -->
-                                    <li class="breadcrumb-item active" aria-current="page">Create New Label</li>
+                                    <li class="breadcrumb-item"><a href="labels.html">Labels</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Edit Label</li>
                                 </ol>
                             </nav>
                         </div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="row mb-2">
                     <div class="col-12">
-                        <h4 class="page-title">Create New Label</h4>
+                        <h4 class="page-title">Edit Label</h4>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -103,13 +103,13 @@
 
                                     <div class="mb-4">
                                         <label>Medication Brand Name*</label>
-                                        <input class="form-control brand" type="text" placeholder="e.g EryPed 200">
+                                        <input class="form-control brand" type="text" placeholder="e.g EryPed 200" value="EryPed 200">
 
                                         <label>Medication Generic Name*</label>
-                                        <input class="form-control generic" type="text" placeholder="e.g Erythromycin Ethylsuccinate">
+                                        <input class="form-control generic" type="text" placeholder="e.g Erythromycin Ethylsuccinate" value="Erythromycin Ethylsuccinate">
 
                                         <label>Medication strength*</label>
-                                        <input class="form-control strength" type="text" placeholder="e.g 300mg/5ml">
+                                        <input class="form-control strength" type="text" placeholder="e.g 300mg/5ml" value="300mg/5ml">
 
                                         <label>Medication Type*</label>
                                         <select class="select2 w-100 form-control type" name="state">
@@ -138,10 +138,10 @@
                                     
                                     <div class="mb-4">
                                         <label>Quantity*</label>
-                                        <input class="form-control quantity" type="number" placeholder="e.g 20" min="1">
+                                        <input class="form-control quantity" type="number" value="20" placeholder="e.g 20" min="1">
 
                                         <label>Frequency*</label>
-                                        <input class="form-control frequency" type="text" placeholder="e.g Twice Every 12 hours">
+                                        <input class="form-control frequency" type="text" value="Twice Every 12 hours" placeholder="e.g Twice Every 12 hours">
                                     </div>
 
                                 </div>
@@ -242,8 +242,6 @@
                                     </div>
 
                                     <h2 class="text-dark text-center my-4"><strong>Label created successfully! </strong></h2>
-
-                                    
 
                                     <div class="row justify-content-center mb-2">
                                         <div class="col-12 text-center">
