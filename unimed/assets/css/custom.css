@@ -38,6 +38,10 @@ a:hover{
 	color: var(--dark);
 }
 
+.font-14{
+    font-size: 14px;
+}
+
 .font-20{
 	font-size: 20px;
 }
@@ -375,6 +379,10 @@ label{
 
 .select2-container{
 	width: 100%!important;
+}
+
+.boo .select2-container{
+    width: auto!important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered{
