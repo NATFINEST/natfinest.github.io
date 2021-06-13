@@ -1,0 +1,210 @@
+#content{
+	padding: 64px 10px!important;
+  background: #238ac5;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+	color: #fff!important;
+    background: #048147;
+    border: #048147;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+	color: #048147;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+	color: #048147!important;
+    text-decoration: none;
+    background: #e9ecef;
+    border-color: #dee2e6;
+}
+.dataTables_filter {
+   display: none;
+}
+.dataTables_wrapper .row:nth-child(2){
+	clear: both;
+}
+#min,#max,#min-group,#max-group,#min-cat,#max-cat{
+	width: 120px;
+  border: 1px solid #aaa;
+  height: 39px;
+}
+#searchbox, #searchbox-cat, #searchbox-group{
+	display: none;
+}
+.font-60{
+	font-size: 30px
+}
+.dropdown-item.font-12{
+	border-bottom: 1px solid #ccc
+}
+.dropdown-item.font-12:hover{
+	background: #eee;
+}
+.font-weight-900 {
+    font-weight: 800;
+}
+.dasboard-top-wrapper{
+	background: #fff;
+  display: none;
+}
+.hidden {
+	display: none;
+}
+.mil select{
+	min-width: 135px!important;
+}
+.dpd .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #777!important;
+    font-size: 14px!important;
+}
+.dpd .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #777!important;
+   font-size: 14px!important;
+   opacity:  1;
+}
+.dpd .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #777!important;
+   font-size: 14px!important;
+   opacity:  1;
+}
+.dpd .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #777!important;
+   font-size: 14px!important;
+}
+.dpd .form-control::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #777!important;
+   font-size: 14px!important;
+}
+
+.dpd .form-control::placeholder { /* Most modern browsers support this now. */
+   color:    #777!important;
+   font-size: 14px!important;
+}
+.select2-container--open .select2-dropdown--below{
+	/*min-width: 240px!important;*/
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	margin-top: 3px!important;
+}
+.select2-webinar .select2-selection__rendered{
+	    height: 30px!important;
+    padding-top: 4px!important;
+}
+#nav-answer-tab,#nav-ask-tab{
+	border-radius: 5px;
+	text-transform: capitalize!important;
+}
+#nav-answer-tab.active,#nav-ask-tab.active{
+	background-color: var(--secondary-color) !important;
+    color: #fff !important;
+}
+
+.pick-a-color-markup .color-menu.color-menu--inline{
+    left: 0;
+}
+.btn-color{
+    border: 1px solid #ccc;
+    padding: 6px 12px 5px 5px!important;
+}
+button.dropdown-toggle::after{
+    right: 3px!important;
+}
+.pick-a-color-markup {
+    margin:20px 0px;
+}
+.tooltip-inner {
+  background-color: #eee !important;
+  color: #333;
+}
+
+.bs-tooltip-top .arrow::before {
+  border-top-color: #eee!important;
+}
+
+.bs-tooltip-right .arrow::before {
+  border-right-color: #eee!important;
+}
+
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #eee!important;
+}
+
+.bs-tooltip-left .arrow::before {
+  border-left-color: #eee!important;
+}
+.select2-container{
+	width: 100%!important
+}
+#table_id_filter{
+	display: none;
+}
+.curr{
+    padding-top: 4px;
+}
+.modal.show .modal-dialog{
+  /*padding-top: 5%;*/
+}
+
+li[data-value="1"]::before, .curr .current.USD::before {
+  content: "";
+  background-image:url(United-States-Flag-icon.png);
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 25px;
+  width:25px;
+  position:relative;
+  top:5px;
+  margin-right: 5px
+}
+
+li[data-value="2"]::before, .curr .current.CAD::before {
+  content: "";
+  background-image:url(Canada-Flag-icon.png);
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 25px;
+  width:25px;
+  position:relative;
+  top:5px;
+  margin-right: 5px
+}
+
+li[data-value="3"]::before, .curr .current.NGN::before, .curr .current::before {
+  content: "";
+  background-image:url(Nigeria-Flag-icon.png);
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 25px;
+  width:25px;
+  position:relative;
+  top:5px;
+  margin-right: 5px
+}
+
+input.font-16::-webkit-input-placeholder {
+    font-size: 16px!important;
+    font-weight: 500;
+    line-height: 3;
+}
+
+@media (max-width: 768px) {
+	/* #filters-area span, #filters-group span, #filters-area span input, #filters-group span input{
+		margin-right: 15px;
+		width: 100%!important;
+	}*/
+	/*#filters-area span span b, #filters-group span span b {
+	    left: 95%;
+	    top: -19px;
+	    position: inherit;
+	}*/
+	#min,#max,#min-group,#max-group,#min-cat,#max-cat{
+		width: 100%;
+		margin-top: 0;
+	}
+	footer .card.text-white{
+		right: 15px!important;
+	}
+  .modal.show .modal-dialog {
+    padding-top: 10%;
+  } 
+}

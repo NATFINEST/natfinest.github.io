@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Fcmb Business Zone">
+    <meta name="author" content="Nathaniel Odukpahie">
+    <title>INFORMATION REQUEST FORM</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div style="width: 100%;text-align: center;"><img src="dash/logo.png" class="mt-2" alt="ZaineLab logo" width="200px" /></div>
+            <h2 style="margin: 10px 0;font-weight: 500;padding: 20px;width: 100%;">INFORMATION REQUEST FORM</h2>
+            <form method="POST" id="signup-form" class="signup-form" action="">
+                <h3>
+                    <span class="title_text">Basic Info</span>
+                </h3>
+                <fieldset>
+                    <div class="fieldset-content">
+                        <div class="form-group">
+                            <label for="collection_center" class="form-label">Select Collection Center</label>
+                            <select name="collection_center" id="collection_center" >
+                                <option value="">Select Collection Center</option>
+                                <option>ZAINE VI</option>
+                                <option>ZAINE IKEJA</option>
+                                <option>ZAINE LEKKI</option>
+                                <option>ZAINE SURULERE</option>
+                                <option>ZAINE YABA</option>
+                                <option>ZAINE VGC</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="first_name" class="form-label">First Name</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="First Name"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name" class="form-label">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Last Name"  />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender" class="form-label">Gender</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="gender" value="Male" />
+                                    <label for="yes">Male</label>
+        
+                                    <input type="radio" name="gender" value="Female" />
+                                    <label for="no">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="text" name="dob" class="datepicker" placeholder="dd/mm/yyyy" data-date-format="dd/mm/yyyy">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email (Please use Gmail or Yahoo Mail)</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" name="phone" class="phone" placeholder="Contact Phone Number"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="nationality" class="form-label">Nationality</label>
+                            <select name="nationality" id="nationality">
+                              <option value="">Select Nationality</option>
+                              <option value="afghan">Afghan</option>
+                              <option value="albanian">Albanian</option>
+                              <option value="algerian">Algerian</option>
+                              <option value="american">American</option>
+                              <option value="andorran">Andorran</option>
+                              <option value="angolan">Angolan</option>
+                              <option value="antiguans">Antiguans</option>
+                              <option value="argentinean">Argentinean</option>
+                              <option value="armenian">Armenian</option>
+                              <option value="australian">Australian</option>
+                              <option value="austrian">Austrian</option>
+                              <option value="azerbaijani">Azerbaijani</option>
+                              <option value="bahamian">Bahamian</option>
+                              <option value="bahraini">Bahraini</option>
+                              <option value="bangladeshi">Bangladeshi</option>
+                              <option value="barbadian">Barbadian</option>
+                              <option value="barbudans">Barbudans</option>
+                              <option value="batswana">Batswana</option>
+                              <option value="belarusian">Belarusian</option>
+                              <option value="belgian">Belgian</option>
+                              <option value="belizean">Belizean</option>
+                              <option value="beninese">Beninese</option>
+                              <option value="bhutanese">Bhutanese</option>
+                              <option value="bolivian">Bolivian</option>
+                              <option value="bosnian">Bosnian</option>
+                              <option value="brazilian">Brazilian</option>
+                              <option value="british">British</option>
+                              <option value="bruneian">Bruneian</option>
+                              <option value="bulgarian">Bulgarian</option>
+                              <option value="burkinabe">Burkinabe</option>
+                              <option value="burmese">Burmese</option>
+                              <option value="burundian">Burundian</option>
+                              <option value="cambodian">Cambodian</option>
+                              <option value="cameroonian">Cameroonian</option>
+                              <option value="canadian">Canadian</option>
+                              <option value="cape verdean">Cape Verdean</option>
+                              <option value="central african">Central African</option>
+                              <option value="chadian">Chadian</option>
+                              <option value="chilean">Chilean</option>
+                              <option value="chinese">Chinese</option>
+                              <option value="colombian">Colombian</option>
+                              <option value="comoran">Comoran</option>
+                              <option value="congolese">Congolese</option>
+                              <option value="costa rican">Costa Rican</option>
+                              <option value="croatian">Croatian</option>
+                              <option value="cuban">Cuban</option>
+                              <option value="cypriot">Cypriot</option>
+                              <option value="czech">Czech</option>
+                              <option value="danish">Danish</option>
+                              <option value="djibouti">Djibouti</option>
+                              <option value="dominican">Dominican</option>
+                              <option value="dutch">Dutch</option>
+                              <option value="east timorese">East Timorese</option>
+                              <option value="ecuadorean">Ecuadorean</option>
+                              <option value="egyptian">Egyptian</option>
+                              <option value="emirian">Emirian</option>
+                              <option value="equatorial guinean">Equatorial Guinean</option>
+                              <option value="eritrean">Eritrean</option>
+                              <option value="estonian">Estonian</option>
+                              <option value="ethiopian">Ethiopian</option>
+                              <option value="fijian">Fijian</option>
+                              <option value="filipino">Filipino</option>
+                              <option value="finnish">Finnish</option>
+                              <option value="french">French</option>
+                              <option value="gabonese">Gabonese</option>
+                              <option value="gambian">Gambian</option>
+                              <option value="georgian">Georgian</option>
+                              <option value="german">German</option>
+                              <option value="ghanaian">Ghanaian</option>
+                              <option value="greek">Greek</option>
+                              <option value="grenadian">Grenadian</option>
+                              <option value="guatemalan">Guatemalan</option>
+                              <option value="guinea-bissauan">Guinea-Bissauan</option>
+                              <option value="guinean">Guinean</option>
+                              <option value="guyanese">Guyanese</option>
+                              <option value="haitian">Haitian</option>
+                              <option value="herzegovinian">Herzegovinian</option>
+                              <option value="honduran">Honduran</option>
+                              <option value="hungarian">Hungarian</option>
+                              <option value="icelander">Icelander</option>
+                              <option value="indian">Indian</option>
+                              <option value="indonesian">Indonesian</option>
+                              <option value="iranian">Iranian</option>
+                              <option value="iraqi">Iraqi</option>
+                              <option value="irish">Irish</option>
+                              <option value="israeli">Israeli</option>
+                              <option value="italian">Italian</option>
+                              <option value="ivorian">Ivorian</option>
+                              <option value="jamaican">Jamaican</option>
+                              <option value="japanese">Japanese</option>
+                              <option value="jordanian">Jordanian</option>
+                              <option value="kazakhstani">Kazakhstani</option>
+                              <option value="kenyan">Kenyan</option>
+                              <option value="kittian and nevisian">Kittian and Nevisian</option>
+                              <option value="kuwaiti">Kuwaiti</option>
+                              <option value="kyrgyz">Kyrgyz</option>
+                              <option value="laotian">Laotian</option>
+                              <option value="latvian">Latvian</option>
+                              <option value="lebanese">Lebanese</option>
+                              <option value="liberian">Liberian</option>
+                              <option value="libyan">Libyan</option>
+                              <option value="liechtensteiner">Liechtensteiner</option>
+                              <option value="lithuanian">Lithuanian</option>
+                              <option value="luxembourger">Luxembourger</option>
+                              <option value="macedonian">Macedonian</option>
+                              <option value="malagasy">Malagasy</option>
+                              <option value="malawian">Malawian</option>
+                              <option value="malaysian">Malaysian</option>
+                              <option value="maldivan">Maldivan</option>
+                              <option value="malian">Malian</option>
+                              <option value="maltese">Maltese</option>
+                              <option value="marshallese">Marshallese</option>
+                              <option value="mauritanian">Mauritanian</option>
+                              <option value="mauritian">Mauritian</option>
+                              <option value="mexican">Mexican</option>
+                              <option value="micronesian">Micronesian</option>
+                              <option value="moldovan">Moldovan</option>
+                              <option value="monacan">Monacan</option>
+                              <option value="mongolian">Mongolian</option>
+                              <option value="moroccan">Moroccan</option>
+                              <option value="mosotho">Mosotho</option>
+                              <option value="motswana">Motswana</option>
+                              <option value="mozambican">Mozambican</option>
+                              <option value="namibian">Namibian</option>
+                              <option value="nauruan">Nauruan</option>
+                              <option value="nepalese">Nepalese</option>
+                              <option value="new zealander">New Zealander</option>
+                              <option value="ni-vanuatu">Ni-Vanuatu</option>
+                              <option value="nicaraguan">Nicaraguan</option>
+                              <option value="nigerian">Nigerian</option>
+                              <option value="nigerien">Nigerien</option>
+                              <option value="north korean">North Korean</option>
+                              <option value="northern irish">Northern Irish</option>
+                              <option value="norwegian">Norwegian</option>
+                              <option value="omani">Omani</option>
+                              <option value="pakistani">Pakistani</option>
+                              <option value="palauan">Palauan</option>
+                              <option value="panamanian">Panamanian</option>
+                              <option value="papua new guinean">Papua New Guinean</option>
+                              <option value="paraguayan">Paraguayan</option>
+                              <option value="peruvian">Peruvian</option>
+                              <option value="polish">Polish</option>
+                              <option value="portuguese">Portuguese</option>
+                              <option value="qatari">Qatari</option>
+                              <option value="romanian">Romanian</option>
+                              <option value="russian">Russian</option>
+                              <option value="rwandan">Rwandan</option>
+                              <option value="saint lucian">Saint Lucian</option>
+                              <option value="salvadoran">Salvadoran</option>
+                              <option value="samoan">Samoan</option>
+                              <option value="san marinese">San Marinese</option>
+                              <option value="sao tomean">Sao Tomean</option>
+                              <option value="saudi">Saudi</option>
+                              <option value="scottish">Scottish</option>
+                              <option value="senegalese">Senegalese</option>
+                              <option value="serbian">Serbian</option>
+                              <option value="seychellois">Seychellois</option>
+                              <option value="sierra leonean">Sierra Leonean</option>
+                              <option value="singaporean">Singaporean</option>
+                              <option value="slovakian">Slovakian</option>
+                              <option value="slovenian">Slovenian</option>
+                              <option value="solomon islander">Solomon Islander</option>
+                              <option value="somali">Somali</option>
+                              <option value="south african">South African</option>
+                              <option value="south korean">South Korean</option>
+                              <option value="spanish">Spanish</option>
+                              <option value="sri lankan">Sri Lankan</option>
+                              <option value="sudanese">Sudanese</option>
+                              <option value="surinamer">Surinamer</option>
+                              <option value="swazi">Swazi</option>
+                              <option value="swedish">Swedish</option>
+                              <option value="swiss">Swiss</option>
+                              <option value="syrian">Syrian</option>
+                              <option value="taiwanese">Taiwanese</option>
+                              <option value="tajik">Tajik</option>
+                              <option value="tanzanian">Tanzanian</option>
+                              <option value="thai">Thai</option>
+                              <option value="togolese">Togolese</option>
+                              <option value="tongan">Tongan</option>
+                              <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                              <option value="tunisian">Tunisian</option>
+                              <option value="turkish">Turkish</option>
+                              <option value="tuvaluan">Tuvaluan</option>
+                              <option value="ugandan">Ugandan</option>
+                              <option value="ukrainian">Ukrainian</option>
+                              <option value="uruguayan">Uruguayan</option>
+                              <option value="uzbekistani">Uzbekistani</option>
+                              <option value="venezuelan">Venezuelan</option>
+                              <option value="vietnamese">Vietnamese</option>
+                              <option value="welsh">Welsh</option>
+                              <option value="yemenite">Yemenite</option>
+                              <option value="zambian">Zambian</option>
+                              <option value="zimbabwean">Zimbabwean</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="passport" class="form-label">Passport Number</label>
+                            <input type="text" name="passport" id="passport" placeholder="Passport Number"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="state" class="form-label">State</label>
+                            <select
+                              onchange="toggleLGA(this);"
+                              name="state"
+                              id="state"
+                            >
+                              <option value="" selected="selected">Select State</option>
+                              <option value="Abia">Abia</option>
+                              <option value="Adamawa">Adamawa</option>
+                              <option value="AkwaIbom">AkwaIbom</option>
+                              <option value="Anambra">Anambra</option>
+                              <option value="Bauchi">Bauchi</option>
+                              <option value="Bayelsa">Bayelsa</option>
+                              <option value="Benue">Benue</option>
+                              <option value="Borno">Borno</option>
+                              <option value="Cross River">Cross River</option>
+                              <option value="Delta">Delta</option>
+                              <option value="Ebonyi">Ebonyi</option>
+                              <option value="Edo">Edo</option>
+                              <option value="Ekiti">Ekiti</option>
+                              <option value="Enugu">Enugu</option>
+                              <option value="FCT">FCT</option>
+                              <option value="Gombe">Gombe</option>
+                              <option value="Imo">Imo</option>
+                              <option value="Jigawa">Jigawa</option>
+                              <option value="Kaduna">Kaduna</option>
+                              <option value="Kano">Kano</option>
+                              <option value="Katsina">Katsina</option>
+                              <option value="Kebbi">Kebbi</option>
+                              <option value="Kogi">Kogi</option>
+                              <option value="Kwara">Kwara</option>
+                              <option value="Lagos">Lagos</option>
+                              <option value="Nasarawa">Nasarawa</option>
+                              <option value="Niger">Niger</option>
+                              <option value="Ogun">Ogun</option>
+                              <option value="Ondo">Ondo</option>
+                              <option value="Osun">Osun</option>
+                              <option value="Oyo">Oyo</option>
+                              <option value="Plateau">Plateau</option>
+                              <option value="Rivers">Rivers</option>
+                              <option value="Sokoto">Sokoto</option>
+                              <option value="Taraba">Taraba</option>
+                              <option value="Yobe">Yobe</option>
+                              <option value="Zamfara">Zamafara</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="lga" class="form-label">Select LGA</label>
+                            <select
+                              name="lga"
+                              id="lga"
+                              class="select-lga"
+                              required
+                            >
+                            </select>
+                        </div>  
+                        <div class="form-group">
+                            <label for="street" class="form-label">Street Address</label>
+                            <input type="text" name="street" id="street" placeholder="Street Address"  />
+                        </div>
+                    </div>
+                    <div class="fieldset-footer">
+                        <span>Step 1 of 5</span>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Test Info</span>
+                </h3>
+                <fieldset>
+
+                    <div class="fieldset-content">
+                        <p style="color:#e91e63;margin-left: 30px;">
+                            <b>Note:</b><br>
+                            Walk in: You just walked in for a routine test.<br>
+                            Outbound: Travelling outside or within Nigeria.<br>
+                            POI: Returning to Nigeria.
+                        </p>
+                        <div class="form-group">
+                            <label for="purpose" class="form-label">Purpose of test</label>
+                            <select name="purpose" id="purpose">
+                              <option value="">Select Purpose</option>
+                              <option value="afghan">Walk in</option>
+                              <option value="albanian">Outbound</option>
+                              <option value="algerian">POI/Inbound</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                            <label for="test_type" class="form-label">What type of test is this?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="test_type" value="Initial" />
+                                    <label for="yes">Initial</label>
+        
+                                    <input type="radio" name="test_type" value="Follow-up" />
+                                    <label for="no">Follow up</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="travel_date" class="form-label">Travel date (if applicable)</label>
+                            <input type="text" name="travel_date" class="travel_date" placeholder="dd/mm/yyyy" data-date-format="dd/mm/yyyy">
+                        </div>
+                        <div class="form-group">
+                            <label for="kin" class="form-label">Next of kin</label>
+                            <input type="text" name="kin" class="phone" id="kin" placeholder="Next of kin"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone_kin" class="form-label">Next of kin phone</label>
+                            <input type="tel" name="phone_kin" id="phone_kin" placeholder="Next of kin phone"  />
+                        </div>
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <span>Step 2 of 5</span>
+                    </div>
+
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Symptom Info</span>
+                </h3>
+                <fieldset>
+
+                    <div class="fieldset-content">
+
+                        <div class="form-group">
+                            <label for="shortness_of_breath" class="form-label">Shortness of breath</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="shortness_of_breath" value="yes" id="yes"   />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="shortness_of_breath" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sore_throat" class="form-label">Sore throat</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="sore_throat" value="yes" id="yes"   />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="sore_throat" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fever" class="form-label">Fever</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="fever" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="fever" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nasal_congestion" class="form-label">Nasal congestion</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="nasal_congestion" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="nasal_congestion" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dry_cough" class="form-label">Dry cough</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="dry_cough" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="dry_cough" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="running_nose" class="form-label">Runny nose</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="runny_nose" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="runny_nose" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="diarrhoea" class="form-label">Diarrhoea</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="diarrhoea" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="diarrhoea" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group choose_symptom_onset" style="display: none;">
+                            <label for="symptom_onset" class="form-label">Date of symptom onset</label>
+                            <input type="text" name="symptom_onset" class="symptom_onset" placeholder="dd/mm/yyyy" data-date-format="dd/mm/yyyy">
+                        </div>
+    
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <span>Step 3 of 5</span>
+                    </div>
+
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Medical conditions</span>
+                </h3>
+                <fieldset>
+
+                    <div class="fieldset-content">
+
+                        <div class="form-group">
+                            <label for="pregnancy" class="form-label">Pregnancy</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="pregnancy" value="yes" id="yes"   />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="pregnancy" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="obesity" class="form-label">Obesity</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="obesity" value="yes" id="yes"   />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="obesity" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cont_last_name" class="form-label">Heart Disease</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="heart_disease" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="heart_disease" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cont_last_name" class="form-label">Asthma</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="asthma" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="asthma" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="chronic_lung_disease" class="form-label">Chronic Lung Disease</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="chronic_lung_disease" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="chronic_lung_disease" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="chronic_liver_disease" class="form-label">Chronic Liver Disease</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="chronic_liver_disease" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="chronic_liver_disease" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="organ_bone_marrow_recipient" class="form-label">Organ Bone Marrow Recipient</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="organ_bone_marrow_recipient" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="organ_bone_marrow_recipient" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="diabetes" class="form-label">Diabetes</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="diabetes" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="diabetes" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <span>Step 4 of 5</span>
+                    </div>
+
+                </fieldset>
+
+                <h3>
+                    <span class="title_text">Other Info</span>
+                </h3>
+                <fieldset>
+
+                    <div class="fieldset-content">
+
+                        <div class="form-group">
+                            <label for="q8" class="form-label">Is this the first time you are getting tested for covid-19?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q8" value="yes" id="yes"   />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q8" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q7" class="form-label">Have you had contact with a suspected or confirmed case?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q7" value="yes" id="yes"   />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q7" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q6" class="form-label">Have you recently been to any mass gathering?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q6" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q6" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q5" class="form-label">Have you had contact with travelers that have been overseas?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q5" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q5" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q4" class="form-label">Have you been to any organization where a covid case was confirmed or managed?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q4" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q4" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q3" class="form-label">Have you visited any health facility in the past one month?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q3" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q3" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q2" class="form-label">Are you a health worker?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q2" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q2" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="q1" class="form-label">Have you been vaccinated?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="q1" value="yes" id="yes" />
+                                    <label for="yes">Yes</label>
+        
+                                    <input type="radio" name="q1" value="no" id="no" />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doses" class="form-label">If yes, How many doses?</label>
+                            <div class="form-radio" style="">
+                                <div class="form-radio-item">
+                                    <input type="radio" name="doses" value="yes" id="yes" />
+                                    <label for="yes">One</label>
+        
+                                    <input type="radio" name="doses" value="no" id="no" />
+                                    <label for="no">Two</label>
+                                </div>
+                            </div>
+                        </div>
+
+    
+                    </div>
+
+                    <div class="fieldset-footer">
+                        <span>Step 5 of 5</span>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/jquery.pwstrength/jquery.pwstrength.js"></script>
+    <script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://unpkg.com/sweetalert2@7.12.10/dist/sweetalert2.all.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lga.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js" integrity="sha512-OnkjbJ4TwPpgSmjXACCb5J4cJwi880VRe+vWpPDlr8M38/L3slN5uUAeOeWU2jN+4vN0gImCXFGdJmc0wO4Mig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

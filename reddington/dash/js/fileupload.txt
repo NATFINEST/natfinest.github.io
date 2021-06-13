@@ -1,0 +1,48 @@
+<!-- Add PDF -->
+<div class="modal fade" id="add_pdf" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title text-center mx-auto">Add PDF Resource</h6>
+                <button type="button" class="close pr-3 ml-0" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="img/modal_cancel.svg" alt="close modal" /></span> </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group col-lg-12">
+                        <input id="departmentModalInput" type="text" placeholder="Enter a Resource Title" class="form-control" required=""> 
+                    </div>
+                    <div class="form-group col-lg-12">
+                            <div class="custom-control custom-checkbox mt-2">
+                                <input type="checkbox" class="custom-control-input" id="check1">
+                                <label class="custom-control-label" for="check1">Set As Primary Content</label><br >
+                            </div>
+                        </div>
+                    <div class="form-group row mt-4">
+                        <div class="col-lg-6 mx-auto col-4 my-2 upload-btn-wrapper">
+                            <label for="file-upload" class="fileupload custom-file-upload btn btn-green btn-upload btn-block font-13">
+                                Browse File (PDF Only)
+                            </label>
+                            <input id="file-upload" class="fileupload" name='upload_cont_img' type="file"  accept="application/pdf" required="">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-3 ml-auto mx-0">
+                            <button type="submit" class="btn btn-success btn-block mt-5">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add PDF End -->
+
+<script>
+    $(document).ready(function(){
+        $('.fileupload').change(function() {
+          var i = $(this).prev('label').clone();
+          var file = $(this)[0].files[0].name;
+          $(this).prev('label').text(file);
+        });
+    })
+</script>

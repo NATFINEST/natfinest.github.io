@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+		<meta name="description" content="DavtonLearn">
+		<meta name="author" content="">
+		<title>Welcome to DavtonLearn</title>
+		<link rel="shortcut icon" href="img/favicon.png">
+
+		<!-- Bootstrap CSS CDN -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Our Custom CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Font Awesome JS -->
+		<script defer src="js/solid.js"></script>
+		<script defer src="js/fontawesome.js"></script>
+	</head>
+
+	<body class="dashboard-body">
+		<div class="" style="background: url(img/footer.pg) no-repeat; height: calc(100vh - 50px)">
+			<div class="container" style="z-index: 99;position: relative;">
+				<div class="row mt-lg-5 justify-content-center" style="align-items: center">
+					<div class="col-lg-6 text-center mb-3 border-right-lg">
+						<div class="p-lg-5 pt-4">
+							<img src="img/davtonlogo.svg" class="img-fluid" alt="davton learn" />
+							<h3 class="pt-5 pt-lg-4 login-learn" style="color:#202020; font-weight:600">Learn. Onboard. Promote</h3>
+
+							<div class="font-weight-light d-none d-lg-block">
+								<p>Launch your digital training portal in just few minutes with davtonlms.  Onboard, promote employee growth, and orchestrate learning across all departments.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-5" id="login-part">
+						<div class="row mx-auto">
+							<h3 class="text-center col-md-12" style="color:#484747">Account Login</h3>
+							<form class="p-md-5 p-4 col-md-12" id="admin_wrapper" action="index.html" method="get">
+								<div class="form-group input--indent position-relative">
+									<img src="img/email.svg" class="field--img" alt="email field" style="width: 16px" />
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+								</div>
+
+								<div class="form-group input--indent position-relative">
+									<img src="img/password.svg" class="field--img" alt="email field" />
+									<input type="password" class="form-control" id="password" name="password" placeholder="Enter your Password">
+								</div>
+
+								<p class="text-right">
+									<a href="#" class="mt-3 reset-password--color font-13" id="forgot-pwd">Forgot Password?</a>
+								</p>
+
+								<button type="submit" class="btn btn-green btn-block mt-5 mb-4">Sign In</button>
+
+							</form>
+						</div>
+					</div>
+
+					<div class="col-lg-5" id="forgot-part" style="display: none;">
+						<div class="row mx-auto">
+							<h3 class="text-center col-md-12" style="color:#484747">Forgot Password</h3>
+							<form class="p-md-5 p-4 col-md-12" id="admin_wrapper" action="https://davtonlearn.herokuapp.com/dashboard/dashboard/index.html" method="get">
+								<div class="form-group input--indent position-relative">
+									<img src="img/email.svg" style="width: 16px" class="field--img" alt="email field" />
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+								</div>
+
+								<button id="submit" class="btn btn-green btn-block mt-5 mb-4">Submit</button>
+
+								<p class="text-center">
+									<a href="#" class="mt-3 reset-password--color" id="back-login">< Back to Login</a>
+								</p>
+
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div style="position: absolute;bottom: 5%">
+				<img src="img/footer.png" class="img-fluid" alt="davton learn" />
+			</div>
+
+			<footer class="py-0 login-bg" style="position: absolute;bottom: 0;width: 100%;z-index: 0">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 mx-auto">
+							<div class="nav flex-row text-center text-uppercase justify-content-center">
+								<li class="nav-item"><a class="nav-link text-white" href="javascript:">Terms Of Use</a></li>
+								<li class="nav-item"><a class="nav-link text-white" href="javascript:">Privacy Policy</a></li>
+								<li class="nav-item"><a class="nav-link text-white" href="javascript:">© 2019 Davtonlearn ALL RIGHTS RESERVED</a></li>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- jQuery CDN - Slim version (=without AJAX) -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Popper.JS -->
+		<script src="js/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/chart.js/dist/Chart.min.js"></script>
+		<script src="js/utility.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script>
+			$("body").delegate("#forgot-pwd", "click", function(e){
+				e.preventDefault()
+		        $('#forgot-part').css('display','flex');
+		        $('#login-part').hide();
+		    })
+
+		    $("body").delegate("#back-login", "click", function(e){
+				e.preventDefault()
+		        $('#forgot-part').hide();
+		        $('#login-part').show();
+		    })
+
+		    $("body").delegate("#submit", "click", function(e){
+				e.preventDefault()
+				Swal.showLoading({
+					title: 'Processing'
+				})
+				$.ajax({
+		            url: 'https://reqres.in/api/users',
+		            dataType: 'json',
+		            type: 'post',
+		            contentType: 'application/json',
+		            data: JSON.stringify({'message':'-1'}),
+		            processData: false,
+		            success: function( data, textStatus, jQxhr ){
+		                Swal.fire({
+						  title: 'Success!',
+						  text: 'Your Request was successful. An email has been sent to you',
+						  icon: 'success'
+						})
+				        $('#forgot-part').hide();
+				        $('#login-part').show();
+		            },
+		            error: function( jqXhr, textStatus, errorThrown ){
+		                Swal.fire({
+						  title: 'Error!',
+						  text: 'An error occured while processing request! Please try again',
+						  icon: 'error'
+						})
+						$('#applyModal').modal('hide');
+		            }
+		        });
+    		})
+		</script>
+
+	</body>
+
+
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="">
+        <title>Reddition</title>
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="js/solid.js"></script>
+        <script defer src="js/fontawesome.js"></script>
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="css/select2.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/file-upload-with-preview.min.css">
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+            <div class="container-fluid dashboard_nav p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark p-5 p-lg-0">
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" style="right: 15px; position: absolute;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <a class="navbar-brand py-0" href="#"><img src="logo.png" class="mt-2" alt="ZaineLab logo" width="200px" /></a>
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="hamburger.svg" />
+                    </button>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 mb-2 font-35">Hi Admin </p>
+                    <p class="text-dull text-left ml-4 my-2 font-14 font-weight-light">admin@admin.com</p>
+
+                    <li>
+                        <a href="index.html">
+                            <img src="dashboard.svg" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="15" /> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img src="logout.svg" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="15" /> Logout
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="dasboard-top-wrapper">
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content">
+
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto"  >
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="row mx-md-2 my-5">
+                    <div class="col-md-12">
+
+                        <div class="card--dashboard">
+
+                            <section id="tabs" class="project-tab">
+
+                                <nav>
+                                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                        <a class="nav-dash nav-item nav-link active text-uppercase weight-semi-bold py-3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">APPLICANTS DETAIL</a>
+                                        <a class="nav-item nav-link text-uppercase weight-semi-bold py-3" id="nav-cat-tab" data-toggle="tab" href="#nav-cat" role="tab" aria-controls="nav-cat" aria-selected="false">RESULTS</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content my-3 px-3" id="nav-tabContent">
+
+                                    <div class="tab-pane fade px-4 show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                               <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <span class="mr-1 mt-1 align-self-baseline d-none">Sort: </span>
+                                                        <form id="filters-area" class="row justify-content-end">
+                                                        </form>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>
+
+                                        <div class="card--dashboard mt-4 p-3">
+                                            <table id="applicants" class="table-responsive-lg leaders dataTables_wrapper table table-striped" style="width:100%">
+                                                <div class="row text-center mb-3">
+                                                    <div class="col-lg-3 col-md-4 col-sm-6 mx-auto mb-2">
+                                                        <input type="text" placeholder="Search Applicant's Name" class="searchitem form-control form-control-sm font-13 form-border-default bg-trans" style="height: 35px;" />
+                                                    </div> 
+                                                </div>
+
+                                                <hr>
+
+                                                <button class="btn btn-primary float-right font-14 mb-3 export-table" ><i class="fa fa-file-code mr-1"></i> Export Table</button>
+                                                <thead class="border-top--0">
+                                                    <tr>
+                                                        <th class="text-dark">Full Name</th>
+                                                        <th class="text-dark">Email</th>
+                                                        <th class="text-dark">D.O.B</th>
+                                                        <th class="text-dark select-filter">Gender</th>
+                                                        <th class="text-dark select-filter">Nationality</th>
+                                                        <th class="text-dark">Lab ID</th>
+                                                        <th class="text-dark select-filter">Result Status</th>
+                                                        <th class="text-dark select-filter">Date Collected</th>
+                                                        <th class="text-dark" style="min-width: 100px">ACTION</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr role="row" class="odd">
+                                                        <td>James Smart</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td>Ervin Howell</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2020</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td>Clementine Bauch</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Uploaded</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td>Patricia Lebsack</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Uploaded</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td>Chelsey Dietrich</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td>Mrs. Dennis Schulist</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td>Kurtis Weissnat</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td>Nicholas Runolfsdottir V</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td>Glenna Reichert</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td>Clementina DuBuque</td>
+                                                        <td>james.smart@gmail.com</td>
+                                                        <td>01/02/2009</td>
+                                                        <td>Male</td>
+                                                        <td>Nigerian</td>
+                                                        <td>Unassigned</td>
+                                                        <td>Unassigned</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="nav-cat" role="tabpanel" aria-labelledby="nav-cat-tab">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                               <div class="row">
+                                                    <div class="col-lg-2 my-2">
+                                                        <input type="text" id="searchbox-cat" placeholder="Search Category" class="form-control form-control-sm font-13 form-border-default bg-trans" />
+                                                    </div>
+
+                                                    <div class="col-lg-12">
+                                                        <span class="mr-1 mt-1 align-self-baseline d-none">Sort: </span>
+                                                        <form id="filters-cat" class="row justify-content-end">
+                                                            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                                                                <button class="btn btn-green font-13 w-100" style="min-width: 110px;height: 34px"><i class="fa fa-search mr-1"></i> Filter</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card--dashboard mt-4 p-3">
+                                            <table id="results" class="leaders dataTables_wrapper table table-striped" style="width:100%">
+                                                <div class="row text-center mb-3">
+                                                    <div class="col-lg-3 col-md-4 col-sm-6 mx-auto mb-2">
+                                                        <input type="text" placeholder="Search Table" class="searchitem3 form-control form-control-sm font-13 form-border-default bg-trans" style="height: 35px;" />
+                                                    </div> 
+                                                </div>
+
+                                                <hr>
+
+                                                <button class="btn btn-primary float-right font-14 mb-3 export-table" ><i class="fa fa-file-code mr-1"></i> Export Table</button>
+                                                <thead class="border-top--0">
+                                                    <tr>
+                                                        <th class="text-dark">Full Name</th>
+                                                        <th class="text-dark">Lab ID</th>
+                                                        <th class="text-dark">Result</th>
+                                                        <th class="text-dark">Result Uploaded On</th>
+                                                        <th class="text-dark" style="min-width: 100px">ACTION</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr role="row" class="even">
+                                                        <td>Clementina DuBuque</td>
+                                                        <td>DDP11</td>
+                                                        <td>Positive</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="result.html" target="_blank" class="btn btn-dark py-1 font-12 d-block my-2 text-white">View Result</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lab ID Modal -->
+            <div class="modal fade" id="lab_id_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title text-center mx-auto">Create Lab ID</h6>
+                            <button type="button" class="close pr-3 ml-0" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="modal_cancel.svg" alt="close modal" /></span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12">
+                                        <input name="lab-id" type="text" placeholder="Enter a Lab ID" class="form-control" required> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 ml-auto mx-0">
+                                        <button type="button" class="btn font-13 btn-green btn-block">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lab ID Modal End -->
+
+            <!-- Upload Result Modal -->
+            <div class="modal fade" id="upload_result_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title text-center mx-auto">Upload Result for James Smart</h6>
+                            <button type="button" class="close pr-3 ml-0" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="modal_cancel.svg" alt="close modal" /></span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="dpd">
+                                <div class="form-row">
+                                    <div class="form-group d-flex justify-content-between w-100 align-items-center">
+                                        <label style="width:200px">Test conducted</label>
+                                        <input name="test_conducted" type="text" placeholder="Test conducted" class="form-control" required> 
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group d-flex justify-content-between w-100 align-items-center">
+                                        <label style="width:200px">Lab code</label>
+                                        <input name="lab_code" type="text" placeholder="Lab code (specimen used)" class="form-control" required> 
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group d-flex justify-content-between w-100 align-items-center">
+                                        <label style="width:200px">Reference range</label>
+                                        <input name="reference_range" type="text" placeholder="Reference range" class="form-control" required> 
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group d-flex justify-content-between w-100 align-items-center">
+                                        <label style="width:200px">Test value</label>
+                                        <input name="test_value" type="text" placeholder="Test value" class="form-control" required> 
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group d-flex justify-content-between w-100 align-items-center">
+                                        <label style="width:200px">General Comment</label>
+                                        <textarea name="general_comment" class="form-control" placeholder="General Comment" required=""></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="weight-semi-bold my-2 font-14">Samples Collected</p>
+
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input view" type="checkbox" value="" required />
+                                            <label class="form-check-label">
+                                                NASOPHARYNGEAL
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input view" type="checkbox" value="" required />
+                                            <label class="form-check-label">
+                                                OROPHARYNGEAL
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input view" type="checkbox" value="" required />
+                                            <label class="form-check-label">
+                                                BLOOD
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input view" type="checkbox" value="" required />
+                                            <label class="form-check-label">
+                                                OTHERS
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input view" type="checkbox" value="" required />
+                                            <label class="form-check-label">
+                                                SPUTUM
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <p class="weight-semi-bold my-2 font-14">Sample Result</p>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" required />
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Positve
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" required />
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Negative
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" required />
+                                            <label class="form-check-label" for="exampleRadios3">
+                                                Indesicive
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3" style="clear:both">
+                                    <div class="col-lg-3 ml-auto mx-0">
+                                        <button type="submit" class="btn font-13 btn-green btn-block">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Upload Result Modal End -->
+        </div>
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="js/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/dataTables.select.min.js"></script>
+        <script type="text/javascript" src="js/dataTables.bootstrap4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+        <script src="js/select2.min.js"></script>
+
+        <script>
+            $(document).ready( function () {
+                var i = 0;
+                var searchterms = ["Male", "Completed"];
+
+                var table = $('#applicants').DataTable({
+                    initComplete: function () {
+                        this.api().columns('.select-filter').every(function () {
+                            var column = this;
+                            var colTitle = this.header().innerHTML
+                            // var select = $('<div class="col-lg-2 col-md-4 col-sm-6 mb-3"><input type="text" class="form-control font-13 form-border-default w-100" name="'+colTitle+'" placeholder="'+colTitle+'"/></div>')
+                            var select = $('<div class="col-lg-2 col-md-4 col-sm-6 mb-3"><select class="custom-select fif font-14 w-100" name="department_filter"><option value="">'+colTitle+'</option></select></div>')
+                                // .appendTo( $('#filters-area') )
+                                .prependTo($('#filters-area'))
+                                .on( 'change', function () {
+                                    var val = $.fn.dataTable.util.escapeRegex(
+                                        $(this).find(':selected').val()
+                                    );
+             
+                                    column
+                                        .search( val ? '^'+val+'$' : '', true, false )
+                                        .draw();
+                                });
+
+                            column.data().unique().sort().each(function ( d, j ) {
+                                if(d == searchterms[i]) {
+                                    select.children().append( '<option selected="selected">'+d+'</option>' )
+                                } else {
+                                    select.children().append( '<option>'+d+'</option>' )
+                                }
+                            });
+                            i++;
+                        });
+                        $('.fif').select2();
+                    },
+                    lengthMenu: [5, 10, 20, 50, 100, 200, 500],
+                    order: [[ 8, "asc" ]],
+                }); 
+                $('.searchitem').on('keyup', function () {
+                   table.column(1).search( this.value ).draw();
+                   $(this).parent().parent().parent().find('.export-table').show();
+                   if($(this).val() != ''){
+                        $(this).parent().parent().parent().find('.export-table').hide();
+                    }
+                });
+
+       
+                $("#min").datepicker({format: 'dd/mm/yyyy', autoclose:true, onSelect: function () { table.draw(); }, changeMonth: true, changeYear: true });
+                $("#max").datepicker({format: 'dd/mm/yyyy', autoclose:true, onSelect: function () { table.draw(); }, changeMonth: true, changeYear: true });
+
+                // Event listener to the two range filtering inputs to redraw on input
+                $('#min, #max').change(function () {
+                    table.draw();
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready( function () {
+                var i = 0;
+                var searchterms = ["Male", "Completed"];
+
+                var table = $('#results').DataTable({
+                    initComplete: function () {
+                        this.api().columns('.select-filter').every(function () {
+                            var column = this;
+                            var colTitle = this.header().innerHTML
+                            var select = $('<div class="col-lg-2 col-md-4 col-sm-6 mb-3"><select class="custom-select fif font-14 w-100" name="department_filter"><option value="">'+colTitle+'</option></select></div>')
+                                .prependTo($('#filters-area'))
+                                .on( 'change', function () {
+                                    var val = $.fn.dataTable.util.escapeRegex(
+                                        $(this).find(':selected').val()
+                                    );
+             
+                                    column
+                                        .search( val ? '^'+val+'$' : '', true, false )
+                                        .draw();
+                                });
+
+                            column.data().unique().sort().each(function ( d, j ) {
+                                if(d == searchterms[i]) {
+                                    select.children().append( '<option selected="selected">'+d+'</option>' )
+                                } else {
+                                    select.children().append( '<option>'+d+'</option>' )
+                                }
+                            });
+                            i++;
+                        });
+                        $('.fif').select2();
+                    },
+                    lengthMenu: [5, 10, 20, 50, 100, 200, 500],
+                    order: [[ 4, "asc" ]],
+                }); 
+                $('.searchitem').on('keyup', function () {
+                   table.column(1).search( this.value ).draw();
+                   $(this).parent().parent().parent().find('.export-table').show();
+                   if($(this).val() != ''){
+                        $(this).parent().parent().parent().find('.export-table').hide();
+                    }
+                });
+
+       
+                $("#min").datepicker({format: 'dd/mm/yyyy', autoclose:true, onSelect: function () { table.draw(); }, changeMonth: true, changeYear: true });
+                $("#max").datepicker({format: 'dd/mm/yyyy', autoclose:true, onSelect: function () { table.draw(); }, changeMonth: true, changeYear: true });
+
+                // Event listener to the two range filtering inputs to redraw on input
+                $('#min, #max').change(function () {
+                    table.draw();
+                });
+            });
+        </script>
+    </body>
+</html>
