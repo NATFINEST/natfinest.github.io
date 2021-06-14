@@ -18,7 +18,8 @@
         <link rel="stylesheet" href="css/select2.min.css">
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/file-upload-with-preview.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body class="dashboard-body">
@@ -915,7 +916,6 @@
                         this.api().columns('.select-filter').every(function () {
                             var column = this;
                             var colTitle = this.header().innerHTML
-                            // var select = $('<div class="col-lg-2 col-md-4 col-sm-6 mb-3"><input type="text" class="form-control font-13 form-border-default w-100" name="'+colTitle+'" placeholder="'+colTitle+'"/></div>')
                             var select = $('<div class="col-lg-2 col-md-4 col-sm-6 mb-3"><select class="custom-select fif font-14 w-100" name="department_filter"><option value="">'+colTitle+'</option></select></div>')
                                 // .appendTo( $('#filters-area') )
                                 .prependTo($('#filters-area'))
@@ -941,7 +941,7 @@
                         $('.fif').select2();
                     },
                     lengthMenu: [10, 20, 50, 100, 200, 500],
-                    // order: [[ 8, "asc" ]],
+                    order: [[ 8, "asc" ]],
                 }); 
                 $('.searchitem').on('keyup', function () {
                    table.column(1).search( this.value ).draw();
@@ -1016,14 +1016,5 @@
                 });
             });
         </script>
-
-        <!-- <script>
-            $(document).ready(function(){
-                if($('.result_status').text('Unassigned')){
-                    // $(this).css({color:'red'})
-                    console.log($(this))
-                }
-            })
-        </script> -->
     </body>
 </html>
