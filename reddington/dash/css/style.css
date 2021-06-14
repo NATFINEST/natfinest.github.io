@@ -195,7 +195,7 @@ body {
 
 .dashboard_nav {
     padding: 15px 10px;
-    background: var(--theme-color);
+    background: #333;
     border: none;
     border-radius: 0;
     margin-bottom: 0px;
@@ -515,7 +515,7 @@ background-color: #fff;
 }
 
 .result--green {
-    background-color: #20A354;
+    background-color: #238ac5;
     border-radius: 8.74859px;
     width: 57px;
 }
@@ -537,7 +537,7 @@ background-color: #fff;
 }
 
 .step-card--green {
-    background: linear-gradient(110.32deg, #20A354 1.5%, #16B074 99.55%);
+    background: linear-gradient(110.32deg, #238ac5 1.5%, #16B074 99.55%);
 }
 
 .step-card--black {
@@ -688,11 +688,11 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
-    background-color: #20a354 !important;
+    background-color: #238ac5 !important;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #20a354;
+    background-color: #238ac5;
 }
 
 .background-muted {
@@ -757,7 +757,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .course_form {
     background: #F4F4F4;
-    border-left: 4px solid #20A354;
+    border-left: 4px solid #238ac5;
 }
 
 .course_videos,
@@ -783,13 +783,13 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .message_detail:hover {
     background: #F4F4F4;
-    border-left: 4px solid #20A354;
+    border-left: 4px solid #238ac5;
     transition: 0.2s;
 }
 
 div.active_message {
     background: #F4F4F4;
-    border-left: 4px solid #20A354;
+    border-left: 4px solid #238ac5;
 }
 
 .course_content:hover {
@@ -934,9 +934,9 @@ button.dropdown-toggle::after {
 }
 
 .stage_active {
-    border-left: 4px solid #20A354;
-    border-top: 1px solid #20A354;
-    border-bottom: 1px solid #20A354 !important;
+    border-left: 4px solid #238ac5;
+    border-top: 1px solid #238ac5;
+    border-bottom: 1px solid #238ac5 !important;
 }
 
 .btn-red {
@@ -1036,7 +1036,7 @@ font-weight: bold;
 
 .custom-file-container__custom-file__custom-file-control__button {
     color: #fff !important;
-    background-color: #20A354;
+    background-color: #238ac5;
 }
 
 .custom-file-container__custom-file__custom-file-control {

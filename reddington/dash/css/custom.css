@@ -1,6 +1,30 @@
+.form-control{
+    font-size: 14px!important;
+}
+input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 14px!important; }
+  input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+    font-size: 14px!important; }
+  input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    font-size: 14px!important; }
+  input:-moz-placeholder, select:-moz-placeholder, textarea:-moz-placeholder {
+    font-size: 14px!important; }
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 22px!important;
+    font-size: 14px!important;
+}
+.table td, .table th{
+    font-size: 14px;
+}
+.leaders thead, tfoot, .leaders thead th{
+    font-size: 14px;
+}
 #content{
-	padding: 64px 10px!important;
-  background: #238ac5;
+    padding: 60px 10px!important;
+    background: #238ac5;
+}
+#sidebar.active{
+    margin-top: 40px;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{

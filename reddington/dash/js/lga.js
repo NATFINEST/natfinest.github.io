@@ -1,4 +1,5 @@
-// Get rid of small loading animation
+﻿
+  // Get rid of small loading animation
   [...document.querySelectorAll(".input-location-dependant")].forEach(element =>
     element.classList.toggle("d-none")
   );
@@ -370,7 +371,7 @@
           "Udi",
           "Uzo Uwani"
         ],
-        Abuja: [
+        FCT: [
           "Abaji",
           "Bwari",
           "Gwagwalada",
@@ -642,7 +643,7 @@
           "Shomolu",
           "Surulere"
         ],
-        Nassarawa: [
+        Nasarawa: [
           "Akwanga",
           "Awe",
           "Doma",

@@ -14,19 +14,18 @@
         <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
 
         <!-- Font Awesome JS -->
-        <script defer src="js/solid.js"></script>
-        <script defer src="js/fontawesome.js"></script>
         <link rel="stylesheet" href="css/bootstrap-datepicker.css">
         <link rel="stylesheet" href="css/select2.min.css">
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/file-upload-with-preview.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body class="dashboard-body">
 
         <div class="top_nav">
             <div class="container-fluid dashboard_nav p-0">
-                <nav class="navbar navbar-expand-lg navbar-dark p-5 p-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-dark p-4 p-lg-0">
                     <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" style="right: 15px; position: absolute;">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -79,8 +78,31 @@
                     </div>
                 </nav>
 
-                <div class="row mx-md-2 my-5">
+                <div class="row mx-md-2 my-0">
                     <div class="col-md-12">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 px-md-2 my-3">
+                                <div href="c_staff.html">
+                                    <div class="step-cards step-card--green">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Total Applicants</p>
+                                            <p class="mb-0 text-white--dim">You have 20 Applicants.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 px-md-2 my-3">
+                                <div href="c_courses.html">
+                                    <div class="step-cards step-card--purple">
+                                        <div class="px-3 pt-4 pb-2 position-relative">
+                                            <p class="weight-semi-bold font-35 text-white mb-0 mt-4">Total Result Generated</p>
+                                            <p class="mb-0 text-white--dim">You have generated 300 results.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="card--dashboard">
 
@@ -118,15 +140,15 @@
 
                                                 <hr>
 
-                                                <button class="btn btn-primary float-right font-14 mb-3 export-table" ><i class="fa fa-file-code mr-1"></i> Export Table</button>
+                                                <button class="btn btn-primary float-right font-14 mb-3 export-table"><i class="fa fa-file-code mr-1"></i> Export Table</button>
                                                 <thead class="border-top--0">
                                                     <tr>
                                                         <th class="text-dark">Full Name</th>
                                                         <th class="text-dark">Email</th>
-                                                        <th class="text-dark">D.O.B</th>
+                                                        <th class="text-dark">Phone</th>
                                                         <th class="text-dark select-filter">Gender</th>
                                                         <th class="text-dark select-filter">Nationality</th>
-                                                        <th class="text-dark">Lab ID</th>
+                                                        <th class="text-dark">Lab NO</th>
                                                         <th class="text-dark select-filter">Result Status</th>
                                                         <th class="text-dark select-filter">Date Collected</th>
                                                         <th class="text-dark" style="min-width: 100px">ACTION</th>
@@ -136,141 +158,151 @@
                                                     <tr role="row" class="odd">
                                                         <td>James Smart</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>Ervin Howell</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2020</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>Clementine Bauch</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Uploaded</td>
+                                                        <td class="result_status">Uploaded</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>Patricia Lebsack</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Uploaded</td>
+                                                        <td class="result_status">Uploaded</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>Chelsey Dietrich</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>Mrs. Dennis Schulist</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>Kurtis Weissnat</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>Nicholas Runolfsdottir V</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>Glenna Reichert</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>Clementina DuBuque</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>01/02/2009</td>
+                                                        <td>070999999999</td>
                                                         <td>Male</td>
                                                         <td>Nigerian</td>
                                                         <td>Unassigned</td>
-                                                        <td>Unassigned</td>
+                                                        <td class="result_status">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white" data-toggle="modal" data-target="#lab_id_modal">Create Lab ID</a>
-                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2" data-toggle="modal" data-target="#upload_result_modal">Upload Result</a>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -313,8 +345,8 @@
                                                 <thead class="border-top--0">
                                                     <tr>
                                                         <th class="text-dark">Full Name</th>
-                                                        <th class="text-dark">Lab ID</th>
-                                                        <th class="text-dark">Result</th>
+                                                        <th class="text-dark select-filter">Lab NO</th>
+                                                        <th class="text-dark select-filter">Result</th>
                                                         <th class="text-dark">Result Uploaded On</th>
                                                         <th class="text-dark" style="min-width: 100px">ACTION</th>
                                                     </tr>
@@ -326,7 +358,16 @@
                                                         <td>Positive</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="result.html" target="_blank" class="btn btn-dark py-1 font-12 d-block my-2 text-white">View Result</a>
+                                                            <a href="result.html" target="_blank" class="btn btn-dark py-1 font-12 d-block my-2 text-white">Download Result</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td>Clementina DuBuque</td>
+                                                        <td>DDP11</td>
+                                                        <td>Positive</td>
+                                                        <td>11/06/2021</td>
+                                                        <td>
+                                                            <a href="result1.html" target="_blank" class="btn btn-dark py-1 font-12 d-block my-2 text-white">Download Result</a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -347,14 +388,14 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h6 class="modal-title text-center mx-auto">Create Lab ID</h6>
+                            <h6 class="modal-title text-center mx-auto">Create Lab NO for <span class="lab_id_name"></span></h6>
                             <button type="button" class="close pr-3 ml-0" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="modal_cancel.svg" alt="close modal" /></span> </button>
                         </div>
                         <div class="modal-body">
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-lg-12">
-                                        <input name="lab-id" type="text" placeholder="Enter a Lab ID" class="form-control" required> 
+                                        <input name="lab-no" type="text" placeholder="Enter a Lab NO" class="form-control" required> 
                                     </div>
                                 </div>
                                 <div class="row">
@@ -374,7 +415,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h6 class="modal-title text-center mx-auto">Upload Result for James Smart</h6>
+                            <h6 class="modal-title text-center mx-auto">Upload Result for <span class="upload_result_name"></span> - <span class="upload_result_lab_id"></span></h6>
                             <button type="button" class="close pr-3 ml-0" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="modal_cancel.svg" alt="close modal" /></span> </button>
                         </div>
                         <div class="modal-body">
@@ -407,13 +448,6 @@
                                     </div>
                                 </div>
 
-                                <div class="form-row">
-                                    <div class="form-group d-flex justify-content-between w-100 align-items-center">
-                                        <label style="width:200px">General Comment</label>
-                                        <textarea name="general_comment" class="form-control" placeholder="General Comment" required=""></textarea>
-                                    </div>
-                                </div>
-
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         <p class="weight-semi-bold my-2 font-14">Samples Collected</p>
@@ -435,6 +469,13 @@
                                         <div class="form-check mt-1">
                                             <input class="form-check-input view" type="checkbox" value="" required />
                                             <label class="form-check-label">
+                                                SPUTUM
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check mt-1">
+                                            <input class="form-check-input view" type="checkbox" value="" required />
+                                            <label class="form-check-label">
                                                 BLOOD
                                             </label>
                                         </div>
@@ -443,13 +484,6 @@
                                             <input class="form-check-input view" type="checkbox" value="" required />
                                             <label class="form-check-label">
                                                 OTHERS
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check mt-1">
-                                            <input class="form-check-input view" type="checkbox" value="" required />
-                                            <label class="form-check-label">
-                                                SPUTUM
                                             </label>
                                         </div>
                                     </div>
@@ -472,7 +506,7 @@
                                         <div class="form-check mb-1">
                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" required />
                                             <label class="form-check-label" for="exampleRadios3">
-                                                Indesicive
+                                                Inconclusive
                                             </label>
                                         </div>
                                     </div>
@@ -481,6 +515,330 @@
                                 <div class="row mt-3" style="clear:both">
                                     <div class="col-lg-3 ml-auto mx-0">
                                         <button type="submit" class="btn font-13 btn-green btn-block">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Upload Result Modal End -->
+
+            <!-- View Profile Modal -->
+            <div class="modal fade" id="view_profile_modal"  role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title text-center mx-auto">View Profile for <span class="view_profile_name"></span> - <span class="view_profile_lab_id"></span></h6>
+                            <button type="button" class="close pr-3 ml-0" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="modal_cancel.svg" alt="close modal" /></span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12 select2-webinar">
+                                        <label>Select Collection Center</label>
+                                        <select class="webinar w-100 view contact2 check3 select2" name="state" id="select-contact">
+                                            <option value="">Select Collection Center</option>
+                                            <option>ZAINE VI</option>
+                                            <option>ZAINE IKEJA</option>
+                                            <option>ZAINE LEKKI</option>
+                                            <option>ZAINE SURULERE</option>
+                                            <option>ZAINE YABA</option>
+                                            <option>ZAINE VGC</option>
+                                            <option>ZAINE IBADAN</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-lg-6">
+                                        <label>First Name</label>
+                                        <input id="departmentModalInput" type="text" name="first_name" placeholder="First Name" class="form-control view"> 
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Last Name</label>
+                                        <input id="departmentModalInput" type="text" name="Last_name" placeholder="Last Name" class="form-control view"> 
+                                    </div>
+                                    <div class="form-group col-lg-6 select2-webinar">
+                                        <label>Select Collection Center</label>
+                                        <select class="webinar w-100 view contact2 check3 select2" name="state" id="select-contact">
+                                            <option value="">Select Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>DOB</label>
+                                        <input id="departmentModalInput" type="text" name="Last_name" placeholder="DOB" class="form-control view"> 
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Email</label>
+                                        <input id="departmentModalInput" type="email" name="email" placeholder="Email" class="form-control view"> 
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Phone No.</label>
+                                        <input id="departmentModalInput" type="tel" name="phone" placeholder="Phone" class="form-control view"> 
+                                    </div>
+                                    <div class="form-group col-lg-6 select2-webinar">
+                                        <label>Select Nationality</label>
+                                        <select class="webinar w-100 view contact2 check3 select2" name="state" id="select-contact">
+                                              <option value="">Select Nationality</option>
+                                              <option value="afghan">Afghan</option>
+                                              <option value="albanian">Albanian</option>
+                                              <option value="algerian">Algerian</option>
+                                              <option value="american">American</option>
+                                              <option value="andorran">Andorran</option>
+                                              <option value="angolan">Angolan</option>
+                                              <option value="antiguans">Antiguans</option>
+                                              <option value="argentinean">Argentinean</option>
+                                              <option value="armenian">Armenian</option>
+                                              <option value="australian">Australian</option>
+                                              <option value="austrian">Austrian</option>
+                                              <option value="azerbaijani">Azerbaijani</option>
+                                              <option value="bahamian">Bahamian</option>
+                                              <option value="bahraini">Bahraini</option>
+                                              <option value="bangladeshi">Bangladeshi</option>
+                                              <option value="barbadian">Barbadian</option>
+                                              <option value="barbudans">Barbudans</option>
+                                              <option value="batswana">Batswana</option>
+                                              <option value="belarusian">Belarusian</option>
+                                              <option value="belgian">Belgian</option>
+                                              <option value="belizean">Belizean</option>
+                                              <option value="beninese">Beninese</option>
+                                              <option value="bhutanese">Bhutanese</option>
+                                              <option value="bolivian">Bolivian</option>
+                                              <option value="bosnian">Bosnian</option>
+                                              <option value="brazilian">Brazilian</option>
+                                              <option value="british">British</option>
+                                              <option value="bruneian">Bruneian</option>
+                                              <option value="bulgarian">Bulgarian</option>
+                                              <option value="burkinabe">Burkinabe</option>
+                                              <option value="burmese">Burmese</option>
+                                              <option value="burundian">Burundian</option>
+                                              <option value="cambodian">Cambodian</option>
+                                              <option value="cameroonian">Cameroonian</option>
+                                              <option value="canadian">Canadian</option>
+                                              <option value="cape verdean">Cape Verdean</option>
+                                              <option value="central african">Central African</option>
+                                              <option value="chadian">Chadian</option>
+                                              <option value="chilean">Chilean</option>
+                                              <option value="chinese">Chinese</option>
+                                              <option value="colombian">Colombian</option>
+                                              <option value="comoran">Comoran</option>
+                                              <option value="congolese">Congolese</option>
+                                              <option value="costa rican">Costa Rican</option>
+                                              <option value="croatian">Croatian</option>
+                                              <option value="cuban">Cuban</option>
+                                              <option value="cypriot">Cypriot</option>
+                                              <option value="czech">Czech</option>
+                                              <option value="danish">Danish</option>
+                                              <option value="djibouti">Djibouti</option>
+                                              <option value="dominican">Dominican</option>
+                                              <option value="dutch">Dutch</option>
+                                              <option value="east timorese">East Timorese</option>
+                                              <option value="ecuadorean">Ecuadorean</option>
+                                              <option value="egyptian">Egyptian</option>
+                                              <option value="emirian">Emirian</option>
+                                              <option value="equatorial guinean">Equatorial Guinean</option>
+                                              <option value="eritrean">Eritrean</option>
+                                              <option value="estonian">Estonian</option>
+                                              <option value="ethiopian">Ethiopian</option>
+                                              <option value="fijian">Fijian</option>
+                                              <option value="filipino">Filipino</option>
+                                              <option value="finnish">Finnish</option>
+                                              <option value="french">French</option>
+                                              <option value="gabonese">Gabonese</option>
+                                              <option value="gambian">Gambian</option>
+                                              <option value="georgian">Georgian</option>
+                                              <option value="german">German</option>
+                                              <option value="ghanaian">Ghanaian</option>
+                                              <option value="greek">Greek</option>
+                                              <option value="grenadian">Grenadian</option>
+                                              <option value="guatemalan">Guatemalan</option>
+                                              <option value="guinea-bissauan">Guinea-Bissauan</option>
+                                              <option value="guinean">Guinean</option>
+                                              <option value="guyanese">Guyanese</option>
+                                              <option value="haitian">Haitian</option>
+                                              <option value="herzegovinian">Herzegovinian</option>
+                                              <option value="honduran">Honduran</option>
+                                              <option value="hungarian">Hungarian</option>
+                                              <option value="icelander">Icelander</option>
+                                              <option value="indian">Indian</option>
+                                              <option value="indonesian">Indonesian</option>
+                                              <option value="iranian">Iranian</option>
+                                              <option value="iraqi">Iraqi</option>
+                                              <option value="irish">Irish</option>
+                                              <option value="israeli">Israeli</option>
+                                              <option value="italian">Italian</option>
+                                              <option value="ivorian">Ivorian</option>
+                                              <option value="jamaican">Jamaican</option>
+                                              <option value="japanese">Japanese</option>
+                                              <option value="jordanian">Jordanian</option>
+                                              <option value="kazakhstani">Kazakhstani</option>
+                                              <option value="kenyan">Kenyan</option>
+                                              <option value="kittian and nevisian">Kittian and Nevisian</option>
+                                              <option value="kuwaiti">Kuwaiti</option>
+                                              <option value="kyrgyz">Kyrgyz</option>
+                                              <option value="laotian">Laotian</option>
+                                              <option value="latvian">Latvian</option>
+                                              <option value="lebanese">Lebanese</option>
+                                              <option value="liberian">Liberian</option>
+                                              <option value="libyan">Libyan</option>
+                                              <option value="liechtensteiner">Liechtensteiner</option>
+                                              <option value="lithuanian">Lithuanian</option>
+                                              <option value="luxembourger">Luxembourger</option>
+                                              <option value="macedonian">Macedonian</option>
+                                              <option value="malagasy">Malagasy</option>
+                                              <option value="malawian">Malawian</option>
+                                              <option value="malaysian">Malaysian</option>
+                                              <option value="maldivan">Maldivan</option>
+                                              <option value="malian">Malian</option>
+                                              <option value="maltese">Maltese</option>
+                                              <option value="marshallese">Marshallese</option>
+                                              <option value="mauritanian">Mauritanian</option>
+                                              <option value="mauritian">Mauritian</option>
+                                              <option value="mexican">Mexican</option>
+                                              <option value="micronesian">Micronesian</option>
+                                              <option value="moldovan">Moldovan</option>
+                                              <option value="monacan">Monacan</option>
+                                              <option value="mongolian">Mongolian</option>
+                                              <option value="moroccan">Moroccan</option>
+                                              <option value="mosotho">Mosotho</option>
+                                              <option value="motswana">Motswana</option>
+                                              <option value="mozambican">Mozambican</option>
+                                              <option value="namibian">Namibian</option>
+                                              <option value="nauruan">Nauruan</option>
+                                              <option value="nepalese">Nepalese</option>
+                                              <option value="new zealander">New Zealander</option>
+                                              <option value="ni-vanuatu">Ni-Vanuatu</option>
+                                              <option value="nicaraguan">Nicaraguan</option>
+                                              <option value="nigerian">Nigerian</option>
+                                              <option value="nigerien">Nigerien</option>
+                                              <option value="north korean">North Korean</option>
+                                              <option value="northern irish">Northern Irish</option>
+                                              <option value="norwegian">Norwegian</option>
+                                              <option value="omani">Omani</option>
+                                              <option value="pakistani">Pakistani</option>
+                                              <option value="palauan">Palauan</option>
+                                              <option value="panamanian">Panamanian</option>
+                                              <option value="papua new guinean">Papua New Guinean</option>
+                                              <option value="paraguayan">Paraguayan</option>
+                                              <option value="peruvian">Peruvian</option>
+                                              <option value="polish">Polish</option>
+                                              <option value="portuguese">Portuguese</option>
+                                              <option value="qatari">Qatari</option>
+                                              <option value="romanian">Romanian</option>
+                                              <option value="russian">Russian</option>
+                                              <option value="rwandan">Rwandan</option>
+                                              <option value="saint lucian">Saint Lucian</option>
+                                              <option value="salvadoran">Salvadoran</option>
+                                              <option value="samoan">Samoan</option>
+                                              <option value="san marinese">San Marinese</option>
+                                              <option value="sao tomean">Sao Tomean</option>
+                                              <option value="saudi">Saudi</option>
+                                              <option value="scottish">Scottish</option>
+                                              <option value="senegalese">Senegalese</option>
+                                              <option value="serbian">Serbian</option>
+                                              <option value="seychellois">Seychellois</option>
+                                              <option value="sierra leonean">Sierra Leonean</option>
+                                              <option value="singaporean">Singaporean</option>
+                                              <option value="slovakian">Slovakian</option>
+                                              <option value="slovenian">Slovenian</option>
+                                              <option value="solomon islander">Solomon Islander</option>
+                                              <option value="somali">Somali</option>
+                                              <option value="south african">South African</option>
+                                              <option value="south korean">South Korean</option>
+                                              <option value="spanish">Spanish</option>
+                                              <option value="sri lankan">Sri Lankan</option>
+                                              <option value="sudanese">Sudanese</option>
+                                              <option value="surinamer">Surinamer</option>
+                                              <option value="swazi">Swazi</option>
+                                              <option value="swedish">Swedish</option>
+                                              <option value="swiss">Swiss</option>
+                                              <option value="syrian">Syrian</option>
+                                              <option value="taiwanese">Taiwanese</option>
+                                              <option value="tajik">Tajik</option>
+                                              <option value="tanzanian">Tanzanian</option>
+                                              <option value="thai">Thai</option>
+                                              <option value="togolese">Togolese</option>
+                                              <option value="tongan">Tongan</option>
+                                              <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                                              <option value="tunisian">Tunisian</option>
+                                              <option value="turkish">Turkish</option>
+                                              <option value="tuvaluan">Tuvaluan</option>
+                                              <option value="ugandan">Ugandan</option>
+                                              <option value="ukrainian">Ukrainian</option>
+                                              <option value="uruguayan">Uruguayan</option>
+                                              <option value="uzbekistani">Uzbekistani</option>
+                                              <option value="venezuelan">Venezuelan</option>
+                                              <option value="vietnamese">Vietnamese</option>
+                                              <option value="welsh">Welsh</option>
+                                              <option value="yemenite">Yemenite</option>
+                                              <option value="zambian">Zambian</option>
+                                              <option value="zimbabwean">Zimbabwean</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Passport Number</label>
+                                        <input id="departmentModalInput" type="text" placeholder="Passport Number" class="form-control view"> 
+                                    </div>
+                                    <div class="form-group col-lg-6 select2-webinar">
+                                        <label>Select State</label>
+                                        <select class="webinar w-100 view contact2 check3 select2" name="state" id="select-contact" onchange="toggleLGA(this);">
+                                            <option value="" selected="selected">Select State</option>
+                                            <option value="Abia">Abia</option>
+                                            <option value="Adamawa">Adamawa</option>
+                                            <option value="AkwaIbom">AkwaIbom</option>
+                                            <option value="Anambra">Anambra</option>
+                                            <option value="Bauchi">Bauchi</option>
+                                            <option value="Bayelsa">Bayelsa</option>
+                                            <option value="Benue">Benue</option>
+                                            <option value="Borno">Borno</option>
+                                            <option value="Cross River">Cross River</option>
+                                            <option value="Delta">Delta</option>
+                                            <option value="Ebonyi">Ebonyi</option>
+                                            <option value="Edo">Edo</option>
+                                            <option value="Ekiti">Ekiti</option>
+                                            <option value="Enugu">Enugu</option>
+                                            <option value="FCT">FCT</option>
+                                            <option value="Gombe">Gombe</option>
+                                            <option value="Imo">Imo</option>
+                                            <option value="Jigawa">Jigawa</option>
+                                            <option value="Kaduna">Kaduna</option>
+                                            <option value="Kano">Kano</option>
+                                            <option value="Katsina">Katsina</option>
+                                            <option value="Kebbi">Kebbi</option>
+                                            <option value="Kogi">Kogi</option>
+                                            <option value="Kwara">Kwara</option>
+                                            <option value="Lagos">Lagos</option>
+                                            <option value="Nasarawa">Nasarawa</option>
+                                            <option value="Niger">Niger</option>
+                                            <option value="Ogun">Ogun</option>
+                                            <option value="Ondo">Ondo</option>
+                                            <option value="Osun">Osun</option>
+                                            <option value="Oyo">Oyo</option>
+                                            <option value="Plateau">Plateau</option>
+                                            <option value="Rivers">Rivers</option>
+                                            <option value="Sokoto">Sokoto</option>
+                                            <option value="Taraba">Taraba</option>
+                                            <option value="Yobe">Yobe</option>
+                                            <option value="Zamfara">Zamafara</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6 select2-webinar">
+                                        <label>Select Lga</label>
+                                        <select class="select-lga w-100 view contact2 check3 select2" id="select-contact" name="lga">
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label>Street Address</label>
+                                        <input id="departmentModalInput" type="text" placeholder="Street Address" class="form-control view"> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 ml-auto mx-0" id="edit">
+                                        <button type="button" class="btn btn-success btn-block">Edit</button>
+                                    </div>
+                                    <div class="col-lg-3 ml-auto mx-0" id="submit" style="display: none;">
+                                        <button type="button" class="btn btn-success btn-block">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -510,7 +868,43 @@
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
         <script src="js/select2.min.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/lga.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js" integrity="sha512-OnkjbJ4TwPpgSmjXACCb5J4cJwi880VRe+vWpPDlr8M38/L3slN5uUAeOeWU2jN+4vN0gImCXFGdJmc0wO4Mig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <script>
+
+            $(document).ready( function () {
+                $(".view").attr('disabled','disabled');
+                $('#edit').on('click', function () {
+                   $(".view").removeAttr('disabled');
+                   $('#edit').hide();
+                   $('#submit').show();
+                } );
+                $('#webinar').on('hidden.bs.modal', function (event) {
+                   $(".view").attr('disabled','disabled');
+                   $('#edit').show();
+                   $('#submit').hide();
+                });
+                $('.view_profile').on('click', function() {
+                    $('.view_profile_name').text($(this).attr('data-name'))
+                    $('.view_profile_lab_id').text($(this).attr('data-lab-id'))
+                    $('#view_profile_modal').modal('show');
+
+                });
+                $('.upload_result').on('click', function() {
+                    $('.upload_result_name').text($(this).attr('data-name'))
+                    $('.upload_result_lab_id').text($(this).attr('data-lab-id'))
+                    $('#upload_result_modal').modal('show');
+                });
+                $('.lab_id').on('click', function() {
+                    $('.lab_id_name').text($(this).attr('data-name'))
+                    $('#lab_id_modal').modal('show');
+                }); 
+            });
+        </script>
         <script>
             $(document).ready( function () {
                 var i = 0;
@@ -546,8 +940,8 @@
                         });
                         $('.fif').select2();
                     },
-                    lengthMenu: [5, 10, 20, 50, 100, 200, 500],
-                    order: [[ 8, "asc" ]],
+                    lengthMenu: [10, 20, 50, 100, 200, 500],
+                    // order: [[ 8, "asc" ]],
                 }); 
                 $('.searchitem').on('keyup', function () {
                    table.column(1).search( this.value ).draw();
@@ -579,7 +973,7 @@
                             var column = this;
                             var colTitle = this.header().innerHTML
                             var select = $('<div class="col-lg-2 col-md-4 col-sm-6 mb-3"><select class="custom-select fif font-14 w-100" name="department_filter"><option value="">'+colTitle+'</option></select></div>')
-                                .prependTo($('#filters-area'))
+                                .prependTo($('#filters-cat'))
                                 .on( 'change', function () {
                                     var val = $.fn.dataTable.util.escapeRegex(
                                         $(this).find(':selected').val()
@@ -601,7 +995,7 @@
                         });
                         $('.fif').select2();
                     },
-                    lengthMenu: [5, 10, 20, 50, 100, 200, 500],
+                    lengthMenu: [10, 20, 50, 100, 200, 500],
                     order: [[ 4, "asc" ]],
                 }); 
                 $('.searchitem').on('keyup', function () {
@@ -622,5 +1016,14 @@
                 });
             });
         </script>
+
+        <!-- <script>
+            $(document).ready(function(){
+                if($('.result_status').text('Unassigned')){
+                    // $(this).css({color:'red'})
+                    console.log($(this))
+                }
+            })
+        </script> -->
     </body>
 </html>
