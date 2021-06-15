@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
 
         <!-- Font Awesome JS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/bootstrap-datepicker.css">
         <link rel="stylesheet" href="css/select2.min.css">
         <link rel="stylesheet" href="css/custom.css">
@@ -133,7 +132,7 @@
                                         </div>
 
                                         <div class="card--dashboard mt-4 p-3">
-                                            <table id="applicants" class="table-responsive-xl leaders dataTables_wrapper table table-striped" style="width:100%">
+                                            <table id="applicants" class="table-responsive-lg leaders dataTables_wrapper table table-striped" style="width:100%">
                                                 <div class="row text-center mb-3">
                                                     <div class="col-lg-3 col-md-4 col-sm-6 mx-auto mb-2">
                                                         <input type="text" placeholder="Search Applicant's Name" class="searchitem form-control form-control-sm font-13 form-border-default bg-trans" style="height: 35px;" />
@@ -149,6 +148,7 @@
                                                         <th class="text-dark">Full Name</th>
                                                         <th class="text-dark">Email</th>
                                                         <th class="text-dark">Phone</th>
+                                                        <!-- <th class="text-dark select-filter">Gender</th> -->
                                                         <th class="text-dark">Lab NO</th>
                                                         <th class="text-dark select-filter">Result Status</th>
                                                         <th class="text-dark select-filter">Date Collected</th>
@@ -160,200 +160,150 @@
                                                         <td>1</td>
                                                         <td>James Smart</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>2</td>
                                                         <td>Ervin Howell</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2020</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>3</td>
                                                         <td>Clementine Bauch</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status uploaded">Uploaded</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>4</td>
                                                         <td>Patricia Lebsack</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status uploaded">Uploaded</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>5</td>
                                                         <td>Chelsey Dietrich</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>6</td>
                                                         <td>Mrs. Dennis Schulist</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>7</td>
                                                         <td>Kurtis Weissnat</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>8</td>
                                                         <td>Nicholas Runolfsdottir V</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="odd">
                                                         <td>9</td>
                                                         <td>Glenna Reichert</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td>10</td>
                                                         <td>Clementina DuBuque</td>
                                                         <td>james.smart@gmail.com</td>
-                                                        <td>07099999999</td>
+                                                        <td>070999999999</td>
+                                                        <!-- <td>Male</td> -->
                                                         <td>Unassigned</td>
                                                         <td class="result_status unassigned">Unassigned</td>
                                                         <td>11/06/2021</td>
                                                         <td>
-                                                            <a href="#" class="dropdown-togge btn btn-outline--green py-1 font-14 py-1 px-2 bg-transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <span>Select Action</span>
-                                                                <i class="fa fa-caret-down"></i>
-                                                            </a>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item font-13 mb-1 lab_id" href="#" data-name="Jane Doe">Create Lab NO</a>
-                                                                <a class="dropdown-item font-13 mb-1 upload_result" href="#" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
-                                                                <a class="dropdown-item font-13 mb-1 view_profile" href="#" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
-                                                            </div>
+                                                            <a href="#" class="btn btn-dark py-1 font-12 d-block my-2 text-white lab_id" data-toggle="modal" data-name="Jane Doe">Create Lab NO</a>
+                                                            <a href="#" class="btn btn-green py-1 font-12 d-block my-2 upload_result" data-name="Jane Doe" data-lab-id="LAB001">Upload Result</a>
+                                                            <a href="#" class="btn btn-outline--green py-1 font-12 d-block my-2 view_profile" data-name="Jane Doe" data-lab-id="LAB001">View Profile</a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -386,7 +336,7 @@
                                             <table id="results" class="table-responsive-lg leaders dataTables_wrapper table table-striped" style="width:100%">
                                                 <div class="row text-center mb-3">
                                                     <div class="col-lg-3 col-md-4 col-sm-6 mx-auto mb-2">
-                                                        <input type="text" placeholder="Search Table" class="searchitem2 form-control form-control-sm font-13 form-border-default bg-trans" style="height: 35px;" />
+                                                        <input type="text" placeholder="Search Table" class="searchitem3 form-control form-control-sm font-13 form-border-default bg-trans" style="height: 35px;" />
                                                     </div> 
                                                 </div>
 
@@ -991,10 +941,9 @@
                         $('.fif').select2();
                     },
                     lengthMenu: [10, 20, 50, 100, 200, 500],
-                    // order: [[ 8, "asc" ]],
+                    order: [[ 8, "asc" ]],
                 }); 
                 $('.searchitem').on('keyup', function () {
-                    console.log('mad')
                    table.column(1).search( this.value ).draw();
                    $(this).parent().parent().parent().find('.export-table').show();
                    if($(this).val() != ''){
@@ -1047,9 +996,9 @@
                         $('.fif').select2();
                     },
                     lengthMenu: [10, 20, 50, 100, 200, 500],
-                    // order: [[ 4, "asc" ]],
+                    order: [[ 4, "asc" ]],
                 }); 
-                $('.searchitem2').on('keyup', function () {
+                $('.searchitem').on('keyup', function () {
                    table.column(1).search( this.value ).draw();
                    $(this).parent().parent().parent().find('.export-table').show();
                    if($(this).val() != ''){
