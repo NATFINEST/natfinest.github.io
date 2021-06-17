@@ -36,10 +36,10 @@
                 required: true,
             },
             state: {
-                required: true,
+                required: false,
             },
             lga: {
-                required: true,
+                required: false,
             },
             street: {
                 required: true,

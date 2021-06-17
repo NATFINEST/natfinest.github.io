@@ -35,16 +35,18 @@
                 <fieldset>
                     <div class="fieldset-content">
                         <div class="form-group">
-                            <label for="collection_center" class="form-label">Select Collection Center</label>
+                            <label for="collection_center" class="form-label">Select Sample Collection Center</label>
                             <select name="collection_center" id="collection_center" >
-                                <option value="">Select Collection Center</option>
-                                <option>ZAINE VI</option>
-                                <option>ZAINE IKEJA</option>
-                                <option>ZAINE LEKKI</option>
-                                <option>ZAINE SURULERE</option>
-                                <option>ZAINE YABA</option>
-                                <option>ZAINE VGC</option>
-                                <option>ZAINE IBADAN</option>
+                                <option value="">Select Sample Collection Center</option>
+                                <option>ZAINELAB VI - 6B, BENDEL CLOSE.</option>
+                                <option>ZAINELAB VI - 12, IDOWU MARTINS STREET.</option>
+                                <option>ZAINELAB IKEJA - 26, JOEL OGUNNAIKE.</option>
+                                <option>ZAINELAB IKEJA - 41, ISAAC JOHN STREET, GRA.</option>
+                                <option>ZAINELAB LEKKI</option>
+                                <option>ZAINELAB SURULERE</option>
+                                <option>ZAINELAB YABA</option>
+                                <option>ZAINELAB VGC</option>
+                                <option>ZAINELAB IBADAN</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -73,8 +75,8 @@
                             <input type="text" name="dob" class="datepicker" placeholder="dd/mm/yyyy" data-date-format="dd/mm/yyyy">
                         </div>
                         <div class="form-group">
-                            <label for="email" class="form-label">Email (Please use Gmail or Yahoo Mail)</label>
-                            <input type="email" name="email" id="email" placeholder="Your Email"  />
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" />
                         </div>
                         <div class="form-group">
                             <label for="phone" class="form-label">Phone Number</label>
@@ -284,7 +286,7 @@
                             <input type="text" name="passport" id="passport" placeholder="Passport Number"  />
                         </div>
                         <div class="form-group">
-                            <label for="state" class="form-label">State</label>
+                            <label for="state" class="form-label">State of Origin (Nigerians Only)</label>
                             <select
                               onchange="toggleLGA(this);"
                               name="state"
@@ -331,7 +333,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="lga" class="form-label">Select LGA</label>
+                            <label for="lga" class="form-label">Select LGA (Optional)</label>
                             <select
                               name="lga"
                               id="lga"
@@ -341,8 +343,8 @@
                             </select>
                         </div>  
                         <div class="form-group">
-                            <label for="street" class="form-label">Street Address</label>
-                            <input type="text" name="street" id="street" placeholder="Street Address"  />
+                            <label for="street" class="form-label">Residential Address</label>
+                            <input type="text" name="street" id="street" placeholder="Residential Address"  />
                         </div>
                     </div>
                     <div class="fieldset-footer">
@@ -359,16 +361,16 @@
                         <p style="color:#e91e63;margin-left: 30px;">
                             <b>Note:</b><br>
                             Walk in: You just walked in for a routine test.<br>
-                            Outbound: Travelling outside or within Nigeria.<br>
-                            POI: Returning to Nigeria.
+                            Outbound Travel: Travelling outside or within Nigeria.<br>
+                            POI Arrival: Returning to Nigeria.
                         </p>
                         <div class="form-group">
                             <label for="purpose" class="form-label">Purpose of test</label>
                             <select name="purpose" id="purpose">
                               <option value="">Select Purpose</option>
                               <option value="afghan">Walk in</option>
-                              <option value="albanian">Outbound</option>
-                              <option value="algerian">POI/Inbound</option>
+                              <option value="albanian">Outbound Travel</option>
+                              <option value="algerian">POI/Inbound Arrival</option>
                           </select>
                       </div>
                       <div class="form-group">
